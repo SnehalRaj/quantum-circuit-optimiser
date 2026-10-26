@@ -1,0 +1,5 @@
+SL_COND m: 1957 CCX -> CX (1957.00 T); u: 3658 CCX -> HMR + CZ-if (3658.00 T); f: 2 ANDs as phases (2.00 T)
+SL_COND s: 0 ANDs built under their read bit (0.00 T)
+SL_COND r: 60 absorbed windows (reset or measured end), 60 CCX -> CZ-if (60.00 T)
+SL_COND guards: G1 0 G2 0 G3 0 G4 0
+SL_COND static expected Toffoli 33728.0 -> 28051.0 (-5677.0)

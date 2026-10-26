@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this repository when you use its harness, data, or results. Also cite the relevant upstream sources."
+type: software
+title: "Quantum Circuit Optimiser"
+authors:
+  - family-names: "Raj"
+    given-names: "Snehal"
+repository-code: "https://github.com/SnehalRaj/quantum-circuit-optimiser"
+url: "https://github.com/SnehalRaj/quantum-circuit-optimiser"
+version: "0.1.0"
+abstract: "A reproducible harness for reversible point-addition circuit search, typed edit grammars, optional LLM guidance, and independent circuit audits."
+keywords:
+  - quantum circuits
+  - reversible arithmetic
+  - circuit optimisation
+  - large language models
+license: Apache-2.0

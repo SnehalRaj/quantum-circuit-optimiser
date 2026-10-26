@@ -1,0 +1,4 @@
+{
+  "action_index": 48,
+  "reason": "The archive shows free_s cuts Q from 214 to 198 and also lowers T a little. combined_y adds Toffolis whether or not free_s is on (+355 with it, +342 without), so the best configuration should have free_s on and combined_y off. The current best is c1110 at QT 5.53M. Every measured recipe has u and r on together, so we don't yet know how much each one contributes to the roughly 3.7k drop in Toffolis. Testing c1010 (u alone) against c0110 (r alone), with the other settings at their best values, separates the two effects. If u and r overlap or r adds overhead, one of these could beat c1110."
+}

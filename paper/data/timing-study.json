@@ -1,0 +1,282 @@
+{
+  "study": "100,000-input timing study of recorded circuits",
+  "updated_utc": "2026-10-25T15:05:07.794923+00:00",
+  "protocol_sha256": "6fb2084d58ee2f35944d2e5bf7a975f525fe6a4d2a172a46ae0f6d57722c4aaa",
+  "status": "complete",
+  "environment_at_freeze": {
+    "utc": "2026-10-25T14:47:49.617669+00:00",
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "executable": "/usr/local/bin/python3",
+    "cpu_count": 8,
+    "load_average": [
+      3.86962890625,
+      4.67529296875,
+      4.40576171875
+    ],
+    "hardware_model": {
+      "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+    },
+    "memory_bytes": {
+      "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+    },
+    "cpu_brand": {
+      "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+    }
+  },
+  "concurrency": "Run the three requests sequentially. Native point addition uses four threads; division uses one.",
+  "rows": [
+    {
+      "Q": 130,
+      "T": 6851.0,
+      "failed_inputs": 0,
+      "failed_shots": 0,
+      "pairs": 100000,
+      "construction_wall_seconds": 0.12621733359992504,
+      "construction_cpu_seconds": 0.124639,
+      "evaluation_wall_seconds": 9.21526746172458,
+      "evaluation_cpu_seconds": 8.473761,
+      "simulation_wall_seconds": null,
+      "input_preparation_wall_seconds": 1.2413028748705983,
+      "outcome_archival_wall_seconds": 0.5203047497197986,
+      "evaluation_pipeline_wall_seconds": 10.979725333862007,
+      "scope": "Repeated construction, hashing, simulation and checking combined",
+      "input_sha256": "da0312bcf2931954c27b9340991971c8d6a9503e5856d67c1f3da0b0073b257a",
+      "id": "division16",
+      "name": "Guarded block division, 16 bits",
+      "status": "complete",
+      "streams": 2,
+      "batch_size": 16384,
+      "threads": 1,
+      "operation_sha256": "e322a3fb51ff03dbcd87b395262c13752c411a6c1d03bb471398044bce5a904a",
+      "label": "workshop-paper-20261025/timing-v1/4d6b5b9ea581160dcaefc467da32facd/division16",
+      "alpha": 0.016666666666666666,
+      "upper_bound": 4.0942607450790544e-05,
+      "epsilon": 0.001,
+      "qualified": true,
+      "result_file": "studies/timing/division16/result.json",
+      "result_sha256": "7e20fa08c7daa5c543d9c05d009ab80e21c833f323d06a37aa95836905b91c24",
+      "environment_at_start": {
+        "utc": "2026-10-25T14:51:45.305786+00:00",
+        "platform": "macOS-15.6.1-arm64-arm-64bit",
+        "machine": "arm64",
+        "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "executable": "/usr/local/bin/python3",
+        "cpu_count": 8,
+        "load_average": [
+          28.11376953125,
+          17.5009765625,
+          9.95166015625
+        ],
+        "hardware_model": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "memory_bytes": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "cpu_brand": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        }
+      },
+      "environment_after": {
+        "utc": "2026-10-25T14:51:56.443303+00:00",
+        "platform": "macOS-15.6.1-arm64-arm-64bit",
+        "machine": "arm64",
+        "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "executable": "/usr/local/bin/python3",
+        "cpu_count": 8,
+        "load_average": [
+          23.6953125,
+          17.0361328125,
+          9.9169921875
+        ],
+        "hardware_model": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "memory_bytes": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "cpu_brand": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        }
+      },
+      "batch_size_unit": "input pairs in one two-stream Python call"
+    },
+    {
+      "Q": 2050,
+      "T": 1633537.0,
+      "failed_inputs": 0,
+      "failed_shots": 0,
+      "pairs": 100000,
+      "construction_wall_seconds": 40.82948558218777,
+      "construction_cpu_seconds": 36.401869,
+      "evaluation_wall_seconds": 650.5846144175157,
+      "evaluation_cpu_seconds": 574.655858,
+      "simulation_wall_seconds": null,
+      "input_preparation_wall_seconds": 2.0681958738714457,
+      "outcome_archival_wall_seconds": 0.39760787412524223,
+      "evaluation_pipeline_wall_seconds": 653.0576839996502,
+      "scope": "Repeated construction, hashing, simulation and checking combined",
+      "input_sha256": "a05118211710025fabc23fccea5c7adedf6d0a0958a00863b84a090fa43b005f",
+      "id": "division256",
+      "name": "Offset-96 division, 256 bits",
+      "status": "complete",
+      "streams": 2,
+      "batch_size": 16384,
+      "threads": 1,
+      "operation_sha256": "461cebb88cd90b0d70efc82b977e0c1d6caae97338c8773fada23b472bc360ca",
+      "label": "workshop-paper-20261025/timing-v1/4d6b5b9ea581160dcaefc467da32facd/division256",
+      "alpha": 0.016666666666666666,
+      "upper_bound": 4.0942607450790544e-05,
+      "epsilon": 0.001,
+      "qualified": true,
+      "result_file": "studies/timing/division256/result.json",
+      "result_sha256": "f4c6b6f4982660663d06fa17f4a8d92f8b361bb50efe808c2fa3c8ff67d1fc9a",
+      "environment_at_start": {
+        "utc": "2026-10-25T14:52:14.455085+00:00",
+        "platform": "macOS-15.6.1-arm64-arm-64bit",
+        "machine": "arm64",
+        "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "executable": "/usr/local/bin/python3",
+        "cpu_count": 8,
+        "load_average": [
+          19.7568359375,
+          16.49365234375,
+          9.84765625
+        ],
+        "hardware_model": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "memory_bytes": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "cpu_brand": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        }
+      },
+      "environment_after": {
+        "utc": "2026-10-25T15:03:48.402880+00:00",
+        "platform": "macOS-15.6.1-arm64-arm-64bit",
+        "machine": "arm64",
+        "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "executable": "/usr/local/bin/python3",
+        "cpu_count": 8,
+        "load_average": [
+          6.27978515625,
+          11.67822265625,
+          12.09521484375
+        ],
+        "hardware_model": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "memory_bytes": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "cpu_brand": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        }
+      },
+      "batch_size_unit": "input pairs in one two-stream Python call"
+    },
+    {
+      "Q": 1270,
+      "T": 793801.02822,
+      "failed_inputs": 26,
+      "failed_shots": 52,
+      "pairs": 100000,
+      "construction_wall_seconds": 51.194566999562085,
+      "construction_cpu_seconds": 45.250332,
+      "evaluation_wall_seconds": 144.318104124628,
+      "evaluation_cpu_seconds": 361.14574899999997,
+      "simulation_wall_seconds": 93.628535791,
+      "load_wall_seconds": 1.493503834,
+      "preparation_wall_seconds": 45.628186583,
+      "scope": "Frozen native generator and native checker. Simulation time excludes load and input preparation.",
+      "input_sha256": "fc68d9f1a90da3b45fde6f1e3423b196d2a33c983dbad7d88dade241fbab6179",
+      "id": "point_addition",
+      "name": "Qualified settings of full secp256k1 point addition",
+      "status": "complete",
+      "streams": 2,
+      "batch_size": 64,
+      "threads": 4,
+      "operation_sha256": "9271a9aa2b368b88989e905a932d5469baece5f3af00c0e928e8dcb7b9ce3c01",
+      "label": "workshop-paper-20261025/timing-v1/4d6b5b9ea581160dcaefc467da32facd/point-addition",
+      "alpha": 0.016666666666666666,
+      "upper_bound": 0.00039199920758302263,
+      "epsilon": 0.001,
+      "qualified": true,
+      "result_file": "studies/timing/point_addition/result.json",
+      "result_sha256": "a53578d911991cda134893f277749b6676b62e1698db125e3f109f292fd6ece1",
+      "environment_at_start": {
+        "utc": "2026-10-25T14:48:00.160371+00:00",
+        "platform": "macOS-15.6.1-arm64-arm-64bit",
+        "machine": "arm64",
+        "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "executable": "/usr/local/bin/python3",
+        "cpu_count": 8,
+        "load_average": [
+          4.7314453125,
+          4.833984375,
+          4.46484375
+        ],
+        "hardware_model": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "memory_bytes": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "cpu_brand": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        }
+      },
+      "environment_after": {
+        "utc": "2026-10-25T14:51:19.481488+00:00",
+        "platform": "macOS-15.6.1-arm64-arm-64bit",
+        "machine": "arm64",
+        "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "executable": "/usr/local/bin/python3",
+        "cpu_count": 8,
+        "load_average": [
+          37.82470703125,
+          18.1962890625,
+          9.9638671875
+        ],
+        "hardware_model": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "memory_bytes": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "cpu_brand": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        }
+      },
+      "batch_size_unit": "input cases in one native stream task"
+    }
+  ],
+  "limitations": [
+    "The two Python evaluation times include repeated construction and hashing. They are not simulation-only times.",
+    "The runs share a workstation with other applications and experiments. Wall times do not describe an isolated machine.",
+    "These are fixed representative circuits, rather than width-only scaling of one identical algorithm."
+  ],
+  "hardware": {
+    "captured_utc": "2026-10-25T14:49:30.437203+00:00",
+    "load_average": [
+      20.359375,
+      9.16943359375,
+      6.1123046875
+    ],
+    "source": "sysctl -n on each named key",
+    "hw.model": "Mac14,15",
+    "hw.memsize": "25769803776",
+    "hw.ncpu": "8",
+    "hw.physicalcpu": "8",
+    "machdep.cpu.brand_string": "Apple M2"
+  },
+  "verification": {
+    "file": "studies/timing/verification.json",
+    "sha256": "b48eb90f86c33d0e709ea642b4d4feec129eba84511640b3dccaf8d7b63c2697",
+    "scope": "Recounted all 300000 inputs and 600000 shot verdicts; checked 71 frozen source files and all circuit bindings."
+  }
+}

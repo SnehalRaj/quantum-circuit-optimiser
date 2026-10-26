@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "protocol_sha256": "02bad9a0d5cb3f174bb436f29de4432fb9a92b35f0aa0c1f9e60f6a6b239af20",
+  "results_sha256": "fd1fe46b4fb15410ee8abe712d1ab2cb6d0b0b2f5927e1ff19033a65e7247043",
+  "recounted_stream_verdicts": 1327104,
+  "searches": 20,
+  "fresh_audits": 17,
+  "prepared_parent_qualified": true,
+  "scope": "All evaluation identities, row counts, joint failures, binomial bounds, checkpoints, and paired differences verified"
+}

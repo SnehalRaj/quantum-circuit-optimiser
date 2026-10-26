@@ -1,0 +1,14 @@
+{
+  "captured_utc": "2026-10-25T14:49:30.437203+00:00",
+  "load_average": [
+    20.359375,
+    9.16943359375,
+    6.1123046875
+  ],
+  "source": "sysctl -n on each named key",
+  "hw.model": "Mac14,15",
+  "hw.memsize": "25769803776",
+  "hw.ncpu": "8",
+  "hw.physicalcpu": "8",
+  "machdep.cpu.brand_string": "Apple M2"
+}

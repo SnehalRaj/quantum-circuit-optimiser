@@ -1,0 +1,4 @@
+{
+  "action_index": 1,
+  "reason": "From the archive: free_s is what lowers Q (214\u2192198). u gives the biggest T cut, about 3.7k (c0000\u2192c1100). r saves only about 60 Toffolis (c1010 vs c1110). combined_y adds about 350\u2013580 Toffolis (c1110\u2192c1111, c0110\u2192c0111). c1011 is the strongest untested recipe because it has both u and free_s. Its predicted QT is about 5.6M, close to the best so far (c1110, 5.53M), and running it tests whether combined_y behaves differently when r is off. c0010 adds free_s alone to the parent, which isolates that rule's effect on Q and T and fills a gap in the attribution. Recipes without free_s keep Q at 214, so they can't compete."
+}

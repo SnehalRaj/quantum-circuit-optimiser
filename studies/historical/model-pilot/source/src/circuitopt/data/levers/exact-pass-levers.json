@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "scope": "Text patterns for exact post-pass families in public point-addition sources. A match reports a setting; it does not prove exactness.",
+  "scan_suffixes": [".rs", ".sh", ".toml", ".py", ".json", ".env", ".cfg"],
+  "comment_prefixes": {".rs": ["//"], "default": ["#"]},
+  "families": [
+    {
+      "id": "cond-and-pass",
+      "name": "conditional-AND pass",
+      "module_files": ["cond_pass.rs"],
+      "source": "src/point_add/cond_pass.rs, header comment (author jackylee0424, as credited in public note 59359890)",
+      "documented_levers": {
+        "m": "a CCX whose AND equals one control's value becomes a CX",
+        "u": "a CCX that XORs a wire's whole AND back out becomes an X-basis measurement and a conditional CZ",
+        "f": "a CCX whose result only phases read becomes Clifford phases on the operands",
+        "s": "a CCX read only under one classical bit is built under that bit",
+        "r": "a reset or measured end absorbs the writes before it as phases under the outcome"
+      },
+      "aliases": {"1": "mufsr", "0": ""},
+      "fixed_calls": [
+        {"regex": "cond_pass::run_with\\(\\s*[A-Za-z_][A-Za-z0-9_]*\\s*,\\s*\"([^\"]*)\"\\s*\\)"}
+      ],
+      "setting_calls": [
+        {"regex": "cond_pass::run\\(", "setting": "SL_COND"}
+      ],
+      "settings": [
+        {"name": "SL_COND", "regex": "(?<![A-Za-z0-9_])SL_COND\\s*=\\s*[\"']?([A-Za-z0-9]*)"},
+        {"name": "SL_COND", "regex": "set_var\\(\\s*\"SL_COND\"\\s*,\\s*\"([^\"]*)\"\\s*\\)"},
+        {"name": "SL_COND", "regex": "\"SL_COND\"\\s*:\\s*\"([^\"]*)\""}
+      ]
+    }
+  ],
+  "post_pass_modules": [
+    {"module": "truth_simplify", "files": ["truth_simplify.rs"], "call": "truth_simplify::simplify_products\\s*\\("},
+    {"module": "classical_wide", "files": ["classical_wide/mod.rs", "classical_wide.rs"], "call": "classical_wide::simplify_products\\s*\\("},
+    {"module": "cond_pass", "files": ["cond_pass.rs"], "call": "cond_pass::run(_with)?\\s*\\("}
+  ]
+}

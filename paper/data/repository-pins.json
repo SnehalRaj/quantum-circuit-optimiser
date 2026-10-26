@@ -1,0 +1,14 @@
+{
+  "reversible-circuit-optimizer": {
+    "head": "c9982c5d87c790799898bfdac18355edfd9fdc21",
+    "branch": "main"
+  },
+  "reversible-circuit-optimizer-openevolve-pilot": {
+    "head": "c751e6e6fceb0901b10166662f8e345245c34680",
+    "branch": "experiment/final-pareto-eps1e3-20261024"
+  },
+  "reversible-circuit-optimizer-strategies": {
+    "head": "eacf683839d0f439dba239bb3b6f652db5f06766",
+    "branch": "integration/frontier-strategies-20261025"
+  }
+}

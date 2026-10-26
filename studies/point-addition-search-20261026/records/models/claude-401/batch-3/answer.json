@@ -1,0 +1,4 @@
+{
+  "action_index": 54,
+  "reason": "The archive shows rule u is the main lever on T: about 31.8k down to about 28.1k. free_s is the main lever on Q (214 down to 198). r gives a small T gain of about 60, and combined_y adds about 300 T. Every untested recipe without u should land near 31.7k T, so even with free_s its QT would be about 6.27M. The only two remaining recipes with u, c1101 and c1001, should come in around 214 x 28.3k, about 6.07M, so they have the lowest expected QT of what's left. They also test combined_y with u but without free_s, a combination not yet measured. Neither is likely to beat c1110 (5.53M), but this pair makes the best use of the last two slots."
+}

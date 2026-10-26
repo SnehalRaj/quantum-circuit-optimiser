@@ -1,0 +1,69 @@
+{
+ "experiment": "P6a confirmatory audit of the 256-bit offset-96 division circuit",
+ "strategy": "S6",
+ "protocol": {
+  "fixed_utc": "2026-10-25T03:48:44+00:00",
+  "fixed_by": "coordinator (Claude Opus 5.5), before any P6a run",
+  "circuit": "recipe(256) of results/scripts/e9_scale.py with widths w[t] = min(256, max(1, 512 - 96 - t)) for t in 0..511 (offset d = 96)",
+  "audit": {
+   "evaluator": "circuitopt.division.evaluate_division (two streams per input)",
+   "pairs": 20480,
+   "batch_size": 1024,
+   "label": "strategy-experiments-20261025/confirm-v1/p6a-d96"
+  },
+  "frame_scan": {
+   "denominators": 2000000,
+   "seed_label": "strategy-experiments-20261025/confirm-v1/p6a-frame-scan",
+   "offsets": [
+    96,
+    104,
+    112
+   ]
+  },
+  "decision_rule": "Qualify the d = 96 circuit when the one-sided Clopper-Pearson upper bound on failed inputs at alpha 0.05/32 is at most 0.001. Report every count, including channels and first failures. One run; no retry on an outcome.",
+  "script": "results/scripts/e12_p6a_audit256.py",
+  "output": "results/data/p6a-audit256.json"
+ },
+ "circuit": {
+  "bits": 256,
+  "offset": 96,
+  "T": 1633537.0,
+  "Q": 2050,
+  "operation_sha256": "461cebb88cd90b0d70efc82b977e0c1d6caae97338c8773fada23b472bc360ca",
+  "operation_count": 15184147
+ },
+ "audit": {
+  "pairs": 20480,
+  "label": "strategy-experiments-20261025/confirm-v1/p6a-d96",
+  "input_sha256": "e7541134288caf6fdad3f05038b5dbb63f784f5615293743f912d4ba286bb8db",
+  "failed_inputs": 0,
+  "failed_shots": 0,
+  "channel_failed_inputs": {
+   "output": 0,
+   "phase": 0,
+   "scratch": 0
+  },
+  "first_failures": [],
+  "alpha": 0.0015625,
+  "upper_bound": 0.00031545161047326977,
+  "epsilon": 0.001,
+  "decision": "qualified",
+  "cpu_seconds": 1275.67047
+ },
+ "frame_scan": {
+  "denominators": 2000000,
+  "seed_label": "strategy-experiments-20261025/confirm-v1/p6a-frame-scan",
+  "smallest_slack": 103,
+  "below_offset": {
+   "96": 0,
+   "104": 1,
+   "112": 63
+  },
+  "upper_bound_95": {
+   "96": 1.4978650149760738e-06,
+   "104": 2.3719300391365425e-06,
+   "112": 3.885103741113324e-05
+  },
+  "cpu_seconds": 308.399592
+ }
+}

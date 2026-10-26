@@ -1,0 +1,2685 @@
+{
+  "experiment": "H003",
+  "utc": "2026-10-21T13:26:58.892767+00:00",
+  "results": {
+    "neither": {
+      "label": "td-H002-20261021-fresh0",
+      "mode": "random",
+      "pairs": 1024,
+      "streams": 2,
+      "shots": 2048,
+      "Q": 1335,
+      "meanT": 989679.733,
+      "T": 989680,
+      "TQ": 1321222800,
+      "emitted_toffoli": 1043206,
+      "failed_inputs": 0,
+      "failed_shots": 0,
+      "coord_failures": 0,
+      "phase_failures": 0,
+      "ancilla_failures": 0,
+      "coords_inputs": [],
+      "phase_inputs": [],
+      "ancilla_inputs": [],
+      "failed_indices": [],
+      "detailed_capped": false,
+      "cp_upper_per_input": 0.0029212446353880273,
+      "cp_upper_per_shot": 0.0014616905873806323,
+      "ops_sha3_16": "1f7677bd88ed6d0a",
+      "seconds": 2.6,
+      "wall": null,
+      "checker_id": null,
+      "artifact_sha3": "1f7677bd88ed6d0ac58e48600696a24189facf977648ab02ef61e47723dba7f1",
+      "checker_sha256": "e8975f8fa20501c4dbfec029d48f9c61477bd0de6fe89ce6ee230a1ef9fbd93f",
+      "emit_usage": {
+        "exit_code": 0,
+        "wall_s": 1.7373403748497367,
+        "user_s": 1.037434,
+        "system_s": 0.18296199999999999,
+        "max_rss_bytes": 913489920,
+        "rss_scope": "Child process tree high-water mark from getrusage; not summed concurrent RSS.",
+        "name": "H003-emit-neither",
+        "command": [
+          "{redacted-path-a17f21edccac}"
+        ]
+      },
+      "check_usage": {
+        "exit_code": 0,
+        "wall_s": 2.5879942504689097,
+        "user_s": 4.51173,
+        "system_s": 0.205626,
+        "max_rss_bytes": 1562345472,
+        "rss_scope": "Child process tree high-water mark from getrusage; not summed concurrent RSS.",
+        "name": "check-decoder_enabled",
+        "command": [
+          "{redacted-path-dced75cd523b}",
+          "--ops",
+          "{redacted-path-040dc02a5cb4}",
+          "--mode",
+          "random",
+          "--label",
+          "td-H002-20261021-fresh0",
+          "--pairs",
+          "1024",
+          "--streams",
+          "2",
+          "--threads",
+          "4",
+          "--out",
+          "{redacted-path-c83c1372e717}"
+        ],
+        "wrapper_wall_s": 2.6170085417106748
+      },
+      "evaluation_reused": true,
+      "static_by_phase": {
+        "coord_x_sub": 347,
+        "coord_y_sub": 347,
+        "pp_div_walk": 93840,
+        "pp_div_replay": 299024,
+        "pp_div_walkback": 102447,
+        "coord_add3x": 347,
+        "square": 50648,
+        "pp_mul_walk": 102446,
+        "pp_mul_replay": 120,
+        "pp_mul_walkback": 392946,
+        "coord_y_sub_final": 347,
+        "coord_rsub_final": 347
+      },
+      "static_by_site": [
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 61
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 63
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 527
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 92660
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 527
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 5
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 270
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 25
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 197112
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1714
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 51506
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 2214
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1923,
+          "kind": "CCX",
+          "count": 45756
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 211
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 211
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 100844
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 17
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 108
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 48594
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 1235
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 9
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 513
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 54
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 9
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 234
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 61
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 63
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 100844
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 2
+        },
+        {
+          "phase": "pp_mul_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 108
+        },
+        {
+          "phase": "pp_mul_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 10
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 289772
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1725
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 51696
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 2215
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1923,
+          "kind": "CCX",
+          "count": 45756
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 4
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 270
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 32
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        }
+      ],
+      "peak_lines": [
+        "PEAK_CENSUS_BEGIN best_active=1335 best_ops=8442444 best_phase=pp_mul_walkback n_live=1335 n_groups=11 win=[0,20000000]",
+        "PEAK_OWN count=738 phase=pp_mul_walk caller=src/bin/../point_add/pingpong.rs:805",
+        "PEAK_OWN count=256 phase=init caller=src/bin/../point_add/mod.rs:197",
+        "PEAK_OWN count=256 phase=pp_mul_replay caller=src/bin/../point_add/pingpong.rs:394",
+        "PEAK_OWN count=61 phase=pp_mul_walkback caller=src/bin/../point_add/pingpong.rs:1857",
+        "PEAK_OWN count=16 phase=pp_mul_replay caller=reacquire:0",
+        "PEAK_OWN count=3 phase=pp_mul_walkback caller=src/bin/../point_add/pingpong.rs:1152",
+        "PEAK_OWN count=1 phase=init caller=src/bin/../point_add/mod.rs:196",
+        "PEAK_OWN count=1 phase=multiply caller=src/bin/../point_add/pingpong.rs:2082",
+        "PEAK_OWN count=1 phase=pp_mul_walkback caller=src/bin/../point_add/pingpong.rs:1574",
+        "PEAK_OWN count=1 phase=pp_mul_walkback caller=src/bin/../point_add/pingpong.rs:1759",
+        "PEAK_OWN count=1 phase=pp_mul_walkback caller=src/bin/../point_add/pingpong.rs:1991",
+        "PEAK_CENSUS_END"
+      ],
+      "layout_log": "H003-emit-neither.log"
+    },
+    "division": {
+      "label": "td-H002-20261021-fresh0",
+      "mode": "random",
+      "pairs": 1024,
+      "streams": 2,
+      "shots": 2048,
+      "Q": 1335,
+      "meanT": 990113.283,
+      "T": 990113,
+      "TQ": 1321800855,
+      "emitted_toffoli": 1043925,
+      "failed_inputs": 0,
+      "failed_shots": 0,
+      "coord_failures": 0,
+      "phase_failures": 0,
+      "ancilla_failures": 0,
+      "coords_inputs": [],
+      "phase_inputs": [],
+      "ancilla_inputs": [],
+      "failed_indices": [],
+      "detailed_capped": false,
+      "cp_upper_per_input": 0.0029212446353880273,
+      "cp_upper_per_shot": 0.0014616905873806323,
+      "ops_sha3_16": "90438e80265e42cf",
+      "seconds": 2.5,
+      "wall": null,
+      "checker_id": null,
+      "check_usage": {
+        "exit_code": 0,
+        "wall_s": 2.5592080000787973,
+        "user_s": 4.49845,
+        "system_s": 0.18759299999999998,
+        "max_rss_bytes": 1559592960,
+        "rss_scope": "Child process tree high-water mark from getrusage; not summed concurrent RSS.",
+        "name": "H003-check-division",
+        "command": [
+          "{redacted-path-dced75cd523b}",
+          "--ops",
+          "{redacted-path-9b8aecf14a3e}",
+          "--mode",
+          "random",
+          "--label",
+          "td-H002-20261021-fresh0",
+          "--pairs",
+          "1024",
+          "--streams",
+          "2",
+          "--threads",
+          "4",
+          "--out",
+          "{redacted-path-c96577ab137d}"
+        ]
+      },
+      "evaluation_reused": false,
+      "artifact_sha3": "90438e80265e42cfecb291205d0490f4625e2a23386b64a27282e26566bc3fd9",
+      "checker_sha256": "e8975f8fa20501c4dbfec029d48f9c61477bd0de6fe89ce6ee230a1ef9fbd93f",
+      "emit_usage": {
+        "exit_code": 0,
+        "wall_s": 1.2126093748956919,
+        "user_s": 1.003835,
+        "system_s": 0.175053,
+        "max_rss_bytes": 1011924992,
+        "rss_scope": "Child process tree high-water mark from getrusage; not summed concurrent RSS.",
+        "name": "H003-emit-division",
+        "command": [
+          "{redacted-path-a17f21edccac}"
+        ]
+      },
+      "static_by_phase": {
+        "coord_x_sub": 347,
+        "coord_y_sub": 347,
+        "pp_div_walk": 93840,
+        "pp_div_replay": 299743,
+        "pp_div_walkback": 102447,
+        "coord_add3x": 347,
+        "square": 50648,
+        "pp_mul_walk": 102446,
+        "pp_mul_replay": 120,
+        "pp_mul_walkback": 392946,
+        "coord_y_sub_final": 347,
+        "coord_rsub_final": 347
+      },
+      "static_by_site": [
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 61
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 63
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 527
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 92660
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 527
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 5
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 270
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 25
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 197112
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 2247
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 51692
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 2214
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1923,
+          "kind": "CCX",
+          "count": 45756
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 211
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 211
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 100844
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 17
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 108
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 48594
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 1235
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 9
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 513
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 54
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 9
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 234
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 61
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 63
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 100844
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 2
+        },
+        {
+          "phase": "pp_mul_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 108
+        },
+        {
+          "phase": "pp_mul_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 10
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 289772
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1725
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 51696
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 2215
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1923,
+          "kind": "CCX",
+          "count": 45756
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 4
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 270
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 32
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        }
+      ],
+      "peak_lines": [
+        "PEAK_CENSUS_BEGIN best_active=1335 best_ops=5067286 best_phase=pp_div_replay n_live=1335 n_groups=11 win=[0,20000000]",
+        "PEAK_OWN count=527 phase=pp_div_walk caller=src/bin/../point_add/pingpong.rs:805",
+        "PEAK_OWN count=256 phase=init caller=src/bin/../point_add/mod.rs:197",
+        "PEAK_OWN count=256 phase=pp_div_replay caller=src/bin/../point_add/pingpong.rs:327",
+        "PEAK_OWN count=211 phase=pp_div_replay caller=src/bin/../point_add/pingpong.rs:805",
+        "PEAK_OWN count=61 phase=pp_div_replay caller=src/bin/../point_add/pingpong.rs:1857",
+        "PEAK_OWN count=9 phase=divide caller=src/bin/../point_add/pingpong.rs:2082",
+        "PEAK_OWN count=9 phase=init caller=src/bin/../point_add/mod.rs:196",
+        "PEAK_OWN count=3 phase=pp_div_replay caller=src/bin/../point_add/pingpong.rs:1152",
+        "PEAK_OWN count=1 phase=pp_div_replay caller=src/bin/../point_add/pingpong.rs:1487",
+        "PEAK_OWN count=1 phase=pp_div_replay caller=src/bin/../point_add/pingpong.rs:1759",
+        "PEAK_OWN count=1 phase=pp_div_walk caller=src/bin/../point_add/pingpong.rs:1311",
+        "PEAK_CENSUS_END"
+      ],
+      "layout_log": "H003-emit-division.log"
+    },
+    "multiplication": {
+      "label": "td-H002-20261021-fresh0",
+      "mode": "random",
+      "pairs": 1024,
+      "streams": 2,
+      "shots": 2048,
+      "Q": 1336,
+      "meanT": 990105.79,
+      "T": 990106,
+      "TQ": 1322781616,
+      "emitted_toffoli": 1043947,
+      "failed_inputs": 0,
+      "failed_shots": 0,
+      "coord_failures": 0,
+      "phase_failures": 0,
+      "ancilla_failures": 0,
+      "coords_inputs": [],
+      "phase_inputs": [],
+      "ancilla_inputs": [],
+      "failed_indices": [],
+      "detailed_capped": false,
+      "cp_upper_per_input": 0.0029212446353880273,
+      "cp_upper_per_shot": 0.0014616905873806323,
+      "ops_sha3_16": "3d8ff022772560a5",
+      "seconds": 2.5,
+      "wall": null,
+      "checker_id": null,
+      "check_usage": {
+        "exit_code": 0,
+        "wall_s": 2.5142167499288917,
+        "user_s": 4.485554,
+        "system_s": 0.15872999999999998,
+        "max_rss_bytes": 1563361280,
+        "rss_scope": "Child process tree high-water mark from getrusage; not summed concurrent RSS.",
+        "name": "H003-check-multiplication",
+        "command": [
+          "{redacted-path-dced75cd523b}",
+          "--ops",
+          "{redacted-path-a9f1f6f5e2c1}",
+          "--mode",
+          "random",
+          "--label",
+          "td-H002-20261021-fresh0",
+          "--pairs",
+          "1024",
+          "--streams",
+          "2",
+          "--threads",
+          "4",
+          "--out",
+          "{redacted-path-bec75c561d73}"
+        ]
+      },
+      "evaluation_reused": false,
+      "artifact_sha3": "3d8ff022772560a581c7c85ec5ea939ec699336515a46f3abd8b24b73ad8463d",
+      "checker_sha256": "e8975f8fa20501c4dbfec029d48f9c61477bd0de6fe89ce6ee230a1ef9fbd93f",
+      "emit_usage": {
+        "exit_code": 0,
+        "wall_s": 1.1981566669419408,
+        "user_s": 1.0195940000000001,
+        "system_s": 0.163465,
+        "max_rss_bytes": 904740864,
+        "rss_scope": "Child process tree high-water mark from getrusage; not summed concurrent RSS.",
+        "name": "H003-emit-multiplication",
+        "command": [
+          "{redacted-path-a17f21edccac}"
+        ]
+      },
+      "static_by_phase": {
+        "coord_x_sub": 347,
+        "coord_y_sub": 347,
+        "pp_div_walk": 93840,
+        "pp_div_replay": 299024,
+        "pp_div_walkback": 102447,
+        "coord_add3x": 347,
+        "square": 50648,
+        "pp_mul_walk": 102446,
+        "pp_mul_replay": 120,
+        "pp_mul_walkback": 393687,
+        "coord_y_sub_final": 347,
+        "coord_rsub_final": 347
+      },
+      "static_by_site": [
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 61
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 63
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 527
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 92660
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 527
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 5
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 270
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 25
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 197112
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1714
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 51506
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 2214
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1923,
+          "kind": "CCX",
+          "count": 45756
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 211
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 211
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 100844
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 17
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 108
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 48594
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 1235
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 9
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 513
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 54
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 9
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 234
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 61
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 63
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 100844
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 2
+        },
+        {
+          "phase": "pp_mul_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 108
+        },
+        {
+          "phase": "pp_mul_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 10
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 289772
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 2254
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 51908
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 2215
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1923,
+          "kind": "CCX",
+          "count": 45756
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 4
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 270
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 32
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        }
+      ],
+      "peak_lines": [
+        "PEAK_CENSUS_BEGIN best_active=1336 best_ops=8442490 best_phase=pp_mul_walkback n_live=1336 n_groups=12 win=[0,20000000]",
+        "PEAK_OWN count=738 phase=pp_mul_walk caller=src/bin/../point_add/pingpong.rs:805",
+        "PEAK_OWN count=256 phase=init caller=src/bin/../point_add/mod.rs:197",
+        "PEAK_OWN count=256 phase=pp_mul_replay caller=src/bin/../point_add/pingpong.rs:394",
+        "PEAK_OWN count=61 phase=pp_mul_walkback caller=src/bin/../point_add/pingpong.rs:1857",
+        "PEAK_OWN count=16 phase=pp_mul_replay caller=reacquire:0",
+        "PEAK_OWN count=3 phase=pp_mul_walkback caller=src/bin/../point_add/pingpong.rs:1152",
+        "PEAK_OWN count=1 phase=init caller=src/bin/../point_add/mod.rs:196",
+        "PEAK_OWN count=1 phase=multiply caller=src/bin/../point_add/pingpong.rs:2082",
+        "PEAK_OWN count=1 phase=pp_mul_walk caller=src/bin/../point_add/pingpong.rs:1311",
+        "PEAK_OWN count=1 phase=pp_mul_walkback caller=src/bin/../point_add/pingpong.rs:1574",
+        "PEAK_OWN count=1 phase=pp_mul_walkback caller=src/bin/../point_add/pingpong.rs:1759",
+        "PEAK_OWN count=1 phase=pp_mul_walkback caller=src/bin/../point_add/pingpong.rs:1991",
+        "PEAK_CENSUS_END"
+      ],
+      "layout_log": "H003-emit-multiplication.log"
+    },
+    "both": {
+      "label": "td-H002-20261021-fresh0",
+      "mode": "random",
+      "pairs": 1024,
+      "streams": 2,
+      "shots": 2048,
+      "Q": 1336,
+      "meanT": 990483.275,
+      "T": 990483,
+      "TQ": 1323285288,
+      "emitted_toffoli": 1044666,
+      "failed_inputs": 0,
+      "failed_shots": 0,
+      "coord_failures": 0,
+      "phase_failures": 0,
+      "ancilla_failures": 0,
+      "coords_inputs": [],
+      "phase_inputs": [],
+      "ancilla_inputs": [],
+      "failed_indices": [],
+      "detailed_capped": false,
+      "cp_upper_per_input": 0.0029212446353880273,
+      "cp_upper_per_shot": 0.0014616905873806323,
+      "ops_sha3_16": "6e5d5819c9741ade",
+      "seconds": 2.7,
+      "wall": null,
+      "checker_id": null,
+      "artifact_sha3": "6e5d5819c9741ade1332ecf2b1b5c991c276b115a607b9d1d6d6eff93ee6e5c1",
+      "checker_sha256": "e8975f8fa20501c4dbfec029d48f9c61477bd0de6fe89ce6ee230a1ef9fbd93f",
+      "emit_usage": {
+        "exit_code": 0,
+        "wall_s": 1.1878571677953005,
+        "user_s": 1.003973,
+        "system_s": 0.167594,
+        "max_rss_bytes": 1008451584,
+        "rss_scope": "Child process tree high-water mark from getrusage; not summed concurrent RSS.",
+        "name": "H003-emit-both",
+        "command": [
+          "{redacted-path-a17f21edccac}"
+        ]
+      },
+      "check_usage": {
+        "exit_code": 0,
+        "wall_s": 2.7261832915246487,
+        "user_s": 4.536931,
+        "system_s": 0.189916,
+        "max_rss_bytes": 1562787840,
+        "rss_scope": "Child process tree high-water mark from getrusage; not summed concurrent RSS.",
+        "name": "check-bit_retained",
+        "command": [
+          "{redacted-path-dced75cd523b}",
+          "--ops",
+          "{redacted-path-afd15f126708}",
+          "--mode",
+          "random",
+          "--label",
+          "td-H002-20261021-fresh0",
+          "--pairs",
+          "1024",
+          "--streams",
+          "2",
+          "--threads",
+          "4",
+          "--out",
+          "{redacted-path-ecc8160f2289}"
+        ],
+        "wrapper_wall_s": 2.7528062500059605
+      },
+      "evaluation_reused": true,
+      "static_by_phase": {
+        "coord_x_sub": 347,
+        "coord_y_sub": 347,
+        "pp_div_walk": 93840,
+        "pp_div_replay": 299743,
+        "pp_div_walkback": 102447,
+        "coord_add3x": 347,
+        "square": 50648,
+        "pp_mul_walk": 102446,
+        "pp_mul_replay": 120,
+        "pp_mul_walkback": 393687,
+        "coord_y_sub_final": 347,
+        "coord_rsub_final": 347
+      },
+      "static_by_site": [
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_x_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 61
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 63
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 527
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 92660
+        },
+        {
+          "phase": "pp_div_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 527
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 5
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 270
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 25
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 197112
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 2247
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 51692
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 2214
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1923,
+          "kind": "CCX",
+          "count": 45756
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 211
+        },
+        {
+          "phase": "pp_div_replay",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 211
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 100844
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 17
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 108
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_div_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_add3x",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 48594
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 1235
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 9
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 513
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 54
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 9
+        },
+        {
+          "phase": "square",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 234
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 61
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 63
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 100844
+        },
+        {
+          "phase": "pp_mul_walk",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 2
+        },
+        {
+          "phase": "pp_mul_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 108
+        },
+        {
+          "phase": "pp_mul_replay",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 10
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 289772
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 2254
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 51908
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1153,
+          "kind": "CCX",
+          "count": 2215
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 1923,
+          "kind": "CCX",
+          "count": 45756
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/pingpong.rs",
+          "line": 967,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 171,
+          "kind": "CCX",
+          "count": 738
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 4
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 270
+        },
+        {
+          "phase": "pp_mul_walkback",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 32
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_y_sub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/modular.rs",
+          "line": 123,
+          "kind": "CCX",
+          "count": 256
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 154,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 155,
+          "kind": "CCX",
+          "count": 57
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/const_arith.rs",
+          "line": 67,
+          "kind": "CCX",
+          "count": 6
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 38,
+          "kind": "CCX",
+          "count": 1
+        },
+        {
+          "phase": "coord_rsub_final",
+          "file": "src/bin/../point_add/compare.rs",
+          "line": 43,
+          "kind": "CCX",
+          "count": 26
+        }
+      ],
+      "peak_lines": [
+        "PEAK_CENSUS_BEGIN best_active=1336 best_ops=8452710 best_phase=pp_mul_walkback n_live=1336 n_groups=12 win=[0,20000000]",
+        "PEAK_OWN count=738 phase=pp_mul_walk caller=src/bin/../point_add/pingpong.rs:805",
+        "PEAK_OWN count=256 phase=init caller=src/bin/../point_add/mod.rs:197",
+        "PEAK_OWN count=256 phase=pp_mul_replay caller=src/bin/../point_add/pingpong.rs:394",
+        "PEAK_OWN count=61 phase=pp_mul_walkback caller=src/bin/../point_add/pingpong.rs:1857",
+        "PEAK_OWN count=16 phase=pp_mul_replay caller=reacquire:0",
+        "PEAK_OWN count=3 phase=pp_mul_walkback caller=src/bin/../point_add/pingpong.rs:1152",
+        "PEAK_OWN count=1 phase=init caller=src/bin/../point_add/mod.rs:196",
+        "PEAK_OWN count=1 phase=multiply caller=src/bin/../point_add/pingpong.rs:2082",
+        "PEAK_OWN count=1 phase=pp_mul_walk caller=src/bin/../point_add/pingpong.rs:1311",
+        "PEAK_OWN count=1 phase=pp_mul_walkback caller=src/bin/../point_add/pingpong.rs:1574",
+        "PEAK_OWN count=1 phase=pp_mul_walkback caller=src/bin/../point_add/pingpong.rs:1759",
+        "PEAK_OWN count=1 phase=pp_mul_walkback caller=src/bin/../point_add/pingpong.rs:1991",
+        "PEAK_CENSUS_END"
+      ],
+      "layout_log": "H003-emit-both.log"
+    }
+  },
+  "static_interaction": 0,
+  "meanT_interaction": -56.065000000060536,
+  "q_prediction_supported": true
+}

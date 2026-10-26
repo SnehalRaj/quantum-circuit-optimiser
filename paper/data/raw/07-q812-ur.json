@@ -1,0 +1,91 @@
+{
+  "id": "q812-ur",
+  "stage": "calibration",
+  "status": "complete",
+  "binding": {
+    "checker_sha256": "abf8572a7ec9318888e564778658e89b965d9ba6aafdd24a23beeadc46bdf260",
+    "ops_sha256": "f8c6e07c328356f59f73b87b79303fc774eae2c9b7bfc7c5be484ee5f7fc6d25",
+    "pairs": 20480,
+    "streams": 2,
+    "label": "frontier-levers-20261025/slot-08/19290a81e88f335ac4b93844bf872f8d",
+    "protocol_sha256": "f5d4b4161033f655198102cffed7db24b923b1da105db6ad5d6c2c25149b4bf2"
+  },
+  "Q": 812,
+  "T": 10071306.634375,
+  "S": 8177901284,
+  "pairs": 20480,
+  "streams": 2,
+  "counts": {
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "failed_indices": [],
+    "channel_failed_inputs": {
+      "coordinate": 0,
+      "phase": 0,
+      "workspace": 0,
+      "addend": 0
+    },
+    "channel_failed_shots": {
+      "coordinate": 0,
+      "phase": 0,
+      "workspace": 0,
+      "addend": 0
+    },
+    "packet_sha256": "27057069c99b03e3c1578c363e7b872e31021c8217ec3d0717700a619649f2ff"
+  },
+  "timings": {
+    "load_seconds": 3.756941333,
+    "preparation_seconds": 8.676929333,
+    "simulation_seconds": 83.24933175,
+    "total_seconds": 101.792877875
+  },
+  "process": {
+    "argv": [
+      "{redacted-path-a3428e2a1f91}",
+      "--ops",
+      "{redacted-path-3e70c39aaadf}",
+      "--pairs",
+      "20480",
+      "--streams",
+      "2",
+      "--threads",
+      "4",
+      "--label",
+      "frontier-levers-20261025/slot-08/19290a81e88f335ac4b93844bf872f8d",
+      "--out",
+      "{redacted-path-4ae5db813b50}",
+      "--per-input",
+      "{redacted-path-95a416c4addc}",
+      "--progress",
+      "{redacted-path-149e39f5e4ba}"
+    ],
+    "started_utc": "2026-10-25T05:20:32.183709+00:00",
+    "binding": {
+      "checker_sha256": "abf8572a7ec9318888e564778658e89b965d9ba6aafdd24a23beeadc46bdf260",
+      "ops_sha256": "f8c6e07c328356f59f73b87b79303fc774eae2c9b7bfc7c5be484ee5f7fc6d25",
+      "pairs": 20480,
+      "streams": 2,
+      "label": "frontier-levers-20261025/slot-08/19290a81e88f335ac4b93844bf872f8d",
+      "protocol_sha256": "f5d4b4161033f655198102cffed7db24b923b1da105db6ad5d6c2c25149b4bf2"
+    },
+    "status": "completed",
+    "returncode": 0,
+    "wall_seconds": 102.18503145966679
+  },
+  "bounds": {
+    "observed_rate": 0.0,
+    "pointwise_two_sided95": [
+      0.0,
+      0.00018010484626992
+    ],
+    "family_upper95": 0.00031545161047326977,
+    "alpha_per_member": 0.0015625,
+    "epsilon": 0.001,
+    "decision": "meets_0.001_bound"
+  },
+  "file_sha256": {
+    "raw.json": "b71c5b682af69557b9d2cbbe3dad0e6f83b6be495674cde01e9a6dd42a085749",
+    "per-input.jsonl.gz": "5662571cfb741c6e5fd445a3f5bededd06f928d6d6c2fab3f38491f8c05f24b2",
+    "process.json": "03d89404a632bf68348f68cf6df0543032cc228f05645ecd7d42486b6513d86a"
+  }
+}

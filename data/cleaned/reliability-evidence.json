@@ -1,0 +1,1390 @@
+{
+  "created_utc": "2026-10-25T14:04:40.700190+00:00",
+  "public_snapshot_sha256": "8c8a0615851b5cc568541492178d5ad8f0ca89e5051e2babb7b88f018f1092ab",
+  "public_snapshot_source": "/tmp/paper-frontier-20261025.json",
+  "current_own_curve_count": 14,
+  "independent_audits": [
+    {
+      "variant": "q818-r",
+      "public_id": "d419f804-80ed-4ddd-914c-c1e1d149a706",
+      "on_current_curve": false,
+      "service_Q": 818,
+      "service_T": 9750086,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 0,
+      "failed_shots": 0,
+      "upper": 0.00031545161047326977,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-01/evaluations/q818-r/calibration/result.json",
+      "ops_sha256": "d3d3e0d831b20f66143fe96eafb55b059b50224634a948149c90fefa9b16d2c4",
+      "packet_sha256": "832662b06273575335b29bf4fd4e80f4d84830698366faebe6ab5ec0afe81206",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q818-r/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q839-u",
+      "public_id": null,
+      "on_current_curve": false,
+      "service_Q": null,
+      "service_T": null,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 2,
+      "failed_shots": 4,
+      "upper": 0.0005220429695621752,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-02/evaluations/q839-u/calibration/result.json",
+      "ops_sha256": "45946e63d148ba01b8b1283e6332f0384147a2a31115eecb8b494e25d78e92f0",
+      "packet_sha256": "27778518053592667860c0f9631ac3c26e6e7e245d2a90665d78b9e6c096000f",
+      "disclosure": {}
+    },
+    {
+      "variant": "q839-ur",
+      "public_id": "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+      "on_current_curve": true,
+      "service_Q": 839,
+      "service_T": 8564543,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 0,
+      "failed_shots": 0,
+      "upper": 0.00031545161047326977,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-03/evaluations/q839-ur/calibration/result.json",
+      "ops_sha256": "0f8ff05332b9394eb63221200872243d2991be30994e95bb8b977e72f45711a1",
+      "packet_sha256": "f9aab5512df12241c0a06aff9480278b0a04bbbce48a25239309a63dc84d0844",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q839-ur/note.md",
+        "region_screened_at_note": 3,
+        "region_failed_at_note": 1,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q808-ur",
+      "public_id": "4274c7e0-b16f-4d63-8fae-83ad15e51fee",
+      "on_current_curve": true,
+      "service_Q": 808,
+      "service_T": 10640971,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 0,
+      "failed_shots": 0,
+      "upper": 0.00031545161047326977,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-04/evaluations/q808-ur/calibration/result.json",
+      "ops_sha256": "7ef2c758baadc4e871d70422c6a0eac79201d91c54585c2751f521e7ed2c77f8",
+      "packet_sha256": "9bcf502bf3c649dba75757a4acdc11c448aa9839e26ca57efa9214cd1f79ae4a",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q808-ur/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q814-ur",
+      "public_id": "0ee3673f-745a-4ded-be1c-6453ca442f95",
+      "on_current_curve": true,
+      "service_Q": 814,
+      "service_T": 9829517,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 1,
+      "failed_shots": 2,
+      "upper": 0.00042655257933951036,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-05/evaluations/q814-ur/calibration/result.json",
+      "ops_sha256": "be656b348122ca6e13ffe2f867a57fc83f289f78924baacba2d94f65b159b87f",
+      "packet_sha256": "ca0262082d4542f699ab332c2e1b633781a635fe1d2de44326d8eae9171ef4d8",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q814-ur/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q816-ur",
+      "public_id": "28651875-43b0-40de-bffa-3d31caa7fdad",
+      "on_current_curve": true,
+      "service_Q": 816,
+      "service_T": 9803523,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 0,
+      "failed_shots": 0,
+      "upper": 0.00031545161047326977,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-06/evaluations/q816-ur/calibration/result.json",
+      "ops_sha256": "a65bf4b97f25d29566c8a96fc27350fcf3e172f7bfc4d649b5bbbdbbd9f35a51",
+      "packet_sha256": "2cc627dcf602dd36249e706397a98ed23cd41e996f768925c7d8460270ba0473",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q816-ur/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q813-ur",
+      "public_id": "b9c632ec-f453-48ee-a8ba-5fbcdfdb1071",
+      "on_current_curve": true,
+      "service_Q": 813,
+      "service_T": 9907605,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 0,
+      "failed_shots": 0,
+      "upper": 0.00031545161047326977,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-07/evaluations/q813-ur/calibration/result.json",
+      "ops_sha256": "947486753af791a0ec3411c2ba0c570dfd6e526e08211bfe446676157db888e8",
+      "packet_sha256": "8f0590a30ff60bbafaed9cd68f6dc29faad7a42ae11c7f78f65b9e731b285ad9",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q813-ur/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q812-ur",
+      "public_id": "32e2e506-ef4f-4482-9ccd-5a4034ac96f8",
+      "on_current_curve": true,
+      "service_Q": 812,
+      "service_T": 10071328,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 0,
+      "failed_shots": 0,
+      "upper": 0.00031545161047326977,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-08/evaluations/q812-ur/calibration/result.json",
+      "ops_sha256": "f8c6e07c328356f59f73b87b79303fc774eae2c9b7bfc7c5be484ee5f7fc6d25",
+      "packet_sha256": "27057069c99b03e3c1578c363e7b872e31021c8217ec3d0717700a619649f2ff",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q812-ur/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q810-ur",
+      "public_id": "31326aa6-0ad3-40d3-8069-714b4330a726",
+      "on_current_curve": true,
+      "service_Q": 810,
+      "service_T": 10282406,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 1,
+      "failed_shots": 2,
+      "upper": 0.00042655257933951036,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-09/evaluations/q810-ur/calibration/result.json",
+      "ops_sha256": "6e6fcad5024282cfccd84a7d02197a83ae6e31efc2d5a26ab340c5b1cc5a3950",
+      "packet_sha256": "f3b56aadec597cf9bee4bf24badd49b8da70d25bb9bc6295cd42674bdd2ffc40",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q810-ur/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q811-ur",
+      "public_id": "c9f82524-5d65-47ff-9692-299d1a178e5f",
+      "on_current_curve": true,
+      "service_Q": 811,
+      "service_T": 10264333,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 0,
+      "failed_shots": 0,
+      "upper": 0.00031545161047326977,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-10/evaluations/q811-ur/calibration/result.json",
+      "ops_sha256": "e8b470202a01a50c230de794e51ecd85f340b7f74f9e9169d32ab4949657dbb3",
+      "packet_sha256": "6a55648cea89f23e7aa5ae1d7dfe1a291ff272266766f2e016cc5a0d7b000536",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q811-ur/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q809-ur",
+      "public_id": "853e143d-9dba-43f5-bdf7-26f60da5e7f1",
+      "on_current_curve": true,
+      "service_Q": 809,
+      "service_T": 10365388,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 2,
+      "failed_shots": 4,
+      "upper": 0.0005220429695621752,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-11/evaluations/q809-ur/calibration/result.json",
+      "ops_sha256": "0cb98dcf8db8fdb56755bf67dfb2e3e14b54dc3c78c277533b0d9530e1d04a9f",
+      "packet_sha256": "6c74dcf231a2ab96efc85762eafdfc0626378700afbef65fc7efc97c3516c99b",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q809-ur/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q803-ur",
+      "public_id": "2c478cc4-8f3e-4da3-a1dc-fa439a0e6758",
+      "on_current_curve": true,
+      "service_Q": 803,
+      "service_T": 12578098,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 0,
+      "failed_shots": 0,
+      "upper": 0.00031545161047326977,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-12/evaluations/q803-ur/calibration/result.json",
+      "ops_sha256": "76bf3de6d759430b7d1b76d3230e7d63bb75904adfde0ce4667d16b2afa6399b",
+      "packet_sha256": "3b6347758a0183ee7ff74f1e01c5cb4e53b254f1ab350f7bbe3126c86995c79a",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q803-ur/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q802-ur",
+      "public_id": "f09ac2bd-9a30-437d-a349-28b998cabf9f",
+      "on_current_curve": true,
+      "service_Q": 802,
+      "service_T": 12580818,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 3,
+      "failed_shots": 6,
+      "upper": 0.0006098913058319532,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-13/evaluations/q802-ur/calibration/result.json",
+      "ops_sha256": "62601956b141bc1ffc258bab2e54c68864223ac3e584f635f5e8eca41ea6deaa",
+      "packet_sha256": "4c6ea0e603ac0c1ecfa21f49ccccdc176391f33ed8f8843a97e270f1413b9c2a",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q802-ur/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q801-ur",
+      "public_id": "130ed672-9986-4f55-ab06-7d5f9c06295c",
+      "on_current_curve": true,
+      "service_Q": 801,
+      "service_T": 12595594,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 2,
+      "failed_shots": 4,
+      "upper": 0.0005220429695621752,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-14/evaluations/q801-ur/calibration/result.json",
+      "ops_sha256": "9be43130163e59f38c03bca1643a44c25015c647d8678ac03365d213cb1ff0b7",
+      "packet_sha256": "d0d4b39d7d807341d9c7cfd4f6fb43c4167b7fd8bf54dee68b2324700cc1211d",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q801-ur/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q800-ur",
+      "public_id": "301690ed-b82d-41f6-a23d-7304cee381ee",
+      "on_current_curve": true,
+      "service_Q": 800,
+      "service_T": 12612556,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 3,
+      "failed_shots": 6,
+      "upper": 0.0006098913058319532,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-15/evaluations/q800-ur/calibration/result.json",
+      "ops_sha256": "64424c9e512522f7d909866ca8032ebacb659d5a745254b02ca51ebb9379e3e6",
+      "packet_sha256": "a74ef0685af47bab961e837cb713466e1bfb46d7201f22312cf922139a7d27c9",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q800-ur/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q799-ur",
+      "public_id": "eb015a89-014b-4428-b0d7-76bede127538",
+      "on_current_curve": true,
+      "service_Q": 799,
+      "service_T": 12710488,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 0,
+      "failed_shots": 0,
+      "upper": 0.00031545161047326977,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-16/evaluations/q799-ur/calibration/result.json",
+      "ops_sha256": "0a2684d0424b381b032a7cbc0a421250c2fb4b0b7f630106f57580b107315635",
+      "packet_sha256": "8e38a11acd44ed0d228c554676358e7b587f2474396ce517c4f7efe9120f2233",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q799-ur/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q1059-lp-u",
+      "public_id": null,
+      "on_current_curve": false,
+      "service_Q": null,
+      "service_T": null,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 7,
+      "failed_shots": 14,
+      "upper": 0.0009250858422581021,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-17/evaluations/q1059-lp-u/calibration/result.json",
+      "ops_sha256": "98bffba62157a3c6e0843de80f601a8fa1c639c8b33cb002b2de55161dc4e8d0",
+      "packet_sha256": "dd2baadf72b235835600b559746d61ae4190bf697bf979627fbeeb25489a621b",
+      "disclosure": {}
+    },
+    {
+      "variant": "q1063-rel2",
+      "public_id": "d3fecc7a-6d1a-4b9b-8240-a50ab158057c",
+      "on_current_curve": false,
+      "service_Q": 1063,
+      "service_T": 1970390,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 2,
+      "failed_shots": 4,
+      "upper": 0.0005220429695621752,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-21/evaluations/q1063-rel2/calibration/result.json",
+      "ops_sha256": "9a3a53ec6c4771122e9010a44694ea39938f9cdd4760d677ae54754cdf4dc7f4",
+      "packet_sha256": "677fa72f012b0b652a6920b5bf5524a4b270b6176fa0fe43adb27e8a7d13c100",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q1063-rel2/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q1059-rel2",
+      "public_id": "7dd3b9ca-8193-4ce6-9545-cb8e84a36160",
+      "on_current_curve": false,
+      "service_Q": 1059,
+      "service_T": 1978608,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 2,
+      "failed_shots": 4,
+      "upper": 0.0005220429695621752,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-22/evaluations/q1059-rel2/calibration/result.json",
+      "ops_sha256": "627c8d8da859257899030904c3ba46e1ce8262fb16cd9a711764b9d9396f01be",
+      "packet_sha256": "38b0243e0148ab45cdeca5dc561d898d0fc457b3281bc9c980785233e054cfc4",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q1059-rel2/note.md",
+        "region_screened_at_note": 1,
+        "region_failed_at_note": 0,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q1064-rel",
+      "public_id": "309bf464-9dc8-4c41-b271-e81ec9bc7c69",
+      "on_current_curve": false,
+      "service_Q": 1064,
+      "service_T": 1967974,
+      "n": 20480,
+      "streams": 2,
+      "failed_inputs": 2,
+      "failed_shots": 4,
+      "upper": 0.0005220429695621752,
+      "alpha": 0.0015625,
+      "epsilon": 0.001,
+      "event": "one input fails if either measurement stream fails coordinates, phase, workspace or addend preservation",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-23/evaluations/q1064-rel/calibration/result.json",
+      "ops_sha256": "76098f68b93ee406613b889f6ef5a10aab7d7a13e52301a68360ac5ca3ccbdae",
+      "packet_sha256": "478dd590bca9678c0a90cf1894c540f993083ab162c6b9997e42407ec59d99ba",
+      "disclosure": {
+        "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q1064-rel/note.md",
+        "region_screened_at_note": 2,
+        "region_failed_at_note": 1,
+        "inherited_nonce_unchanged": true,
+        "nonce_or_padding_search_denied": true
+      }
+    },
+    {
+      "variant": "q1097-catalog",
+      "public_id": "11613a51-1243-4f91-801a-9e71600d1f99",
+      "on_current_curve": false,
+      "service_Q": 1097,
+      "service_T": 1814134,
+      "n": 1000000,
+      "streams": 2,
+      "failed_inputs": 261,
+      "failed_shots": 488,
+      "upper": 0.00030841254431266844,
+      "alpha": 0.003125,
+      "epsilon": 0.001,
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/final-frontier-20261024/wave-02/evaluations/q1097-catalog/calibration/result.json",
+      "role": "independent qualification; historical Pareto point, since displaced"
+    },
+    {
+      "variant": "q1270-selected-leapfrog",
+      "public_id": "06b08594-7509-4e81-9ca3-f620b2ab1437",
+      "on_current_curve": false,
+      "service_Q": 1270,
+      "service_T": 793798,
+      "n": 262144,
+      "streams": 2,
+      "failed_inputs": 86,
+      "failed_shots": 169,
+      "upper": 0.0004051407096841969,
+      "alpha": 0.025,
+      "epsilon": 0.001,
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-confirmation-20261024/members/9271a9aa2b368b88989e905a932d5469baece5f3af00c0e928e8dcb7b9ce3c01/evaluations/confirmation/result.json",
+      "role": "independent confirmation; lowest submitted qualified product; never public Pareto"
+    }
+  ],
+  "cof_diagnostic_comparison": [
+    {
+      "variant": "parent-control",
+      "Q": 1065,
+      "mean_T": 1892822.115530014,
+      "n": 262144,
+      "streams": 2,
+      "failed_inputs": 57,
+      "failed_shots": 112,
+      "input_rate": 0.000217437744140625,
+      "shot_rate": 0.000213623046875,
+      "label": "frontier-levers-20261025/cof-band/diagnostic-v1",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/diagnostics/circuit-runs/parent-control/summary.json",
+      "role": "shared diagnostic cohort; used during design; not independent qualification"
+    },
+    {
+      "variant": "q1059-rel2",
+      "Q": 1059,
+      "mean_T": 1978588.1774101257,
+      "n": 262144,
+      "streams": 2,
+      "failed_inputs": 43,
+      "failed_shots": 84,
+      "input_rate": 0.000164031982421875,
+      "shot_rate": 0.00016021728515625,
+      "label": "frontier-levers-20261025/cof-band/diagnostic-v1",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/diagnostics/circuit-runs/q1059-rel2/summary.json",
+      "role": "shared diagnostic cohort; used during design; not independent qualification"
+    },
+    {
+      "variant": "q1063-rel2",
+      "Q": 1063,
+      "mean_T": 1970407.558523178,
+      "n": 262144,
+      "streams": 2,
+      "failed_inputs": 34,
+      "failed_shots": 66,
+      "input_rate": 0.00012969970703125,
+      "shot_rate": 0.000125885009765625,
+      "label": "frontier-levers-20261025/cof-band/diagnostic-v1",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/diagnostics/circuit-runs/q1063-rel2/summary.json",
+      "role": "shared diagnostic cohort; used during design; not independent qualification"
+    },
+    {
+      "variant": "q1064-rel",
+      "Q": 1064,
+      "mean_T": 1967997.6210517883,
+      "n": 262144,
+      "streams": 2,
+      "failed_inputs": 35,
+      "failed_shots": 70,
+      "input_rate": 0.000133514404296875,
+      "shot_rate": 0.000133514404296875,
+      "label": "frontier-levers-20261025/cof-band/diagnostic-v1",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/diagnostics/circuit-runs/q1064-rel/summary.json",
+      "role": "shared diagnostic cohort; used during design; not independent qualification"
+    }
+  ],
+  "screens": [
+    {
+      "variant": "q1058-rel",
+      "region": "cof-1058",
+      "control": false,
+      "passed": false,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 4,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "2f123e0a6f8cc2f4f5aa483873290da5fe84d54c21a8647d27166413408d020c",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1058-rel/screen.json"
+    },
+    {
+      "variant": "q1058-rel3",
+      "region": "cof-1058",
+      "control": false,
+      "passed": false,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 1,
+        "phase_garbage_batches": 1,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "aae7b3fce5b58435059cb221c30f83aaf37ee2294aabfd95fc39c4e44875f6e0",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1058-rel3/screen.json"
+    },
+    {
+      "variant": "q1059-rel2",
+      "region": "cof-1059",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "627c8d8da859257899030904c3ba46e1ce8262fb16cd9a711764b9d9396f01be",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1059-rel2/screen.json"
+    },
+    {
+      "variant": "q1060-rel2",
+      "region": "cof-1060",
+      "control": false,
+      "passed": false,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 3,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "1cff6f4c18f57473c6e74c48bcb11bfd7658d0bad8bc0f1d10eb131b2529b284",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1060-rel2/screen.json"
+    },
+    {
+      "variant": "q1061-rel",
+      "region": "cof-1061",
+      "control": false,
+      "passed": false,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 2,
+        "phase_garbage_batches": 1,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "87512689670fa2fbd07c73afd80dc068562a6176a4921e97eee9981499264e91",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1061-rel/screen.json"
+    },
+    {
+      "variant": "q1061-rel2",
+      "region": "cof-1061",
+      "control": false,
+      "passed": false,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 2,
+        "phase_garbage_batches": 1,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "dae37582647ea9429a5deac35bf4aef96af86d911ec1523fa9ac168028512cdb",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1061-rel2/screen.json"
+    },
+    {
+      "variant": "q1062-rel",
+      "region": "cof-1062",
+      "control": false,
+      "passed": false,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 1,
+        "phase_garbage_batches": 1,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "99333b0571b3d5f19b186ebcfc888759b666d666efef2367e5d605f7bb7e0399",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1062-rel/screen.json"
+    },
+    {
+      "variant": "q1062-rel2",
+      "region": "cof-1062",
+      "control": false,
+      "passed": false,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 1,
+        "phase_garbage_batches": 1,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "f867346485c2fc835d95c505cf1f74f445332e1b156cee8f4f0a4a5429724827",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1062-rel2/screen.json"
+    },
+    {
+      "variant": "q1063-rel2",
+      "region": "cof-1063",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "9a3a53ec6c4771122e9010a44694ea39938f9cdd4760d677ae54754cdf4dc7f4",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1063-rel2/screen.json"
+    },
+    {
+      "variant": "q1064-rel",
+      "region": "cof-1064",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "76098f68b93ee406613b889f6ef5a10aab7d7a13e52301a68360ac5ca3ccbdae",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1064-rel/screen.json"
+    },
+    {
+      "variant": "q1064-rel2",
+      "region": "cof-1064",
+      "control": false,
+      "passed": false,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 2,
+        "phase_garbage_batches": 1,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "1ee58c2a945337e8d3796441cdf5134fd0d2f1b09872b7b8fafdccb4f33598ab",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1064-rel2/screen.json"
+    },
+    {
+      "variant": "q1059-lp-r",
+      "region": "lilypad-1059",
+      "control": false,
+      "passed": false,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 2,
+        "phase_garbage_batches": 1,
+        "ancilla_garbage_batches": 2
+      },
+      "ops_sha256": "2e871acc185605ceeffbe45725ab9ab216d20b4e49677f0f70ce9731295e7134",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q1059-lp-r/screen.json"
+    },
+    {
+      "variant": "q1059-lp-u",
+      "region": "lilypad-1059",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "98bffba62157a3c6e0843de80f601a8fa1c639c8b33cb002b2de55161dc4e8d0",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q1059-lp-u/screen.json"
+    },
+    {
+      "variant": "q799-ur",
+      "region": "froghop-799",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "0a2684d0424b381b032a7cbc0a421250c2fb4b0b7f630106f57580b107315635",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q799-ur/screen.json"
+    },
+    {
+      "variant": "q800-ur",
+      "region": "froghop-800",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "64424c9e512522f7d909866ca8032ebacb659d5a745254b02ca51ebb9379e3e6",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q800-ur/screen.json"
+    },
+    {
+      "variant": "q801-ur",
+      "region": "froghop-801",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "9be43130163e59f38c03bca1643a44c25015c647d8678ac03365d213cb1ff0b7",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q801-ur/screen.json"
+    },
+    {
+      "variant": "q802-ur",
+      "region": "froghop-802",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "62601956b141bc1ffc258bab2e54c68864223ac3e584f635f5e8eca41ea6deaa",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q802-ur/screen.json"
+    },
+    {
+      "variant": "q803-ur",
+      "region": "froghop-803",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "76bf3de6d759430b7d1b76d3230e7d63bb75904adfde0ce4667d16b2afa6399b",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q803-ur/screen.json"
+    },
+    {
+      "variant": "q808-ur",
+      "region": "froghop-808",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "7ef2c758baadc4e871d70422c6a0eac79201d91c54585c2751f521e7ed2c77f8",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q808-ur/screen.json"
+    },
+    {
+      "variant": "q809-ur",
+      "region": "froghop-809",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "0cb98dcf8db8fdb56755bf67dfb2e3e14b54dc3c78c277533b0d9530e1d04a9f",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q809-ur/screen.json"
+    },
+    {
+      "variant": "q810-ur",
+      "region": "froghop-810",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "6e6fcad5024282cfccd84a7d02197a83ae6e31efc2d5a26ab340c5b1cc5a3950",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q810-ur/screen.json"
+    },
+    {
+      "variant": "q811-ur",
+      "region": "froghop-811",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "e8b470202a01a50c230de794e51ecd85f340b7f74f9e9169d32ab4949657dbb3",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q811-ur/screen.json"
+    },
+    {
+      "variant": "q812-ur",
+      "region": "froghop-812",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "f8c6e07c328356f59f73b87b79303fc774eae2c9b7bfc7c5be484ee5f7fc6d25",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q812-ur/screen.json"
+    },
+    {
+      "variant": "q813-ur",
+      "region": "froghop-813",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "947486753af791a0ec3411c2ba0c570dfd6e526e08211bfe446676157db888e8",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q813-ur/screen.json"
+    },
+    {
+      "variant": "q814-ur",
+      "region": "froghop-814",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "be656b348122ca6e13ffe2f867a57fc83f289f78924baacba2d94f65b159b87f",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q814-ur/screen.json"
+    },
+    {
+      "variant": "q815-ur",
+      "region": "froghop-815",
+      "control": false,
+      "passed": false,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 1,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 1
+      },
+      "ops_sha256": "ad65b12b3c65bce1cc973a36d8cc9cad3a2212e558a66472484ff34e6a8871d0",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q815-ur/screen.json"
+    },
+    {
+      "variant": "q816-ur",
+      "region": "froghop-816",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "a65bf4b97f25d29566c8a96fc27350fcf3e172f7bfc4d649b5bbbdbbd9f35a51",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q816-ur/screen.json"
+    },
+    {
+      "variant": "q817-ur",
+      "region": "froghop-817",
+      "control": false,
+      "passed": false,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 1,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 1
+      },
+      "ops_sha256": "95df04d0f27220cbfc9746cace0d291c6ff3acf0b473a1b85d33673fc5ece69b",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q817-ur/screen.json"
+    },
+    {
+      "variant": "q818-r",
+      "region": "froghop-818",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "d3d3e0d831b20f66143fe96eafb55b059b50224634a948149c90fefa9b16d2c4",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q818-r/screen.json"
+    },
+    {
+      "variant": "q818-ur",
+      "region": "froghop-818",
+      "control": false,
+      "passed": false,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 1,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 1
+      },
+      "ops_sha256": "dc53d068490b6303d8d710efcb47ed73e99c63d243079c6fbb201c1ba47a3f3a",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q818-ur/screen.json"
+    },
+    {
+      "variant": "q839-parent",
+      "region": "froghop-839",
+      "control": true,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "48d56e9b6e366638c9a791964c5872aecfc1e5e8d89e4e62e530962e43bb3dfe",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q839-parent/screen.json"
+    },
+    {
+      "variant": "q839-r",
+      "region": "froghop-839",
+      "control": false,
+      "passed": false,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 1,
+        "phase_garbage_batches": 1,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "d5eef45deb8e4e5df9cd994780bb29fce4c0a07a81ce30a79f9f5f93ff26a986",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q839-r/screen.json"
+    },
+    {
+      "variant": "q839-u",
+      "region": "froghop-839",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "45946e63d148ba01b8b1283e6332f0384147a2a31115eecb8b494e25d78e92f0",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q839-u/screen.json"
+    },
+    {
+      "variant": "q839-ur",
+      "region": "froghop-839",
+      "control": false,
+      "passed": true,
+      "counts": {
+        "shots": 9024,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0,
+        "ancilla_garbage_batches": 0
+      },
+      "ops_sha256": "0f8ff05332b9394eb63221200872243d2991be30994e95bb8b977e72f45711a1",
+      "source": "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q839-ur/screen.json"
+    }
+  ],
+  "screen_totals": {
+    "all_including_parent_control": 34,
+    "real_variants": 33,
+    "real_variant_passes": 20,
+    "real_variant_failures": 13
+  },
+  "screens_by_region": {
+    "cof-1058": {
+      "screened": 2,
+      "passed": 0,
+      "failed": 2,
+      "variants": [
+        "q1058-rel",
+        "q1058-rel3"
+      ]
+    },
+    "cof-1059": {
+      "screened": 1,
+      "passed": 1,
+      "failed": 0,
+      "variants": [
+        "q1059-rel2"
+      ]
+    },
+    "cof-1060": {
+      "screened": 1,
+      "passed": 0,
+      "failed": 1,
+      "variants": [
+        "q1060-rel2"
+      ]
+    },
+    "cof-1061": {
+      "screened": 2,
+      "passed": 0,
+      "failed": 2,
+      "variants": [
+        "q1061-rel",
+        "q1061-rel2"
+      ]
+    },
+    "cof-1062": {
+      "screened": 2,
+      "passed": 0,
+      "failed": 2,
+      "variants": [
+        "q1062-rel",
+        "q1062-rel2"
+      ]
+    },
+    "cof-1063": {
+      "screened": 1,
+      "passed": 1,
+      "failed": 0,
+      "variants": [
+        "q1063-rel2"
+      ]
+    },
+    "cof-1064": {
+      "screened": 2,
+      "passed": 1,
+      "failed": 1,
+      "variants": [
+        "q1064-rel",
+        "q1064-rel2"
+      ]
+    },
+    "lilypad-1059": {
+      "screened": 2,
+      "passed": 1,
+      "failed": 1,
+      "variants": [
+        "q1059-lp-r",
+        "q1059-lp-u"
+      ]
+    },
+    "froghop-799": {
+      "screened": 1,
+      "passed": 1,
+      "failed": 0,
+      "variants": [
+        "q799-ur"
+      ]
+    },
+    "froghop-800": {
+      "screened": 1,
+      "passed": 1,
+      "failed": 0,
+      "variants": [
+        "q800-ur"
+      ]
+    },
+    "froghop-801": {
+      "screened": 1,
+      "passed": 1,
+      "failed": 0,
+      "variants": [
+        "q801-ur"
+      ]
+    },
+    "froghop-802": {
+      "screened": 1,
+      "passed": 1,
+      "failed": 0,
+      "variants": [
+        "q802-ur"
+      ]
+    },
+    "froghop-803": {
+      "screened": 1,
+      "passed": 1,
+      "failed": 0,
+      "variants": [
+        "q803-ur"
+      ]
+    },
+    "froghop-808": {
+      "screened": 1,
+      "passed": 1,
+      "failed": 0,
+      "variants": [
+        "q808-ur"
+      ]
+    },
+    "froghop-809": {
+      "screened": 1,
+      "passed": 1,
+      "failed": 0,
+      "variants": [
+        "q809-ur"
+      ]
+    },
+    "froghop-810": {
+      "screened": 1,
+      "passed": 1,
+      "failed": 0,
+      "variants": [
+        "q810-ur"
+      ]
+    },
+    "froghop-811": {
+      "screened": 1,
+      "passed": 1,
+      "failed": 0,
+      "variants": [
+        "q811-ur"
+      ]
+    },
+    "froghop-812": {
+      "screened": 1,
+      "passed": 1,
+      "failed": 0,
+      "variants": [
+        "q812-ur"
+      ]
+    },
+    "froghop-813": {
+      "screened": 1,
+      "passed": 1,
+      "failed": 0,
+      "variants": [
+        "q813-ur"
+      ]
+    },
+    "froghop-814": {
+      "screened": 1,
+      "passed": 1,
+      "failed": 0,
+      "variants": [
+        "q814-ur"
+      ]
+    },
+    "froghop-815": {
+      "screened": 1,
+      "passed": 0,
+      "failed": 1,
+      "variants": [
+        "q815-ur"
+      ]
+    },
+    "froghop-816": {
+      "screened": 1,
+      "passed": 1,
+      "failed": 0,
+      "variants": [
+        "q816-ur"
+      ]
+    },
+    "froghop-817": {
+      "screened": 1,
+      "passed": 0,
+      "failed": 1,
+      "variants": [
+        "q817-ur"
+      ]
+    },
+    "froghop-818": {
+      "screened": 2,
+      "passed": 1,
+      "failed": 1,
+      "variants": [
+        "q818-r",
+        "q818-ur"
+      ]
+    },
+    "froghop-839": {
+      "screened": 3,
+      "passed": 2,
+      "failed": 1,
+      "variants": [
+        "q839-r",
+        "q839-u",
+        "q839-ur"
+      ]
+    }
+  },
+  "interpretation": {
+    "current_points_test_size": "All current own curve points in this frozen snapshot have 20480 fresh pairs, not a million.",
+    "diagnostic_comparison": "COF parent and derivatives share the same262144-input label. The observed failure reduction is exploratory. Fresh20480-input audits qualify the final derivatives separately.",
+    "nonce_policy": "Published frontier-levers notes retain inherited nonces and deny new nonce/padding search. This does not erase upstream selection. Earlier t0009 inherited an identity-tail nonce; a58-attempt launch was excluded and the clean generator removed the tail.",
+    "screen_selection": "Each real-setting variant gets one hash-derived9024-shot screen. The paper must disclose successful and failed variants. A passing screen does not reduce the true failure rate.",
+    "neighbor_scope": "No measured fresh exact-current-neighbor reliability is available for all current points. Do not generalize the older Leapfrog comparison to the whole public frontier."
+  },
+  "source_sha256": {
+    "/tmp/paper-frontier-20261025.json": "8c8a0615851b5cc568541492178d5ad8f0ca89e5051e2babb7b88f018f1092ab",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-01/evaluations/q818-r/calibration/result.json": "6db0fe7f307ab12b7bb3d4bad32e204327cc3bfeb09e7e834081d4af0c007191",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q818-r/service-result.json": "d9072af0e0d075ee92fa238f088383598766f8103e3235b3b6753597519bed1f",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q818-r/note.md": "40b118ef7263a95c56c53b0034fa0531a8a6c114f5d4d7afd56f49b0ff206e7a",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-02/evaluations/q839-u/calibration/result.json": "f9e232ca9b7a1ee5a063c3d22cd065e17c298530ae380d2ed3a326b80532f0a2",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-03/evaluations/q839-ur/calibration/result.json": "4b77c99b1201c56a0d0a321a8a9987f74062f6fe0fe0ceba9f82813a5392cb27",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q839-ur/service-result.json": "0b9ee0fa27250d5daa5d14be1d717a0a8819068ec748b1cc311641e138fbef5a",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q839-ur/note.md": "48bd93882386ba93b458d0e9b93341e79b9d7f21bebce1b61bb5da18ae31d33e",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-04/evaluations/q808-ur/calibration/result.json": "e24aa565bc052184e8f279e1a27d9de7d2d5cbd99b124dfe108165c3ae586563",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q808-ur/service-result.json": "11a7e1b81978eb684eee2b61876acfd585ab98bd29eb6f6e19d6de43b26cd95d",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q808-ur/note.md": "c22e350c00f4e82ac7a20824322f34676ee1b4abed42710cc44d547e2cb29b39",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-05/evaluations/q814-ur/calibration/result.json": "b4302931a510112b97e5c2de95e7f3de4944fb96ed487b33500582d27a8275c8",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q814-ur/service-result.json": "e9e396b59e5fbf79d0b24e93b75dcc306dd06bc6c1213936c57f32105186b118",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q814-ur/note.md": "3cc3fd13d2d53c983f94aef61efa15801ba3bf0905bf301c782a6d3194e0b386",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-06/evaluations/q816-ur/calibration/result.json": "78b298cbfed3fc76a9ff08277bd803bd32f6214590fc81919038e11a1f48aeb4",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q816-ur/service-result.json": "9e7878b0ad681c34aa10a8e306e90b5c808d1a4112e54f4ebd1d1fab7e436df3",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q816-ur/note.md": "d0d8e64f49e6f2bc31efae18fd294f070937f430874e5dca8a43e7f406d36c62",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-07/evaluations/q813-ur/calibration/result.json": "ef4f09c506dcb5763ee130d75e9d097df83afdc1f6f54f54d60181a9eee04aba",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q813-ur/service-result.json": "108662531fb21629ae97a15a13a258b0872f860cf771ced67f6110d82cbe962d",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q813-ur/note.md": "210694728d4372b893258add2cf550ebbbbddc12f2b34415cdf2b407ba09cec9",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-08/evaluations/q812-ur/calibration/result.json": "96f7a761a43351699fa85f26e28530247fb8c40e74463853f5598788654f70af",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q812-ur/service-result.json": "dd467525172a2d5a62af998ee743b18809394034c6e162c17d99a6e2eb6aaa6f",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q812-ur/note.md": "e34b9164c677f133c2a069b16f614778e6a26b2c6a70582b4a893d979c72f2f3",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-09/evaluations/q810-ur/calibration/result.json": "4c535a0bebf3954bfa2464c183f7a2b00617fe3cee0e84acf613ff1e8858932f",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q810-ur/service-result.json": "17fb65a4c097e50e5b421e71070afd719e11cc8b8a79dd2e2043feb1e381813b",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q810-ur/note.md": "69c5ff0cba7af7c0965880d522264a98bab08a0c4e64446e7d71a3b271eb8622",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-10/evaluations/q811-ur/calibration/result.json": "88083dc6e2656ca99e65a3c5d1809fbcda34aa81c311589d34c2530663bbee3c",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q811-ur/service-result.json": "b0f6c48aa4f8f36fa1ef3809fc99898e900bb5830d2ccfb50a3fba350299e9af",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q811-ur/note.md": "fd08cec8f4f60b7d40af950cf39454a6482d7ea6be25e347c345c53ba6fe2882",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-11/evaluations/q809-ur/calibration/result.json": "2ea7b8b08a3c3ed5021682cbf2276e546c432d02d46996a09c1bf03eaa3c165a",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q809-ur/service-result.json": "d45c994189907ec476e2655ef0614ce49859b9fda39653329bd9b9d8158bf48a",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q809-ur/note.md": "708ab0e73c9981fb0907babe92ea619cd87d0e04bda5edcca68b570e2dd3806b",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-12/evaluations/q803-ur/calibration/result.json": "4a4cccaa678f5cecb43b2e2e5f5f8a166b9ddbf08101378199efb75f555abe53",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q803-ur/service-result.json": "d410f13bf4ad0fc6f6568024b10ab3968fbda4f178ddedbdf399bd592cd269cf",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q803-ur/note.md": "415ee77d0216e11dc15f673ef3a23e961043ebf4beb503a5dc22996f08bb924d",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-13/evaluations/q802-ur/calibration/result.json": "c2b8625453942447770cfe2b5cf715a56d3f98f234e758e9a4394e75064b80a7",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q802-ur/service-result.json": "93c72a111a001e46fcc67ea8e5512a90f2d3c71cc401fa923310973421fa2141",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q802-ur/note.md": "56de7bd07b45480c1e7c364b4238ef67db6d9ed82b2a63de3a966e15f67efbd8",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-14/evaluations/q801-ur/calibration/result.json": "aeb422457754971447b6cc3011c75ce67dcbc0ad14ca80429b3cc298f3f86ca7",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q801-ur/service-result.json": "df74525668a41f3c0ca209dde53e42e70cb47bb5c680a7bac41810a34f8f8046",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q801-ur/note.md": "ac7ebcde5b4742020089a3f8ab1a2f58ad57799a696e6fef2c6655e42cdffe71",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-15/evaluations/q800-ur/calibration/result.json": "69c68291b21c488979ea61afcb5c6e5fb9a23015c4ebef331af4f92775bd1565",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q800-ur/service-result.json": "e82b600f4aae979a00d0a4c4d97ad92da53739fcc5036c97430c73fa48a66973",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q800-ur/note.md": "d63170ab6d92318cb564b91b289b8e0bfc80e80d311267a708abcdd116f7154c",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-16/evaluations/q799-ur/calibration/result.json": "cca11b97bda3712fce04b504b60eff047994486a166af83ccb7020ec41dbf219",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q799-ur/service-result.json": "fc92f16e8618c1c0e68b135e285a6d29a1997bf7a166cc4c40529b6567479a96",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q799-ur/note.md": "502e96f3bc1d33661f497ae35f5fd1e76d283a035a917f04d8d786693938f91f",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-17/evaluations/q1059-lp-u/calibration/result.json": "cdce3b615c0eea33813e646c32572118983c5050810ca64c84d1bdccda79dcae",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-21/evaluations/q1063-rel2/calibration/result.json": "0f4c81f9c5670165b66dac9e81a8541b3125e575c9ee6d9e37339f685beb708e",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q1063-rel2/service-result.json": "2ded149ab2707291a61fdc3f9cb403db65e8fb53559c431bb3db3ef985b116b7",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q1063-rel2/note.md": "b81287d667a8e1681e8a42fa20921f28820b5a84ec38db3498a89b92df19f93b",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-22/evaluations/q1059-rel2/calibration/result.json": "629987b826c087a99bb43ad8af472ff1fa15fbf541581f43f48a3aa1ee466904",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q1059-rel2/service-result.json": "455285988c9903a2f8e6634e4b54b1684faa36adf1268aa5a449a74ce50c2315",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q1059-rel2/note.md": "5517921cf513326841b2a69d48766da3b04cfe3f175cda1a17e47efe3339964b",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/audits/slot-23/evaluations/q1064-rel/calibration/result.json": "0bbd52a3e89033d89da3691a0c32133bd0c7cca84da4fda88339e980495bb730",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q1064-rel/service-result.json": "061bce4d6f0b54dba7720be164bf8ff079bad190076eed583ad99634b857d86f",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/publication/q1064-rel/note.md": "41cc24e420870ae2c423b5dce1c3b41d221341d8e1e9379ef2a85b370411d2ac",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/final-frontier-20261024/wave-02/evaluations/q1097-catalog/calibration/result.json": "b215d6cd99346f21ab69660ca98e3136ea1233aed055b40149d598b83eed0abd",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-confirmation-20261024/members/9271a9aa2b368b88989e905a932d5469baece5f3af00c0e928e8dcb7b9ce3c01/evaluations/confirmation/result.json": "dc653b3e652b2da25a46ef4b8bdca1c1bff4de7234c99f93bc3474604ff2a820",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/diagnostics/circuit-runs/parent-control/summary.json": "5803d62cd5af867a4c23d8aa42d401dbcf6e424c78e8bbfc1bd9b3e969e288a8",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/diagnostics/circuit-runs/q1059-rel2/summary.json": "27334ad24db08ec0bc0363048bdf8358ea0fdc6a7282c7c1d6feec0c0acc6351",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/diagnostics/circuit-runs/q1063-rel2/summary.json": "df0526d5b7b52bae4fc616f9a230751e4cb4e6589ebc8a70a396d08f0e5de807",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/diagnostics/circuit-runs/q1064-rel/summary.json": "fdbe62e27dd7b64587a3e3441c3ed19592403d04ab6bc0f6b4a429fe8315e0b5",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1058-rel/screen.json": "03496e8090fe4b4310fc9af67c6c2b617d882e01af826a07d460ed43eeb1b756",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1058-rel3/screen.json": "3517c1bafd9a676c83267523b1be101d314fa24df8359200c227716a558dc0f1",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1059-rel2/screen.json": "fb79dc82fa31bfa7d623d61e61785c5f19077087003a01f5d97eec12128a164f",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1060-rel2/screen.json": "09979a4120f4e3ca291ea83f338f437fde2d3c77ce2b4f7c0ec871f62c0653af",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1061-rel/screen.json": "f2d8a5d719d07969875458b6464abab69169e9abbf527455b0ee068b444ade78",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1061-rel2/screen.json": "263271fc71d04cd00d7572091303452d4991e6d24f91204513515be9d1ac858c",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1062-rel/screen.json": "2935d3d0c009c42269fdb5ac4a6cdeb49ccbd68dc19e5784a5c2a721fcd5325a",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1062-rel2/screen.json": "c5469b8aef001edc6527268429db8b69b73be27431c4adc9802fef7c3aa39c41",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1063-rel2/screen.json": "145520ec6ba1ccbcb23875f4486c208d5b9a5c1213c9f94427d893430a87809c",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1064-rel/screen.json": "d9b75ce2cb7dbf9604497f2f35847f9a5887139482e7b6b85ef6fcfa6152029b",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/candidates/q1064-rel2/screen.json": "0bf280a9f7f1f326314a35b1347c9bcb5aabd2699857ebd59db2dc6e2918cc34",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q1059-lp-r/screen.json": "92a2bb91874408ace72b728635ae3865e7dcb8e38460a64ff0d2434f1db1b00d",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q1059-lp-u/screen.json": "99f18c78579ba05cf588bcadaca8577a050de04fccf0d641980053ce1623be75",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q799-ur/screen.json": "505dcec2910bd1b82ff2d610e3ec294d2f9e889155a2a8b1cc02f4fd4e1c5008",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q800-ur/screen.json": "e8ff584f783022271630216898c8eb744a2f678e4424d2dafa30902ea7b8e97c",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q801-ur/screen.json": "96bbd715b3f6f6c1a1b92c8e803f8a888f35948afe0782c395f8c167f4c5b8de",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q802-ur/screen.json": "43d7d755e0d58b355bff6e313ed831ff77caf8c532ca365aa3d38ff845642e54",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q803-ur/screen.json": "6adc41fe876125c67255ef77701a4856e10384a2c39773d0902ec245ee291ff7",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q808-ur/screen.json": "33bc679379c82903da85fb968025bcf5bb48fc720241cc2c006f52aeed2d0249",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q809-ur/screen.json": "533e1ea9dc593ce79ab4e35d592094cfff7b8ce6f7bf410c03e41c9bb16b436a",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q810-ur/screen.json": "ae66790cdbd6e865d09c7949c6408c4011e06aefedc2d9fb57e7fd69271b2e26",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q811-ur/screen.json": "b6afb63b38355009efbdffed504065aef4b0a92cef9f2949988119e2107703d8",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q812-ur/screen.json": "480690dd6b03fc7f5fa15fd47756eea5f02698695746a06956493723e7b14761",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q813-ur/screen.json": "f7a5dad12930ef74a833fe514eb9d4a029a6eb2f6726168e890f34b155d9ffaf",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q814-ur/screen.json": "266ecda4de25f0865344868d1cbf3fbc35c24f40817885f7a3bdace04064d90a",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q815-ur/screen.json": "1121a553b1ade342c579412470adccad4bec7c8db68b057c594e7563eda6020e",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q816-ur/screen.json": "e81503e6b735350c75bb73cb51a69f605df7093b0c73d66775992d8829e7d2e2",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q817-ur/screen.json": "f7a1407498af72d18d26c12851e5917acd1d50917838b9175a3db24cf50e671d",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q818-r/screen.json": "b463693435419a685bb7f451c9f21c5cfda5aec8da52ac26e817c890c1965c44",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q818-ur/screen.json": "4d4f3746fecacdcf85e7a101709358930fb5dbf5b5445840840e18b9a845abdc",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q839-parent/screen.json": "0d877399f541f95c0cb6052f4904c1f106cbf16f3b465865199cf0551ae982dd",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q839-r/screen.json": "4350dae5896f839e41f38df3dfda8c5b269fc0b96236c8b09aa5796aac8b30f2",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q839-u/screen.json": "983670c7edf2cb2e8f5a687ba66c88d462250852c1bc693412885e2a68ffef78",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q839-ur/screen.json": "1f4b9f12311b6da54ac23947eed736b19d7b339a64d43652aa8dacfe06daddee",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/CONTRACT.json": "f435b5fd2f5d0ae145bddf9be82b164c029eac4436fa8faa06193c753c6d5dd2",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/CONTRACT-AMENDMENT-01.json": "46a6cab86d973dc85349755e9855f58fc5c84e7bf54db26fefc05487dc494ab4",
+    "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/cof-band/README.md": "86b147cfd6b5ffccbb46ecdbd6525cec2a39aa232db107a3b87e0cb6121d9380",
+    "external-project/external-project/reversible-circuit-report/data/new_supplement/nonce.md": "4bda4290cad927bd744acc9d62e660c42a8b3f0d5b3c739b56ceba186ecff9a7"
+  }
+}

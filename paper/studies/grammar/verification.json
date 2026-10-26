@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "proposal_slots": 2700,
+  "endpoint_rows": 45,
+  "audit_bounds_recomputed_by_binomial_cdf": 14,
+  "source_files_verified": 54,
+  "contract_sha256": "519cdcac0081c97917a59f28da7b8b041250c3f82f10c3debe83c38d6cecc500",
+  "all_audit_inputs_match": true,
+  "scope": "Recorded circuit samples and comparison arithmetic; no new circuit executions"
+}

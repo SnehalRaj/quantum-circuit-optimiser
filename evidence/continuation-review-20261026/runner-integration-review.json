@@ -1,0 +1,84 @@
+{
+  "scope": "Orchestration tests with instrumented native dependencies; no circuit correctness measurement",
+  "source_sha256": {
+    "src/llm_circuit_optimiser/runner.py": "44a42296f83b55e46aa0a6624dc9948e9deac876990d0969e774d59b094a5ee5",
+    "src/llm_circuit_optimiser/large.py": "aee96596766e4f39c6b7d6bd9c430f51cb954eda5dc71e9d823aa304a3d56de6",
+    "src/llm_circuit_optimiser/common.py": "ae1f858428a7bf1f9405e44b68e96e399d0dcd322669ce7feae55503c91c7fc2"
+  },
+  "source_changed_during_check": false,
+  "observations": [
+    {
+      "case": "failed-official",
+      "qualified": 0,
+      "reproduced_exact": 1,
+      "official": {
+        "passed": false,
+        "counts": {
+          "shots": 9024,
+          "classical_mismatches": 1
+        }
+      },
+      "expected": "failed official cannot qualify",
+      "passes": true
+    },
+    {
+      "case": "historical-hash",
+      "qualified": 1,
+      "reproduced_exact": 1,
+      "official": null,
+      "expected": "matching historical hash increments reproduced_exact",
+      "passes": true
+    },
+    {
+      "case": "bounded-failure-exit1",
+      "passes": true,
+      "result": {
+        "upper_bound": 0.0005,
+        "failed_inputs": 1,
+        "pairs": 20000,
+        "streams": 2,
+        "protocol_valid": false,
+        "ops_sha256": "63def5784370c61ea4b051604b636e9b9265f12bc804f4afe71c1725c17e7598",
+        "checker_sha256": "ec9632db71525c05b826736ee4b9be4d0f960525333a50071f606f9f557bc37e"
+      }
+    },
+    {
+      "case": "inactive-mfs-admission",
+      "passes": false,
+      "runner_sha256": "44a42296f83b55e46aa0a6624dc9948e9deac876990d0969e774d59b094a5ee5",
+      "receipt": {
+        "guards_active": true,
+        "activation_counts": {
+          "m": 0,
+          "f": 0,
+          "s": 0,
+          "u": 1,
+          "r": 1
+        },
+        "activation_admitted": false
+      },
+      "admitted_policies": [
+        "m",
+        "f",
+        "s",
+        "mfsur"
+      ],
+      "expected": "Reject every requested action with no measured activation",
+      "reported_to_implementation_owner": true
+    }
+  ],
+  "model_calls": 0,
+  "fix_verification": {
+    "inactive_rules_rejected": [
+      "m",
+      "f",
+      "s",
+      "mfsur"
+    ],
+    "runner_sha256": "532389f8deba617f9b067d2cbffb636861ff6235e16043a9a382ef59e35b39db",
+    "python_tests": 45,
+    "test_status": "passed",
+    "test_log": "python-tests.log",
+    "scope": "Python tests and inactive-action admission; full native target reproduction remains separate"
+  }
+}

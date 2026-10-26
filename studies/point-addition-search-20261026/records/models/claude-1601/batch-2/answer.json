@@ -1,0 +1,4 @@
+{
+  "action_index": 2,
+  "reason": "u cuts T by ~3.65k (c1110 vs c0110); combined_y adds T (+355/+576), so drop it. Every measured recipe has both r and free_s, so we can't tell which one brings Q from 214 to 198. c1100 (no free_s) and c1010 (no r) each differ from the best recipe, c1110, by one rule. Testing both shows which rule lowers Q. c1100 may also beat the best if reconstructing free_s costs Toffolis without saving qubits."
+}

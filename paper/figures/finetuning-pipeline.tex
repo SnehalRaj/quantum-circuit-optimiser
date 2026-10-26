@@ -1,0 +1,57 @@
+% Proposed design. The retained study tested only parts of this process.
+% Keep held-out lineages and validation inputs outside the training loop.
+\begingroup
+\definecolor{ftblue}{RGB}{38,105,145}
+\definecolor{ftgreen}{RGB}{41,119,91}
+\begin{tikzpicture}[x=1cm,y=1cm,
+  every node/.style={font=\fontsize{8}{9.5}\selectfont},
+  ftbox/.style={draw=ftblue!75,fill=white,rounded corners=1.5pt,
+    align=center,inner sep=4pt,text width=2.65cm,minimum height=.92cm},
+  ftcheck/.style={ftbox,draw=ftgreen!75,text width=3.7cm},
+  ftarrow/.style={-{Latex[length=1.6mm]},line width=.65pt,draw=ftblue},
+  ftevalarrow/.style={ftarrow,draw=ftgreen}]
+
+\node[anchor=west,font=\fontsize{9}{10.5}\selectfont\bfseries]
+  at (0,6.05) {Proposed fine-tuning pipeline};
+\draw[draw=ftblue!18,fill=ftblue!4,rounded corners=3pt]
+  (0,1.3) rectangle (11.4,5.7);
+\draw[draw=ftgreen!18,fill=ftgreen!4,rounded corners=3pt]
+  (11.85,1.3) rectangle (17.3,5.7);
+\node[anchor=west,text=ftblue,font=\fontsize{8}{9.5}\selectfont\bfseries]
+  at (.25,5.43) {TRAINING LOOP};
+\node[anchor=west,text=ftgreen,font=\fontsize{8}{9.5}\selectfont\bfseries]
+  at (12.1,5.43) {INDEPENDENT EVALUATION};
+
+\node[ftbox] (ftdata) at (1.65,4.25)
+  {\textbf{Public edits}\\Split by lineage\\Reserve test data};
+\node[ftbox] (fttrain) at (5.2,4.25)
+  {\textbf{Train adapter}\\Training split only};
+\node[ftbox] (ftpropose) at (9.2,4.25)
+  {\textbf{Propose edits}\\Training parents};
+\node[ftbox,text width=3.0cm,minimum height=1.22cm] (ftbuild) at (9.2,2.35)
+  {\textbf{Build and evaluate}\\16-bit, then full width\\$Q\times T$; coordinates,\\phase, scratch, addend};
+\node[ftbox] (ftretain) at (5.2,2.35)
+  {\textbf{Keep valid edits}\\Better $Q/T$ tradeoffs};
+\draw[ftarrow] (ftdata.east)--(fttrain.west);
+\draw[ftarrow] (fttrain.east)--(ftpropose.west);
+\draw[ftarrow] (ftpropose.south)--(ftbuild.north);
+\draw[ftarrow] (ftbuild.west)--(ftretain.east);
+\draw[ftarrow] (ftretain.north)--(fttrain.south);
+\node[text=ftblue,font=\fontsize{7.5}{9}\selectfont]
+  at (7.2,3.3) {Repeat training};
+
+\node[ftcheck] (ftfreeze) at (14.575,4.25)
+  {\textbf{Freeze selected model}};
+\node[ftcheck] (fttest) at (14.575,3.05)
+  {\textbf{Propose edits}\\Held-out parent lineages};
+\node[ftcheck,minimum height=1.0cm] (ftaudit) at (14.575,1.88)
+  {\textbf{Full-width validation}\\Fresh inputs; same checks\\Report $Q\times T$ and failure};
+\draw[ftevalarrow] (fttrain.north)--(5.2,5.02)--(14.575,5.02)--(ftfreeze.north);
+\node[fill=white,inner sep=2pt,text=ftgreen,font=\fontsize{7.5}{9}\selectfont]
+  at (9.25,5.02) {After model selection};
+\draw[ftevalarrow] (ftfreeze.south)--(fttest.north);
+\draw[ftevalarrow] (fttest.south)--(ftaudit.north);
+\node[anchor=west,font=\fontsize{7.5}{9}\selectfont]
+  at (0,.8) {Keep held-out results outside training.};
+\end{tikzpicture}
+\endgroup

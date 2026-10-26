@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      width="180mm" height="96mm" viewBox="0 0 1600 854">
+      <title>Setup, fast search loop, and submission phase</title>
+      <desc>Setup collects GitHub commits and messages, creates point-addition
+      benchmarks, and creates a typed grammar. The fast loop selects parents,
+      proposes edits, checks circuits, and promotes candidates. The submission phase
+      validates full point addition and submits qualified circuits.</desc>
+      <defs>
+<marker id="arrow-gray" markerWidth="10" markerHeight="10"
+          refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+          <path d="M 0 0 L 9 5 L 0 10 Z" fill="#556b79"/></marker>
+<marker id="arrow-blue" markerWidth="10" markerHeight="10"
+          refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+          <path d="M 0 0 L 9 5 L 0 10 Z" fill="#23759a"/></marker>
+<marker id="arrow-teal" markerWidth="10" markerHeight="10"
+          refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+          <path d="M 0 0 L 9 5 L 0 10 Z" fill="#167d73"/></marker>
+<marker id="arrow-purple" markerWidth="10" markerHeight="10"
+          refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+          <path d="M 0 0 L 9 5 L 0 10 Z" fill="#8060a2"/></marker>
+</defs>
+<rect width="1600" height="854" fill="white"/>
+<rect x="40" y="12" width="1520" height="196" rx="16" fill="#f7f9fb" stroke="#d8e0e5" stroke-width="1.8"/>
+<text x="62" y="48" font-family="DejaVu Sans, sans-serif" font-size="25" fill="#193343" font-weight="700" text-anchor="start">SETUP</text>
+<rect x="64" y="69" width="464" height="119" rx="12" fill="white" stroke="#23759a" stroke-width="1.8"/>
+<text x="86" y="109" font-family="DejaVu Sans, sans-serif" font-size="24" fill="#193343" font-weight="700" text-anchor="start">Data gathering and cleaning</text>
+<text x="86" y="145" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#556b79" font-weight="400" text-anchor="start">GitHub commits and commit messages</text>
+<text x="86" y="173" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#556b79" font-weight="400" text-anchor="start">Source code and research notes</text>
+<rect x="564" y="69" width="464" height="119" rx="12" fill="white" stroke="#23759a" stroke-width="1.8"/>
+<text x="586" y="109" font-family="DejaVu Sans, sans-serif" font-size="24" fill="#193343" font-weight="700" text-anchor="start">Benchmark creation</text>
+<text x="586" y="145" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#556b79" font-weight="400" text-anchor="start">16-bit point addition</text>
+<text x="586" y="173" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#556b79" font-weight="400" text-anchor="start">Full secp256k1 point addition</text>
+<rect x="1064" y="69" width="472" height="119" rx="12" fill="white" stroke="#23759a" stroke-width="1.8"/>
+<text x="1086" y="109" font-family="DejaVu Sans, sans-serif" font-size="24" fill="#193343" font-weight="700" text-anchor="start">Typed grammar creation</text>
+<text x="1086" y="145" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#556b79" font-weight="400" text-anchor="start">Arithmetic edits</text>
+<text x="1086" y="173" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#556b79" font-weight="400" text-anchor="start">Conditions for each edit</text>
+<path d="M 530 128 H 555" fill="none" stroke="#556b79" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-gray)" />
+<path d="M 1030 128 H 1055" fill="none" stroke="#556b79" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-gray)" />
+<rect x="40" y="254" width="1520" height="365" rx="16" fill="#f2f8fb" stroke="#d4e6ef" stroke-width="1.8"/>
+<text x="62" y="289" font-family="DejaVu Sans, sans-serif" font-size="25" fill="#23759a" font-weight="700" text-anchor="start">FAST LOOP</text>
+<rect x="128" y="319" width="480" height="100" rx="12" fill="white" stroke="#23759a" stroke-width="1.8"/>
+<text x="150" y="359" font-family="DejaVu Sans, sans-serif" font-size="24" fill="#193343" font-weight="700" text-anchor="start">Select parent</text>
+<rect x="992" y="319" width="480" height="100" rx="12" fill="white" stroke="#23759a" stroke-width="1.8"/>
+<text x="1014" y="359" font-family="DejaVu Sans, sans-serif" font-size="24" fill="#193343" font-weight="700" text-anchor="start">Propose edits</text>
+<text x="1014" y="395" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#556b79" font-weight="400" text-anchor="start">LLM or model-free</text>
+<rect x="992" y="475" width="480" height="100" rx="12" fill="white" stroke="#23759a" stroke-width="1.8"/>
+<text x="1014" y="515" font-family="DejaVu Sans, sans-serif" font-size="24" fill="#193343" font-weight="700" text-anchor="start">Build and check</text>
+<text x="1014" y="551" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#556b79" font-weight="400" text-anchor="start">16-bit point addition</text>
+<rect x="128" y="475" width="480" height="100" rx="12" fill="white" stroke="#23759a" stroke-width="1.8"/>
+<text x="150" y="515" font-family="DejaVu Sans, sans-serif" font-size="24" fill="#193343" font-weight="700" text-anchor="start">Promote selected circuits</text>
+<path d="M 610 369 H 982" fill="none" stroke="#23759a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)" />
+<path d="M 1232 421 V 465" fill="none" stroke="#23759a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)" />
+<path d="M 990 525 H 618" fill="none" stroke="#23759a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)" />
+<path d="M 126 525 H 86 V 369 H 118" fill="none" stroke="#23759a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)" />
+<text x="800" y="452" font-family="DejaVu Sans, sans-serif" font-size="23" fill="#23759a" font-weight="400" text-anchor="middle">Repeat the search</text>
+<path d="M 296 189 V 230 H 368 V 309" fill="none" stroke="#556b79" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-gray)" />
+<path d="M 1300 189 V 230 H 1232 V 309" fill="none" stroke="#23759a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)" />
+<path d="M 796 189 V 239 H 1544 V 525 H 1482" fill="none" stroke="#556b79" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-gray)" />
+<rect x="40" y="670" width="1520" height="166" rx="16" fill="#f0f8f5" stroke="#d1e4dd" stroke-width="1.8"/>
+<text x="62" y="705" font-family="DejaVu Sans, sans-serif" font-size="25" fill="#167d73" font-weight="700" text-anchor="start">SUBMISSION PHASE</text>
+<path d="M 368 577 V 715" fill="none" stroke="#167d73" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)" />
+<rect x="64" y="722" width="698" height="94" rx="12" fill="white" stroke="#167d73" stroke-width="1.8"/>
+<text x="86" y="762" font-family="DejaVu Sans, sans-serif" font-size="24" fill="#193343" font-weight="700" text-anchor="start">Run and validate</text>
+<text x="86" y="798" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#556b79" font-weight="400" text-anchor="start">Full point-addition benchmarks</text>
+<rect x="838" y="722" width="698" height="94" rx="12" fill="white" stroke="#167d73" stroke-width="1.8"/>
+<text x="860" y="762" font-family="DejaVu Sans, sans-serif" font-size="24" fill="#193343" font-weight="700" text-anchor="start">Submit to leaderboard</text>
+<text x="860" y="798" font-family="DejaVu Sans, sans-serif" font-size="22" fill="#556b79" font-weight="400" text-anchor="start">Validated circuits</text>
+<path d="M 764 769 H 828" fill="none" stroke="#167d73" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-teal)" />
+</svg>

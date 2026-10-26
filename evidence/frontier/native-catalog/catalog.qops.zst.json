@@ -1,0 +1,81 @@
+{
+  "Q": 214,
+  "activation": {
+    "f": 2,
+    "m": 1957,
+    "r": 60,
+    "r_ccx": 60,
+    "s": 0,
+    "u": 3658
+  },
+  "activation_admission_scope": "Newly enabled mechanisms must activate. The caller checks disabled mechanisms against its pinned parent receipt. Inactive inherited flags supply no transfer evidence.",
+  "activation_admitted": true,
+  "activation_counts": {
+    "f": 2,
+    "m": 1957,
+    "r": 60,
+    "r_ccx": 60,
+    "s": 0,
+    "u": 3658
+  },
+  "adjacent_cancel_certificate": null,
+  "adjacent_cancel_pairs": 0,
+  "backend": "original-kaliski",
+  "bits": 17044,
+  "cancel_adjacent": false,
+  "clean_child_environment": true,
+  "compiler_log": "{repository}/work/frontier-native-check/catalog.qops.zst.compiler.log",
+  "conditional_source_sha256": "a56f374ad86c7dd3ca13cfd08291f5f9a4f40a54e122959c481656a54b9d987e",
+  "disabled_mechanisms": [],
+  "field_width": 16,
+  "gate_records_ccx_ccz": 28051,
+  "guard_rejections": {
+    "G1": 0,
+    "G2": 0,
+    "G3": 0,
+    "G4": 0
+  },
+  "guards_active": true,
+  "inactive_mechanisms": [
+    "s"
+  ],
+  "inactive_new_mechanisms": [],
+  "inherited_inactive_mechanisms": [
+    "s"
+  ],
+  "input_operation_count": 216502,
+  "local_catalog": true,
+  "local_catalog_certificate": {
+    "catalog_sha256": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052",
+    "guard": "Unconditioned local unitary blocks on at most four existing wires; measurement and condition changes are barriers.",
+    "input_ir_sha256": "01b0f4601cc73952450f33ebd6b0f32544a06a476517a902a50c4e7da5afb496",
+    "input_nonlinear_gate_records": 28051,
+    "input_operation_count": 219374,
+    "output_ir_sha256": "01b0f4601cc73952450f33ebd6b0f32544a06a476517a902a50c4e7da5afb496",
+    "output_nonlinear_gate_records": 28051,
+    "output_operation_count": 219374,
+    "protected_identity_tail_operations": 0,
+    "protected_identity_tail_sha256": "cff530169378d1dde1b67cae676eb5fdf75648503305e30f739747af32b5e1e9",
+    "removed_nonlinear_gate_records": 0,
+    "schema": "local-signed-permutation-catalog-v1",
+    "scope": "Local signed-permutation identities. Full-circuit reliability requires separate validation.",
+    "wrapper_sha256": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53"
+  },
+  "mean_toffoli": null,
+  "metric_scope": "Q is the referenced width. Compiler T is a static estimate before optional cancellation. circuit-check measures executed T.",
+  "newly_enabled_mechanisms": [
+    "u",
+    "r"
+  ],
+  "operation_count": 219374,
+  "ops": "{repository}/work/frontier-native-check/catalog.qops.zst",
+  "ops_sha256": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83",
+  "parent_policy": "mfs",
+  "policy": "mfsur",
+  "qubits": 214,
+  "receipt": "{repository}/work/frontier-native-check/catalog.qops.zst.json",
+  "schema": "lco-small-emission-v1",
+  "source_sha256": "daecd8b1a123b07bb10401fbadc4883efbaa062a59e8d72503e333c1e191bf62",
+  "static_expected_toffoli": 28051.0,
+  "static_expected_toffoli_before": 33728.0
+}

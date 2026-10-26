@@ -1,0 +1,83 @@
+{
+  "destination": "Authenticated Claude CLI, requested model claude-opus-5-5",
+  "first_round_prompts": {
+    "grammar": [
+      {
+        "gate_semantics": "All arguments put the target first, followed by controls. X flips a bit; CX and CCX flip their target when all controls are one. Z, CZ, and CCZ flip the sign when all listed bits are one. SWAP exchanges two bits; NEG flips every sign. Use only the numbered existing wires, with distinct wires within each gate. No scratch or measurements.",
+        "instruction": "Propose up to eight distinct cheaper gate programs. Use no tools. Every program must have the same action and phase on every input. Minimize CCX plus CCZ count, then gate count. Return JSON with only proposals, a list of program strings.",
+        "output_syntax": "Use a string of semicolon-separated gates: CX 0 1; X 2. The empty string is an empty program.",
+        "previous_attempts": [],
+        "task": {
+          "before": "CCX 0 1 2; CCX 0 3 2; X 2",
+          "maximum_candidates": 8,
+          "maximum_gates": 7,
+          "wires": 4
+        }
+      },
+      {
+        "gate_semantics": "All arguments put the target first, followed by controls. X flips a bit; CX and CCX flip their target when all controls are one. Z, CZ, and CCZ flip the sign when all listed bits are one. SWAP exchanges two bits; NEG flips every sign. Use only the numbered existing wires, with distinct wires within each gate. No scratch or measurements.",
+        "instruction": "Propose up to eight distinct cheaper gate programs. Use no tools. Every program must have the same action and phase on every input. Minimize CCX plus CCZ count, then gate count. Return JSON with only proposals, a list of program strings.",
+        "output_syntax": "Use a string of semicolon-separated gates: CX 0 1; X 2. The empty string is an empty program.",
+        "previous_attempts": [],
+        "task": {
+          "before": "X 0; CCX 1 2 0; CCX 1 3 0",
+          "maximum_candidates": 8,
+          "maximum_gates": 7,
+          "wires": 4
+        }
+      },
+      {
+        "gate_semantics": "All arguments put the target first, followed by controls. X flips a bit; CX and CCX flip their target when all controls are one. Z, CZ, and CCZ flip the sign when all listed bits are one. SWAP exchanges two bits; NEG flips every sign. Use only the numbered existing wires, with distinct wires within each gate. No scratch or measurements.",
+        "instruction": "Propose up to eight distinct cheaper gate programs. Use no tools. Every program must have the same action and phase on every input. Minimize CCX plus CCZ count, then gate count. Return JSON with only proposals, a list of program strings.",
+        "output_syntax": "Use a string of semicolon-separated gates: CX 0 1; X 2. The empty string is an empty program.",
+        "previous_attempts": [],
+        "task": {
+          "before": "X 0; CCX 1 2 0; CCX 1 3 0; X 0",
+          "maximum_candidates": 8,
+          "maximum_gates": 7,
+          "wires": 4
+        }
+      }
+    ],
+    "source": [
+      {
+        "gate_semantics": "All arguments put the target first, followed by controls. X flips a bit; CX and CCX flip their target when all controls are one. Z, CZ, and CCZ flip the sign when all listed bits are one. SWAP exchanges two bits; NEG flips every sign. Use only the numbered existing wires, with distinct wires within each gate. No scratch or measurements.",
+        "instruction": "Propose up to eight distinct cheaper gate programs. Use no tools. Every program must have the same action and phase on every input. Minimize CCX plus CCZ count, then gate count. Return JSON with only proposals, a list of program strings.",
+        "output_syntax": "Use Python source: def rewrite(q): return [CX(q[0], q[1]), X(q[2])]. Only this function and a literal list of gate constructors are accepted. Return [] for an empty program.",
+        "previous_attempts": [],
+        "task": {
+          "before": "CCX 0 1 2; CCX 0 3 2; X 2",
+          "maximum_candidates": 8,
+          "maximum_gates": 7,
+          "wires": 4
+        }
+      },
+      {
+        "gate_semantics": "All arguments put the target first, followed by controls. X flips a bit; CX and CCX flip their target when all controls are one. Z, CZ, and CCZ flip the sign when all listed bits are one. SWAP exchanges two bits; NEG flips every sign. Use only the numbered existing wires, with distinct wires within each gate. No scratch or measurements.",
+        "instruction": "Propose up to eight distinct cheaper gate programs. Use no tools. Every program must have the same action and phase on every input. Minimize CCX plus CCZ count, then gate count. Return JSON with only proposals, a list of program strings.",
+        "output_syntax": "Use Python source: def rewrite(q): return [CX(q[0], q[1]), X(q[2])]. Only this function and a literal list of gate constructors are accepted. Return [] for an empty program.",
+        "previous_attempts": [],
+        "task": {
+          "before": "X 0; CCX 1 2 0; CCX 1 3 0",
+          "maximum_candidates": 8,
+          "maximum_gates": 7,
+          "wires": 4
+        }
+      },
+      {
+        "gate_semantics": "All arguments put the target first, followed by controls. X flips a bit; CX and CCX flip their target when all controls are one. Z, CZ, and CCZ flip the sign when all listed bits are one. SWAP exchanges two bits; NEG flips every sign. Use only the numbered existing wires, with distinct wires within each gate. No scratch or measurements.",
+        "instruction": "Propose up to eight distinct cheaper gate programs. Use no tools. Every program must have the same action and phase on every input. Minimize CCX plus CCZ count, then gate count. Return JSON with only proposals, a list of program strings.",
+        "output_syntax": "Use Python source: def rewrite(q): return [CX(q[0], q[1]), X(q[2])]. Only this function and a literal list of gate constructors are accepted. Return [] for an empty program.",
+        "previous_attempts": [],
+        "task": {
+          "before": "X 0; CCX 1 2 0; CCX 1 3 0; X 0",
+          "maximum_candidates": 8,
+          "maximum_gates": 7,
+          "wires": 4
+        }
+      }
+    ]
+  },
+  "maximum_calls": 36,
+  "payload": "Three four-wire gate patterns, gate semantics, output-format instructions, and later local proof feedback. No full circuit artifact or source tree."
+}

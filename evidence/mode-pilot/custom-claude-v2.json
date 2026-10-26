@@ -1,0 +1,354 @@
+{
+  "case": "custom-claude-v2",
+  "completed": 2,
+  "contract_sha256": "80995fbd95f7a1fd3e46283fda7413360a762926893caf42278bffad2174e3cf",
+  "controller_commit_verified_before_launch": "49bdddbd3b5486739ab4e0e549bf92285c34fc2c",
+  "family": "pilot-ap",
+  "frozen_contract": {
+    "audit_pairs": 0,
+    "epsilon": 0.001,
+    "large_pairs": 32768,
+    "measurement_streams": 2,
+    "small_pairs": 4096,
+    "strategy": "evolution",
+    "trials": 2
+  },
+  "grammar_sha256": "c23e76731483f81db1c7527d0ac7c080816084a21c376a953342c2c836f91bab",
+  "harness_source_sha256": "418acc786658d056c951f319ffc5253f84db2ece4f2dc7b80ba1dc75918ef587",
+  "menu_exhausted": true,
+  "model_calls": 2,
+  "qualified": 2,
+  "results_sha256": "78a8eae1c68ec334cf9fa649fbee4a01e15973aa5363a02dfed5d5c3fcf089f3",
+  "retained_front_slots": [
+    0
+  ],
+  "rows": [
+    {
+      "Q": 1270,
+      "binary_integrity_after": true,
+      "candidate": {
+        "actions": [
+          {
+            "parameters": {
+              "guards": true,
+              "phase_fix": true
+            },
+            "rule": "cleanup.inverse_and_measure"
+          }
+        ],
+        "backend": "source-conditional",
+        "cancel_adjacent": false,
+        "family": "pilot-ap",
+        "grammar_sha256": "c23e76731483f81db1c7527d0ac7c080816084a21c376a953342c2c836f91bab",
+        "policy": "u",
+        "target": "pilot-ap"
+      },
+      "construction": {
+        "build_binary_sha256": "df3e6d2d3e1bc30eb7ca58e04709cc3556fc9d3e3c6d62514d1f985b9af3320c",
+        "emitter_binary_sha256": "df3e6d2d3e1bc30eb7ca58e04709cc3556fc9d3e3c6d62514d1f985b9af3320c",
+        "eval_binary_sha256": "43e8c723b3723c587482098b4d62eea16b44ba8311458bb345dc8908cc271e18",
+        "provenance": {
+          "authors": [
+            "Retain the parent credits in NOTICE and the source files"
+          ],
+          "dependency_ids": [
+            "54acebaf-8d55-419e-b739-799d23bdbde0"
+          ],
+          "description": "Editable derivative of the pinned ap1270 constructor.",
+          "parent_commit": "023fbe13c59df2ff0087ea4bb916d25f3d4fac70",
+          "parent_target": "ap1270",
+          "upstream_family": "qualified-leapfrog"
+        },
+        "recipe_sha256": "dba3188dcb9a88028849205d796d023e67e7145b93c3d0f07af2e6a3392bd8f1",
+        "wall_seconds": 61.10943541675806
+      },
+      "fast": {
+        "Q": 214,
+        "T": 30070.0,
+        "alpha": 0.05,
+        "checker_binary_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+        "checker_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+        "checker_source_sha256": "5a00c89974f5774b1e44cd00c9e9e8f147aad4c695ddea31d24900cb31e849f8",
+        "domain_exclusions": {},
+        "failed_inputs": 0,
+        "failed_shots": 0,
+        "field_width": 16,
+        "input_recipe": "study_check::stream(inputs,[label,u64le(index)]); reject scalar zero or >=order; reject affine-domain exclusions",
+        "label": "10f5eaa66aa93037b9261ef81cd9ab038a723f0991bce7bdb225922378a37fee/small/u",
+        "measurement_recipe": "study_check::stream(measurements,[label,u64le(stream),u64le(index/64)])",
+        "observed_failure_probability": 0.0,
+        "ops_sha256": "8fd84fef5550400b04dd115e56ec41fe64ce307cac79d97675e889e99b1a5d4b",
+        "packet_sha256": "399494f9ef5e6ccf79e38f128453c969bc3678870d6bb61055700b1c8ebdcf5f",
+        "pairs": 4096,
+        "per_input_sha256": "c664b87b92ae12f645b9017ca53c8ee834ff24a4a9003450bda46d16d00cbcf3",
+        "protocol": "scaled-full-point-add-v1",
+        "protocol_valid": true,
+        "streams": 2,
+        "upper_bound": 0.0007311125564754343
+      },
+      "large_rewrite_counts": {
+        "adjacent_cancel": 0,
+        "f": 0,
+        "m": 0,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 1
+      },
+      "mean_T_on_screen_packet": 793800.9115600586,
+      "model": {
+        "action_index": 1,
+        "api_keys_removed": true,
+        "billing_scope": "CLI estimate; subscription invoice unavailable",
+        "executable_sha256": "ffb64331bc0ee1b69efb7c2c428bd3ab516bc31b75bf60886b356c97c1c25ffd",
+        "mcp_disabled": true,
+        "model_called": true,
+        "provider": "claude",
+        "provider_estimate_usd": 0.041428000000000006,
+        "reason": "The only active mechanism is cleanup.inverse_and_measure, and nothing is blocked. Action 1 applies that rule with guards and phase_fix turned on, so the cleanup runs with its safety guards and phase correction. Action 0 is the no-op baseline and tests no mechanism. No results exist yet, so trying the one qualified active strategy is the way to learn whether it carries over to full secp256k1.",
+        "requested_model": "claude-opus-5-5",
+        "resolved_models": [
+          "claude-opus-5-5"
+        ],
+        "success": true,
+        "tools_disabled": true,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 4655,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 4655,
+          "cache_read_input_tokens": 0,
+          "fallback_credit": null,
+          "inference_geo": "global",
+          "input_tokens": 2,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 4655,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 4655,
+              "cache_read_input_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 209,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 209,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "server_tool_use": {
+            "web_fetch_requests": 0,
+            "web_search_requests": 0
+          },
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "wall_seconds": 5.576760768890381
+      },
+      "operation_artifact_reused": false,
+      "ops_sha256": "a5ea332d78084447ea358dd09d4a4eb69e26dafea821b3bcffda6e4d9ff26de1",
+      "qualified": true,
+      "screen": {
+        "Q": 1270,
+        "T": 793800.9115600586,
+        "alpha": 0.0125,
+        "checker_binary_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+        "checker_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+        "checker_source_sha256": "5a00c89974f5774b1e44cd00c9e9e8f147aad4c695ddea31d24900cb31e849f8",
+        "domain_exclusions": {},
+        "failed_inputs": 10,
+        "failed_shots": 20,
+        "field_width": 256,
+        "input_recipe": "study_check::stream(inputs,[label,u64le(index)]); reject scalar zero or >=order; reject affine-domain exclusions",
+        "label": "10f5eaa66aa93037b9261ef81cd9ab038a723f0991bce7bdb225922378a37fee/large/0",
+        "measurement_recipe": "study_check::stream(measurements,[label,u64le(stream),u64le(index/64)])",
+        "observed_failure_probability": 0.00030517578125,
+        "ops_sha256": "a5ea332d78084447ea358dd09d4a4eb69e26dafea821b3bcffda6e4d9ff26de1",
+        "packet_sha256": "2edbcfa79bcb48cabfebfca0fa745fea921a6e6292f9dc2cd1021dcfa07ae97b",
+        "pairs": 32768,
+        "per_input_sha256": "6b8d638cee3f705ad3ae8d9a06f0e98ca333fbc24e93a68ee9adb764464fcd84",
+        "protocol": "scaled-full-point-add-v1",
+        "protocol_valid": true,
+        "streams": 2,
+        "upper_bound": 0.0006019881632431344
+      },
+      "slot": 0,
+      "small_activation_counts": {
+        "f": 0,
+        "m": 0,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 3658
+      },
+      "source_file_count": 133,
+      "source_integrity_after": true,
+      "source_manifest_hash_encoding": "SHA-256 of source_hashes encoded as sorted compact JSON with separators comma and colon",
+      "source_manifest_sha256": "25692d5633f022796a5cd7382db62af505686e23dcf2c2475cdd9822b3520c9f"
+    },
+    {
+      "Q": 1270,
+      "binary_integrity_after": true,
+      "candidate": {
+        "actions": [],
+        "backend": "source-conditional",
+        "cancel_adjacent": false,
+        "family": "pilot-ap",
+        "grammar_sha256": "c23e76731483f81db1c7527d0ac7c080816084a21c376a953342c2c836f91bab",
+        "policy": "none",
+        "target": "pilot-ap"
+      },
+      "construction": {
+        "build_binary_sha256": "0ff89becfa2e5f275228d4ae49e1a5585413a982a43a2245e6588cf18bc8f7f7",
+        "emitter_binary_sha256": "0ff89becfa2e5f275228d4ae49e1a5585413a982a43a2245e6588cf18bc8f7f7",
+        "eval_binary_sha256": "1a7c0ab8ead09d61b2962a7e68610ef039b526bcb45d3d6f39036a4235d85292",
+        "provenance": {
+          "authors": [
+            "Retain the parent credits in NOTICE and the source files"
+          ],
+          "dependency_ids": [
+            "54acebaf-8d55-419e-b739-799d23bdbde0"
+          ],
+          "description": "Editable derivative of the pinned ap1270 constructor.",
+          "parent_commit": "023fbe13c59df2ff0087ea4bb916d25f3d4fac70",
+          "parent_target": "ap1270",
+          "upstream_family": "qualified-leapfrog"
+        },
+        "recipe_sha256": "45ff12bb44c120e0184c859ee6c9ca719b4d507bdad1af5728ccd91b66292b96",
+        "wall_seconds": 70.64604495745152
+      },
+      "fast": {
+        "Q": 214,
+        "T": 33728.0,
+        "alpha": 0.05,
+        "checker_binary_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+        "checker_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+        "checker_source_sha256": "5a00c89974f5774b1e44cd00c9e9e8f147aad4c695ddea31d24900cb31e849f8",
+        "domain_exclusions": {},
+        "failed_inputs": 0,
+        "failed_shots": 0,
+        "field_width": 16,
+        "input_recipe": "study_check::stream(inputs,[label,u64le(index)]); reject scalar zero or >=order; reject affine-domain exclusions",
+        "label": "10f5eaa66aa93037b9261ef81cd9ab038a723f0991bce7bdb225922378a37fee/small/none",
+        "measurement_recipe": "study_check::stream(measurements,[label,u64le(stream),u64le(index/64)])",
+        "observed_failure_probability": 0.0,
+        "ops_sha256": "b1c0c04919cd9b231aee676948d8e2fb917cdee16268a62aed132fd0b14700d1",
+        "packet_sha256": "87198fafa8c95632c0e141f7ed8b6269e42b8ae37dd658794858e7cbfe8b5505",
+        "pairs": 4096,
+        "per_input_sha256": "c9e6f7eaa3fabae557e6f09e0c54fe41adb81ad4ef95665aadcffc3f243b9da3",
+        "protocol": "scaled-full-point-add-v1",
+        "protocol_valid": true,
+        "streams": 2,
+        "upper_bound": 0.0007311125564754343
+      },
+      "large_rewrite_counts": {
+        "adjacent_cancel": 0,
+        "f": 0,
+        "m": 0,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 0
+      },
+      "mean_T_on_screen_packet": 793801.7625732422,
+      "model": {
+        "action_index": 0,
+        "api_keys_removed": true,
+        "billing_scope": "CLI estimate; subscription invoice unavailable",
+        "executable_sha256": "ffb64331bc0ee1b69efb7c2c428bd3ab516bc31b75bf60886b356c97c1c25ffd",
+        "mcp_disabled": true,
+        "model_called": true,
+        "provider": "claude",
+        "provider_estimate_usd": 0.021386600000000002,
+        "reason": "Index 0 is the only recipe on the admitted menu: the policy 'none' baseline with no rewrite actions, using the same grammar hash. The qualified cleanup.inverse_and_measure strategy (Q=1270) shows up in the search results but isn't offered as an action, so it can't be chosen here. The baseline keeps the source-conditional pilot-ap circuit as it is, with no rewrites, and serves as the reference point for promotion.",
+        "requested_model": "claude-opus-5-5",
+        "resolved_models": [
+          "claude-opus-5-5"
+        ],
+        "success": true,
+        "tools_disabled": true,
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 1961,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 1961,
+          "cache_read_input_tokens": 2753,
+          "fallback_credit": null,
+          "inference_geo": "global",
+          "input_tokens": 2,
+          "iterations": [
+            {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 1961,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 1961,
+              "cache_read_input_tokens": 2753,
+              "input_tokens": 2,
+              "output_tokens": 257,
+              "type": "message"
+            }
+          ],
+          "output_tokens": 257,
+          "output_tokens_details": {
+            "thinking_tokens": 35
+          },
+          "server_tool_use": {
+            "web_fetch_requests": 0,
+            "web_search_requests": 0
+          },
+          "service_tier": "standard",
+          "speed": "standard"
+        },
+        "wall_seconds": 6.736729145050049
+      },
+      "operation_artifact_reused": true,
+      "ops_sha256": "9271a9aa2b368b88989e905a932d5469baece5f3af00c0e928e8dcb7b9ce3c01",
+      "qualified": true,
+      "screen": {
+        "Q": 1270,
+        "T": 793801.7625732422,
+        "alpha": 0.0125,
+        "checker_binary_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+        "checker_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+        "checker_source_sha256": "5a00c89974f5774b1e44cd00c9e9e8f147aad4c695ddea31d24900cb31e849f8",
+        "domain_exclusions": {},
+        "failed_inputs": 9,
+        "failed_shots": 18,
+        "field_width": 256,
+        "input_recipe": "study_check::stream(inputs,[label,u64le(index)]); reject scalar zero or >=order; reject affine-domain exclusions",
+        "label": "10f5eaa66aa93037b9261ef81cd9ab038a723f0991bce7bdb225922378a37fee/large/1",
+        "measurement_recipe": "study_check::stream(measurements,[label,u64le(stream),u64le(index/64)])",
+        "observed_failure_probability": 0.000274658203125,
+        "ops_sha256": "9271a9aa2b368b88989e905a932d5469baece5f3af00c0e928e8dcb7b9ce3c01",
+        "packet_sha256": "04b24a97a91eacd330af5cd2ed10df4b61840c1ef7fa6ad37431a1ffe9b27709",
+        "pairs": 32768,
+        "per_input_sha256": "04cf9d82fad97b2e5fe75bace6095dfed07b3c074102a5b6ace2a7a062be2f3c",
+        "protocol": "scaled-full-point-add-v1",
+        "protocol_valid": true,
+        "streams": 2,
+        "upper_bound": 0.0005608405834414051
+      },
+      "slot": 1,
+      "small_activation_counts": {
+        "f": 0,
+        "m": 0,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 0
+      },
+      "source_file_count": 133,
+      "source_integrity_after": true,
+      "source_manifest_hash_encoding": "SHA-256 of source_hashes encoded as sorted compact JSON with separators comma and colon",
+      "source_manifest_sha256": "6791260f3115d88c50a9dd226714c16a861ec44fd592e763e5f6bded82b388e9"
+    }
+  ],
+  "run_directory": "work/mode-pilot/custom-claude-v2",
+  "schema_version": 1,
+  "scope": "Functional source-family workflow validation. Screening qualification only; no fresh final audit, rediscovery, model-policy benefit, or frontier improvement claim."
+}

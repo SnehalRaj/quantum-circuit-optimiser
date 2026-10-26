@@ -1,0 +1,97 @@
+{
+  "base_commit": "b618b19cf76f0ffe3829b53a8af6653c95dc7e4e",
+  "candidate": "q818-ur-cat",
+  "expected": {
+    "emitted_ops": 48346124,
+    "operation_sha256": "a340e6a9fa6c4ba087206a537b4fdc93260630e87ec51ebed9d4486969e2d34a",
+    "required_dependencies": [
+      {
+        "role": "parent",
+        "submission_id": "d2583a60-f676-44b6-9e25-399dbdd273d7"
+      },
+      {
+        "role": "lever",
+        "submission_id": "59359890-410f-49b1-b4dc-c5e54ed528f0"
+      },
+      {
+        "role": "lever",
+        "submission_id": "6d08713c-4a11-4384-9fe4-53fb9f5aca02"
+      },
+      {
+        "role": "lever",
+        "submission_id": "d419f804-80ed-4ddd-914c-c1e1d149a706"
+      },
+      {
+        "role": "catalog",
+        "submission_id": "11613a51-1243-4f91-801a-9e71600d1f99"
+      }
+    ],
+    "required_note_sections": [
+      "What changed",
+      "Measured results",
+      "Disclosure: variants screened in this region",
+      "Reproduce",
+      "Prior work and credit",
+      "Limitations",
+      "Inherited limiting contract"
+    ],
+    "screen": {
+      "Q": 818,
+      "T": 9728780,
+      "counts": {
+        "ancilla_garbage_batches": 0,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0
+      },
+      "passed": true,
+      "score": 7958142040,
+      "shots": 9024
+    }
+  },
+  "fixture_sha256": "4aed1b91a932735f3ef31e10f42bf96dc31b1d70498d1c7649a14cec450a802b",
+  "historical_submission": {
+    "id": "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "officialMetrics": {
+      "qubits": 818,
+      "toffoli": 9728780
+    },
+    "officialScore": 7958142040,
+    "on_public_QT_curve": true,
+    "rejectionReason": "score did not improve current best",
+    "status": "rejected",
+    "submissionCommitSha": "4073f09cfa7fe733fdeb64841193282aaff293d9"
+  },
+  "role_mapping_scope": "Roles follow the exact-edit descriptions and credits in the hashed public notes.",
+  "schema": "lco-frontier-replay-v1",
+  "scope": "Expectations extracted from archived campaign records. A fresh library replay remains required.",
+  "source_files_sha256": {
+    "src/point_add/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052",
+    "src/point_add/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53"
+  },
+  "source_records": {
+    "dependencies": {
+      "path": "runs/pareto5-public-20261025/publication/q818-ur-cat/dependencies.json",
+      "sha256": "be4cbe2620ee140beb8beffe470c7545fc6aee40d050d7a27a03bea521ebd7bc"
+    },
+    "emission": {
+      "path": "runs/pareto5-public-20261025/tracks/froghop-catalog/q818-ur-cat/emission.json",
+      "sha256": "6695952be9059f810b989c016203185c8bccd36903139b55f540a69d5bfca8a3"
+    },
+    "manifest": {
+      "path": "runs/pareto5-public-20261025/tracks/froghop-catalog/q818-ur-cat/manifest.json",
+      "sha256": "43e1a0198474c196ad2c1bbd6e8fca1b22fe02185eaa219cad306e3aec10022c"
+    },
+    "note": {
+      "path": "runs/pareto5-public-20261025/publication/q818-ur-cat/note.md",
+      "sha256": "883c8b4f7d321ce6ae4afb2fee2291599e5c4a9549c6819918e5e7b653d13ebe"
+    },
+    "screen": {
+      "path": "runs/pareto5-public-20261025/tracks/froghop-catalog/q818-ur-cat/screen.json",
+      "sha256": "0c3f7faaf353724d0fdaa91c47adcf5aa0e8b6e9d351344d9f03f4b7cc6c9c7f"
+    },
+    "service": {
+      "path": "runs/pareto5-public-20261025/publication/q818-ur-cat/service-result.json",
+      "sha256": "3fcf8c6e0226511b7e6625fc5c662e145244e8288f923dfccadd748025def848"
+    }
+  }
+}

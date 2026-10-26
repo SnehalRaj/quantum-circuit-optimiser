@@ -1,0 +1,137 @@
+Search guarded-seeds-v1 codex61sol 17071
+Search complete guarded-seeds-v1 codex61sol 17071 complete 151.4
+Search guarded-seeds-v1 codex61sol 28081
+Search complete guarded-seeds-v1 codex61sol 28081 complete 150.95
+Search guarded-seeds-v1 codex61sol 39091
+Search complete guarded-seeds-v1 codex61sol 39091 complete 308.86
+Search guarded-cleanup-only-v1 codex61sol 17071
+Search complete guarded-cleanup-only-v1 codex61sol 17071 complete 136.7
+Search guarded-cleanup-only-v1 codex61sol 28081
+Search complete guarded-cleanup-only-v1 codex61sol 28081 complete 133.05
+Search guarded-cleanup-only-v1 codex61sol 39091
+Search complete guarded-cleanup-only-v1 codex61sol 39091 complete 321.15
+Audit d6381c2f684a 0 0.000478874715572497
+Audit 299232bdb056 0 0.000478874715572497
+Audit 0d80c61b8277 0 0.000478874715572497
+Audit 3b715c6a9916 0 0.000478874715572497
+Audit 8f69817cc19d 0 0.000478874715572497
+Audit fe1a270a3571 0 0.000478874715572497
+Audit e7de35c47d91 0 0.000478874715572497
+Audit f81497e96efc 0 0.000478874715572497
+Audit 8f4ffe5c6d66 0 0.000478874715572497
+Audit 831a60e8715f 0 0.000478874715572497
+Audit 27578ec87758 0 0.000478874715572497
+Audit 9277ff1abe98 0 0.000478874715572497
+Audit 6a5e6aff685d 0 0.000478874715572497
+Audit 02b516595d0a 0 0.000478874715572497
+Audit 9cf42462f485 0 0.000478874715572497
+Audit 5b683c9ecb3d 0 0.000478874715572497
+Audit d2c5aa212932 0 0.000478874715572497
+Audit 93e53b3f787b 0 0.000478874715572497
+Audit 088ee2a90044 0 0.000478874715572497
+Audit 484e9b92d96e 0 0.000478874715572497
+Audit 8491b8ecec3b 0 0.000478874715572497
+Audit eda4a99c55c3 0 0.000478874715572497
+Audit fa2d8e60f419 0 0.000478874715572497
+Audit 434542bc43a8 0 0.000478874715572497
+Audit 058e1bfe8134 0 0.000478874715572497
+Audit eeaac889cb9a 0 0.000478874715572497
+Audit 747514bcc350 0 0.000478874715572497
+Audit ab3557d8bcbe 0 0.000478874715572497
+Audit 39a542663135 0 0.000478874715572497
+[
+  {
+    "condition": "guarded-seeds-v1",
+    "arm": "offline",
+    "status": "complete",
+    "median_weighted_improvement_percent": 55.519146999261615,
+    "proposal_statuses": {
+      "improvement": 45,
+      "long_pass": 68,
+      "failed": 14,
+      "duplicate": 89
+    },
+    "feedback_calls": 0
+  },
+  {
+    "condition": "guarded-seeds-v1",
+    "arm": "claude",
+    "status": "complete",
+    "median_weighted_improvement_percent": 55.519146999261615,
+    "proposal_statuses": {
+      "improvement": 45,
+      "long_pass": 78,
+      "duplicate": 85,
+      "failed": 8
+    },
+    "feedback_calls": 6
+  },
+  {
+    "condition": "guarded-seeds-v1",
+    "arm": "codex",
+    "status": "blocked_or_incomplete",
+    "median_weighted_improvement_percent": null,
+    "proposal_statuses": {},
+    "feedback_calls": 0
+  },
+  {
+    "condition": "guarded-seeds-v1",
+    "arm": "codex61sol",
+    "status": "complete",
+    "median_weighted_improvement_percent": 55.519146999261615,
+    "proposal_statuses": {
+      "improvement": 45,
+      "long_pass": 77,
+      "duplicate": 82,
+      "failed": 12
+    },
+    "feedback_calls": 6
+  },
+  {
+    "condition": "guarded-cleanup-only-v1",
+    "arm": "offline",
+    "status": "complete",
+    "median_weighted_improvement_percent": 49.78250823443777,
+    "proposal_statuses": {
+      "improvement": 29,
+      "long_pass": 63,
+      "duplicate": 116,
+      "failed": 8
+    },
+    "feedback_calls": 0
+  },
+  {
+    "condition": "guarded-cleanup-only-v1",
+    "arm": "claude",
+    "status": "complete",
+    "median_weighted_improvement_percent": 55.116525004033925,
+    "proposal_statuses": {
+      "improvement": 32,
+      "long_pass": 76,
+      "duplicate": 103,
+      "failed": 5
+    },
+    "feedback_calls": 6
+  },
+  {
+    "condition": "guarded-cleanup-only-v1",
+    "arm": "codex",
+    "status": "blocked_or_incomplete",
+    "median_weighted_improvement_percent": null,
+    "proposal_statuses": {},
+    "feedback_calls": 0
+  },
+  {
+    "condition": "guarded-cleanup-only-v1",
+    "arm": "codex61sol",
+    "status": "complete",
+    "median_weighted_improvement_percent": 53.50684371253678,
+    "proposal_statuses": {
+      "improvement": 34,
+      "long_pass": 82,
+      "duplicate": 94,
+      "failed": 6
+    },
+    "feedback_calls": 6
+  }
+]

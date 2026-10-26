@@ -1,0 +1,52 @@
+   Compiling lco-native v0.1.0 ({repository}/native)
+    Finished `release` profile [optimized] target(s) in 1m 11s
+     Running unittests src/lib.rs (/tmp/llm-native-target/release/deps/lco_native-d4710c5b538d4834)
+
+running 3 tests
+test native_tests::all_conditional_subsets_have_one_canonical_policy ... ok
+test native_tests::compiler_receipt_rejects_disabled_guards ... ok
+test native_tests::exact_cancellation_uses_adjacent_unitary_involutions_only ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/circuit-check.rs (/tmp/llm-native-target/release/deps/circuit_check-d5bc80333738b38f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/circuit-transform.rs (/tmp/llm-native-target/release/deps/circuit_transform-e7196b10cf6dcf0d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/small-emit.rs (/tmp/llm-native-target/release/deps/small_emit-7f442e05587c7a57)
+
+running 8 tests
+test original::scaled_tests::large_field_classical_kaliski_bounds_cover_a_fixed_corpus ... ok
+test original::scaled_tests::legacy_256_primitive_stream_matches_the_original_source ... ok
+test original::scaled_tests::scaled_add_and_subtract_cover_overflow ... ok
+test original::scaled_tests::scaled_double_and_halve_cover_the_modulus_gap ... ok
+test original::scaled_tests::scaled_product_reduces_raw_words ... ok
+test original::scaled_tests::scaled_profile_selects_the_field_width ... ok
+test original::scaled_tests::scaled_reducer_normalizes_the_raw_low_word ... ok
+test original::scaled_tests::small_field_classical_kaliski_bounds_cover_every_denominator ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.87s
+
+     Running tests/conditional.rs (/tmp/llm-native-target/release/deps/conditional-0eae91ee96be8262)
+
+running 3 tests
+test diagnostic_environment_controls_are_rejected ... ok
+test inactive_standalone_mechanism_is_rejected_with_a_receipt ... ok
+test real_small_point_addition_activates_both_conditional_mechanisms ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.97s
+
+   Doc-tests lco_native
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

@@ -1,0 +1,60 @@
+warning: function `apply` is never used
+  --> src/../rules.rs:44:8
+   |
+44 | pub fn apply(ops: Vec<Op>) -> Vec<Op> {
+   |        ^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `apply` is never used
+  --> src/../rules_v2.rs:51:8
+   |
+51 | pub fn apply(ops: Vec<Op>) -> Vec<Op> {
+   |        ^^^^^
+
+warning: function `equivalent` is never used
+  --> src/../catalog.rs:49:8
+   |
+49 | pub fn equivalent(a:&[Op],b:&[Op])->bool {let mut all=a.to_vec();all.extend_from_slice(b);let w=wires(&all);assert!(w.len()<=4);signature...
+   |        ^^^^^^^^^^
+
+warning: `frontier-transform` (bin "frontier-transform" test) generated 3 warnings
+warning: `frontier-transform` (bin "frontier-transform") generated 2 warnings (2 duplicates)
+    Finished `release` profile [optimized] target(s) in 0.32s
+     Running unittests src/main.rs (native/frontier/target/release/deps/frontier_transform-7688d065fef57c22)
+
+running 11 tests
+test factor_tests::every_four_wire_pair_preserves_values_and_relative_phase ... ok
+test factor_tests::retains_nonmatching_and_explicitly_conditioned_pairs ... ok
+test packing_tests::allocates_all_operands_before_a_release ... ok
+test packing_tests::keeps_conditional_resets_live_and_register_qubits_fixed ... ok
+test rules::tests::cancels_disjoint_pairs_and_respects_measurement_barriers ... ok
+test packing_tests::preserves_every_input_and_measurement_branch_phase ... ok
+test rules::tests::preserves_basis_values_and_relative_phase ... ok
+test rules_v2::shared_controls::cancels_across_shared_controls_without_target_dependency ... ok
+test rules_v2::tests::cancels_disjoint_pairs_and_respects_measurement_barriers ... ok
+test rules_v2::tests::preserves_basis_values_and_relative_phase ... ok
+test catalog::fixed_simulator_certificate::every_catalog_entry_matches_the_fixed_simulator ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/catalog.rs (native/frontier/target/release/deps/catalog-ad45cda316d81425)
+
+running 5 tests
+test removes_nonlinearity_from_control_conjugation ... ok
+test keeps_measurement_barriers ... ok
+test preserves_phase_and_controlled_copy_conjugations ... ok
+test fixed_simulator_checks_noncontiguous_roles_and_outer_masks ... ok
+test catalog::fixed_simulator_certificate::every_catalog_entry_matches_the_fixed_simulator ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/conditional.rs (native/frontier/target/release/deps/conditional-1c73d4a2d4555777)
+
+running 3 tests
+test releases_matching_conditional_segments_and_keeps_an_outer_dirty_segment ... ok
+test sibling_push_instances_have_different_tokens ... ok
+test an_inner_reset_does_not_cover_an_outer_segment ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

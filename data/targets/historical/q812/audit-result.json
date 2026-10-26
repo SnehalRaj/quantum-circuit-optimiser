@@ -1,0 +1,60 @@
+{
+  "Q": 812,
+  "S": 8177901284,
+  "T": 10071306.634375,
+  "binding": {
+    "checker_sha256": "abf8572a7ec9318888e564778658e89b965d9ba6aafdd24a23beeadc46bdf260",
+    "label": "frontier-levers-20261025/slot-08/19290a81e88f335ac4b93844bf872f8d",
+    "ops_sha256": "f8c6e07c328356f59f73b87b79303fc774eae2c9b7bfc7c5be484ee5f7fc6d25",
+    "pairs": 20480,
+    "protocol_sha256": "f5d4b4161033f655198102cffed7db24b923b1da105db6ad5d6c2c25149b4bf2",
+    "streams": 2
+  },
+  "bounds": {
+    "alpha_per_member": 0.0015625,
+    "decision": "meets_0.001_bound",
+    "epsilon": 0.001,
+    "family_upper95": 0.00031545161047326977,
+    "observed_rate": 0.0,
+    "pointwise_two_sided95": [
+      0.0,
+      0.00018010484626992
+    ]
+  },
+  "counts": {
+    "channel_failed_inputs": {
+      "addend": 0,
+      "coordinate": 0,
+      "phase": 0,
+      "workspace": 0
+    },
+    "channel_failed_shots": {
+      "addend": 0,
+      "coordinate": 0,
+      "phase": 0,
+      "workspace": 0
+    },
+    "failed_indices": [],
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "packet_sha256": "27057069c99b03e3c1578c363e7b872e31021c8217ec3d0717700a619649f2ff"
+  },
+  "file_sha256": {
+    "per-input.jsonl.gz": "5662571cfb741c6e5fd445a3f5bededd06f928d6d6c2fab3f38491f8c05f24b2",
+    "process.json": "03d89404a632bf68348f68cf6df0543032cc228f05645ecd7d42486b6513d86a",
+    "raw.json": "b71c5b682af69557b9d2cbbe3dad0e6f83b6be495674cde01e9a6dd42a085749"
+  },
+  "historical_receipt_sha256": "96f7a761a43351699fa85f26e28530247fb8c40e74463853f5598788654f70af",
+  "id": "q812-ur",
+  "pairs": 20480,
+  "source_slot": "slot-08",
+  "stage": "calibration",
+  "status": "complete",
+  "streams": 2,
+  "timings": {
+    "load_seconds": 3.756941333,
+    "preparation_seconds": 8.676929333,
+    "simulation_seconds": 83.24933175,
+    "total_seconds": 101.792877875
+  }
+}

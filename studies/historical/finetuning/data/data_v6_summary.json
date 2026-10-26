@@ -1,0 +1,31 @@
+{
+  "test": {
+    "commits": 39,
+    "nonce_touch_kept": 3,
+    "reasons": {
+      "nonce_only": 8,
+      "ok": 39
+    },
+    "rows": 39
+  },
+  "train": {
+    "commits": 147,
+    "nonce_touch_kept": 0,
+    "reasons": {
+      "nonce_only": 12,
+      "nonce_touch": 153,
+      "ok": 293
+    },
+    "rows": 293
+  },
+  "val": {
+    "commits": 10,
+    "nonce_touch_kept": 0,
+    "reasons": {
+      "nonce_only": 6,
+      "nonce_touch": 4,
+      "ok": 10
+    },
+    "rows": 10
+  }
+}

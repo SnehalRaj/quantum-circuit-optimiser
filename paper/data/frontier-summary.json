@@ -1,0 +1,539 @@
+{
+  "captured_utc": "2026-10-26T12:05:24.239304+00:00",
+  "analysis_cutoff_utc": "2026-10-26T12:05:24.239304+00:00",
+  "scope": "Fetched response filtered by public score publication timestamp",
+  "raw_sha256": "68ce4841bada9ccfe3a960eb7bb63ca7f1ab791c0ae1faafd62427463ae1fd65",
+  "rows": 2211,
+  "eligible": 1778,
+  "frontier_coordinates": 215,
+  "own_verified": 52,
+  "own_historical_pareto": 51,
+  "own_current_pareto": 46,
+  "global_best": 915207206,
+  "global_metrics": {
+    "qubits": 1234,
+    "toffoli": 741659
+  },
+  "submissions": [
+    {
+      "id": "b426f945-21c6-4428-bd58-87adb694fde1",
+      "Q": 797,
+      "T": 14389808,
+      "S": 11468676976,
+      "source": "94dde5650f78d2f5a82bb66cf50d32b3d657b6a9",
+      "published": "2026-10-26T10:08:46.498Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "eb015a89-014b-4428-b0d7-76bede127538",
+      "Q": 799,
+      "T": 12710488,
+      "S": 10155679912,
+      "source": "e0e7d8152fa68aabf99ccd302a0fdac5d8d14457",
+      "published": "2026-10-25T13:41:06.305Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "301690ed-b82d-41f6-a23d-7304cee381ee",
+      "Q": 800,
+      "T": 12612556,
+      "S": 10090044800,
+      "source": "8cde3915b8308d13af27a8bec39918677c15fe4a",
+      "published": "2026-10-25T13:23:17.513Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "130ed672-9986-4f55-ab06-7d5f9c06295c",
+      "Q": 801,
+      "T": 12595594,
+      "S": 10089070794,
+      "source": "698c260a95fea3c39f1b5406250dd0a70062fc3c",
+      "published": "2026-10-25T12:49:48.103Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "f09ac2bd-9a30-437d-a349-28b998cabf9f",
+      "Q": 802,
+      "T": 12580818,
+      "S": 10089816036,
+      "source": "172bb684e8fe2b6e58549cf1ed3df615a265c001",
+      "published": "2026-10-25T12:19:27.480Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "2c478cc4-8f3e-4da3-a1dc-fa439a0e6758",
+      "Q": 803,
+      "T": 12578098,
+      "S": 10100212694,
+      "source": "8233380fbf34f30bee75dae47a567720ba4db97a",
+      "published": "2026-10-25T11:50:47.035Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "4274c7e0-b16f-4d63-8fae-83ad15e51fee",
+      "Q": 808,
+      "T": 10640971,
+      "S": 8597904568,
+      "source": "28b8f20dfc897320c32f0aa2c2b6eea6ff8e14af",
+      "published": "2026-10-25T04:13:55.818Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "853e143d-9dba-43f5-bdf7-26f60da5e7f1",
+      "Q": 809,
+      "T": 10365388,
+      "S": 8385598892,
+      "source": "f02ef8ba593031a984874c13f65992a28133c674",
+      "published": "2026-10-25T11:26:26.127Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "31326aa6-0ad3-40d3-8069-714b4330a726",
+      "Q": 810,
+      "T": 10282406,
+      "S": 8328748860,
+      "source": "a8aca16ea55efcbd7d4fe9408117fc28cf875cef",
+      "published": "2026-10-25T06:32:58.624Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "c9f82524-5d65-47ff-9692-299d1a178e5f",
+      "Q": 811,
+      "T": 10264333,
+      "S": 8324374063,
+      "source": "4459043af3a5f419262780e5446df96ec685a048",
+      "published": "2026-10-25T07:01:58.151Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "32e2e506-ef4f-4482-9ccd-5a4034ac96f8",
+      "Q": 812,
+      "T": 10071328,
+      "S": 8177918336,
+      "source": "c000ddbb6aa8cebffceb61ff59471947e1a8ba8d",
+      "published": "2026-10-25T06:08:13.797Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "b9c632ec-f453-48ee-a8ba-5fbcdfdb1071",
+      "Q": 813,
+      "T": 9907605,
+      "S": 8054882865,
+      "source": "dfee6f4981bc1a3146abd9bc115f0f79604141ec",
+      "published": "2026-10-25T05:31:06.837Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "0ee3673f-745a-4ded-be1c-6453ca442f95",
+      "Q": 814,
+      "T": 9829517,
+      "S": 8001226838,
+      "source": "17b1f000ff12abac073c8ecf0565b5f1e9289e79",
+      "published": "2026-10-25T04:31:45.885Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "28651875-43b0-40de-bffa-3d31caa7fdad",
+      "Q": 816,
+      "T": 9803523,
+      "S": 7999674768,
+      "source": "087a5d453bd9334fbe1a676461ba33462cfe3a22",
+      "published": "2026-10-25T04:54:00.935Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "d419f804-80ed-4ddd-914c-c1e1d149a706",
+      "Q": 818,
+      "T": 9750086,
+      "S": 7975570348,
+      "source": "5ebe24510cdbc36fb8e12b6fa2f9766eab75f677",
+      "published": "2026-10-24T21:00:20.244Z",
+      "historical_new_point": true,
+      "current_pareto": false
+    },
+    {
+      "id": "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+      "Q": 818,
+      "T": 9728780,
+      "S": 7958142040,
+      "source": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+      "published": "2026-10-25T22:00:21.644Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "fd5adedb-4b0a-43a8-b246-a047a6e6d15c",
+      "Q": 819,
+      "T": 9718964,
+      "S": 7959831516,
+      "source": "aa14fab5a22e77db4e4d886ad43a6b7f2637c640",
+      "published": "2026-10-25T23:18:52.757Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "114ecae8-4eff-4e47-8008-3385f51760ea",
+      "Q": 820,
+      "T": 9708897,
+      "S": 7961295540,
+      "source": "90aad2418866d828be6fcad36cb90a1e80728a33",
+      "published": "2026-10-26T01:15:22.042Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "950a1a1d-7e21-405e-ad63-a9c5e188c421",
+      "Q": 821,
+      "T": 9699299,
+      "S": 7963124479,
+      "source": "08726a24a162c7ae77f94045f650c60f63a5ca25",
+      "published": "2026-10-26T00:35:29.781Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "cec136ff-3c99-470d-a6a4-64b14d6cc65b",
+      "Q": 822,
+      "T": 9688806,
+      "S": 7964198532,
+      "source": "e9599069c7df97e87f33fe62ee873ba9fc8fda74",
+      "published": "2026-10-26T00:44:35.849Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "0eebd5d2-202e-4441-8c9f-b262edd440b6",
+      "Q": 823,
+      "T": 9679047,
+      "S": 7965855681,
+      "source": "43763c405ed0b63ff27cffa4cc6cd68dca883f0d",
+      "published": "2026-10-26T08:09:53.788Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "2029e9d0-0f6d-4098-99b0-7f02fa9a3d42",
+      "Q": 824,
+      "T": 9669096,
+      "S": 7967335104,
+      "source": "f5492bd248cc30766d22287054cbe69def6a4516",
+      "published": "2026-10-25T23:29:57.089Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "f315e257-dbd7-40e1-84d8-5388649557ca",
+      "Q": 826,
+      "T": 9648907,
+      "S": 7969997182,
+      "source": "28117cb87c6102de0ae5f67004b8b381670bffe8",
+      "published": "2026-10-25T23:39:52.535Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "55d1dfdd-b468-4844-8b6f-c7216da17012",
+      "Q": 827,
+      "T": 9638943,
+      "S": 7971405861,
+      "source": "21e0f9053b946957797fdc23117c4e75bea9b614",
+      "published": "2026-10-25T23:49:05.560Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "1ea65d0c-383f-4060-a141-4f37b5fc34b0",
+      "Q": 828,
+      "T": 9585854,
+      "S": 7937087112,
+      "source": "274d7e8e685c336fe39d4472d9d10c814b937232",
+      "published": "2026-10-25T23:59:04.378Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "c2d979ce-c5f3-4ad1-822f-ac9b1fa0c9aa",
+      "Q": 829,
+      "T": 9571746,
+      "S": 7934977434,
+      "source": "8b13f41ed3f0f0d2126bd3992a040ea42bc67587",
+      "published": "2026-10-25T23:07:34.936Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "3b8bd6e0-34c3-41c2-bea0-34b2532c63d4",
+      "Q": 830,
+      "T": 9557499,
+      "S": 7932724170,
+      "source": "0e9e9d5fcd393d8c4d9cbf6ac2c628f2d4726196",
+      "published": "2026-10-26T00:09:28.302Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "99d18f0e-11c9-4111-b8a4-e0c746d1c2cb",
+      "Q": 831,
+      "T": 9543381,
+      "S": 7930549611,
+      "source": "7c7fb27b78bfe88cdadfe08c1ade1e91309a493a",
+      "published": "2026-10-26T00:54:58.332Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "5f511fcb-295b-4b7e-af6e-d4af9028a651",
+      "Q": 832,
+      "T": 9526495,
+      "S": 7926043840,
+      "source": "1ac9b9062b93912dd3bf2f9bfa445b66c988c872",
+      "published": "2026-10-26T01:04:48.366Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "61d8401a-9731-446d-b931-2ed478dfcd71",
+      "Q": 834,
+      "T": 9502513,
+      "S": 7925095842,
+      "source": "7e7f8d24e5955916928d508fb97a005da6d1e22f",
+      "published": "2026-10-26T11:58:08.681Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "d2bb782a-de53-476d-adc8-b907f33030d8",
+      "Q": 837,
+      "T": 9466477,
+      "S": 7923441249,
+      "source": "a5fc8e54488b807b0a6173ee3481d0a26b98e8ef",
+      "published": "2026-10-26T00:22:02.838Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "0021422f-c08b-4f3b-96a3-cb5e0c9eb263",
+      "Q": 838,
+      "T": 9456817,
+      "S": 7924812646,
+      "source": "09be3acb585b5130100c3f353bad917fb02538e4",
+      "published": "2026-10-26T08:42:58.296Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+      "Q": 839,
+      "T": 8564543,
+      "S": 7185651577,
+      "source": "2cca36f958f6e5a818e9f693a2f95f7a2e3ece25",
+      "published": "2026-10-24T21:37:01.338Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "7623e7a2-2868-4e71-8bf1-57216d5440cd",
+      "Q": 840,
+      "T": 8558297,
+      "S": 7188969480,
+      "source": "83a90504b75188cdcfe8498a37f5360202bbb97e",
+      "published": "2026-10-26T01:51:55.870Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "aaf4b9b2-4f27-404d-84a8-74b0b3cbb440",
+      "Q": 841,
+      "T": 8552790,
+      "S": 7192896390,
+      "source": "7458923664bf9ecba866f29feb3f703afd700455",
+      "published": "2026-10-26T02:31:35.374Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "c1693702-fc85-40e6-858f-ce31a227b086",
+      "Q": 842,
+      "T": 8547415,
+      "S": 7196923430,
+      "source": "f04e499534ecde5b1322ee1f85bfd8f81b56a831",
+      "published": "2026-10-26T03:14:23.533Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "4853634b-97ed-4849-b294-3bfe6ba8bce1",
+      "Q": 843,
+      "T": 8542108,
+      "S": 7200997044,
+      "source": "d29f518b339cc2001a60756bccdbb8aaa7ebb825",
+      "published": "2026-10-26T03:48:20.697Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "80f32350-f3d8-469f-8d99-6d0b35def426",
+      "Q": 844,
+      "T": 8536685,
+      "S": 7204962140,
+      "source": "e11237c0019c32f27a9419e6c88a1a47fdf3c588",
+      "published": "2026-10-26T05:23:36.748Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "cdbef92e-8bd2-45e2-855b-f1bf494fee7f",
+      "Q": 845,
+      "T": 8531417,
+      "S": 7209047365,
+      "source": "da84e5623f476bf99179791f039e077ffd847874",
+      "published": "2026-10-26T09:22:41.695Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "80b7eecd-31e8-4925-80dd-d6ee4afd78d6",
+      "Q": 846,
+      "T": 8522860,
+      "S": 7210339560,
+      "source": "c2c1db833ae9e239f4540668ac2ef9f3ff3ef660",
+      "published": "2026-10-26T06:08:20.952Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "db59fd3b-e5c1-4f5c-84d4-91543d622d81",
+      "Q": 847,
+      "T": 8485440,
+      "S": 7187167680,
+      "source": "73fcd0cec95b4454ea4ad45a41b2cba391b800ca",
+      "published": "2026-10-26T06:43:49.175Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "90456a09-9d9c-491b-9e1b-3a71d1d0aafb",
+      "Q": 848,
+      "T": 8478188,
+      "S": 7189503424,
+      "source": "47522eab1c8e911481ca6887820e827a2e77e33f",
+      "published": "2026-10-26T04:11:02.060Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "1c9c0fac-fae7-4788-8ccd-0b610f3094d8",
+      "Q": 849,
+      "T": 8470510,
+      "S": 7191462990,
+      "source": "c9078bc0386b8c482d72ee40134258273e454853",
+      "published": "2026-10-26T04:22:28.084Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "11ae1e24-d36a-4087-943c-a73eebc6d69b",
+      "Q": 850,
+      "T": 8460561,
+      "S": 7191476850,
+      "source": "349271e006b0dc2eed8b1816c85e6312ec6d7f45",
+      "published": "2026-10-26T04:45:30.926Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "2e669828-0307-467a-9bae-c5d4f58fa8e5",
+      "Q": 852,
+      "T": 8450579,
+      "S": 7199893308,
+      "source": "fe67da20261804936350c99b2290d48392db696e",
+      "published": "2026-10-26T07:21:31.367Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "7dd3b9ca-8193-4ce6-9545-cb8e84a36160",
+      "Q": 1059,
+      "T": 1978608,
+      "S": 2095345872,
+      "source": "3d4f37b1599a117ea0a441d5389c98172893d7f1",
+      "published": "2026-10-25T05:53:02.308Z",
+      "historical_new_point": true,
+      "current_pareto": false
+    },
+    {
+      "id": "d3fecc7a-6d1a-4b9b-8240-a50ab158057c",
+      "Q": 1063,
+      "T": 1970390,
+      "S": 2094524570,
+      "source": "026b0cb8c39e0ee67720dd7aa8a237774e2af84f",
+      "published": "2026-10-25T05:46:01.192Z",
+      "historical_new_point": true,
+      "current_pareto": false
+    },
+    {
+      "id": "309bf464-9dc8-4c41-b271-e81ec9bc7c69",
+      "Q": 1064,
+      "T": 1967974,
+      "S": 2093924336,
+      "source": "adfcf8f7cdcd3445469340edc249703f661c726b",
+      "published": "2026-10-25T05:39:21.894Z",
+      "historical_new_point": true,
+      "current_pareto": false
+    },
+    {
+      "id": "aefedb12-2311-48ea-a1b9-3ed605358766",
+      "Q": 1082,
+      "T": 1832110,
+      "S": 1982343020,
+      "source": "76e24d7b72529d3a22e1230dde925404f1a2394b",
+      "published": "2026-10-26T10:37:50.891Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "a42ed949-eaa6-49f4-914c-5d2f99be3d1b",
+      "Q": 1095,
+      "T": 1817821,
+      "S": 1990513995,
+      "source": "d9371487f7a4088ccddc78e9676322605bfa537d",
+      "published": "2026-10-26T11:18:14.958Z",
+      "historical_new_point": true,
+      "current_pareto": true
+    },
+    {
+      "id": "11613a51-1243-4f91-801a-9e71600d1f99",
+      "Q": 1097,
+      "T": 1814134,
+      "S": 1990104998,
+      "source": "ae2a603a872723369fb9ff86fdb67b96265ca3d3",
+      "published": "2026-10-24T15:06:12.528Z",
+      "historical_new_point": true,
+      "current_pareto": false
+    },
+    {
+      "id": "06b08594-7509-4e81-9ca3-f620b2ab1437",
+      "Q": 1270,
+      "T": 793798,
+      "S": 1008123460,
+      "source": "023fbe13c59df2ff0087ea4bb916d25f3d4fac70",
+      "published": "2026-10-24T07:19:47.813Z",
+      "historical_new_point": false,
+      "current_pareto": false
+    }
+  ]
+}

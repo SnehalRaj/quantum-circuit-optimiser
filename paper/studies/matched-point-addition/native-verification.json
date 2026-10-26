@@ -1,0 +1,41 @@
+{
+  "final_status": "PASS",
+  "shared_checker": {
+    "passed": 9,
+    "failed": 0,
+    "log": "shared-checker-tests.log"
+  },
+  "scaled_complete_suite": {
+    "backend_passed": 8,
+    "protocol_passed": 9,
+    "failed": 0,
+    "artifact_test_ignored_in_default_suite": 1,
+    "log": "scaled-full-tests.log"
+  },
+  "generated_artifact_fault_test": {
+    "passed": 1,
+    "failed": 0,
+    "widths": [16, 256],
+    "active_lanes": [1, 63, 64],
+    "streams": [0, 1],
+    "faults": ["coordinate", "phase", "workspace", "addend"],
+    "clean_control_required": true,
+    "log": "full-point-fault-tests.log",
+    "initial_setup_error": "The first invocation supplied relative artifact paths while Cargo ran tests in the crate directory. The documented invocation now supplies absolute paths.",
+    "initial_setup_error_log": "full-point-fault-tests-initial-cwd-error.log"
+  },
+  "cli_fixes": {
+    "expected_red_failures": 2,
+    "red_log": "cli-red-tests.log",
+    "final_guards": "Duplicate --settings rejects before artifact creation. Missing toolchains produce an explicit error without a user-specific fallback path.",
+    "explicit_toolchain_smoke_log": "wrapper-explicit-toolchain.log"
+  },
+  "backend_test_source_sha256": "b1506b3444b663551327a561a0ac5eb63ff7a796e90d6bd512e022bc1b9152ac",
+  "production_constructor_sha256": "6cddbf4d768cac7cdc428a8efbda05a24b29f027c46720fa5644c596fd6b14de",
+  "frozen_emitter_sha256": "b429d7a00e512087ce8479f1c6242fa1011dfd5b5a9ce588626be695f50e69cc",
+  "frozen_evaluator_sha256": "907f6e0fe40c6ea79bfe3386d4a27de76c7a5d025c720483d10f31b295f530f4",
+  "snapshot_unchanged": true,
+  "final_test_source": ["final-backend-tests.rs", "final-protocol-tests.rs"],
+  "final_wrapper": "final-wrapper.sh",
+  "scope": "The shared original Kaliski backend alone is scaled. The confirmation bounds apply to the declared input and measurement protocols."
+}

@@ -1,0 +1,4 @@
+{
+  "action_index": 45,
+  "reason": "free_s alone (c1101\u2192c1111) cut Q 214\u2192198 at about the same T, so it is kept. The ~11% T reduction from u, r and combined_y has not been split between them. c1110 drops combined_y and c0111 drops u (u overlaps with r, since both are phase-repair rewrites). These one-rule ablations around the best recipe c1111 show which T-saving rule is redundant, and either could beat c1111's QT if its dropped rule costs scratch qubits."
+}

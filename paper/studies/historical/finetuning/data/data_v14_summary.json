@@ -1,0 +1,44 @@
+{
+  "authors_train": {
+    "BitWonka": 4,
+    "Gajesh2007": 19,
+    "PhantasticUniverse": 2,
+    "SamrendraS": 2,
+    "aburan28": 3,
+    "anupsv": 8,
+    "chainyoda": 1,
+    "cryptogakusei": 1,
+    "factory-sagar": 1,
+    "gnuchev": 2,
+    "harrigan": 1,
+    "jackylee0424": 2,
+    "jieyilong": 3,
+    "jtrose24": 2,
+    "mpjunior92": 9,
+    "newjordan": 12,
+    "owizdom": 1,
+    "philburgess1": 2,
+    "phileigenlabs": 1,
+    "robertkodra": 11,
+    "rubenmarcus": 2,
+    "saucegodbased": 1,
+    "solimander": 1,
+    "zuiris": 2
+  },
+  "kept_steps": 127,
+  "mapped_accepted": 654,
+  "skipped": {
+    "new_file": 1,
+    "no_prior_submission": 6,
+    "non_rs_change": 138,
+    "nonce_only": 158,
+    "roundtrip_fail": 13,
+    "too_large": 149,
+    "too_many_tokens": 62
+  },
+  "splits": {
+    "frontier_recent": 3,
+    "train": 93,
+    "val": 10
+  }
+}

@@ -1,0 +1,25 @@
+name: Checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Python and grammar checks
+        run: PYTHONPATH=src python3 -m unittest discover -s tests -v
+      - name: Verify pinned source and data
+        run: ./lco verify-data
+      - name: Install the pinned Rust toolchain
+        run: rustup toolchain install 1.93.0 --profile minimal
+      - name: Native checks
+        run: cargo +1.93.0 test --release --locked --manifest-path native/Cargo.toml

@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "scope": "Finite algebra check of the displayed formulas; no full circuit simulation",
+  "field_prime": 31,
+  "curve": "y^2 = x^3 + 7",
+  "affine_points": 20,
+  "checked_ordered_pairs": 342,
+  "excluded_cases": "Zero d or zero d_prime",
+  "and_erasure_basis_branches_checked": 8,
+  "normalization": "Each X-basis branch has common magnitude 1/sqrt(2). CZ^m cancels (-1)^(mab)."
+}

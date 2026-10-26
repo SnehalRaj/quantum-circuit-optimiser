@@ -1,0 +1,24 @@
+{
+  "archive_members_verified": 1364,
+  "archives_verified": 3,
+  "checks": [
+    "Every retained file SHA256 and byte count matches the manifest.",
+    "Every copied upstream file and archive member matches its original bytes.",
+    "Archive members use safe relative paths and exclude circuits/evaluations.",
+    "Both source snapshot contracts, drivers, and contract sidecars match.",
+    "The grammar finalist sidecar matches.",
+    "The ancillary calibration matches the frozen model contract and saved copy.",
+    "The retained file set matches the manifest."
+  ],
+  "execution_scope": "Integrity checks only. No historical script, model call, circuit experiment, or statistical audit was rerun.",
+  "manifest_sha256": "e157157d2b86a7927812dcc94baff28fe13f317f89bc926b4c0e3e189e3be1c8",
+  "retained_files_verified": 217,
+  "schema": 1,
+  "source_contract_files_verified": {
+    "grammar": 54,
+    "model-pilot": 82
+  },
+  "status": "passed",
+  "tracked_payload_bytes_excluding_manifest_and_receipt": 12218999,
+  "verified_utc": "2026-10-26T00:06:15.654790+00:00"
+}

@@ -1,0 +1,4 @@
+{
+  "action_index": 45,
+  "reason": "u alone cut T by ~3658 at fixed Q; adding r+free_s+combined_y (c1111) cut Q 214->198 (likely free_s) but added ~193 T. Testing c1110 (drop combined_y) and c1011 (drop r) keeps u+free_s and isolates which of r/combined_y causes the T overhead; either may beat c1111's QT by keeping Q=198 with lower T."
+}

@@ -1,0 +1,4 @@
+{
+  "action_index": 1,
+  "reason": "c1010 retains AND erasure and cofactor release while testing the small measured benefit of r. c1111 tests whether cofactor release offsets the combined expression's measured Toffoli cost."
+}

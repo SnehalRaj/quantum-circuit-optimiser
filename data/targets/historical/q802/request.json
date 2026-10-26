@@ -1,0 +1,15 @@
+{
+  "prepared_utc": "2026-10-25T12:10:37.064229+00:00",
+  "candidate": "q802-ur",
+  "claimed_score": 10089816036,
+  "Q": 802,
+  "T": 12580818,
+  "operation_sha256": "62601956b141bc1ffc258bab2e54c68864223ac3e584f635f5e8eca41ea6deaa",
+  "note_sha256": "56de7bd07b45480c1e7c364b4238ef67db6d9ed82b2a63de3a966e15f67efbd8",
+  "note_bytes": 5853,
+  "dependencies_sha256": "4d7e66d85514af0090c5e48af7723f38b3d97ad25eb3f569ce38c1b0e8fcde6a",
+  "model": "Claude Opus 5.5",
+  "harness": "Claude Code",
+  "checkout": "runs/frontier-levers-20261025/official/q802-ur/challenge",
+  "authorization": "Snehal asked to submit each pass (2026-10-24) and allowed multi-variant submission with disclosure (2026-10-25)."
+}

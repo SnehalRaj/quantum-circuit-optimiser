@@ -1,0 +1,7 @@
+[
+  {
+    "evidence": "The pinned source family retains the parent commit and source hashes.",
+    "rationale": "Inherited source dependency.",
+    "submissionId": "54acebaf-8d55-419e-b739-799d23bdbde0"
+  }
+]

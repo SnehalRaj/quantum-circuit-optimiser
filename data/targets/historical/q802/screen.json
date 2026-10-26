@@ -1,0 +1,23 @@
+{
+  "candidate": "q802-ur",
+  "counts": {
+    "ancilla_garbage_batches": 0,
+    "classical_mismatches": 0,
+    "phase_garbage_batches": 0,
+    "shots": 9024
+  },
+  "eval_binary_sha256": "1ffe6e4fb95c084598dedfc9f99378e925d6d67d268830361ef81fc8877767c1",
+  "ops_sha256": "62601956b141bc1ffc258bab2e54c68864223ac3e584f635f5e8eca41ea6deaa",
+  "passed": true,
+  "returncode": 0,
+  "scope": "One trusted-evaluator screen of these exact bytes under amendment 1. It is not repeated.",
+  "score": {
+    "metrics": {
+      "qubits": 802,
+      "toffoli": 12580818
+    },
+    "score": 10089816036
+  },
+  "screened_utc": "2026-10-25T11:25:09.318158+00:00",
+  "wall_seconds": 48.50598887447268
+}

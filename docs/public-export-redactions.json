@@ -1,0 +1,65 @@
+{
+  "schema": "public-export-redactions-v1",
+  "scope": "Private paths, project context, and development links replaced. Resource counts and outcomes are unchanged.",
+  "artifacts": [
+    {
+      "artifact": "paper/data/public-submissions.json.gz",
+      "original_sha256": "6bd617a5b01c317d1c4c6614d67d2765cf41e1c4beb1b24a1de364b085a147a9",
+      "shareable_sha256": "40851b7208985ed82ab47d5490e0d5ef372a9461f6d82e1a80a61f313d321108",
+      "original_uncompressed_sha256": "68ce4841bada9ccfe3a960eb7bb63ca7f1ab791c0ae1faafd62427463ae1fd65",
+      "shareable_uncompressed_sha256": "caf6121f46631a1db31f53afe3de147308b11644a91076cfbe0b950116493ef0"
+    },
+    {
+      "artifact": "paper/data/public-submissions-20261026T115444Z.json.gz",
+      "original_sha256": "ebb2158a30f6304fa8ce31c103e78b84d7078c0ea0a893a20de47b7bfd58d76b",
+      "shareable_sha256": "33c43f0635e76c43846d1dbd021b818e3c67bcec32aa1070ace40b11d82dc502",
+      "original_uncompressed_sha256": "7ca0e2e4549394d080cec8d419972cabcf54fa1b2e2bc48255802231fa17014f",
+      "shareable_uncompressed_sha256": "5cb2a9d66b2602140cb9d07ab48f426621e5a9f48f2f4daf40bbd882525c5376"
+    },
+    {
+      "artifact": "paper/data/lowest-product-lineage.md",
+      "original_sha256": "cab88f17c77fa60825cf9ec28242dc1755d5e62c9ac7b715ef1d6d8d479ae0e2",
+      "shareable_sha256": "d0bbfd2b7bab0a7b5d8fb609ec9b1707cd82546af1badd1f184e66ec3d5cbae0"
+    },
+    {
+      "artifact": "data/cleaned/lowest-product-lineage.md",
+      "original_sha256": "cab88f17c77fa60825cf9ec28242dc1755d5e62c9ac7b715ef1d6d8d479ae0e2",
+      "shareable_sha256": "d0bbfd2b7bab0a7b5d8fb609ec9b1707cd82546af1badd1f184e66ec3d5cbae0"
+    },
+    {
+      "artifact": "studies/historical/finetuning/README.md",
+      "original_sha256": "ea9c1d34089a696d74c60df53454510d849260e9d144efdeada733196c884374",
+      "shareable_sha256": "436e1ca34eae519360eeccf0bf9747dfb326917fe470b77ae20c40c6ab370945"
+    },
+    {
+      "artifact": "paper/studies/historical/finetuning/README.md",
+      "original_sha256": "ea9c1d34089a696d74c60df53454510d849260e9d144efdeada733196c884374",
+      "shareable_sha256": "436e1ca34eae519360eeccf0bf9747dfb326917fe470b77ae20c40c6ab370945"
+    },
+    {
+      "artifact": "paper/data/finetuning-provenance.json",
+      "original_sha256": "8486d88680149d57dc04d32203780fe60249717c1f3642c11ef03bd8492ee805",
+      "shareable_sha256": "f1d1fba061db47af6531c57b63abeb8fc1c2694abd972d5e6070aee9612e563a"
+    },
+    {
+      "artifact": "paper/studies/point-addition-search-20261026/README.md",
+      "original_sha256": "fe885e673e383745de04d20685b00992cac7408251001b005e64ed3382662f50",
+      "shareable_sha256": "c9d90d4c981fa69d64ec6166f7f8e7ce4b9ec25ffdc9647348deebd423d2d085"
+    },
+    {
+      "artifact": "data/targets/historical/ap1270/ADAPTER.md",
+      "original_sha256": "cb3a9f3ea9d17b31d3764f2256c54314357f9362e463497093d15fe389dce697",
+      "shareable_sha256": "3fc2ec8a94ed91f5ac0f3ab1c24d1b86f267811c5f0392f55e7bc1fbe687580a"
+    },
+    {
+      "artifact": "paper/data/integration.md",
+      "original_sha256": "27ca43c297f0a72c312ce0f0343bdfab9ba03bf6320eb2b36fd37cb4ec5c4975",
+      "shareable_sha256": "09579ae578224896f13e5c8e5abb7b3d8fdb20b9c562470d56a758aea61b171d"
+    },
+    {
+      "artifact": "paper/data/grammar.md",
+      "original_sha256": "0a31a982920cc56bd928822202b7acce4a60ec959d6e2be7e7346b6791daecaa",
+      "shareable_sha256": "7392bc926d2faecfc1579e1cbe9c6eb45d00a50aeb86825fe70b496779807c28"
+    }
+  ]
+}

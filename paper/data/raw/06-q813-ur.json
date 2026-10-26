@@ -1,0 +1,91 @@
+{
+  "id": "q813-ur",
+  "stage": "calibration",
+  "status": "complete",
+  "binding": {
+    "checker_sha256": "abf8572a7ec9318888e564778658e89b965d9ba6aafdd24a23beeadc46bdf260",
+    "ops_sha256": "947486753af791a0ec3411c2ba0c570dfd6e526e08211bfe446676157db888e8",
+    "pairs": 20480,
+    "streams": 2,
+    "label": "frontier-levers-20261025/slot-07/2d4ee4d8b01e98bbf5f81e52941dc6e5",
+    "protocol_sha256": "2125cc33ed00f0fce6fef816262f1752fcd34411eea0d0a52b4372f2c8d97f1c"
+  },
+  "Q": 813,
+  "T": 9907601.806860352,
+  "S": 8054880426,
+  "pairs": 20480,
+  "streams": 2,
+  "counts": {
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "failed_indices": [],
+    "channel_failed_inputs": {
+      "coordinate": 0,
+      "phase": 0,
+      "workspace": 0,
+      "addend": 0
+    },
+    "channel_failed_shots": {
+      "coordinate": 0,
+      "phase": 0,
+      "workspace": 0,
+      "addend": 0
+    },
+    "packet_sha256": "8f0590a30ff60bbafaed9cd68f6dc29faad7a42ae11c7f78f65b9e731b285ad9"
+  },
+  "timings": {
+    "load_seconds": 2.993209375,
+    "preparation_seconds": 5.649157667,
+    "simulation_seconds": 49.141756667,
+    "total_seconds": 61.535332958
+  },
+  "process": {
+    "argv": [
+      "{redacted-path-a5780578383a}",
+      "--ops",
+      "{redacted-path-77fd0abe0a97}",
+      "--pairs",
+      "20480",
+      "--streams",
+      "2",
+      "--threads",
+      "4",
+      "--label",
+      "frontier-levers-20261025/slot-07/2d4ee4d8b01e98bbf5f81e52941dc6e5",
+      "--out",
+      "{redacted-path-22364acab925}",
+      "--per-input",
+      "{redacted-path-587dffa63495}",
+      "--progress",
+      "{redacted-path-c1fe8f4386cf}"
+    ],
+    "started_utc": "2026-10-25T04:44:49.018512+00:00",
+    "binding": {
+      "checker_sha256": "abf8572a7ec9318888e564778658e89b965d9ba6aafdd24a23beeadc46bdf260",
+      "ops_sha256": "947486753af791a0ec3411c2ba0c570dfd6e526e08211bfe446676157db888e8",
+      "pairs": 20480,
+      "streams": 2,
+      "label": "frontier-levers-20261025/slot-07/2d4ee4d8b01e98bbf5f81e52941dc6e5",
+      "protocol_sha256": "2125cc33ed00f0fce6fef816262f1752fcd34411eea0d0a52b4372f2c8d97f1c"
+    },
+    "status": "completed",
+    "returncode": 0,
+    "wall_seconds": 61.89482808299363
+  },
+  "bounds": {
+    "observed_rate": 0.0,
+    "pointwise_two_sided95": [
+      0.0,
+      0.00018010484626992
+    ],
+    "family_upper95": 0.00031545161047326977,
+    "alpha_per_member": 0.0015625,
+    "epsilon": 0.001,
+    "decision": "meets_0.001_bound"
+  },
+  "file_sha256": {
+    "raw.json": "679e0a8c0500653c56999d9cf3e5588c101081db34b301ae1999d4c43521b8ee",
+    "per-input.jsonl.gz": "ecb0fec5d98a758b60bf26c5c542435eb84e63cf25c7ea2a694072eff77e7e36",
+    "process.json": "eb44d43804892c9903c1d6d0ae0f8bbe5820b19b247cd6b30a03100df92438c2"
+  }
+}

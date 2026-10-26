@@ -1,0 +1,4 @@
+{
+  "action_index": 0,
+  "reason": "Both recipes retain measurement-based AND erasure and cofactor release, which support lower T and Q. Comparing them tests phase conversion without combined_y and checks whether combined_y adds overhead."
+}

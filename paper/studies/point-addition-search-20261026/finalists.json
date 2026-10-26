@@ -1,0 +1,143 @@
+{
+  "audited_recipe_ids": [
+    "c0000",
+    "c0001",
+    "c0010",
+    "c0011",
+    "c0100",
+    "c0101",
+    "c0110",
+    "c0111",
+    "c1000",
+    "c1001",
+    "c1010",
+    "c1011",
+    "c1100",
+    "c1101",
+    "c1110",
+    "c1111",
+    "raw"
+  ],
+  "finalists": [
+    {
+      "arm": "random",
+      "recipe_id": "c1010",
+      "seed": 401
+    },
+    {
+      "arm": "random",
+      "recipe_id": "c1111",
+      "seed": 809
+    },
+    {
+      "arm": "random",
+      "recipe_id": "c1010",
+      "seed": 1601
+    },
+    {
+      "arm": "random",
+      "recipe_id": "c1010",
+      "seed": 2309
+    },
+    {
+      "arm": "random",
+      "recipe_id": "c1010",
+      "seed": 3501
+    },
+    {
+      "arm": "evolution",
+      "recipe_id": "c1110",
+      "seed": 401
+    },
+    {
+      "arm": "evolution",
+      "recipe_id": "c1110",
+      "seed": 809
+    },
+    {
+      "arm": "evolution",
+      "recipe_id": "c1110",
+      "seed": 1601
+    },
+    {
+      "arm": "evolution",
+      "recipe_id": "c1010",
+      "seed": 2309
+    },
+    {
+      "arm": "evolution",
+      "recipe_id": "c1110",
+      "seed": 3501
+    },
+    {
+      "arm": "claude",
+      "recipe_id": "c1110",
+      "seed": 401
+    },
+    {
+      "arm": "claude",
+      "recipe_id": "c1110",
+      "seed": 809
+    },
+    {
+      "arm": "claude",
+      "recipe_id": "c1110",
+      "seed": 1601
+    },
+    {
+      "arm": "claude",
+      "recipe_id": "c1110",
+      "seed": 2309
+    },
+    {
+      "arm": "claude",
+      "recipe_id": "c1110",
+      "seed": 3501
+    },
+    {
+      "arm": "codex",
+      "recipe_id": "c1110",
+      "seed": 401
+    },
+    {
+      "arm": "codex",
+      "recipe_id": "c1110",
+      "seed": 809
+    },
+    {
+      "arm": "codex",
+      "recipe_id": "c1110",
+      "seed": 1601
+    },
+    {
+      "arm": "codex",
+      "recipe_id": "c1110",
+      "seed": 2309
+    },
+    {
+      "arm": "codex",
+      "recipe_id": "c1110",
+      "seed": 3501
+    }
+  ],
+  "operation_hashes": {
+    "c0000": "b84161037cdd8580e28172308418c1767b179abb27a7b02aa6ac90ebb74bfaf8",
+    "c0001": "a007243f0c96d052584d19a1737e64780000483500b1466a8d201c013482b5bc",
+    "c0010": "b5104e98dd603445d7bc7e45dc78d855452ead95c8e926e56d4f485f6b21bdb0",
+    "c0011": "dbeddadde7c7f3fe5de008c2edfea508aa726df5227bf93b7449a719e07d9ab8",
+    "c0100": "1f2d68beca2a499e28db27cc3c3ea0933f06efdbcd37501ed771882eeccb8df0",
+    "c0101": "3581dff0eb6a21ae8e9f868304706aa79b8f1df4f56ee795eebc98802f9d6dec",
+    "c0110": "8be99b528cf19e8b62cc6982c782ccd068fecfa1a0106d5528caa84d2dcd0b12",
+    "c0111": "54809861be30ab78368b6a9aeb64dbd84da75812169534993a905b650a7bb2ec",
+    "c1000": "d7f905ebad6c0e52c5cac636a64045fb333c6b0f6b396c4d81569fc60ed77adb",
+    "c1001": "a8a09da296e540742337fd8440bee60b7d65a6a17ef7c412e416af1a8c2b9871",
+    "c1010": "77a531ef7d5bead56efb86a0221ae3693830c4a1c4df9d339fe1c03a369b9358",
+    "c1011": "ca0adb41706040e30c73dec320cc068a4e4cd8e76496993613c82d97f5117412",
+    "c1100": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83",
+    "c1101": "9fff90506b318bf55d4f7d8994db1117765ead5da9dcf58d84639237eda704ea",
+    "c1110": "2c9006aa77c958e346e59c0008deb7836253bfe24e3574849fc0aae84812f9d4",
+    "c1111": "4879caa90a8b3deac432a4197586a9e0198f545091cf54e227d00363ad76c1a9",
+    "raw": "b1c0c04919cd9b231aee676948d8e2fb917cdee16268a62aed132fd0b14700d1"
+  },
+  "protocol_sha256": "02bad9a0d5cb3f174bb436f29de4432fb9a92b35f0aa0c1f9e60f6a6b239af20"
+}

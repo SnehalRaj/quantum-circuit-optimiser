@@ -1,0 +1,1666 @@
+[
+  {
+    "id": "R01",
+    "name": "Direct record and replay",
+    "version": 1,
+    "enabled": true,
+    "priority": 100,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": "direct_replay",
+    "status": "implemented",
+    "correctness": "exact_under_conditions",
+    "role": "replace",
+    "reasoning": "Apply the recorded map directly to the payload instead of constructing an inverse.",
+    "conditions": [
+      "Nonzero denominator",
+      "Compatible plain walk and payload map",
+      "Restore the input and transcript"
+    ],
+    "priority_reason": "Largest matched early division saving; available mainly before direct replay is already present.",
+    "parameters": {},
+    "pattern": {
+      "operator": "direct_replay",
+      "conditions_required": true
+    },
+    "replacement": "Apply the recorded map directly to the payload instead of constructing an inverse.",
+    "extensions": [
+      "Replay on another payload with the same linear invariant."
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2609.28882v1"
+    ],
+    "seed_evidence": [
+      {
+        "file": "evidence/division-16.json",
+        "file_sha256": "ab93ab42c8bd0ce6951f0ed05ac539a4ada7d3f3bc7d53c4531125e6fc7d9946",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 16262.0,
+          "Q": 209
+        },
+        "after": {
+          "T": 7905.0,
+          "Q": 177
+        },
+        "before_path": [
+          "rows",
+          0
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          2
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "inverse -> replay",
+        "attribution": "Conditional implementation replacement; inherited settings retained per recipe."
+      },
+      {
+        "file": "evidence/division-256.json",
+        "file_sha256": "b544127d02330f057788a747ccee3456bb91aaef012054ac62b5b60e7b396490",
+        "metric": "TQ",
+        "bits": 256,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 4315142.0,
+          "Q": 3329
+        },
+        "after": {
+          "T": 2092545.0,
+          "Q": 2817
+        },
+        "before_path": [
+          "rows",
+          0
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          2
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "inverse -> replay",
+        "attribution": "Conditional implementation replacement; inherited settings retained per recipe."
+      }
+    ]
+  },
+  {
+    "id": "R02",
+    "name": "Measured cleanup",
+    "version": 1,
+    "enabled": true,
+    "priority": 95,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": "measured_cleanup",
+    "status": "implemented",
+    "correctness": "exact_under_conditions",
+    "role": "replace",
+    "reasoning": "Replace inverse cleanup with X-basis measurement and a correcting phase.",
+    "conditions": [
+      "The temporary value equals the stated predicate",
+      "Original controls remain available",
+      "Correct every measurement branch"
+    ],
+    "priority_reason": "Large matched savings across twelve family-width comparisons; applies to repeated temporary carries.",
+    "parameters": {},
+    "pattern": {
+      "operator": "measured_cleanup",
+      "conditions_required": true
+    },
+    "replacement": "Replace inverse cleanup with X-basis measurement and a correcting phase.",
+    "extensions": [
+      "Share phase corrections or defer them until the original controls become available."
+    ],
+    "source_urls": [
+      "https://arxiv.org/abs/1709.06648"
+    ],
+    "seed_evidence": [
+      {
+        "file": "evidence/division-16.json",
+        "file_sha256": "ab93ab42c8bd0ce6951f0ed05ac539a4ada7d3f3bc7d53c4531125e6fc7d9946",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 30168.0,
+          "Q": 209
+        },
+        "after": {
+          "T": 16262.0,
+          "Q": 209
+        },
+        "before_path": [
+          "rows",
+          1
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          0
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "inverse"
+      },
+      {
+        "file": "evidence/division-16.json",
+        "file_sha256": "ab93ab42c8bd0ce6951f0ed05ac539a4ada7d3f3bc7d53c4531125e6fc7d9946",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 14167.0,
+          "Q": 177
+        },
+        "after": {
+          "T": 7905.0,
+          "Q": 177
+        },
+        "before_path": [
+          "rows",
+          3
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          2
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "replay"
+      },
+      {
+        "file": "evidence/division-16.json",
+        "file_sha256": "ab93ab42c8bd0ce6951f0ed05ac539a4ada7d3f3bc7d53c4531125e6fc7d9946",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 12697.0,
+          "Q": 147
+        },
+        "after": {
+          "T": 7065.0,
+          "Q": 147
+        },
+        "before_path": [
+          "rows",
+          5
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          4
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "width"
+      },
+      {
+        "file": "evidence/division-16.json",
+        "file_sha256": "ab93ab42c8bd0ce6951f0ed05ac539a4ada7d3f3bc7d53c4531125e6fc7d9946",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 11868.0,
+          "Q": 179
+        },
+        "after": {
+          "T": 7006.0,
+          "Q": 179
+        },
+        "before_path": [
+          "rows",
+          7
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          6
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "jump2"
+      },
+      {
+        "file": "evidence/division-16.json",
+        "file_sha256": "ab93ab42c8bd0ce6951f0ed05ac539a4ada7d3f3bc7d53c4531125e6fc7d9946",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 20134.0,
+          "Q": 181
+        },
+        "after": {
+          "T": 10180.0,
+          "Q": 181
+        },
+        "before_path": [
+          "rows",
+          9
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          8
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "pingpong"
+      },
+      {
+        "file": "evidence/division-16.json",
+        "file_sha256": "ab93ab42c8bd0ce6951f0ed05ac539a4ada7d3f3bc7d53c4531125e6fc7d9946",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 19707.0,
+          "Q": 190
+        },
+        "after": {
+          "T": 11079.0,
+          "Q": 190
+        },
+        "before_path": [
+          "rows",
+          11
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          10
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "leapfrog"
+      },
+      {
+        "file": "evidence/division-256.json",
+        "file_sha256": "b544127d02330f057788a747ccee3456bb91aaef012054ac62b5b60e7b396490",
+        "metric": "TQ",
+        "bits": 256,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 8100888.0,
+          "Q": 3329
+        },
+        "after": {
+          "T": 4315142.0,
+          "Q": 3329
+        },
+        "before_path": [
+          "rows",
+          1
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          0
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "inverse"
+      },
+      {
+        "file": "evidence/division-256.json",
+        "file_sha256": "b544127d02330f057788a747ccee3456bb91aaef012054ac62b5b60e7b396490",
+        "metric": "TQ",
+        "bits": 256,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 3790087.0,
+          "Q": 2817
+        },
+        "after": {
+          "T": 2092545.0,
+          "Q": 2817
+        },
+        "before_path": [
+          "rows",
+          3
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          2
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "replay"
+      },
+      {
+        "file": "evidence/division-256.json",
+        "file_sha256": "b544127d02330f057788a747ccee3456bb91aaef012054ac62b5b60e7b396490",
+        "metric": "TQ",
+        "bits": 256,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 3336697.0,
+          "Q": 2307
+        },
+        "after": {
+          "T": 1833465.0,
+          "Q": 2307
+        },
+        "before_path": [
+          "rows",
+          5
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          4
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "width"
+      },
+      {
+        "file": "evidence/division-256.json",
+        "file_sha256": "b544127d02330f057788a747ccee3456bb91aaef012054ac62b5b60e7b396490",
+        "metric": "TQ",
+        "bits": 256,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 2430126.0,
+          "Q": 2588
+        },
+        "after": {
+          "T": 1418725.0,
+          "Q": 2588
+        },
+        "before_path": [
+          "rows",
+          7
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          6
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "jump2"
+      },
+      {
+        "file": "evidence/division-256.json",
+        "file_sha256": "b544127d02330f057788a747ccee3456bb91aaef012054ac62b5b60e7b396490",
+        "metric": "TQ",
+        "bits": 256,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 3774364.0,
+          "Q": 2535
+        },
+        "after": {
+          "T": 1888546.0,
+          "Q": 2535
+        },
+        "before_path": [
+          "rows",
+          9
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          8
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "pingpong"
+      },
+      {
+        "file": "evidence/division-256.json",
+        "file_sha256": "b544127d02330f057788a747ccee3456bb91aaef012054ac62b5b60e7b396490",
+        "metric": "TQ",
+        "bits": 256,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 3132139.0,
+          "Q": 2550
+        },
+        "after": {
+          "T": 1741231.0,
+          "Q": 2550
+        },
+        "before_path": [
+          "rows",
+          11
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          10
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "leapfrog"
+      }
+    ]
+  },
+  {
+    "id": "R03",
+    "name": "Fuse replay corrections",
+    "version": 1,
+    "enabled": true,
+    "priority": 90,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": null,
+    "status": "proposal",
+    "correctness": "exact_under_conditions",
+    "role": "combine",
+    "reasoning": "Retain carry information so adjacent arithmetic operations share one correction.",
+    "conditions": [
+      "Proved intermediate range",
+      "Compatible carry and overflow conventions",
+      "Clean scratch and phase correction"
+    ],
+    "priority_reason": "The repeated payload dominates cost. A published cell saves gates, but its full-circuit product effect is unknown.",
+    "parameters": {},
+    "pattern": {
+      "operator": null,
+      "conditions_required": true
+    },
+    "replacement": "Retain carry information so adjacent arithmetic operations share one correction.",
+    "extensions": [
+      "Fuse a longer bounded arithmetic sequence before modular correction."
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2609.28882v1"
+    ],
+    "seed_evidence": [
+      {
+        "metric": "cell_static_Toffolis",
+        "scope": "inverse_replay_cell",
+        "bits": 256,
+        "before_value": 446,
+        "after_value": 393,
+        "extra_workspace_qubits": 1,
+        "stage": "published",
+        "correction_width": 56,
+        "source_url": "https://arxiv.org/html/2609.28882v1",
+        "qualification": "Isolated cell, payload and sign control excluded; matched 56-bit fold; full-circuit TQ and identical failure sets unestablished."
+      }
+    ]
+  },
+  {
+    "id": "R04",
+    "name": "Trim proved zero bits",
+    "version": 1,
+    "enabled": true,
+    "priority": 85,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": "proved_width",
+    "status": "implemented",
+    "correctness": "exact_under_conditions",
+    "role": "replace",
+    "reasoning": "Use the proved plain-walk width schedule and release its zero high bits.",
+    "conditions": [
+      "Plain nonnegative walk",
+      "Proved bound for every retained round",
+      "Restore widths during reversal"
+    ],
+    "priority_reason": "Matched division savings at both widths; requires a proved range and actual released wires.",
+    "parameters": {},
+    "pattern": {
+      "operator": "proved_width",
+      "conditions_required": true
+    },
+    "replacement": "Use the proved plain-walk width schedule and release its zero high bits.",
+    "extensions": [
+      "Derive tighter bounds for signed values instead of fitting widths."
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2609.28882v1"
+    ],
+    "seed_evidence": [
+      {
+        "file": "evidence/division-16.json",
+        "file_sha256": "ab93ab42c8bd0ce6951f0ed05ac539a4ada7d3f3bc7d53c4531125e6fc7d9946",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 7905.0,
+          "Q": 177
+        },
+        "after": {
+          "T": 7065.0,
+          "Q": 147
+        },
+        "before_path": [
+          "rows",
+          2
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          4
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "replay -> width",
+        "attribution": "Conditional implementation replacement; inherited settings retained per recipe."
+      },
+      {
+        "file": "evidence/division-256.json",
+        "file_sha256": "b544127d02330f057788a747ccee3456bb91aaef012054ac62b5b60e7b396490",
+        "metric": "TQ",
+        "bits": 256,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 2092545.0,
+          "Q": 2817
+        },
+        "after": {
+          "T": 1833465.0,
+          "Q": 2307
+        },
+        "before_path": [
+          "rows",
+          2
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          4
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "replay -> width",
+        "attribution": "Conditional implementation replacement; inherited settings retained per recipe."
+      }
+    ]
+  },
+  {
+    "id": "R05",
+    "name": "Split the correction carry ladder",
+    "version": 1,
+    "enabled": true,
+    "priority": 82,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": null,
+    "status": "proposal",
+    "correctness": "exact_under_conditions",
+    "role": "rearrange",
+    "reasoning": "Split a carry ladder to fit the available workspace and reconstruct its boundary carry.",
+    "conditions": [
+      "Exact boundary carry identity",
+      "Both chunks fit the live budget",
+      "All measured phases corrected"
+    ],
+    "priority_reason": "A native development comparison saves 0.224% on an optimised parent. Independent qualification remains open.",
+    "parameters": {},
+    "pattern": {
+      "operator": null,
+      "conditions_required": true
+    },
+    "replacement": "Split a carry ladder to fit the available workspace and reconstruct its boundary carry.",
+    "extensions": [
+      "Choose chunk boundaries from the available live scratch budget."
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2609.28882v1"
+    ],
+    "seed_evidence": [
+      {
+        "file": "evidence/carry-split.json",
+        "file_sha256": "abfcfd252cbfc579a4e92cfd05c66214e98c9a29e262f22037f82b92f65550a0",
+        "metric": "TQ",
+        "bits": 256,
+        "scope": "point_addition",
+        "stage": "development",
+        "before": {
+          "T": 989695,
+          "Q": 1335
+        },
+        "after": {
+          "T": 989702,
+          "Q": 1332
+        },
+        "before_path": [
+          "B"
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "A"
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "qopt-dev-0 32768x2"
+      }
+    ]
+  },
+  {
+    "id": "R06",
+    "name": "Compact scratch wire IDs",
+    "version": 1,
+    "enabled": true,
+    "priority": 80,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": "compact_scratch",
+    "status": "implemented",
+    "correctness": "exact_under_conditions",
+    "role": "rearrange",
+    "reasoning": "Move declared clean scratch wires into unused low IDs while fixing public wires.",
+    "conditions": [
+      "Public registers stay fixed",
+      "Scratch starts and ends clean",
+      "No unsupported wire alias"
+    ],
+    "priority_reason": "Scored Q depends on physical IDs. The supported action compacts declared scratch IDs; broader lifetime reuse remains future work.",
+    "parameters": {},
+    "pattern": {
+      "operator": "compact_scratch",
+      "conditions_required": true
+    },
+    "replacement": "Move declared clean scratch wires into unused low IDs while fixing public wires.",
+    "extensions": [
+      "Extend ID compaction to proved nonoverlapping wire lifetimes."
+    ],
+    "source_urls": [
+      "https://arxiv.org/abs/1904.02121"
+    ],
+    "seed_evidence": []
+  },
+  {
+    "id": "R07",
+    "name": "Reconstruct a retained branch bit",
+    "version": 1,
+    "enabled": true,
+    "priority": 78,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": null,
+    "status": "proposal",
+    "correctness": "exact_under_conditions",
+    "role": "replace",
+    "reasoning": "Use an invariant to recover a branch decision from explicitly retained information.",
+    "conditions": [
+      "Decoder inputs determine the bit on reachable states",
+      "Clean reversible decoder",
+      "Include phase correction and scratch"
+    ],
+    "priority_reason": "Native conditional decoder effects exist. Each proposed decoder needs its own information and reachability argument.",
+    "parameters": {},
+    "pattern": {
+      "operator": null,
+      "conditions_required": true
+    },
+    "replacement": "Use an invariant to recover a branch decision from explicitly retained information.",
+    "extensions": [
+      "Use a retained checksum or coefficient window to distinguish histories."
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2610.22367v1"
+    ],
+    "seed_evidence": [
+      {
+        "file": "evidence/decoder.json",
+        "file_sha256": "6ce99dff170188db63d7df6051934277b582d8804d96178da65dd47d94c592a2",
+        "metric": "TQ",
+        "bits": 256,
+        "scope": "point_addition",
+        "stage": "development",
+        "before": {
+          "T": 990113.283,
+          "Q": 1335
+        },
+        "after": {
+          "T": 989679.733,
+          "Q": 1335
+        },
+        "before_path": [
+          "results",
+          "division"
+        ],
+        "before_T_field": "meanT",
+        "after_path": [
+          "results",
+          "neither"
+        ],
+        "after_T_field": "meanT",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "enable division decoder with the other enabled"
+      },
+      {
+        "file": "evidence/decoder.json",
+        "file_sha256": "6ce99dff170188db63d7df6051934277b582d8804d96178da65dd47d94c592a2",
+        "metric": "TQ",
+        "bits": 256,
+        "scope": "point_addition",
+        "stage": "development",
+        "before": {
+          "T": 990105.79,
+          "Q": 1336
+        },
+        "after": {
+          "T": 989679.733,
+          "Q": 1335
+        },
+        "before_path": [
+          "results",
+          "multiplication"
+        ],
+        "before_T_field": "meanT",
+        "after_path": [
+          "results",
+          "neither"
+        ],
+        "after_T_field": "meanT",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "enable multiplication decoder with the other enabled"
+      }
+    ]
+  },
+  {
+    "id": "R08",
+    "name": "Group halvings with Jump-2",
+    "version": 1,
+    "enabled": true,
+    "priority": 74,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": "jump2",
+    "status": "implemented",
+    "correctness": "exact_under_conditions",
+    "role": "replace",
+    "reasoning": "Use one macro-step for compatible halvings, comparison, and subtraction.",
+    "conditions": [
+      "Correct special first step",
+      "Compatible transcript and payload",
+      "Declared sufficient schedule and signed widths"
+    ],
+    "priority_reason": "The reconstruction saves resources, but a full-width finite schedule needs separate failure evidence.",
+    "parameters": {
+      "steps": "optional integer; required at full width",
+      "allow_approximate_schedule": "Boolean; required at full width"
+    },
+    "pattern": {
+      "operator": "jump2",
+      "conditions_required": true
+    },
+    "replacement": "Use one macro-step for compatible halvings, comparison, and subtraction.",
+    "extensions": [
+      "Group more exact halvings with a newly derived alphabet and inverse."
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2609.28882v1"
+    ],
+    "seed_evidence": [
+      {
+        "file": "evidence/division-16.json",
+        "file_sha256": "ab93ab42c8bd0ce6951f0ed05ac539a4ada7d3f3bc7d53c4531125e6fc7d9946",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 7905.0,
+          "Q": 177
+        },
+        "after": {
+          "T": 7006.0,
+          "Q": 179
+        },
+        "before_path": [
+          "rows",
+          2
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          6
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "replay -> jump2",
+        "attribution": "Conditional implementation replacement; inherited settings retained per recipe."
+      },
+      {
+        "file": "evidence/division-256.json",
+        "file_sha256": "b544127d02330f057788a747ccee3456bb91aaef012054ac62b5b60e7b396490",
+        "metric": "TQ",
+        "bits": 256,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 2092545.0,
+          "Q": 2817
+        },
+        "after": {
+          "T": 1418725.0,
+          "Q": 2588
+        },
+        "before_path": [
+          "rows",
+          2
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          6
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "replay -> jump2",
+        "attribution": "Conditional implementation replacement; inherited settings retained per recipe."
+      }
+    ]
+  },
+  {
+    "id": "R09",
+    "name": "Pack the reachable transcript alphabet",
+    "version": 1,
+    "enabled": true,
+    "priority": 70,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": null,
+    "status": "proposal",
+    "correctness": "exact_under_conditions",
+    "role": "replace",
+    "reasoning": "Encode reachable decision symbols in a smaller reversible code.",
+    "conditions": [
+      "Injective code on reachable symbols",
+      "Reverse-order decoder",
+      "Include codec scratch and cleanup"
+    ],
+    "priority_reason": "Transcript storage can set Q. The reversible codec still needs an executable implementation here.",
+    "parameters": {},
+    "pattern": {
+      "operator": null,
+      "conditions_required": true
+    },
+    "replacement": "Encode reachable decision symbols in a smaller reversible code.",
+    "extensions": [
+      "Choose a different symbol grouping at different replay phases."
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2609.28882v1"
+    ],
+    "seed_evidence": []
+  },
+  {
+    "id": "R10",
+    "name": "Use the ping-pong representation",
+    "version": 1,
+    "enabled": true,
+    "priority": 66,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": "pingpong",
+    "status": "implemented",
+    "correctness": "exact_under_conditions",
+    "role": "replace",
+    "reasoning": "Use odd signed operands, fixed target alternation, and a low-bit sign decision.",
+    "conditions": [
+      "Matching signed lift and endpoint",
+      "Compatible payload invariant",
+      "Declared schedule"
+    ],
+    "priority_reason": "Eliminates wide decisions, but the unfused local payload changes its ranking across widths.",
+    "parameters": {
+      "steps": "optional integer; required at full width",
+      "allow_approximate_schedule": "Boolean; required at full width"
+    },
+    "pattern": {
+      "operator": "pingpong",
+      "conditions_required": true
+    },
+    "replacement": "Use odd signed operands, fixed target alternation, and a low-bit sign decision.",
+    "extensions": [
+      "Derive a cheaper decision rule from another small-residue invariant."
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2609.28882v1"
+    ],
+    "seed_evidence": [
+      {
+        "file": "evidence/division-16.json",
+        "file_sha256": "ab93ab42c8bd0ce6951f0ed05ac539a4ada7d3f3bc7d53c4531125e6fc7d9946",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 7905.0,
+          "Q": 177
+        },
+        "after": {
+          "T": 10180.0,
+          "Q": 181
+        },
+        "before_path": [
+          "rows",
+          2
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          8
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "replay -> pingpong",
+        "attribution": "Conditional implementation replacement; inherited settings retained per recipe."
+      },
+      {
+        "file": "evidence/division-256.json",
+        "file_sha256": "b544127d02330f057788a747ccee3456bb91aaef012054ac62b5b60e7b396490",
+        "metric": "TQ",
+        "bits": 256,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 2092545.0,
+          "Q": 2817
+        },
+        "after": {
+          "T": 1888546.0,
+          "Q": 2535
+        },
+        "before_path": [
+          "rows",
+          2
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          8
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "replay -> pingpong",
+        "attribution": "Conditional implementation replacement; inherited settings retained per recipe."
+      }
+    ]
+  },
+  {
+    "id": "R11",
+    "name": "Group signed updates with Leapfrog",
+    "version": 1,
+    "enabled": true,
+    "priority": 62,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": "leapfrog",
+    "status": "implemented",
+    "correctness": "exact_under_conditions",
+    "role": "replace",
+    "reasoning": "Group forced signed updates, a chosen update, and a bounded shift.",
+    "conditions": [
+      "Matching choice rule and inverse",
+      "Proved divisibility and shift bounds",
+      "Declared schedule"
+    ],
+    "priority_reason": "Larger transitions can expose shared correction work; the local choice rule differs from the historical implementation.",
+    "parameters": {
+      "steps": "optional integer; required at full width",
+      "allow_approximate_schedule": "Boolean; required at full width"
+    },
+    "pattern": {
+      "operator": "leapfrog",
+      "conditions_required": true
+    },
+    "replacement": "Group forced signed updates, a chosen update, and a bounded shift.",
+    "extensions": [
+      "Change the shift bound or number of forced steps with a proved inverse."
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2609.28882v1"
+    ],
+    "seed_evidence": [
+      {
+        "file": "evidence/division-16.json",
+        "file_sha256": "ab93ab42c8bd0ce6951f0ed05ac539a4ada7d3f3bc7d53c4531125e6fc7d9946",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 10180.0,
+          "Q": 181
+        },
+        "after": {
+          "T": 11079.0,
+          "Q": 190
+        },
+        "before_path": [
+          "rows",
+          8
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          10
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "pingpong -> leapfrog",
+        "attribution": "Conditional implementation replacement; inherited settings retained per recipe."
+      },
+      {
+        "file": "evidence/division-256.json",
+        "file_sha256": "b544127d02330f057788a747ccee3456bb91aaef012054ac62b5b60e7b396490",
+        "metric": "TQ",
+        "bits": 256,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 1888546.0,
+          "Q": 2535
+        },
+        "after": {
+          "T": 1741231.0,
+          "Q": 2550
+        },
+        "before_path": [
+          "rows",
+          8
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          "rows",
+          10
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 0,
+        "qualification": "No new Task 1 audit claim",
+        "context": "pingpong -> leapfrog",
+        "attribution": "Conditional implementation replacement; inherited settings retained per recipe."
+      }
+    ]
+  },
+  {
+    "id": "R12",
+    "name": "Specialise sparse-modulus arithmetic",
+    "version": 1,
+    "enabled": true,
+    "priority": 58,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": null,
+    "status": "proposal",
+    "correctness": "exact_under_conditions",
+    "role": "replace",
+    "reasoning": "Use the fixed modulus and constants to reduce arithmetic and storage.",
+    "conditions": [
+      "Exact fixed modulus",
+      "Carry and reduction proof",
+      "Include cleanup and full-width costs"
+    ],
+    "priority_reason": "The fixed sparse prime offers arithmetic structure. Its individual local product contribution is unmeasured.",
+    "parameters": {},
+    "pattern": {
+      "operator": null,
+      "conditions_required": true
+    },
+    "replacement": "Use the fixed modulus and constants to reduce arithmetic and storage.",
+    "extensions": [
+      "Share fixed-constant corrections between adjacent arithmetic operations."
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2609.28882v1"
+    ],
+    "seed_evidence": []
+  },
+  {
+    "id": "R13",
+    "name": "Route through a shared arithmetic kernel",
+    "version": 1,
+    "enabled": true,
+    "priority": 54,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": null,
+    "status": "proposal",
+    "correctness": "exact_under_conditions",
+    "role": "combine",
+    "reasoning": "Route operands into shared roles, apply the arithmetic once, and restore their roles.",
+    "conditions": [
+      "Branches share the kernel after routing",
+      "Routing controls retained",
+      "Restore all public registers"
+    ],
+    "priority_reason": "Shared routing can remove repeated controlled arithmetic. No local isolated contribution is available.",
+    "parameters": {},
+    "pattern": {
+      "operator": null,
+      "conditions_required": true
+    },
+    "replacement": "Route operands into shared roles, apply the arithmetic once, and restore their roles.",
+    "extensions": [
+      "Route several branch-specific values through one common operation."
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2610.22367v1"
+    ],
+    "seed_evidence": []
+  },
+  {
+    "id": "R14",
+    "name": "Factor shared Boolean products",
+    "version": 1,
+    "enabled": true,
+    "priority": 50,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": "boolean_factor",
+    "status": "implemented",
+    "correctness": "exact_identity",
+    "role": "replace",
+    "reasoning": "Factor adjacent Toffolis with a shared product or a shared control.",
+    "conditions": [
+      "Supported distinct-wire pattern",
+      "Matching classical conditions",
+      "No intervening dependency"
+    ],
+    "priority_reason": "Exact small Boolean identities are usable. The old stream has few remaining matches.",
+    "parameters": {
+      "index": "optional nonnegative gate index"
+    },
+    "pattern": {
+      "operator": "boolean_factor",
+      "conditions_required": true
+    },
+    "replacement": "Factor adjacent Toffolis with a shared product or a shared control.",
+    "extensions": [
+      "Resynthesise a larger Boolean region in a different XOR basis."
+    ],
+    "source_urls": [
+      "https://arxiv.org/abs/1908.01609"
+    ],
+    "seed_evidence": []
+  },
+  {
+    "id": "R15",
+    "name": "Cache and reuse a shared AND",
+    "version": 1,
+    "enabled": true,
+    "priority": 46,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": "cache_and",
+    "status": "implemented",
+    "correctness": "exact_under_conditions",
+    "role": "expand",
+    "reasoning": "Introduce a clean stored AND, then replace matching uses with CNOTs.",
+    "conditions": [
+      "Controls unchanged until cleanup",
+      "Temporary wire starts at zero",
+      "Retain the matching cleanup"
+    ],
+    "priority_reason": "Introduces information that can enable later savings. Its immediate cost can increase.",
+    "parameters": {
+      "action": "introduce or reuse",
+      "controls": "two public wire IDs for introduce"
+    },
+    "pattern": {
+      "operator": "cache_and",
+      "conditions_required": true
+    },
+    "replacement": "Introduce a clean stored AND, then replace matching uses with CNOTs.",
+    "extensions": [
+      "Retain one shared predicate across compatible adjacent blocks."
+    ],
+    "source_urls": [
+      "https://arxiv.org/abs/1709.06648"
+    ],
+    "seed_evidence": []
+  },
+  {
+    "id": "R16",
+    "name": "Reorder commuting gates",
+    "version": 1,
+    "enabled": true,
+    "priority": 42,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": "commute",
+    "status": "implemented",
+    "correctness": "exact_identity",
+    "role": "rearrange",
+    "reasoning": "Change adjacent gate order when their read and write dependencies permit it.",
+    "conditions": [
+      "No write affects the other gate input",
+      "No measurement boundary crossed",
+      "Retain classical conditions"
+    ],
+    "priority_reason": "Neutral reordering can expose later matches. Its individual cost contribution is usually zero.",
+    "parameters": {
+      "index": "optional nonnegative gate index"
+    },
+    "pattern": {
+      "operator": "commute",
+      "conditions_required": true
+    },
+    "replacement": "Change adjacent gate order when their read and write dependencies permit it.",
+    "extensions": [
+      "Combine neutral reorderings before checking for larger reductions."
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2004.03082v3"
+    ],
+    "seed_evidence": []
+  },
+  {
+    "id": "R17",
+    "name": "Cancel inverse gate pairs",
+    "version": 1,
+    "enabled": true,
+    "priority": 38,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": "cancel",
+    "status": "implemented",
+    "correctness": "exact_identity",
+    "role": "replace",
+    "reasoning": "Delete adjacent equal self-inverse gates.",
+    "conditions": [
+      "Same operands and condition",
+      "Supported self-inverse gates",
+      "Adjacent after valid reordering"
+    ],
+    "priority_reason": "Exact and cheap, but the old stream already contains few cancellation opportunities.",
+    "parameters": {
+      "index": "optional nonnegative gate index"
+    },
+    "pattern": {
+      "operator": "cancel",
+      "conditions_required": true
+    },
+    "replacement": "Delete adjacent equal self-inverse gates.",
+    "extensions": [
+      "Expose more inverse pairs through verified commutations."
+    ],
+    "source_urls": [
+      "https://arxiv.org/abs/1908.01609"
+    ],
+    "seed_evidence": []
+  },
+  {
+    "id": "R18",
+    "name": "Reduce the round budget",
+    "version": 1,
+    "enabled": true,
+    "priority": 34,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": "cut_rounds",
+    "status": "implemented",
+    "correctness": "approximate",
+    "role": "replace",
+    "reasoning": "Omit rounds needed only by longer arithmetic paths.",
+    "conditions": [
+      "Positive fixed round count",
+      "Explicit tail failure mechanism",
+      "Fresh final failure evidence"
+    ],
+    "priority_reason": "A shorter schedule can save substantial work. The tested sixteen-bit cuts introduce too many failures.",
+    "parameters": {
+      "steps": "positive integer smaller than the parent schedule"
+    },
+    "pattern": {
+      "operator": "cut_rounds",
+      "conditions_required": true
+    },
+    "replacement": "Omit rounds needed only by longer arithmetic paths.",
+    "extensions": [
+      "Choose a round limit jointly with the other error allocations."
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2609.28882v1"
+    ],
+    "seed_evidence": [
+      {
+        "file": "evidence/approx16.json",
+        "file_sha256": "33e6a254a7657ab717f9e07f61ad2530c3f1f026289de9a055bbcfc120640e2e",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 7065,
+          "Q": 147
+        },
+        "after": {
+          "T": 6771,
+          "Q": 147
+        },
+        "before_path": [
+          0
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          1
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 207,
+        "qualification": "No new Task 1 audit claim",
+        "context": "schedule cut to 29 steps"
+      },
+      {
+        "file": "evidence/approx16.json",
+        "file_sha256": "33e6a254a7657ab717f9e07f61ad2530c3f1f026289de9a055bbcfc120640e2e",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 7065,
+          "Q": 147
+        },
+        "after": {
+          "T": 6445,
+          "Q": 147
+        },
+        "before_path": [
+          0
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          2
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 1973,
+        "qualification": "No new Task 1 audit claim",
+        "context": "schedule cut to 27 steps"
+      },
+      {
+        "file": "evidence/approx16.json",
+        "file_sha256": "33e6a254a7657ab717f9e07f61ad2530c3f1f026289de9a055bbcfc120640e2e",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 7065,
+          "Q": 147
+        },
+        "after": {
+          "T": 6087,
+          "Q": 147
+        },
+        "before_path": [
+          0
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          3
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 9173,
+        "qualification": "No new Task 1 audit claim",
+        "context": "schedule cut to 25 steps"
+      }
+    ]
+  },
+  {
+    "id": "R19",
+    "name": "Use a fitted width schedule",
+    "version": 1,
+    "enabled": true,
+    "priority": 30,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": "fitted_width",
+    "status": "implemented",
+    "correctness": "approximate",
+    "role": "replace",
+    "reasoning": "Replace the plain-walk bound with an explicit narrower schedule.",
+    "conditions": [
+      "One width per round boundary",
+      "Valid widths and initial boundary",
+      "Record overflow and cleanup failures"
+    ],
+    "priority_reason": "A fitted bound can save gates and storage, but needs fresh overflow and failure evidence.",
+    "parameters": {
+      "widths": "nonincreasing integer list of steps+1 entries"
+    },
+    "pattern": {
+      "operator": "fitted_width",
+      "conditions_required": true
+    },
+    "replacement": "Replace the plain-walk bound with an explicit narrower schedule.",
+    "extensions": [
+      "Fit widths on development data and reserve fresh qualification data."
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2610.22367v1"
+    ],
+    "seed_evidence": [
+      {
+        "file": "evidence/approx16.json",
+        "file_sha256": "33e6a254a7657ab717f9e07f61ad2530c3f1f026289de9a055bbcfc120640e2e",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 7065,
+          "Q": 147
+        },
+        "after": {
+          "T": 6449,
+          "Q": 147
+        },
+        "before_path": [
+          0
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          4
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 1163,
+        "qualification": "No new Task 1 audit claim",
+        "context": "widths fitted to 512 samples, margin 0"
+      },
+      {
+        "file": "evidence/approx16.json",
+        "file_sha256": "33e6a254a7657ab717f9e07f61ad2530c3f1f026289de9a055bbcfc120640e2e",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 7065,
+          "Q": 147
+        },
+        "after": {
+          "T": 6625,
+          "Q": 147
+        },
+        "before_path": [
+          0
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          5
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 361,
+        "qualification": "No new Task 1 audit claim",
+        "context": "widths fitted to 512 samples, margin 1"
+      },
+      {
+        "file": "evidence/approx16.json",
+        "file_sha256": "33e6a254a7657ab717f9e07f61ad2530c3f1f026289de9a055bbcfc120640e2e",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 7065,
+          "Q": 147
+        },
+        "after": {
+          "T": 6785,
+          "Q": 147
+        },
+        "before_path": [
+          0
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          6
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 85,
+        "qualification": "No new Task 1 audit claim",
+        "context": "widths fitted to 512 samples, margin 2"
+      }
+    ]
+  },
+  {
+    "id": "R20",
+    "name": "Shorten a comparison window",
+    "version": 1,
+    "enabled": true,
+    "priority": 26,
+    "priority_basis": "Editable judgement from existing contribution, repeated cost, and transfer potential; not a measured probability.",
+    "operator": "window_compare",
+    "status": "implemented",
+    "correctness": "approximate",
+    "role": "replace",
+    "reasoning": "Compare only the selected high bits of the active plain-walk values.",
+    "conditions": [
+      "Window within the register width",
+      "Record incorrect comparison paths",
+      "Include phase and scratch checks"
+    ],
+    "priority_reason": "Short comparisons can save work. The naive sixteen-bit windows fail frequently.",
+    "parameters": {
+      "compare_bits": "integer from one through the register width"
+    },
+    "pattern": {
+      "operator": "window_compare",
+      "conditions_required": true
+    },
+    "replacement": "Compare only the selected high bits of the active plain-walk values.",
+    "extensions": [
+      "Use a shorter comparison only at selected proved or sampled boundaries."
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2610.22367v1"
+    ],
+    "seed_evidence": [
+      {
+        "file": "evidence/approx16.json",
+        "file_sha256": "33e6a254a7657ab717f9e07f61ad2530c3f1f026289de9a055bbcfc120640e2e",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 7065,
+          "Q": 147
+        },
+        "after": {
+          "T": 6467,
+          "Q": 147
+        },
+        "before_path": [
+          0
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          7
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 65411,
+        "qualification": "No new Task 1 audit claim",
+        "context": "compare top 3 bits only"
+      },
+      {
+        "file": "evidence/approx16.json",
+        "file_sha256": "33e6a254a7657ab717f9e07f61ad2530c3f1f026289de9a055bbcfc120640e2e",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 7065,
+          "Q": 147
+        },
+        "after": {
+          "T": 6581,
+          "Q": 147
+        },
+        "before_path": [
+          0
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          8
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 64813,
+        "qualification": "No new Task 1 audit claim",
+        "context": "compare top 5 bits only"
+      },
+      {
+        "file": "evidence/approx16.json",
+        "file_sha256": "33e6a254a7657ab717f9e07f61ad2530c3f1f026289de9a055bbcfc120640e2e",
+        "metric": "TQ",
+        "bits": 16,
+        "scope": "modular_division",
+        "stage": "development",
+        "before": {
+          "T": 7065,
+          "Q": 147
+        },
+        "after": {
+          "T": 6737,
+          "Q": 147
+        },
+        "before_path": [
+          0
+        ],
+        "before_T_field": "T",
+        "after_path": [
+          9
+        ],
+        "after_T_field": "T",
+        "failed_inputs": 57637,
+        "qualification": "No new Task 1 audit claim",
+        "context": "compare top 8 bits only"
+      }
+    ]
+  }
+]

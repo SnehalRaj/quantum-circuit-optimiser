@@ -1,0 +1,4 @@
+{
+  "action_index": 0,
+  "reason": "c1111 combines every Toffoli-reducing mechanism (u: measurement-based AND uncompute; r: unread writes to phase ops; combined_y: shared coordinate products) with free_s's qubit reduction, giving the largest expected Q*T drop. c1101 is the same recipe without free_s. Rebuilding the cofactor register adds Toffolis that could offset the qubit saving, so this pair directly measures whether free_s helps in Q*T terms."
+}

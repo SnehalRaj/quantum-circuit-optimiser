@@ -1,0 +1,15 @@
+# Verbatim copy of the fixed ECDSA.fail harness library (upstream 90e777ea:
+# src/lib.rs, circuit.rs, sim.rs, weierstrass_elliptic_curve.rs), pinned so the
+# tester never compiles against a moving candidate checkout.
+[package]
+name = "quantum_ecc"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+alloy-primitives = "1.5"
+ruint = "1.12"
+sha3 = "0.10"

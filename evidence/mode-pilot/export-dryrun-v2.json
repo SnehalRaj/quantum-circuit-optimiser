@@ -1,0 +1,90 @@
+{
+  "artifact_integrity_verified": true,
+  "audit": {
+    "Q": 1270,
+    "T": 793800.9115600586,
+    "alpha": 0.0125,
+    "checker_binary_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+    "checker_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+    "checker_source_sha256": "5a00c89974f5774b1e44cd00c9e9e8f147aad4c695ddea31d24900cb31e849f8",
+    "domain_exclusions": {},
+    "failed_inputs": 10,
+    "failed_shots": 20,
+    "field_width": 256,
+    "input_recipe": "study_check::stream(inputs,[label,u64le(index)]); reject scalar zero or >=order; reject affine-domain exclusions",
+    "label": "10f5eaa66aa93037b9261ef81cd9ab038a723f0991bce7bdb225922378a37fee/large/0",
+    "measurement_recipe": "study_check::stream(measurements,[label,u64le(stream),u64le(index/64)])",
+    "observed_failure_probability": 0.00030517578125,
+    "ops_sha256": "a5ea332d78084447ea358dd09d4a4eb69e26dafea821b3bcffda6e4d9ff26de1",
+    "packet_sha256": "2edbcfa79bcb48cabfebfca0fa745fea921a6e6292f9dc2cd1021dcfa07ae97b",
+    "pairs": 32768,
+    "per_input_sha256": "6b8d638cee3f705ad3ae8d9a06f0e98ca333fbc24e93a68ee9adb764464fcd84",
+    "protocol": "scaled-full-point-add-v1",
+    "protocol_valid": true,
+    "streams": 2,
+    "upper_bound": 0.0006019881632431344
+  },
+  "audit_sha256": "0c6e4077473fd1beb8a39c3441d405451812f2cee47c55f2c9fea435e3662b08",
+  "benchmark_checkout": "../reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/official/q839-ur/challenge",
+  "benchmark_status_unchanged": true,
+  "candidate": {
+    "actions": [
+      {
+        "parameters": {
+          "guards": true,
+          "phase_fix": true
+        },
+        "rule": "cleanup.inverse_and_measure"
+      }
+    ],
+    "backend": "source-conditional",
+    "cancel_adjacent": false,
+    "family": "pilot-ap",
+    "grammar_sha256": "c23e76731483f81db1c7527d0ac7c080816084a21c376a953342c2c836f91bab",
+    "policy": "u",
+    "target": "pilot-ap"
+  },
+  "controller_commit": "49bdddbd3b5486739ab4e0e549bf92285c34fc2c",
+  "dependencies_file": "evidence/mode-pilot/export-dependencies-v2.json",
+  "dependencies_sha256": "fa1d1a75f31930feba400e1cee4d943de814f3d6cc75d796a9d346798e121760",
+  "dryrun_receipt_sha256": "505728a1b4173fcfdd9ab0020a3da5ddd1fc69e0cc5c6da043b217b738634ef9",
+  "execute": false,
+  "export_directory": "work/mode-pilot/export-v2",
+  "export_record_sha256": "9a4bc1ea085849c7b7077b12977440897d156b290808d961b247435b74b537f7",
+  "frozen_contract_audit_pairs": 0,
+  "grammar_sha256": "c23e76731483f81db1c7527d0ac7c080816084a21c376a953342c2c836f91bab",
+  "note_sha256": "ae8ace9afdca58681b6bbf038f3aa69acfdae5365d4962a4242c215b03e18784",
+  "ops_sha256": "a5ea332d78084447ea358dd09d4a4eb69e26dafea821b3bcffda6e4d9ff26de1",
+  "portable_family": {
+    "definition_file": "evidence/mode-pilot/pilot-ap-family.json",
+    "pinned_source_files": 124,
+    "portable_definition_sha256": "0f2579cd675cebe354bbadd85b6818b6020bb795d5693357cc98e775891f48b0",
+    "provenance": {
+      "authors": [
+        "Retain the parent credits in NOTICE and the source files"
+      ],
+      "dependency_ids": [
+        "54acebaf-8d55-419e-b739-799d23bdbde0"
+      ],
+      "description": "Editable derivative of the pinned ap1270 constructor.",
+      "parent_commit": "023fbe13c59df2ff0087ea4bb916d25f3d4fac70",
+      "parent_target": "ap1270",
+      "upstream_family": "qualified-leapfrog"
+    },
+    "registered_definition_sha256": "cafdd0d0eab54f32dc650480d33046acd2e71dffd8b3ed130a2192b156315681",
+    "source_files_sha256_preserved": true
+  },
+  "qualification": "screening",
+  "schema_version": 1,
+  "scope": "Source export and dry-run planning only. The frozen custom contract has audit_pairs=0 and supplies screening qualification. No official execution or external submission occurred for this export.",
+  "source_archive_bytes": 493311,
+  "source_archive_sha256": "3cd426fcd482bf21fcb397e6d9d53bc518691e235e421dda3c2b6ce62e065e55",
+  "source_file_count": 133,
+  "source_manifest_file": "evidence/mode-pilot/export-source-manifest-v2.json",
+  "source_manifest_sha256": "74f7de0108c5f35c708a44cf4eae6f213c9599eaff6e329bcee22801e8ac8712",
+  "source_run": "work/mode-pilot/custom-claude-v2",
+  "source_slot": 0,
+  "staging_worktree_created": false,
+  "submission_note_bytes": 51707,
+  "submitted": false
+}

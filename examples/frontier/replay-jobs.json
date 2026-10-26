@@ -1,0 +1,183 @@
+{
+  "schema": "lco-frontier-replay-jobs-v1",
+  "jobs": [
+    {
+      "schema": "lco-frontier-job-v1",
+      "id": "q818-ur-cat",
+      "base_commit": "b618b19cf76f0ffe3829b53a8af6653c95dc7e4e",
+      "Q": 818,
+      "edits": [
+        {
+          "path": "src/point_add/mod.rs",
+          "old": "cond_pass::run_with(ops, \"mfs\")",
+          "new": "cond_pass::run_with(ops, \"mfsur\")",
+          "count": 1
+        },
+        {
+          "path": "src/point_add/mod.rs",
+          "old": "mod cond_pass;",
+          "new": "mod cond_pass;\nmod frontier_rewrite;",
+          "count": 1
+        },
+        {
+          "path": "src/point_add/mod.rs",
+          "old": "    ops.extend(tail);",
+          "new": "    ops = frontier_rewrite::apply(ops);\n    ops.extend(tail);",
+          "count": 1
+        }
+      ],
+      "file_copies": [
+        {
+          "path": "src/point_add/frontier_rewrite/mod.rs",
+          "source_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+          "source_path": "src/point_add/frontier_rewrite/mod.rs",
+          "sha256": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53"
+        },
+        {
+          "path": "src/point_add/frontier_rewrite/catalog.rs",
+          "source_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+          "source_path": "src/point_add/frontier_rewrite/catalog.rs",
+          "sha256": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+        }
+      ],
+      "dependencies": [
+        {
+          "role": "parent",
+          "submission_id": "d2583a60-f676-44b6-9e25-399dbdd273d7",
+          "rationale": "Direct parent: the complete circuit source, arithmetic, layout and passes.",
+          "evidence": "Our tree is commit b618b19cf76f0ffe3829b53a8af6653c95dc7e4e plus the listed edits in src/point_add."
+        },
+        {
+          "role": "lever",
+          "submission_id": "59359890-410f-49b1-b4dc-c5e54ed528f0",
+          "rationale": "Source of the lever or pass setting this submission switches on.",
+          "evidence": "odinfree applied the same setting in submission 59359890-410f-49b1-b4dc-c5e54ed528f0; see its note."
+        },
+        {
+          "role": "lever",
+          "submission_id": "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+          "rationale": "Source of the lever or pass setting this submission switches on.",
+          "evidence": "odinfree applied the same setting in submission 6d08713c-4a11-4384-9fe4-53fb9f5aca02; see its note."
+        },
+        {
+          "role": "lever",
+          "submission_id": "d419f804-80ed-4ddd-914c-c1e1d149a706",
+          "rationale": "Source of the lever or pass setting this submission switches on.",
+          "evidence": "SnehalRaj applied the same setting in submission d419f804-80ed-4ddd-914c-c1e1d149a706; see its note."
+        },
+        {
+          "role": "catalog",
+          "submission_id": "11613a51-1243-4f91-801a-9e71600d1f99",
+          "rationale": "Source of the exact local gate catalog that this submission applies as its last pass.",
+          "evidence": "src/point_add/frontier_rewrite/catalog.rs and mod.rs are byte copies of the same files in submission 11613a51-1243-4f91-801a-9e71600d1f99."
+        }
+      ],
+      "expected_T_inference": null,
+      "must_beat": null,
+      "owner": "replay",
+      "state": "planned",
+      "base_files_sha256": {},
+      "setting_requests": [],
+      "blocked_reasons": [],
+      "metadata": {
+        "expected_ops_sha256": "a340e6a9fa6c4ba087206a537b4fdc93260630e87ec51ebed9d4486969e2d34a",
+        "purpose": "Frozen source reproduction only. Do not submit these jobs."
+      }
+    },
+    {
+      "schema": "lco-frontier-job-v1",
+      "id": "q819-p19-cat",
+      "base_commit": "b618b19cf76f0ffe3829b53a8af6653c95dc7e4e",
+      "Q": 819,
+      "edits": [
+        {
+          "path": "src/point_add/froghop_one.rs",
+          "old": "pub const POOL_1: usize = 18;",
+          "new": "pub const POOL_1: usize = 19;",
+          "count": 1
+        },
+        {
+          "path": "src/point_add/mod.rs",
+          "old": "cond_pass::run_with(ops, \"mfs\")",
+          "new": "cond_pass::run_with(ops, \"mfsur\")",
+          "count": 1
+        },
+        {
+          "path": "src/point_add/mod.rs",
+          "old": "mod cond_pass;",
+          "new": "mod cond_pass;\nmod frontier_rewrite;",
+          "count": 1
+        },
+        {
+          "path": "src/point_add/mod.rs",
+          "old": "    ops.extend(tail);",
+          "new": "    ops = frontier_rewrite::apply(ops);\n    ops.extend(tail);",
+          "count": 1
+        }
+      ],
+      "file_copies": [
+        {
+          "path": "src/point_add/frontier_rewrite/mod.rs",
+          "source_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+          "source_path": "src/point_add/frontier_rewrite/mod.rs",
+          "sha256": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53"
+        },
+        {
+          "path": "src/point_add/frontier_rewrite/catalog.rs",
+          "source_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+          "source_path": "src/point_add/frontier_rewrite/catalog.rs",
+          "sha256": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+        }
+      ],
+      "dependencies": [
+        {
+          "role": "parent",
+          "submission_id": "d2583a60-f676-44b6-9e25-399dbdd273d7",
+          "rationale": "Direct parent: the complete circuit source, arithmetic, layout and passes.",
+          "evidence": "Our tree is commit b618b19cf76f0ffe3829b53a8af6653c95dc7e4e plus the listed edits in src/point_add."
+        },
+        {
+          "role": "lever",
+          "submission_id": "59359890-410f-49b1-b4dc-c5e54ed528f0",
+          "rationale": "Source of the lever or pass setting this submission switches on.",
+          "evidence": "odinfree applied the same setting in submission 59359890-410f-49b1-b4dc-c5e54ed528f0; see its note."
+        },
+        {
+          "role": "lever",
+          "submission_id": "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+          "rationale": "Source of the lever or pass setting this submission switches on.",
+          "evidence": "odinfree applied the same setting in submission 6d08713c-4a11-4384-9fe4-53fb9f5aca02; see its note."
+        },
+        {
+          "role": "lever",
+          "submission_id": "d419f804-80ed-4ddd-914c-c1e1d149a706",
+          "rationale": "Source of the lever or pass setting this submission switches on.",
+          "evidence": "SnehalRaj applied the same setting in submission d419f804-80ed-4ddd-914c-c1e1d149a706; see its note."
+        },
+        {
+          "role": "setting",
+          "submission_id": "cac0bf90-b459-477c-bc49-98a01c33c4b6",
+          "rationale": "Source of the lever or pass setting this submission switches on.",
+          "evidence": "odinfree applied the same setting in submission cac0bf90-b459-477c-bc49-98a01c33c4b6; see its note."
+        },
+        {
+          "role": "catalog",
+          "submission_id": "11613a51-1243-4f91-801a-9e71600d1f99",
+          "rationale": "Source of the exact local gate catalog that this submission applies as its last pass.",
+          "evidence": "src/point_add/frontier_rewrite/catalog.rs and mod.rs are byte copies of the same files in submission 11613a51-1243-4f91-801a-9e71600d1f99."
+        }
+      ],
+      "expected_T_inference": null,
+      "must_beat": null,
+      "owner": "replay",
+      "state": "planned",
+      "base_files_sha256": {},
+      "setting_requests": [],
+      "blocked_reasons": [],
+      "metadata": {
+        "expected_ops_sha256": "818868c1fea2b67b40035d79c512f4b25ae436cf8be99fcfdef0fe81838fcd13",
+        "purpose": "Frozen source reproduction only. Do not submit these jobs."
+      }
+    }
+  ]
+}

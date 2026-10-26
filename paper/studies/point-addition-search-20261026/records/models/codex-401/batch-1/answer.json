@@ -1,0 +1,4 @@
+{
+  "action_index": 27,
+  "reason": "c1010 combines the measured Toffoli reduction from u with the measured qubit reduction from free_s. c1110 tests whether r further reduces their combined Q\u00d7T cost; these interactions remain unmeasured."
+}

@@ -1,0 +1,15 @@
+* text=auto
+# Preserve every upstream byte, including the conditional compiler's CRLF lines.
+vendor/** -text
+data/** -text
+paper/data/** -text
+paper/studies/** -text
+studies/historical/** -text
+tests/fixtures/frontier/discovery/** -text whitespace=cr-at-eol
+# Keep captured logs byte-exact, including their final blank lines.
+evidence/frontier/**/*.log -text whitespace=-blank-at-eof
+evidence/release-20261026/*.log -text whitespace=-blank-at-eof
+vendor/frontier_rewrite/evidence/*.log whitespace=-blank-at-eof
+*.gz -text
+*.pdf -text
+*.png -text

@@ -1,0 +1,7 @@
+{
+  "recorded_utc": "2026-10-25T14:51:23.462909+00:00",
+  "scope": "Units clarification; does not change protocol, labels, inputs or execution.",
+  "division16": "16384 input pairs per call; two measurement streams occupy32768Python integer lanes.",
+  "division256": "16384 input pairs per call; two measurement streams occupy32768Python integer lanes.",
+  "point_addition": "Native checker uses64shot lanes per stream task; each task contains up to64independent classical input cases from one stream. There are2*ceil(100000/64)=3126tasks."
+}

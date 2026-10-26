@@ -1,0 +1,37 @@
+{
+  "action_index": 0,
+  "api_keys_removed": true,
+  "billing_scope": "CLI estimate; subscription invoice unavailable",
+  "command": [
+    "{redacted-path-00c53cc444c6}",
+    "exec",
+    "--sandbox",
+    "read-only",
+    "--skip-git-repo-check",
+    "--ephemeral",
+    "--json",
+    "--model",
+    "gpt-6.1-sol",
+    "-c",
+    "model_reasoning_effort=\"medium\"",
+    "-"
+  ],
+  "executable_sha256": "d8990e3ee7acfbc26f91265b12a1a83f0fee40d0e0f8f1f40a37d4ec21f499cf",
+  "model_called": true,
+  "provider": "codex",
+  "provider_estimate_usd": null,
+  "reason": "Uses known-control simplification, phase-only AND, and classical guards without the extra inverse-AND and measured-erasure conditions.",
+  "requested_model": "gpt-6.1-sol",
+  "resolved_models": null,
+  "returncode": 0,
+  "started_unix": 1792964211.0683022,
+  "success": true,
+  "usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 0,
+    "input_tokens": 29360,
+    "output_tokens": 71,
+    "reasoning_output_tokens": 31
+  },
+  "wall_seconds": 70.63672280311584
+}

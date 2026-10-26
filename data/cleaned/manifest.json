@@ -1,0 +1,29 @@
+{
+  "analysis_cutoff_utc": "2026-10-26T01:51:12.552334+00:00",
+  "files_sha256": {
+    "common-reliability.json": "aad705148b4c8cc2e84a54eafc169e6da4efda6928d6bedbea36386229351025",
+    "family-census.json": "b023b3b1ce7d05872105b2094e677d5eca408929fa49c449b1adae4263a2a218",
+    "finetuning-summary.json": "3877e12e19297b50a00a78ae157eebcbadd46bc2252e9f012bf532e1d08b3fdd",
+    "frontier-expansion-20261026.json": "877906eb23557ac9faadc09be8d39c4df2c5a26764cbacd7328bfd1c83b49b96",
+    "frontier-summary-20261025T154600Z.json": "140e7ec2a2d55efc0c093fb34121226e485e8ac8205407a5f30b1dd3cecb4b65",
+    "frontier-summary.json": "32162a24b2b791aa44987f4295184cc8cc45d4c1acc213be35654d161637d397",
+    "frontier-users.csv": "968970f325704e6717feca2553b0f162c0b810b5f4e2c9bcabca82442583abdf",
+    "frontier-users.json": "f6b9d1901f0778c60aa345d8975920386f73368a04e9e50e719c969e710c7e6f",
+    "grammar-ablation.json": "379187eddb3d6f8d282638191f464c46e4827ef621f891fc262c4921d427165b",
+    "lowest-product-lineage.md": "d0bbfd2b7bab0a7b5d8fb609ec9b1707cd82546af1badd1f184e66ec3d5cbae0",
+    "matched-point-addition.json": "cba8891c4b5ab609307c45aa3f57c6833e0ab869e6d96ebb9cd08a83ab88a998",
+    "measured-configurations.csv": "8eff2e9b017129605fda37066491bb7cb3092f013420a8edc004f7cc7b1b4034",
+    "model-pilot.json": "9217f5eae60c2a5691ec08bf840d186cb74f6605003d280f89ebfbaf0fa3fdf8",
+    "nonce-history.md": "4bda4290cad927bd744acc9d62e660c42a8b3f0d5b3c739b56ceba186ecff9a7",
+    "openevolve.json": "52e54d24087d99c187b5e44ff0d19e6aa208b2e8d1b851480642079781f84385",
+    "public-submissions.json.gz": "13f898f4211b09b268474f705a72fa1645e2fcb935c60ead505e5060179f6a76",
+    "public-table.csv": "81713ce2c054af2e657d818a373becdea9facf75e3dbe8bcfb6737fe4ae3f085",
+    "reference-map.json": "3342962308b16d424da2013911b9bcbff7eeb38476e848ab13eca41c5ecad32b",
+    "reliability-evidence.json": "42fb27da73d0a15ce1195c2e955d206b63e37dd3f6e307895205de7a9221f98b",
+    "repository-pins.json": "dbc6a8d76a02af94307b295d876ae3a64f24fa58712a53c53464476108b81e81",
+    "strategy-evidence.json": "a661faac27c37ec9ce49f9cc353261f4bc4fa83ad37bfa6b389168687567fa0c",
+    "timing-study.json": "0152a11c5af15efc0f707d2550457e7209355aa419b23c84f86fbc9cba86763e"
+  },
+  "schema": "cleaned-data-v2",
+  "scope": "Current public summary plus dated historical experiment records. File hashes identify shareable copies; paper/data/shareable-copies.json retains original evidence hashes."
+}

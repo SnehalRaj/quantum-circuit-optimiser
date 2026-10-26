@@ -1,0 +1,23 @@
+{
+  "candidate": "q816-ur",
+  "counts": {
+    "ancilla_garbage_batches": 0,
+    "classical_mismatches": 0,
+    "phase_garbage_batches": 0,
+    "shots": 9024
+  },
+  "eval_binary_sha256": "1ffe6e4fb95c084598dedfc9f99378e925d6d67d268830361ef81fc8877767c1",
+  "ops_sha256": "a65bf4b97f25d29566c8a96fc27350fcf3e172f7bfc4d649b5bbbdbbd9f35a51",
+  "passed": true,
+  "returncode": 0,
+  "scope": "One trusted-evaluator screen of these exact bytes under amendment 1. It is not repeated.",
+  "score": {
+    "metrics": {
+      "qubits": 816,
+      "toffoli": 9803523
+    },
+    "score": 7999674768
+  },
+  "screened_utc": "2026-10-24T23:06:37.057468+00:00",
+  "wall_seconds": 52.9927804581821
+}

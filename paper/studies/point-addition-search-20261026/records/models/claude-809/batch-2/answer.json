@@ -1,0 +1,4 @@
+{
+  "action_index": 41,
+  "reason": "free_s is what lowers Q from 214 to 198, so the next tests should keep free_s on. The best result so far is c1110 (QT 5.53M). Comparing c1111 with c1011, adding r only cut T by about 61. Adding combined_y raised T a little (c1110 vs c1111). c1010 (u + free_s, no r) and c0110 (r + free_s, no u) are the two untested 198-qubit neighbours of the best recipe. Running both separates the effects of u and r. This tests whether r is really needed: c1010 could match or beat c1110. It also shows how much of the T reduction comes from u. Recipes without free_s stay at Q=214 and are unlikely to beat 5.53M."
+}

@@ -1,0 +1,4 @@
+{
+  "action_index": 2,
+  "reason": "c1111 enables all rules: u and r cut Toffolis spent on AND uncomputation and unread writes, combined_y merges coordinate products, and free_s lowers Q. It should give the lowest Q*T if the rules compose. c1101 is the same recipe without free_s, which is the one rule with a real trade-off (fewer qubits but extra Toffolis to rebuild the register). The pair measures whether free_s's qubit saving outweighs that cost, which guides the remaining slots."
+}

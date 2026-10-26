@@ -1,0 +1,4 @@
+{
+  "action_index": 64,
+  "reason": "Both recipes test combined coordinate products while retaining the measured qubit savings from free_s and Toffoli savings from u. Their comparison isolates r, whose measured benefit was small."
+}

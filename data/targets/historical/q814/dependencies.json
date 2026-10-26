@@ -1,0 +1,12 @@
+[
+  {
+    "submissionId": "e34a920c-8508-4500-b0df-03ba7327e578",
+    "rationale": "Direct parent: the complete circuit source, arithmetic, layout and passes.",
+    "evidence": "Our tree is commit 2b6e485904992276c935a4b520b8361a0f52b2e0 plus the listed edits in src/point_add."
+  },
+  {
+    "submissionId": "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "rationale": "Source of the lever or pass setting this submission switches on.",
+    "evidence": "odinfree applied the same setting in submission 59359890-410f-49b1-b4dc-c5e54ed528f0; see its note."
+  }
+]

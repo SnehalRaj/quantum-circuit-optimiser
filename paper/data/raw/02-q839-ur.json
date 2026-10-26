@@ -1,0 +1,91 @@
+{
+  "id": "q839-ur",
+  "stage": "calibration",
+  "status": "complete",
+  "binding": {
+    "checker_sha256": "abf8572a7ec9318888e564778658e89b965d9ba6aafdd24a23beeadc46bdf260",
+    "ops_sha256": "0f8ff05332b9394eb63221200872243d2991be30994e95bb8b977e72f45711a1",
+    "pairs": 20480,
+    "streams": 2,
+    "label": "frontier-levers-20261025/slot-03/06e57ca8ca618e656adcd0733edffa8d",
+    "protocol_sha256": "e83cdbaba44f39128aa5aa408491415b789d47944f5e1d1cd28402f1be1b618c"
+  },
+  "Q": 839,
+  "T": 8564532.09260254,
+  "S": 7185642348,
+  "pairs": 20480,
+  "streams": 2,
+  "counts": {
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "failed_indices": [],
+    "channel_failed_inputs": {
+      "coordinate": 0,
+      "phase": 0,
+      "workspace": 0,
+      "addend": 0
+    },
+    "channel_failed_shots": {
+      "coordinate": 0,
+      "phase": 0,
+      "workspace": 0,
+      "addend": 0
+    },
+    "packet_sha256": "f9aab5512df12241c0a06aff9480278b0a04bbbce48a25239309a63dc84d0844"
+  },
+  "timings": {
+    "load_seconds": 4.382211083,
+    "preparation_seconds": 7.582098041,
+    "simulation_seconds": 82.697975125,
+    "total_seconds": 101.229765041
+  },
+  "process": {
+    "argv": [
+      "{redacted-path-5c190ca4d63b}",
+      "--ops",
+      "{redacted-path-8129cd3f7089}",
+      "--pairs",
+      "20480",
+      "--streams",
+      "2",
+      "--threads",
+      "4",
+      "--label",
+      "frontier-levers-20261025/slot-03/06e57ca8ca618e656adcd0733edffa8d",
+      "--out",
+      "{redacted-path-aab0bfb247bf}",
+      "--per-input",
+      "{redacted-path-c16832d27262}",
+      "--progress",
+      "{redacted-path-bd9655732882}"
+    ],
+    "started_utc": "2026-10-24T21:05:49.505004+00:00",
+    "binding": {
+      "checker_sha256": "abf8572a7ec9318888e564778658e89b965d9ba6aafdd24a23beeadc46bdf260",
+      "ops_sha256": "0f8ff05332b9394eb63221200872243d2991be30994e95bb8b977e72f45711a1",
+      "pairs": 20480,
+      "streams": 2,
+      "label": "frontier-levers-20261025/slot-03/06e57ca8ca618e656adcd0733edffa8d",
+      "protocol_sha256": "e83cdbaba44f39128aa5aa408491415b789d47944f5e1d1cd28402f1be1b618c"
+    },
+    "status": "completed",
+    "returncode": 0,
+    "wall_seconds": 101.61747179273516
+  },
+  "bounds": {
+    "observed_rate": 0.0,
+    "pointwise_two_sided95": [
+      0.0,
+      0.00018010484626992
+    ],
+    "family_upper95": 0.00031545161047326977,
+    "alpha_per_member": 0.0015625,
+    "epsilon": 0.001,
+    "decision": "meets_0.001_bound"
+  },
+  "file_sha256": {
+    "raw.json": "53a310144f7c61d40c21ad88a30e4ef0478d1179585f9ec2273d9675edf2fca1",
+    "per-input.jsonl.gz": "8d3f9f4474f3443bd5618592dc4e857237a7bbb1646433e511a5fd702a4228f4",
+    "process.json": "aae297d5c2cbcd9eb154e87a9b0ddc49d14fb0e2083a068f0edce4152bd5e374"
+  }
+}

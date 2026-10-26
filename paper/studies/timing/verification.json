@@ -1,0 +1,38 @@
+{
+  "verified_utc": "2026-10-25T15:04:04.864115+00:00",
+  "protocol_sha256": "6fb2084d58ee2f35944d2e5bf7a975f525fe6a4d2a172a46ae0f6d57722c4aaa",
+  "scope": "Independent record recount and binding checks. No circuit rerun.",
+  "frozen_source_files_checked": 71,
+  "checks": [
+    {
+      "id": "division16",
+      "inputs": 100000,
+      "shots": 200000,
+      "failed_inputs_recounted": 0,
+      "failed_shots_recounted": 0,
+      "operation_hash_matches_protocol": true,
+      "result_source": "{redacted-path-879730d1e529}",
+      "result_sha256": "7e20fa08c7daa5c543d9c05d009ab80e21c833f323d06a37aa95836905b91c24"
+    },
+    {
+      "id": "division256",
+      "inputs": 100000,
+      "shots": 200000,
+      "failed_inputs_recounted": 0,
+      "failed_shots_recounted": 0,
+      "operation_hash_matches_protocol": true,
+      "result_source": "{redacted-path-49ebc40accf3}",
+      "result_sha256": "f4c6b6f4982660663d06fa17f4a8d92f8b361bb50efe808c2fa3c8ff67d1fc9a"
+    },
+    {
+      "id": "point_addition",
+      "inputs": 100000,
+      "shots": 200000,
+      "failed_inputs_recounted": 26,
+      "failed_shots_recounted": 52,
+      "operation_hash_matches_protocol": true,
+      "result_source": "{redacted-path-ffdc395ff8a2}",
+      "result_sha256": "a53578d911991cda134893f277749b6676b62e1698db125e3f109f292fd6ece1"
+    }
+  ]
+}

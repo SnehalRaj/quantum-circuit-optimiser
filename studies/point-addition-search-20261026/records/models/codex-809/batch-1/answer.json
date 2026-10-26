@@ -1,0 +1,4 @@
+{
+  "action_index": 72,
+  "reason": "Both recipes retain measurement-based AND erasure and cofactor release. Each removes one rule from the best measured recipe, testing whether r or combined_y increases Q times mean Toffolis."
+}

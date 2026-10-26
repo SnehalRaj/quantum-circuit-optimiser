@@ -1,0 +1,4 @@
+{
+  "action_index": 0,
+  "reason": "Both recipes use measurement-based erasure and phase operations to reduce Toffolis. Their sole difference, free_s, tests whether lower qubit use offsets reconstruction cost in Q times mean Toffolis."
+}

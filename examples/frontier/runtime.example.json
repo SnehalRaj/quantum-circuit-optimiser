@@ -1,0 +1,19 @@
+{
+  "git_repo": "/data/ecdsafail-source",
+  "benchmark_repo": "/data/ecdsafail-source",
+  "rust_version": "1.93.0",
+  "username": "SnehalRaj",
+  "credits": [
+    "odinfree and gnuchev: the public Froghop arithmetic and layout used by the listed parent trees.",
+    "jackylee0424: the conditional-AND pass and its u and r levers; odinfree: their use in the retained Froghop lineage.",
+    "gopikannappan: the carry-lane setting and coupled S5 guard when the selected job uses GPOOL.",
+    "SnehalRaj: the exact local catalog and its certificate, first used in submission 11613a51-1243-4f91-801a-9e71600d1f99."
+  ],
+  "inherited_contract_file": "examples/frontier/lineage-contract.md",
+  "offline": false,
+  "build_jobs": 1,
+  "poll_seconds": 30,
+  "poll_timeout": 3600,
+  "model": "Model-free",
+  "harness": "llm-circuit-optimiser"
+}

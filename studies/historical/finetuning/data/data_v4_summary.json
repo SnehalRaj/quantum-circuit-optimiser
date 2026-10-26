@@ -1,0 +1,93 @@
+{
+  "augmentation": {
+    "aug_too_many_tokens": 252,
+    "ctx": 1242,
+    "drop_config": 237,
+    "drop_score": 221,
+    "para": 622,
+    "perm": 98
+  },
+  "augmentation_multiplier": 5.99,
+  "commits": {
+    "test": 47,
+    "train": 249,
+    "val": 22
+  },
+  "config_api": {
+    "test": {
+      "pinned_table": 19,
+      "set_default_env": 28
+    },
+    "train": {
+      "none": 84,
+      "set_default_env": 165
+    }
+  },
+  "cutoff_time": 1787332486,
+  "dropped": {
+    "aug_roundtrip_fail": 2,
+    "duplicate": 1,
+    "measured_no_gain": 1,
+    "no_rs": 2,
+    "non_rs_or_binary": 32,
+    "nonce_only": 1,
+    "not_selected": 636,
+    "roundtrip_fail": 13,
+    "too_large": 124,
+    "too_many_tokens": 47
+  },
+  "fit_fallback": {
+    "test": 5,
+    "train": 33,
+    "val": 1
+  },
+  "inputs": {
+    "deltas": 50,
+    "labels": 1311,
+    "scores": 430
+  },
+  "max_tokens": {
+    "test": 8047,
+    "train": 8188,
+    "val": 7347
+  },
+  "measured_in_train": 171,
+  "rows": {
+    "test": 47,
+    "train": 1491,
+    "val": 22
+  },
+  "selection_reason": {
+    "train": {
+      "baseline": 1,
+      "measured": 171,
+      "msg_delta": 27,
+      "submission": 50
+    },
+    "val": {
+      "measured": 21,
+      "submission": 1
+    }
+  },
+  "test_over_max_tokens": 0,
+  "test_with_parent_score": 47,
+  "time_range": {
+    "test": [
+      1787332486,
+      1791785447
+    ],
+    "train": [
+      1776979317,
+      1781971665
+    ],
+    "val": [
+      1782004675,
+      1787328859
+    ]
+  },
+  "tokens": {
+    "test": 235619,
+    "train": 6508298,
+    "val": 87017
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "action_index": 41,
+  "reason": "Both recipes release the cofactor register and omit combined_y, which raised mean Toffolis in the measured c1110/c1111 pair. Comparing c0110 with c1010 isolates the two phase-rewrite strategies."
+}

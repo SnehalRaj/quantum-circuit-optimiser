@@ -1,0 +1,8 @@
+[
+  {
+    "reason": "The emitter spells an empty policy as none. The empty string is rejected before emission.",
+    "old_protocol_sha256": "725e4479165183cdcdd6f6932363b0220f67ed00bd68ecfd71d7845b7463e6d3",
+    "timing": "Before any model call or circuit evaluation; sixteen recipes had emitted.",
+    "scientific_change": false
+  }
+]

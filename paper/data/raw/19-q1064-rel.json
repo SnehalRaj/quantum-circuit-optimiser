@@ -1,0 +1,94 @@
+{
+  "id": "q1064-rel",
+  "stage": "calibration",
+  "status": "complete",
+  "binding": {
+    "checker_sha256": "abf8572a7ec9318888e564778658e89b965d9ba6aafdd24a23beeadc46bdf260",
+    "ops_sha256": "76098f68b93ee406613b889f6ef5a10aab7d7a13e52301a68360ac5ca3ccbdae",
+    "pairs": 20480,
+    "streams": 2,
+    "label": "frontier-levers-20261025/slot-23/1acc7f0907a30a424ce5f1f6b6b128d3",
+    "protocol_sha256": "dda3cc9332b287909a85ec7017fe3aaf0eaad0c3d0c106c2019ba86319d34fd1"
+  },
+  "Q": 1064,
+  "T": 1968000.552685547,
+  "S": 2093953064,
+  "pairs": 20480,
+  "streams": 2,
+  "counts": {
+    "failed_inputs": 2,
+    "failed_shots": 4,
+    "failed_indices": [
+      6220,
+      8804
+    ],
+    "channel_failed_inputs": {
+      "coordinate": 2,
+      "phase": 2,
+      "workspace": 0,
+      "addend": 0
+    },
+    "channel_failed_shots": {
+      "coordinate": 4,
+      "phase": 2,
+      "workspace": 0,
+      "addend": 0
+    },
+    "packet_sha256": "478dd590bca9678c0a90cf1894c540f993083ab162c6b9997e42407ec59d99ba"
+  },
+  "timings": {
+    "load_seconds": 6.221767875,
+    "preparation_seconds": 14.857828875,
+    "simulation_seconds": 57.922526833,
+    "total_seconds": 85.080012458
+  },
+  "process": {
+    "argv": [
+      "{redacted-path-1d2ad8d22376}",
+      "--ops",
+      "{redacted-path-ea8a6b55b9c9}",
+      "--pairs",
+      "20480",
+      "--streams",
+      "2",
+      "--threads",
+      "4",
+      "--label",
+      "frontier-levers-20261025/slot-23/1acc7f0907a30a424ce5f1f6b6b128d3",
+      "--out",
+      "{redacted-path-301ae9f9decf}",
+      "--per-input",
+      "{redacted-path-5fd04ae8d350}",
+      "--progress",
+      "{redacted-path-6beb31b0c34b}"
+    ],
+    "started_utc": "2026-10-25T04:16:52.936975+00:00",
+    "binding": {
+      "checker_sha256": "abf8572a7ec9318888e564778658e89b965d9ba6aafdd24a23beeadc46bdf260",
+      "ops_sha256": "76098f68b93ee406613b889f6ef5a10aab7d7a13e52301a68360ac5ca3ccbdae",
+      "pairs": 20480,
+      "streams": 2,
+      "label": "frontier-levers-20261025/slot-23/1acc7f0907a30a424ce5f1f6b6b128d3",
+      "protocol_sha256": "dda3cc9332b287909a85ec7017fe3aaf0eaad0c3d0c106c2019ba86319d34fd1"
+    },
+    "status": "completed",
+    "returncode": 1,
+    "wall_seconds": 85.58004291635007
+  },
+  "bounds": {
+    "observed_rate": 9.765625e-05,
+    "pointwise_two_sided95": [
+      1.1826843738055726e-05,
+      0.00035272295777703723
+    ],
+    "family_upper95": 0.0005220429695621752,
+    "alpha_per_member": 0.0015625,
+    "epsilon": 0.001,
+    "decision": "meets_0.001_bound"
+  },
+  "file_sha256": {
+    "raw.json": "83ddfd77b37b695fbe754afcdff6482c36371a0dcf9c8b456d6f268ee30d277e",
+    "per-input.jsonl.gz": "0e87f70383755595fa918b8149db8caa77cecdab40a84568e114ebe801972722",
+    "process.json": "83284f6b3784f4dca8884b79cecea9b98c8715d1989ccbcee6053c8c3d8b64ac"
+  }
+}

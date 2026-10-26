@@ -1,0 +1,33 @@
+{
+  "actual_emitted_hash_matches": true,
+  "binary_sha256": {
+    "build_circuit": "df8e54eacbbb20d3618a567c6fcd9049a8109faed613fd49f122a48a7cc328af",
+    "eval_circuit": "46150f65774c3461c9e64ecae2a8b15301e3ae492186e7c07330571e2e244911"
+  },
+  "completed_utc": "2026-10-24T21:28:39.351274+00:00",
+  "execution_mode": "Direct unchanged public reference commands; optional Cargo env source step omitted under a recorded instrument amendment. No CLI call in this attempt.",
+  "expected_ops_sha256": "0f8ff05332b9394eb63221200872243d2991be30994e95bb8b977e72f45711a1",
+  "monitor_error": null,
+  "official_invocations": 1,
+  "official_score_file": {
+    "metrics": {
+      "qubits": 839,
+      "toffoli": 8564543
+    },
+    "score": 7185651577
+  },
+  "ops.bin_bytes": 109747111,
+  "ops.bin_sha256": "0f8ff05332b9394eb63221200872243d2991be30994e95bb8b977e72f45711a1",
+  "peak_sampled_process_group_rss_bytes": 2401468416,
+  "request_sha256": "ada7920f1a9be4d571f6706db647fd1256939adbf679a66fb6f713dc9922cbd9",
+  "results_tsv_after_sha256": "cc2fc5d67e4fee5a3b841c05707fd80582bae5cfcf0a989621efdb78440947b9",
+  "retries": 0,
+  "returncode": 0,
+  "score.json_bytes": 88,
+  "score.json_sha256": "121985dae64a5b939dae828b0263fb45b3b7b022c5d6d20e1736c868a546495f",
+  "source_and_harness_unchanged_after": true,
+  "status": "official local benchmark passed",
+  "stderr_sha256": "5f59e5f42605d47f29e6859f24908bbbadd4b6e73975f1eaecb11eb1edd2ec51",
+  "stdout_sha256": "92d1167281058f93dc923028a6b92e2531b2c2ca0ceeb7ce6faefcf3bf35eb7a",
+  "wall_seconds": 569.9235248342156
+}

@@ -1,0 +1,33 @@
+{
+  "checker": {
+    "path": "tools/study-check.bin",
+    "sha256": "abf8572a7ec9318888e564778658e89b965d9ba6aafdd24a23beeadc46bdf260"
+  },
+  "confidence": 0.95,
+  "confidence_scope": "frontier-levers-20261025 reserves 32 audit slots at alpha=0.05/32.",
+  "controller_sha256": "cf820682c20d2802977c69e7c9108063105cfc72679a65219b662a4f7f5eed7e",
+  "deadline_unix": null,
+  "deadline_utc": null,
+  "epsilon": 0.001,
+  "family_size": 32,
+  "frozen_utc": "2026-10-25T03:14:54.903296+00:00",
+  "label": "frontier-levers-20261025/slot-04/8018e5c9e9ec966082b94f23134852a3",
+  "members": [
+    {
+      "id": "q808-ur",
+      "ops": "artifacts/q808-ur/ops.bin",
+      "ops_sha256": "7ef2c758baadc4e871d70422c6a0eac79201d91c54585c2751f521e7ed2c77f8",
+      "status": "ready"
+    }
+  ],
+  "pairs": 20480,
+  "sampling_amendment_file": "design.json",
+  "sampling_amendment_sha256": "5016418ed0b5f244701543fbfc51c7e29f967cdf17b786d942c3168d07cf950a",
+  "schema": 1,
+  "selection_file": "selection.json",
+  "selection_sha256": "5e157ffd7fe1080e5bdfc76f1b4f7f4aecb9c8d8c099ad9f558fcffdf876d4b6",
+  "streams": 2,
+  "threads": 4,
+  "timing_label": "frontier-levers-20261025/slot-04/8018e5c9e9ec966082b94f23134852a3/unused-timing",
+  "timing_pairs": 128
+}

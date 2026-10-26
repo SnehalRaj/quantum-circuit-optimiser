@@ -1,0 +1,169 @@
+{
+  "schema": 1,
+  "study": "pilot-20261022",
+  "scope": "Historical calibration evidence. Each new experiment recalibrates before search.",
+  "widths": {
+    "5": {
+      "source": "runs/studies/pilot-20261022/calibration/5/summary.json",
+      "sha256": "6a174304a5128fc085d9d863bf6c9732ea4e531e7698fe264d773543b8565d72",
+      "policy": "direct_long",
+      "quick_pairs": null,
+      "long_pairs": 512,
+      "sizes": {
+        "8": {
+          "fit": {
+            "candidates": 32,
+            "promoted": 9,
+            "useful": 6,
+            "useful_recall": 1.0,
+            "promotion_precision": 0.6666666666666666,
+            "long_pass_precision": 0.8888888888888888,
+            "false_rejections": 0,
+            "cascade_seconds": 2.0928968731313944,
+            "direct_long_seconds": 1.8632378736510873
+          },
+          "held_out": {
+            "candidates": 32,
+            "promoted": 8,
+            "useful": 2,
+            "useful_recall": 1.0,
+            "promotion_precision": 0.25,
+            "long_pass_precision": 1.0,
+            "false_rejections": 0,
+            "cascade_seconds": 1.9585139183327556,
+            "direct_long_seconds": 1.6985165011137724
+          }
+        },
+        "32": {
+          "fit": {
+            "candidates": 32,
+            "promoted": 8,
+            "useful": 6,
+            "useful_recall": 1.0,
+            "promotion_precision": 0.75,
+            "long_pass_precision": 1.0,
+            "false_rejections": 0,
+            "cascade_seconds": 2.0364447478204966,
+            "direct_long_seconds": 1.8632378736510873
+          },
+          "held_out": {
+            "candidates": 32,
+            "promoted": 8,
+            "useful": 2,
+            "useful_recall": 1.0,
+            "promotion_precision": 0.25,
+            "long_pass_precision": 1.0,
+            "false_rejections": 0,
+            "cascade_seconds": 1.9884387096390128,
+            "direct_long_seconds": 1.6985165011137724
+          }
+        },
+        "128": {
+          "fit": {
+            "candidates": 32,
+            "promoted": 8,
+            "useful": 6,
+            "useful_recall": 1.0,
+            "promotion_precision": 0.75,
+            "long_pass_precision": 1.0,
+            "false_rejections": 0,
+            "cascade_seconds": 2.108416042290628,
+            "direct_long_seconds": 1.8632378736510873
+          },
+          "held_out": {
+            "candidates": 32,
+            "promoted": 8,
+            "useful": 2,
+            "useful_recall": 1.0,
+            "promotion_precision": 0.25,
+            "long_pass_precision": 1.0,
+            "false_rejections": 0,
+            "cascade_seconds": 2.030251500196755,
+            "direct_long_seconds": 1.6985165011137724
+          }
+        }
+      }
+    },
+    "16": {
+      "source": "runs/studies/pilot-20261022/calibration/16/summary.json",
+      "sha256": "755093096b9881643938d00cb667ea9366f04ffb1cdbd7a171eff8f82e3c77d8",
+      "policy": "failure_screen",
+      "quick_pairs": 512,
+      "long_pairs": 4096,
+      "sizes": {
+        "32": {
+          "fit": {
+            "candidates": 32,
+            "promoted": 21,
+            "useful": 3,
+            "useful_recall": 1.0,
+            "promotion_precision": 0.14285714285714285,
+            "long_pass_precision": 0.3333333333333333,
+            "false_rejections": 0,
+            "cascade_seconds": 28.035341042093933,
+            "direct_long_seconds": 28.960927623324096
+          },
+          "held_out": {
+            "candidates": 32,
+            "promoted": 21,
+            "useful": 3,
+            "useful_recall": 1.0,
+            "promotion_precision": 0.14285714285714285,
+            "long_pass_precision": 0.6190476190476191,
+            "false_rejections": 0,
+            "cascade_seconds": 27.222954167984426,
+            "direct_long_seconds": 28.209877665154636
+          }
+        },
+        "128": {
+          "fit": {
+            "candidates": 32,
+            "promoted": 20,
+            "useful": 3,
+            "useful_recall": 1.0,
+            "promotion_precision": 0.15,
+            "long_pass_precision": 0.35,
+            "false_rejections": 0,
+            "cascade_seconds": 27.05000958405435,
+            "direct_long_seconds": 28.960927623324096
+          },
+          "held_out": {
+            "candidates": 32,
+            "promoted": 19,
+            "useful": 3,
+            "useful_recall": 1.0,
+            "promotion_precision": 0.15789473684210525,
+            "long_pass_precision": 0.6842105263157895,
+            "false_rejections": 0,
+            "cascade_seconds": 25.70535257924348,
+            "direct_long_seconds": 28.209877665154636
+          }
+        },
+        "512": {
+          "fit": {
+            "candidates": 32,
+            "promoted": 17,
+            "useful": 3,
+            "useful_recall": 1.0,
+            "promotion_precision": 0.17647058823529413,
+            "long_pass_precision": 0.4117647058823529,
+            "false_rejections": 0,
+            "cascade_seconds": 23.7905109571293,
+            "direct_long_seconds": 28.960927623324096
+          },
+          "held_out": {
+            "candidates": 32,
+            "promoted": 17,
+            "useful": 3,
+            "useful_recall": 1.0,
+            "promotion_precision": 0.17647058823529413,
+            "long_pass_precision": 0.7647058823529411,
+            "false_rejections": 0,
+            "cascade_seconds": 24.676100791431963,
+            "direct_long_seconds": 28.209877665154636
+          }
+        }
+      }
+    }
+  }
+}

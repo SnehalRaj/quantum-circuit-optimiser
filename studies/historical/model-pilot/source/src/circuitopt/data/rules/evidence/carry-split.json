@@ -1,0 +1,93 @@
+{
+ "A": {
+  "T": 989702,
+  "Q": 1332,
+  "TQ": 1318283064,
+  "failed_inputs": 0,
+  "failed_shots": 0,
+  "coords": 0,
+  "phase": 0,
+  "ancilla": 0,
+  "cp95_per_input": 9.141831479094034e-05,
+  "cp95_per_shot": 4.5710202106758495e-05,
+  "ops_sha3_16": "9e1bac254297d1c8",
+  "cached": true
+ },
+ "B": {
+  "T": 989695,
+  "Q": 1335,
+  "TQ": 1321242825,
+  "failed_inputs": 0,
+  "failed_shots": 0,
+  "coords": 0,
+  "phase": 0,
+  "ancilla": 0,
+  "cp95_per_input": 9.141831479094034e-05,
+  "cp95_per_shot": 4.5710202106758495e-05,
+  "ops_sha3_16": "1f7677bd88ed6d0a",
+  "cached": true
+ },
+ "stage": "dev",
+ "cohort": "qopt-dev-0 32768x2",
+ "time": "Thu Oct 22 02:17:55 2026",
+ "verdict": "PC001 vs S3 on qopt-dev-0 32768x2: TQ -2,959,761 (-0.2240%), T +7, Q -3, coords set same (0 vs 0), phase 0 vs 0, ancilla 0 vs 0 -> accepted for the next stage",
+ "settings_differ": [],
+ "note": null,
+ "delta": {
+  "T": 7,
+  "T_pct": 0.0007,
+  "Q": -3,
+  "Q_pct": -0.2247,
+  "TQ": -2959761,
+  "TQ_pct": -0.224
+ },
+ "sets": {
+  "coords": {
+   "relation": "same",
+   "A": 0,
+   "B": 0,
+   "new": [],
+   "gone": []
+  },
+  "phase": {
+   "relation": "same",
+   "A": 0,
+   "B": 0,
+   "new": [],
+   "gone": []
+  },
+  "ancilla": {
+   "relation": "same",
+   "A": 0,
+   "B": 0,
+   "new": [],
+   "gone": []
+  },
+  "all": {
+   "relation": "same",
+   "A": 0,
+   "B": 0,
+   "new": [],
+   "gone": []
+  }
+ },
+ "sets_incomplete": false,
+ "noise_test": {
+  "phase": {
+   "A": 0,
+   "B": 0,
+   "p_value": 1.0,
+   "rises": false
+  },
+  "ancilla": {
+   "A": 0,
+   "B": 0,
+   "p_value": 1.0,
+   "rises": false
+  }
+ },
+ "accepted": true,
+ "reasons": [],
+ "rule": "CONTRACT.md s5: lower T x Q, same coordinate-failing input set, phase and ancilla counts not rising beyond sampling noise (one-sided conditional binomial, alpha 0.05)",
+ "provenance": "reproduced: both measured on qopt-dev-0 32768x2 with checker e8975f8fa20501c4; sampled development evidence, no exactness claim"
+}

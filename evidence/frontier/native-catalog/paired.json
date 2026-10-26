@@ -1,0 +1,43 @@
+{
+  "all_rows_equal": true,
+  "child_ops_sha256": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83",
+  "child_receipt_sha256": "89894ed05d70e3cf5baeddad4a2cf9a1cb88d0033bc0054bdcdb3448716cdefe",
+  "child_verdicts": {
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "file_sha256": "23a3a29836b95d9f1b38808badf7eae217c44c7de96e4d87f92dc028800412ec",
+    "normalized_sha256": "6195f14b4fe7033c564046235ad0b53729e5d01cdba2e12bbf61a6a30dc1c02a",
+    "per_input_sha256": "23a3a29836b95d9f1b38808badf7eae217c44c7de96e4d87f92dc028800412ec",
+    "rows": 16384
+  },
+  "failed_inputs": [
+    0,
+    0
+  ],
+  "failed_shots": [
+    0,
+    0
+  ],
+  "failing_shot_sets_equal": true,
+  "first_different_rows": [],
+  "label": "frontier-catalog-transfer/8b43100bd9064200e02958b5a8630a76",
+  "packet_equal": true,
+  "packet_sha256": "600202baafe15a7b39447ab655fdaff655a27f0e7b41024f111e5965369b74c3",
+  "pairs": 8192,
+  "parent_ops_sha256": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83",
+  "parent_receipt_sha256": "c32e31cd41a909228445a1db4c4642deaaadd6270fb3fb0fe82a54af1b687e3b",
+  "parent_verdicts": {
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "file_sha256": "23a3a29836b95d9f1b38808badf7eae217c44c7de96e4d87f92dc028800412ec",
+    "normalized_sha256": "6195f14b4fe7033c564046235ad0b53729e5d01cdba2e12bbf61a6a30dc1c02a",
+    "per_input_sha256": "23a3a29836b95d9f1b38808badf7eae217c44c7de96e4d87f92dc028800412ec",
+    "rows": 16384
+  },
+  "passed": true,
+  "per_input_rows_compared": 16384,
+  "per_input_rows_different": 0,
+  "schema": "frontier-paired-validation-v1",
+  "scope": "Finite paired validation on the declared inputs and measurement streams. This is not a proof for every input or a reliability qualification.",
+  "streams": 2
+}

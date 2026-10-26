@@ -1,0 +1,349 @@
+{
+  "analysis_cutoff_utc": "2026-10-26T01:51:12.552334+00:00",
+  "historical_cohort_cutoff_utc": "2026-10-25T15:46:00.000Z",
+  "scope": "Fourteen additional current frontier coordinates; edits and audit counts reported by the public notes.",
+  "records": [
+    {
+      "id": "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+      "source": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+      "Q": 818,
+      "T": 9728780,
+      "note_sha256": "2644502c8a113e240279d6993014f1f61a59624502bdfae692cd16535660f5da",
+      "note_url": "https://ecdsa.fail/api/submissions/b9a40957-b59c-4d8a-90eb-d65831365ec5",
+      "edited_lines": [
+        "- `src/point_add/mod.rs`: `cond_pass::run_with(ops, \"mfs\")` becomes `cond_pass::run_with(ops, \"mfsur\")` (one occurrence).",
+        "- `src/point_add/mod.rs`: `mod cond_pass;` becomes `mod cond_pass;\\nmod frontier_rewrite;` (one occurrence).",
+        "- `src/point_add/mod.rs`: `    ops.extend(tail);` becomes `    ops = frontier_rewrite::apply(ops);\\n    ops.extend(tail);` (one occurrence).",
+        "- `src/point_add/frontier_rewrite/mod.rs`: taken byte for byte from `our submission 11613a51-1243-4f91-801a-9e71600d1f99 (commit ae2a603a), the same path` (sha256 `6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53`).",
+        "- `src/point_add/frontier_rewrite/catalog.rs`: taken byte for byte from `our submission 11613a51-1243-4f91-801a-9e71600d1f99 (commit ae2a603a), the same path` (sha256 `e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052`)."
+      ],
+      "sections": {
+        "## What changed": "## What changed\n\nThe parent is public submission `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree`: Q818, T 9,754,259.\nIts source commit is `b618b19cf76f0ffe3829b53a8af6653c95dc7e4e`.\nThe parent runs the exact post-pass suite with the conditional-AND pass levers `mfs`. This submission switches on the pass's existing levers `u` and `r` (`mfsur`), as odinfree's `6d08713c` (lever u) and our `d419f804` (lever r) did on this same tree, and then applies our frozen exact local gate catalog once, after the conditional-AND pass and before the identity tail. The catalog replaces short gate blocks on three or four wires with cheaper blocks that have the same signed permutation on computational basis states; it changes no value and no phase. It first appeared in our Q1097 submission `11613a51`, and the two files are byte copies of that submission's `src/point_add/frontier_rewrite/`. On this tree the catalog made 20,206 rewrites, each removing one Toffoli. The paired development check on a fresh 8,192-pair packet (16,384 shots) gave T 9,748,994 for the parent tree with levers u and r and T 9,728,788 with the catalog, with zero failing shots in both and all 16,384 per-input rows identical. The emitted bytes of this source equal the catalog's transformed stream (same SHA-256).\n\nThe exact edits are:\n\n- `src/point_add/mod.rs`: `cond_pass::run_with(ops, \"mfs\")` becomes `cond_pass::run_with(ops, \"mfsur\")` (one occurrence).\n- `src/point_add/mod.rs`: `mod cond_pass;` becomes `mod cond_pass;\\nmod frontier_rewrite;` (one occurrence).\n- `src/point_add/mod.rs`: `    ops.extend(tail);` becomes `    ops = frontier_rewrite::apply(ops);\\n    ops.extend(tail);` (one occurrence).\n- `src/point_add/frontier_rewrite/mod.rs`: taken byte for byte from `our submission 11613a51-1243-4f91-801a-9e71600d1f99 (commit ae2a603a), the same path` (sha256 `6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53`).\n- `src/point_add/frontier_rewrite/catalog.rs`: taken byte for byte from `our submission 11613a51-1243-4f91-801a-9e71600d1f99 (commit ae2a603a), the same path` (sha256 `e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052`).\n\nNo other file changes. The inherited nonce is unchanged. No nonce or padding search produced this circuit.\n\n",
+        "## Measured results": "## Measured results\n\n| Measurement | Value |\n|:--|:--|\n| Trusted evaluator on the emitted bytes (built from the unchanged public harness source, 9,024 shots) | all shots OK; Q818, T 9,728,780, score 7,958,142,040 |\n| Operation SHA-256 | `a340e6a9fa6c4ba087206a537b4fdc93260630e87ec51ebed9d4486969e2d34a` |\n| Independent audit | 20,480 input pairs x 2 streams, fresh pre-registered label |\n| Audit failed inputs | 0 of 20,480 |\n| Audit failed shots | 0 of 40,960 |\n| Audit upper bound (one-sided, alpha 0.05/32) | 0.000315 per input; limit 0.001 |\n| Failing shots per 9,024 (audit estimate) | none observed in 40,960 shots; the bound above limits the rate |\n\nThe audit and the public check use different inputs. The audit supports the stated failure bound.\nThe public check shows that these exact bytes pass the fixed 9,024-shot packet.\n\n",
+        "## Prior work and credit": "## Prior work and credit\n\n- Parent circuit: `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree`. All arithmetic, layout and passes are theirs.\n- `59359890-410f-49b1-b4dc-c5e54ed528f0` by `odinfree` (Q817, T 9,760,184).\n- `6d08713c-4a11-4384-9fe4-53fb9f5aca02` by `odinfree` (Q818, T 9,748,991).\n- `d419f804-80ed-4ddd-914c-c1e1d149a706` by `SnehalRaj` (Q818, T 9,750,086).\n- The conditional-AND pass and its levers `u` and `r` are jackylee0424's work, as credited in the note of `59359890`; odinfree first used lever `r` in this lineage and switched on lever `u` on this tree in `6d08713c`.\n- The exact catalog and its certificate are ours (first used in our Q1097 submission `11613a51`); the catalog came from our local exact-rule study.\n- Coordination of this submission by a Claude Fable 5.1 session in Claude Code; the catalog integration, builds and development checks by Claude Opus 5.5 agents in Claude Code.\n- This submission adds only the edits listed above, the measurements, and the audit.\n\n"
+      },
+      "reported_audit": {
+        "failed_inputs": 0,
+        "pairs": 20480,
+        "streams": 2,
+        "alpha": 0.0015625,
+        "scope": "Public-note report; no independent receipt recount in this paper revision."
+      }
+    },
+    {
+      "id": "c2d979ce-c5f3-4ad1-822f-ac9b1fa0c9aa",
+      "source": "8b13f41ed3f0f0d2126bd3992a040ea42bc67587",
+      "Q": 829,
+      "T": 9571746,
+      "note_sha256": "9a36d3c8f15e57bd1850042142886f40ec464e3045677a7e6c32812db8bbd860",
+      "note_url": "https://ecdsa.fail/api/submissions/c2d979ce-c5f3-4ad1-822f-ac9b1fa0c9aa",
+      "edited_lines": [
+        "- `src/point_add/mod.rs`: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 11;` (one occurrence).",
+        "- `src/point_add/froghop_one.rs`: `let gp = self.gp.clone();` becomes `let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them` (one occurrence)."
+      ],
+      "sections": {
+        "## What changed": "## What changed\n\nThe parent is public submission `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj`: Q818, T 9,728,780.\nIts source commit is `4073f09cfa7fe733fdeb64841193282aaff293d9`.\nThis submission changes one setting of the parent: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 11;` in `src/point_add/mod.rs` (the carry-lane dial; it moves the peak to Q829). No public row sits at Q829. The carry-lane dial and its guard line follow `gopikannappan`'s public submission `e2194147-ebea-4e1c-b185-244173a5e6b5` (Q828, T 9,606,009); this value continues the same dial to fill the empty Q. Carry lanes need one guard line in `froghop_one.rs` so the S5 stage keeps ordinary MAJ lanes, which its rolling prefix and inverse repair need; this follows gopikannappan's carry-lane rows. The parent already applies our exact local gate catalog as its last pass; it is unchanged. The catalog changes no value and no phase, so this child keeps the failure behaviour of the parent tree at the new setting.\n\nThe exact edits are:\n\n- `src/point_add/mod.rs`: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 11;` (one occurrence).\n- `src/point_add/froghop_one.rs`: `let gp = self.gp.clone();` becomes `let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them` (one occurrence).\n\nNo other file changes. The inherited nonce is unchanged. No nonce or padding search produced this circuit.\n\n",
+        "## Measured results": "## Measured results\n\n| Measurement | Value |\n|:--|:--|\n| Trusted evaluator on the emitted bytes (built from the unchanged public harness source, 9,024 shots) | all shots OK; Q829, T 9,571,746, score 7,934,977,434 |\n| Emitter static expected Toffoli (POSTPASS line) | 9,591,984 |\n| Operation SHA-256 | `429540441b5f59fe8c12791f35f42a4123fe2dfb343e39cfc9ab778ece18d55f` |\n| Independent audit | 20,480 input pairs x 2 streams, fresh pre-registered label |\n| Audit failed inputs | 1 of 20,480 |\n| Audit failed shots | 2 of 40,960 |\n| Audit upper bound (one-sided, alpha 0.05/32) | 0.000427 per input; limit 0.001 |\n| Failing shots per 9,024 (audit estimate) | 0.44 (from 2 failing shots of 40,960) |\n| Audit mean executed Toffoli (audit inputs) | 9,571,768.8 |\n\nThe audit and the public check use different inputs. The audit supports the stated failure bound.\nThe public check shows that these exact bytes pass the fixed 9,024-shot packet.\n\n",
+        "## Prior work and credit": "## Prior work and credit\n\n- Parent circuit: `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj` (our integrated tree). The arithmetic, layout and passes belong to the authors below.\n- `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree` (Q818, T 9,754,259).\n- `59359890-410f-49b1-b4dc-c5e54ed528f0` by `odinfree` (Q817, T 9,760,184).\n- `6d08713c-4a11-4384-9fe4-53fb9f5aca02` by `odinfree` (Q818, T 9,748,991).\n- `d419f804-80ed-4ddd-914c-c1e1d149a706` by `SnehalRaj` (Q818, T 9,750,086).\n- `11613a51-1243-4f91-801a-9e71600d1f99` by `SnehalRaj` (Q1097, T 1,814,134).\n- `e2194147-ebea-4e1c-b185-244173a5e6b5` by `gopikannappan` (Q828, T 9,606,009).\n- The conditional-AND pass and its levers `u` and `r` are jackylee0424's work, as credited in the note of `59359890`.\n- The dial settings come from the public rows named above; we reuse them on our tree.\n- The exact catalog and its certificate are ours (first used in our Q1097 submission `11613a51`).\n- Coordination by a Claude Fable 5.1 session in Claude Code; the cluster pipeline (builds, screen, audit) by a Claude Opus 5.5 session in Claude Code.\n- This submission adds only the edits listed above, the measurements, and the audit.\n\n"
+      },
+      "reported_audit": {
+        "failed_inputs": 1,
+        "pairs": 20480,
+        "streams": 2,
+        "alpha": 0.0015625,
+        "scope": "Public-note report; no independent receipt recount in this paper revision."
+      }
+    },
+    {
+      "id": "fd5adedb-4b0a-43a8-b246-a047a6e6d15c",
+      "source": "aa14fab5a22e77db4e4d886ad43a6b7f2637c640",
+      "Q": 819,
+      "T": 9718964,
+      "note_sha256": "15c1a16e72de230dd1db5c6b244adcbc124e2172ad64c3b035396507edf36246",
+      "note_url": "https://ecdsa.fail/api/submissions/fd5adedb-4b0a-43a8-b246-a047a6e6d15c",
+      "edited_lines": [
+        "- `src/point_add/froghop_one.rs`: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 19;` (one occurrence).",
+        "- `src/point_add/mod.rs`: `cond_pass::run_with(ops, \"mfs\")` becomes `cond_pass::run_with(ops, \"mfsur\")` (one occurrence).",
+        "- `src/point_add/mod.rs`: `mod cond_pass;` becomes `mod cond_pass;\\nmod frontier_rewrite;` (one occurrence).",
+        "- `src/point_add/mod.rs`: `    ops.extend(tail);` becomes `    ops = frontier_rewrite::apply(ops);\\n    ops.extend(tail);` (one occurrence).",
+        "- `src/point_add/frontier_rewrite/mod.rs`: taken byte for byte from `our submission 11613a51-1243-4f91-801a-9e71600d1f99 (commit ae2a603a), the same path` (sha256 `6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53`).",
+        "- `src/point_add/frontier_rewrite/catalog.rs`: taken byte for byte from `our submission 11613a51-1243-4f91-801a-9e71600d1f99 (commit ae2a603a), the same path` (sha256 `e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052`)."
+      ],
+      "sections": {
+        "## What changed": "## What changed\n\nThe parent is public submission `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree`: Q818, T 9,754,259.\nIts source commit is `b618b19cf76f0ffe3829b53a8af6653c95dc7e4e`.\nThe parent is odinfree's froghop-one Q818 tree; it runs the exact post-pass suite with the conditional-AND pass levers `mfs`. This submission sets `POOL_1 = 19` (the scratch pool size that sets the qubit count), switches on the pass's existing levers `u` and `r` (`mfsur`), as odinfree's `6d08713c` (lever u) and our `d419f804` (lever r) did on this same tree, and then applies our frozen exact local gate catalog once, after the conditional-AND pass and before the identity tail. The catalog replaces short gate blocks on three or four wires with cheaper blocks that have the same signed permutation on computational basis states; it changes no value and no phase. It first appeared in our Q1097 submission `11613a51`, and the two files are byte copies of that submission's `src/point_add/frontier_rewrite/`. The setting `POOL_1 = 19` at this Q follows odinfree's row `cac0bf90` (Q819, T 9,739,151, since displaced by our Q818 row), which is declared below.\n\nThe exact edits are:\n\n- `src/point_add/froghop_one.rs`: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 19;` (one occurrence).\n- `src/point_add/mod.rs`: `cond_pass::run_with(ops, \"mfs\")` becomes `cond_pass::run_with(ops, \"mfsur\")` (one occurrence).\n- `src/point_add/mod.rs`: `mod cond_pass;` becomes `mod cond_pass;\\nmod frontier_rewrite;` (one occurrence).\n- `src/point_add/mod.rs`: `    ops.extend(tail);` becomes `    ops = frontier_rewrite::apply(ops);\\n    ops.extend(tail);` (one occurrence).\n- `src/point_add/frontier_rewrite/mod.rs`: taken byte for byte from `our submission 11613a51-1243-4f91-801a-9e71600d1f99 (commit ae2a603a), the same path` (sha256 `6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53`).\n- `src/point_add/frontier_rewrite/catalog.rs`: taken byte for byte from `our submission 11613a51-1243-4f91-801a-9e71600d1f99 (commit ae2a603a), the same path` (sha256 `e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052`).\n\nNo other file changes. The inherited nonce is unchanged. No nonce or padding search produced this circuit.\n\n",
+        "## Measured results": "## Measured results\n\n| Measurement | Value |\n|:--|:--|\n| Trusted evaluator on the emitted bytes (built from the unchanged public harness source, 9,024 shots) | all shots OK; Q819, T 9,718,964, score 7,959,831,516 |\n| Operation SHA-256 | `818868c1fea2b67b40035d79c512f4b25ae436cf8be99fcfdef0fe81838fcd13` |\n| Independent audit | 20,480 input pairs x 2 streams, fresh pre-registered label |\n| Audit failed inputs | 0 of 20,480 |\n| Audit failed shots | 0 of 40,960 |\n| Audit upper bound (one-sided, alpha 0.05/32) | 0.000315 per input; limit 0.001 |\n| Failing shots per 9,024 (audit estimate) | none observed in 40,960 shots; the bound above limits the rate |\n\nThe audit and the public check use different inputs. The audit supports the stated failure bound.\nThe public check shows that these exact bytes pass the fixed 9,024-shot packet.\n\n",
+        "## Prior work and credit": "## Prior work and credit\n\n- Parent circuit: `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree`. All arithmetic, layout and passes are theirs.\n- `59359890-410f-49b1-b4dc-c5e54ed528f0` by `odinfree` (Q817, T 9,760,184).\n- `6d08713c-4a11-4384-9fe4-53fb9f5aca02` by `odinfree` (Q818, T 9,748,991).\n- `d419f804-80ed-4ddd-914c-c1e1d149a706` by `SnehalRaj` (Q818, T 9,750,086).\n- `cac0bf90-b459-477c-bc49-98a01c33c4b6` by `odinfree` (Q819, T 9,739,151).\n- The conditional-AND pass and its levers `u` and `r` are jackylee0424's work, as credited in the note of `59359890`; odinfree first used lever `r` in this lineage.\n- The exact catalog and its certificate are ours (first used in our Q1097 submission `11613a51`); the catalog came from our local exact-rule study.\n- Coordination of this submission by a Claude Fable 5.1 session in Claude Code; the catalog integration, builds and development checks by Claude Opus 5.5 agents in Claude Code.\n- This submission adds only the edits listed above, the measurements, and the audit.\n\n"
+      },
+      "reported_audit": {
+        "failed_inputs": 0,
+        "pairs": 20480,
+        "streams": 2,
+        "alpha": 0.0015625,
+        "scope": "Public-note report; no independent receipt recount in this paper revision."
+      }
+    },
+    {
+      "id": "2029e9d0-0f6d-4098-99b0-7f02fa9a3d42",
+      "source": "f5492bd248cc30766d22287054cbe69def6a4516",
+      "Q": 824,
+      "T": 9669096,
+      "note_sha256": "38da3ffce79ede68e6a9e2614fab05cc26a41d6b5b2addb0c0186476903c6f5c",
+      "note_url": "https://ecdsa.fail/api/submissions/2029e9d0-0f6d-4098-99b0-7f02fa9a3d42",
+      "edited_lines": [
+        "- `src/point_add/froghop_one.rs`: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 24;` (one occurrence)."
+      ],
+      "sections": {
+        "## What changed": "## What changed\n\nThe parent is public submission `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj`: Q818, T 9,728,780.\nIts source commit is `4073f09cfa7fe733fdeb64841193282aaff293d9`.\nThis submission changes one setting of the parent: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 24;` in `src/point_add/froghop_one.rs` (the pool width dial; it moves the peak to Q824). The value is the one `odinfree` used in public submission `38c3a08f-220f-4270-bd25-2c1a3420ba35` (Q824, T 9,689,279) on the same lineage. The parent already applies our exact local gate catalog as its last pass; it is unchanged. The catalog changes no value and no phase, so this child keeps the failure behaviour of the parent tree at the new setting.\n\nThe exact edits are:\n\n- `src/point_add/froghop_one.rs`: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 24;` (one occurrence).\n\nNo other file changes. The inherited nonce is unchanged. No nonce or padding search produced this circuit.\n\n",
+        "## Measured results": "## Measured results\n\n| Measurement | Value |\n|:--|:--|\n| Trusted evaluator on the emitted bytes (built from the unchanged public harness source, 9,024 shots) | all shots OK; Q824, T 9,669,096, score 7,967,335,104 |\n| Emitter static expected Toffoli (POSTPASS line) | 9,689,250 |\n| Operation SHA-256 | `558f15baa7133ff5ebe199daad9255cd9e97ec3751be6dcef0143e4734f32d14` |\n| Independent audit | 20,480 input pairs x 2 streams, fresh pre-registered label |\n| Audit failed inputs | 0 of 20,480 |\n| Audit failed shots | 0 of 40,960 |\n| Audit upper bound (one-sided, alpha 0.05/32) | 0.000315 per input; limit 0.001 |\n| Failing shots per 9,024 (audit estimate) | none observed in 40,960 shots; the bound above limits the rate |\n| Audit mean executed Toffoli (audit inputs) | 9,669,037.5 |\n\nThe audit and the public check use different inputs. The audit supports the stated failure bound.\nThe public check shows that these exact bytes pass the fixed 9,024-shot packet.\n\n",
+        "## Prior work and credit": "## Prior work and credit\n\n- Parent circuit: `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj` (our integrated tree). The arithmetic, layout and passes belong to the authors below.\n- `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree` (Q818, T 9,754,259).\n- `59359890-410f-49b1-b4dc-c5e54ed528f0` by `odinfree` (Q817, T 9,760,184).\n- `6d08713c-4a11-4384-9fe4-53fb9f5aca02` by `odinfree` (Q818, T 9,748,991).\n- `d419f804-80ed-4ddd-914c-c1e1d149a706` by `SnehalRaj` (Q818, T 9,750,086).\n- `11613a51-1243-4f91-801a-9e71600d1f99` by `SnehalRaj` (Q1097, T 1,814,134).\n- `38c3a08f-220f-4270-bd25-2c1a3420ba35` by `odinfree` (Q824, T 9,689,279).\n- The conditional-AND pass and its levers `u` and `r` are jackylee0424's work, as credited in the note of `59359890`.\n- The dial settings come from the public rows named above; we reuse them on our tree.\n- The exact catalog and its certificate are ours (first used in our Q1097 submission `11613a51`).\n- Coordination by a Claude Fable 5.1 session in Claude Code; the cluster pipeline (builds, screen, audit) by a Claude Opus 5.5 session in Claude Code.\n- This submission adds only the edits listed above, the measurements, and the audit.\n\n"
+      },
+      "reported_audit": {
+        "failed_inputs": 0,
+        "pairs": 20480,
+        "streams": 2,
+        "alpha": 0.0015625,
+        "scope": "Public-note report; no independent receipt recount in this paper revision."
+      }
+    },
+    {
+      "id": "f315e257-dbd7-40e1-84d8-5388649557ca",
+      "source": "28117cb87c6102de0ae5f67004b8b381670bffe8",
+      "Q": 826,
+      "T": 9648907,
+      "note_sha256": "7df7f5b28c3e873ba144c515d9696b6cc4d9a94045e82dc4b6da672bc70615ad",
+      "note_url": "https://ecdsa.fail/api/submissions/f315e257-dbd7-40e1-84d8-5388649557ca",
+      "edited_lines": [
+        "- `src/point_add/froghop_one.rs`: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 26;` (one occurrence)."
+      ],
+      "sections": {
+        "## What changed": "## What changed\n\nThe parent is public submission `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj`: Q818, T 9,728,780.\nIts source commit is `4073f09cfa7fe733fdeb64841193282aaff293d9`.\nThis submission changes one setting of the parent: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 26;` in `src/point_add/froghop_one.rs` (the pool width dial; it moves the peak to Q826). The value is the one `odinfree` used in public submission `8486e4c7-927d-40f7-8486-65cf557ed389` (Q826, T 9,669,147) on the same lineage. The parent already applies our exact local gate catalog as its last pass; it is unchanged. The catalog changes no value and no phase, so this child keeps the failure behaviour of the parent tree at the new setting.\n\nThe exact edits are:\n\n- `src/point_add/froghop_one.rs`: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 26;` (one occurrence).\n\nNo other file changes. The inherited nonce is unchanged. No nonce or padding search produced this circuit.\n\n",
+        "## Measured results": "## Measured results\n\n| Measurement | Value |\n|:--|:--|\n| Trusted evaluator on the emitted bytes (built from the unchanged public harness source, 9,024 shots) | all shots OK; Q826, T 9,648,907, score 7,969,997,182 |\n| Emitter static expected Toffoli (POSTPASS line) | 9,669,115 |\n| Operation SHA-256 | `a9d2c1309cff8658cb65ee6628e4f5254ab80896bf53fe9a9f4b2407e121ceb6` |\n| Independent audit | 20,480 input pairs x 2 streams, fresh pre-registered label |\n| Audit failed inputs | 0 of 20,480 |\n| Audit failed shots | 0 of 40,960 |\n| Audit upper bound (one-sided, alpha 0.05/32) | 0.000315 per input; limit 0.001 |\n| Failing shots per 9,024 (audit estimate) | none observed in 40,960 shots; the bound above limits the rate |\n| Audit mean executed Toffoli (audit inputs) | 9,648,891.2 |\n\nThe audit and the public check use different inputs. The audit supports the stated failure bound.\nThe public check shows that these exact bytes pass the fixed 9,024-shot packet.\n\n",
+        "## Prior work and credit": "## Prior work and credit\n\n- Parent circuit: `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj` (our integrated tree). The arithmetic, layout and passes belong to the authors below.\n- `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree` (Q818, T 9,754,259).\n- `59359890-410f-49b1-b4dc-c5e54ed528f0` by `odinfree` (Q817, T 9,760,184).\n- `6d08713c-4a11-4384-9fe4-53fb9f5aca02` by `odinfree` (Q818, T 9,748,991).\n- `d419f804-80ed-4ddd-914c-c1e1d149a706` by `SnehalRaj` (Q818, T 9,750,086).\n- `11613a51-1243-4f91-801a-9e71600d1f99` by `SnehalRaj` (Q1097, T 1,814,134).\n- `8486e4c7-927d-40f7-8486-65cf557ed389` by `odinfree` (Q826, T 9,669,147).\n- The conditional-AND pass and its levers `u` and `r` are jackylee0424's work, as credited in the note of `59359890`.\n- The dial settings come from the public rows named above; we reuse them on our tree.\n- The exact catalog and its certificate are ours (first used in our Q1097 submission `11613a51`).\n- Coordination by a Claude Fable 5.1 session in Claude Code; the cluster pipeline (builds, screen, audit) by a Claude Opus 5.5 session in Claude Code.\n- This submission adds only the edits listed above, the measurements, and the audit.\n\n"
+      },
+      "reported_audit": {
+        "failed_inputs": 0,
+        "pairs": 20480,
+        "streams": 2,
+        "alpha": 0.0015625,
+        "scope": "Public-note report; no independent receipt recount in this paper revision."
+      }
+    },
+    {
+      "id": "55d1dfdd-b468-4844-8b6f-c7216da17012",
+      "source": "21e0f9053b946957797fdc23117c4e75bea9b614",
+      "Q": 827,
+      "T": 9638943,
+      "note_sha256": "917f832767d9d96bb84f912516fdd99ecfd4ea447a47c9237e19c5df39edbbab",
+      "note_url": "https://ecdsa.fail/api/submissions/55d1dfdd-b468-4844-8b6f-c7216da17012",
+      "edited_lines": [
+        "- `src/point_add/froghop_one.rs`: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 27;` (one occurrence)."
+      ],
+      "sections": {
+        "## What changed": "## What changed\n\nThe parent is public submission `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj`: Q818, T 9,728,780.\nIts source commit is `4073f09cfa7fe733fdeb64841193282aaff293d9`.\nThis submission changes one setting of the parent: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 27;` in `src/point_add/froghop_one.rs` (the pool width dial; it moves the peak to Q827). The value is the one `odinfree` used in public submission `c32f8901-b444-4f29-88a9-3d0e085faf4f` (Q827, T 9,659,099) on the same lineage. The parent already applies our exact local gate catalog as its last pass; it is unchanged. The catalog changes no value and no phase, so this child keeps the failure behaviour of the parent tree at the new setting.\n\nThe exact edits are:\n\n- `src/point_add/froghop_one.rs`: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 27;` (one occurrence).\n\nNo other file changes. The inherited nonce is unchanged. No nonce or padding search produced this circuit.\n\n",
+        "## Measured results": "## Measured results\n\n| Measurement | Value |\n|:--|:--|\n| Trusted evaluator on the emitted bytes (built from the unchanged public harness source, 9,024 shots) | all shots OK; Q827, T 9,638,943, score 7,971,405,861 |\n| Emitter static expected Toffoli (POSTPASS line) | 9,659,102 |\n| Operation SHA-256 | `6267ac5da0addd99e6e51ff83007ca710c9fed9f0c5eaa57830d9b5630fd92c6` |\n| Independent audit | 20,480 input pairs x 2 streams, fresh pre-registered label |\n| Audit failed inputs | 0 of 20,480 |\n| Audit failed shots | 0 of 40,960 |\n| Audit upper bound (one-sided, alpha 0.05/32) | 0.000315 per input; limit 0.001 |\n| Failing shots per 9,024 (audit estimate) | none observed in 40,960 shots; the bound above limits the rate |\n| Audit mean executed Toffoli (audit inputs) | 9,638,921.8 |\n\nThe audit and the public check use different inputs. The audit supports the stated failure bound.\nThe public check shows that these exact bytes pass the fixed 9,024-shot packet.\n\n",
+        "## Prior work and credit": "## Prior work and credit\n\n- Parent circuit: `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj` (our integrated tree). The arithmetic, layout and passes belong to the authors below.\n- `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree` (Q818, T 9,754,259).\n- `59359890-410f-49b1-b4dc-c5e54ed528f0` by `odinfree` (Q817, T 9,760,184).\n- `6d08713c-4a11-4384-9fe4-53fb9f5aca02` by `odinfree` (Q818, T 9,748,991).\n- `d419f804-80ed-4ddd-914c-c1e1d149a706` by `SnehalRaj` (Q818, T 9,750,086).\n- `11613a51-1243-4f91-801a-9e71600d1f99` by `SnehalRaj` (Q1097, T 1,814,134).\n- `c32f8901-b444-4f29-88a9-3d0e085faf4f` by `odinfree` (Q827, T 9,659,099).\n- The conditional-AND pass and its levers `u` and `r` are jackylee0424's work, as credited in the note of `59359890`.\n- The dial settings come from the public rows named above; we reuse them on our tree.\n- The exact catalog and its certificate are ours (first used in our Q1097 submission `11613a51`).\n- Coordination by a Claude Fable 5.1 session in Claude Code; the cluster pipeline (builds, screen, audit) by a Claude Opus 5.5 session in Claude Code.\n- This submission adds only the edits listed above, the measurements, and the audit.\n\n"
+      },
+      "reported_audit": {
+        "failed_inputs": 0,
+        "pairs": 20480,
+        "streams": 2,
+        "alpha": 0.0015625,
+        "scope": "Public-note report; no independent receipt recount in this paper revision."
+      }
+    },
+    {
+      "id": "1ea65d0c-383f-4060-a141-4f37b5fc34b0",
+      "source": "274d7e8e685c336fe39d4472d9d10c814b937232",
+      "Q": 828,
+      "T": 9585854,
+      "note_sha256": "5ee80b3cae32525ef70e010da507c8d3b009a400b0a3a553adda4092c2daebc6",
+      "note_url": "https://ecdsa.fail/api/submissions/1ea65d0c-383f-4060-a141-4f37b5fc34b0",
+      "edited_lines": [
+        "- `src/point_add/mod.rs`: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 10;` (one occurrence).",
+        "- `src/point_add/froghop_one.rs`: `let gp = self.gp.clone();` becomes `let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them` (one occurrence)."
+      ],
+      "sections": {
+        "## What changed": "## What changed\n\nThe parent is public submission `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj`: Q818, T 9,728,780.\nIts source commit is `4073f09cfa7fe733fdeb64841193282aaff293d9`.\nThis submission changes one setting of the parent: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 10;` in `src/point_add/mod.rs` (the carry-lane dial; it moves the peak to Q828). The value is the one `gopikannappan` used in public submission `e2194147-ebea-4e1c-b185-244173a5e6b5` (Q828, T 9,606,009) on the same lineage. Carry lanes need one guard line in `froghop_one.rs` so the S5 stage keeps ordinary MAJ lanes, which its rolling prefix and inverse repair need; this follows gopikannappan's carry-lane rows. The parent already applies our exact local gate catalog as its last pass; it is unchanged. The catalog changes no value and no phase, so this child keeps the failure behaviour of the parent tree at the new setting.\n\nThe exact edits are:\n\n- `src/point_add/mod.rs`: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 10;` (one occurrence).\n- `src/point_add/froghop_one.rs`: `let gp = self.gp.clone();` becomes `let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them` (one occurrence).\n\nNo other file changes. The inherited nonce is unchanged. No nonce or padding search produced this circuit.\n\n",
+        "## Measured results": "## Measured results\n\n| Measurement | Value |\n|:--|:--|\n| Trusted evaluator on the emitted bytes (built from the unchanged public harness source, 9,024 shots) | all shots OK; Q828, T 9,585,854, score 7,937,087,112 |\n| Emitter static expected Toffoli (POSTPASS line) | 9,606,070 |\n| Operation SHA-256 | `ebd532dd13f21b594b10214412582d418a48ccb5ac540890038d03390f107891` |\n| Independent audit | 20,480 input pairs x 2 streams, fresh pre-registered label |\n| Audit failed inputs | 0 of 20,480 |\n| Audit failed shots | 0 of 40,960 |\n| Audit upper bound (one-sided, alpha 0.05/32) | 0.000315 per input; limit 0.001 |\n| Failing shots per 9,024 (audit estimate) | none observed in 40,960 shots; the bound above limits the rate |\n| Audit mean executed Toffoli (audit inputs) | 9,585,872.2 |\n\nThe audit and the public check use different inputs. The audit supports the stated failure bound.\nThe public check shows that these exact bytes pass the fixed 9,024-shot packet.\n\n",
+        "## Prior work and credit": "## Prior work and credit\n\n- Parent circuit: `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj` (our integrated tree). The arithmetic, layout and passes belong to the authors below.\n- `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree` (Q818, T 9,754,259).\n- `59359890-410f-49b1-b4dc-c5e54ed528f0` by `odinfree` (Q817, T 9,760,184).\n- `6d08713c-4a11-4384-9fe4-53fb9f5aca02` by `odinfree` (Q818, T 9,748,991).\n- `d419f804-80ed-4ddd-914c-c1e1d149a706` by `SnehalRaj` (Q818, T 9,750,086).\n- `11613a51-1243-4f91-801a-9e71600d1f99` by `SnehalRaj` (Q1097, T 1,814,134).\n- `e2194147-ebea-4e1c-b185-244173a5e6b5` by `gopikannappan` (Q828, T 9,606,009).\n- The conditional-AND pass and its levers `u` and `r` are jackylee0424's work, as credited in the note of `59359890`.\n- The dial settings come from the public rows named above; we reuse them on our tree.\n- The exact catalog and its certificate are ours (first used in our Q1097 submission `11613a51`).\n- Coordination by a Claude Fable 5.1 session in Claude Code; the cluster pipeline (builds, screen, audit) by a Claude Opus 5.5 session in Claude Code.\n- This submission adds only the edits listed above, the measurements, and the audit.\n\n"
+      },
+      "reported_audit": {
+        "failed_inputs": 0,
+        "pairs": 20480,
+        "streams": 2,
+        "alpha": 0.0015625,
+        "scope": "Public-note report; no independent receipt recount in this paper revision."
+      }
+    },
+    {
+      "id": "3b8bd6e0-34c3-41c2-bea0-34b2532c63d4",
+      "source": "0e9e9d5fcd393d8c4d9cbf6ac2c628f2d4726196",
+      "Q": 830,
+      "T": 9557499,
+      "note_sha256": "880ac25d54dacf88f9d1b0b7a1adb3ce254c53c69ec524917ab068b7d2dea078",
+      "note_url": "https://ecdsa.fail/api/submissions/3b8bd6e0-34c3-41c2-bea0-34b2532c63d4",
+      "edited_lines": [
+        "- `src/point_add/mod.rs`: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 12;` (one occurrence).",
+        "- `src/point_add/froghop_one.rs`: `let gp = self.gp.clone();` becomes `let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them` (one occurrence)."
+      ],
+      "sections": {
+        "## What changed": "## What changed\n\nThe parent is public submission `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj`: Q818, T 9,728,780.\nIts source commit is `4073f09cfa7fe733fdeb64841193282aaff293d9`.\nThis submission changes one setting of the parent: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 12;` in `src/point_add/mod.rs` (the carry-lane dial; it moves the peak to Q830). No public row sits at Q830. The carry-lane dial and its guard line follow `gopikannappan`'s public submission `e2194147-ebea-4e1c-b185-244173a5e6b5` (Q828, T 9,606,009); this value continues the same dial to fill the empty Q. Carry lanes need one guard line in `froghop_one.rs` so the S5 stage keeps ordinary MAJ lanes, which its rolling prefix and inverse repair need; this follows gopikannappan's carry-lane rows. The parent already applies our exact local gate catalog as its last pass; it is unchanged. The catalog changes no value and no phase, so this child keeps the failure behaviour of the parent tree at the new setting.\n\nThe exact edits are:\n\n- `src/point_add/mod.rs`: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 12;` (one occurrence).\n- `src/point_add/froghop_one.rs`: `let gp = self.gp.clone();` becomes `let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them` (one occurrence).\n\nNo other file changes. The inherited nonce is unchanged. No nonce or padding search produced this circuit.\n\n",
+        "## Measured results": "## Measured results\n\n| Measurement | Value |\n|:--|:--|\n| Trusted evaluator on the emitted bytes (built from the unchanged public harness source, 9,024 shots) | all shots OK; Q830, T 9,557,499, score 7,932,724,170 |\n| Emitter static expected Toffoli (POSTPASS line) | 9,577,718 |\n| Operation SHA-256 | `7bd04a5ecc83abaab1008d7137d82efddd5e642dbc0618b8e9af148a169355de` |\n| Independent audit | 20,480 input pairs x 2 streams, fresh pre-registered label (family `pareto5-cluster-20261026`, slot 10 of 32) |\n| Audit failed inputs | 0 of 20,480 |\n| Audit failed shots | 0 of 40,960 |\n| Audit upper bound (one-sided, alpha 0.05/32) | 0.000315 per input; limit 0.001 |\n| Failing shots per 9,024 (audit estimate) | none observed in 40,960 shots; the bound above limits the rate |\n| Audit mean executed Toffoli (audit inputs) | 9,557,502.0 |\n\nThe audit and the public check use different inputs. The audit supports the stated failure bound.\nThe public check shows that these exact bytes pass the fixed 9,024-shot packet.\n\n",
+        "## Prior work and credit": "## Prior work and credit\n\n- Parent circuit: `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj` (our integrated tree). The arithmetic, layout and passes belong to the authors below.\n- `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree` (Q818, T 9,754,259).\n- `59359890-410f-49b1-b4dc-c5e54ed528f0` by `odinfree` (Q817, T 9,760,184).\n- `6d08713c-4a11-4384-9fe4-53fb9f5aca02` by `odinfree` (Q818, T 9,748,991).\n- `d419f804-80ed-4ddd-914c-c1e1d149a706` by `SnehalRaj` (Q818, T 9,750,086).\n- `11613a51-1243-4f91-801a-9e71600d1f99` by `SnehalRaj` (Q1097, T 1,814,134).\n- `e2194147-ebea-4e1c-b185-244173a5e6b5` by `gopikannappan` (Q828, T 9,606,009).\n- The conditional-AND pass and its levers `u` and `r` are jackylee0424's work, as credited in the note of `59359890`.\n- The dial settings come from the public rows named above; we reuse them on our tree.\n- The exact catalog and its certificate are ours (first used in our Q1097 submission `11613a51`).\n- Coordination by a Claude Fable 5.1 session in Claude Code; the cluster pipeline (builds, screen, audit) by a Claude Opus 5.5 session in Claude Code.\n- This submission adds only the edits listed above, the measurements, and the audit.\n\n"
+      },
+      "reported_audit": {
+        "failed_inputs": 0,
+        "pairs": 20480,
+        "streams": 2,
+        "alpha": 0.0015625,
+        "scope": "Public-note report; no independent receipt recount in this paper revision."
+      }
+    },
+    {
+      "id": "d2bb782a-de53-476d-adc8-b907f33030d8",
+      "source": "a5fc8e54488b807b0a6173ee3481d0a26b98e8ef",
+      "Q": 837,
+      "T": 9466477,
+      "note_sha256": "3684b6d989725c23f4259c05e12604d0d5f978f5ae7452a4403014011992b261",
+      "note_url": "https://ecdsa.fail/api/submissions/d2bb782a-de53-476d-adc8-b907f33030d8",
+      "edited_lines": [
+        "- `src/point_add/mod.rs`: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 19;` (one occurrence).",
+        "- `src/point_add/froghop_one.rs`: `let gp = self.gp.clone();` becomes `let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them` (one occurrence)."
+      ],
+      "sections": {
+        "## What changed": "## What changed\n\nThe parent is public submission `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj`: Q818, T 9,728,780.\nIts source commit is `4073f09cfa7fe733fdeb64841193282aaff293d9`.\nThis submission changes one setting of the parent: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 19;` in `src/point_add/mod.rs` (the carry-lane dial; it moves the peak to Q837). The value is the one `gopikannappan` used in public submission `c5e0f3a5-f909-44da-9e16-929be49319cb` (Q837, T 9,486,687) on the same lineage. Carry lanes need one guard line in `froghop_one.rs` so the S5 stage keeps ordinary MAJ lanes, which its rolling prefix and inverse repair need; this follows gopikannappan's carry-lane rows. The parent already applies our exact local gate catalog as its last pass; it is unchanged. The catalog changes no value and no phase, so this child keeps the failure behaviour of the parent tree at the new setting.\n\nThe exact edits are:\n\n- `src/point_add/mod.rs`: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 19;` (one occurrence).\n- `src/point_add/froghop_one.rs`: `let gp = self.gp.clone();` becomes `let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them` (one occurrence).\n\nNo other file changes. The inherited nonce is unchanged. No nonce or padding search produced this circuit.\n\n",
+        "## Measured results": "## Measured results\n\n| Measurement | Value |\n|:--|:--|\n| Trusted evaluator on the emitted bytes (built from the unchanged public harness source, 9,024 shots) | all shots OK; Q837, T 9,466,477, score 7,923,441,249 |\n| Emitter static expected Toffoli (POSTPASS line) | 9,486,710 |\n| Operation SHA-256 | `3e4b28fa5ce7f418cc9b2661e4a3ee193e3050dac5ae0d3de1d975c8655f0024` |\n| Independent audit | 20,480 input pairs x 2 streams, fresh pre-registered label (family `pareto5-cluster-20261026`, slot 4 of 32) |\n| Audit failed inputs | 0 of 20,480 |\n| Audit failed shots | 0 of 40,960 |\n| Audit upper bound (one-sided, alpha 0.05/32) | 0.000315 per input; limit 0.001 |\n| Failing shots per 9,024 (audit estimate) | none observed in 40,960 shots; the bound above limits the rate |\n| Audit mean executed Toffoli (audit inputs) | 9,466,515.8 |\n\nThe audit and the public check use different inputs. The audit supports the stated failure bound.\nThe public check shows that these exact bytes pass the fixed 9,024-shot packet.\n\n",
+        "## Prior work and credit": "## Prior work and credit\n\n- Parent circuit: `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj` (our integrated tree). The arithmetic, layout and passes belong to the authors below.\n- `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree` (Q818, T 9,754,259).\n- `59359890-410f-49b1-b4dc-c5e54ed528f0` by `odinfree` (Q817, T 9,760,184).\n- `6d08713c-4a11-4384-9fe4-53fb9f5aca02` by `odinfree` (Q818, T 9,748,991).\n- `d419f804-80ed-4ddd-914c-c1e1d149a706` by `SnehalRaj` (Q818, T 9,750,086).\n- `11613a51-1243-4f91-801a-9e71600d1f99` by `SnehalRaj` (Q1097, T 1,814,134).\n- `c5e0f3a5-f909-44da-9e16-929be49319cb` by `gopikannappan` (Q837, T 9,486,687).\n- The conditional-AND pass and its levers `u` and `r` are jackylee0424's work, as credited in the note of `59359890`.\n- The dial settings come from the public rows named above; we reuse them on our tree.\n- The exact catalog and its certificate are ours (first used in our Q1097 submission `11613a51`).\n- Coordination by a Claude Fable 5.1 session in Claude Code; the cluster pipeline (builds, screen, audit) by a Claude Opus 5.5 session in Claude Code.\n- This submission adds only the edits listed above, the measurements, and the audit.\n\n"
+      },
+      "reported_audit": {
+        "failed_inputs": 0,
+        "pairs": 20480,
+        "streams": 2,
+        "alpha": 0.0015625,
+        "scope": "Public-note report; no independent receipt recount in this paper revision."
+      }
+    },
+    {
+      "id": "950a1a1d-7e21-405e-ad63-a9c5e188c421",
+      "source": "08726a24a162c7ae77f94045f650c60f63a5ca25",
+      "Q": 821,
+      "T": 9699299,
+      "note_sha256": "efdee0da0377ace3a1036dc62703be7cc534879db6ddb3b45b1ceacb4bd23c26",
+      "note_url": "https://ecdsa.fail/api/submissions/950a1a1d-7e21-405e-ad63-a9c5e188c421",
+      "edited_lines": [
+        "- `src/point_add/froghop_one.rs`: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 21;` (one occurrence)."
+      ],
+      "sections": {
+        "## What changed": "## What changed\n\nThe parent is public submission `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj`: Q818, T 9,728,780.\nIts source commit is `4073f09cfa7fe733fdeb64841193282aaff293d9`.\nThis submission changes one setting of the parent: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 21;` in `src/point_add/froghop_one.rs` (the pool width dial; it moves the peak to Q821). The value is the one `odinfree` used in public submission `1c0943d8-6610-43ec-aafa-e2a393988cdc` (Q821, T 9,719,483) on the same lineage. The parent already applies our exact local gate catalog as its last pass; it is unchanged. The catalog changes no value and no phase, so this child keeps the failure behaviour of the parent tree at the new setting.\n\nThe exact edits are:\n\n- `src/point_add/froghop_one.rs`: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 21;` (one occurrence).\n\nNo other file changes. The inherited nonce is unchanged. No nonce or padding search produced this circuit.\n\n",
+        "## Measured results": "## Measured results\n\n| Measurement | Value |\n|:--|:--|\n| Trusted evaluator on the emitted bytes (built from the unchanged public harness source, 9,024 shots) | all shots OK; Q821, T 9,699,299, score 7,963,124,479 |\n| Emitter static expected Toffoli (POSTPASS line) | 9,719,500 |\n| Operation SHA-256 | `38df44df9822bdb03cad2e3ab81a31c3d1332a1e5bcfea90dbb41ab4b18c5d0a` |\n| Independent audit | 20,480 input pairs x 2 streams, fresh pre-registered label (family `pareto5-cluster-20261026`, slot 5 of 32) |\n| Audit failed inputs | 0 of 20,480 |\n| Audit failed shots | 0 of 40,960 |\n| Audit upper bound (one-sided, alpha 0.05/32) | 0.000315 per input; limit 0.001 |\n| Failing shots per 9,024 (audit estimate) | none observed in 40,960 shots; the bound above limits the rate |\n| Audit mean executed Toffoli (audit inputs) | 9,699,279.6 |\n\nThe audit and the public check use different inputs. The audit supports the stated failure bound.\nThe public check shows that these exact bytes pass the fixed 9,024-shot packet.\n\n",
+        "## Prior work and credit": "## Prior work and credit\n\n- Parent circuit: `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj` (our integrated tree). The arithmetic, layout and passes belong to the authors below.\n- `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree` (Q818, T 9,754,259).\n- `59359890-410f-49b1-b4dc-c5e54ed528f0` by `odinfree` (Q817, T 9,760,184).\n- `6d08713c-4a11-4384-9fe4-53fb9f5aca02` by `odinfree` (Q818, T 9,748,991).\n- `d419f804-80ed-4ddd-914c-c1e1d149a706` by `SnehalRaj` (Q818, T 9,750,086).\n- `11613a51-1243-4f91-801a-9e71600d1f99` by `SnehalRaj` (Q1097, T 1,814,134).\n- `1c0943d8-6610-43ec-aafa-e2a393988cdc` by `odinfree` (Q821, T 9,719,483).\n- The conditional-AND pass and its levers `u` and `r` are jackylee0424's work, as credited in the note of `59359890`.\n- The dial settings come from the public rows named above; we reuse them on our tree.\n- The exact catalog and its certificate are ours (first used in our Q1097 submission `11613a51`).\n- Coordination by a Claude Fable 5.1 session in Claude Code; the cluster pipeline (builds, screen, audit) by a Claude Opus 5.5 session in Claude Code.\n- This submission adds only the edits listed above, the measurements, and the audit.\n\n"
+      },
+      "reported_audit": {
+        "failed_inputs": 0,
+        "pairs": 20480,
+        "streams": 2,
+        "alpha": 0.0015625,
+        "scope": "Public-note report; no independent receipt recount in this paper revision."
+      }
+    },
+    {
+      "id": "cec136ff-3c99-470d-a6a4-64b14d6cc65b",
+      "source": "e9599069c7df97e87f33fe62ee873ba9fc8fda74",
+      "Q": 822,
+      "T": 9688806,
+      "note_sha256": "3b69d1c8a36c2ac911906ca3ed83ba180814d153ef48534d965b182b94429e3e",
+      "note_url": "https://ecdsa.fail/api/submissions/cec136ff-3c99-470d-a6a4-64b14d6cc65b",
+      "edited_lines": [
+        "- `src/point_add/froghop_one.rs`: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 22;` (one occurrence)."
+      ],
+      "sections": {
+        "## What changed": "## What changed\n\nThe parent is public submission `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj`: Q818, T 9,728,780.\nIts source commit is `4073f09cfa7fe733fdeb64841193282aaff293d9`.\nThis submission changes one setting of the parent: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 22;` in `src/point_add/froghop_one.rs` (the pool width dial; it moves the peak to Q822). The value is the one `odinfree` used in public submission `aa3a77d2-b79a-4e0b-9358-36a646485ebf` (Q822, T 9,709,016) on the same lineage. The parent already applies our exact local gate catalog as its last pass; it is unchanged. The catalog changes no value and no phase, so this child keeps the failure behaviour of the parent tree at the new setting.\n\nThe exact edits are:\n\n- `src/point_add/froghop_one.rs`: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 22;` (one occurrence).\n\nNo other file changes. The inherited nonce is unchanged. No nonce or padding search produced this circuit.\n\n",
+        "## Measured results": "## Measured results\n\n| Measurement | Value |\n|:--|:--|\n| Trusted evaluator on the emitted bytes (built from the unchanged public harness source, 9,024 shots) | all shots OK; Q822, T 9,688,806, score 7,964,198,532 |\n| Emitter static expected Toffoli (POSTPASS line) | 9,709,014 |\n| Operation SHA-256 | `163405ad12e8470e6c7b9def17d1f5638792bbf0dc5f489d31836aad2bb5a6b5` |\n| Independent audit | 20,480 input pairs x 2 streams, fresh pre-registered label (family `pareto5-cluster-20261026`, slot 3 of 32) |\n| Audit failed inputs | 0 of 20,480 |\n| Audit failed shots | 0 of 40,960 |\n| Audit upper bound (one-sided, alpha 0.05/32) | 0.000315 per input; limit 0.001 |\n| Failing shots per 9,024 (audit estimate) | none observed in 40,960 shots; the bound above limits the rate |\n| Audit mean executed Toffoli (audit inputs) | 9,688,785.3 |\n\nThe audit and the public check use different inputs. The audit supports the stated failure bound.\nThe public check shows that these exact bytes pass the fixed 9,024-shot packet.\n\n",
+        "## Prior work and credit": "## Prior work and credit\n\n- Parent circuit: `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj` (our integrated tree). The arithmetic, layout and passes belong to the authors below.\n- `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree` (Q818, T 9,754,259).\n- `59359890-410f-49b1-b4dc-c5e54ed528f0` by `odinfree` (Q817, T 9,760,184).\n- `6d08713c-4a11-4384-9fe4-53fb9f5aca02` by `odinfree` (Q818, T 9,748,991).\n- `d419f804-80ed-4ddd-914c-c1e1d149a706` by `SnehalRaj` (Q818, T 9,750,086).\n- `11613a51-1243-4f91-801a-9e71600d1f99` by `SnehalRaj` (Q1097, T 1,814,134).\n- `aa3a77d2-b79a-4e0b-9358-36a646485ebf` by `odinfree` (Q822, T 9,709,016).\n- The conditional-AND pass and its levers `u` and `r` are jackylee0424's work, as credited in the note of `59359890`.\n- The dial settings come from the public rows named above; we reuse them on our tree.\n- The exact catalog and its certificate are ours (first used in our Q1097 submission `11613a51`).\n- Coordination by a Claude Fable 5.1 session in Claude Code; the cluster pipeline (builds, screen, audit) by a Claude Opus 5.5 session in Claude Code.\n- This submission adds only the edits listed above, the measurements, and the audit.\n\n"
+      },
+      "reported_audit": {
+        "failed_inputs": 0,
+        "pairs": 20480,
+        "streams": 2,
+        "alpha": 0.0015625,
+        "scope": "Public-note report; no independent receipt recount in this paper revision."
+      }
+    },
+    {
+      "id": "99d18f0e-11c9-4111-b8a4-e0c746d1c2cb",
+      "source": "7c7fb27b78bfe88cdadfe08c1ade1e91309a493a",
+      "Q": 831,
+      "T": 9543381,
+      "note_sha256": "eff6846bc7a99c72921ed854c956861ee6d7cb1027d263ab206b7b8241dd9a8f",
+      "note_url": "https://ecdsa.fail/api/submissions/99d18f0e-11c9-4111-b8a4-e0c746d1c2cb",
+      "edited_lines": [
+        "- `src/point_add/mod.rs`: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 13;` (one occurrence).",
+        "- `src/point_add/froghop_one.rs`: `let gp = self.gp.clone();` becomes `let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them` (one occurrence)."
+      ],
+      "sections": {
+        "## What changed": "## What changed\n\nThe parent is public submission `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj`: Q818, T 9,728,780.\nIts source commit is `4073f09cfa7fe733fdeb64841193282aaff293d9`.\nThis submission changes one setting of the parent: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 13;` in `src/point_add/mod.rs` (the carry-lane dial; it moves the peak to Q831). No public row sits at Q831. The carry-lane dial and its guard line follow `gopikannappan`'s public submission `e2194147-ebea-4e1c-b185-244173a5e6b5` (Q828, T 9,606,009); this value continues the same dial to fill the empty Q. Carry lanes need one guard line in `froghop_one.rs` so the S5 stage keeps ordinary MAJ lanes, which its rolling prefix and inverse repair need; this follows gopikannappan's carry-lane rows. The parent already applies our exact local gate catalog as its last pass; it is unchanged. The catalog changes no value and no phase, so this child keeps the failure behaviour of the parent tree at the new setting.\n\nThe exact edits are:\n\n- `src/point_add/mod.rs`: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 13;` (one occurrence).\n- `src/point_add/froghop_one.rs`: `let gp = self.gp.clone();` becomes `let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them` (one occurrence).\n\nNo other file changes. The inherited nonce is unchanged. No nonce or padding search produced this circuit.\n\n",
+        "## Measured results": "## Measured results\n\n| Measurement | Value |\n|:--|:--|\n| Trusted evaluator on the emitted bytes (built from the unchanged public harness source, 9,024 shots) | all shots OK; Q831, T 9,543,381, score 7,930,549,611 |\n| Emitter static expected Toffoli (POSTPASS line) | 9,563,604 |\n| Operation SHA-256 | `b7c1a166e7ead8c099cc4aa9ccdc0c666ef5c5e331dd3a762b09c88766f14875` |\n| Independent audit | 20,480 input pairs x 2 streams, fresh pre-registered label (family `pareto5-cluster-20261026`, slot 7 of 32) |\n| Audit failed inputs | 0 of 20,480 |\n| Audit failed shots | 0 of 40,960 |\n| Audit upper bound (one-sided, alpha 0.05/32) | 0.000315 per input; limit 0.001 |\n| Failing shots per 9,024 (audit estimate) | none observed in 40,960 shots; the bound above limits the rate |\n| Audit mean executed Toffoli (audit inputs) | 9,543,393.2 |\n\nThe audit and the public check use different inputs. The audit supports the stated failure bound.\nThe public check shows that these exact bytes pass the fixed 9,024-shot packet.\n\n",
+        "## Prior work and credit": "## Prior work and credit\n\n- Parent circuit: `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj` (our integrated tree). The arithmetic, layout and passes are theirs and their credited predecessors'.\n- `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree` (Q818, T 9,754,259).\n- `59359890-410f-49b1-b4dc-c5e54ed528f0` by `odinfree` (Q817, T 9,760,184).\n- `6d08713c-4a11-4384-9fe4-53fb9f5aca02` by `odinfree` (Q818, T 9,748,991).\n- `d419f804-80ed-4ddd-914c-c1e1d149a706` by `SnehalRaj` (Q818, T 9,750,086).\n- `11613a51-1243-4f91-801a-9e71600d1f99` by `SnehalRaj` (Q1097, T 1,814,134).\n- `e2194147-ebea-4e1c-b185-244173a5e6b5` by `gopikannappan` (Q828, T 9,606,009).\n- The conditional-AND pass and its levers `u` and `r` are jackylee0424's work, as credited in the note of `59359890`.\n- The dial settings come from the public rows named above; we reuse them on our tree.\n- The exact catalog and its certificate are ours (first used in our Q1097 submission `11613a51`).\n- Coordination by a Claude Fable 5.1 session in Claude Code; the cluster pipeline (builds, screen, audit) by a Claude Opus 5.5 session in Claude Code.\n- This submission adds only the edits listed above, the measurements, and the audit.\n\n"
+      },
+      "reported_audit": {
+        "failed_inputs": 0,
+        "pairs": 20480,
+        "streams": 2,
+        "alpha": 0.0015625,
+        "scope": "Public-note report; no independent receipt recount in this paper revision."
+      }
+    },
+    {
+      "id": "5f511fcb-295b-4b7e-af6e-d4af9028a651",
+      "source": "1ac9b9062b93912dd3bf2f9bfa445b66c988c872",
+      "Q": 832,
+      "T": 9526495,
+      "note_sha256": "85a9d1d5615e486e23e755fd228b9d6d11aba8d1db9527c63f36e3dc9316eac6",
+      "note_url": "https://ecdsa.fail/api/submissions/5f511fcb-295b-4b7e-af6e-d4af9028a651",
+      "edited_lines": [
+        "- `src/point_add/mod.rs`: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 14;` (one occurrence).",
+        "- `src/point_add/froghop_one.rs`: `let gp = self.gp.clone();` becomes `let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them` (one occurrence)."
+      ],
+      "sections": {
+        "## What changed": "## What changed\n\nThe parent is public submission `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj`: Q818, T 9,728,780.\nIts source commit is `4073f09cfa7fe733fdeb64841193282aaff293d9`.\nThis submission changes one setting of the parent: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 14;` in `src/point_add/mod.rs` (the carry-lane dial; it moves the peak to Q832). No public row sits at Q832. The carry-lane dial and its guard line follow `gopikannappan`'s public submission `e2194147-ebea-4e1c-b185-244173a5e6b5` (Q828, T 9,606,009); this value continues the same dial to fill the empty Q. Carry lanes need one guard line in `froghop_one.rs` so the S5 stage keeps ordinary MAJ lanes, which its rolling prefix and inverse repair need; this follows gopikannappan's carry-lane rows. The parent already applies our exact local gate catalog as its last pass; it is unchanged. The catalog changes no value and no phase, so this child keeps the failure behaviour of the parent tree at the new setting.\n\nThe exact edits are:\n\n- `src/point_add/mod.rs`: `pub const GPOOL: usize = 0;` becomes `pub const GPOOL: usize = 14;` (one occurrence).\n- `src/point_add/froghop_one.rs`: `let gp = self.gp.clone();` becomes `let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them` (one occurrence).\n\nNo other file changes. The inherited nonce is unchanged. No nonce or padding search produced this circuit.\n\n",
+        "## Measured results": "## Measured results\n\n| Measurement | Value |\n|:--|:--|\n| Trusted evaluator on the emitted bytes (built from the unchanged public harness source, 9,024 shots) | all shots OK; Q832, T 9,526,495, score 7,926,043,840 |\n| Emitter static expected Toffoli (POSTPASS line) | 9,546,693 |\n| Operation SHA-256 | `6fb816c99db5a088903bb4ca45632a51dacc0e40fc4d079e8b035aee2b94d61f` |\n| Independent audit | 20,480 input pairs x 2 streams, fresh pre-registered label (family `pareto5-cluster-20261026`, slot 2 of 32) |\n| Audit failed inputs | 0 of 20,480 |\n| Audit failed shots | 0 of 40,960 |\n| Audit upper bound (one-sided, alpha 0.05/32) | 0.000315 per input; limit 0.001 |\n| Failing shots per 9,024 (audit estimate) | none observed in 40,960 shots; the bound above limits the rate |\n| Audit mean executed Toffoli (audit inputs) | 9,526,490.1 |\n\nThe audit and the public check use different inputs. The audit supports the stated failure bound.\nThe public check shows that these exact bytes pass the fixed 9,024-shot packet.\n\n",
+        "## Prior work and credit": "## Prior work and credit\n\n- Parent circuit: `b9a40957-b59c-4d8a-90eb-d65831365ec5` by `SnehalRaj` (our integrated tree). The arithmetic, layout and passes belong to the authors below.\n- `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree` (Q818, T 9,754,259).\n- `59359890-410f-49b1-b4dc-c5e54ed528f0` by `odinfree` (Q817, T 9,760,184).\n- `6d08713c-4a11-4384-9fe4-53fb9f5aca02` by `odinfree` (Q818, T 9,748,991).\n- `d419f804-80ed-4ddd-914c-c1e1d149a706` by `SnehalRaj` (Q818, T 9,750,086).\n- `11613a51-1243-4f91-801a-9e71600d1f99` by `SnehalRaj` (Q1097, T 1,814,134).\n- `e2194147-ebea-4e1c-b185-244173a5e6b5` by `gopikannappan` (Q828, T 9,606,009).\n- The conditional-AND pass and its levers `u` and `r` are jackylee0424's work, as credited in the note of `59359890`.\n- The dial settings come from the public rows named above; we reuse them on our tree.\n- The exact catalog and its certificate are ours (first used in our Q1097 submission `11613a51`).\n- Coordination by a Claude Fable 5.1 session in Claude Code; the cluster pipeline (builds, screen, audit) by a Claude Opus 5.5 session in Claude Code.\n- This submission adds only the edits listed above, the measurements, and the audit.\n\n"
+      },
+      "reported_audit": {
+        "failed_inputs": 0,
+        "pairs": 20480,
+        "streams": 2,
+        "alpha": 0.0015625,
+        "scope": "Public-note report; no independent receipt recount in this paper revision."
+      }
+    },
+    {
+      "id": "114ecae8-4eff-4e47-8008-3385f51760ea",
+      "source": "90aad2418866d828be6fcad36cb90a1e80728a33",
+      "Q": 820,
+      "T": 9708897,
+      "note_sha256": "7ea57d84653919de3384539b4e23aa957d4e1aeca2ae33d8c4483bfbad38d2ac",
+      "note_url": "https://ecdsa.fail/api/submissions/114ecae8-4eff-4e47-8008-3385f51760ea",
+      "edited_lines": [
+        "- `src/point_add/froghop_one.rs`: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 20;` (one occurrence).",
+        "- `src/point_add/mod.rs`: `cond_pass::run_with(ops, \"mfs\")` becomes `cond_pass::run_with(ops, \"mfsur\")` (one occurrence).",
+        "- `src/point_add/mod.rs`: `mod cond_pass;` becomes `mod cond_pass;\\nmod frontier_rewrite;` (one occurrence).",
+        "- `src/point_add/mod.rs`: `    ops.extend(tail);` becomes `    ops = frontier_rewrite::apply(ops);\\n    ops.extend(tail);` (one occurrence).",
+        "- `src/point_add/frontier_rewrite/mod.rs`: taken byte for byte from `our submission 11613a51-1243-4f91-801a-9e71600d1f99 (commit ae2a603a), the same path` (sha256 `6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53`).",
+        "- `src/point_add/frontier_rewrite/catalog.rs`: taken byte for byte from `our submission 11613a51-1243-4f91-801a-9e71600d1f99 (commit ae2a603a), the same path` (sha256 `e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052`)."
+      ],
+      "sections": {
+        "## What changed": "## What changed\n\nThe parent is public submission `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree`: Q818, T 9,754,259.\nIts source commit is `b618b19cf76f0ffe3829b53a8af6653c95dc7e4e`.\nThe parent is odinfree's froghop-one Q818 tree; it runs the exact post-pass suite with the conditional-AND pass levers `mfs`. This submission sets `POOL_1 = 20` (the scratch pool size that sets the qubit count), switches on the pass's existing levers `u` and `r` (`mfsur`), as odinfree's `6d08713c` (lever u) and our `d419f804` (lever r) did on this same tree, and then applies our frozen exact local gate catalog once, after the conditional-AND pass and before the identity tail. The catalog replaces short gate blocks on three or four wires with cheaper blocks that have the same signed permutation on computational basis states; it changes no value and no phase. It first appeared in our Q1097 submission `11613a51`, and the two files are byte copies of that submission's `src/point_add/frontier_rewrite/`. The setting `POOL_1 = 20` at this Q follows odinfree's row `a406c175` (Q820, T 9,729,122, since displaced by our Q818 row), which is declared below. The development check on a fresh 8,192-pair packet (16,384 shots) gave T 9,708,904 for this child with zero failing shots in 16,384; the public T of our Q818 row on the same tree is 9,728,780. The catalog's exactness on this tree was established on the Q818 child (16,384 identical per-input rows) and its 20,204 rewrites here are counted by the emitter.\n\nThe exact edits are:\n\n- `src/point_add/froghop_one.rs`: `pub const POOL_1: usize = 18;` becomes `pub const POOL_1: usize = 20;` (one occurrence).\n- `src/point_add/mod.rs`: `cond_pass::run_with(ops, \"mfs\")` becomes `cond_pass::run_with(ops, \"mfsur\")` (one occurrence).\n- `src/point_add/mod.rs`: `mod cond_pass;` becomes `mod cond_pass;\\nmod frontier_rewrite;` (one occurrence).\n- `src/point_add/mod.rs`: `    ops.extend(tail);` becomes `    ops = frontier_rewrite::apply(ops);\\n    ops.extend(tail);` (one occurrence).\n- `src/point_add/frontier_rewrite/mod.rs`: taken byte for byte from `our submission 11613a51-1243-4f91-801a-9e71600d1f99 (commit ae2a603a), the same path` (sha256 `6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53`).\n- `src/point_add/frontier_rewrite/catalog.rs`: taken byte for byte from `our submission 11613a51-1243-4f91-801a-9e71600d1f99 (commit ae2a603a), the same path` (sha256 `e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052`).\n\nNo other file changes. The inherited nonce is unchanged. No nonce or padding search produced this circuit.\n\n",
+        "## Measured results": "## Measured results\n\n| Measurement | Value |\n|:--|:--|\n| Trusted evaluator on the emitted bytes (built from the unchanged public harness source, 9,024 shots) | all shots OK; Q820, T 9,708,897, score 7,961,295,540 |\n| Operation SHA-256 | `c4569d01b8896bfd3b4aba99a3b32bfcddb62e185903d3ac36bf996d9a749f5d` |\n| Independent audit | 20,480 input pairs x 2 streams, fresh pre-registered label |\n| Audit failed inputs | 0 of 20,480 |\n| Audit failed shots | 0 of 40,960 |\n| Audit upper bound (one-sided, alpha 0.05/32) | 0.000315 per input; limit 0.001 |\n| Failing shots per 9,024 (audit estimate) | none observed in 40,960 shots; the bound above limits the rate |\n\nThe audit and the public check use different inputs. The audit supports the stated failure bound.\nThe public check shows that these exact bytes pass the fixed 9,024-shot packet.\n\n",
+        "## Prior work and credit": "## Prior work and credit\n\n- Parent circuit: `d2583a60-f676-44b6-9e25-399dbdd273d7` by `odinfree`. All arithmetic, layout and passes are theirs.\n- `59359890-410f-49b1-b4dc-c5e54ed528f0` by `odinfree` (Q817, T 9,760,184).\n- `6d08713c-4a11-4384-9fe4-53fb9f5aca02` by `odinfree` (Q818, T 9,748,991).\n- `d419f804-80ed-4ddd-914c-c1e1d149a706` by `SnehalRaj` (Q818, T 9,750,086).\n- `a406c175-26bd-4174-bacd-520cdc3628fb` by `odinfree` (Q820, T 9,729,122).\n- The conditional-AND pass and its levers `u` and `r` are jackylee0424's work, as credited in the note of `59359890`; odinfree first used lever `r` in this lineage.\n- The exact catalog and its certificate are ours (first used in our Q1097 submission `11613a51`); the catalog came from our local exact-rule study.\n- Coordination of this submission by a Claude Fable 5.1 session in Claude Code; the catalog integration, builds and development checks by Claude Opus 5.5 agents in Claude Code.\n- This submission adds only the edits listed above, the measurements, and the audit.\n\n"
+      },
+      "reported_audit": {
+        "failed_inputs": 0,
+        "pairs": 20480,
+        "streams": 2,
+        "alpha": 0.0015625,
+        "scope": "Public-note report; no independent receipt recount in this paper revision."
+      }
+    }
+  ]
+}

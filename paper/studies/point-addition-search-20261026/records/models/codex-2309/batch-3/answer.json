@@ -1,0 +1,4 @@
+{
+  "action_index": 20,
+  "reason": "Test whether removing cofactor reconstruction saves enough Toffolis to offset the larger register count. Comparing c1100 and c1000 also isolates phase conversion with AND erasure enabled."
+}

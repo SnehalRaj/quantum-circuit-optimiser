@@ -1,0 +1,377 @@
+[
+  {
+    "artifact": "data/grammar.md",
+    "source": "{redacted-path-8d6ed6b343fb}",
+    "sha256": "0a31a982920cc56bd928822202b7acce4a60ec959d6e2be7e7346b6791daecaa"
+  },
+  {
+    "artifact": "data/integration.md",
+    "source": "{redacted-path-019c9ac85595}",
+    "sha256": "27ca43c297f0a72c312ce0f0343bdfab9ba03bf6320eb2b36fd37cb4ec5c4975"
+  },
+  {
+    "artifact": "data/table-values.json",
+    "source": "{redacted-path-3aa1da7fc2b5}",
+    "sha256": "79975ee72e4fea352109b999e5452d2efef70f9fa4d87b6c81419757032a2586"
+  },
+  {
+    "artifact": "data/confirmation.md",
+    "source": "{redacted-path-b460bc7441e2}",
+    "sha256": "2083920b3ef3d5b0d4c40a932d657f9a018cc82dca868a2d803f351d842a26cb"
+  },
+  {
+    "artifact": "data/openevolve.json",
+    "source": "{redacted-path-13aa6032fd0a}",
+    "sha256": "52e54d24087d99c187b5e44ff0d19e6aa208b2e8d1b851480642079781f84385"
+  },
+  {
+    "artifact": "data/p6a-audit256.json",
+    "source": "{redacted-path-0af59d6b1840}",
+    "sha256": "0606696107cbf2461566b824adb5e38790c35e1d50967c1895fa7dc81a879332"
+  },
+  {
+    "artifact": "data/contract-amendment.json",
+    "source": "{redacted-path-8413e0156fc2}",
+    "sha256": "46a6cab86d973dc85349755e9855f58fc5c84e7bf54db26fefc05487dc494ab4"
+  },
+  {
+    "artifact": "data/strategy-update.md",
+    "source": "{redacted-path-c433394d6c1e}",
+    "sha256": "d8dfc0cb9f1b7fa802d9c7b340aef137786f111aebd9f41d39e18071667dae9b"
+  },
+  {
+    "artifact": "data/lowest-product-lineage.md",
+    "source": "{redacted-path-4ae180e5dc82}",
+    "sha256": "cab88f17c77fa60825cf9ec28242dc1755d5e62c9ac7b715ef1d6d8d479ae0e2"
+  },
+  {
+    "artifact": "data/common-reliability.json",
+    "source": "{redacted-path-15da8ae45912}",
+    "sha256": "ad55d78589ef8c1d46de93c748f7a66ab1a2aeaa93b71ca3f513e18143573550"
+  },
+  {
+    "artifact": "data/nonce-history.md",
+    "source": "{redacted-path-b5369848ff44}",
+    "sha256": "4bda4290cad927bd744acc9d62e660c42a8b3f0d5b3c739b56ceba186ecff9a7"
+  },
+  {
+    "artifact": "data/raw/00-q818-r.json",
+    "source": "{redacted-path-691d4561b8bb}",
+    "sha256": "6db0fe7f307ab12b7bb3d4bad32e204327cc3bfeb09e7e834081d4af0c007191"
+  },
+  {
+    "artifact": "data/raw/01-q839-u.json",
+    "source": "{redacted-path-a39962d77f63}",
+    "sha256": "f9e232ca9b7a1ee5a063c3d22cd065e17c298530ae380d2ed3a326b80532f0a2"
+  },
+  {
+    "artifact": "data/raw/02-q839-ur.json",
+    "source": "{redacted-path-02b750ef2b9f}",
+    "sha256": "4b77c99b1201c56a0d0a321a8a9987f74062f6fe0fe0ceba9f82813a5392cb27"
+  },
+  {
+    "artifact": "data/raw/03-q808-ur.json",
+    "source": "{redacted-path-844e4b54e03d}",
+    "sha256": "e24aa565bc052184e8f279e1a27d9de7d2d5cbd99b124dfe108165c3ae586563"
+  },
+  {
+    "artifact": "data/raw/04-q814-ur.json",
+    "source": "{redacted-path-cd1b329f0409}",
+    "sha256": "b4302931a510112b97e5c2de95e7f3de4944fb96ed487b33500582d27a8275c8"
+  },
+  {
+    "artifact": "data/raw/05-q816-ur.json",
+    "source": "{redacted-path-f1b5ddbacb6c}",
+    "sha256": "78b298cbfed3fc76a9ff08277bd803bd32f6214590fc81919038e11a1f48aeb4"
+  },
+  {
+    "artifact": "data/raw/06-q813-ur.json",
+    "source": "{redacted-path-0ab8a736659c}",
+    "sha256": "ef4f09c506dcb5763ee130d75e9d097df83afdc1f6f54f54d60181a9eee04aba"
+  },
+  {
+    "artifact": "data/raw/07-q812-ur.json",
+    "source": "{redacted-path-323aa754d470}",
+    "sha256": "96f7a761a43351699fa85f26e28530247fb8c40e74463853f5598788654f70af"
+  },
+  {
+    "artifact": "data/raw/08-q810-ur.json",
+    "source": "{redacted-path-f54629f508a5}",
+    "sha256": "4c535a0bebf3954bfa2464c183f7a2b00617fe3cee0e84acf613ff1e8858932f"
+  },
+  {
+    "artifact": "data/raw/09-q811-ur.json",
+    "source": "{redacted-path-2f1da29b7d1a}",
+    "sha256": "88083dc6e2656ca99e65a3c5d1809fbcda34aa81c311589d34c2530663bbee3c"
+  },
+  {
+    "artifact": "data/raw/10-q809-ur.json",
+    "source": "{redacted-path-04e98140efa1}",
+    "sha256": "2ea7b8b08a3c3ed5021682cbf2276e546c432d02d46996a09c1bf03eaa3c165a"
+  },
+  {
+    "artifact": "data/raw/11-q803-ur.json",
+    "source": "{redacted-path-f8ddf68981c6}",
+    "sha256": "4a4cccaa678f5cecb43b2e2e5f5f8a166b9ddbf08101378199efb75f555abe53"
+  },
+  {
+    "artifact": "data/raw/12-q802-ur.json",
+    "source": "{redacted-path-b50b6ece042e}",
+    "sha256": "c2b8625453942447770cfe2b5cf715a56d3f98f234e758e9a4394e75064b80a7"
+  },
+  {
+    "artifact": "data/raw/13-q801-ur.json",
+    "source": "{redacted-path-f807f20a2f16}",
+    "sha256": "aeb422457754971447b6cc3011c75ce67dcbc0ad14ca80429b3cc298f3f86ca7"
+  },
+  {
+    "artifact": "data/raw/14-q800-ur.json",
+    "source": "{redacted-path-0a6ae6f68176}",
+    "sha256": "69c68291b21c488979ea61afcb5c6e5fb9a23015c4ebef331af4f92775bd1565"
+  },
+  {
+    "artifact": "data/raw/15-q799-ur.json",
+    "source": "{redacted-path-2b928c5f9a58}",
+    "sha256": "cca11b97bda3712fce04b504b60eff047994486a166af83ccb7020ec41dbf219"
+  },
+  {
+    "artifact": "data/raw/16-q1059-lp-u.json",
+    "source": "{redacted-path-ff3de7b0dac5}",
+    "sha256": "cdce3b615c0eea33813e646c32572118983c5050810ca64c84d1bdccda79dcae"
+  },
+  {
+    "artifact": "data/raw/17-q1063-rel2.json",
+    "source": "{redacted-path-1b886866ca52}",
+    "sha256": "0f4c81f9c5670165b66dac9e81a8541b3125e575c9ee6d9e37339f685beb708e"
+  },
+  {
+    "artifact": "data/raw/18-q1059-rel2.json",
+    "source": "{redacted-path-f5fcd33082c0}",
+    "sha256": "629987b826c087a99bb43ad8af472ff1fa15fbf541581f43f48a3aa1ee466904"
+  },
+  {
+    "artifact": "data/raw/19-q1064-rel.json",
+    "source": "{redacted-path-c8fcb5a47fef}",
+    "sha256": "0bbd52a3e89033d89da3691a0c32133bd0c7cca84da4fda88339e980495bb730"
+  },
+  {
+    "artifact": "data/raw/20-q1097-catalog.json",
+    "source": "{redacted-path-876aa4bd2056}",
+    "sha256": "b215d6cd99346f21ab69660ca98e3136ea1233aed055b40149d598b83eed0abd"
+  },
+  {
+    "artifact": "data/raw/21-q1270-selected-leapfrog.json",
+    "source": "{redacted-path-48a915386486}",
+    "sha256": "dc653b3e652b2da25a46ef4b8bdca1c1bff4de7234c99f93bc3474604ff2a820"
+  },
+  {
+    "artifact": "data/raw/22-parent-control.json",
+    "source": "{redacted-path-42ea2cd6d103}",
+    "sha256": "5803d62cd5af867a4c23d8aa42d401dbcf6e424c78e8bbfc1bd9b3e969e288a8"
+  },
+  {
+    "artifact": "data/raw/23-q1059-rel2.json",
+    "source": "{redacted-path-d9ceb1a7b7cb}",
+    "sha256": "27334ad24db08ec0bc0363048bdf8358ea0fdc6a7282c7c1d6feec0c0acc6351"
+  },
+  {
+    "artifact": "data/raw/24-q1063-rel2.json",
+    "source": "{redacted-path-a36ac6f40e1d}",
+    "sha256": "df0526d5b7b52bae4fc616f9a230751e4cb4e6589ebc8a70a396d08f0e5de807"
+  },
+  {
+    "artifact": "data/raw/25-q1064-rel.json",
+    "source": "{redacted-path-28d3b716a2dc}",
+    "sha256": "fdbe62e27dd7b64587a3e3441c3ed19592403d04ab6bc0f6b4a429fe8315e0b5"
+  },
+  {
+    "artifact": "data/measured-configurations.csv",
+    "source": "{redacted-path-0c7564ebc4b8}",
+    "sha256": "8eff2e9b017129605fda37066491bb7cb3092f013420a8edc004f7cc7b1b4034"
+  },
+  {
+    "artifact": "studies/matched-point-addition/contract.json",
+    "source": "{redacted-path-ce12c38d3117}",
+    "sha256": "860231355f6aef431bfa406b50e3b9b4229b888f671a861bd52156d8087a5112"
+  },
+  {
+    "artifact": "studies/matched-point-addition/development-result.json",
+    "source": "{redacted-path-bb24c0695efa}",
+    "sha256": "2822249e0db7449c7a99accb228dee2deb8f6e754fd0ab757e4d669fad7ba7bc"
+  },
+  {
+    "artifact": "studies/matched-point-addition/finalists.json",
+    "source": "{redacted-path-4323f6816500}",
+    "sha256": "27398a93a5c91bf195481e064c3fa255028e8d7f8a0b4e3b65518ee1eca3fcac"
+  },
+  {
+    "artifact": "studies/matched-point-addition/transfer-contract.json",
+    "source": "{redacted-path-972435e1d293}",
+    "sha256": "d80b6aca61dedb547ef29047199c6336fdebb9056bc76cc8ef034b2e76043c3f"
+  },
+  {
+    "artifact": "studies/matched-point-addition/transfer-result.json",
+    "source": "{redacted-path-b090c62c3eb2}",
+    "sha256": "f93467bfe485197c0b7aa84611fd34ecaedfdd94cb5e8f50a6681362f68de7f0"
+  },
+  {
+    "artifact": "studies/matched-point-addition/independent-audit.json",
+    "source": "{redacted-path-b00911aa686a}",
+    "sha256": "8bab54df34e9fe8c384c0e572de8ffe5c5aa62bb06a775fef0990f9715525c3f"
+  },
+  {
+    "artifact": "studies/matched-point-addition/native-verification.json",
+    "source": "{redacted-path-eeaa1b32200e}",
+    "sha256": "37684768b926e5344babe41dbc02ceffc08a839f3e60d58837c053e2b04d46d4"
+  },
+  {
+    "artifact": "studies/matched-point-addition/current-source-reproduction.json",
+    "source": "{redacted-path-48b3111bb554}",
+    "sha256": "8def9989d4e9a42064f990bac98d850d6519c6af0be908ac373e039e4ee79c7b"
+  },
+  {
+    "artifact": "studies/matched-point-addition/16-baseline-audit.json",
+    "source": "{redacted-path-fd78d6579d67}",
+    "sha256": "7dbf98a95756df4ff7a1009ae9827c9ee63d7753869eefc74e86717e2f15d010"
+  },
+  {
+    "artifact": "studies/matched-point-addition/16-free-s-audit.json",
+    "source": "{redacted-path-1caa3267a8bf}",
+    "sha256": "1fad1853473b0f2e698e7eec364baa9332b06c24843002fa8f8605cbbdf9b061"
+  },
+  {
+    "artifact": "studies/matched-point-addition/256-baseline-audit.json",
+    "source": "{redacted-path-697ef339b6f8}",
+    "sha256": "323114644cc2f2b71880d6cd64ae0347b14c77137ac15318dd5e1af71a47b9eb"
+  },
+  {
+    "artifact": "studies/matched-point-addition/256-free-s-audit.json",
+    "source": "{redacted-path-d065f61401cd}",
+    "sha256": "7dfcc848845022b29e1b4a29e3e36ca95530961e62d5cb20a737b3245c04fef8"
+  },
+  {
+    "artifact": "studies/froghop-source/q839/src/point_add/mod.rs",
+    "source": "Froghop parent 410bec6de09f973c4fd0a8be75f70106fe5930de:src/point_add/mod.rs",
+    "sha256": "294b8f8d2c1658a597a534a27aa75db9f0f5c1f2b9951452cc5735e53ecaf888"
+  },
+  {
+    "artifact": "studies/froghop-source/q839/src/point_add/froghop_one.rs",
+    "source": "Froghop parent 410bec6de09f973c4fd0a8be75f70106fe5930de:src/point_add/froghop_one.rs",
+    "sha256": "699b978a0ee1c34aaf600089cc578f65c334026d1a578f238cac8ec6b53e15f1"
+  },
+  {
+    "artifact": "studies/froghop-source/q839/src/point_add/pointadd_one.rs",
+    "source": "Froghop parent 410bec6de09f973c4fd0a8be75f70106fe5930de:src/point_add/pointadd_one.rs",
+    "sha256": "d24a2a648d5eb8ed9103bdc3de6a71a58c3a08e6a7312a802d48ca7f2b17ae30"
+  },
+  {
+    "artifact": "studies/froghop-source/q839/src/point_add/cond_pass.rs",
+    "source": "Froghop parent 410bec6de09f973c4fd0a8be75f70106fe5930de:src/point_add/cond_pass.rs",
+    "sha256": "a56f374ad86c7dd3ca13cfd08291f5f9a4f40a54e122959c481656a54b9d987e"
+  },
+  {
+    "artifact": "studies/froghop-source/q839/NOTICE",
+    "source": "Froghop parent 410bec6de09f973c4fd0a8be75f70106fe5930de:NOTICE",
+    "sha256": "fdfff837a1a85c14fc8854cfb2fa8a43b2ac58a6b8fcc50e56fe6c9d1293c58f"
+  },
+  {
+    "artifact": "studies/froghop-source/q799/src/point_add/mod.rs",
+    "source": "Froghop parent 92186c3796cba8c06005f1c26e467c070c4606bd:src/point_add/mod.rs",
+    "sha256": "fc505ef3154380775ebda4d87ce4ebe34f6a2b36ada46434797ece1062107005"
+  },
+  {
+    "artifact": "studies/froghop-source/q799/src/point_add/froghop_double.rs",
+    "source": "Froghop parent 92186c3796cba8c06005f1c26e467c070c4606bd:src/point_add/froghop_double.rs",
+    "sha256": "14928d47e8c76c7c5e059154a06890d84d27f0ddda56378e3e95abd9606b6ccb"
+  },
+  {
+    "artifact": "studies/froghop-source/q799/src/point_add/pointadd_double.rs",
+    "source": "Froghop parent 92186c3796cba8c06005f1c26e467c070c4606bd:src/point_add/pointadd_double.rs",
+    "sha256": "93242781074aa62cbffd32ed792073c53a059c586e8e602c5f529807897fe10b"
+  },
+  {
+    "artifact": "studies/froghop-source/q799/NOTICE",
+    "source": "Froghop parent 92186c3796cba8c06005f1c26e467c070c4606bd:NOTICE",
+    "sha256": "fdfff837a1a85c14fc8854cfb2fa8a43b2ac58a6b8fcc50e56fe6c9d1293c58f"
+  },
+  {
+    "artifact": "data/point-addition-timing.json",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "c4cbb8ccc9d85892bafed00807c6207f4101e5486a2d368588fe127008645e88"
+  },
+  {
+    "artifact": "studies/point-addition-timing/run_small.py",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "175623527af53e70fa94dbcede8c9998aaba34efaabaa4fac557f3dbb461fca5"
+  },
+  {
+    "artifact": "studies/point-addition-timing/README.md",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "a3d57215e57a368abccb00c11a5e28ae71f1a362f553745f0239434c55157074"
+  },
+  {
+    "artifact": "studies/point-addition-timing/small16/evaluation.process.json",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "8ef8f899fd5b349cccc2a53f8fbf08ae2accc5e90307beac5eeb74cbd4be5f3d"
+  },
+  {
+    "artifact": "studies/point-addition-timing/small16/audit.json",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "a58840056dcc183427e13d1a6f20a7151f6f0abb9e242d0c1d0b1caaf4af14c2"
+  },
+  {
+    "artifact": "studies/point-addition-timing/small16/result.json",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "95314b72476416783838569458e20a6de89a986cb174615de7d0c6c8720d5d14"
+  },
+  {
+    "artifact": "studies/point-addition-timing/small16/circuit.qops.zst",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83"
+  },
+  {
+    "artifact": "studies/point-addition-timing/small16/emission.stderr",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "c6796f724d0df44e3f35483a6a1907fc7090855d3e8f8f1f87cfc1256cd036b1"
+  },
+  {
+    "artifact": "studies/point-addition-timing/small16/emission.stdout",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "abb5540047e9d99ed16fce2496a580ced49ca8fa7ad91beb5c4060c3db4af12e"
+  },
+  {
+    "artifact": "studies/point-addition-timing/small16/outcomes.jsonl.gz",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "631b73c7aefd17bf7516042588925979c4831dd0e7e7247f447f1bfec2374c82"
+  },
+  {
+    "artifact": "studies/point-addition-timing/small16/emission.process.json",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "bea1b8ab3a88fb00515f7e0b7001b7c3e2ca253a637d027abc539c21cf0a50a6"
+  },
+  {
+    "artifact": "studies/point-addition-timing/small16/evaluation.stdout",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "c32531cd03d9bae6ba789baad761ca3709dca5b1d351568c759cb08ec6aa091c"
+  },
+  {
+    "artifact": "studies/point-addition-timing/small16/circuit.qops.zst.json",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "f50fa9fad28b89588debf581a0683c49a6cab9107fef37951b086eaa8190fcc6"
+  },
+  {
+    "artifact": "studies/point-addition-timing/small16/circuit.qops.zst.compiler.log",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "c6796f724d0df44e3f35483a6a1907fc7090855d3e8f8f1f87cfc1256cd036b1"
+  },
+  {
+    "artifact": "studies/point-addition-timing/small16/contract.json",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "97f9e025aecfdfcaef7bf3a379ea94451061221c22ea466784235ce5178fee5a"
+  },
+  {
+    "artifact": "studies/point-addition-timing/small16/evaluation.stderr",
+    "source": "Full point-addition timing: fixed library revision and archived secp256k1 receipt",
+    "sha256": "246c21ada38225d926cd2f55ff9f570fd60a2e3fa3397086d107b3f9a24eab07"
+  }
+]

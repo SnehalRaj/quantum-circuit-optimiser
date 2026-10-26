@@ -1,0 +1,130 @@
+{
+  "Q": 1270,
+  "T": 793798.4140415192,
+  "S": 1008123460,
+  "pairs": 262144,
+  "streams": 2,
+  "failed_inputs": 86,
+  "failed_shots": 169,
+  "channel_failed_inputs": {
+    "coordinate": 82,
+    "phase": 64,
+    "workspace": 0,
+    "addend": 0
+  },
+  "epsilon_upper95": 0.0003924789380770615,
+  "first_failures": [
+    {
+      "dirty_qubits": [],
+      "failures": {
+        "addend": false,
+        "coordinate": true,
+        "phase": true,
+        "workspace": false
+      },
+      "idx": 4160,
+      "input": {
+        "addend": [
+          "0x71c80565020b2a4b62e7c31a6279e58ae74b0f2ed8ab8476e46167d6ebbc23bf",
+          "0x26baa3fa3410f6f32215502ee23c3664a49510c0b5963fffe799238844a60612"
+        ],
+        "expected": [
+          "0x10a498f42a71de37edac73cf4cda6b0a22a9dd2631e0e1c705fe8186d0f0a583",
+          "0x303bb22808d6ec984cbe863917652379992f585c5bde6a91e14c02a2b31dd4f3"
+        ],
+        "idx": 4160,
+        "k_addend": "0xc9cc5743d1104e436724814172212e33a252d51f3728662c45f6fc31cbc9ecd2",
+        "k_target": "0x76bddf97b685f811085e85130efc30c0815ca3ee64674415971b5829c04da267",
+        "target": [
+          "0xeadaad37a51391f6cbd97f96dc335e6f097ebc6db9398bfca08a1086fba7ee47",
+          "0x102bcc86b104ce6128056eae6e210f7740609fa8cad39d9e0bfb46c150de125f"
+        ]
+      },
+      "observed_addend": [
+        "0x71c80565020b2a4b62e7c31a6279e58ae74b0f2ed8ab8476e46167d6ebbc23bf",
+        "0x26baa3fa3410f6f32215502ee23c3664a49510c0b5963fffe799238844a60612"
+      ],
+      "observed_target": [
+        "0x065e9a23708b1ccd48e20ab671e6ddc1e05f092236bf888149e0205f279601fc",
+        "0x7f4fb76ae245099da5388fe8f62b16b9bfa814e490ee4d9543fc1bcee8fe4ab8"
+      ],
+      "passed": false,
+      "stream": 0
+    },
+    {
+      "dirty_qubits": [],
+      "failures": {
+        "addend": false,
+        "coordinate": true,
+        "phase": false,
+        "workspace": false
+      },
+      "idx": 4160,
+      "input": {
+        "addend": [
+          "0x71c80565020b2a4b62e7c31a6279e58ae74b0f2ed8ab8476e46167d6ebbc23bf",
+          "0x26baa3fa3410f6f32215502ee23c3664a49510c0b5963fffe799238844a60612"
+        ],
+        "expected": [
+          "0x10a498f42a71de37edac73cf4cda6b0a22a9dd2631e0e1c705fe8186d0f0a583",
+          "0x303bb22808d6ec984cbe863917652379992f585c5bde6a91e14c02a2b31dd4f3"
+        ],
+        "idx": 4160,
+        "k_addend": "0xc9cc5743d1104e436724814172212e33a252d51f3728662c45f6fc31cbc9ecd2",
+        "k_target": "0x76bddf97b685f811085e85130efc30c0815ca3ee64674415971b5829c04da267",
+        "target": [
+          "0xeadaad37a51391f6cbd97f96dc335e6f097ebc6db9398bfca08a1086fba7ee47",
+          "0x102bcc86b104ce6128056eae6e210f7740609fa8cad39d9e0bfb46c150de125f"
+        ]
+      },
+      "observed_addend": [
+        "0x71c80565020b2a4b62e7c31a6279e58ae74b0f2ed8ab8476e46167d6ebbc23bf",
+        "0x26baa3fa3410f6f32215502ee23c3664a49510c0b5963fffe799238844a60612"
+      ],
+      "observed_target": [
+        "0x065e9a23708b1ccd48e20ab671e6ddc1e05f092236bf888149e0205f279601fc",
+        "0x7f4fb76ae245099da5388fe8f62b16b9bfa814e490ee4d9543fc1bcee8fe4ab8"
+      ],
+      "passed": false,
+      "stream": 1
+    }
+  ],
+  "recipe": {
+    "backend": "leapfrog",
+    "settings": {
+      "LF_REORDER_DIV": "76",
+      "LF_REORDER_MUL": "76",
+      "LFX_FUSED_FWD_TO": "134",
+      "LFX_FUSED_REV_TO": "124",
+      "LF_CMP_FROM": "0",
+      "LF_MERGED_WIN": "60",
+      "LF_MERGED_LATE_WIN": "62",
+      "LF_CELL_FOLD_MIN": "60",
+      "LFX_Y15_WIN": "61",
+      "HEO_PIN_PP_REPLAY_FOLD_WINDOW": "64",
+      "HEO_PIN_PP_REPLAY_FOLD_WINDOW_MUL": "64",
+      "LFX_Y15_GUARD": "0",
+      "LFX_Y15_CMP_EXTRA": "2",
+      "LFX_XTICKS": "4",
+      "HEO_PIN_PP_WALK_MAX_QUBITS": "1270",
+      "HEO_PIN_FOLD_GUARD": "32",
+      "HEO_PIN_ERASE_COMPARE": "20",
+      "HEO_PIN_PP_REPLAY_CHUNK_COMPARE": "21",
+      "HEO_PIN_PP_REPLAY_FLAG_COMPARE": "20",
+      "HEO_PIN_SQ_ASM_TAIL": "32",
+      "LFX_WPAD": "4",
+      "LF_CMP_SHIFT": "4,4",
+      "HEO_PIN_PP_FOLD_PROFILE": "0:0",
+      "AB_FUSION": "0"
+    },
+    "program": null
+  },
+  "id": "20c6b2cbd30c32229417032a686854f475e21c03b8a2a639c5360b66d46a9be7",
+  "artifact_sha256": "9271a9aa2b368b88989e905a932d5469baece5f3af00c0e928e8dcb7b9ce3c01",
+  "label": "frontier-cross-study-confirmation/25173620d980cb451c02e0c643bda87f23eee765cce0078f55b11bd13f092b6f",
+  "fresh": true,
+  "evaluation_file": "evaluations/confirmation/raw.json",
+  "packet_sha256": "0b39522ae43b0ec7261246d37d80571d3e7aa8ab8d8d3988171b27c143094bb1",
+  "wall_seconds": 214.86009945813566,
+  "inputs_sha256": "79a5a5893110feae3fb1e08014210af89b2a956015cb511c2252c0b90738c79b"
+}

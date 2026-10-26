@@ -1,0 +1,26 @@
+{
+  "archive_sha256": "aa71ed8c165e78692b1d6487afb24331376ff4671dfa685f5e7e7b7143a2f7e3",
+  "closure": "Release constructor module and include closure. Test-only external modules are excluded.",
+  "files_sha256": {
+    "NOTICE": "fdfff837a1a85c14fc8854cfb2fa8a43b2ac58a6b8fcc50e56fe6c9d1293c58f",
+    "src/point_add/affine_simplify.rs": "c3be1a376c29c531b18890128c309b46a114d956e857a378cf8d303cd7cd7d15",
+    "src/point_add/arith.rs": "3aca87b5c6c4740f7c6a39b0034a867c39a260dc2357ac4e8f533df2dc27af6c",
+    "src/point_add/builder.rs": "d3be51b70ecd4e661335995353f2dcd50448d29883a2808579f616cba3b95d43",
+    "src/point_add/classical_wide/mod.rs": "789d80a6aed87c372655c294fcf58aba68c96bb42682d9929a6c91889ca7fda0",
+    "src/point_add/classical_wide/product7_simplify.rs": "849aea3c9cda107f49a8cf4acb743eb8a3d58b3e04a827c54cc3a781b403a06d",
+    "src/point_add/classical_wide/table.rs": "641d1509f13af4c7c641f761a20979f93c9805b17d1abffb84825965d2a8c643",
+    "src/point_add/cond_pass.rs": "a56f374ad86c7dd3ca13cfd08291f5f9a4f40a54e122959c481656a54b9d987e",
+    "src/point_add/froghop_double.rs": "59d4a83fa7bffe2c4a0f42b47943651ae4ce99d7966ae09470b681dcda77f559",
+    "src/point_add/mask.rs": "7d863d63cd5a29151d30cbaac036a30cd171f408525b3c678b4a13ea68fd7d40",
+    "src/point_add/mod.rs": "688263af66a0b731d2e119800dfe06bdb6abd786be4600424abf1838643206d7",
+    "src/point_add/modp_double.rs": "af58f32b7ed86ebafe634012bedac6de12156478c3699770bee4300f392aa516",
+    "src/point_add/pointadd_double.rs": "93242781074aa62cbffd32ed792073c53a059c586e8e602c5f529807897fe10b",
+    "src/point_add/product_simplify.rs": "adbbbf4d5dc0dc4dcb0e938f227e672a19075e2a352d9709572e57b9282ebf29",
+    "src/point_add/quadratic_simplify.rs": "370a2ea7eddc98aa15905f758d34ba38d5538e0321c73f91a930236286c8988c",
+    "src/point_add/refmodel_double.rs": "dd4a1de65e2c53c57028f89a3a92b7fa6a37a2dff13d29238134c312f872e40d",
+    "src/point_add/sched_double.txt": "79f38fb28bab1af636bc9ea69a8c7ff52f7b1cfb8ac7c39007db65b35f54849a",
+    "src/point_add/truth_simplify.rs": "f16bc1a7bbb9aa9cfda5bc619c9a29300d3413e028deb450154f15adefd70c55"
+  },
+  "parent_commit": "e7cd2f203ab32c7467633cf1d884913feb44aeb5",
+  "schema": 1
+}

@@ -1,0 +1,17 @@
+{
+  "scope": "Finite field signatures, not an all-width circuit proof",
+  "rows": [
+    {
+      "prime": 5,
+      "programs": 20,
+      "inputs_per_program": 100,
+      "all_match": true
+    },
+    {
+      "prime": 7,
+      "programs": 20,
+      "inputs_per_program": 196,
+      "all_match": true
+    }
+  ]
+}

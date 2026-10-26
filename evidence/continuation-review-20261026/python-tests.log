@@ -1,0 +1,50 @@
+test_action_list_must_agree_with_policy (test_grammar.GrammarTests.test_action_list_must_agree_with_policy) ... ok
+test_action_only_candidate_derives_canonical_policy (test_grammar.GrammarTests.test_action_only_candidate_derives_canonical_policy) ... ok
+test_all_32_rule_subsets_admit_independent_search (test_grammar.GrammarTests.test_all_32_rule_subsets_admit_independent_search) ... ok
+test_cancellation_composes_independently_with_the_conditional_policy (test_grammar.GrammarTests.test_cancellation_composes_independently_with_the_conditional_policy) ... ok
+test_candidate_cannot_omit_phase_fix_or_disable_guards (test_grammar.GrammarTests.test_candidate_cannot_omit_phase_fix_or_disable_guards) ... ok
+test_capability_claim_cannot_activate_unknown_binding (test_grammar.GrammarTests.test_capability_claim_cannot_activate_unknown_binding) ... ok
+test_compiled_rules_cannot_change_behind_the_recorded_hash (test_grammar.GrammarTests.test_compiled_rules_cannot_change_behind_the_recorded_hash) ... ok
+test_composed_rule_subset_can_be_searched_without_the_rest (test_grammar.GrammarTests.test_composed_rule_subset_can_be_searched_without_the_rest) ... ok
+test_composition_order_and_duplicate_inputs_do_not_change_hash (test_grammar.GrammarTests.test_composition_order_and_duplicate_inputs_do_not_change_hash) ... ok
+test_conflicting_definition_requires_exact_explicit_override (test_grammar.GrammarTests.test_conflicting_definition_requires_exact_explicit_override) ... ok
+test_cross_family_target_rejected (test_grammar.GrammarTests.test_cross_family_target_rejected) ... ok
+test_custom_family_alias_inherits_real_backend_and_credit (test_grammar.GrammarTests.test_custom_family_alias_inherits_real_backend_and_credit) ... ok
+test_custom_family_rejects_unknown_backend_and_commands (test_grammar.GrammarTests.test_custom_family_rejects_unknown_backend_and_commands) ... ok
+test_custom_source_family_pins_constructor_and_uses_shared_rule_contract (test_grammar.GrammarTests.test_custom_source_family_pins_constructor_and_uses_shared_rule_contract) ... ok
+test_custom_source_registration_preserves_relative_source_resolution (test_grammar.GrammarTests.test_custom_source_registration_preserves_relative_source_resolution) ... ok
+test_custom_source_rejects_changed_source_and_path_escape (test_grammar.GrammarTests.test_custom_source_rejects_changed_source_and_path_escape) ... ok
+test_custom_source_rejects_symlink_files (test_grammar.GrammarTests.test_custom_source_rejects_symlink_files) ... ok
+test_explicit_cancellation_flag_must_match_its_action (test_grammar.GrammarTests.test_explicit_cancellation_flag_must_match_its_action) ... ok
+test_family_rules_remain_visible_with_missing_stage_reasons (test_grammar.GrammarTests.test_family_rules_remain_visible_with_missing_stage_reasons) ... ok
+test_invalid_parameter_schema_reports_a_grammar_error (test_grammar.GrammarTests.test_invalid_parameter_schema_reports_a_grammar_error) ... ok
+test_invalid_parameter_type_and_unknown_fields_fail (test_grammar.GrammarTests.test_invalid_parameter_type_and_unknown_fields_fail) ... ok
+test_leapfrog_shared_compiler_is_separate_from_unmapped_arithmetic (test_grammar.GrammarTests.test_leapfrog_shared_compiler_is_separate_from_unmapped_arithmetic) ... ok
+test_multiple_family_addenda_do_not_change_selected_family (test_grammar.GrammarTests.test_multiple_family_addenda_do_not_change_selected_family) ... ok
+test_policy_constructs_valid_actions_and_preserves_target (test_grammar.GrammarTests.test_policy_constructs_valid_actions_and_preserves_target) ... ok
+test_adjacent_cancel_is_a_separate_source_recipe (test_large.LargeSourcesTest.test_adjacent_cancel_is_a_separate_source_recipe) ... ok
+test_all_vendored_source_hashes_match (test_large.LargeSourcesTest.test_all_vendored_source_hashes_match) ... ok
+test_cargo_keeps_its_proxy_executable_name (test_large.LargeSourcesTest.test_cargo_keeps_its_proxy_executable_name) ... ok
+test_compiler_uses_an_explicit_writable_temp_directory (test_large.LargeSourcesTest.test_compiler_uses_an_explicit_writable_temp_directory) ... ok
+test_frozen_catalog_contains_exact_fourteen_coordinates (test_large.LargeSourcesTest.test_frozen_catalog_contains_exact_fourteen_coordinates) ... ok
+test_independent_compiler_subsets_and_none_are_admitted (test_large.LargeSourcesTest.test_independent_compiler_subsets_and_none_are_admitted) ... ok
+test_leapfrog_applies_the_same_generic_compiler (test_large.LargeSourcesTest.test_leapfrog_applies_the_same_generic_compiler) ... ok
+test_leapfrog_control_keeps_the_pinned_constructor (test_large.LargeSourcesTest.test_leapfrog_control_keeps_the_pinned_constructor) ... ok
+test_materialize_detects_changed_source_before_reuse (test_large.LargeSourcesTest.test_materialize_detects_changed_source_before_reuse) ... ok
+test_materialize_preserves_nonce_and_applies_counted_policy (test_large.LargeSourcesTest.test_materialize_preserves_nonce_and_applies_counted_policy) ... ok
+test_target_alias_and_policy_admission (test_large.LargeSourcesTest.test_target_alias_and_policy_admission) ... ok
+test_bad_provider_and_unknown_fields_fail (test_models.ModelTests.test_bad_provider_and_unknown_fields_fail) ... ok
+test_claude_json_reports_identity_and_usage (test_models.ModelTests.test_claude_json_reports_identity_and_usage) ... ok
+test_codex_extracts_final_message (test_models.ModelTests.test_codex_extracts_final_message) ... ok
+test_invalid_response_does_not_fall_back (test_models.ModelTests.test_invalid_response_does_not_fall_back) ... ok
+test_offline_never_calls_model (test_models.ModelTests.test_offline_never_calls_model) ... ok
+test_checker_failures_are_data (test_runner.RunnerTests.test_checker_failures_are_data) ... ok
+test_front_keeps_both_directions (test_runner.RunnerTests.test_front_keeps_both_directions) ... ok
+test_inactive_mechanism_cannot_promote (test_runner.RunnerTests.test_inactive_mechanism_cannot_promote) ... ok
+test_probability_limit_is_exact (test_runner.RunnerTests.test_probability_limit_is_exact) ... ok
+test_template_is_editable_pinned_source (test_source.SourceTests.test_template_is_editable_pinned_source) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 2.951s
+
+OK

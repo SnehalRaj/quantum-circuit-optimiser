@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "qualified": true,
+  "contract_sha256": "d80b6aca61dedb547ef29047199c6336fdebb9056bc76cc8ef034b2e76043c3f",
+  "family_alpha": 0.05,
+  "family_tests": 4,
+  "alpha_per_test": 0.0125,
+  "epsilon": 0.001,
+  "selection": "free-s was selected solely from the small-field Q/T frontier before any large-field result.",
+  "confirmation_registration": "The separate confirmation protocol was frozen after initial development and small audits, before fresh large confirmation inputs.",
+  "small": {
+    "inputs_per_circuit": 100000,
+    "failed_inputs_per_circuit": 0,
+    "streams": 2,
+    "recomputed_upper_per_circuit": 0.00004381930625289137,
+    "baseline_qubits": 214,
+    "free_s_qubits": 198,
+    "mean_toffoli_both": 33728,
+    "baseline_score": 7217792,
+    "free_s_score": 6678144,
+    "original_receipts_unchanged": true,
+    "bounds_receipt": "small-family-bound.json"
+  },
+  "large": {
+    "inputs_per_circuit": 16384,
+    "failed_inputs_per_circuit": 0,
+    "streams": 2,
+    "upper_per_circuit": 0.0002674219167220849,
+    "baseline_qubits": 3592,
+    "free_s_qubits": 3336,
+    "mean_toffoli_both": 6710828,
+    "baseline_score": 24105294176,
+    "free_s_score": 22387322208,
+    "packet_sha256": "29ae06265a6e78567cde97c4aeca4fad2b4b20253204f24d1ba3810e182f63ba",
+    "per_input_sha256_both": "1097619aa165310e629011b1312b836b672126cfb911db83fabad9befc017358",
+    "baseline_receipt_sha256": "323114644cc2f2b71880d6cd64ae0347b14c77137ac15318dd5e1af71a47b9eb",
+    "free_s_receipt_sha256": "7dfcc848845022b29e1b4a29e3e36ca95530961e62d5cb20a737b3245c04fef8"
+  },
+  "timing_comparison_valid": false,
+  "timing_context": "timing-context.json",
+  "scope": "Measured transfer of one existing scratch-release setting within the shared original Kaliski backend and declared affine domain. Separate frontier families remain unscaled. This result establishes no public frontier advance."
+}

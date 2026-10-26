@@ -1,0 +1,575 @@
+{
+  "files": [
+    {
+      "kind": "text",
+      "original_bytes": 1068,
+      "original_sha256": "57c931ef822a4aac889ece3b1fa0e8b73aff5a8794eb0a620dd65e48c2b654aa",
+      "path": "data/targets/historical/ap1270/official-process.json",
+      "shareable_bytes": 565,
+      "shareable_sha256": "42da8947f3f491db922357a93518c808e9483570b4475e2d96dbbb47f59f3a48"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 2507,
+      "original_sha256": "7039a7669735a0a71b9327232bf5c5105f18e48e77b0db6a67bb13d74ee614f1",
+      "path": "evidence/continuation-review-20261026/pushed-snapshot-check.json",
+      "shareable_bytes": 2452,
+      "shareable_sha256": "86775e5c07ffce15e4a54e601c03792e9aebab7fd55cb14e832a9afdd6bfe41d"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 2242,
+      "original_sha256": "89894ed05d70e3cf5baeddad4a2cf9a1cb88d0033bc0054bdcdb3448716cdefe",
+      "path": "evidence/frontier/native-catalog/catalog-audit.json",
+      "shareable_bytes": 2065,
+      "shareable_sha256": "a8cc3ea5cd3a890f0b08e1901c6c36c44901762850a2cc7c29eb8b2a2be9eb62"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 3186,
+      "original_sha256": "ef11cf9d43632e470f1b184ca16b92fea12901b271043f0afbea527cade9d043",
+      "path": "evidence/frontier/native-catalog/catalog.qops.zst.json",
+      "shareable_bytes": 3009,
+      "shareable_sha256": "4e5b50960c729bd80d889e325e8b9ef7d9b34033636eaa28a7d95cf8d3f8364f"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 831,
+      "original_sha256": "02b3379ba143de7db55143138d5e14c44f0cd3be8a1794f0ad482eac6e7846b4",
+      "path": "evidence/frontier/native-catalog/native-build.json",
+      "shareable_bytes": 654,
+      "shareable_sha256": "55bcfc6921abf6eb6aedfd1598d345eef49673bd655dfb737a0e024e1443f737"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 4245,
+      "original_sha256": "294c00b507db8c673ae6e574417b00d6f22d50a839fe2f5d91a6e78fc2af5b64",
+      "path": "evidence/frontier/native-catalog/native-tests.log",
+      "shareable_bytes": 4186,
+      "shareable_sha256": "7460f8e4df3f310282764e132711f3e8f7d7aa0f1355894ac2f93bbb2783da09"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 2238,
+      "original_sha256": "c32e31cd41a909228445a1db4c4642deaaadd6270fb3fb0fe82a54af1b687e3b",
+      "path": "evidence/frontier/native-catalog/parent-audit.json",
+      "shareable_bytes": 2061,
+      "shareable_sha256": "b4c1c3f5aeb461cb5e72a0c773fffbded5ca1fdd0b7891b645e50a91db92090e"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 2175,
+      "original_sha256": "fbc903a58b5057be9f329931b155d066e751b806f35e713a7450dace83ffb678",
+      "path": "evidence/frontier/native-catalog/parent.qops.zst.json",
+      "shareable_bytes": 1998,
+      "shareable_sha256": "6bcf48acd40668fb986762784574ba59c78bf1ae94fe452f41b5df83e16b8099"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 4318,
+      "original_sha256": "3b4e467e4428ba5b43f00628f0531a41542750d6cbd406af81c19217db6e2ff8",
+      "path": "evidence/frontier/validation/native-suite.log",
+      "shareable_bytes": 4259,
+      "shareable_sha256": "08cd4eae5b13f8c6460c034f5d6984dff8bf5619c553582fd3a6e8f3f58433f8"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 2543,
+      "original_sha256": "536e030285ee42df52aef85f272370c25bae1f61d818c33d346fad4044f2bc18",
+      "path": "evidence/model-preflight/claude/receipt.json",
+      "shareable_bytes": 2540,
+      "shareable_sha256": "82bd21688778c63bd2f9cfffc977536587d99c9c71b319a145c45216b582e5ac"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 1046,
+      "original_sha256": "0decacef7df7161a63de4f641a028f2c0f49722d53a4974135528534fdc9b90f",
+      "path": "evidence/model-preflight/codex/receipt.json",
+      "shareable_bytes": 1044,
+      "shareable_sha256": "19dff093e732c8062f3efcbc6d24e4e7249fd3f56afece84346a4e9bfd9f5b9e"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 522,
+      "original_sha256": "505778a9e226f239cbf951a121533f51ce1afd31c889b1c10cea3a146449de4c",
+      "path": "evidence/native-validation/emitter-first-test.log",
+      "shareable_bytes": 463,
+      "shareable_sha256": "bd664a3dd8d246aa1ac3c7790b7b1f7d3f11e5b8938625b0a6046e8af642934d"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 1111,
+      "original_sha256": "10ebc3517171117c716810537b9e84f51a930533602ac20950fe7c823248e2bb",
+      "path": "evidence/native-validation/exact-cancel-red.log",
+      "shareable_bytes": 1052,
+      "shareable_sha256": "f3516849b3a557a50dd18478cc77d97644f8c09f7fa14dba5b478d0a8e272505"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 3115,
+      "original_sha256": "456cdf7297d9d095f57881df1f6a580594c26475f3d35366465edad1c506aeeb",
+      "path": "evidence/native-validation/initial-red.log",
+      "shareable_bytes": 2938,
+      "shareable_sha256": "123509085b2e1fe8dc49a99f0063eb04564ce9838063437d9556a5fe0e85896e"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 2523,
+      "original_sha256": "0ffdd17d7cd4f448dda3b8fd9e600d1cd48d04499649dab05bdc2412bf50dd41",
+      "path": "evidence/native-validation/native-suite.log",
+      "shareable_bytes": 2464,
+      "shareable_sha256": "06335568aa3a4bd2c13bfdb62d2b6a478418a04339f99ac7970be40870a9d9f9"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 676,
+      "original_sha256": "f2f54ded6de858bb5fe6d6ce1e7fdfb98f14c354fd7fc9b356def0afb5c17b24",
+      "path": "evidence/native-validation/protocol-tests.log",
+      "shareable_bytes": 617,
+      "shareable_sha256": "1760bdc2cdac640844af38001c09eeb969bce8fae6f2dc188fe18f92eb5bd69a"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 76034,
+      "original_sha256": "6ce99dff170188db63d7df6051934277b582d8804d96178da65dd47d94c592a2",
+      "path": "studies/historical/archives/grammar-run-records.tar.gz!grammar/run/rules/evidence/decoder.json",
+      "shareable_bytes": 74438,
+      "shareable_sha256": "55a20d5cb7e5c601d8b2126696a1a96a9fb8a31fc498fa0466a338213a858526"
+    },
+    {
+      "kind": "tar.gz",
+      "original_bytes": 47648,
+      "original_sha256": "d3ed8f9b3c6421a71dc838a0f2fb6df7c6204573658a863553efb203753aa7c9",
+      "path": "studies/historical/archives/grammar-run-records.tar.gz",
+      "shareable_bytes": 47554,
+      "shareable_sha256": "f2ff04a2c5700cdb738f314a72242f5ef7dbb807178bae967fbcec6266bf2045"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 76034,
+      "original_sha256": "6ce99dff170188db63d7df6051934277b582d8804d96178da65dd47d94c592a2",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/claude/rules/evidence/decoder.json",
+      "shareable_bytes": 74438,
+      "shareable_sha256": "55a20d5cb7e5c601d8b2126696a1a96a9fb8a31fc498fa0466a338213a858526"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 3413,
+      "original_sha256": "06152fbfebdb8359ef217ea39a92414cb184e40e50fc4438d2ac7cfe1e95f43f",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex/blocked.json",
+      "shareable_bytes": 3292,
+      "shareable_sha256": "6e7ca9a0923d5d70b14d24c3544387bcf27cc7bceea509d9a534d7b50936130e"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 76034,
+      "original_sha256": "6ce99dff170188db63d7df6051934277b582d8804d96178da65dd47d94c592a2",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/rules/evidence/decoder.json",
+      "shareable_bytes": 74438,
+      "shareable_sha256": "55a20d5cb7e5c601d8b2126696a1a96a9fb8a31fc498fa0466a338213a858526"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 26940,
+      "original_sha256": "335c726dabeacf81bbbe17b5990f717a30695e9c4b3636e7d1c4940abbf1d03c",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-17071/costs.jsonl",
+      "shareable_bytes": 26698,
+      "shareable_sha256": "26b57ffbe67a29a4fc2f4a82a3b9d3d1a467565acd6ffce99d5c55dbee37f4cf"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 6239,
+      "original_sha256": "6009f691f48b2d3bd8378ed9e537a43d26d93c5487d88b812d01ffdbd59dfa3d",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-17071/model/2-receipt.json",
+      "shareable_bytes": 6118,
+      "shareable_sha256": "ca3962522db782e84d236780109364e2a5f2ca3448adb93946cd489a8e15d22a"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 9180,
+      "original_sha256": "afc0a536a231d823a2f27ee40512bb081fe21ecafb1d3b3122e1445407376591",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-17071/model/2-response.json",
+      "shareable_bytes": 9059,
+      "shareable_sha256": "493f72fce5de45760e9163072010ee73bf452b8a85b8e234e98a182aafe8596b"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 5203,
+      "original_sha256": "9fd9161cd8e8b0f459e500eabdbff21dfa65c69024725b4438175cf85239a37c",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-17071/model/5-receipt.json",
+      "shareable_bytes": 5082,
+      "shareable_sha256": "575cbd3c16f51e635d18710ec50f62c8b0215f38b23db250fc91bbdcc1823ab8"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 7124,
+      "original_sha256": "4c0ab709f72d19133456975e16f96246f56e8fa7024ccbb3007b7e16b8ce943c",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-17071/model/5-response.json",
+      "shareable_bytes": 7003,
+      "shareable_sha256": "682b64e33a7e3b2bf927d841498fb4f880766afa3b2d19f51df8eae43aea6923"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 292644,
+      "original_sha256": "29a1fc528435a0e997dd1340cc68820de2c44573c631e7bc8cb7709dbc215d71",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-17071/run.json",
+      "shareable_bytes": 292402,
+      "shareable_sha256": "dc0220384a572551b02a1205c9278534e009899f028046ab56c1b1874a5f7502"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 26646,
+      "original_sha256": "faae7599e529b7a825cf7d4b15b531423e20bc535463e26ef56e0c1a4da14d9f",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-28081/costs.jsonl",
+      "shareable_bytes": 26404,
+      "shareable_sha256": "599a5d4535858b2b0654781335d4d0eb199e6eecc7d7951e39776c0f3f1d5e51"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 6277,
+      "original_sha256": "1ecee39017937550cf671bedd791f60f9aa79942ad9036c5fcf73fb72296ad90",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-28081/model/2-receipt.json",
+      "shareable_bytes": 6156,
+      "shareable_sha256": "edbc491c2ff2626a6b4f8bdf50abac4b8be419cc703d6ee3087b15d19e07fc23"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 9257,
+      "original_sha256": "0cf749129d30d522d53282566fd0155250d117b81c3e5cf13276107bc5bcc113",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-28081/model/2-response.json",
+      "shareable_bytes": 9136,
+      "shareable_sha256": "a910bee2edd760c31aaba28748b78ddc4d0d9e21f9566630de0b33e63c19e2e5"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 4957,
+      "original_sha256": "137f4320b7f7b586541f4d5a80f529e7f1e5a8bc9c3c7f535488a180922faa46",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-28081/model/5-receipt.json",
+      "shareable_bytes": 4836,
+      "shareable_sha256": "4a5281becdb01d115291a9f4eb977b65c71005521f04d8cf0117d84af291e65b"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 6803,
+      "original_sha256": "cf138631db99ba63d73634c3c5b3c975ae62239e2711c47d2bc8fbfcb5bf064c",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-28081/model/5-response.json",
+      "shareable_bytes": 6682,
+      "shareable_sha256": "5d78f8720fa605c8af6d1cc085d7ec54988c7348c2c42132149c809a4a3de214"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 281113,
+      "original_sha256": "a3928670ca5be2af9ccafe3a35e64cf6bea841a7f06aa4bf4185bd613e0b1d01",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-28081/run.json",
+      "shareable_bytes": 280871,
+      "shareable_sha256": "b14f2affeea470538f98b85d71176f7c1791a5ee48d3c55a724d98d1e9326f7e"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 23654,
+      "original_sha256": "c34d5d261a839608f661e1a29dbd201dd9a5c67bb46cad247e3e1238efa64d7d",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-39091/costs.jsonl",
+      "shareable_bytes": 23470,
+      "shareable_sha256": "b22ccd27eef35a0310d161954df9eed6d4776bd951a9b227c296529510fff9fd"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 6328,
+      "original_sha256": "e9ae701d33fdac2a6a0810e3a01cb5ffbd005d4f630c4d3dcf555544ee18a20d",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-39091/model/2-receipt.json",
+      "shareable_bytes": 6207,
+      "shareable_sha256": "db1a7c53cb427027360dae286fa05546d3b9e703b1623db3d4b00fe906412660"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 9359,
+      "original_sha256": "6003a413a8bf4e650dead8086c94357def79c387152590786cbbc53e9fbc4cc9",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-39091/model/2-response.json",
+      "shareable_bytes": 9238,
+      "shareable_sha256": "fa72998c03a1973c056601ebf01770cda31b6811cae62380ad9feeb225a277ac"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 1576,
+      "original_sha256": "aab81429b20c0d54cd63a98cedfa8acbf9da17c152ef56b4bb474cb2f2858bc4",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-39091/model/5-receipt.json",
+      "shareable_bytes": 1513,
+      "shareable_sha256": "406adeb0fc83848198118cf0dd6e029f7d557414023749169fe4b28254180138"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 1744,
+      "original_sha256": "10242aad0ab3ddce6ad3fb993e1735cba32dafcea8cb2fbe085d952601478273",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-39091/model/5-response.json",
+      "shareable_bytes": 1681,
+      "shareable_sha256": "66d5020d2a019c6e13bcddcac9ea5945d3ee9f1e2d043f2865e52b2de5a85985"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 279213,
+      "original_sha256": "38fcd4c8639fd6214b64c0d3ead74346471f1906db045b79b966bda3ce2d6530",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/codex61sol/runs/16-llm-compact_json-39091/run.json",
+      "shareable_bytes": 279029,
+      "shareable_sha256": "4b724786c37459f35a9f6793883735ca840d66c35c61f89bd8a348410f057467"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 76034,
+      "original_sha256": "6ce99dff170188db63d7df6051934277b582d8804d96178da65dd47d94c592a2",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-cleanup-only-v1/offline/rules/evidence/decoder.json",
+      "shareable_bytes": 74438,
+      "shareable_sha256": "55a20d5cb7e5c601d8b2126696a1a96a9fb8a31fc498fa0466a338213a858526"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 76034,
+      "original_sha256": "6ce99dff170188db63d7df6051934277b582d8804d96178da65dd47d94c592a2",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/claude/rules/evidence/decoder.json",
+      "shareable_bytes": 74438,
+      "shareable_sha256": "55a20d5cb7e5c601d8b2126696a1a96a9fb8a31fc498fa0466a338213a858526"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 3413,
+      "original_sha256": "06152fbfebdb8359ef217ea39a92414cb184e40e50fc4438d2ac7cfe1e95f43f",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex/blocked.json",
+      "shareable_bytes": 3292,
+      "shareable_sha256": "6e7ca9a0923d5d70b14d24c3544387bcf27cc7bceea509d9a534d7b50936130e"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 76034,
+      "original_sha256": "6ce99dff170188db63d7df6051934277b582d8804d96178da65dd47d94c592a2",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/rules/evidence/decoder.json",
+      "shareable_bytes": 74438,
+      "shareable_sha256": "55a20d5cb7e5c601d8b2126696a1a96a9fb8a31fc498fa0466a338213a858526"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 28160,
+      "original_sha256": "b5961d5832addefdb6034cd8cc31068926e43294cf5129917abae159be3f6e54",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-17071/costs.jsonl",
+      "shareable_bytes": 27918,
+      "shareable_sha256": "d099b4f9706feb9a062b35bec741d628eb564bc500b9a79a186a3697ff058235"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 6326,
+      "original_sha256": "0e92a89b361bea06887337be2914baa349f0736c4629e8ec284ba519b0d080b8",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-17071/model/2-receipt.json",
+      "shareable_bytes": 6205,
+      "shareable_sha256": "f010504262f386be1a53123e71ef2a24112bece5953d65a39ea436fd16261fc0"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 9356,
+      "original_sha256": "ff5a82b7ec26af8d11d60db92ace670d33a1fc87d023c6ab305a3a029761d129",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-17071/model/2-response.json",
+      "shareable_bytes": 9235,
+      "shareable_sha256": "4cda25d1b12243f5075bd4c17515e1a7a9d5054a08658b41c08437ad211726bc"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 6264,
+      "original_sha256": "ff55c8bde6f58b5659051be9005e497ddb1017bb7d1e925e2808ebd87585a293",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-17071/model/5-receipt.json",
+      "shareable_bytes": 6143,
+      "shareable_sha256": "bddae399485f10779e0e0383a1b27b0ffdad17e3a7238e9b586cfaf65a3969d7"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 9036,
+      "original_sha256": "747319f1239a7d5a9d6ab3cbe28571dc26a51b0aab620d418767a8abbb3490d8",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-17071/model/5-response.json",
+      "shareable_bytes": 8915,
+      "shareable_sha256": "8e44bbe70602f0694e36cd7826ea5f34f8d48e0057b9ee17e39ae8dc5b43ac36"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 360421,
+      "original_sha256": "e23b250985e37a62cd2322ae25d27d6ab14002ac0dbeb4364708d6927103be03",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-17071/run.json",
+      "shareable_bytes": 360179,
+      "shareable_sha256": "9d707dd853f1ebd6b160b5a30502eb3647b2bd22923972e5e6a38fd221783a8b"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 27040,
+      "original_sha256": "bfca8bd68b4ddffb602e1ef500fb9129bed2a7f91f76fd671ff514a8ff06ed7a",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-28081/costs.jsonl",
+      "shareable_bytes": 26798,
+      "shareable_sha256": "ac758fce287fed929cf44b33d35d42f4fbfc11e037287b47636b412e7313943d"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 6147,
+      "original_sha256": "b19c0a79f8295d4ea0d7b41ba8984fbf5df00768b85233bb75226d7b8ca91032",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-28081/model/2-receipt.json",
+      "shareable_bytes": 6026,
+      "shareable_sha256": "ef9cc10785056be9f2ee7423ac0b80fa8030f94bc74cd8a7b0deadc528ad3bf9"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 8999,
+      "original_sha256": "959f65e9eb56b918364b04c7ed20bf79e4e3e8ed80a6cf98c21af478705430ea",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-28081/model/2-response.json",
+      "shareable_bytes": 8878,
+      "shareable_sha256": "a80ab0fe87c736d101d1d4b56d84add70d74d9f48a00bad1a6267b8c5aec85fa"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 5401,
+      "original_sha256": "47f25709a80bcbaf885a9ea2b9ca7874d74ef7803d8b1548baf094fb0b311a40",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-28081/model/5-receipt.json",
+      "shareable_bytes": 5280,
+      "shareable_sha256": "ae58561cc151a9aec2cf662d832dbab582d81a5ae38669f52ecad44af2931736"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 7602,
+      "original_sha256": "c782b6c1857d3fedc6d2fd893b18c04e827bee7d4a5a08f7437eb835a2602e54",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-28081/model/5-response.json",
+      "shareable_bytes": 7481,
+      "shareable_sha256": "df0894fb54e11b26b3b6dd4135270ae957890b46c20ccc996f2810ea83bd3ec9"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 313855,
+      "original_sha256": "7075ac1987f6d69adc33d501d675cad8d69253ee9db26666c5b24cb121aeff01",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-28081/run.json",
+      "shareable_bytes": 313613,
+      "shareable_sha256": "f502aebe1805b62c6f770c2469b772e7d8a9e3314b8e718bc251ffdd93b4dabe"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 23760,
+      "original_sha256": "47536f135372c00c379ee7c38aa6cc45cfeea6ea6e2c2a3660c3441c1b64036f",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-39091/costs.jsonl",
+      "shareable_bytes": 23576,
+      "shareable_sha256": "837997da6f00a3fd89051c4a0c02acbccdd9268946fa31e559bacd3ec312d3d8"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 6306,
+      "original_sha256": "f145a8adf40eaf0ba287d20e4ea566a52f2ead82dc5d437d2fa69d7bfbd4539b",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-39091/model/2-receipt.json",
+      "shareable_bytes": 6185,
+      "shareable_sha256": "896d94bbf55bcb8ed1b638b01aae83d53c6b75d5d9b5c44fe896c869199a54d4"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 9316,
+      "original_sha256": "25814d0a0caef6172370b130a956a59cf806c249c55afae3344db4e6b2535d01",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-39091/model/2-response.json",
+      "shareable_bytes": 9195,
+      "shareable_sha256": "d902ffb3eeeb6d4488e57951c4692053546d6c94c4114222174c64c724fe8cd9"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 1578,
+      "original_sha256": "8fd4c649acdf06154fe7bdefa308d5901cde73a81c170a90e11d29358a93a9dc",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-39091/model/5-receipt.json",
+      "shareable_bytes": 1515,
+      "shareable_sha256": "5ea71524e41a7191105dc4339a4fca3ead6adbbd61aa0f1ab580a1f7dca8cc99"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 1746,
+      "original_sha256": "bce6e6879afbfac9388f36a6a1c4fc9d4e853ff13b5803d1634b44132c35abbb",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-39091/model/5-response.json",
+      "shareable_bytes": 1683,
+      "shareable_sha256": "250bd905759643e4f0d099527a462582fd1c560c2d7ce3f2271cafef9feb5e6e"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 356111,
+      "original_sha256": "298b6a071464bcfa635b10d831aaadf8a176b8fa1abe23a3206a351adb7c6697",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/codex61sol/runs/16-llm-compact_json-39091/run.json",
+      "shareable_bytes": 355927,
+      "shareable_sha256": "88df4981edff02b7f85fd672853d5566ade7ab638fad58e97109ae60f2d091d0"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 76034,
+      "original_sha256": "6ce99dff170188db63d7df6051934277b582d8804d96178da65dd47d94c592a2",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz!model-pilot/runs/guarded-seeds-v1/offline/rules/evidence/decoder.json",
+      "shareable_bytes": 74438,
+      "shareable_sha256": "55a20d5cb7e5c601d8b2126696a1a96a9fb8a31fc498fa0466a338213a858526"
+    },
+    {
+      "kind": "tar.gz",
+      "original_bytes": 1523229,
+      "original_sha256": "a6d28880bfea10a76b746ac9176cb0a14c62f08d4d0b7a1eef76bed6311791cf",
+      "path": "studies/historical/archives/model-pilot-run-records.tar.gz",
+      "shareable_bytes": 1521191,
+      "shareable_sha256": "76efa1fc851fb081c3d9651e6cc389f3e6a5fd51641d417d92c7cc9c454fe71c"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 76034,
+      "original_sha256": "6ce99dff170188db63d7df6051934277b582d8804d96178da65dd47d94c592a2",
+      "path": "studies/historical/grammar/source/src/circuitopt/data/rules/evidence/decoder.json",
+      "shareable_bytes": 74438,
+      "shareable_sha256": "55a20d5cb7e5c601d8b2126696a1a96a9fb8a31fc498fa0466a338213a858526"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 52134,
+      "original_sha256": "33ca0c888be7d81ee929b62ccfe629dea1c82765cc84069358256df2c30a89bf",
+      "path": "studies/historical/model-pilot/audit/frozen.json",
+      "shareable_bytes": 48455,
+      "shareable_sha256": "04e22d379ad0665e631a8931079a4f7cfc6bad2fbbbce5dc0eaeaeab860b9d39"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 12724,
+      "original_sha256": "2839c3d8ff104e478066894f48ad3f3021898cbe316d8501a51a8e772c8627be",
+      "path": "studies/historical/model-pilot/contract.json",
+      "shareable_bytes": 12543,
+      "shareable_sha256": "f1a7a6c25b39fea66267c5322b1bda6254e2a493d8e0f7aea478d80aa25d3ee1"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 3413,
+      "original_sha256": "06152fbfebdb8359ef217ea39a92414cb184e40e50fc4438d2ac7cfe1e95f43f",
+      "path": "studies/historical/model-pilot/preflight/codex.json",
+      "shareable_bytes": 3292,
+      "shareable_sha256": "6e7ca9a0923d5d70b14d24c3544387bcf27cc7bceea509d9a534d7b50936130e"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 3041,
+      "original_sha256": "27c6d4848245ab351da179c5f26a5805831dd0c4a68e3d25377d059d34db256e",
+      "path": "studies/historical/model-pilot/preflight/codex61sol.json",
+      "shareable_bytes": 2920,
+      "shareable_sha256": "7c1bf43fd3b0e7ca2ea488fc8444adfa25120f6ef2a6d6df5fe631c8df1e13eb"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 76034,
+      "original_sha256": "6ce99dff170188db63d7df6051934277b582d8804d96178da65dd47d94c592a2",
+      "path": "studies/historical/model-pilot/source/src/circuitopt/data/rules/evidence/decoder.json",
+      "shareable_bytes": 74438,
+      "shareable_sha256": "55a20d5cb7e5c601d8b2126696a1a96a9fb8a31fc498fa0466a338213a858526"
+    },
+    {
+      "kind": "text",
+      "original_bytes": 2801,
+      "original_sha256": "c3496e2b264dc5f784ea58a49feb28a1fe844c44f14f62d1bbd62808da59227b",
+      "path": "studies/historical/path-map.json",
+      "shareable_bytes": 2779,
+      "shareable_sha256": "0f0f81426e9924a791e95a0c8e3b16db12cb1bb06311adb314836e31f183541b"
+    },
+    {
+      "kind": "manifest",
+      "original_bytes": 763211,
+      "original_sha256": "e157157d2b86a7927812dcc94baff28fe13f317f89bc926b4c0e3e189e3be1c8",
+      "path": "studies/historical/manifest.json",
+      "shareable_bytes": 772797,
+      "shareable_sha256": "0abc1ecd82ebd20a9c619fcc8a993a60c108d4d3d943df9aeae4d2b94017d0e7"
+    }
+  ],
+  "originals": "Retained privately outside the exported source tree.",
+  "schema": "sharing-redactions-v1",
+  "scope": "Private path and project-context text removed from shareable copies. Numeric results and original scientific hash strings remain unchanged. Original artifact identities are retained below."
+}

@@ -1,0 +1,4 @@
+{
+  "action_index": 31,
+  "reason": "r/free_s (c0110) cut Q 214->198 with little T change; c1111 additionally adds u+combined_y and cuts T by ~3300, but the u vs combined_y contributions are confounded. c1110 (drop combined_y) and c0111 (drop u) are single-rule ablations of the best recipe that keep the Q reduction, isolating each T-reduction mechanism and possibly beating c1111 if one rule interacts negatively."
+}

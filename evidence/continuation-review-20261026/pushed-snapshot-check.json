@@ -1,0 +1,17 @@
+{
+  "commit": "a5c6f454bcd5034bd4135a1233e61a19bbbe168a",
+  "checkout": "{redacted-path-bf770c24f434}",
+  "scope": "Archive of committed Git objects; Python suite and pinned data checks; no native circuits or model calls",
+  "results": [
+    {
+      "check": "python-tests",
+      "returncode": 0,
+      "tail": "admission) ... ok\ntest_bad_provider_and_unknown_fields_fail (test_models.ModelTests.test_bad_provider_and_unknown_fields_fail) ... ok\ntest_claude_json_reports_identity_and_usage (test_models.ModelTests.test_claude_json_reports_identity_and_usage) ... ok\ntest_codex_extracts_final_message (test_models.ModelTests.test_codex_extracts_final_message) ... ok\ntest_codex_malformed_events_fail_cleanly (test_models.ModelTests.test_codex_malformed_events_fail_cleanly) ... ok\ntest_invalid_response_does_not_fall_back (test_models.ModelTests.test_invalid_response_does_not_fall_back) ... ok\ntest_offline_never_calls_model (test_models.ModelTests.test_offline_never_calls_model) ... ok\ntest_alias_extra_grammars_are_retained (test_runner.RunnerTests.test_alias_extra_grammars_are_retained) ... ok\ntest_checker_failures_are_data (test_runner.RunnerTests.test_checker_failures_are_data) ... ok\ntest_evolution_counts_parent_cancellation (test_runner.RunnerTests.test_evolution_counts_parent_cancellation) ... ok\ntest_front_keeps_both_directions (test_runner.RunnerTests.test_front_keeps_both_directions) ... ok\ntest_inactive_mechanism_cannot_promote (test_runner.RunnerTests.test_inactive_mechanism_cannot_promote) ... ok\ntest_probability_limit_is_exact (test_runner.RunnerTests.test_probability_limit_is_exact) ... ok\ntest_template_is_editable_pinned_source (test_source.SourceTests.test_template_is_editable_pinned_source) ... ok\ntest_requested_final_audit_is_required (test_submission.SubmissionTests.test_requested_final_audit_is_required) ... ok\ntest_stale_screen_cannot_override_a_failed_final_audit (test_submission.SubmissionTests.test_stale_screen_cannot_override_a_failed_final_audit) ... ok\n\n----------------------------------------------------------------------\nRan 56 tests in 2.870s\n\nOK (skipped=1)\n"
+    },
+    {
+      "check": "data-verification",
+      "returncode": 0,
+      "tail": "{\n  \"cleaned_files\": 19,\n  \"sources\": {\n    \"catalog_sha256\": \"9010fe0af23ab18e4dd073bd2b4b4c881600cd93a55b9c0383967d6179600d88\",\n    \"files\": 421,\n    \"passed\": true,\n    \"targets\": 15\n  }\n}\n"
+    }
+  ]
+}

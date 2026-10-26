@@ -1,0 +1,77 @@
+{
+  "action_index": 1,
+  "api_keys_removed": true,
+  "billing_scope": "CLI estimate; subscription invoice unavailable",
+  "command": [
+    "{redacted-path-e741d98717e1}",
+    "-p",
+    "--output-format",
+    "json",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "mcp__*",
+    "--no-session-persistence",
+    "--setting-sources",
+    "",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--settings",
+    "{\"disableAllHooks\":true}",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "medium",
+    "--json-schema",
+    "{\"type\": \"object\", \"properties\": {\"action_index\": {\"type\": \"integer\", \"minimum\": 0, \"maximum\": 1}, \"reason\": {\"type\": \"string\", \"maxLength\": 800}}, \"required\": [\"action_index\", \"reason\"], \"additionalProperties\": false}"
+  ],
+  "executable_sha256": "ffb64331bc0ee1b69efb7c2c428bd3ab516bc31b75bf60886b356c97c1c25ffd",
+  "model_called": true,
+  "provider": "claude",
+  "provider_estimate_usd": 0.03454,
+  "reason": "mfsur includes all the mfs passes: known-control simplification, phase-only AND, and classical guards. It also adds guarded inverse-AND uncomputation and measurement-based erasure of ancillas that are written but never read. These extra passes can remove Toffoli-style uncompute cost and ancilla cleanup that mfs keeps. No circuit result was supplied, so I picked the larger admitted recipe because it can do at least as much as mfs.",
+  "requested_model": "claude-opus-5-5",
+  "resolved_models": [
+    "claude-opus-5-5"
+  ],
+  "returncode": 0,
+  "started_unix": 1792964198.339424,
+  "success": true,
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 3764,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 3764,
+    "cache_read_input_tokens": 0,
+    "fallback_credit": null,
+    "inference_geo": "global",
+    "input_tokens": 2,
+    "iterations": [
+      {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 3764,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 3764,
+        "cache_read_input_tokens": 0,
+        "input_tokens": 2,
+        "output_tokens": 221,
+        "type": "message"
+      }
+    ],
+    "output_tokens": 221,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_fetch_requests": 0,
+      "web_search_requests": 0
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+  },
+  "wall_seconds": 12.192581176757812
+}

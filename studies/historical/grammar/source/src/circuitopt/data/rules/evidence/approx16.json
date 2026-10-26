@@ -1,0 +1,90 @@
+[
+ {
+  "T": 7065,
+  "Q": 147,
+  "failing_inputs": 0,
+  "inputs": 65520,
+  "variant": "exact: 31 steps, proven widths",
+  "TQ": 1038555
+ },
+ {
+  "T": 6771,
+  "Q": 147,
+  "failing_inputs": 207,
+  "inputs": 65520,
+  "variant": "schedule cut to 29 steps",
+  "TQ": 995337
+ },
+ {
+  "T": 6445,
+  "Q": 147,
+  "failing_inputs": 1973,
+  "inputs": 65520,
+  "variant": "schedule cut to 27 steps",
+  "TQ": 947415
+ },
+ {
+  "T": 6087,
+  "Q": 147,
+  "failing_inputs": 9173,
+  "inputs": 65520,
+  "variant": "schedule cut to 25 steps",
+  "TQ": 894789
+ },
+ {
+  "T": 6449,
+  "Q": 147,
+  "failing_inputs": 1163,
+  "inputs": 65520,
+  "variant": "widths fitted to 512 samples, margin 0",
+  "TQ": 948003
+ },
+ {
+  "T": 6625,
+  "Q": 147,
+  "failing_inputs": 361,
+  "inputs": 65520,
+  "variant": "widths fitted to 512 samples, margin 1",
+  "TQ": 973875
+ },
+ {
+  "T": 6785,
+  "Q": 147,
+  "failing_inputs": 85,
+  "inputs": 65520,
+  "variant": "widths fitted to 512 samples, margin 2",
+  "TQ": 997395
+ },
+ {
+  "T": 6467,
+  "Q": 147,
+  "failing_inputs": 65411,
+  "inputs": 65520,
+  "variant": "compare top 3 bits only",
+  "TQ": 950649
+ },
+ {
+  "T": 6581,
+  "Q": 147,
+  "failing_inputs": 64813,
+  "inputs": 65520,
+  "variant": "compare top 5 bits only",
+  "TQ": 967407
+ },
+ {
+  "T": 6737,
+  "Q": 147,
+  "failing_inputs": 57637,
+  "inputs": 65520,
+  "variant": "compare top 8 bits only",
+  "TQ": 990339
+ },
+ {
+  "T": 5942,
+  "Q": 143,
+  "failing_inputs": 26379,
+  "inputs": 65520,
+  "variant": "cut 28 + fitted margin 1 + compare 8",
+  "TQ": 849706
+ }
+]

@@ -1,0 +1,116 @@
+{
+  "resource_rows": [
+    [
+      "16-bit division",
+      "Starting circuit",
+      147,
+      12697,
+      1866459,
+      "Reference"
+    ],
+    [
+      "",
+      "Shared endpoint",
+      130,
+      6851,
+      890630,
+      "Qualified at $10^{-3}$"
+    ],
+    [
+      "256-bit division",
+      "Before transfer",
+      2307,
+      1833465,
+      4229803755,
+      "32 development inputs"
+    ],
+    [
+      "",
+      "After transfer",
+      2050,
+      1829377,
+      3750222850,
+      "32 development inputs"
+    ],
+    [
+      "Point addition",
+      "Repaired Leapfrog",
+      1292,
+      857382,
+      1107737544,
+      "Qualified; Fig.~\\ref{fig:reliability}"
+    ],
+    [
+      "",
+      "Selected settings",
+      1270,
+      793798,
+      1008123460,
+      "$86/262{,}144$; $U=4.05\\times10^{-4}$"
+    ]
+  ],
+  "generated_edit_funnel": [
+    [
+      "Base + hint",
+      188,
+      80,
+      62,
+      35,
+      0
+    ],
+    [
+      "v1 LoRA",
+      188,
+      86,
+      72,
+      42,
+      0
+    ],
+    [
+      "v1 OFT",
+      188,
+      77,
+      68,
+      42,
+      0
+    ],
+    [
+      "v1 QuIC-S",
+      188,
+      65,
+      60,
+      40,
+      0
+    ],
+    [
+      "v1 QuIC-M",
+      188,
+      59,
+      49,
+      24,
+      0
+    ],
+    [
+      "v6 LoRA",
+      312,
+      277,
+      127,
+      88,
+      0
+    ],
+    [
+      "v6 + repair",
+      312,
+      273,
+      136,
+      96,
+      0
+    ]
+  ],
+  "same_outputs": [
+    "v6 LoRA",
+    "v6 + repair"
+  ],
+  "main_commit": "f2dc745b40c02828a19dc2b486923993027e2a38",
+  "finetune_commit": "cde226c204e3d57fe8d02f480f40e10e423164b2"
+}

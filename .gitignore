@@ -1,0 +1,20 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.cache/
+target/
+build/
+dist/
+.DS_Store
+
+# Generated operations and local executables are reproduced from pinned source.
+work/
+work-*.tmp
+work-*.log
+docs/CONTINUATION-*.md
+docs/IMPLEMENTATION.md

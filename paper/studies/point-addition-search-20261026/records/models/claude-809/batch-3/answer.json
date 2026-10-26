@@ -1,0 +1,4 @@
+{
+  "action_index": 38,
+  "reason": "From the archive: u cuts mean Toffolis by about 3.4k. free_s lowers Q from 214 to 198. combined_y adds about 355 Toffolis (c1111 vs c1110, c1011 vs c1010). r saves about 60. The best so far is c1110 (QT 5.53M). None of the remaining recipes combines u with free_s, so I expect none to beat it. The last two slots are better used to separate effects. c1100 tests u+r without free_s (estimate: Q 214, about 28.0k Toffolis, QT about 6.0M). c0010 tests free_s alone (Q 198), which isolates r's effect against c0110 without u."
+}

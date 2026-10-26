@@ -1,0 +1,23 @@
+{
+  "candidate": "q799-ur",
+  "counts": {
+    "ancilla_garbage_batches": 0,
+    "classical_mismatches": 0,
+    "phase_garbage_batches": 0,
+    "shots": 9024
+  },
+  "eval_binary_sha256": "1ffe6e4fb95c084598dedfc9f99378e925d6d67d268830361ef81fc8877767c1",
+  "ops_sha256": "0a2684d0424b381b032a7cbc0a421250c2fb4b0b7f630106f57580b107315635",
+  "passed": true,
+  "returncode": 0,
+  "scope": "One trusted-evaluator screen of these exact bytes under amendment 1. It is not repeated.",
+  "score": {
+    "metrics": {
+      "qubits": 799,
+      "toffoli": 12710488
+    },
+    "score": 10155679912
+  },
+  "screened_utc": "2026-10-25T12:58:57.613228+00:00",
+  "wall_seconds": 62.19139258284122
+}

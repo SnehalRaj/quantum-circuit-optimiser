@@ -1,0 +1,4 @@
+{
+  "action_index": 34,
+  "reason": "Pairs the full stack c1111 with the u+r core c1100. u and r cut Toffoli count by replacing AND uncomputation with measurement and phase fixups, which is where most of mean_T should drop. free_s should lower Q, and combined_y may cut product Toffolis further. Measuring the two together tells us whether free_s+combined_y add value on top of u+r, and if c1111 fails a check, c1100 is still a likely gain over the parent."
+}

@@ -1,0 +1,11 @@
+{
+  "pairs": 8192,
+  "streams": 2,
+  "alpha": 0.025,
+  "label": "frontier-catalog-transfer/8b43100bd9064200e02958b5a8630a76",
+  "policy": "mfsur",
+  "parent_policy": "mfs",
+  "catalog_sha256": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052",
+  "source_revision_before_work": "f3f891b72568d499aa089172d87e6b6a029805cd",
+  "scope": "Paired development check of the shared exact catalog on full 16-bit point addition."
+}

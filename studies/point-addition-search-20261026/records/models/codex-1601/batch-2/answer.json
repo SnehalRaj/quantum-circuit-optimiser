@@ -1,0 +1,4 @@
+{
+  "action_index": 95,
+  "reason": "Test c0110 and c1010 to isolate phase conversion and measurement-based erasure against c1110. Both retain cofactor release and omit combined_y, which increased measured QT."
+}

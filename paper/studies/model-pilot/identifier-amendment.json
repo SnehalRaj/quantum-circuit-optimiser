@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-25T14:51:12.340528+00:00",
+  "reason": "The requested family label gpt-6.1 is not a supported CLI identifier for this ChatGPT subscription",
+  "failed_alias_preflight": "preflight/codex.json",
+  "failed_alias_preflight_sha256": "06152fbfebdb8359ef217ea39a92414cb184e40e50fc4438d2ac7cfe1e95f43f",
+  "new_arm_name": "codex61sol",
+  "new_model_identifier": "gpt-6.1-sol",
+  "model_metadata": [
+    {
+      "slug": "gpt-6.1-sol",
+      "display_name": "GPT-6.1-Sol",
+      "supported_in_api": true,
+      "visibility": "list"
+    }
+  ],
+  "metadata_fetched_at": "2026-10-25T14:48:07.288339Z",
+  "parent_contract_sha256": "2839c3d8ff104e478066894f48ad3f3021898cbe316d8501a51a8e772c8627be",
+  "amendment_driver_sha256": "6d3d456210fc5c14c506fe649716d7232503e509d11d21ca5db5c23a505d16b1",
+  "scope": "Identifier correction before any GPT search; preserve the original failed preflight. Every search setting remains unchanged.",
+  "selection": "No GPT candidate or search outcome existed when the identifier correction was chosen",
+  "audit_family": "The corrected arm replaces no observed search; the three executable arms still have at most111 distinct audit circuits"
+}

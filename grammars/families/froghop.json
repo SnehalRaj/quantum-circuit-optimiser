@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "id": "family.froghop",
+  "revision": 1,
+  "title": "Froghop family addendum",
+  "description": "Froghop source mechanisms and their mapping limits. The shared executable conditional compiler is defined in the base grammar.",
+  "definitions": {
+    "parent": "A source commit with retained settings, schedules, credits, and nonce.",
+    "target": "A pinned parent plus the declared measured-cleanup policy edit."
+  },
+  "evidence": [
+    {
+      "path": "vendor/froghop/q839/src/point_add/froghop_one.rs",
+      "sha256": "699b978a0ee1c34aaf600089cc578f65c334026d1a578f238cac8ec6b53e15f1",
+      "symbol": "Source constructor"
+    },
+    {
+      "path": "vendor/froghop/q839/src/point_add/sched_one.txt",
+      "sha256": "a0d92ebf7ec7f1cd70dbe29c0c19e3cc30c8fc011da6f00f2282d37f91062873",
+      "symbol": "Inherited schedule"
+    },
+    {
+      "path": "data/targets/catalog.json",
+      "symbol": "The14 frozen target recipes and their parent source hashes"
+    }
+  ],
+  "rules": [
+    {
+      "id": "froghop.history_schedule",
+      "revision": 1,
+      "title": "Edit the Froghop history schedule",
+      "description": "The inherited constructor and its schedule tables define how walk choices are stored and replayed. A schedule edit must keep each history use and cleanup consistent.",
+      "status": "research",
+      "families": [
+        "froghop"
+      ],
+      "parameters": {
+        "schedule": {
+          "type": "string",
+          "enum": [
+            "inherited"
+          ],
+          "default": "inherited"
+        }
+      },
+      "guards": [
+        "SOURCE_TABLE_SHAPE",
+        "HISTORY_READ_WRITE_MATCH",
+        "NO_LIVE_ALIAS",
+        "FINAL_HISTORY_ZERO"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "The inherited one- or double-path schedule and history representation.",
+        "replace": "A source-backed alternative schedule with its matching replay."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "vendor/froghop/q839/src/point_add/froghop_one.rs",
+          "sha256": "699b978a0ee1c34aaf600089cc578f65c334026d1a578f238cac8ec6b53e15f1",
+          "symbol": "Source constructor"
+        },
+        {
+          "path": "vendor/froghop/q839/src/point_add/sched_one.txt",
+          "sha256": "a0d92ebf7ec7f1cd70dbe29c0c19e3cc30c8fc011da6f00f2282d37f91062873",
+          "symbol": "Inherited schedule"
+        },
+        {
+          "path": "data/targets/catalog.json",
+          "symbol": "The14 frozen target recipes and their parent source hashes"
+        }
+      ],
+      "requires": [],
+      "notes": [
+        "Selecting one of the frozen targets changes the inherited large recipe. The fast constructor does not implement a scaled Froghop history schedule."
+      ]
+    },
+    {
+      "id": "froghop.limb_geometry",
+      "revision": 1,
+      "title": "Edit Froghop limb geometry",
+      "description": "The source family uses target-specific arithmetic and allocation geometry. A width edit needs a matching product and carry implementation.",
+      "status": "research",
+      "families": [
+        "froghop"
+      ],
+      "parameters": {},
+      "guards": [
+        "LIMB_BOUNDS",
+        "CARRY_SUPPORT",
+        "SCHEDULE_MATCH",
+        "CLEAN_ALLOCATION"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "A source-defined limb geometry.",
+        "replace": "A geometry with verified carry bounds and a matching allocation."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "vendor/froghop/q839/src/point_add/froghop_one.rs",
+          "sha256": "699b978a0ee1c34aaf600089cc578f65c334026d1a578f238cac8ec6b53e15f1",
+          "symbol": "Source constructor"
+        },
+        {
+          "path": "vendor/froghop/q839/src/point_add/sched_one.txt",
+          "sha256": "a0d92ebf7ec7f1cd70dbe29c0c19e3cc30c8fc011da6f00f2282d37f91062873",
+          "symbol": "Inherited schedule"
+        },
+        {
+          "path": "data/targets/catalog.json",
+          "symbol": "The14 frozen target recipes and their parent source hashes"
+        }
+      ],
+      "requires": []
+    },
+    {
+      "id": "froghop.replay_cleanup",
+      "revision": 1,
+      "title": "Change the replay cleanup boundary",
+      "description": "Move a source-defined arithmetic cleanup only when its history values and phase correction remain available.",
+      "status": "research",
+      "families": [
+        "froghop"
+      ],
+      "parameters": {},
+      "guards": [
+        "HISTORY_AVAILABLE",
+        "CORRECT_REVERSE",
+        "PHASE_FIXED",
+        "NO_EARLY_RELEASE"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "The inherited cleanup and replay order.",
+        "replace": "A dependency-valid alternative order."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "vendor/froghop/q839/src/point_add/froghop_one.rs",
+          "sha256": "699b978a0ee1c34aaf600089cc578f65c334026d1a578f238cac8ec6b53e15f1",
+          "symbol": "Source constructor"
+        },
+        {
+          "path": "vendor/froghop/q839/src/point_add/sched_one.txt",
+          "sha256": "a0d92ebf7ec7f1cd70dbe29c0c19e3cc30c8fc011da6f00f2282d37f91062873",
+          "symbol": "Inherited schedule"
+        },
+        {
+          "path": "data/targets/catalog.json",
+          "symbol": "The14 frozen target recipes and their parent source hashes"
+        }
+      ],
+      "requires": []
+    },
+    {
+      "id": "froghop.inherited_approximation",
+      "revision": 1,
+      "title": "Keep the inherited approximation contract",
+      "description": "The frozen14 recipes keep parent arithmetic settings and nonce choices fixed. Only the declared conditional-pass policy changes.",
+      "status": "specification",
+      "families": [
+        "froghop"
+      ],
+      "parameters": {
+        "parent_nonce": {
+          "type": "string",
+          "enum": [
+            "inherited"
+          ],
+          "default": "inherited"
+        }
+      },
+      "guards": [
+        "EXACT_PARENT_SOURCE_HASH",
+        "ONE_COUNTED_POLICY_EDIT",
+        "NONCE_UNCHANGED",
+        "FRESH_LARGE_AUDIT"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "A frozen parent source with its published approximation settings.",
+        "replace": "The same source with one verified run_with policy replacement."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "data/targets/historical/q839/source-manifest.json",
+          "symbol": "Counted source edit"
+        },
+        {
+          "path": "data/targets/historical/q839/note.md",
+          "symbol": "Lineage and inherited approximation disclosure"
+        }
+      ],
+      "requires": []
+    }
+  ]
+}

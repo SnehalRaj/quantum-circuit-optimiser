@@ -1,0 +1,4 @@
+{
+  "action_index": 37,
+  "reason": "Both recipes use AND erasure, which shows the largest measured Toffoli reduction. c1011 also releases the cofactor register to reduce Q. c1101 tests combined coordinate products without cofactor reconstruction; their interaction remains unmeasured."
+}

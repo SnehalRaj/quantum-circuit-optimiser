@@ -1,0 +1,23 @@
+{
+  "candidate": "q800-ur",
+  "counts": {
+    "ancilla_garbage_batches": 0,
+    "classical_mismatches": 0,
+    "phase_garbage_batches": 0,
+    "shots": 9024
+  },
+  "eval_binary_sha256": "1ffe6e4fb95c084598dedfc9f99378e925d6d67d268830361ef81fc8877767c1",
+  "ops_sha256": "64424c9e512522f7d909866ca8032ebacb659d5a745254b02ca51ebb9379e3e6",
+  "passed": true,
+  "returncode": 0,
+  "scope": "One trusted-evaluator screen of these exact bytes under amendment 1. It is not repeated.",
+  "score": {
+    "metrics": {
+      "qubits": 800,
+      "toffoli": 12612556
+    },
+    "score": 10090044800
+  },
+  "screened_utc": "2026-10-25T12:25:45.165119+00:00",
+  "wall_seconds": 58.705818958580494
+}

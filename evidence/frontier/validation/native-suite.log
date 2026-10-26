@@ -1,0 +1,85 @@
+   Compiling lco-native v0.1.0 ({repository}/native)
+warning: function `equivalent` is never used
+  --> src/../../vendor/frontier_rewrite/catalog.rs:49:8
+   |
+49 | pub fn equivalent(a:&[Op],b:&[Op])->bool {let mut all=a.to_vec();all.extend_from_slice(b);let w=wires(&all);assert!(w.len()<=4);signature...
+   |        ^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `lco-native` (lib test) generated 1 warning
+    Finished `release` profile [optimized] target(s) in 1m 11s
+     Running unittests src/lib.rs (work/frontier-native-target/release/deps/lco_native-d4710c5b538d4834)
+
+running 4 tests
+test native_tests::all_conditional_subsets_have_one_canonical_policy ... ok
+test native_tests::compiler_receipt_rejects_disabled_guards ... ok
+test native_tests::exact_cancellation_uses_adjacent_unitary_involutions_only ... ok
+test local_catalog::catalog::fixed_simulator_certificate::every_catalog_entry_matches_the_fixed_simulator ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running unittests src/bin/circuit-check.rs (work/frontier-native-target/release/deps/circuit_check-d5bc80333738b38f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/circuit-transform.rs (work/frontier-native-target/release/deps/circuit_transform-e7196b10cf6dcf0d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/small-emit.rs (work/frontier-native-target/release/deps/small_emit-7f442e05587c7a57)
+
+running 8 tests
+test original::scaled_tests::small_field_classical_kaliski_bounds_cover_every_denominator ... ok
+test original::scaled_tests::large_field_classical_kaliski_bounds_cover_a_fixed_corpus ... ok
+test original::scaled_tests::legacy_256_primitive_stream_matches_the_original_source ... ok
+test original::scaled_tests::scaled_product_reduces_raw_words ... ok
+test original::scaled_tests::scaled_add_and_subtract_cover_overflow ... ok
+test original::scaled_tests::scaled_double_and_halve_cover_the_modulus_gap ... ok
+test original::scaled_tests::scaled_profile_selects_the_field_width ... ok
+test original::scaled_tests::scaled_reducer_normalizes_the_raw_low_word ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.06s
+
+     Running tests/conditional.rs (work/frontier-native-target/release/deps/conditional-0eae91ee96be8262)
+
+running 3 tests
+test diagnostic_environment_controls_are_rejected ... ok
+test inactive_standalone_mechanism_is_rejected_with_a_receipt ... ok
+test real_small_point_addition_activates_both_conditional_mechanisms ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.85s
+
+     Running tests/local_catalog.rs (work/frontier-native-target/release/deps/local_catalog-6966dc909311e2ed)
+
+running 7 tests
+test wrapper_rewrites_and_preserves_value_phase_and_identity_tail ... ok
+test preserves_the_inherited_identity_tail ... ok
+test certificates::removes_nonlinearity_from_control_conjugation ... ok
+test certificates::keeps_measurement_barriers ... ok
+test certificates::preserves_phase_and_controlled_copy_conjugations ... ok
+test certificates::fixed_simulator_checks_noncontiguous_roles_and_outer_masks ... ok
+test certificates::catalog::fixed_simulator_certificate::every_catalog_entry_matches_the_fixed_simulator ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/protocol.rs (work/frontier-native-target/release/deps/protocol-f75992442d7b5356)
+
+running 4 tests
+test exact_bounds_and_malformed_artifacts_keep_the_failure_criterion ... ok
+test small_group_parameters_and_exact_inputs_are_checked_independently ... ok
+test both_widths_detect_every_fault_and_partial_simd_batches ... ok
+test fixed_checker_uses_the_real_oracle_and_retains_every_input ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.27s
+
+   Doc-tests lco_native
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

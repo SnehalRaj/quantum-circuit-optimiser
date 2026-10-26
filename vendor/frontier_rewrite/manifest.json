@@ -1,0 +1,46 @@
+{
+  "schema": "vendored-local-catalog-v1",
+  "source_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+  "source_repository": "https://github.com/Layr-Labs/ecdsafail-challenge",
+  "files_sha256": {
+    "NOTICE": "fdfff837a1a85c14fc8854cfb2fa8a43b2ac58a6b8fcc50e56fe6c9d1293c58f",
+    "README.md": "c89cadbbce17dc4fd6e613b80a53d56a5d9164690ab30bcbeda9fabed8d61ecc",
+    "catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052",
+    "certificate.json": "12dab0f7e5e248abad8b581c664681d604249499f418ba2463f5b76a7fabeec3",
+    "evidence/catalog-grammar.md": "6604ee68f3a01d9e26a2fc5750499ee03e0bfec2c52d19a3ebe62b130f819856",
+    "evidence/catalog-native-review.md": "293d47e954557ed30749ad765e9f3cea8f847267a3ca22fdcae20ef004272e20",
+    "evidence/native-final.log": "b29724ab6503b307559b3d3354d38a3deeafb690b936ddf170e9de38522f588a",
+    "mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53",
+    "tests/catalog.rs": "3e5a07adbecb613e910221778591172784f08ac5ca4aa9794adc1a8fc6447806"
+  },
+  "origins": {
+    "mod.rs": {
+      "source": "runs/final-frontier-20261024/official/q1097-catalog/challenge/src/point_add/frontier_rewrite/mod.rs",
+      "sha256": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53"
+    },
+    "catalog.rs": {
+      "source": "runs/final-frontier-20261024/official/q1097-catalog/challenge/src/point_add/frontier_rewrite/catalog.rs",
+      "sha256": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+    },
+    "NOTICE": {
+      "source": "runs/final-frontier-20261024/official/q1097-catalog/challenge/NOTICE",
+      "sha256": "fdfff837a1a85c14fc8854cfb2fa8a43b2ac58a6b8fcc50e56fe6c9d1293c58f"
+    },
+    "tests/catalog.rs": {
+      "source": "runs/final-frontier-20261024/admission/catalog-transformer-source/tests/catalog.rs",
+      "sha256": "3e5a07adbecb613e910221778591172784f08ac5ca4aa9794adc1a8fc6447806"
+    },
+    "evidence/native-final.log": {
+      "source": "runs/final-frontier-20261024/admission/verification/native-final.log",
+      "sha256": "b29724ab6503b307559b3d3354d38a3deeafb690b936ddf170e9de38522f588a"
+    },
+    "evidence/catalog-grammar.md": {
+      "source": "runs/final-frontier-20261024/admission/reviews/catalog-grammar.md",
+      "sha256": "6604ee68f3a01d9e26a2fc5750499ee03e0bfec2c52d19a3ebe62b130f819856"
+    },
+    "evidence/catalog-native-review.md": {
+      "source": "runs/final-frontier-20261024/admission/reviews/catalog-native-review.md",
+      "sha256": "293d47e954557ed30749ad765e9f3cea8f847267a3ca22fdcae20ef004272e20"
+    }
+  }
+}

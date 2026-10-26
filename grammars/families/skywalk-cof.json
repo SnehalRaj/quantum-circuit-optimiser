@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "id": "family.skywalk_cof",
+  "revision": 1,
+  "title": "Skywalk and shared-cofactor mechanism addendum",
+  "description": "Each mechanism needs its own source preconditions. These catalog rules remain blocked until a constructor and both stage mappings exist.",
+  "definitions": {
+    "retained product": "A temporary Boolean carry product owned by one producer and one consumer.",
+    "rail": "A signed arithmetic workspace whose width affects overflow and history."
+  },
+  "evidence": [
+    {
+      "path": "https://github.com/jieyilong/ecdsafail_skills/tree/c0c5e7fe0af9720119bf5a6a7fc14d9c116e4890",
+      "symbol": "October source audit; Skywalk source05161d300867edfeec94a4d7fc3edc087e9527d2"
+    }
+  ],
+  "rules": [
+    {
+      "id": "skywalk.retained_carry_product",
+      "revision": 1,
+      "title": "Share a retained carry product",
+      "description": "The Skywalk history encoder can consume a carry product retained by arithmetic. The inverse encoder repairs its deferred phase and returns the product.",
+      "status": "research",
+      "families": [
+        "skywalk-cof"
+      ],
+      "parameters": {},
+      "guards": [
+        "PRODUCT_SUPPORT_PROVEN",
+        "SINGLE_CONSUMER",
+        "MATCHED_INVERSE_ENCODER",
+        "DEFERRED_PHASE_REPAIRED",
+        "PRODUCT_RETURNED"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "An arithmetic carry product with a source-defined history consumer.",
+        "replace": "A shared retained product instead of a recomputed product."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "https://github.com/jieyilong/ecdsafail_skills/tree/c0c5e7fe0af9720119bf5a6a7fc14d9c116e4890",
+          "symbol": "October source audit; Skywalk source05161d300867edfeec94a4d7fc3edc087e9527d2"
+        }
+      ],
+      "requires": []
+    },
+    {
+      "id": "skywalk.rail_padding",
+      "revision": 1,
+      "title": "Add signed rail padding",
+      "description": "Extra signed rail bits can reduce overflow exceptions. A new rail geometry invalidates source-indexed cell and terminal assumptions.",
+      "status": "research",
+      "families": [
+        "skywalk-cof"
+      ],
+      "parameters": {
+        "padding": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 16,
+          "default": 0
+        }
+      },
+      "guards": [
+        "TOTAL_WIDTH_AT_MOST_259",
+        "REBUILD_HISTORY_SHAPE",
+        "DISABLE_INDEXED_OVERRIDES",
+        "DISABLE_STALE_TERMINAL_PAIR"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "A source rail with inherited width.",
+        "replace": "The padded rail and its matching inverse history."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "https://github.com/jieyilong/ecdsafail_skills/tree/c0c5e7fe0af9720119bf5a6a7fc14d9c116e4890",
+          "symbol": "October source audit; Skywalk source05161d300867edfeec94a4d7fc3edc087e9527d2"
+        }
+      ],
+      "requires": []
+    },
+    {
+      "id": "skywalk.extra_walk_groups",
+      "revision": 1,
+      "title": "Add walk groups",
+      "description": "An extra source group adds five walk ticks. More ticks can improve reliability at a measured gate cost.",
+      "status": "research",
+      "families": [
+        "skywalk-cof"
+      ],
+      "parameters": {
+        "groups": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4,
+          "default": 0
+        }
+      },
+      "guards": [
+        "MATCH_FORWARD_AND_REVERSE",
+        "UPDATED_HISTORY_LENGTH",
+        "FRESH_FULL_AUDIT"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "The inherited walk group count.",
+        "replace": "The inherited count plus five ticks per extra group."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "https://github.com/jieyilong/ecdsafail_skills/tree/c0c5e7fe0af9720119bf5a6a7fc14d9c116e4890",
+          "symbol": "October source audit; Skywalk source05161d300867edfeec94a4d7fc3edc087e9527d2"
+        }
+      ],
+      "requires": []
+    },
+    {
+      "id": "cof.shared_arithmetic_frame",
+      "revision": 1,
+      "title": "Carry cofactors in a shared frame",
+      "description": "The COF variant places related cofactor values in a shared arithmetic frame. Every update must retain the declared relation and usable cleanup values.",
+      "status": "research",
+      "families": [
+        "skywalk-cof"
+      ],
+      "parameters": {},
+      "guards": [
+        "SOURCE_COF_RELATION",
+        "UPDATE_RELATION_PRESERVED",
+        "NO_LIVE_ALIAS",
+        "COMPLETE_REPLAY_AND_CLEANUP"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "Source-owned cofactor registers and their update relation.",
+        "replace": "A source-backed shared-frame update with its inverse."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "https://github.com/Layr-Labs/ecdsafail-challenge/blob/ceffcd216c2a4a987987686fee48d89f54b60c41/src/point_add/skycof/pointadd.rs#L24",
+          "symbol": "Pinned SKY-COF source interface and arithmetic frame"
+        },
+        {
+          "path": "https://github.com/Layr-Labs/ecdsafail-challenge/blob/ceffcd216c2a4a987987686fee48d89f54b60c41/src/point_add/skycof/walk.rs#L54",
+          "symbol": "Cofactor walk and phase debt guards"
+        }
+      ],
+      "requires": [],
+      "notes": [
+        "This rule records the supplied source-map concept. It does not supply a COF constructor or a performance claim."
+      ]
+    }
+  ]
+}

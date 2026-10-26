@@ -1,0 +1,23 @@
+{
+  "candidate": "q839-ur",
+  "counts": {
+    "ancilla_garbage_batches": 0,
+    "classical_mismatches": 0,
+    "phase_garbage_batches": 0,
+    "shots": 9024
+  },
+  "eval_binary_sha256": "1ffe6e4fb95c084598dedfc9f99378e925d6d67d268830361ef81fc8877767c1",
+  "ops_sha256": "0f8ff05332b9394eb63221200872243d2991be30994e95bb8b977e72f45711a1",
+  "passed": true,
+  "returncode": 0,
+  "scope": "One trusted-evaluator screen of these exact bytes under amendment 1. It is not repeated.",
+  "score": {
+    "metrics": {
+      "qubits": 839,
+      "toffoli": 8564543
+    },
+    "score": 7185651577
+  },
+  "screened_utc": "2026-10-24T21:05:27.084461+00:00",
+  "wall_seconds": 53.73262650053948
+}

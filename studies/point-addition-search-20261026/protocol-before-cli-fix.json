@@ -1,0 +1,250 @@
+{
+  "arms": [
+    "random",
+    "evolution",
+    "claude",
+    "codex"
+  ],
+  "audit": {
+    "alpha": 0.0025,
+    "epsilon": 0.001,
+    "failure_policy": "Retain failed finalist as baseline; report failure without reselection",
+    "family_size": 20,
+    "label": "Draw only after all twenty search finalists freeze",
+    "pairs": 16384,
+    "scope": "All sixteen recipes and raw parent; at most seventeen circuits",
+    "streams": 2
+  },
+  "batch_policy": "Choose two unseen recipes before either evaluation. All arms receive feedback only after the batch.",
+  "batch_size": 2,
+  "binaries": {
+    "checker": "9cf8903b33dd8971193d9b59435640fdca0fea1348a927fff83d1009a0089aed",
+    "emitter": "a29bb931ac3ca64cd89191822ae2b52c016dbaa7a678adc5a40fea38c42edbfa"
+  },
+  "capacity": "Evaluate all recipes after search; use one common development packet. Report attainable minima by grammar.",
+  "checkpoints": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "development": {
+    "admission": "zero failed inputs",
+    "checks": [
+      "coordinates",
+      "phase",
+      "scratch",
+      "classical addend"
+    ],
+    "pairs": 4096,
+    "streams": 2
+  },
+  "evolution_policy": "Choose the lowest-cost valid archive parent with probability 0.75, otherwise a uniform valid parent. Select an unseen one-bit neighbor with probability 0.75 when available; otherwise choose uniformly from unseen recipes. Freeze both choices before feedback.",
+  "failure_policy": "Invalid, duplicate, tool-using, failed, or timed-out model batches consume two slots; no offline replacement or retry",
+  "grammars": {
+    "G0": [
+      "u",
+      "r"
+    ],
+    "G1": [
+      "u",
+      "r",
+      "free_s"
+    ],
+    "G2": [
+      "u",
+      "r",
+      "free_s",
+      "combined_y"
+    ]
+  },
+  "limits": [
+    "One inherited Kaliski constructor at sixteen bits",
+    "Finite sixteen-recipe space",
+    "Model seeds vary menu order and evaluation packets; CLI sampling seeds are not controlled",
+    "Grammar capacity and proposer efficiency are separate measurements",
+    "No full-width transfer claim"
+  ],
+  "metric": "Q times mean executed Toffolis; gains relative to prepared mfs parent on the same inputs",
+  "model_configs": {
+    "claude": {
+      "effort": "medium",
+      "max_calls": 4,
+      "model": "claude-opus-5-5",
+      "provider": "claude",
+      "timeout_seconds": 240
+    },
+    "codex": {
+      "effort": "medium",
+      "max_calls": 4,
+      "model": "gpt-6.1-sol",
+      "provider": "codex",
+      "timeout_seconds": 240
+    }
+  },
+  "model_policy": "Select an ordered pair from the same unseen recipe universe using the measured archive and rule descriptions. No exhaustive outcomes or historical winners in the prompt.",
+  "parent": {
+    "combined_y": false,
+    "free_s": false,
+    "id": "c0000",
+    "policy": "mfs",
+    "r": false,
+    "u": false
+  },
+  "proposal_budget": 8,
+  "random_policy": "Uniform ordered pair without replacement from unseen recipes",
+  "raw_parent": {
+    "combined_y": false,
+    "free_s": false,
+    "id": "raw",
+    "policy": "",
+    "r": false,
+    "u": false
+  },
+  "recipes": [
+    {
+      "combined_y": false,
+      "free_s": false,
+      "id": "c0000",
+      "policy": "mfs",
+      "r": false,
+      "u": false
+    },
+    {
+      "combined_y": true,
+      "free_s": false,
+      "id": "c0001",
+      "policy": "mfs",
+      "r": false,
+      "u": false
+    },
+    {
+      "combined_y": false,
+      "free_s": true,
+      "id": "c0010",
+      "policy": "mfs",
+      "r": false,
+      "u": false
+    },
+    {
+      "combined_y": true,
+      "free_s": true,
+      "id": "c0011",
+      "policy": "mfs",
+      "r": false,
+      "u": false
+    },
+    {
+      "combined_y": false,
+      "free_s": false,
+      "id": "c0100",
+      "policy": "mfsr",
+      "r": true,
+      "u": false
+    },
+    {
+      "combined_y": true,
+      "free_s": false,
+      "id": "c0101",
+      "policy": "mfsr",
+      "r": true,
+      "u": false
+    },
+    {
+      "combined_y": false,
+      "free_s": true,
+      "id": "c0110",
+      "policy": "mfsr",
+      "r": true,
+      "u": false
+    },
+    {
+      "combined_y": true,
+      "free_s": true,
+      "id": "c0111",
+      "policy": "mfsr",
+      "r": true,
+      "u": false
+    },
+    {
+      "combined_y": false,
+      "free_s": false,
+      "id": "c1000",
+      "policy": "mfsu",
+      "r": false,
+      "u": true
+    },
+    {
+      "combined_y": true,
+      "free_s": false,
+      "id": "c1001",
+      "policy": "mfsu",
+      "r": false,
+      "u": true
+    },
+    {
+      "combined_y": false,
+      "free_s": true,
+      "id": "c1010",
+      "policy": "mfsu",
+      "r": false,
+      "u": true
+    },
+    {
+      "combined_y": true,
+      "free_s": true,
+      "id": "c1011",
+      "policy": "mfsu",
+      "r": false,
+      "u": true
+    },
+    {
+      "combined_y": false,
+      "free_s": false,
+      "id": "c1100",
+      "policy": "mfsur",
+      "r": true,
+      "u": true
+    },
+    {
+      "combined_y": true,
+      "free_s": false,
+      "id": "c1101",
+      "policy": "mfsur",
+      "r": true,
+      "u": true
+    },
+    {
+      "combined_y": false,
+      "free_s": true,
+      "id": "c1110",
+      "policy": "mfsur",
+      "r": true,
+      "u": true
+    },
+    {
+      "combined_y": true,
+      "free_s": true,
+      "id": "c1111",
+      "policy": "mfsur",
+      "r": true,
+      "u": true
+    }
+  ],
+  "schema": "point-addition-search-v1",
+  "seeds": [
+    401,
+    809,
+    1601,
+    2309,
+    3501
+  ],
+  "sources": {
+    "native/src/bin/circuit-check.rs": "f76b07101c2fd774a827324071481b6f6d092861421f29cde41535a12ea079a0",
+    "native/src/bin/small-emit.rs": "485c6cd9234407617e3f14751fb1c4b08c4d7b952d4ac7ec426f74a17c72ecc0",
+    "native/src/lib.rs": "7c4e2787535808dc008217c699401f1eeb712dd3a4872db70c5ba000509b9829",
+    "src/llm_circuit_optimiser/models.py": "889b3a7c542208bad00db52077d97d65a4d660690b2121583f10eaece4432f56",
+    "studies/point-addition-search-20261026/run.py": "dcf1c81002e46535973f5d0c29647fc27ea0fe5d1ab73e68ae6d55d604bbc2bb",
+    "vendor/native_reference/original/mod.rs": "9730a1f1b49e50e243a267b85d8a1d2e93dae6634050cf068ad0a3ba6ff2c434"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "Q": 1270,
+  "S": 1008123460,
+  "T": 793798,
+  "mean_T": 793797.5568484042,
+  "passed": true,
+  "process": "official/9271a9aa2b368b88989e905a932d5469baece5f3af00c0e928e8dcb7b9ce3c01/process.json",
+  "receipt": "official/9271a9aa2b368b88989e905a932d5469baece5f3af00c0e928e8dcb7b9ce3c01/stdout.txt",
+  "shots": 9024,
+  "total_Toffoli": 7163229153
+}

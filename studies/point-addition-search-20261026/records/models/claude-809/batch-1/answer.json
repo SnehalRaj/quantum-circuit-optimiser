@@ -1,0 +1,4 @@
+{
+  "action_index": 72,
+  "reason": "c1111 is the best so far (QT 5,604,192). Going from c1101 to c1111 shows that free_s drops Q from 214 to 198 and leaves T almost unchanged. Nothing has yet shown which of u, r or combined_y produces the drop in T from 31,769 to about 28,300. Testing c1011 (r removed) and c1110 (combined_y removed) keeps u and free_s, which are known or likely to help. Each test removes one of the two rules whose effect is uncertain. If either rule adds Toffolis or scratch qubits through phase repair or a longer product expression, one of these recipes could match or beat c1111. If neither does, the results still show how much each rule contributes."
+}

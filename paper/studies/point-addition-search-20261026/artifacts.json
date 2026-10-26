@@ -1,0 +1,138 @@
+[
+  {
+    "recipe_id": "c0000",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c0000.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c0000.qops.zst",
+    "ops_sha256": "b84161037cdd8580e28172308418c1767b179abb27a7b02aa6ac90ebb74bfaf8"
+  },
+  {
+    "recipe_id": "c0001",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c0001.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c0001.qops.zst",
+    "ops_sha256": "a007243f0c96d052584d19a1737e64780000483500b1466a8d201c013482b5bc"
+  },
+  {
+    "recipe_id": "c0010",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c0010.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c0010.qops.zst",
+    "ops_sha256": "b5104e98dd603445d7bc7e45dc78d855452ead95c8e926e56d4f485f6b21bdb0"
+  },
+  {
+    "recipe_id": "c0011",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c0011.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c0011.qops.zst",
+    "ops_sha256": "dbeddadde7c7f3fe5de008c2edfea508aa726df5227bf93b7449a719e07d9ab8"
+  },
+  {
+    "recipe_id": "c0100",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c0100.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c0100.qops.zst",
+    "ops_sha256": "1f2d68beca2a499e28db27cc3c3ea0933f06efdbcd37501ed771882eeccb8df0"
+  },
+  {
+    "recipe_id": "c0101",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c0101.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c0101.qops.zst",
+    "ops_sha256": "3581dff0eb6a21ae8e9f868304706aa79b8f1df4f56ee795eebc98802f9d6dec"
+  },
+  {
+    "recipe_id": "c0110",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c0110.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c0110.qops.zst",
+    "ops_sha256": "8be99b528cf19e8b62cc6982c782ccd068fecfa1a0106d5528caa84d2dcd0b12"
+  },
+  {
+    "recipe_id": "c0111",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c0111.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c0111.qops.zst",
+    "ops_sha256": "54809861be30ab78368b6a9aeb64dbd84da75812169534993a905b650a7bb2ec"
+  },
+  {
+    "recipe_id": "c1000",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c1000.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c1000.qops.zst",
+    "ops_sha256": "d7f905ebad6c0e52c5cac636a64045fb333c6b0f6b396c4d81569fc60ed77adb"
+  },
+  {
+    "recipe_id": "c1001",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c1001.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c1001.qops.zst",
+    "ops_sha256": "a8a09da296e540742337fd8440bee60b7d65a6a17ef7c412e416af1a8c2b9871"
+  },
+  {
+    "recipe_id": "c1010",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c1010.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c1010.qops.zst",
+    "ops_sha256": "77a531ef7d5bead56efb86a0221ae3693830c4a1c4df9d339fe1c03a369b9358"
+  },
+  {
+    "recipe_id": "c1011",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c1011.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c1011.qops.zst",
+    "ops_sha256": "ca0adb41706040e30c73dec320cc068a4e4cd8e76496993613c82d97f5117412"
+  },
+  {
+    "recipe_id": "c1100",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c1100.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c1100.qops.zst",
+    "ops_sha256": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83"
+  },
+  {
+    "recipe_id": "c1101",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c1101.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c1101.qops.zst",
+    "ops_sha256": "9fff90506b318bf55d4f7d8994db1117765ead5da9dcf58d84639237eda704ea"
+  },
+  {
+    "recipe_id": "c1110",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c1110.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c1110.qops.zst",
+    "ops_sha256": "2c9006aa77c958e346e59c0008deb7836253bfe24e3574849fc0aae84812f9d4"
+  },
+  {
+    "recipe_id": "c1111",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/c1111.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/c1111.qops.zst",
+    "ops_sha256": "4879caa90a8b3deac432a4197586a9e0198f545091cf54e227d00363ad76c1a9"
+  },
+  {
+    "recipe_id": "raw",
+    "outcomes": "studies/point-addition-search-20261026/records/audit-artifacts/raw.jsonl.gz",
+    "outcomes_sha256": "5ff8837a99885a05ab2d2ef98eb07f078717b38e062a4ff504b08054ebaa15c3",
+    "uncompressed_sha256": "65112627144b64504ec20713c1d914b6fd67d9aea17004eef536d5683f1f66c6",
+    "ops": "studies/point-addition-search-20261026/records/audit-artifacts/raw.qops.zst",
+    "ops_sha256": "b1c0c04919cd9b231aee676948d8e2fb917cdee16268a62aed132fd0b14700d1"
+  }
+]

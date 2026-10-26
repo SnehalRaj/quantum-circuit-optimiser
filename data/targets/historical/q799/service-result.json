@@ -1,0 +1,14 @@
+{
+  "id": "eb015a89-014b-4428-b0d7-76bede127538",
+  "status": "rejected",
+  "rejectionReason": "score did not improve current best",
+  "officialScore": 10155679912,
+  "officialMetrics": {
+    "qubits": 799,
+    "toffoli": 12710488
+  },
+  "createdAt": "2026-10-25T13:30:13.845Z",
+  "updatedAt": "2026-10-25T13:41:06.305Z",
+  "submissionCommitSha": "e0e7d8152fa68aabf99ccd302a0fdac5d8d14457",
+  "on_public_QT_curve": true
+}

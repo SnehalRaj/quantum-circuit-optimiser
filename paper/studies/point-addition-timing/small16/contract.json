@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-25T23:53:54.759777+00:00",
+  "revision": "49bdddbd3b5486739ab4e0e549bf92285c34fc2c",
+  "pairs": 100000,
+  "streams": 2,
+  "threads": 1,
+  "alpha": 0.05,
+  "epsilon": 0.001,
+  "policy": "mfsur",
+  "parent_policy": "mfs",
+  "field_width": 16,
+  "label": "paper-full-point-timing-20261026/c074e319b393e5bcad7d6f7baaeac435",
+  "expected_ops_sha256": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83",
+  "expected_Q": 214,
+  "expected_T": 28051,
+  "build": {
+    "adjacent_cancel_source_sha256": "5bd79f20646acd7b8dcf436fdd604d6a6546f32536e8aa2324d8100875ee328f",
+    "checker_source_sha256": "5a00c89974f5774b1e44cd00c9e9e8f147aad4c695ddea31d24900cb31e849f8",
+    "checker_threads": [
+      1
+    ],
+    "conditional_source_sha256": "a56f374ad86c7dd3ca13cfd08291f5f9a4f40a54e122959c481656a54b9d987e",
+    "field_width": 16,
+    "source_sha256": "200ba8ed4b631267970c133fbd9dcb62ec761f900d5b2cd5f18df59d7060452b"
+  },
+  "emitter_sha256": "2989d745671704596702e6db137dedd9f28f7e563e0103ec513270f796550436",
+  "checker_sha256": "84974c2a2f6075966a353f7d670f778ea14dcf4edac73a29872b602aac682922",
+  "script_sha256": "175623527af53e70fa94dbcede8c9998aaba34efaabaa4fac557f3dbb461fca5",
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "cpu_count": 8,
+  "load_average": [
+    9.5068359375,
+    11.10400390625,
+    13.345703125
+  ],
+  "selection": "One fixed policy, selected before timing; one run; preserve every failure.",
+  "scope": "Emission includes compiler passes, hashing and compressed output. Evaluation includes loading, inputs, simulation, checks and per-input output. Installation, compilation and post-run compression are excluded."
+}

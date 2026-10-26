@@ -1,0 +1,1787 @@
+{
+  "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a": {
+    "Q": 209,
+    "T": 30168.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "c3327887363cfb93a7ffba4b4276df78f275b59359f357711bb5e7f449f6d86c",
+    "circuit_file_sha256": "213245f900d163e4b8650d4c0f4129caf8109069025411180320533c367b854e",
+    "inputs_file": "evaluations/joint-model-pilot-audit-d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+    "cpu_seconds": 10.154489,
+    "peak_rss_bytes": 22298624,
+    "S": 6305112,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "inverse",
+      "steps": 31,
+      "cleanup": "toffoli"
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 10.981697000563145,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0": {
+    "Q": 130,
+    "T": 6851.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "e322a3fb51ff03dbcd87b395262c13752c411a6c1d03bb471398044bce5a904a",
+    "circuit_file_sha256": "758f1d7f8e686ef3647a616b3f58d8e31bc2a8a68bb06d42d5290619a75ee29b",
+    "inputs_file": "evaluations/joint-model-pilot-audit-299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0",
+    "cpu_seconds": 4.938702,
+    "peak_rss_bytes": 29294592,
+    "S": 890630,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "measured",
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      },
+      "widths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "compare_bits": 15
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 5.645647167228162,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "0d80c61b8277337400505e3697194a92103336e9a1c33b511c783780cc089dfe": {
+    "Q": 130,
+    "T": 12330.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "6b8307bc4bd6ce42778dd7346101ec074c41c93b8e2dab064f0e3aa9da9332a8",
+    "circuit_file_sha256": "e3a968afd904896e47dfe84d67017af2f28c8f24ec36133022efdcf03ed18300",
+    "inputs_file": "evaluations/joint-model-pilot-audit-0d80c61b8277337400505e3697194a92103336e9a1c33b511c783780cc089dfe/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/0d80c61b8277337400505e3697194a92103336e9a1c33b511c783780cc089dfe",
+    "cpu_seconds": 4.221916,
+    "peak_rss_bytes": 21643264,
+    "S": 1602900,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "toffoli",
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      },
+      "widths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "compare_bits": 15
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.526353166438639,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-0d80c61b8277337400505e3697194a92103336e9a1c33b511c783780cc089dfe",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de": {
+    "Q": 177,
+    "T": 14167.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "cd7762d63ab4cd4c51445c2095dd4b7b3bcd1a48e6c22393c88446b62ef8b763",
+    "circuit_file_sha256": "e07675ba0c4474d49efb0ad8390bffa8532acafa4f197188d52965d8c8485651",
+    "inputs_file": "evaluations/joint-model-pilot-audit-3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+    "cpu_seconds": 5.241236000000001,
+    "peak_rss_bytes": 21741568,
+    "S": 2507559,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "replay",
+      "steps": 31,
+      "cleanup": "toffoli"
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 5.928211499936879,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46": {
+    "Q": 147,
+    "T": 12697.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "f49c3ba6ba7d54f87a52281d52a94f2e69cf2a87163f61d0cbaa4a48cb537272",
+    "circuit_file_sha256": "73b0858220dce4b9dd91228f5c908d928604f8cbf7ab67a665ab761d0fc2d33e",
+    "inputs_file": "evaluations/joint-model-pilot-audit-8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+    "cpu_seconds": 4.358853,
+    "peak_rss_bytes": 22183936,
+    "S": 1866459,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "toffoli"
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.935018417425454,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "fe1a270a3571969453232e4f7a08fc9dc5945b995bbca9b786d563f0915c1a1b": {
+    "Q": 179,
+    "T": 7006.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "3ced040b3ba715f18dc1ddbc6ee8c48722b869ea191cf48b718b516bdc70b9e4",
+    "circuit_file_sha256": "325469fe234da6c493500312806b913489643cf60f2c5b7f6783d9e225dca187",
+    "inputs_file": "evaluations/joint-model-pilot-audit-fe1a270a3571969453232e4f7a08fc9dc5945b995bbca9b786d563f0915c1a1b/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/fe1a270a3571969453232e4f7a08fc9dc5945b995bbca9b786d563f0915c1a1b",
+    "cpu_seconds": 4.3363819999999995,
+    "peak_rss_bytes": 25821184,
+    "S": 1254074,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "jump2",
+      "steps": 21,
+      "cleanup": "measured"
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.567045416682959,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-fe1a270a3571969453232e4f7a08fc9dc5945b995bbca9b786d563f0915c1a1b",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "e7de35c47d9193d14b00ce91a8a680d55b82c58974b84041ad6c0baf2b34df52": {
+    "Q": 179,
+    "T": 11868.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "860fdb24846d09633094e6fcfd0160c1a3b01ae269af5d63d7b0a188298375d1",
+    "circuit_file_sha256": "14c72a8f5848b0dba63a0b1cb8c21f97ac1012c37dba4271064429f10c343e16",
+    "inputs_file": "evaluations/joint-model-pilot-audit-e7de35c47d9193d14b00ce91a8a680d55b82c58974b84041ad6c0baf2b34df52/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/e7de35c47d9193d14b00ce91a8a680d55b82c58974b84041ad6c0baf2b34df52",
+    "cpu_seconds": 3.748962,
+    "peak_rss_bytes": 20840448,
+    "S": 2124372,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "jump2",
+      "steps": 21,
+      "cleanup": "toffoli"
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 3.978805458173156,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-e7de35c47d9193d14b00ce91a8a680d55b82c58974b84041ad6c0baf2b34df52",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "f81497e96efcc17baccccfd908e556ddd3a25a10a9952b19a64caa82279f02e4": {
+    "Q": 130,
+    "T": 7034.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "4b78e5d176a0be7469495c7c7053b819400080d3982acfe995c1a10d773c3d27",
+    "circuit_file_sha256": "5490aed00a4268ed8f565221928800693594ef3280722cbbfc5b353f31fb5c15",
+    "inputs_file": "evaluations/joint-model-pilot-audit-f81497e96efcc17baccccfd908e556ddd3a25a10a9952b19a64caa82279f02e4/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/f81497e96efcc17baccccfd908e556ddd3a25a10a9952b19a64caa82279f02e4",
+    "cpu_seconds": 4.414916,
+    "peak_rss_bytes": 26804224,
+    "S": 914420,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "measured",
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          }
+        ]
+      }
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.646664208732545,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-f81497e96efcc17baccccfd908e556ddd3a25a10a9952b19a64caa82279f02e4",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "8f4ffe5c6d66c7e691205ed417c0848a871c33b57f5fa6181acb6c5818c2168b": {
+    "Q": 130,
+    "T": 12635.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "5aceaf7a8a5c78c68c5660f7e1df0fed3528e4d8f555e580c8f541ea5c35feae",
+    "circuit_file_sha256": "0eeda06da9d83261f2b682880d091ad6ae3692907e22c29ae55b86cc9201c008",
+    "inputs_file": "evaluations/joint-model-pilot-audit-8f4ffe5c6d66c7e691205ed417c0848a871c33b57f5fa6181acb6c5818c2168b/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/8f4ffe5c6d66c7e691205ed417c0848a871c33b57f5fa6181acb6c5818c2168b",
+    "cpu_seconds": 4.261684,
+    "peak_rss_bytes": 22118400,
+    "S": 1642550,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "toffoli",
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          }
+        ]
+      }
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.506390791386366,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-8f4ffe5c6d66c7e691205ed417c0848a871c33b57f5fa6181acb6c5818c2168b",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "831a60e8715fde48c1f8a2362e7b78666e58ab010cdf342fb6168d1f2ece4d44": {
+    "Q": 147,
+    "T": 6986.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "0c428e1a894924eefc897a13a75b0c47b927c0e746eb61c371e18424d133c4d8",
+    "circuit_file_sha256": "12feddf55636bc3c2795fa175d676e58634eade244e330b8ac7cbfcd4faf2982",
+    "inputs_file": "evaluations/joint-model-pilot-audit-831a60e8715fde48c1f8a2362e7b78666e58ab010cdf342fb6168d1f2ece4d44/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/831a60e8715fde48c1f8a2362e7b78666e58ab010cdf342fb6168d1f2ece4d44",
+    "cpu_seconds": 4.237869,
+    "peak_rss_bytes": 27787264,
+    "S": 1026942,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "measured",
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      },
+      "widths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        1
+      ]
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.499294833280146,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-831a60e8715fde48c1f8a2362e7b78666e58ab010cdf342fb6168d1f2ece4d44",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "27578ec877581b1a849f92b7b725465efa63eeb427ccc58ef2b17d77caaf3315": {
+    "Q": 147,
+    "T": 12582.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "148d224fd1d594285231058cd8486ac536887fc8447efc5631c26b8f8a41065c",
+    "circuit_file_sha256": "646792b2e46160ac8f29f9824e3a2d0c7cf30b74c259a79c8b9d2f963b2487b6",
+    "inputs_file": "evaluations/joint-model-pilot-audit-27578ec877581b1a849f92b7b725465efa63eeb427ccc58ef2b17d77caaf3315/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/27578ec877581b1a849f92b7b725465efa63eeb427ccc58ef2b17d77caaf3315",
+    "cpu_seconds": 3.564432,
+    "peak_rss_bytes": 21135360,
+    "S": 1849554,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "toffoli",
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      },
+      "widths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        1
+      ]
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 3.66036166716367,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-27578ec877581b1a849f92b7b725465efa63eeb427ccc58ef2b17d77caaf3315",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "9277ff1abe987774b99a42beb2147b369b54cc22754d49e3be9d34902d61a58c": {
+    "Q": 147,
+    "T": 7000.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "678e385066bad55345036fba429ee5dfe92a59b60d86ea265f5e729a760b5a54",
+    "circuit_file_sha256": "0d1e3ea6d0b7a82448a3c578040e4b62e958e3f42573fc68daaafe0537e87f78",
+    "inputs_file": "evaluations/joint-model-pilot-audit-9277ff1abe987774b99a42beb2147b369b54cc22754d49e3be9d34902d61a58c/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/9277ff1abe987774b99a42beb2147b369b54cc22754d49e3be9d34902d61a58c",
+    "cpu_seconds": 3.947361,
+    "peak_rss_bytes": 27017216,
+    "S": 1029000,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "measured",
+      "compare_bits": 15,
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      }
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.058451875112951,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-9277ff1abe987774b99a42beb2147b369b54cc22754d49e3be9d34902d61a58c",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "6a5e6aff685de88332f50673d6f705f3a53fd7627f6d7b5307c3769bfaee5696": {
+    "Q": 147,
+    "T": 12598.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "528dfd8316dcb183b12be94eba2f839edd5d4ab9af3ade4d59f5e37132bd4af2",
+    "circuit_file_sha256": "96ea745941bf2070b7fd8e50e2ac75c084616ff4c859b4b206c404d217314d92",
+    "inputs_file": "evaluations/joint-model-pilot-audit-6a5e6aff685de88332f50673d6f705f3a53fd7627f6d7b5307c3769bfaee5696/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/6a5e6aff685de88332f50673d6f705f3a53fd7627f6d7b5307c3769bfaee5696",
+    "cpu_seconds": 3.602738,
+    "peak_rss_bytes": 21118976,
+    "S": 1851906,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "toffoli",
+      "compare_bits": 15,
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      }
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 3.7510322080925107,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-6a5e6aff685de88332f50673d6f705f3a53fd7627f6d7b5307c3769bfaee5696",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "02b516595d0a83088d44af2dff074b26e4d2f3d29812b84a1837f10714714e30": {
+    "Q": 130,
+    "T": 7003.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "1c4d94220e53ecb1f0580ff647d5776bcb2007741ef155559bfd9812d7867fc5",
+    "circuit_file_sha256": "a60962c7b0f8c262290a5af360733ed54ab2a2c1cb169f7e739e440eefaf6ac8",
+    "inputs_file": "evaluations/joint-model-pilot-audit-02b516595d0a83088d44af2dff074b26e4d2f3d29812b84a1837f10714714e30/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/02b516595d0a83088d44af2dff074b26e4d2f3d29812b84a1837f10714714e30",
+    "cpu_seconds": 4.011838,
+    "peak_rss_bytes": 26689536,
+    "S": 910390,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "measured",
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      }
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.1057427087798715,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-02b516595d0a83088d44af2dff074b26e4d2f3d29812b84a1837f10714714e30",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "9cf42462f48574be409f25304d6b1ca946cfd28402c730d9d83e638637ad312d": {
+    "Q": 130,
+    "T": 12604.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "9d73322e0fdc393c509cc3a597ff7baef697164790c9e3af01238932eec0dd45",
+    "circuit_file_sha256": "04b9e6dea3d6b7dc02140da791b75f69c3de10064e3728afd6bcc6807b32c25f",
+    "inputs_file": "evaluations/joint-model-pilot-audit-9cf42462f48574be409f25304d6b1ca946cfd28402c730d9d83e638637ad312d/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/9cf42462f48574be409f25304d6b1ca946cfd28402c730d9d83e638637ad312d",
+    "cpu_seconds": 3.663253,
+    "peak_rss_bytes": 21266432,
+    "S": 1638520,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "toffoli",
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      }
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 3.80082374997437,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-9cf42462f48574be409f25304d6b1ca946cfd28402c730d9d83e638637ad312d",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "5b683c9ecb3dc4a793820f9e4330a06547ae68e77bbed763b0ed19a15b05c653": {
+    "Q": 130,
+    "T": 7003.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "1c4d94220e53ecb1f0580ff647d5776bcb2007741ef155559bfd9812d7867fc5",
+    "circuit_file_sha256": "a60962c7b0f8c262290a5af360733ed54ab2a2c1cb169f7e739e440eefaf6ac8",
+    "inputs_file": "evaluations/joint-model-pilot-audit-5b683c9ecb3dc4a793820f9e4330a06547ae68e77bbed763b0ed19a15b05c653/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/5b683c9ecb3dc4a793820f9e4330a06547ae68e77bbed763b0ed19a15b05c653",
+    "cpu_seconds": 4.078504,
+    "peak_rss_bytes": 27770880,
+    "S": 910390,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "measured",
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      }
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.210400458425283,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-5b683c9ecb3dc4a793820f9e4330a06547ae68e77bbed763b0ed19a15b05c653",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "d2c5aa2129328c32a84d13abf0234351abf379b31e6c0347cdf8898b49ce7731": {
+    "Q": 130,
+    "T": 12604.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "9d73322e0fdc393c509cc3a597ff7baef697164790c9e3af01238932eec0dd45",
+    "circuit_file_sha256": "04b9e6dea3d6b7dc02140da791b75f69c3de10064e3728afd6bcc6807b32c25f",
+    "inputs_file": "evaluations/joint-model-pilot-audit-d2c5aa2129328c32a84d13abf0234351abf379b31e6c0347cdf8898b49ce7731/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/d2c5aa2129328c32a84d13abf0234351abf379b31e6c0347cdf8898b49ce7731",
+    "cpu_seconds": 3.58371,
+    "peak_rss_bytes": 21151744,
+    "S": 1638520,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "toffoli",
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      }
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 3.694467542693019,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-d2c5aa2129328c32a84d13abf0234351abf379b31e6c0347cdf8898b49ce7731",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "93e53b3f787beb5948e7060df9ca71cbe92d481cc1e1860ff2b2db03c25deed6": {
+    "Q": 130,
+    "T": 6883.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "be20d79325253c0c9b4bef9bdd56388a760882534f646182da858ab3f4eb5c0d",
+    "circuit_file_sha256": "dcead8f3f2dd4fe6cc1e358dbc1fd106259e43143ac8aad5713b928437cbc781",
+    "inputs_file": "evaluations/joint-model-pilot-audit-93e53b3f787beb5948e7060df9ca71cbe92d481cc1e1860ff2b2db03c25deed6/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/93e53b3f787beb5948e7060df9ca71cbe92d481cc1e1860ff2b2db03c25deed6",
+    "cpu_seconds": 4.013447,
+    "peak_rss_bytes": 26820608,
+    "S": 894790,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "measured",
+      "widths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      }
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.1782989166677,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-93e53b3f787beb5948e7060df9ca71cbe92d481cc1e1860ff2b2db03c25deed6",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "088ee2a90044737c48c2fe1dfd2426ba3714af38f87a03a2f1e2852b514df2d9": {
+    "Q": 130,
+    "T": 12394.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "e4b4a86028d85a1f565b9e2bf90521f3ed28eb1e957760447888fd68b6abfae7",
+    "circuit_file_sha256": "dc4669287ddd110738e808db46cc5e4658dad0d0f78968195e17df4aa8a673d8",
+    "inputs_file": "evaluations/joint-model-pilot-audit-088ee2a90044737c48c2fe1dfd2426ba3714af38f87a03a2f1e2852b514df2d9/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/088ee2a90044737c48c2fe1dfd2426ba3714af38f87a03a2f1e2852b514df2d9",
+    "cpu_seconds": 3.5142450000000003,
+    "peak_rss_bytes": 21430272,
+    "S": 1611220,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "toffoli",
+      "widths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      }
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 3.6062514586374164,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-088ee2a90044737c48c2fe1dfd2426ba3714af38f87a03a2f1e2852b514df2d9",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "484e9b92d96e6bf1b5ebc57777a7bb7a8f357bd4ce5d2e90abc06aeab1bb35c8": {
+    "Q": 147,
+    "T": 7031.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "2928a4e426b82d5fab03f7999f8a46445fa5dbeacd84121a0d887f787eff994e",
+    "circuit_file_sha256": "dcd04ccb0b756c4542eba3430452c02f8883a18812a0528af6f9c33e5729c1c8",
+    "inputs_file": "evaluations/joint-model-pilot-audit-484e9b92d96e6bf1b5ebc57777a7bb7a8f357bd4ce5d2e90abc06aeab1bb35c8/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/484e9b92d96e6bf1b5ebc57777a7bb7a8f357bd4ce5d2e90abc06aeab1bb35c8",
+    "cpu_seconds": 4.199923,
+    "peak_rss_bytes": 27770880,
+    "S": 1033557,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "measured",
+      "compare_bits": 15
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.352715625427663,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-484e9b92d96e6bf1b5ebc57777a7bb7a8f357bd4ce5d2e90abc06aeab1bb35c8",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "8491b8ecec3baf16168005a13fa7987e49179ff497f4f4bdce9c8ba4f72d7ed1": {
+    "Q": 147,
+    "T": 12629.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "f3bf4cd3546b34fc8c0ff2696f016064be914ba8962eeb4425fe87d6cd0620cf",
+    "circuit_file_sha256": "1ba1d0696d1f76d36f76c2997ba205ee681e2ca5c559db846d24a56d514c3a06",
+    "inputs_file": "evaluations/joint-model-pilot-audit-8491b8ecec3baf16168005a13fa7987e49179ff497f4f4bdce9c8ba4f72d7ed1/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/8491b8ecec3baf16168005a13fa7987e49179ff497f4f4bdce9c8ba4f72d7ed1",
+    "cpu_seconds": 3.704403,
+    "peak_rss_bytes": 21102592,
+    "S": 1856463,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "toffoli",
+      "compare_bits": 15
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 3.7851596251130104,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-8491b8ecec3baf16168005a13fa7987e49179ff497f4f4bdce9c8ba4f72d7ed1",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "eda4a99c55c3e72a706e6a9c7c0d8aa2b046a63298d7ed3c4b1307ebd04863eb": {
+    "Q": 130,
+    "T": 6883.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "be20d79325253c0c9b4bef9bdd56388a760882534f646182da858ab3f4eb5c0d",
+    "circuit_file_sha256": "dcead8f3f2dd4fe6cc1e358dbc1fd106259e43143ac8aad5713b928437cbc781",
+    "inputs_file": "evaluations/joint-model-pilot-audit-eda4a99c55c3e72a706e6a9c7c0d8aa2b046a63298d7ed3c4b1307ebd04863eb/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/eda4a99c55c3e72a706e6a9c7c0d8aa2b046a63298d7ed3c4b1307ebd04863eb",
+    "cpu_seconds": 3.9491110000000003,
+    "peak_rss_bytes": 27459584,
+    "S": 894790,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "measured",
+      "widths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      }
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.050600916147232,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-eda4a99c55c3e72a706e6a9c7c0d8aa2b046a63298d7ed3c4b1307ebd04863eb",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "fa2d8e60f419b5f85f5242388ea65440265e74ce9f18edc0a0d55f0f0c796222": {
+    "Q": 130,
+    "T": 12394.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "e4b4a86028d85a1f565b9e2bf90521f3ed28eb1e957760447888fd68b6abfae7",
+    "circuit_file_sha256": "dc4669287ddd110738e808db46cc5e4658dad0d0f78968195e17df4aa8a673d8",
+    "inputs_file": "evaluations/joint-model-pilot-audit-fa2d8e60f419b5f85f5242388ea65440265e74ce9f18edc0a0d55f0f0c796222/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/fa2d8e60f419b5f85f5242388ea65440265e74ce9f18edc0a0d55f0f0c796222",
+    "cpu_seconds": 3.53203,
+    "peak_rss_bytes": 21594112,
+    "S": 1611220,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "toffoli",
+      "widths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      }
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 3.6374034574255347,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-fa2d8e60f419b5f85f5242388ea65440265e74ce9f18edc0a0d55f0f0c796222",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "434542bc43a8ba9111916cb57cf89bd7fecafd194db52cf3782cbdec80f02a09": {
+    "Q": 130,
+    "T": 6851.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "e322a3fb51ff03dbcd87b395262c13752c411a6c1d03bb471398044bce5a904a",
+    "circuit_file_sha256": "758f1d7f8e686ef3647a616b3f58d8e31bc2a8a68bb06d42d5290619a75ee29b",
+    "inputs_file": "evaluations/joint-model-pilot-audit-434542bc43a8ba9111916cb57cf89bd7fecafd194db52cf3782cbdec80f02a09/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/434542bc43a8ba9111916cb57cf89bd7fecafd194db52cf3782cbdec80f02a09",
+    "cpu_seconds": 3.977932,
+    "peak_rss_bytes": 27066368,
+    "S": 890630,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "measured",
+      "widths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      },
+      "compare_bits": 15
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.131026167422533,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-434542bc43a8ba9111916cb57cf89bd7fecafd194db52cf3782cbdec80f02a09",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "058e1bfe81344e79eed100768a90ef265b0058c86354d6426e7f3c3b264a02bd": {
+    "Q": 130,
+    "T": 12330.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "6b8307bc4bd6ce42778dd7346101ec074c41c93b8e2dab064f0e3aa9da9332a8",
+    "circuit_file_sha256": "e3a968afd904896e47dfe84d67017af2f28c8f24ec36133022efdcf03ed18300",
+    "inputs_file": "evaluations/joint-model-pilot-audit-058e1bfe81344e79eed100768a90ef265b0058c86354d6426e7f3c3b264a02bd/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/058e1bfe81344e79eed100768a90ef265b0058c86354d6426e7f3c3b264a02bd",
+    "cpu_seconds": 3.707608,
+    "peak_rss_bytes": 21626880,
+    "S": 1602900,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "toffoli",
+      "widths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        1
+      ],
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      },
+      "compare_bits": 15
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 3.888988582417369,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-058e1bfe81344e79eed100768a90ef265b0058c86354d6426e7f3c3b264a02bd",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "eeaac889cb9a79bfae847c936e058556e54665d8a02fc8544f878676e5f63bb9": {
+    "Q": 130,
+    "T": 6969.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "d65c416a964968a6538091d8666c4ac5cc29f76a085a379852e1803f4b59163f",
+    "circuit_file_sha256": "b1c279c2415346a4efac0eb43f8b04e5359196097467ebd5d8296e7908905846",
+    "inputs_file": "evaluations/joint-model-pilot-audit-eeaac889cb9a79bfae847c936e058556e54665d8a02fc8544f878676e5f63bb9/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/eeaac889cb9a79bfae847c936e058556e54665d8a02fc8544f878676e5f63bb9",
+    "cpu_seconds": 4.2323379999999995,
+    "peak_rss_bytes": 27230208,
+    "S": 905970,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "measured",
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      },
+      "compare_bits": 15
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.42948954179883,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-eeaac889cb9a79bfae847c936e058556e54665d8a02fc8544f878676e5f63bb9",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "747514bcc3501bf23874f8eafa393a427304c84070aa572783425c2ef1057f3c": {
+    "Q": 130,
+    "T": 12536.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "bbfed36cb78688ecac5f830b5ac9e9621430ddd09c9f82575a7335422913a7bf",
+    "circuit_file_sha256": "ba41192c6bc3607491b6ae120f7b54bed2c6a68b4245b88440ad1a8f05c24c92",
+    "inputs_file": "evaluations/joint-model-pilot-audit-747514bcc3501bf23874f8eafa393a427304c84070aa572783425c2ef1057f3c/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/747514bcc3501bf23874f8eafa393a427304c84070aa572783425c2ef1057f3c",
+    "cpu_seconds": 3.6127,
+    "peak_rss_bytes": 21266432,
+    "S": 1629680,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "toffoli",
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      },
+      "compare_bits": 15
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 3.711285874247551,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-747514bcc3501bf23874f8eafa393a427304c84070aa572783425c2ef1057f3c",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "ab3557d8bcbed2c34b2d18adf89b628d3182b145928fe4b18facfaba5e13fa07": {
+    "Q": 130,
+    "T": 6938.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "3c9bbef24fc50b6e1b3dd5ece345c05b041a24c348b7855687e2708aaeac2ec5",
+    "circuit_file_sha256": "a6d4a9a85d0635fea4a94b15c3c611822a60cf79a61900a57bf0c78de7b6140a",
+    "inputs_file": "evaluations/joint-model-pilot-audit-ab3557d8bcbed2c34b2d18adf89b628d3182b145928fe4b18facfaba5e13fa07/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/ab3557d8bcbed2c34b2d18adf89b628d3182b145928fe4b18facfaba5e13fa07",
+    "cpu_seconds": 4.177378999999999,
+    "peak_rss_bytes": 27213824,
+    "S": 901940,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "measured",
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      "widths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        15,
+        14,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        1
+      ]
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.30386024992913,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-ab3557d8bcbed2c34b2d18adf89b628d3182b145928fe4b18facfaba5e13fa07",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  },
+  "39a54266313599a66e89f63dfe0fbfc3a4aaeb6adc8289ca80b95d22cd6760ec": {
+    "Q": 130,
+    "T": 12467.0,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "channel_failed_inputs": {
+      "output": 0,
+      "phase": 0,
+      "scratch": 0
+    },
+    "first_failures": [],
+    "pairs": 16384,
+    "streams": 2,
+    "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+    "operation_sha256": "6850682633ca1514e0fa7ec310f16204b02c83f34874b708b99b077db9ff91f8",
+    "circuit_file_sha256": "521dc4291f5f8de68111f51e99863532aee2e6db4b87a89f033255b392effc27",
+    "inputs_file": "evaluations/joint-model-pilot-audit-39a54266313599a66e89f63dfe0fbfc3a4aaeb6adc8289ca80b95d22cd6760ec/inputs.jsonl.gz",
+    "circuit_directory": "final/circuits/39a54266313599a66e89f63dfe0fbfc3a4aaeb6adc8289ca80b95d22cd6760ec",
+    "cpu_seconds": 4.0511490000000006,
+    "peak_rss_bytes": 21217280,
+    "S": 1620710,
+    "stage": "audit",
+    "recipe": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "toffoli",
+      "block_program": {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      "widths": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        15,
+        14,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        1
+      ]
+    },
+    "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+    "wall_seconds": 4.270088667050004,
+    "evaluation_directory": "evaluations/joint-model-pilot-audit-39a54266313599a66e89f63dfe0fbfc3a4aaeb6adc8289ca80b95d22cd6760ec",
+    "epsilon_upper": 0.000478874715572497,
+    "eligible": true
+  }
+}

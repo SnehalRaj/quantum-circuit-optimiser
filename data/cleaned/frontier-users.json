@@ -1,0 +1,106 @@
+{
+  "analysis_cutoff_utc": "2026-10-26T01:51:12.552334+00:00",
+  "unique_coordinates": 161,
+  "allocation": "Each coordinate appears once; ties use earliest scorePublishedAt, then id.",
+  "scope": "Coverage by first submitter; not algorithmic credit or reliability ranking.",
+  "yield_denominator": "All public submission entries created by the cutoff, including failed and pending entries. Repeated commits count as separate submissions. Distinct commit counts are also preserved.",
+  "source_raw_sha256": "a3b1568a296c458a0fead5840446f895941b6edf4fdb98b480fd9fcce12b7025",
+  "rows": [
+    {
+      "user": "odinfree",
+      "curve_points": 73,
+      "share_percent": 45.3416149068323,
+      "verified_rows": 269,
+      "public_submissions": 289,
+      "unique_submission_commits": 278,
+      "frontier_yield_percent": 25.259515570934255,
+      "distinct_commit_yield_percent": 26.258992805755394,
+      "minimum_Q": 660,
+      "maximum_Q": 1400
+    },
+    {
+      "user": "gopikannappan",
+      "curve_points": 37,
+      "share_percent": 22.981366459627328,
+      "verified_rows": 132,
+      "public_submissions": 164,
+      "unique_submission_commits": 163,
+      "frontier_yield_percent": 22.5609756097561,
+      "distinct_commit_yield_percent": 22.699386503067483,
+      "minimum_Q": 834,
+      "maximum_Q": 1320
+    },
+    {
+      "user": "SnehalRaj",
+      "curve_points": 28,
+      "share_percent": 17.391304347826086,
+      "verified_rows": 34,
+      "public_submissions": 35,
+      "unique_submission_commits": 34,
+      "frontier_yield_percent": 80.0,
+      "distinct_commit_yield_percent": 82.3529411764706,
+      "minimum_Q": 799,
+      "maximum_Q": 839
+    },
+    {
+      "user": "gnuchev",
+      "curve_points": 11,
+      "share_percent": 6.832298136645963,
+      "verified_rows": 156,
+      "public_submissions": 167,
+      "unique_submission_commits": 163,
+      "frontier_yield_percent": 6.586826347305389,
+      "distinct_commit_yield_percent": 6.748466257668712,
+      "minimum_Q": 856,
+      "maximum_Q": 1164
+    },
+    {
+      "user": "jackylee0424",
+      "curve_points": 5,
+      "share_percent": 3.1055900621118013,
+      "verified_rows": 122,
+      "public_submissions": 129,
+      "unique_submission_commits": 114,
+      "frontier_yield_percent": 3.875968992248062,
+      "distinct_commit_yield_percent": 4.385964912280702,
+      "minimum_Q": 1158,
+      "maximum_Q": 1240
+    },
+    {
+      "user": "dysnasia",
+      "curve_points": 4,
+      "share_percent": 2.484472049689441,
+      "verified_rows": 45,
+      "public_submissions": 46,
+      "unique_submission_commits": 46,
+      "frontier_yield_percent": 8.695652173913043,
+      "distinct_commit_yield_percent": 8.695652173913043,
+      "minimum_Q": 1170,
+      "maximum_Q": 1174
+    },
+    {
+      "user": "jieyilong",
+      "curve_points": 2,
+      "share_percent": 1.2422360248447204,
+      "verified_rows": 90,
+      "public_submissions": 103,
+      "unique_submission_commits": 90,
+      "frontier_yield_percent": 1.941747572815534,
+      "distinct_commit_yield_percent": 2.2222222222222223,
+      "minimum_Q": 1133,
+      "maximum_Q": 1141
+    },
+    {
+      "user": "edi3on",
+      "curve_points": 1,
+      "share_percent": 0.6211180124223602,
+      "verified_rows": 20,
+      "public_submissions": 20,
+      "unique_submission_commits": 20,
+      "frontier_yield_percent": 5.0,
+      "distinct_commit_yield_percent": 5.0,
+      "minimum_Q": 1108,
+      "maximum_Q": 1108
+    }
+  ]
+}

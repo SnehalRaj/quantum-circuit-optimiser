@@ -1,0 +1,31 @@
+{
+  "schema": "lco-frontier-corrections-v1",
+  "date": "2026-10-26",
+  "python_tests": 208,
+  "passed": true,
+  "tests_log_sha256": "c28a893f04291fecbd6eb905407f424ab09d303ab1a6b668e22d347eceea6c25",
+  "source_sha256": {
+    "src/llm_circuit_optimiser/frontier/runtime.py": "d8d7e0771a1278790101a1130c4fb24dde31a244442f0b6e6b4e65432f3fc07e",
+    "src/llm_circuit_optimiser/frontier/generators.py": "f5694fa07085b287da301b174f9af2c62ffe488dc7fbee360d19cde0f3007fce",
+    "src/llm_circuit_optimiser/frontier/jobs.py": "4cfa3fabda62f4c36e301da0a5d83f06de9532b39fb08b1b9524b2e64f4d0cfd",
+    "src/llm_circuit_optimiser/frontier/cli.py": "cf064bc558eae8f7213df5d55e531a0bddcf2cebb8efabc2d4fd072daf9ef4a9",
+    "tests/test_frontier_runtime.py": "eebc68ebc060fb20f1f9e01723c4de22748e48c080c6fe35d27ca2c25b51021c",
+    "tests/test_frontier_data.py": "47ba8e956ab38ea4bb993674ec5cd20b1e8c5c19d83b56454c6fa537369bc2a3"
+  },
+  "regressions": [
+    "Configured Cargo and rustc proxy names",
+    "Historical jobs blocked before execution",
+    "Older and renamed historical recipes blocked on load"
+  ],
+  "cli_check": {
+    "historical_cluster_jobs": 33,
+    "blocked": 33,
+    "exit_status": 2,
+    "explicit_replay_jobs": 2,
+    "replay_exit_status": 0
+  },
+  "earlier_run": "Interrupted while a test fixture waited on the production emission lock; fixtures now use a separate temporary lock.",
+  "cluster_access": false,
+  "public_screens_run": 0,
+  "public_submissions": 0
+}

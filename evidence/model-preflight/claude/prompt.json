@@ -1,0 +1,20 @@
+{
+  "actions": [
+    {
+      "description": "Known-control, phase-only AND, and classical guard passes.",
+      "policy": "mfs"
+    },
+    {
+      "description": "Also use guarded inverse AND and unread-write measured erasure.",
+      "policy": "mfsur"
+    }
+  ],
+  "context": {
+    "kind": "Connection and structured-output test. No circuit result is supplied."
+  },
+  "response": {
+    "action_index": "integer menu index",
+    "reason": "brief mechanism-based reason"
+  },
+  "task": "Select one circuit recipe from the admitted menu. Use no tools."
+}

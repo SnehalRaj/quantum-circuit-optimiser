@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "frontier-catalog",
+  "revision": 1,
+  "definitions": {},
+  "rules": [
+    {
+      "id": "base.local_catalog",
+      "revision": 1,
+      "kind": "rewrite",
+      "title": "Exact local gate catalog",
+      "description": "Replace short gate blocks with cheaper blocks with the same signed permutation.",
+      "status": "executable",
+      "families": [
+        "*"
+      ],
+      "parameters": {
+        "guards": {
+          "type": "boolean",
+          "default": true
+        },
+        "phase_fix": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "guards": [
+        "Match an unconditioned unitary window on at most four existing wires.",
+        "Keep measurement and condition-stack changes as barriers.",
+        "Keep the inherited identity tail unchanged."
+      ],
+      "bindings": {
+        "fast": "catalog16.signed-permutation",
+        "large": {
+          "froghop": "frontier.local_catalog",
+          "qualified-leapfrog": "frontier.local_catalog",
+          "source-conditional": "frontier.local_catalog",
+          "skywalk-cof": "frontier.local_catalog"
+        }
+      },
+      "mechanism": {
+        "match": "A local unitary block whose signed permutation occurs in the exact catalog.",
+        "replace": "A cheaper block on the same wires and under the same unchanged outer condition."
+      },
+      "preserves": [
+        "value",
+        "phase",
+        "scratch",
+        "classical-addend"
+      ],
+      "cost": "Measure actual executed Toffolis and qubits after full-circuit validation.",
+      "evidence": [
+        {
+          "path": "vendor/frontier_rewrite/catalog.rs",
+          "sha256": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+        },
+        {
+          "path": "vendor/frontier_rewrite/mod.rs",
+          "sha256": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53"
+        },
+        {
+          "path": "vendor/frontier_rewrite/tests/catalog.rs",
+          "sha256": "3e5a07adbecb613e910221778591172784f08ac5ca4aa9794adc1a8fc6447806"
+        }
+      ],
+      "requires": [],
+      "notes": "The frontier runner integrates the catalog into pinned source. The staged policy runner does not execute this rule."
+    }
+  ]
+}

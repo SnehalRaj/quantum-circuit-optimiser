@@ -1,0 +1,15 @@
+{
+  "commit": "b618b19cf76f0ffe3829b53a8af6653c95dc7e4e",
+  "url": "https://github.com/Layr-Labs/ecdsafail-challenge/commit/b618b19cf76f0ffe3829b53a8af6653c95dc7e4e",
+  "files": {
+    "src/point_add/mod.rs": {
+      "fixture": "b618b19c/mod.rs",
+      "sha256": "b92212b662f7e9acf25a7a8228b5885e7fe5e7e9e52a3a4cb6a59c3952bb88e3"
+    },
+    "src/point_add/froghop_one.rs": {
+      "fixture": "b618b19c/froghop_one.rs",
+      "sha256": "22f36908ff4d47287f788d79cca507ce560014f2b283c1082df2918346313872"
+    }
+  },
+  "scope": "Exact bytes of both changed point-addition files. Other files are unchanged in this pair."
+}

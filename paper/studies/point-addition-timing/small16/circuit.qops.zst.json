@@ -1,0 +1,64 @@
+{
+  "Q": 214,
+  "activation": {
+    "f": 2,
+    "m": 1957,
+    "r": 60,
+    "r_ccx": 60,
+    "s": 0,
+    "u": 3658
+  },
+  "activation_admission_scope": "Newly enabled mechanisms must activate. The caller checks disabled mechanisms against its pinned parent receipt. Inactive inherited flags supply no transfer evidence.",
+  "activation_admitted": true,
+  "activation_counts": {
+    "f": 2,
+    "m": 1957,
+    "r": 60,
+    "r_ccx": 60,
+    "s": 0,
+    "u": 3658
+  },
+  "adjacent_cancel_certificate": null,
+  "adjacent_cancel_pairs": 0,
+  "backend": "original-kaliski",
+  "bits": 17044,
+  "cancel_adjacent": false,
+  "clean_child_environment": true,
+  "compiler_log": "{redacted-path-30f36949cfb5}",
+  "conditional_source_sha256": "a56f374ad86c7dd3ca13cfd08291f5f9a4f40a54e122959c481656a54b9d987e",
+  "disabled_mechanisms": [],
+  "field_width": 16,
+  "gate_records_ccx_ccz": 28051,
+  "guard_rejections": {
+    "G1": 0,
+    "G2": 0,
+    "G3": 0,
+    "G4": 0
+  },
+  "guards_active": true,
+  "inactive_mechanisms": [
+    "s"
+  ],
+  "inactive_new_mechanisms": [],
+  "inherited_inactive_mechanisms": [
+    "s"
+  ],
+  "input_operation_count": 216502,
+  "mean_toffoli": null,
+  "metric_scope": "Q is the referenced width. Compiler T is a static estimate before optional cancellation. circuit-check measures executed T.",
+  "newly_enabled_mechanisms": [
+    "u",
+    "r"
+  ],
+  "operation_count": 219374,
+  "ops": "{redacted-path-395161fb4a38}",
+  "ops_sha256": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83",
+  "parent_policy": "mfs",
+  "policy": "mfsur",
+  "qubits": 214,
+  "receipt": "{redacted-path-e06ac82d22bc}",
+  "schema": "lco-small-emission-v1",
+  "source_sha256": "200ba8ed4b631267970c133fbd9dcb62ec761f900d5b2cd5f18df59d7060452b",
+  "static_expected_toffoli": 28051.0,
+  "static_expected_toffoli_before": 33728.0
+}

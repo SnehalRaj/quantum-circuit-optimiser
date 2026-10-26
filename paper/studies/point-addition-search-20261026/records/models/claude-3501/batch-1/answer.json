@@ -1,0 +1,4 @@
+{
+  "action_index": 62,
+  "reason": "c1100 (u+r) cuts T from 31769 to 28051 and leaves Q at 214. c1111 brings Q down to 198 but pushes T up to 28304. So free_s and combined_y together save 16 qubits and cost about 250 Toffolis. Testing c1110 (u+r+free_s) and c1101 (u+r+combined_y) separates the two on the strong u+r base. Releasing the cofactor register most likely gives the Q saving. The combined expression or the reconstruction may be what adds T. Either recipe could keep Q near 198 with T near 28051, giving a QT around 5.55M, which would beat c1111's 5.60M."
+}

@@ -1,0 +1,12 @@
+   Compiling lco-native v0.1.0 ({repository}/native)
+    Finished `release` profile [optimized] target(s) in 18.83s
+     Running tests/protocol.rs (/tmp/llm-native-target/release/deps/protocol-f75992442d7b5356)
+
+running 4 tests
+test both_widths_detect_every_fault_and_partial_simd_batches ... ok
+test exact_bounds_and_malformed_artifacts_keep_the_failure_criterion ... ok
+test fixed_checker_uses_the_real_oracle_and_retains_every_input ... ok
+test small_group_parameters_and_exact_inputs_are_checked_independently ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.29s
+

@@ -1,0 +1,48 @@
+{
+  "schema": "scaled-point-add-transfer-confirmation-v1",
+  "frozen": true,
+  "frozen_utc": "2026-10-25T19:52:18Z",
+  "registered_after": "The complete four-recipe development campaign and the two small-field audits.",
+  "registered_before": "Every input in the fresh large-field confirmation label.",
+  "selection_basis": "Baseline and free-s were frozen solely from the small-field Q/T frontier before any large-field result.",
+  "original_finalists_sha256": "27398a93a5c91bf195481e064c3fa255028e8d7f8a0b4e3b65518ee1eca3fcac",
+  "original_contract_sha256": "860231355f6aef431bfa406b50e3b9b4229b888f671a861bd52156d8087a5112",
+  "epsilon": 0.001,
+  "family_alpha": 0.05,
+  "family_tests": 4,
+  "alpha_per_test": 0.0125,
+  "bound": "One-sided exact Clopper-Pearson upper bound per independent input; either measurement-stream failure fails the input.",
+  "large_pairs": 16384,
+  "streams": 2,
+  "fresh_large_label": "scaled-point-add-20261026-transfer-confirmation-r1/audit/256",
+  "width": 256,
+  "evaluator": "../snapshot/bin/scaled-study",
+  "evaluator_sha256": "907f6e0fe40c6ea79bfe3386d4a27de76c7a5d025c720483d10f31b295f530f4",
+  "circuits": [
+    {
+      "name": "baseline",
+      "large_ops": "../256-baseline.qops.zst",
+      "large_ops_sha256": "523440bf78832e248dee469b54d41181788d73f68940e7d7e5c21620ae11831e",
+      "small_receipt": "../16-baseline-audit.json",
+      "small_receipt_sha256": "7dbf98a95756df4ff7a1009ae9827c9ee63d7753869eefc74e86717e2f15d010",
+      "small_pairs": 100000,
+      "small_failed_inputs": 0
+    },
+    {
+      "name": "free-s",
+      "large_ops": "../256-free-s.qops.zst",
+      "large_ops_sha256": "444b66dd772d64a749087b74063a1221966bf239a29f1358f8990a589507ab75",
+      "small_receipt": "../16-free-s-audit.json",
+      "small_receipt_sha256": "1fad1853473b0f2e698e7eec364baa9332b06c24843002fa8f8605cbbdf9b061",
+      "small_pairs": 100000,
+      "small_failed_inputs": 0
+    }
+  ],
+  "small_bound_recalculation": "Retain the original alpha=0.025 receipts. Recompute their zero-failure upper bounds at alpha=0.0125 in a separate receipt.",
+  "input_protocol": "controlled-study-exact-scalars-v1",
+  "input_recipe": "Use the existing 256-bit make_pair unchanged with this common fresh label and indices 0..16383.",
+  "measurement_recipe": "Use study_check::stream(measurements,[label,u64le(stream),u64le(index/64)]) for streams 0 and 1.",
+  "failure_checks": ["coordinate", "phase", "workspace", "addend"],
+  "model_calls": 0,
+  "scope": "Only the shared original Kaliski backend. Separate frontier families remain unscaled. No audit result exists at registration."
+}

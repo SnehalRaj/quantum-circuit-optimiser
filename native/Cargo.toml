@@ -1,0 +1,19 @@
+[package]
+name = "lco-native"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+quantum_ecc = { path = "../vendor/native_reference/harness" }
+study-check = { path = "../vendor/native_reference/study_check" }
+alloy-primitives = "1.5"
+sha3 = "0.10"
+sha2 = "0.10"
+serde_json = "1"
+zstd = "0.13"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1

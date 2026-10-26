@@ -1,0 +1,52 @@
+{
+  "checks": {
+    "compiled_bundle": {
+      "candidate_combinations_per_target": 64,
+      "compose_output_accepted_by_plan": true,
+      "compose_output_accepted_by_search_resolver": true,
+      "unchanged_hash": "6be85bf6de86a2be11ee8276102ab17db42f655b27a31b326dc41dc0aa5357bb"
+    },
+    "cutoff": {
+      "base_grammar": 0.001,
+      "equal_bound_accepted": true,
+      "larger_bound_rejected": true,
+      "runner": 0.001
+    },
+    "models": {
+      "failed_resume": {
+        "fake_cli_calls": 1,
+        "max_calls": 1,
+        "receipt_and_stdout_preserved": true
+      },
+      "successful_resume": {
+        "fake_cli_calls": 1,
+        "receipt_preserved": true,
+        "recommendation_reused": true
+      }
+    },
+    "source": {
+      "custom_target_collision_rejected_as_frozen_replay": true,
+      "fresh_fixture_emitted": true,
+      "partial_emission_archived": true
+    },
+    "submission": {
+      "all_commands_mocked": true,
+      "different_rebuilt_hash_rejected": true,
+      "external_submit_calls": 0
+    }
+  },
+  "public_submissions": 0,
+  "real_model_calls": 0,
+  "reproduce": "PYTHONPATH=src python3 evidence/review/check_integration.py",
+  "schema_version": 1,
+  "scope": "Local integrity fixtures. No model benefit or circuit qualification claim.",
+  "source_sha256": {
+    "src/llm_circuit_optimiser/cli.py": "cf60ed15ab2786363fd86c31e993f2826b35b7aad6bbc22773c0f79f84be3053",
+    "src/llm_circuit_optimiser/grammar.py": "8e538b5858bf438b3fbc81aee6f24ab4e3ce32bd386b516044a0c42b71d6e5d5",
+    "src/llm_circuit_optimiser/large.py": "8395fb3fe94f2e8d781d75397582306e202b6d1f82d148133c580cffea74bd4f",
+    "src/llm_circuit_optimiser/models.py": "889b3a7c542208bad00db52077d97d65a4d660690b2121583f10eaece4432f56",
+    "src/llm_circuit_optimiser/runner.py": "afb7851f47c91950455566561f1216d682a590701a4afb0c7f44a747aad77bab",
+    "src/llm_circuit_optimiser/source.py": "3599991c16cd644543a7786ac45e3dff5718a7d90c26146cc19263399304a95b",
+    "src/llm_circuit_optimiser/submission.py": "1b185613a6e5ddbe9eb3dd229591f679e5ffc3eb7f96b401da86fca324b831ee"
+  }
+}

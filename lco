@@ -1,0 +1,6 @@
+#!/bin/sh
+# Run from a source checkout without an installation step.
+set -eu
+LCO_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+export PYTHONPATH="$LCO_ROOT/src${PYTHONPATH:+:$PYTHONPATH}"
+exec "${LCO_PYTHON:-python3}" -m llm_circuit_optimiser "$@"

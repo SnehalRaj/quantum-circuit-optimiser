@@ -1,0 +1,22 @@
+{
+  "schema": "lco-native-test-ledger-v1",
+  "entries": [
+    {"stage":"initial emitter tests","status":"expected RED","failures":2,"reason":"The emitter stub lacked real point construction and environment rejection.","log":"initial-red.log"},
+    {"stage":"first real emitter","status":"PASS","tests":2,"log":"emitter-first-test.log"},
+    {"stage":"exact cancellation","status":"expected RED","failures":1,"reason":"The cancellation stub lacked the tested adjacent-involution transformation.","log":"exact-cancel-red.log"},
+    {"stage":"native complete suite","status":"PASS","tests":14,"log":"native-suite.log"},
+    {"stage":"supplemental fixed checker tests","status":"PASS","tests":4,"log":"protocol-tests.log"},
+    {"stage":"receipt collection","status":"repaired instrumentation error","reason":"The collector first parsed pretty-printed JSON as one JSON object per line.","repair":"The collector now reads the compact stdout records. No circuit or audit result changed."},
+    {"stage":"four-policy fresh audit","status":"PASS","cases":4,"inputs_per_case":100000,"failed_inputs_each":0,"alpha_per_case":0.0125,"result":"result.json"},
+    {"stage":"adjacent cancellation full-point check","status":"PASS development evidence","inputs":4096,"failed_inputs":0,"removed_pairs":588,"result":"cancel-4096-check.json"},
+    {"stage":"all policy subsets","status":"PASS development smoke","cases":32,"inputs_per_case":64,"result":"smoke32.json"},
+    {"stage":"all composed subsets","status":"PASS development smoke","cases":64,"inputs_per_case":64,"result":"smoke64.json"},
+    {"stage":"portable build helper","status":"PASS","log":"build-helper.log"}
+  ],
+  "material_limits": [
+    "The fixed checker supports one thread per process.",
+    "The s mechanism has no active site in this 16-bit constructor. Inherited s is recorded and supplies no new transfer evidence.",
+    "Only exact adjacent involution cancellation has a generic base-pass binding. Factor and packing passes are not advertised.",
+    "Full-width family qualification is separate from these small-stage results."
+  ]
+}

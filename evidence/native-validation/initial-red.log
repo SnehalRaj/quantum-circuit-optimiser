@@ -1,0 +1,81 @@
+   Compiling typenum v1.20.1
+   Compiling libc v0.2.191
+   Compiling version_check v0.9.5
+   Compiling proc-macro2 v1.0.107
+   Compiling find-msvc-tools v0.1.15
+   Compiling shlex v2.0.1
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling cfg-if v1.0.5
+   Compiling pkg-config v0.3.34
+   Compiling unicode-segmentation v1.13.3
+   Compiling generic-array v0.14.7
+   Compiling unicode-xid v0.2.6
+   Compiling paste v1.0.15
+   Compiling serde_core v1.0.229
+   Compiling zmij v1.0.23
+   Compiling itoa v1.0.18
+   Compiling convert_case v0.10.0
+   Compiling ruint-macro v1.2.1
+   Compiling zstd-safe v7.3.0
+   Compiling foldhash v0.2.0
+   Compiling hashbrown v0.17.1
+   Compiling ruint v1.20.1
+   Compiling syn v2.0.119
+   Compiling const-hex v1.19.3
+   Compiling hybrid-array v0.4.15
+   Compiling jobserver v0.1.35
+   Compiling cpufeatures v0.3.1
+   Compiling cpufeatures v0.2.17
+   Compiling keccak v0.2.2
+   Compiling keccak v0.1.6
+   Compiling cc v1.9.0
+   Compiling serde_json v1.0.154
+   Compiling bytes v1.12.1
+   Compiling memchr v2.8.3
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.7
+   Compiling digest v0.10.7
+   Compiling block-buffer v0.12.1
+   Compiling crypto-common v0.2.2
+   Compiling sha3 v0.10.9
+   Compiling sha2 v0.10.9
+   Compiling zstd-sys v2.1.2+zstd.1.5.7
+   Compiling digest v0.11.3
+   Compiling sha3 v0.11.0
+   Compiling derive_more-impl v2.1.1
+   Compiling zstd v0.13.3
+   Compiling derive_more v2.1.1
+   Compiling alloy-primitives v1.7.3
+   Compiling quantum_ecc v0.1.0 ({repository}/vendor/native_reference/harness)
+   Compiling study-check v0.1.0 ({repository}/vendor/native_reference/study_check)
+   Compiling lco-native v0.1.0 ({repository}/native)
+    Finished `release` profile [optimized] target(s) in 3m 47s
+     Running tests/conditional.rs (/tmp/llm-native-target/release/deps/conditional-7ca30e383fb39aeb)
+
+running 2 tests
+test diagnostic_environment_controls_are_rejected ... FAILED
+test real_small_point_addition_activates_both_conditional_mechanisms ... FAILED
+
+failures:
+
+---- diagnostic_environment_controls_are_rejected stdout ----
+
+thread 'diagnostic_environment_controls_are_rejected' (195020236) panicked at tests/conditional.rs:28:9:
+assertion failed: String::from_utf8_lossy(&output.stderr).contains("forbidden")
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- real_small_point_addition_activates_both_conditional_mechanisms stdout ----
+
+thread 'real_small_point_addition_activates_both_conditional_mechanisms' (195020250) panicked at tests/conditional.rs:11:5:
+small-emit: conditional point-addition emitter is not implemented
+
+
+
+failures:
+    diagnostic_environment_controls_are_rejected
+    real_small_point_addition_activates_both_conditional_mechanisms
+
+test result: FAILED. 0 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.35s
+
+error: test failed, to rerun pass `--test conditional`

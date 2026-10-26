@@ -1,0 +1,1157 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-25T14:47:43.199763+00:00",
+  "purpose": "Retrospective component ablation designed after the earlier frontier results",
+  "arms": {
+    "G0": {
+      "name": "Fixed payload, legacy constants",
+      "shape": false,
+      "direct": false,
+      "guard": false
+    },
+    "G1": {
+      "name": "Editable payload shape, legacy constants",
+      "shape": true,
+      "direct": false,
+      "guard": false
+    },
+    "G2": {
+      "name": "Fixed payload shape, editable constants",
+      "shape": false,
+      "direct": true,
+      "guard": false
+    },
+    "G3": {
+      "name": "Editable shape and constants",
+      "shape": true,
+      "direct": true,
+      "guard": false
+    },
+    "G4": {
+      "name": "Editable shape and constants with finite guard",
+      "shape": true,
+      "direct": true,
+      "guard": true
+    }
+  },
+  "seeds": [
+    401,
+    809,
+    1601
+  ],
+  "baselines": {
+    "inverse": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "inverse",
+      "steps": 31,
+      "cleanup": "toffoli"
+    },
+    "replay": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "replay",
+      "steps": 31,
+      "cleanup": "toffoli"
+    },
+    "width": {
+      "bits": 16,
+      "prime": 65521,
+      "family": "width",
+      "steps": 31,
+      "cleanup": "toffoli"
+    }
+  },
+  "weights": {
+    "inverse": 1,
+    "replay": 32.72575137951653,
+    "width": 100
+  },
+  "proposals_per_baseline_seed_arm": 60,
+  "total_proposal_slots": 2700,
+  "quick_pairs": 512,
+  "long_pairs": 4096,
+  "development_label": "workshop-20261025/grammar/development-v1",
+  "audit_pairs": 16384,
+  "audit_label": "drawn only after all finalists freeze",
+  "epsilon": 0.001,
+  "family_alpha": 0.05,
+  "model_calls": 0,
+  "policy": {
+    "parents": "Choose a valid family uniformly; random parent with probability0.35, otherwise its minimum-cost parent",
+    "bridges": "First four slots share measured replay, measured width, width compare15, and exact finite widths",
+    "mutation": "Existing nine recipe rules plus R21 for the permitted proved payload programs",
+    "duplicates": "Recipe or operation duplicates consume their slot",
+    "guard": "Only G4 rejects candidates that violate exact finite walk and width requirements",
+    "cache": "Reuse exact recipe and common-packet evaluations across arms; compare proposal budgets, not wall-clock efficiency"
+  },
+  "scope": "Two proved equivalent payload shapes and per-operation constant lowering; arbitrary block programs are outside this component study",
+  "programs": {
+    "G0": [],
+    "G1": [
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      }
+    ],
+    "G2": [
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      }
+    ],
+    "G3": [
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      }
+    ],
+    "G4": [
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "legacy"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "legacy"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "legacy"
+          }
+        ]
+      },
+      {
+        "ops": [
+          {
+            "op": "swap",
+            "lowering": "legacy"
+          },
+          {
+            "op": "half_u",
+            "lowering": "direct"
+          },
+          {
+            "op": "half",
+            "lowering": "direct"
+          },
+          {
+            "op": "sub",
+            "lowering": "direct"
+          },
+          {
+            "op": "double_u",
+            "lowering": "direct"
+          }
+        ]
+      }
+    ]
+  },
+  "source_sha256": {
+    "__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "arithmetic/__init__.py": "0bafa6190267d85d2c123df7d3dac99daf7eead6aff2dc205f30034fe5ac659e",
+    "arithmetic/arith.py": "913c755895045dcb5ae73530dd85fb8a252537dc07d0d9397e9f70613264ede3",
+    "arithmetic/constant_kernel.py": "d48e504db57fcc3b4ea55f93ace77d3245688a4dee85d5210fefc348b9a5701b",
+    "arithmetic/designs.py": "b4b41b7c19152e055cadbcf11a4de09cd319dba7999631b233a14c02758e541e",
+    "arithmetic/revsim.py": "070c18b6232d97e6aa51645d52f3ded60b3c05d33135cf8022bb56df9a827661",
+    "block_program.py": "e2a173cfc3584c61ed843708387c9c39597995a13a36bbfad6b5a5fe34bb525b",
+    "candidate.py": "bf65a6f39b4bffa881c1770eed160ffb6396171f6fa60e93f7897b874259dc4a",
+    "cli.py": "8e0087cad74e8dd12783df0f3bbe12a6202239f53f0043da55753981a92d9eed",
+    "division.py": "59bd08cff131d72cba4794f01b87025c78c54a088d60167e173eb3f62f427b4d",
+    "engine.py": "0dc79283ab82b160d303ebf9a9e221ddf3375655d8c678e9b02bdbb8670bea8d",
+    "experiment.py": "1d3c1db4791dbf4a6b3e4e953f56ce9f2d26d4be77cbbe521c105fbfb963050d",
+    "experiment_cli.py": "5b24e4a4549f167edd93da6e32582a195c7cc76acfb20382f403d9b70e708b0e",
+    "frontier_campaign.py": "82f441fec19c259c4196e6025cbeafe698aa5a62c195d3cfd6601df401e12a9c",
+    "frontier_cli.py": "a3d9c6dff5b9441749887a14afb90d5d424318ffecf0cc171ce37e78f21dbec8",
+    "frontier_grammar.py": "7771c2754ee91501ac1f83b102b49391f5edd4db4e7779d606561fd7fa017f61",
+    "frontier_programs.py": "c1eae45f0244a15ef58bcb0addf7abf7fafc714134127d32c555ab462859c25e",
+    "full_integrity.py": "4d2aa224f10833f7211ca05740afc93528617be1f85830b0c136bca813bef096",
+    "full_native.py": "afb459ca95fd153a7c02910d85936453f026bee0f9f634d85eb78d1f2465d9f2",
+    "full_path.py": "4108825ed5077d885a973aa7599962e331edcdf7bcfc9684806e5d2e57fc746e",
+    "full_pipeline.py": "9801fb3aef077ccb1f4ba1d4c1395f0cb685cf68a303286d2581391b44c5354e",
+    "full_profile.py": "2a9432e4e26a4c10f62c587ee8cdc0e8ad12d7eb97ec6a6f2d7cb69e193e00dd",
+    "full_report.py": "fa973a348fa630798c485e653fc5f51ad5ce31ae607ea9d75b1ca7d52633b3a2",
+    "full_search.py": "b3b1f8cefc69dba9434580f8fc3d00ed37635ec8b630e7b14dd73984437f6afe",
+    "grammar_campaign.py": "811c4b5f10f48260eb456829f80ce001e2e1e36d0d362fe260b5e4fb6910fdc8",
+    "openevolve_model.py": "2e8734658de1e4a0978577e83e8995b2647b4c76c66d3f7c746aa0c3eb730842",
+    "openevolve_pilot.py": "fc814c85a105e46a3c20de46f99cdf136f5344fd64db0c75d6d51197a1b55a85",
+    "openevolve_selection.py": "9e9c480667bb7f21907a73a9471db938bfecdee5565460334956a9863bbb42e4",
+    "packets.py": "657c3e8010d0f42e8f555fc9b5df1518c7d58a3fc21d503af2842ecc6a35dcb6",
+    "pareto_search.py": "eb9fdc227e7b0ecc886b8104ae4c7dd7fdcbe83c32f4f3fb8fd358360ef847a9",
+    "point_add.py": "fe935c79f885f226453e3c84512c8b035ec0aed8fed707a22e0f19629aaaa731",
+    "providers.py": "dec1e4e57b3adc32fe1c1dff88f10292c5b6a12c8487fec6fe7e3a9a22b43961",
+    "research_policy.py": "4da8bfd977ba7bb65c01ec42883a3d992a33c46d47c378aded11cec014a32d81",
+    "rule_ops.py": "e6099fa2bd3fc32d1eba8428788bb706f85008c8850414fb27c8ed715b18a22d",
+    "rules.py": "aac13481c3791ba96a5c9bfbbcd6f57f4840763ad99ec6962e7e54fbab6f6923",
+    "rules_cli.py": "8e48117dabff173bf47b8f373cbf53ace2cbe4522bc013b6e130c9ec86e83d53",
+    "search_space.py": "26c2fb2da1c1102b3b9aa1cb75c5367b98cd5d5e40ee9e3d44616149c1c089db",
+    "snapshot.py": "c84820238a6bee7a7a8c362ca1eabd20a8a9c791e7cfb03ad107ab71e1f60e9b",
+    "study.py": "603721af3f17fb7eddcb9a1b401dc74c45486399e2429cdf2e642bc0092e7527",
+    "study_cli.py": "86122611724aee48bb1b44e10d6d11a54ec0a6ca00a67423d38b32bb37276e54",
+    "study_formats.py": "402169e2ab16244f787c9d5089b52b7be052a6cd49df3d12ab57aa03dd965f0b",
+    "study_grammar.py": "22edf3d0e1f63cc2702988fcf140b5db809f1a3c6561e744865a665801c009b3",
+    "study_pipeline.py": "740b4f38266f9925fb713dfe76e1554d2f1154f44ff70a40adf9b93d5835f744",
+    "study_policy.py": "bbd7b4c6693011b0aef776aea26c3a025ce4122e2a05eece575af4334783df39",
+    "study_report.py": "c98082008b30f11a4edab434c089737297cecdb9eed8ada2e50a0ac36ed5f803",
+    "study_transfer.py": "ee9255ee13e54f746516886f0e120324a93ea6feaeed5b98d960922a38222949",
+    "swarm_development.py": "1eec5966f94eb86bd7a8429f99a13a87a8a9ca645a5de99903a81339c9779ae0",
+    "swarm_extension.py": "5b195e2e0758edbba675a11962a791b0d295cc93c1990ec3fb5d02c3ac8ca9e7",
+    "swarm_native.py": "11cd08407d8ac167a5306178e239f679211566b31881f125c103527cab31d892",
+    "swarm_report.py": "a0cae91a6815b5b58fc091ae4171efa23919f2599af3b2bd6c5acd76886b103e",
+    "targeted_frontier.py": "f7a18fcbfa3fd5fcb3289c1021d4a0a09aeccaece4beb83dc3fe44eb687cb8d2",
+    "targeted_joint.py": "d08d9b7e3e66c34424c1a0a6791847e48180feb1bd29b507903351fd833cdb4e",
+    "targeted_skywalk.py": "063e1070133c54b2ab582b1811462ee9f47dc13b39e7494faf8a9c5b323fb056",
+    "worker.py": "dee80441c64080443dfe95ee3093a06f239b4751e2017d1c3801288ba56e8eea"
+  },
+  "runner_sha256": "b9496b69c1b1f9e49f841de9706522883f1390074734b64047cf7b2ad8825050"
+}

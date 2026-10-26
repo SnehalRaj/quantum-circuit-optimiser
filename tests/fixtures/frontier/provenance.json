@@ -1,0 +1,13 @@
+{
+  "source_repository": "SnehalRaj/reversible-circuit-optimizer",
+  "source_commit": "da182c4",
+  "source_directory": "runs/pareto5-20261025/cluster-handoff",
+  "files": {
+    "make_jobs.py": "f631429657627aececd71505b502261b0a2a1ee4909af8fb29edbcc0a17daf35",
+    "make_lilypad_sweep.py": "79a74378feba519a336332ee3b0a2b9af39678a50865885040ef36990a654ddd",
+    "code/eligibility-filter.py": "78eed1cb53b79478f37d898c186cca58dd197654cec3dd2c4b8d34fb3d395f85",
+    "curve/curve-20261025T2201Z.json": "4a06e053090b4cb5b03bb784da59d00b54bc534f89ae7c503bb0e8a5f0bc6f84",
+    "jobs.json": "c57e81e0026cae766bd1d8316cf5d97b8605f07de9dfcf900599008c1ce41e72"
+  },
+  "note": "The Lilypad fixture runs the unchanged source generator on the 22:01 snapshot. The archived handoff Lilypad list uses the later 23:01 snapshot."
+}

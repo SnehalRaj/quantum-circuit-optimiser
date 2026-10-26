@@ -1,0 +1,101 @@
+{
+  "base_commit": "b618b19cf76f0ffe3829b53a8af6653c95dc7e4e",
+  "candidate": "q819-p19-cat",
+  "expected": {
+    "emitted_ops": 48286034,
+    "operation_sha256": "818868c1fea2b67b40035d79c512f4b25ae436cf8be99fcfdef0fe81838fcd13",
+    "required_dependencies": [
+      {
+        "role": "parent",
+        "submission_id": "d2583a60-f676-44b6-9e25-399dbdd273d7"
+      },
+      {
+        "role": "lever",
+        "submission_id": "59359890-410f-49b1-b4dc-c5e54ed528f0"
+      },
+      {
+        "role": "lever",
+        "submission_id": "6d08713c-4a11-4384-9fe4-53fb9f5aca02"
+      },
+      {
+        "role": "lever",
+        "submission_id": "d419f804-80ed-4ddd-914c-c1e1d149a706"
+      },
+      {
+        "role": "setting",
+        "submission_id": "cac0bf90-b459-477c-bc49-98a01c33c4b6"
+      },
+      {
+        "role": "catalog",
+        "submission_id": "11613a51-1243-4f91-801a-9e71600d1f99"
+      }
+    ],
+    "required_note_sections": [
+      "What changed",
+      "Measured results",
+      "Disclosure: variants screened in this region",
+      "Reproduce",
+      "Prior work and credit",
+      "Limitations",
+      "Inherited limiting contract"
+    ],
+    "screen": {
+      "Q": 819,
+      "T": 9718964,
+      "counts": {
+        "ancilla_garbage_batches": 0,
+        "classical_mismatches": 0,
+        "phase_garbage_batches": 0
+      },
+      "passed": true,
+      "score": 7959831516,
+      "shots": 9024
+    }
+  },
+  "fixture_sha256": "1031147ab1c4ef563d2a27710f95725e07e11c99f926d291ddf28d8e1f3e0818",
+  "historical_submission": {
+    "id": "fd5adedb-4b0a-43a8-b246-a047a6e6d15c",
+    "officialMetrics": {
+      "qubits": 819,
+      "toffoli": 9718964
+    },
+    "officialScore": 7959831516,
+    "on_public_QT_curve": true,
+    "rejectionReason": "score did not improve current best",
+    "status": "rejected",
+    "submissionCommitSha": "aa14fab5a22e77db4e4d886ad43a6b7f2637c640"
+  },
+  "role_mapping_scope": "Roles follow the exact-edit descriptions and credits in the hashed public notes.",
+  "schema": "lco-frontier-replay-v1",
+  "scope": "Expectations extracted from archived campaign records. A fresh library replay remains required.",
+  "source_files_sha256": {
+    "src/point_add/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052",
+    "src/point_add/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53"
+  },
+  "source_records": {
+    "dependencies": {
+      "path": "runs/pareto5-public-20261025/publication/q819-p19-cat/dependencies.json",
+      "sha256": "a56e4b8dfd8bbf361f2ab6bd95b26ada6e73e6391a500578badf856f386815b4"
+    },
+    "emission": {
+      "path": "runs/pareto5-public-20261025/tracks/froghop-catalog/q819-p19-cat/emission.json",
+      "sha256": "d01e44bdfa17587e972040d521a4ba0ed738bf432a8d37c6b5f7073bfacfb49a"
+    },
+    "manifest": {
+      "path": "runs/pareto5-public-20261025/tracks/froghop-catalog/q819-p19-cat/manifest.json",
+      "sha256": "2b8b51d7f5eeaef689646d1737581bc466216b5077faadc26e6c2d6499d84006"
+    },
+    "note": {
+      "path": "runs/pareto5-public-20261025/publication/q819-p19-cat/note.md",
+      "sha256": "85e20c331a88447fe674b06379a3dd274576ce3ab250c78ed224c05367f1d504"
+    },
+    "screen": {
+      "path": "runs/pareto5-public-20261025/tracks/froghop-catalog/q819-p19-cat/screen.json",
+      "sha256": "a9209b1a04c6690973897ff6d5731c723b05ec929e5837d9a38c23e90062cf0c"
+    },
+    "service": {
+      "path": "runs/pareto5-public-20261025/publication/q819-p19-cat/service-result.json",
+      "sha256": "f02685d9c716e3c3de104bf59a1ff44aa907fa229f6ae60461f6195c000a9649"
+    }
+  }
+}

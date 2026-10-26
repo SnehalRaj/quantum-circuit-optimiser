@@ -1,0 +1,135 @@
+{
+  "schema": "lco-native-validation-result-v1",
+  "complete": true,
+  "field_width": 16,
+  "source_sha256": "200ba8ed4b631267970c133fbd9dcb62ec761f900d5b2cd5f18df59d7060452b",
+  "checker_source_sha256": "5a00c89974f5774b1e44cd00c9e9e8f147aad4c695ddea31d24900cb31e849f8",
+  "conditional_source_sha256": "a56f374ad86c7dd3ca13cfd08291f5f9a4f40a54e122959c481656a54b9d987e",
+  "epsilon": 0.001,
+  "family_alpha": 0.05,
+  "family_tests": 4,
+  "alpha_per_policy": 0.0125,
+  "small_qualified": true,
+  "cases": [
+    {
+      "policy": "mfs",
+      "parent_policy": "mfs",
+      "ops_sha256": "b84161037cdd8580e28172308418c1767b179abb27a7b02aa6ac90ebb74bfaf8",
+      "pairs": 100000,
+      "streams": 2,
+      "failed_inputs": 0,
+      "upper_bound": 0.00004381930625289137,
+      "Q": 214,
+      "T": 31769,
+      "score": 6798566,
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ],
+      "guards_active": true,
+      "packet_sha256": "1e6d487a0c8fe64630f1de8cf7f8189a32f26a12790db836236f14b3350cfc85",
+      "per_input_sha256": "33f05015beb2682edadd3705eb436d523637f6cd392890536870ccc5ac31cd60",
+      "receipt": "evidence/native-validation/audits/mfs.json"
+    },
+    {
+      "policy": "mfsu",
+      "parent_policy": "mfs",
+      "ops_sha256": "d7f905ebad6c0e52c5cac636a64045fb333c6b0f6b396c4d81569fc60ed77adb",
+      "pairs": 100000,
+      "streams": 2,
+      "failed_inputs": 0,
+      "upper_bound": 0.00004381930625289137,
+      "Q": 214,
+      "T": 28111,
+      "score": 6015754,
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ],
+      "guards_active": true,
+      "packet_sha256": "1e6d487a0c8fe64630f1de8cf7f8189a32f26a12790db836236f14b3350cfc85",
+      "per_input_sha256": "33f05015beb2682edadd3705eb436d523637f6cd392890536870ccc5ac31cd60",
+      "receipt": "evidence/native-validation/audits/mfsu.json"
+    },
+    {
+      "policy": "mfsr",
+      "parent_policy": "mfs",
+      "ops_sha256": "1f2d68beca2a499e28db27cc3c3ea0933f06efdbcd37501ed771882eeccb8df0",
+      "pairs": 100000,
+      "streams": 2,
+      "failed_inputs": 0,
+      "upper_bound": 0.00004381930625289137,
+      "Q": 214,
+      "T": 31709,
+      "score": 6785726,
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 60,
+        "r_ccx": 60,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ],
+      "guards_active": true,
+      "packet_sha256": "1e6d487a0c8fe64630f1de8cf7f8189a32f26a12790db836236f14b3350cfc85",
+      "per_input_sha256": "33f05015beb2682edadd3705eb436d523637f6cd392890536870ccc5ac31cd60",
+      "receipt": "evidence/native-validation/audits/mfsr.json"
+    },
+    {
+      "policy": "mfsur",
+      "parent_policy": "mfs",
+      "ops_sha256": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83",
+      "pairs": 100000,
+      "streams": 2,
+      "failed_inputs": 0,
+      "upper_bound": 0.00004381930625289137,
+      "Q": 214,
+      "T": 28051,
+      "score": 6002914,
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 60,
+        "r_ccx": 60,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ],
+      "guards_active": true,
+      "packet_sha256": "1e6d487a0c8fe64630f1de8cf7f8189a32f26a12790db836236f14b3350cfc85",
+      "per_input_sha256": "33f05015beb2682edadd3705eb436d523637f6cd392890536870ccc5ac31cd60",
+      "receipt": "evidence/native-validation/audits/mfsur.json"
+    }
+  ],
+  "cancellation_development": {
+    "pairs": 4096,
+    "failed_inputs": 0,
+    "Q": 214,
+    "T": 28051,
+    "removed_pairs": 588,
+    "removed_gate_records": 1176,
+    "source_sha256": "5bd79f20646acd7b8dcf436fdd604d6a6546f32536e8aa2324d8100875ee328f",
+    "receipt": "evidence/native-validation/cancel-4096-check.json",
+    "scope": "Development check and exact local cancellation certificate; outside the four-policy qualification family."
+  },
+  "scope": "Only the real16-bit fast environment is qualified here. Full-width Froghop/family replay and reliability remain separate. Inactive inherited s supplies no s-transfer evidence."
+}

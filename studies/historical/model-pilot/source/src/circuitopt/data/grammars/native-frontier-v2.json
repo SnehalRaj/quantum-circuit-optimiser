@@ -1,0 +1,382 @@
+{
+  "schema": 1,
+  "name": "native-frontier-v2",
+  "epsilon": 0.001,
+  "interface": "complete_secp256k1_point_addition_256",
+  "backends": {
+    "pingpong": {
+      "settings": {
+        "CP_CARRY_MEASURED": {
+          "kind": "bool",
+          "default": "1"
+        },
+        "CP_AND_MEASURED": {
+          "kind": "bool",
+          "default": "1"
+        },
+        "CP_FOLD_FUSED": {
+          "kind": "bool",
+          "default": "1"
+        },
+        "CP_WALK_SPLIT": {
+          "kind": "bool",
+          "default": "1"
+        },
+        "CP_FOLD_SPLIT": {
+          "kind": "bool",
+          "default": "1"
+        },
+        "CP_FOLD_STREAMED": {
+          "kind": "bool",
+          "default": "0"
+        },
+        "CP_INLET_EARLY": {
+          "kind": "bool",
+          "default": "1"
+        },
+        "CP_INLINE_PLUS2": {
+          "kind": "bool",
+          "default": "1"
+        },
+        "PP_WALK_MAX_QUBITS": {
+          "kind": "int",
+          "min": 1200,
+          "max": 1400,
+          "default": "1316"
+        },
+        "CP_FOLD_CAP": {
+          "kind": "int",
+          "min": 1200,
+          "max": 1400,
+          "default": "1316"
+        },
+        "PP_REPLAY_FOLD_WINDOW": {
+          "kind": "int",
+          "min": 48,
+          "max": 80,
+          "default": "64"
+        },
+        "PP_REPLAY_FOLD_WINDOW_MUL": {
+          "kind": "int",
+          "min": 48,
+          "max": 80,
+          "default": "64"
+        },
+        "PP_REPLAY_CHUNK_COMPARE": {
+          "kind": "int",
+          "min": 16,
+          "max": 64,
+          "default": "32"
+        },
+        "PP_REPLAY_FLAG_COMPARE": {
+          "kind": "int",
+          "min": 16,
+          "max": 64,
+          "default": "33"
+        },
+        "FOLD_GUARD": {
+          "kind": "int",
+          "min": 16,
+          "max": 64,
+          "default": "32"
+        },
+        "ERASE_COMPARE": {
+          "kind": "int",
+          "min": 16,
+          "max": 64,
+          "default": "28"
+        },
+        "CP_FOLD_SITES": {
+          "kind": "fold_sites",
+          "default": "746:2"
+        }
+      },
+      "program_context": null
+    },
+    "leapfrog": {
+      "settings": {
+        "LF_REORDER_DIV": {
+          "kind": "int",
+          "min": 0,
+          "max": 150,
+          "default": "76"
+        },
+        "LF_REORDER_MUL": {
+          "kind": "int",
+          "min": 0,
+          "max": 150,
+          "default": "76"
+        },
+        "LFX_FUSED_FWD_TO": {
+          "kind": "int",
+          "min": 0,
+          "max": 150,
+          "default": "124"
+        },
+        "LFX_FUSED_REV_TO": {
+          "kind": "int",
+          "min": 0,
+          "max": 150,
+          "default": "124"
+        },
+        "LF_CMP_FROM": {
+          "kind": "int",
+          "min": 0,
+          "max": 150,
+          "default": "0"
+        },
+        "LF_MERGED_WIN": {
+          "kind": "int",
+          "min": 48,
+          "max": 80,
+          "default": "60"
+        },
+        "LF_MERGED_LATE_WIN": {
+          "kind": "int",
+          "min": 48,
+          "max": 80,
+          "default": "62"
+        },
+        "LF_CELL_FOLD_MIN": {
+          "kind": "int",
+          "min": 48,
+          "max": 80,
+          "default": "60"
+        },
+        "LFX_Y15_WIN": {
+          "kind": "int",
+          "min": 48,
+          "max": 80,
+          "default": "64"
+        },
+        "HEO_PIN_PP_REPLAY_FOLD_WINDOW": {
+          "kind": "int",
+          "min": 48,
+          "max": 80,
+          "default": "64"
+        },
+        "HEO_PIN_PP_REPLAY_FOLD_WINDOW_MUL": {
+          "kind": "int",
+          "min": 48,
+          "max": 80,
+          "default": "64"
+        },
+        "LFX_Y15_GUARD": {
+          "kind": "int",
+          "min": 0,
+          "max": 16,
+          "default": "0"
+        },
+        "LFX_Y15_CMP_EXTRA": {
+          "kind": "int",
+          "min": 0,
+          "max": 8,
+          "default": "2"
+        },
+        "LFX_XTICKS": {
+          "kind": "int",
+          "min": 0,
+          "max": 32,
+          "default": "12"
+        },
+        "HEO_PIN_PP_WALK_MAX_QUBITS": {
+          "kind": "int",
+          "min": 1200,
+          "max": 1400,
+          "default": "1290"
+        },
+        "HEO_PIN_FOLD_GUARD": {
+          "kind": "int",
+          "min": 16,
+          "max": 64,
+          "default": "32"
+        },
+        "HEO_PIN_ERASE_COMPARE": {
+          "kind": "int",
+          "min": 16,
+          "max": 64,
+          "default": "20"
+        },
+        "HEO_PIN_PP_REPLAY_CHUNK_COMPARE": {
+          "kind": "int",
+          "min": 16,
+          "max": 64,
+          "default": "21"
+        },
+        "HEO_PIN_PP_REPLAY_FLAG_COMPARE": {
+          "kind": "int",
+          "min": 16,
+          "max": 64,
+          "default": "20"
+        },
+        "HEO_PIN_SQ_ASM_TAIL": {
+          "kind": "int",
+          "min": 16,
+          "max": 64,
+          "default": "32"
+        },
+        "LFX_WPAD": {
+          "kind": "walk_schedule",
+          "default": "0:1,5:3,7:4,8:5,10:6,13:5,20:6,21:7,23:6,25:7,26:8,27:7,28:8,31:6,32:7,33:8,39:9,40:10,42:12,43:13,46:14,47:12,48:13,49:14,52:15,54:16,55:17,56:16,57:17,61:18,66:17,67:15,68:16,71:17,73:16,74:17,75:16,76:17,79:15,80:16,84:15,85:16,86:15,88:16,89:15,91:16,92:15,94:16,101:17,103:18,104:19,105:18,107:20,108:19,111:18,114:16,115:18,116:17,117:18,118:17,119:18,123:19,125:20,126:19,129:20,130:21,134:23,135:24,137:23,138:21,139:20,140:17,141:16,142:13,143:12,144:10,145:7,146:5,147:3,148:1"
+        },
+        "LF_CMP_SHIFT": {
+          "kind": "compare_pair",
+          "default": "4,4"
+        },
+        "HEO_PIN_PP_FOLD_PROFILE": {
+          "kind": "fold_profile",
+          "default": "0:0"
+        },
+        "AB_FUSION": {
+          "kind": "bool",
+          "default": "0"
+        }
+      },
+      "program_context": "leapfrog_replay"
+    },
+    "dialog": {
+      "settings": {
+        "DL_GAP_DELTA": {
+          "kind": "int",
+          "min": 0,
+          "max": 4,
+          "default": "0"
+        },
+        "DL_TARGET_Q": {
+          "kind": "int",
+          "min": 1150,
+          "max": 1300,
+          "default": "1150"
+        },
+        "DL_COUT_ERASE_CAP": {
+          "kind": "int",
+          "min": 0,
+          "max": 64,
+          "default": "22"
+        },
+        "DL_WIDTH_MARGIN": {
+          "kind": "int",
+          "min": 0,
+          "max": 16,
+          "default": "0"
+        },
+        "DL_COMPARE_EXTRA": {
+          "kind": "int",
+          "min": 0,
+          "max": 16,
+          "default": "0"
+        },
+        "DL_MINED": {
+          "kind": "bool",
+          "default": "0"
+        }
+      },
+      "program_context": null
+    },
+    "skywalk": {
+      "settings": {
+        "SK_CAP": {
+          "kind": "int",
+          "min": 1171,
+          "max": 1300,
+          "default": "1171"
+        },
+        "SK_FIT_K": {
+          "kind": "int",
+          "min": 16,
+          "max": 64,
+          "default": "21"
+        },
+        "SK_ERASE_COMPARE": {
+          "kind": "int",
+          "min": 16,
+          "max": 64,
+          "default": "22"
+        },
+        "SK_FOLD_GUARD": {
+          "kind": "int",
+          "min": 16,
+          "max": 64,
+          "default": "20"
+        },
+        "SK_FOLD_WIDEN": {
+          "kind": "int",
+          "min": 64,
+          "max": 256,
+          "default": "128"
+        },
+        "SK_TERMINAL_FW": {
+          "kind": "int",
+          "min": 32,
+          "max": 64,
+          "default": "40"
+        },
+        "SK_PAIR_SHARE": {
+          "kind": "bool",
+          "default": "1"
+        },
+        "SK_MABSORB": {
+          "kind": "bool",
+          "default": "1"
+        },
+        "SK_REWRITE": {
+          "kind": "bool",
+          "default": "0"
+        },
+        "SK_RAIL_PAD": {
+          "kind": "int",
+          "min": 0,
+          "max": 16,
+          "default": "0"
+        },
+        "SK_EXTRA_GROUPS": {
+          "kind": "int",
+          "min": 0,
+          "max": 4,
+          "default": "0"
+        }
+      },
+      "program_context": null
+    }
+  },
+  "program": {
+    "operations": [
+      "swap",
+      "add",
+      "sub",
+      "half",
+      "double",
+      "half_u",
+      "double_u"
+    ],
+    "lowerings": [
+      "direct",
+      "power2"
+    ],
+    "minimum_length": 1,
+    "maximum_length": 8,
+    "default": [
+      {
+        "op": "add",
+        "lowering": "direct"
+      },
+      {
+        "op": "half",
+        "lowering": "direct"
+      }
+    ]
+  },
+  "mutation_families": [
+    "backend",
+    "setting",
+    "program",
+    "insert",
+    "delete",
+    "replace",
+    "swap",
+    "lowering",
+    "inverse_pair"
+  ],
+  "semantics": "Syntax admits speculative programs. The fixed full-circuit evaluator determines arithmetic, phase, scratch and addend outcomes.",
+  "source_policy": "Original source and data stay preserved. Candidate settings contain no nonce or artificial padding."
+}

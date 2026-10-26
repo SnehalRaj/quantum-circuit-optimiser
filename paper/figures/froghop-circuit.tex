@@ -1,0 +1,54 @@
+% Circuit blocks follow the frozen one-hop and two-hop Froghop sources.
+% Panel (b) shows the simplest instance of conditional-AND option u.
+\begin{tikzpicture}[x=1cm,y=1cm,
+  every node/.style={font=\small},
+  block/.style={draw=blue!45!black,fill=blue!4,rounded corners=1pt,
+    align=center,minimum height=1.65cm,inner sep=3pt,font=\footnotesize},
+  wire/.style={line width=.5pt},
+  classical/.style={double,double distance=.6pt,line width=.35pt,-{Latex[length=1.6mm]}}]
+\node[anchor=west,font=\small\bfseries] at (0,4.6) {(a) Froghop point addition};
+\node[anchor=east,font=\footnotesize] at (17.4,4.6) {Classical addend: $(x_0,y_0)$};
+\foreach \y/\left/\right in {3.8/x/x',3.15/y/y',2.5/0/0} {
+  \draw[wire] (.7,\y)--(16.65,\y);
+  \node[anchor=east] at (.65,\y) {$|\left\rangle$};
+  \node[anchor=west] at (16.7,\y) {$|\right\rangle$};
+}
+\node[block,minimum width=1.7cm] at (1.85,3.15) {Subtract\\$(x_0,y_0)$};
+\node[block,minimum width=2.75cm] at (4.7,3.15) {Froghop division\\Compute slope\\$\lambda=e/d$};
+\node[block,minimum width=3.0cm] at (8.2,3.15) {Coordinate products\\$d'=\lambda^2-d-3x_0$\\$n=-\lambda d'$\\Measure slope};
+\node[block,minimum width=3.05cm] at (11.9,3.15) {Froghop division\\Recompute slope\\and repair phase};
+\node[block,minimum width=1.9cm] at (15.25,3.15) {Add $x_0$\\Subtract $y_0$};
+\node[anchor=west,font=\footnotesize] at (.7,1.95)
+  {$d=x-x_0,\quad e=y-y_0;\qquad x'=d'+x_0,\quad y'=n-y_0\pmod p$.};
+
+\node[anchor=west,font=\small\bfseries] at (0,1.2) {(b) An AND cleanup enabled by our edit};
+\begin{scope}[shift={(.8,-1.1)}]
+  \foreach \y/\v in {1.5/a,.85/b} {
+    \draw[wire] (.8,\y)--(4.3,\y);
+    \node[anchor=east] at (.75,\y) {$|\v\rangle$};
+    \node[anchor=west] at (4.35,\y) {$|\v\rangle$};
+    \fill (2.5,\y) circle (1.5pt);
+  }
+  \draw[wire] (.8,.2)--(4.3,.2);
+  \node[anchor=east] at (.75,.2) {$|ab\rangle$};
+  \node[anchor=west] at (4.35,.2) {$|0\rangle$};
+  \draw[wire] (2.5,1.5)--(2.5,.06);
+  \draw[wire,fill=white] (2.5,.2) circle (.14);
+  \draw[wire] (2.36,.2)--(2.64,.2) (2.5,.06)--(2.5,.34);
+  \node at (5.75,.85) {$\Longrightarrow$};
+
+  \foreach \y/\v in {1.5/a,.85/b} {
+    \draw[wire] (7.6,\y)--(15.25,\y);
+    \node[anchor=east] at (7.55,\y) {$|\v\rangle$};
+    \node[anchor=west] at (15.3,\y) {$|\v\rangle$};
+  }
+  \draw[wire] (7.6,.2)--(15.25,.2);
+  \node[anchor=east] at (7.55,.2) {$|ab\rangle$};
+  \node[anchor=west] at (15.3,.2) {$|0\rangle$};
+  \node[draw,fill=green!5,align=center,minimum width=1.2cm,
+    minimum height=.65cm,font=\footnotesize] (measure) at (9,.2) {$M_X$\\reset};
+  \node[draw,fill=green!5,minimum width=1.2cm,minimum height=1.12cm] (phase) at (12.7,1.175) {$\mathrm{CZ}^{m}$};
+  \draw[classical] (measure.east)--(10.05,.2)--(10.05,-.45)--(12.7,-.45)--(phase.south);
+  \node[fill=white,font=\footnotesize] at (11.4,-.45) {$m$};
+\end{scope}
+\end{tikzpicture}

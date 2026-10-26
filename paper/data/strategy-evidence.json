@@ -1,0 +1,3949 @@
+{
+  "schema": 1,
+  "scope": "Saved full-scale development observations; no new circuit runs. Source frequencies describe sampled sources and tested opportunities, not historical use frequencies.",
+  "sources": [
+    {
+      "path": "external-project/external-project/reversible-circuit-optimizer/runs/pareto-frontier-20261024/measured-configurations.csv",
+      "sha256": "8eff2e9b017129605fda37066491bb7cb3092f013420a8edc004f7cc7b1b4034"
+    },
+    {
+      "path": "external-project/external-project/reversible-circuit-optimizer-strategies/src/circuitopt/search_space.py",
+      "sha256": "26c2fb2da1c1102b3b9aa1cb75c5367b98cd5d5e40ee9e3d44616149c1c089db"
+    },
+    {
+      "path": "external-project/external-project/reversible-circuit-optimizer-strategies/src/circuitopt/study_grammar.py",
+      "sha256": "22edf3d0e1f63cc2702988fcf140b5db809f1a3c6561e744865a665801c009b3"
+    },
+    {
+      "path": "external-project/external-project/reversible-circuit-optimizer-strategies/src/circuitopt/data/grammars/native-frontier-v2.json",
+      "sha256": "eeb43473f59d9868d351aa017b947d724190d278930747432c9ba31e10e3f79b"
+    },
+    {
+      "path": "external-project/external-project/reversible-circuit-optimizer-strategies/src/circuitopt/data/grammars/targeted-frontier-v1.json",
+      "sha256": "a04a7e93692af77c3ccc82085b1a1a859680c0b36b9d02b4275a17279c179bf6"
+    },
+    {
+      "path": "external-project/external-project/reversible-circuit-optimizer-strategies/src/circuitopt/frontier_cli.py",
+      "sha256": "a3d9c6dff5b9441749887a14afb90d5d424318ffecf0cc171ce37e78f21dbec8"
+    },
+    {
+      "path": "external-project/external-project/reversible-circuit-optimizer-strategies/src/circuitopt/experiment_cli.py",
+      "sha256": "5b24e4a4549f167edd93da6e32582a195c7cc76acfb20382f403d9b70e708b0e"
+    }
+  ],
+  "strategies": [
+    {
+      "mode": "cancel-algebraic",
+      "n_sources": 36,
+      "improved_sources": 2,
+      "unchanged_sources": 34,
+      "worse_sources": 0,
+      "mean_saving_T": 419.1666666666667,
+      "mean_percent_reduction": 0.010859892826598392,
+      "median_percent_reduction": 0.0,
+      "mean_percent_reduction_improved_sources": 0.19547807087877103,
+      "rows": [
+        {
+          "source_commit": "0c373cdab3857eb5736caeecb39f7ddcea567954",
+          "Q": 1170,
+          "parent_T": 946545.2272949219,
+          "candidate_T": 946545.2272949219,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 28,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "1724be5616e66fdc21e458639b8f2aa41c5c911b",
+          "Q": 1148,
+          "parent_T": 1062325.270324707,
+          "candidate_T": 1062325.270324707,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "17e1a37cc1ffeb98d8030b573c1b4fc7786076b9",
+          "Q": 818,
+          "parent_T": 9785250.378051758,
+          "candidate_T": 9785210.378051758,
+          "saving_T": 40.0,
+          "reduction_percent": 0.00040877850289574295,
+          "failed_inputs": 0,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "18b73824983ccf0202376da3eb7f9cde56f3c44d",
+          "Q": 1164,
+          "parent_T": 970973.4416503906,
+          "candidate_T": 970973.4416503906,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "31c38da873433027b99c346e1ebef82aa6de07b7",
+          "Q": 1236,
+          "parent_T": 741965.1292114258,
+          "candidate_T": 741965.1292114258,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 24,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "36ced3f936c28ae844c34b1b94d285655657d4f9",
+          "Q": 1152,
+          "parent_T": 1036804.246887207,
+          "candidate_T": 1036804.246887207,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "370fc319832b78e58d1e139174b58d4a627bddd3",
+          "Q": 1141,
+          "parent_T": 1423737.5988769531,
+          "candidate_T": 1423737.5988769531,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3836ec797d0998c8367ce46b0f5bdaca55873d6e",
+          "Q": 1112,
+          "parent_T": 1739384.5297851562,
+          "candidate_T": 1739384.5297851562,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3a3b0ad427ec970ebf3c5d7e7dd4627f77296036",
+          "Q": 1078,
+          "parent_T": 1843228.9371948242,
+          "candidate_T": 1843228.9371948242,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "52b7997b7725abdc12b79a2c06a5110d57ad35b8",
+          "Q": 1065,
+          "parent_T": 1892815.937133789,
+          "candidate_T": 1892815.937133789,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "5be83d9f70f5565500acf75d6126e5ce2a97b2c5",
+          "Q": 856,
+          "parent_T": 3853565.896484375,
+          "candidate_T": 3838515.896484375,
+          "saving_T": 15050.0,
+          "reduction_percent": 0.39054736325464634,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6535301ef5df5c098696930282631493f278883b",
+          "Q": 885,
+          "parent_T": 2163089.851989746,
+          "candidate_T": 2163089.851989746,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "65f145fbd925dcc5d164738e0f096840bf4805f6",
+          "Q": 1159,
+          "parent_T": 997334.5621337891,
+          "candidate_T": 997334.5621337891,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6602a4e835898b9a4118f040806195571c6e8967",
+          "Q": 1240,
+          "parent_T": 740798.8107299805,
+          "candidate_T": 740798.8107299805,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 22,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6b0327d60e40068fcbed5fedcb7f66d926f12320",
+          "Q": 1234,
+          "parent_T": 742021.1781005859,
+          "candidate_T": 742021.1781005859,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6c9283cb7f329c398204802e6e144c6f390755df",
+          "Q": 1134,
+          "parent_T": 1460113.2830810547,
+          "candidate_T": 1460113.2830810547,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6e148cfc3aa800ce881aaa48e8c9136d39da6430",
+          "Q": 1142,
+          "parent_T": 1131788.0592041016,
+          "candidate_T": 1131788.0592041016,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "765ef38cd8ce99a3e3800e98a8a60db954d35b8f",
+          "Q": 1133,
+          "parent_T": 1460499.1603393555,
+          "candidate_T": 1460499.1603393555,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "8541fb1542d76864e7978328e56b31514d38c0cb",
+          "Q": 1143,
+          "parent_T": 1111689.1266479492,
+          "candidate_T": 1111689.1266479492,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "893d83bab084880ee329235952e9f7694d528b14",
+          "Q": 867,
+          "parent_T": 2243273.639831543,
+          "candidate_T": 2243273.639831543,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "9db31da9a0971a2185e54d12d9441c36838aba40",
+          "Q": 1172,
+          "parent_T": 945320.9753417969,
+          "candidate_T": 945320.9753417969,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 32,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6034cb8fa0653c2746bd64c3ca2b0ad6b9fb5ff",
+          "Q": 1171,
+          "parent_T": 945851.48828125,
+          "candidate_T": 945851.48828125,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6c3394cdde6421a2fbc646a61b21557be524d6d",
+          "Q": 1156,
+          "parent_T": 1022152.065246582,
+          "candidate_T": 1022152.065246582,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 16,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6ff74954dadfe9aca168b6c134479b9a9e9fffc",
+          "Q": 1090,
+          "parent_T": 1830273.9498291016,
+          "candidate_T": 1830273.9498291016,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "c9d2e0fe416916260301d6c056fdfc511ea71176",
+          "Q": 1080,
+          "parent_T": 1843153.5537109375,
+          "candidate_T": 1843153.5537109375,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cb59bcb1c72db0f0fd40fcdf54d659368f1a8929",
+          "Q": 1108,
+          "parent_T": 1801528.6885986328,
+          "candidate_T": 1801528.6885986328,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "ceffcd216c2a4a987987686fee48d89f54b60c41",
+          "Q": 1097,
+          "parent_T": 1815258.1305541992,
+          "candidate_T": 1815258.1305541992,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cfc78693cce6405828b80750bf4dadd7bfd4e9ec",
+          "Q": 935,
+          "parent_T": 2097285.925354004,
+          "candidate_T": 2097285.925354004,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d690a7e3074bdfeff3a9f2e89fa9498bc54f43a2",
+          "Q": 1111,
+          "parent_T": 1785180.8852539062,
+          "candidate_T": 1785180.8852539062,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d6dd7ef7e1b7aa4eb2de5066f75482d9b355c0e3",
+          "Q": 1174,
+          "parent_T": 943821.6328735352,
+          "candidate_T": 943821.6328735352,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d7f4e842c90df365b5c08a5e25b326aba53894f0",
+          "Q": 1068,
+          "parent_T": 1881223.6954956055,
+          "candidate_T": 1881223.6954956055,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d90b306b63a25eccae8c38de9070b092b35404f4",
+          "Q": 1144,
+          "parent_T": 1102910.8986206055,
+          "candidate_T": 1102910.8986206055,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e3fd358e6c56c477d8c7378c1987de34d79b9ede",
+          "Q": 1173,
+          "parent_T": 944578.9485473633,
+          "candidate_T": 944578.9485473633,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e70ab4063edbce52e4483681360b8655072ee547",
+          "Q": 1075,
+          "parent_T": 1858750.4115600586,
+          "candidate_T": 1858750.4115600586,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "f50ee007fdf84054fa44b71240c28a66a47aad8e",
+          "Q": 999,
+          "parent_T": 1998012.9881591797,
+          "candidate_T": 1998012.9881591797,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "fb1862fbb0da30e4bdaa82e5be26b765e6a73684",
+          "Q": 965,
+          "parent_T": 2065526.7431030273,
+          "candidate_T": 2065526.7431030273,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        }
+      ]
+    },
+    {
+      "mode": "pack",
+      "n_sources": 36,
+      "improved_sources": 0,
+      "unchanged_sources": 36,
+      "worse_sources": 0,
+      "mean_saving_T": 0.0,
+      "mean_percent_reduction": 0.0,
+      "median_percent_reduction": 0.0,
+      "mean_percent_reduction_improved_sources": null,
+      "rows": [
+        {
+          "source_commit": "0c373cdab3857eb5736caeecb39f7ddcea567954",
+          "Q": 1170,
+          "parent_T": 946545.2272949219,
+          "candidate_T": 946545.2272949219,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 28,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "1724be5616e66fdc21e458639b8f2aa41c5c911b",
+          "Q": 1148,
+          "parent_T": 1062325.270324707,
+          "candidate_T": 1062325.270324707,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "17e1a37cc1ffeb98d8030b573c1b4fc7786076b9",
+          "Q": 818,
+          "parent_T": 9785250.378051758,
+          "candidate_T": 9785250.378051758,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 0,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "18b73824983ccf0202376da3eb7f9cde56f3c44d",
+          "Q": 1164,
+          "parent_T": 970973.4416503906,
+          "candidate_T": 970973.4416503906,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "31c38da873433027b99c346e1ebef82aa6de07b7",
+          "Q": 1236,
+          "parent_T": 741965.1292114258,
+          "candidate_T": 741965.1292114258,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 24,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "36ced3f936c28ae844c34b1b94d285655657d4f9",
+          "Q": 1152,
+          "parent_T": 1036804.246887207,
+          "candidate_T": 1036804.246887207,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "370fc319832b78e58d1e139174b58d4a627bddd3",
+          "Q": 1141,
+          "parent_T": 1423737.5988769531,
+          "candidate_T": 1423737.5988769531,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3836ec797d0998c8367ce46b0f5bdaca55873d6e",
+          "Q": 1112,
+          "parent_T": 1739384.5297851562,
+          "candidate_T": 1739384.5297851562,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3a3b0ad427ec970ebf3c5d7e7dd4627f77296036",
+          "Q": 1078,
+          "parent_T": 1843228.9371948242,
+          "candidate_T": 1843228.9371948242,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "52b7997b7725abdc12b79a2c06a5110d57ad35b8",
+          "Q": 1065,
+          "parent_T": 1892815.937133789,
+          "candidate_T": 1892815.937133789,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "5be83d9f70f5565500acf75d6126e5ce2a97b2c5",
+          "Q": 856,
+          "parent_T": 3853565.896484375,
+          "candidate_T": 3853565.896484375,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6535301ef5df5c098696930282631493f278883b",
+          "Q": 885,
+          "parent_T": 2163089.851989746,
+          "candidate_T": 2163089.851989746,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "65f145fbd925dcc5d164738e0f096840bf4805f6",
+          "Q": 1159,
+          "parent_T": 997334.5621337891,
+          "candidate_T": 997334.5621337891,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6602a4e835898b9a4118f040806195571c6e8967",
+          "Q": 1240,
+          "parent_T": 740798.8107299805,
+          "candidate_T": 740798.8107299805,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 22,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6b0327d60e40068fcbed5fedcb7f66d926f12320",
+          "Q": 1234,
+          "parent_T": 742021.1781005859,
+          "candidate_T": 742021.1781005859,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6c9283cb7f329c398204802e6e144c6f390755df",
+          "Q": 1134,
+          "parent_T": 1460113.2830810547,
+          "candidate_T": 1460113.2830810547,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6e148cfc3aa800ce881aaa48e8c9136d39da6430",
+          "Q": 1142,
+          "parent_T": 1131788.0592041016,
+          "candidate_T": 1131788.0592041016,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "765ef38cd8ce99a3e3800e98a8a60db954d35b8f",
+          "Q": 1133,
+          "parent_T": 1460499.1603393555,
+          "candidate_T": 1460499.1603393555,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "8541fb1542d76864e7978328e56b31514d38c0cb",
+          "Q": 1143,
+          "parent_T": 1111689.1266479492,
+          "candidate_T": 1111689.1266479492,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "893d83bab084880ee329235952e9f7694d528b14",
+          "Q": 867,
+          "parent_T": 2243273.639831543,
+          "candidate_T": 2243273.639831543,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "9db31da9a0971a2185e54d12d9441c36838aba40",
+          "Q": 1172,
+          "parent_T": 945320.9753417969,
+          "candidate_T": 945320.9753417969,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 32,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6034cb8fa0653c2746bd64c3ca2b0ad6b9fb5ff",
+          "Q": 1171,
+          "parent_T": 945851.48828125,
+          "candidate_T": 945851.48828125,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6c3394cdde6421a2fbc646a61b21557be524d6d",
+          "Q": 1156,
+          "parent_T": 1022152.065246582,
+          "candidate_T": 1022152.065246582,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 16,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6ff74954dadfe9aca168b6c134479b9a9e9fffc",
+          "Q": 1090,
+          "parent_T": 1830273.9498291016,
+          "candidate_T": 1830273.9498291016,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "c9d2e0fe416916260301d6c056fdfc511ea71176",
+          "Q": 1080,
+          "parent_T": 1843153.5537109375,
+          "candidate_T": 1843153.5537109375,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cb59bcb1c72db0f0fd40fcdf54d659368f1a8929",
+          "Q": 1108,
+          "parent_T": 1801528.6885986328,
+          "candidate_T": 1801528.6885986328,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "ceffcd216c2a4a987987686fee48d89f54b60c41",
+          "Q": 1097,
+          "parent_T": 1815258.1305541992,
+          "candidate_T": 1815258.1305541992,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cfc78693cce6405828b80750bf4dadd7bfd4e9ec",
+          "Q": 935,
+          "parent_T": 2097285.925354004,
+          "candidate_T": 2097285.925354004,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d690a7e3074bdfeff3a9f2e89fa9498bc54f43a2",
+          "Q": 1111,
+          "parent_T": 1785180.8852539062,
+          "candidate_T": 1785180.8852539062,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d6dd7ef7e1b7aa4eb2de5066f75482d9b355c0e3",
+          "Q": 1174,
+          "parent_T": 943821.6328735352,
+          "candidate_T": 943821.6328735352,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d7f4e842c90df365b5c08a5e25b326aba53894f0",
+          "Q": 1068,
+          "parent_T": 1881223.6954956055,
+          "candidate_T": 1881223.6954956055,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d90b306b63a25eccae8c38de9070b092b35404f4",
+          "Q": 1144,
+          "parent_T": 1102910.8986206055,
+          "candidate_T": 1102910.8986206055,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e3fd358e6c56c477d8c7378c1987de34d79b9ede",
+          "Q": 1173,
+          "parent_T": 944578.9485473633,
+          "candidate_T": 944578.9485473633,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e70ab4063edbce52e4483681360b8655072ee547",
+          "Q": 1075,
+          "parent_T": 1858750.4115600586,
+          "candidate_T": 1858750.4115600586,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "f50ee007fdf84054fa44b71240c28a66a47aad8e",
+          "Q": 999,
+          "parent_T": 1998012.9881591797,
+          "candidate_T": 1998012.9881591797,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "fb1862fbb0da30e4bdaa82e5be26b765e6a73684",
+          "Q": 965,
+          "parent_T": 2065526.7431030273,
+          "candidate_T": 2065526.7431030273,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        }
+      ]
+    },
+    {
+      "mode": "factor",
+      "n_sources": 36,
+      "improved_sources": 8,
+      "unchanged_sources": 28,
+      "worse_sources": 0,
+      "mean_saving_T": 1794.9722222222222,
+      "mean_percent_reduction": 0.05259863300632042,
+      "median_percent_reduction": 0.0,
+      "mean_percent_reduction_improved_sources": 0.2366938485284419,
+      "rows": [
+        {
+          "source_commit": "0c373cdab3857eb5736caeecb39f7ddcea567954",
+          "Q": 1170,
+          "parent_T": 946545.2272949219,
+          "candidate_T": 946545.2272949219,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 28,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "1724be5616e66fdc21e458639b8f2aa41c5c911b",
+          "Q": 1148,
+          "parent_T": 1062325.270324707,
+          "candidate_T": 1062325.270324707,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "17e1a37cc1ffeb98d8030b573c1b4fc7786076b9",
+          "Q": 818,
+          "parent_T": 9785250.378051758,
+          "candidate_T": 9782720.378051758,
+          "saving_T": 2530.0,
+          "reduction_percent": 0.02585524030815574,
+          "failed_inputs": 0,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "18b73824983ccf0202376da3eb7f9cde56f3c44d",
+          "Q": 1164,
+          "parent_T": 970973.4416503906,
+          "candidate_T": 970973.4416503906,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "31c38da873433027b99c346e1ebef82aa6de07b7",
+          "Q": 1236,
+          "parent_T": 741965.1292114258,
+          "candidate_T": 741965.1292114258,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 24,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "36ced3f936c28ae844c34b1b94d285655657d4f9",
+          "Q": 1152,
+          "parent_T": 1036804.246887207,
+          "candidate_T": 1036804.246887207,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "370fc319832b78e58d1e139174b58d4a627bddd3",
+          "Q": 1141,
+          "parent_T": 1423737.5988769531,
+          "candidate_T": 1422500.5988769531,
+          "saving_T": 1237.0,
+          "reduction_percent": 0.08688398767973451,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3836ec797d0998c8367ce46b0f5bdaca55873d6e",
+          "Q": 1112,
+          "parent_T": 1739384.5297851562,
+          "candidate_T": 1739384.5297851562,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3a3b0ad427ec970ebf3c5d7e7dd4627f77296036",
+          "Q": 1078,
+          "parent_T": 1843228.9371948242,
+          "candidate_T": 1843228.9371948242,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "52b7997b7725abdc12b79a2c06a5110d57ad35b8",
+          "Q": 1065,
+          "parent_T": 1892815.937133789,
+          "candidate_T": 1892815.937133789,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "5be83d9f70f5565500acf75d6126e5ce2a97b2c5",
+          "Q": 856,
+          "parent_T": 3853565.896484375,
+          "candidate_T": 3797267.896484375,
+          "saving_T": 56298.0,
+          "reduction_percent": 1.4609325884724305,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6535301ef5df5c098696930282631493f278883b",
+          "Q": 885,
+          "parent_T": 2163089.851989746,
+          "candidate_T": 2163089.851989746,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "65f145fbd925dcc5d164738e0f096840bf4805f6",
+          "Q": 1159,
+          "parent_T": 997334.5621337891,
+          "candidate_T": 997334.5621337891,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6602a4e835898b9a4118f040806195571c6e8967",
+          "Q": 1240,
+          "parent_T": 740798.8107299805,
+          "candidate_T": 740798.8107299805,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 22,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6b0327d60e40068fcbed5fedcb7f66d926f12320",
+          "Q": 1234,
+          "parent_T": 742021.1781005859,
+          "candidate_T": 742021.1781005859,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6c9283cb7f329c398204802e6e144c6f390755df",
+          "Q": 1134,
+          "parent_T": 1460113.2830810547,
+          "candidate_T": 1458023.2830810547,
+          "saving_T": 2090.0,
+          "reduction_percent": 0.1431395785667939,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6e148cfc3aa800ce881aaa48e8c9136d39da6430",
+          "Q": 1142,
+          "parent_T": 1131788.0592041016,
+          "candidate_T": 1131698.0592041016,
+          "saving_T": 90.0,
+          "reduction_percent": 0.00795201886679119,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "765ef38cd8ce99a3e3800e98a8a60db954d35b8f",
+          "Q": 1133,
+          "parent_T": 1460499.1603393555,
+          "candidate_T": 1458411.1603393555,
+          "saving_T": 2088.0,
+          "reduction_percent": 0.14296482029574334,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "8541fb1542d76864e7978328e56b31514d38c0cb",
+          "Q": 1143,
+          "parent_T": 1111689.1266479492,
+          "candidate_T": 1111537.1266479492,
+          "saving_T": 152.0,
+          "reduction_percent": 0.013672887172902565,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "893d83bab084880ee329235952e9f7694d528b14",
+          "Q": 867,
+          "parent_T": 2243273.639831543,
+          "candidate_T": 2243273.639831543,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "9db31da9a0971a2185e54d12d9441c36838aba40",
+          "Q": 1172,
+          "parent_T": 945320.9753417969,
+          "candidate_T": 945320.9753417969,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 32,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6034cb8fa0653c2746bd64c3ca2b0ad6b9fb5ff",
+          "Q": 1171,
+          "parent_T": 945851.48828125,
+          "candidate_T": 945851.48828125,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6c3394cdde6421a2fbc646a61b21557be524d6d",
+          "Q": 1156,
+          "parent_T": 1022152.065246582,
+          "candidate_T": 1022152.065246582,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 16,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6ff74954dadfe9aca168b6c134479b9a9e9fffc",
+          "Q": 1090,
+          "parent_T": 1830273.9498291016,
+          "candidate_T": 1830273.9498291016,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "c9d2e0fe416916260301d6c056fdfc511ea71176",
+          "Q": 1080,
+          "parent_T": 1843153.5537109375,
+          "candidate_T": 1843153.5537109375,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cb59bcb1c72db0f0fd40fcdf54d659368f1a8929",
+          "Q": 1108,
+          "parent_T": 1801528.6885986328,
+          "candidate_T": 1801528.6885986328,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "ceffcd216c2a4a987987686fee48d89f54b60c41",
+          "Q": 1097,
+          "parent_T": 1815258.1305541992,
+          "candidate_T": 1815258.1305541992,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cfc78693cce6405828b80750bf4dadd7bfd4e9ec",
+          "Q": 935,
+          "parent_T": 2097285.925354004,
+          "candidate_T": 2097285.925354004,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d690a7e3074bdfeff3a9f2e89fa9498bc54f43a2",
+          "Q": 1111,
+          "parent_T": 1785180.8852539062,
+          "candidate_T": 1785180.8852539062,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d6dd7ef7e1b7aa4eb2de5066f75482d9b355c0e3",
+          "Q": 1174,
+          "parent_T": 943821.6328735352,
+          "candidate_T": 943821.6328735352,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d7f4e842c90df365b5c08a5e25b326aba53894f0",
+          "Q": 1068,
+          "parent_T": 1881223.6954956055,
+          "candidate_T": 1881223.6954956055,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d90b306b63a25eccae8c38de9070b092b35404f4",
+          "Q": 1144,
+          "parent_T": 1102910.8986206055,
+          "candidate_T": 1102776.8986206055,
+          "saving_T": 134.0,
+          "reduction_percent": 0.012149666864983548,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e3fd358e6c56c477d8c7378c1987de34d79b9ede",
+          "Q": 1173,
+          "parent_T": 944578.9485473633,
+          "candidate_T": 944578.9485473633,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e70ab4063edbce52e4483681360b8655072ee547",
+          "Q": 1075,
+          "parent_T": 1858750.4115600586,
+          "candidate_T": 1858750.4115600586,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "f50ee007fdf84054fa44b71240c28a66a47aad8e",
+          "Q": 999,
+          "parent_T": 1998012.9881591797,
+          "candidate_T": 1998012.9881591797,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "fb1862fbb0da30e4bdaa82e5be26b765e6a73684",
+          "Q": 965,
+          "parent_T": 2065526.7431030273,
+          "candidate_T": 2065526.7431030273,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        }
+      ]
+    },
+    {
+      "mode": "pack-factor",
+      "n_sources": 36,
+      "improved_sources": 8,
+      "unchanged_sources": 28,
+      "worse_sources": 0,
+      "mean_saving_T": 1794.9722222222222,
+      "mean_percent_reduction": 0.05259863300632042,
+      "median_percent_reduction": 0.0,
+      "mean_percent_reduction_improved_sources": 0.2366938485284419,
+      "rows": [
+        {
+          "source_commit": "0c373cdab3857eb5736caeecb39f7ddcea567954",
+          "Q": 1170,
+          "parent_T": 946545.2272949219,
+          "candidate_T": 946545.2272949219,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 28,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "1724be5616e66fdc21e458639b8f2aa41c5c911b",
+          "Q": 1148,
+          "parent_T": 1062325.270324707,
+          "candidate_T": 1062325.270324707,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "17e1a37cc1ffeb98d8030b573c1b4fc7786076b9",
+          "Q": 818,
+          "parent_T": 9785250.378051758,
+          "candidate_T": 9782720.378051758,
+          "saving_T": 2530.0,
+          "reduction_percent": 0.02585524030815574,
+          "failed_inputs": 0,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "18b73824983ccf0202376da3eb7f9cde56f3c44d",
+          "Q": 1164,
+          "parent_T": 970973.4416503906,
+          "candidate_T": 970973.4416503906,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "31c38da873433027b99c346e1ebef82aa6de07b7",
+          "Q": 1236,
+          "parent_T": 741965.1292114258,
+          "candidate_T": 741965.1292114258,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 24,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "36ced3f936c28ae844c34b1b94d285655657d4f9",
+          "Q": 1152,
+          "parent_T": 1036804.246887207,
+          "candidate_T": 1036804.246887207,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "370fc319832b78e58d1e139174b58d4a627bddd3",
+          "Q": 1141,
+          "parent_T": 1423737.5988769531,
+          "candidate_T": 1422500.5988769531,
+          "saving_T": 1237.0,
+          "reduction_percent": 0.08688398767973451,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3836ec797d0998c8367ce46b0f5bdaca55873d6e",
+          "Q": 1112,
+          "parent_T": 1739384.5297851562,
+          "candidate_T": 1739384.5297851562,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3a3b0ad427ec970ebf3c5d7e7dd4627f77296036",
+          "Q": 1078,
+          "parent_T": 1843228.9371948242,
+          "candidate_T": 1843228.9371948242,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "52b7997b7725abdc12b79a2c06a5110d57ad35b8",
+          "Q": 1065,
+          "parent_T": 1892815.937133789,
+          "candidate_T": 1892815.937133789,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "5be83d9f70f5565500acf75d6126e5ce2a97b2c5",
+          "Q": 856,
+          "parent_T": 3853565.896484375,
+          "candidate_T": 3797267.896484375,
+          "saving_T": 56298.0,
+          "reduction_percent": 1.4609325884724305,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6535301ef5df5c098696930282631493f278883b",
+          "Q": 885,
+          "parent_T": 2163089.851989746,
+          "candidate_T": 2163089.851989746,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "65f145fbd925dcc5d164738e0f096840bf4805f6",
+          "Q": 1159,
+          "parent_T": 997334.5621337891,
+          "candidate_T": 997334.5621337891,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6602a4e835898b9a4118f040806195571c6e8967",
+          "Q": 1240,
+          "parent_T": 740798.8107299805,
+          "candidate_T": 740798.8107299805,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 22,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6b0327d60e40068fcbed5fedcb7f66d926f12320",
+          "Q": 1234,
+          "parent_T": 742021.1781005859,
+          "candidate_T": 742021.1781005859,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6c9283cb7f329c398204802e6e144c6f390755df",
+          "Q": 1134,
+          "parent_T": 1460113.2830810547,
+          "candidate_T": 1458023.2830810547,
+          "saving_T": 2090.0,
+          "reduction_percent": 0.1431395785667939,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6e148cfc3aa800ce881aaa48e8c9136d39da6430",
+          "Q": 1142,
+          "parent_T": 1131788.0592041016,
+          "candidate_T": 1131698.0592041016,
+          "saving_T": 90.0,
+          "reduction_percent": 0.00795201886679119,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "765ef38cd8ce99a3e3800e98a8a60db954d35b8f",
+          "Q": 1133,
+          "parent_T": 1460499.1603393555,
+          "candidate_T": 1458411.1603393555,
+          "saving_T": 2088.0,
+          "reduction_percent": 0.14296482029574334,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "8541fb1542d76864e7978328e56b31514d38c0cb",
+          "Q": 1143,
+          "parent_T": 1111689.1266479492,
+          "candidate_T": 1111537.1266479492,
+          "saving_T": 152.0,
+          "reduction_percent": 0.013672887172902565,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "893d83bab084880ee329235952e9f7694d528b14",
+          "Q": 867,
+          "parent_T": 2243273.639831543,
+          "candidate_T": 2243273.639831543,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "9db31da9a0971a2185e54d12d9441c36838aba40",
+          "Q": 1172,
+          "parent_T": 945320.9753417969,
+          "candidate_T": 945320.9753417969,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 32,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6034cb8fa0653c2746bd64c3ca2b0ad6b9fb5ff",
+          "Q": 1171,
+          "parent_T": 945851.48828125,
+          "candidate_T": 945851.48828125,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6c3394cdde6421a2fbc646a61b21557be524d6d",
+          "Q": 1156,
+          "parent_T": 1022152.065246582,
+          "candidate_T": 1022152.065246582,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 16,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6ff74954dadfe9aca168b6c134479b9a9e9fffc",
+          "Q": 1090,
+          "parent_T": 1830273.9498291016,
+          "candidate_T": 1830273.9498291016,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "c9d2e0fe416916260301d6c056fdfc511ea71176",
+          "Q": 1080,
+          "parent_T": 1843153.5537109375,
+          "candidate_T": 1843153.5537109375,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cb59bcb1c72db0f0fd40fcdf54d659368f1a8929",
+          "Q": 1108,
+          "parent_T": 1801528.6885986328,
+          "candidate_T": 1801528.6885986328,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "ceffcd216c2a4a987987686fee48d89f54b60c41",
+          "Q": 1097,
+          "parent_T": 1815258.1305541992,
+          "candidate_T": 1815258.1305541992,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cfc78693cce6405828b80750bf4dadd7bfd4e9ec",
+          "Q": 935,
+          "parent_T": 2097285.925354004,
+          "candidate_T": 2097285.925354004,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d690a7e3074bdfeff3a9f2e89fa9498bc54f43a2",
+          "Q": 1111,
+          "parent_T": 1785180.8852539062,
+          "candidate_T": 1785180.8852539062,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d6dd7ef7e1b7aa4eb2de5066f75482d9b355c0e3",
+          "Q": 1174,
+          "parent_T": 943821.6328735352,
+          "candidate_T": 943821.6328735352,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d7f4e842c90df365b5c08a5e25b326aba53894f0",
+          "Q": 1068,
+          "parent_T": 1881223.6954956055,
+          "candidate_T": 1881223.6954956055,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d90b306b63a25eccae8c38de9070b092b35404f4",
+          "Q": 1144,
+          "parent_T": 1102910.8986206055,
+          "candidate_T": 1102776.8986206055,
+          "saving_T": 134.0,
+          "reduction_percent": 0.012149666864983548,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e3fd358e6c56c477d8c7378c1987de34d79b9ede",
+          "Q": 1173,
+          "parent_T": 944578.9485473633,
+          "candidate_T": 944578.9485473633,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e70ab4063edbce52e4483681360b8655072ee547",
+          "Q": 1075,
+          "parent_T": 1858750.4115600586,
+          "candidate_T": 1858750.4115600586,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "f50ee007fdf84054fa44b71240c28a66a47aad8e",
+          "Q": 999,
+          "parent_T": 1998012.9881591797,
+          "candidate_T": 1998012.9881591797,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "fb1862fbb0da30e4bdaa82e5be26b765e6a73684",
+          "Q": 965,
+          "parent_T": 2065526.7431030273,
+          "candidate_T": 2065526.7431030273,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        }
+      ]
+    },
+    {
+      "mode": "catalog",
+      "n_sources": 36,
+      "improved_sources": 23,
+      "unchanged_sources": 13,
+      "worse_sources": 0,
+      "mean_saving_T": 2617.6105516221787,
+      "mean_percent_reduction": 0.09233870709931814,
+      "median_percent_reduction": 0.05710214167709275,
+      "mean_percent_reduction_improved_sources": 0.144530150242411,
+      "rows": [
+        {
+          "source_commit": "0c373cdab3857eb5736caeecb39f7ddcea567954",
+          "Q": 1170,
+          "parent_T": 946545.2272949219,
+          "candidate_T": 946545.2272949219,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 28,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "1724be5616e66fdc21e458639b8f2aa41c5c911b",
+          "Q": 1148,
+          "parent_T": 1062325.270324707,
+          "candidate_T": 1061755.270324707,
+          "saving_T": 570.0,
+          "reduction_percent": 0.05365588261171417,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "17e1a37cc1ffeb98d8030b573c1b4fc7786076b9",
+          "Q": 818,
+          "parent_T": 9785250.378051758,
+          "candidate_T": 9764996.378051758,
+          "saving_T": 20254.0,
+          "reduction_percent": 0.20698499494125944,
+          "failed_inputs": 0,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "18b73824983ccf0202376da3eb7f9cde56f3c44d",
+          "Q": 1164,
+          "parent_T": 970973.4416503906,
+          "candidate_T": 970973.4416503906,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "31c38da873433027b99c346e1ebef82aa6de07b7",
+          "Q": 1236,
+          "parent_T": 741965.1292114258,
+          "candidate_T": 741965.1292114258,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 24,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "36ced3f936c28ae844c34b1b94d285655657d4f9",
+          "Q": 1152,
+          "parent_T": 1036804.246887207,
+          "candidate_T": 1036553.246887207,
+          "saving_T": 251.0,
+          "reduction_percent": 0.024209005774578587,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "370fc319832b78e58d1e139174b58d4a627bddd3",
+          "Q": 1141,
+          "parent_T": 1423737.5988769531,
+          "candidate_T": 1422261.6049804688,
+          "saving_T": 1475.993896484375,
+          "reduction_percent": 0.10367036015966999,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3836ec797d0998c8367ce46b0f5bdaca55873d6e",
+          "Q": 1112,
+          "parent_T": 1739384.5297851562,
+          "candidate_T": 1737144.5297851562,
+          "saving_T": 2240.0,
+          "reduction_percent": 0.12878118447314685,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3a3b0ad427ec970ebf3c5d7e7dd4627f77296036",
+          "Q": 1078,
+          "parent_T": 1843228.9371948242,
+          "candidate_T": 1842002.9371948242,
+          "saving_T": 1226.0,
+          "reduction_percent": 0.066513712716871,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "52b7997b7725abdc12b79a2c06a5110d57ad35b8",
+          "Q": 1065,
+          "parent_T": 1892815.937133789,
+          "candidate_T": 1891579.937133789,
+          "saving_T": 1236.0,
+          "reduction_percent": 0.06529953471712746,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "5be83d9f70f5565500acf75d6126e5ce2a97b2c5",
+          "Q": 856,
+          "parent_T": 3853565.896484375,
+          "candidate_T": 3808075.896484375,
+          "saving_T": 45490.0,
+          "reduction_percent": 1.180465086674675,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6535301ef5df5c098696930282631493f278883b",
+          "Q": 885,
+          "parent_T": 2163089.851989746,
+          "candidate_T": 2163089.851989746,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "65f145fbd925dcc5d164738e0f096840bf4805f6",
+          "Q": 1159,
+          "parent_T": 997334.5621337891,
+          "candidate_T": 997310.5621337891,
+          "saving_T": 24.0,
+          "reduction_percent": 0.0024064141473902397,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6602a4e835898b9a4118f040806195571c6e8967",
+          "Q": 1240,
+          "parent_T": 740798.8107299805,
+          "candidate_T": 740798.8107299805,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 22,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6b0327d60e40068fcbed5fedcb7f66d926f12320",
+          "Q": 1234,
+          "parent_T": 742021.1781005859,
+          "candidate_T": 742021.1781005859,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6c9283cb7f329c398204802e6e144c6f390755df",
+          "Q": 1134,
+          "parent_T": 1460113.2830810547,
+          "candidate_T": 1457821.2775878906,
+          "saving_T": 2292.0054931640625,
+          "reduction_percent": 0.15697449778195238,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6e148cfc3aa800ce881aaa48e8c9136d39da6430",
+          "Q": 1142,
+          "parent_T": 1131788.0592041016,
+          "candidate_T": 1129421.9809570312,
+          "saving_T": 2366.0782470703125,
+          "reduction_percent": 0.2090566540111928,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "765ef38cd8ce99a3e3800e98a8a60db954d35b8f",
+          "Q": 1133,
+          "parent_T": 1460499.1603393555,
+          "candidate_T": 1458210.1640625,
+          "saving_T": 2288.9962768554688,
+          "reduction_percent": 0.15672698341871058,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "8541fb1542d76864e7978328e56b31514d38c0cb",
+          "Q": 1143,
+          "parent_T": 1111689.1266479492,
+          "candidate_T": 1109182.3039550781,
+          "saving_T": 2506.8226928710938,
+          "reduction_percent": 0.22549673580327792,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "893d83bab084880ee329235952e9f7694d528b14",
+          "Q": 867,
+          "parent_T": 2243273.639831543,
+          "candidate_T": 2243271.639831543,
+          "saving_T": 2.0,
+          "reduction_percent": 8.915541842457474e-05,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "9db31da9a0971a2185e54d12d9441c36838aba40",
+          "Q": 1172,
+          "parent_T": 945320.9753417969,
+          "candidate_T": 945320.9753417969,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 32,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6034cb8fa0653c2746bd64c3ca2b0ad6b9fb5ff",
+          "Q": 1171,
+          "parent_T": 945851.48828125,
+          "candidate_T": 945851.48828125,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6c3394cdde6421a2fbc646a61b21557be524d6d",
+          "Q": 1156,
+          "parent_T": 1022152.065246582,
+          "candidate_T": 1022041.065246582,
+          "saving_T": 111.0,
+          "reduction_percent": 0.010859440955414258,
+          "failed_inputs": 16,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6ff74954dadfe9aca168b6c134479b9a9e9fffc",
+          "Q": 1090,
+          "parent_T": 1830273.9498291016,
+          "candidate_T": 1829153.9498291016,
+          "saving_T": 1120.0,
+          "reduction_percent": 0.061193025235625406,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "c9d2e0fe416916260301d6c056fdfc511ea71176",
+          "Q": 1080,
+          "parent_T": 1843153.5537109375,
+          "candidate_T": 1842037.5537109375,
+          "saving_T": 1116.0,
+          "reduction_percent": 0.06054840074247133,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cb59bcb1c72db0f0fd40fcdf54d659368f1a8929",
+          "Q": 1108,
+          "parent_T": 1801528.6885986328,
+          "candidate_T": 1800430.6885986328,
+          "saving_T": 1098.0,
+          "reduction_percent": 0.06094823840158264,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "ceffcd216c2a4a987987686fee48d89f54b60c41",
+          "Q": 1097,
+          "parent_T": 1815258.1305541992,
+          "candidate_T": 1814150.1305541992,
+          "saving_T": 1108.0,
+          "reduction_percent": 0.06103815106789948,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cfc78693cce6405828b80750bf4dadd7bfd4e9ec",
+          "Q": 935,
+          "parent_T": 2097285.925354004,
+          "candidate_T": 2097285.925354004,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d690a7e3074bdfeff3a9f2e89fa9498bc54f43a2",
+          "Q": 1111,
+          "parent_T": 1785180.8852539062,
+          "candidate_T": 1782338.8852539062,
+          "saving_T": 2842.0,
+          "reduction_percent": 0.15919955358449753,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d6dd7ef7e1b7aa4eb2de5066f75482d9b355c0e3",
+          "Q": 1174,
+          "parent_T": 943821.6328735352,
+          "candidate_T": 943821.6328735352,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d7f4e842c90df365b5c08a5e25b326aba53894f0",
+          "Q": 1068,
+          "parent_T": 1881223.6954956055,
+          "candidate_T": 1880003.6954956055,
+          "saving_T": 1220.0,
+          "reduction_percent": 0.06485140512110087,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d90b306b63a25eccae8c38de9070b092b35404f4",
+          "Q": 1144,
+          "parent_T": 1102910.8986206055,
+          "candidate_T": 1100672.8153686523,
+          "saving_T": 2238.083251953125,
+          "reduction_percent": 0.20292511886066797,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e3fd358e6c56c477d8c7378c1987de34d79b9ede",
+          "Q": 1173,
+          "parent_T": 944578.9485473633,
+          "candidate_T": 944578.9485473633,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e70ab4063edbce52e4483681360b8655072ee547",
+          "Q": 1075,
+          "parent_T": 1858750.4115600586,
+          "candidate_T": 1857592.4115600586,
+          "saving_T": 1158.0,
+          "reduction_percent": 0.06229991895620267,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "f50ee007fdf84054fa44b71240c28a66a47aad8e",
+          "Q": 999,
+          "parent_T": 1998012.9881591797,
+          "candidate_T": 1998012.9881591797,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "fb1862fbb0da30e4bdaa82e5be26b765e6a73684",
+          "Q": 965,
+          "parent_T": 2065526.7431030273,
+          "candidate_T": 2065526.7431030273,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        }
+      ]
+    },
+    {
+      "mode": "catalog-guard",
+      "n_sources": 36,
+      "improved_sources": 23,
+      "unchanged_sources": 13,
+      "worse_sources": 0,
+      "mean_saving_T": 2617.6105516221787,
+      "mean_percent_reduction": 0.09233870709931814,
+      "median_percent_reduction": 0.05710214167709275,
+      "mean_percent_reduction_improved_sources": 0.144530150242411,
+      "rows": [
+        {
+          "source_commit": "0c373cdab3857eb5736caeecb39f7ddcea567954",
+          "Q": 1170,
+          "parent_T": 946545.2272949219,
+          "candidate_T": 946545.2272949219,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 28,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "1724be5616e66fdc21e458639b8f2aa41c5c911b",
+          "Q": 1148,
+          "parent_T": 1062325.270324707,
+          "candidate_T": 1061755.270324707,
+          "saving_T": 570.0,
+          "reduction_percent": 0.05365588261171417,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "17e1a37cc1ffeb98d8030b573c1b4fc7786076b9",
+          "Q": 818,
+          "parent_T": 9785250.378051758,
+          "candidate_T": 9764996.378051758,
+          "saving_T": 20254.0,
+          "reduction_percent": 0.20698499494125944,
+          "failed_inputs": 0,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "18b73824983ccf0202376da3eb7f9cde56f3c44d",
+          "Q": 1164,
+          "parent_T": 970973.4416503906,
+          "candidate_T": 970973.4416503906,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "31c38da873433027b99c346e1ebef82aa6de07b7",
+          "Q": 1236,
+          "parent_T": 741965.1292114258,
+          "candidate_T": 741965.1292114258,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 24,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "36ced3f936c28ae844c34b1b94d285655657d4f9",
+          "Q": 1152,
+          "parent_T": 1036804.246887207,
+          "candidate_T": 1036553.246887207,
+          "saving_T": 251.0,
+          "reduction_percent": 0.024209005774578587,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "370fc319832b78e58d1e139174b58d4a627bddd3",
+          "Q": 1141,
+          "parent_T": 1423737.5988769531,
+          "candidate_T": 1422261.6049804688,
+          "saving_T": 1475.993896484375,
+          "reduction_percent": 0.10367036015966999,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3836ec797d0998c8367ce46b0f5bdaca55873d6e",
+          "Q": 1112,
+          "parent_T": 1739384.5297851562,
+          "candidate_T": 1737144.5297851562,
+          "saving_T": 2240.0,
+          "reduction_percent": 0.12878118447314685,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3a3b0ad427ec970ebf3c5d7e7dd4627f77296036",
+          "Q": 1078,
+          "parent_T": 1843228.9371948242,
+          "candidate_T": 1842002.9371948242,
+          "saving_T": 1226.0,
+          "reduction_percent": 0.066513712716871,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "52b7997b7725abdc12b79a2c06a5110d57ad35b8",
+          "Q": 1065,
+          "parent_T": 1892815.937133789,
+          "candidate_T": 1891579.937133789,
+          "saving_T": 1236.0,
+          "reduction_percent": 0.06529953471712746,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "5be83d9f70f5565500acf75d6126e5ce2a97b2c5",
+          "Q": 856,
+          "parent_T": 3853565.896484375,
+          "candidate_T": 3808075.896484375,
+          "saving_T": 45490.0,
+          "reduction_percent": 1.180465086674675,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6535301ef5df5c098696930282631493f278883b",
+          "Q": 885,
+          "parent_T": 2163089.851989746,
+          "candidate_T": 2163089.851989746,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "65f145fbd925dcc5d164738e0f096840bf4805f6",
+          "Q": 1159,
+          "parent_T": 997334.5621337891,
+          "candidate_T": 997310.5621337891,
+          "saving_T": 24.0,
+          "reduction_percent": 0.0024064141473902397,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6602a4e835898b9a4118f040806195571c6e8967",
+          "Q": 1240,
+          "parent_T": 740798.8107299805,
+          "candidate_T": 740798.8107299805,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 22,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6b0327d60e40068fcbed5fedcb7f66d926f12320",
+          "Q": 1234,
+          "parent_T": 742021.1781005859,
+          "candidate_T": 742021.1781005859,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6c9283cb7f329c398204802e6e144c6f390755df",
+          "Q": 1134,
+          "parent_T": 1460113.2830810547,
+          "candidate_T": 1457821.2775878906,
+          "saving_T": 2292.0054931640625,
+          "reduction_percent": 0.15697449778195238,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6e148cfc3aa800ce881aaa48e8c9136d39da6430",
+          "Q": 1142,
+          "parent_T": 1131788.0592041016,
+          "candidate_T": 1129421.9809570312,
+          "saving_T": 2366.0782470703125,
+          "reduction_percent": 0.2090566540111928,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "765ef38cd8ce99a3e3800e98a8a60db954d35b8f",
+          "Q": 1133,
+          "parent_T": 1460499.1603393555,
+          "candidate_T": 1458210.1640625,
+          "saving_T": 2288.9962768554688,
+          "reduction_percent": 0.15672698341871058,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "8541fb1542d76864e7978328e56b31514d38c0cb",
+          "Q": 1143,
+          "parent_T": 1111689.1266479492,
+          "candidate_T": 1109182.3039550781,
+          "saving_T": 2506.8226928710938,
+          "reduction_percent": 0.22549673580327792,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "893d83bab084880ee329235952e9f7694d528b14",
+          "Q": 867,
+          "parent_T": 2243273.639831543,
+          "candidate_T": 2243271.639831543,
+          "saving_T": 2.0,
+          "reduction_percent": 8.915541842457474e-05,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "9db31da9a0971a2185e54d12d9441c36838aba40",
+          "Q": 1172,
+          "parent_T": 945320.9753417969,
+          "candidate_T": 945320.9753417969,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 32,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6034cb8fa0653c2746bd64c3ca2b0ad6b9fb5ff",
+          "Q": 1171,
+          "parent_T": 945851.48828125,
+          "candidate_T": 945851.48828125,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6c3394cdde6421a2fbc646a61b21557be524d6d",
+          "Q": 1156,
+          "parent_T": 1022152.065246582,
+          "candidate_T": 1022041.065246582,
+          "saving_T": 111.0,
+          "reduction_percent": 0.010859440955414258,
+          "failed_inputs": 16,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6ff74954dadfe9aca168b6c134479b9a9e9fffc",
+          "Q": 1090,
+          "parent_T": 1830273.9498291016,
+          "candidate_T": 1829153.9498291016,
+          "saving_T": 1120.0,
+          "reduction_percent": 0.061193025235625406,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "c9d2e0fe416916260301d6c056fdfc511ea71176",
+          "Q": 1080,
+          "parent_T": 1843153.5537109375,
+          "candidate_T": 1842037.5537109375,
+          "saving_T": 1116.0,
+          "reduction_percent": 0.06054840074247133,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cb59bcb1c72db0f0fd40fcdf54d659368f1a8929",
+          "Q": 1108,
+          "parent_T": 1801528.6885986328,
+          "candidate_T": 1800430.6885986328,
+          "saving_T": 1098.0,
+          "reduction_percent": 0.06094823840158264,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "ceffcd216c2a4a987987686fee48d89f54b60c41",
+          "Q": 1097,
+          "parent_T": 1815258.1305541992,
+          "candidate_T": 1814150.1305541992,
+          "saving_T": 1108.0,
+          "reduction_percent": 0.06103815106789948,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cfc78693cce6405828b80750bf4dadd7bfd4e9ec",
+          "Q": 935,
+          "parent_T": 2097285.925354004,
+          "candidate_T": 2097285.925354004,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d690a7e3074bdfeff3a9f2e89fa9498bc54f43a2",
+          "Q": 1111,
+          "parent_T": 1785180.8852539062,
+          "candidate_T": 1782338.8852539062,
+          "saving_T": 2842.0,
+          "reduction_percent": 0.15919955358449753,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d6dd7ef7e1b7aa4eb2de5066f75482d9b355c0e3",
+          "Q": 1174,
+          "parent_T": 943821.6328735352,
+          "candidate_T": 943821.6328735352,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d7f4e842c90df365b5c08a5e25b326aba53894f0",
+          "Q": 1068,
+          "parent_T": 1881223.6954956055,
+          "candidate_T": 1880003.6954956055,
+          "saving_T": 1220.0,
+          "reduction_percent": 0.06485140512110087,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d90b306b63a25eccae8c38de9070b092b35404f4",
+          "Q": 1144,
+          "parent_T": 1102910.8986206055,
+          "candidate_T": 1100672.8153686523,
+          "saving_T": 2238.083251953125,
+          "reduction_percent": 0.20292511886066797,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e3fd358e6c56c477d8c7378c1987de34d79b9ede",
+          "Q": 1173,
+          "parent_T": 944578.9485473633,
+          "candidate_T": 944578.9485473633,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e70ab4063edbce52e4483681360b8655072ee547",
+          "Q": 1075,
+          "parent_T": 1858750.4115600586,
+          "candidate_T": 1857592.4115600586,
+          "saving_T": 1158.0,
+          "reduction_percent": 0.06229991895620267,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "f50ee007fdf84054fa44b71240c28a66a47aad8e",
+          "Q": 999,
+          "parent_T": 1998012.9881591797,
+          "candidate_T": 1998012.9881591797,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "fb1862fbb0da30e4bdaa82e5be26b765e6a73684",
+          "Q": 965,
+          "parent_T": 2065526.7431030273,
+          "candidate_T": 2065526.7431030273,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        }
+      ]
+    },
+    {
+      "mode": "guard",
+      "n_sources": 36,
+      "improved_sources": 0,
+      "unchanged_sources": 36,
+      "worse_sources": 0,
+      "mean_saving_T": 0.0,
+      "mean_percent_reduction": 0.0,
+      "median_percent_reduction": 0.0,
+      "mean_percent_reduction_improved_sources": null,
+      "rows": [
+        {
+          "source_commit": "0c373cdab3857eb5736caeecb39f7ddcea567954",
+          "Q": 1170,
+          "parent_T": 946545.2272949219,
+          "candidate_T": 946545.2272949219,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 28,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "1724be5616e66fdc21e458639b8f2aa41c5c911b",
+          "Q": 1148,
+          "parent_T": 1062325.270324707,
+          "candidate_T": 1062325.270324707,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "17e1a37cc1ffeb98d8030b573c1b4fc7786076b9",
+          "Q": 818,
+          "parent_T": 9785250.378051758,
+          "candidate_T": 9785250.378051758,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 0,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "18b73824983ccf0202376da3eb7f9cde56f3c44d",
+          "Q": 1164,
+          "parent_T": 970973.4416503906,
+          "candidate_T": 970973.4416503906,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "31c38da873433027b99c346e1ebef82aa6de07b7",
+          "Q": 1236,
+          "parent_T": 741965.1292114258,
+          "candidate_T": 741965.1292114258,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 24,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "36ced3f936c28ae844c34b1b94d285655657d4f9",
+          "Q": 1152,
+          "parent_T": 1036804.246887207,
+          "candidate_T": 1036804.246887207,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "370fc319832b78e58d1e139174b58d4a627bddd3",
+          "Q": 1141,
+          "parent_T": 1423737.5988769531,
+          "candidate_T": 1423737.5988769531,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3836ec797d0998c8367ce46b0f5bdaca55873d6e",
+          "Q": 1112,
+          "parent_T": 1739384.5297851562,
+          "candidate_T": 1739384.5297851562,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3a3b0ad427ec970ebf3c5d7e7dd4627f77296036",
+          "Q": 1078,
+          "parent_T": 1843228.9371948242,
+          "candidate_T": 1843228.9371948242,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "52b7997b7725abdc12b79a2c06a5110d57ad35b8",
+          "Q": 1065,
+          "parent_T": 1892815.937133789,
+          "candidate_T": 1892815.937133789,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "5be83d9f70f5565500acf75d6126e5ce2a97b2c5",
+          "Q": 856,
+          "parent_T": 3853565.896484375,
+          "candidate_T": 3853565.896484375,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6535301ef5df5c098696930282631493f278883b",
+          "Q": 885,
+          "parent_T": 2163089.851989746,
+          "candidate_T": 2163089.851989746,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "65f145fbd925dcc5d164738e0f096840bf4805f6",
+          "Q": 1159,
+          "parent_T": 997334.5621337891,
+          "candidate_T": 997334.5621337891,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6602a4e835898b9a4118f040806195571c6e8967",
+          "Q": 1240,
+          "parent_T": 740798.8107299805,
+          "candidate_T": 740798.8107299805,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 22,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6b0327d60e40068fcbed5fedcb7f66d926f12320",
+          "Q": 1234,
+          "parent_T": 742021.1781005859,
+          "candidate_T": 742021.1781005859,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6c9283cb7f329c398204802e6e144c6f390755df",
+          "Q": 1134,
+          "parent_T": 1460113.2830810547,
+          "candidate_T": 1460113.2830810547,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6e148cfc3aa800ce881aaa48e8c9136d39da6430",
+          "Q": 1142,
+          "parent_T": 1131788.0592041016,
+          "candidate_T": 1131788.0592041016,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "765ef38cd8ce99a3e3800e98a8a60db954d35b8f",
+          "Q": 1133,
+          "parent_T": 1460499.1603393555,
+          "candidate_T": 1460499.1603393555,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "8541fb1542d76864e7978328e56b31514d38c0cb",
+          "Q": 1143,
+          "parent_T": 1111689.1266479492,
+          "candidate_T": 1111689.1266479492,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "893d83bab084880ee329235952e9f7694d528b14",
+          "Q": 867,
+          "parent_T": 2243273.639831543,
+          "candidate_T": 2243273.639831543,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "9db31da9a0971a2185e54d12d9441c36838aba40",
+          "Q": 1172,
+          "parent_T": 945320.9753417969,
+          "candidate_T": 945320.9753417969,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 32,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6034cb8fa0653c2746bd64c3ca2b0ad6b9fb5ff",
+          "Q": 1171,
+          "parent_T": 945851.48828125,
+          "candidate_T": 945851.48828125,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6c3394cdde6421a2fbc646a61b21557be524d6d",
+          "Q": 1156,
+          "parent_T": 1022152.065246582,
+          "candidate_T": 1022152.065246582,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 16,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6ff74954dadfe9aca168b6c134479b9a9e9fffc",
+          "Q": 1090,
+          "parent_T": 1830273.9498291016,
+          "candidate_T": 1830273.9498291016,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "c9d2e0fe416916260301d6c056fdfc511ea71176",
+          "Q": 1080,
+          "parent_T": 1843153.5537109375,
+          "candidate_T": 1843153.5537109375,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cb59bcb1c72db0f0fd40fcdf54d659368f1a8929",
+          "Q": 1108,
+          "parent_T": 1801528.6885986328,
+          "candidate_T": 1801528.6885986328,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "ceffcd216c2a4a987987686fee48d89f54b60c41",
+          "Q": 1097,
+          "parent_T": 1815258.1305541992,
+          "candidate_T": 1815258.1305541992,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cfc78693cce6405828b80750bf4dadd7bfd4e9ec",
+          "Q": 935,
+          "parent_T": 2097285.925354004,
+          "candidate_T": 2097285.925354004,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d690a7e3074bdfeff3a9f2e89fa9498bc54f43a2",
+          "Q": 1111,
+          "parent_T": 1785180.8852539062,
+          "candidate_T": 1785180.8852539062,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d6dd7ef7e1b7aa4eb2de5066f75482d9b355c0e3",
+          "Q": 1174,
+          "parent_T": 943821.6328735352,
+          "candidate_T": 943821.6328735352,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d7f4e842c90df365b5c08a5e25b326aba53894f0",
+          "Q": 1068,
+          "parent_T": 1881223.6954956055,
+          "candidate_T": 1881223.6954956055,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d90b306b63a25eccae8c38de9070b092b35404f4",
+          "Q": 1144,
+          "parent_T": 1102910.8986206055,
+          "candidate_T": 1102910.8986206055,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e3fd358e6c56c477d8c7378c1987de34d79b9ede",
+          "Q": 1173,
+          "parent_T": 944578.9485473633,
+          "candidate_T": 944578.9485473633,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e70ab4063edbce52e4483681360b8655072ee547",
+          "Q": 1075,
+          "parent_T": 1858750.4115600586,
+          "candidate_T": 1858750.4115600586,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "f50ee007fdf84054fa44b71240c28a66a47aad8e",
+          "Q": 999,
+          "parent_T": 1998012.9881591797,
+          "candidate_T": 1998012.9881591797,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "fb1862fbb0da30e4bdaa82e5be26b765e6a73684",
+          "Q": 965,
+          "parent_T": 2065526.7431030273,
+          "candidate_T": 2065526.7431030273,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        }
+      ]
+    },
+    {
+      "mode": "guard-catalog",
+      "n_sources": 36,
+      "improved_sources": 23,
+      "unchanged_sources": 13,
+      "worse_sources": 0,
+      "mean_saving_T": 2617.6105516221787,
+      "mean_percent_reduction": 0.09233870709931814,
+      "median_percent_reduction": 0.05710214167709275,
+      "mean_percent_reduction_improved_sources": 0.144530150242411,
+      "rows": [
+        {
+          "source_commit": "0c373cdab3857eb5736caeecb39f7ddcea567954",
+          "Q": 1170,
+          "parent_T": 946545.2272949219,
+          "candidate_T": 946545.2272949219,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 28,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "1724be5616e66fdc21e458639b8f2aa41c5c911b",
+          "Q": 1148,
+          "parent_T": 1062325.270324707,
+          "candidate_T": 1061755.270324707,
+          "saving_T": 570.0,
+          "reduction_percent": 0.05365588261171417,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "17e1a37cc1ffeb98d8030b573c1b4fc7786076b9",
+          "Q": 818,
+          "parent_T": 9785250.378051758,
+          "candidate_T": 9764996.378051758,
+          "saving_T": 20254.0,
+          "reduction_percent": 0.20698499494125944,
+          "failed_inputs": 0,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "18b73824983ccf0202376da3eb7f9cde56f3c44d",
+          "Q": 1164,
+          "parent_T": 970973.4416503906,
+          "candidate_T": 970973.4416503906,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "31c38da873433027b99c346e1ebef82aa6de07b7",
+          "Q": 1236,
+          "parent_T": 741965.1292114258,
+          "candidate_T": 741965.1292114258,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 24,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "36ced3f936c28ae844c34b1b94d285655657d4f9",
+          "Q": 1152,
+          "parent_T": 1036804.246887207,
+          "candidate_T": 1036553.246887207,
+          "saving_T": 251.0,
+          "reduction_percent": 0.024209005774578587,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "370fc319832b78e58d1e139174b58d4a627bddd3",
+          "Q": 1141,
+          "parent_T": 1423737.5988769531,
+          "candidate_T": 1422261.6049804688,
+          "saving_T": 1475.993896484375,
+          "reduction_percent": 0.10367036015966999,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3836ec797d0998c8367ce46b0f5bdaca55873d6e",
+          "Q": 1112,
+          "parent_T": 1739384.5297851562,
+          "candidate_T": 1737144.5297851562,
+          "saving_T": 2240.0,
+          "reduction_percent": 0.12878118447314685,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3a3b0ad427ec970ebf3c5d7e7dd4627f77296036",
+          "Q": 1078,
+          "parent_T": 1843228.9371948242,
+          "candidate_T": 1842002.9371948242,
+          "saving_T": 1226.0,
+          "reduction_percent": 0.066513712716871,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "52b7997b7725abdc12b79a2c06a5110d57ad35b8",
+          "Q": 1065,
+          "parent_T": 1892815.937133789,
+          "candidate_T": 1891579.937133789,
+          "saving_T": 1236.0,
+          "reduction_percent": 0.06529953471712746,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "5be83d9f70f5565500acf75d6126e5ce2a97b2c5",
+          "Q": 856,
+          "parent_T": 3853565.896484375,
+          "candidate_T": 3808075.896484375,
+          "saving_T": 45490.0,
+          "reduction_percent": 1.180465086674675,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6535301ef5df5c098696930282631493f278883b",
+          "Q": 885,
+          "parent_T": 2163089.851989746,
+          "candidate_T": 2163089.851989746,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "65f145fbd925dcc5d164738e0f096840bf4805f6",
+          "Q": 1159,
+          "parent_T": 997334.5621337891,
+          "candidate_T": 997310.5621337891,
+          "saving_T": 24.0,
+          "reduction_percent": 0.0024064141473902397,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6602a4e835898b9a4118f040806195571c6e8967",
+          "Q": 1240,
+          "parent_T": 740798.8107299805,
+          "candidate_T": 740798.8107299805,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 22,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6b0327d60e40068fcbed5fedcb7f66d926f12320",
+          "Q": 1234,
+          "parent_T": 742021.1781005859,
+          "candidate_T": 742021.1781005859,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6c9283cb7f329c398204802e6e144c6f390755df",
+          "Q": 1134,
+          "parent_T": 1460113.2830810547,
+          "candidate_T": 1457821.2775878906,
+          "saving_T": 2292.0054931640625,
+          "reduction_percent": 0.15697449778195238,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6e148cfc3aa800ce881aaa48e8c9136d39da6430",
+          "Q": 1142,
+          "parent_T": 1131788.0592041016,
+          "candidate_T": 1129421.9809570312,
+          "saving_T": 2366.0782470703125,
+          "reduction_percent": 0.2090566540111928,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "765ef38cd8ce99a3e3800e98a8a60db954d35b8f",
+          "Q": 1133,
+          "parent_T": 1460499.1603393555,
+          "candidate_T": 1458210.1640625,
+          "saving_T": 2288.9962768554688,
+          "reduction_percent": 0.15672698341871058,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "8541fb1542d76864e7978328e56b31514d38c0cb",
+          "Q": 1143,
+          "parent_T": 1111689.1266479492,
+          "candidate_T": 1109182.3039550781,
+          "saving_T": 2506.8226928710938,
+          "reduction_percent": 0.22549673580327792,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "893d83bab084880ee329235952e9f7694d528b14",
+          "Q": 867,
+          "parent_T": 2243273.639831543,
+          "candidate_T": 2243271.639831543,
+          "saving_T": 2.0,
+          "reduction_percent": 8.915541842457474e-05,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "9db31da9a0971a2185e54d12d9441c36838aba40",
+          "Q": 1172,
+          "parent_T": 945320.9753417969,
+          "candidate_T": 945320.9753417969,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 32,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6034cb8fa0653c2746bd64c3ca2b0ad6b9fb5ff",
+          "Q": 1171,
+          "parent_T": 945851.48828125,
+          "candidate_T": 945851.48828125,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6c3394cdde6421a2fbc646a61b21557be524d6d",
+          "Q": 1156,
+          "parent_T": 1022152.065246582,
+          "candidate_T": 1022041.065246582,
+          "saving_T": 111.0,
+          "reduction_percent": 0.010859440955414258,
+          "failed_inputs": 16,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6ff74954dadfe9aca168b6c134479b9a9e9fffc",
+          "Q": 1090,
+          "parent_T": 1830273.9498291016,
+          "candidate_T": 1829153.9498291016,
+          "saving_T": 1120.0,
+          "reduction_percent": 0.061193025235625406,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "c9d2e0fe416916260301d6c056fdfc511ea71176",
+          "Q": 1080,
+          "parent_T": 1843153.5537109375,
+          "candidate_T": 1842037.5537109375,
+          "saving_T": 1116.0,
+          "reduction_percent": 0.06054840074247133,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cb59bcb1c72db0f0fd40fcdf54d659368f1a8929",
+          "Q": 1108,
+          "parent_T": 1801528.6885986328,
+          "candidate_T": 1800430.6885986328,
+          "saving_T": 1098.0,
+          "reduction_percent": 0.06094823840158264,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "ceffcd216c2a4a987987686fee48d89f54b60c41",
+          "Q": 1097,
+          "parent_T": 1815258.1305541992,
+          "candidate_T": 1814150.1305541992,
+          "saving_T": 1108.0,
+          "reduction_percent": 0.06103815106789948,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cfc78693cce6405828b80750bf4dadd7bfd4e9ec",
+          "Q": 935,
+          "parent_T": 2097285.925354004,
+          "candidate_T": 2097285.925354004,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d690a7e3074bdfeff3a9f2e89fa9498bc54f43a2",
+          "Q": 1111,
+          "parent_T": 1785180.8852539062,
+          "candidate_T": 1782338.8852539062,
+          "saving_T": 2842.0,
+          "reduction_percent": 0.15919955358449753,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d6dd7ef7e1b7aa4eb2de5066f75482d9b355c0e3",
+          "Q": 1174,
+          "parent_T": 943821.6328735352,
+          "candidate_T": 943821.6328735352,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d7f4e842c90df365b5c08a5e25b326aba53894f0",
+          "Q": 1068,
+          "parent_T": 1881223.6954956055,
+          "candidate_T": 1880003.6954956055,
+          "saving_T": 1220.0,
+          "reduction_percent": 0.06485140512110087,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d90b306b63a25eccae8c38de9070b092b35404f4",
+          "Q": 1144,
+          "parent_T": 1102910.8986206055,
+          "candidate_T": 1100672.8153686523,
+          "saving_T": 2238.083251953125,
+          "reduction_percent": 0.20292511886066797,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e3fd358e6c56c477d8c7378c1987de34d79b9ede",
+          "Q": 1173,
+          "parent_T": 944578.9485473633,
+          "candidate_T": 944578.9485473633,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e70ab4063edbce52e4483681360b8655072ee547",
+          "Q": 1075,
+          "parent_T": 1858750.4115600586,
+          "candidate_T": 1857592.4115600586,
+          "saving_T": 1158.0,
+          "reduction_percent": 0.06229991895620267,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "f50ee007fdf84054fa44b71240c28a66a47aad8e",
+          "Q": 999,
+          "parent_T": 1998012.9881591797,
+          "candidate_T": 1998012.9881591797,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "fb1862fbb0da30e4bdaa82e5be26b765e6a73684",
+          "Q": 965,
+          "parent_T": 2065526.7431030273,
+          "candidate_T": 2065526.7431030273,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        }
+      ]
+    },
+    {
+      "mode": "cancel",
+      "n_sources": 36,
+      "improved_sources": 2,
+      "unchanged_sources": 34,
+      "worse_sources": 0,
+      "mean_saving_T": 419.1666666666667,
+      "mean_percent_reduction": 0.010859892826598392,
+      "median_percent_reduction": 0.0,
+      "mean_percent_reduction_improved_sources": 0.19547807087877103,
+      "rows": [
+        {
+          "source_commit": "0c373cdab3857eb5736caeecb39f7ddcea567954",
+          "Q": 1170,
+          "parent_T": 946545.2272949219,
+          "candidate_T": 946545.2272949219,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 28,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "1724be5616e66fdc21e458639b8f2aa41c5c911b",
+          "Q": 1148,
+          "parent_T": 1062325.270324707,
+          "candidate_T": 1062325.270324707,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "17e1a37cc1ffeb98d8030b573c1b4fc7786076b9",
+          "Q": 818,
+          "parent_T": 9785250.378051758,
+          "candidate_T": 9785210.378051758,
+          "saving_T": 40.0,
+          "reduction_percent": 0.00040877850289574295,
+          "failed_inputs": 0,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "18b73824983ccf0202376da3eb7f9cde56f3c44d",
+          "Q": 1164,
+          "parent_T": 970973.4416503906,
+          "candidate_T": 970973.4416503906,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "31c38da873433027b99c346e1ebef82aa6de07b7",
+          "Q": 1236,
+          "parent_T": 741965.1292114258,
+          "candidate_T": 741965.1292114258,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 24,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "36ced3f936c28ae844c34b1b94d285655657d4f9",
+          "Q": 1152,
+          "parent_T": 1036804.246887207,
+          "candidate_T": 1036804.246887207,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "370fc319832b78e58d1e139174b58d4a627bddd3",
+          "Q": 1141,
+          "parent_T": 1423737.5988769531,
+          "candidate_T": 1423737.5988769531,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3836ec797d0998c8367ce46b0f5bdaca55873d6e",
+          "Q": 1112,
+          "parent_T": 1739384.5297851562,
+          "candidate_T": 1739384.5297851562,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3a3b0ad427ec970ebf3c5d7e7dd4627f77296036",
+          "Q": 1078,
+          "parent_T": 1843228.9371948242,
+          "candidate_T": 1843228.9371948242,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "52b7997b7725abdc12b79a2c06a5110d57ad35b8",
+          "Q": 1065,
+          "parent_T": 1892815.937133789,
+          "candidate_T": 1892815.937133789,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "5be83d9f70f5565500acf75d6126e5ce2a97b2c5",
+          "Q": 856,
+          "parent_T": 3853565.896484375,
+          "candidate_T": 3838515.896484375,
+          "saving_T": 15050.0,
+          "reduction_percent": 0.39054736325464634,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6535301ef5df5c098696930282631493f278883b",
+          "Q": 885,
+          "parent_T": 2163089.851989746,
+          "candidate_T": 2163089.851989746,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "65f145fbd925dcc5d164738e0f096840bf4805f6",
+          "Q": 1159,
+          "parent_T": 997334.5621337891,
+          "candidate_T": 997334.5621337891,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6602a4e835898b9a4118f040806195571c6e8967",
+          "Q": 1240,
+          "parent_T": 740798.8107299805,
+          "candidate_T": 740798.8107299805,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 22,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6b0327d60e40068fcbed5fedcb7f66d926f12320",
+          "Q": 1234,
+          "parent_T": 742021.1781005859,
+          "candidate_T": 742021.1781005859,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6c9283cb7f329c398204802e6e144c6f390755df",
+          "Q": 1134,
+          "parent_T": 1460113.2830810547,
+          "candidate_T": 1460113.2830810547,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6e148cfc3aa800ce881aaa48e8c9136d39da6430",
+          "Q": 1142,
+          "parent_T": 1131788.0592041016,
+          "candidate_T": 1131788.0592041016,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "765ef38cd8ce99a3e3800e98a8a60db954d35b8f",
+          "Q": 1133,
+          "parent_T": 1460499.1603393555,
+          "candidate_T": 1460499.1603393555,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "8541fb1542d76864e7978328e56b31514d38c0cb",
+          "Q": 1143,
+          "parent_T": 1111689.1266479492,
+          "candidate_T": 1111689.1266479492,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "893d83bab084880ee329235952e9f7694d528b14",
+          "Q": 867,
+          "parent_T": 2243273.639831543,
+          "candidate_T": 2243273.639831543,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "9db31da9a0971a2185e54d12d9441c36838aba40",
+          "Q": 1172,
+          "parent_T": 945320.9753417969,
+          "candidate_T": 945320.9753417969,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 32,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6034cb8fa0653c2746bd64c3ca2b0ad6b9fb5ff",
+          "Q": 1171,
+          "parent_T": 945851.48828125,
+          "candidate_T": 945851.48828125,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6c3394cdde6421a2fbc646a61b21557be524d6d",
+          "Q": 1156,
+          "parent_T": 1022152.065246582,
+          "candidate_T": 1022152.065246582,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 16,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6ff74954dadfe9aca168b6c134479b9a9e9fffc",
+          "Q": 1090,
+          "parent_T": 1830273.9498291016,
+          "candidate_T": 1830273.9498291016,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "c9d2e0fe416916260301d6c056fdfc511ea71176",
+          "Q": 1080,
+          "parent_T": 1843153.5537109375,
+          "candidate_T": 1843153.5537109375,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cb59bcb1c72db0f0fd40fcdf54d659368f1a8929",
+          "Q": 1108,
+          "parent_T": 1801528.6885986328,
+          "candidate_T": 1801528.6885986328,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "ceffcd216c2a4a987987686fee48d89f54b60c41",
+          "Q": 1097,
+          "parent_T": 1815258.1305541992,
+          "candidate_T": 1815258.1305541992,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cfc78693cce6405828b80750bf4dadd7bfd4e9ec",
+          "Q": 935,
+          "parent_T": 2097285.925354004,
+          "candidate_T": 2097285.925354004,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d690a7e3074bdfeff3a9f2e89fa9498bc54f43a2",
+          "Q": 1111,
+          "parent_T": 1785180.8852539062,
+          "candidate_T": 1785180.8852539062,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d6dd7ef7e1b7aa4eb2de5066f75482d9b355c0e3",
+          "Q": 1174,
+          "parent_T": 943821.6328735352,
+          "candidate_T": 943821.6328735352,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d7f4e842c90df365b5c08a5e25b326aba53894f0",
+          "Q": 1068,
+          "parent_T": 1881223.6954956055,
+          "candidate_T": 1881223.6954956055,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d90b306b63a25eccae8c38de9070b092b35404f4",
+          "Q": 1144,
+          "parent_T": 1102910.8986206055,
+          "candidate_T": 1102910.8986206055,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e3fd358e6c56c477d8c7378c1987de34d79b9ede",
+          "Q": 1173,
+          "parent_T": 944578.9485473633,
+          "candidate_T": 944578.9485473633,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e70ab4063edbce52e4483681360b8655072ee547",
+          "Q": 1075,
+          "parent_T": 1858750.4115600586,
+          "candidate_T": 1858750.4115600586,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "f50ee007fdf84054fa44b71240c28a66a47aad8e",
+          "Q": 999,
+          "parent_T": 1998012.9881591797,
+          "candidate_T": 1998012.9881591797,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "fb1862fbb0da30e4bdaa82e5be26b765e6a73684",
+          "Q": 965,
+          "parent_T": 2065526.7431030273,
+          "candidate_T": 2065526.7431030273,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        }
+      ]
+    },
+    {
+      "mode": "cancel-guard",
+      "n_sources": 36,
+      "improved_sources": 2,
+      "unchanged_sources": 34,
+      "worse_sources": 0,
+      "mean_saving_T": 419.1666666666667,
+      "mean_percent_reduction": 0.010859892826598392,
+      "median_percent_reduction": 0.0,
+      "mean_percent_reduction_improved_sources": 0.19547807087877103,
+      "rows": [
+        {
+          "source_commit": "0c373cdab3857eb5736caeecb39f7ddcea567954",
+          "Q": 1170,
+          "parent_T": 946545.2272949219,
+          "candidate_T": 946545.2272949219,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 28,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "1724be5616e66fdc21e458639b8f2aa41c5c911b",
+          "Q": 1148,
+          "parent_T": 1062325.270324707,
+          "candidate_T": 1062325.270324707,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "17e1a37cc1ffeb98d8030b573c1b4fc7786076b9",
+          "Q": 818,
+          "parent_T": 9785250.378051758,
+          "candidate_T": 9785210.378051758,
+          "saving_T": 40.0,
+          "reduction_percent": 0.00040877850289574295,
+          "failed_inputs": 0,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "18b73824983ccf0202376da3eb7f9cde56f3c44d",
+          "Q": 1164,
+          "parent_T": 970973.4416503906,
+          "candidate_T": 970973.4416503906,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "31c38da873433027b99c346e1ebef82aa6de07b7",
+          "Q": 1236,
+          "parent_T": 741965.1292114258,
+          "candidate_T": 741965.1292114258,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 24,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "36ced3f936c28ae844c34b1b94d285655657d4f9",
+          "Q": 1152,
+          "parent_T": 1036804.246887207,
+          "candidate_T": 1036804.246887207,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 15,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "370fc319832b78e58d1e139174b58d4a627bddd3",
+          "Q": 1141,
+          "parent_T": 1423737.5988769531,
+          "candidate_T": 1423737.5988769531,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3836ec797d0998c8367ce46b0f5bdaca55873d6e",
+          "Q": 1112,
+          "parent_T": 1739384.5297851562,
+          "candidate_T": 1739384.5297851562,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "3a3b0ad427ec970ebf3c5d7e7dd4627f77296036",
+          "Q": 1078,
+          "parent_T": 1843228.9371948242,
+          "candidate_T": 1843228.9371948242,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "52b7997b7725abdc12b79a2c06a5110d57ad35b8",
+          "Q": 1065,
+          "parent_T": 1892815.937133789,
+          "candidate_T": 1892815.937133789,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "5be83d9f70f5565500acf75d6126e5ce2a97b2c5",
+          "Q": 856,
+          "parent_T": 3853565.896484375,
+          "candidate_T": 3838515.896484375,
+          "saving_T": 15050.0,
+          "reduction_percent": 0.39054736325464634,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6535301ef5df5c098696930282631493f278883b",
+          "Q": 885,
+          "parent_T": 2163089.851989746,
+          "candidate_T": 2163089.851989746,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "65f145fbd925dcc5d164738e0f096840bf4805f6",
+          "Q": 1159,
+          "parent_T": 997334.5621337891,
+          "candidate_T": 997334.5621337891,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6602a4e835898b9a4118f040806195571c6e8967",
+          "Q": 1240,
+          "parent_T": 740798.8107299805,
+          "candidate_T": 740798.8107299805,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 22,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6b0327d60e40068fcbed5fedcb7f66d926f12320",
+          "Q": 1234,
+          "parent_T": 742021.1781005859,
+          "candidate_T": 742021.1781005859,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6c9283cb7f329c398204802e6e144c6f390755df",
+          "Q": 1134,
+          "parent_T": 1460113.2830810547,
+          "candidate_T": 1460113.2830810547,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "6e148cfc3aa800ce881aaa48e8c9136d39da6430",
+          "Q": 1142,
+          "parent_T": 1131788.0592041016,
+          "candidate_T": 1131788.0592041016,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "765ef38cd8ce99a3e3800e98a8a60db954d35b8f",
+          "Q": 1133,
+          "parent_T": 1460499.1603393555,
+          "candidate_T": 1460499.1603393555,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "8541fb1542d76864e7978328e56b31514d38c0cb",
+          "Q": 1143,
+          "parent_T": 1111689.1266479492,
+          "candidate_T": 1111689.1266479492,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 18,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "893d83bab084880ee329235952e9f7694d528b14",
+          "Q": 867,
+          "parent_T": 2243273.639831543,
+          "candidate_T": 2243273.639831543,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "9db31da9a0971a2185e54d12d9441c36838aba40",
+          "Q": 1172,
+          "parent_T": 945320.9753417969,
+          "candidate_T": 945320.9753417969,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 32,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6034cb8fa0653c2746bd64c3ca2b0ad6b9fb5ff",
+          "Q": 1171,
+          "parent_T": 945851.48828125,
+          "candidate_T": 945851.48828125,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 25,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6c3394cdde6421a2fbc646a61b21557be524d6d",
+          "Q": 1156,
+          "parent_T": 1022152.065246582,
+          "candidate_T": 1022152.065246582,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 16,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "a6ff74954dadfe9aca168b6c134479b9a9e9fffc",
+          "Q": 1090,
+          "parent_T": 1830273.9498291016,
+          "candidate_T": 1830273.9498291016,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "c9d2e0fe416916260301d6c056fdfc511ea71176",
+          "Q": 1080,
+          "parent_T": 1843153.5537109375,
+          "candidate_T": 1843153.5537109375,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cb59bcb1c72db0f0fd40fcdf54d659368f1a8929",
+          "Q": 1108,
+          "parent_T": 1801528.6885986328,
+          "candidate_T": 1801528.6885986328,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "ceffcd216c2a4a987987686fee48d89f54b60c41",
+          "Q": 1097,
+          "parent_T": 1815258.1305541992,
+          "candidate_T": 1815258.1305541992,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "cfc78693cce6405828b80750bf4dadd7bfd4e9ec",
+          "Q": 935,
+          "parent_T": 2097285.925354004,
+          "candidate_T": 2097285.925354004,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d690a7e3074bdfeff3a9f2e89fa9498bc54f43a2",
+          "Q": 1111,
+          "parent_T": 1785180.8852539062,
+          "candidate_T": 1785180.8852539062,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 9,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d6dd7ef7e1b7aa4eb2de5066f75482d9b355c0e3",
+          "Q": 1174,
+          "parent_T": 943821.6328735352,
+          "candidate_T": 943821.6328735352,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 27,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d7f4e842c90df365b5c08a5e25b326aba53894f0",
+          "Q": 1068,
+          "parent_T": 1881223.6954956055,
+          "candidate_T": 1881223.6954956055,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "d90b306b63a25eccae8c38de9070b092b35404f4",
+          "Q": 1144,
+          "parent_T": 1102910.8986206055,
+          "candidate_T": 1102910.8986206055,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 14,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e3fd358e6c56c477d8c7378c1987de34d79b9ede",
+          "Q": 1173,
+          "parent_T": 944578.9485473633,
+          "candidate_T": 944578.9485473633,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 29,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "e70ab4063edbce52e4483681360b8655072ee547",
+          "Q": 1075,
+          "parent_T": 1858750.4115600586,
+          "candidate_T": 1858750.4115600586,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 2,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "f50ee007fdf84054fa44b71240c28a66a47aad8e",
+          "Q": 999,
+          "parent_T": 1998012.9881591797,
+          "candidate_T": 1998012.9881591797,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        },
+        {
+          "source_commit": "fb1862fbb0da30e4bdaa82e5be26b765e6a73684",
+          "Q": 965,
+          "parent_T": 2065526.7431030273,
+          "candidate_T": 2065526.7431030273,
+          "saving_T": 0.0,
+          "reduction_percent": 0.0,
+          "failed_inputs": 1,
+          "pairs": 8192
+        }
+      ]
+    }
+  ],
+  "paired_levers": [
+    {
+      "parent": "q839-parent",
+      "candidate": "q839-r",
+      "Q": 839,
+      "parent_T": 8569780.978515625,
+      "candidate_T": 8565688.825195312,
+      "saving_T": 4092.1533203125,
+      "reduction_percent": 0.04775096738844898,
+      "parent_failed_inputs": 0,
+      "candidate_failed_inputs": 0,
+      "shots": 16384,
+      "packet_equal": true,
+      "paths": [
+        "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q839-parent/development/raw.json",
+        "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q839-r/development/raw.json"
+      ],
+      "sha256": [
+        "97cf92170538d050020f9e0e73325c37152dbcf7eea14c2683a74e19f056699a",
+        "313c939c7e9aeafcd162a1dffac9d959efbff1cb459cfcca69b68d31be9cdc11"
+      ],
+      "limit": "Zero failed inputs in these paired development packets cannot establish that the faulty channels agree."
+    },
+    {
+      "parent": "q839-parent",
+      "candidate": "q839-u",
+      "Q": 839,
+      "parent_T": 8569780.978515625,
+      "candidate_T": 8568678.021606445,
+      "saving_T": 1102.9569091796875,
+      "reduction_percent": 0.012870304526390954,
+      "parent_failed_inputs": 0,
+      "candidate_failed_inputs": 0,
+      "shots": 16384,
+      "packet_equal": true,
+      "paths": [
+        "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q839-parent/development/raw.json",
+        "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q839-u/development/raw.json"
+      ],
+      "sha256": [
+        "97cf92170538d050020f9e0e73325c37152dbcf7eea14c2683a74e19f056699a",
+        "7e79f820bd8f5f0cc90467d251e4f8d1d1b165658cc4762efae052250f0cd4ed"
+      ],
+      "limit": "Zero failed inputs in these paired development packets cannot establish that the faulty channels agree."
+    },
+    {
+      "parent": "q839-parent",
+      "candidate": "q839-ur",
+      "Q": 839,
+      "parent_T": 8569780.978515625,
+      "candidate_T": 8564553.88079834,
+      "saving_T": 5227.097717285156,
+      "reduction_percent": 0.06099453101998114,
+      "parent_failed_inputs": 0,
+      "candidate_failed_inputs": 0,
+      "shots": 16384,
+      "packet_equal": true,
+      "paths": [
+        "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q839-parent/development/raw.json",
+        "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q839-ur/development/raw.json"
+      ],
+      "sha256": [
+        "97cf92170538d050020f9e0e73325c37152dbcf7eea14c2683a74e19f056699a",
+        "2927cd0413984ad28647e78ca13db41b6bfaf33cec7782b3f3b2f539b56acd29"
+      ],
+      "limit": "Zero failed inputs in these paired development packets cannot establish that the faulty channels agree."
+    },
+    {
+      "parent": "q818-parent",
+      "candidate": "q818-r",
+      "Q": 818,
+      "parent_T": 9754266.557312012,
+      "candidate_T": 9750077.189086914,
+      "saving_T": 4189.368225097656,
+      "reduction_percent": 0.04294908490026053,
+      "parent_failed_inputs": 0,
+      "candidate_failed_inputs": 0,
+      "shots": 16384,
+      "packet_equal": true,
+      "paths": [
+        "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q818-parent/development/raw.json",
+        "external-project/external-project/reversible-circuit-optimizer-openevolve-pilot/runs/frontier-levers-20261025/tracks/froghop-levers/q818-r/development/raw.json"
+      ],
+      "sha256": [
+        "57533fb4396653ee6e78bddbff2c9ba4b16f1b0f6ce0b92295bbc29fb315bb1f",
+        "158bf89d728e7ca2e47fd951633f8516c92b96c609247ec4f60fbdb682cd46ea"
+      ],
+      "limit": "Zero failed inputs in these paired development packets cannot establish that the faulty channels agree."
+    }
+  ],
+  "lever_use_census": {
+    "region_Q": [
+      791,
+      839
+    ],
+    "rows_with_conditional_AND_pass": 23,
+    "settings_counts": {
+      "mfs": 13,
+      "mfsr": 10
+    },
+    "u_enabled": 0,
+    "evidence": "Narrative census; underlying23-source machine survey not located",
+    "source_path": "external-project/external-project/evidence-audit-kit/latest/RESULTS-UPDATE-20261025.md",
+    "source_sha256": "d8dfc0cb9f1b7fa802d9c7b340aef137786f111aebd9f41d39e18071667dae9b"
+  },
+  "grammar": {
+    "historical_active_rules": [
+      "R01",
+      "R02",
+      "R04",
+      "R08",
+      "R10",
+      "R11",
+      "R18",
+      "R19",
+      "R20"
+    ],
+    "historical_rule_catalog_count": 20,
+    "block_extension_rule": "R21",
+    "block_program_length": [
+      1,
+      8
+    ],
+    "small_width_program_operations": [
+      "swap",
+      "add",
+      "sub",
+      "half",
+      "double",
+      "half_u",
+      "double_u"
+    ],
+    "small_width_lowerings": [
+      "legacy",
+      "direct"
+    ],
+    "native_backends": [
+      "pingpong",
+      "leapfrog",
+      "dialog",
+      "skywalk"
+    ],
+    "native_setting_count": 58,
+    "native_program_context": "leapfrog replay only",
+    "native_lowerings": [
+      "direct",
+      "power2"
+    ],
+    "native_mutation_families": [
+      "backend",
+      "setting",
+      "program",
+      "insert",
+      "delete",
+      "replace",
+      "swap",
+      "lowering",
+      "inverse_pair"
+    ],
+    "native_epsilon": 0.001,
+    "targeted_backends": [
+      "skycof_pinned",
+      "joint_array",
+      "skycof_profile",
+      "ordinary_skywalk"
+    ],
+    "targeted_setting_count": 43,
+    "limitation": "This is a succession of interfaces. Do not present R21, native-v2 and targeted-v1 as one flat21-rule grammar."
+  },
+  "library": {
+    "release_mode_names": {
+      "Pareto-curve mode": "Proposed user-facing name for strategy discovery",
+      "Frontier mode": "Proposed user-facing name for full point-addition work"
+    },
+    "existing_commands": {
+      "division_init": "circuit-opt experiment init runs/offline --config runs/experiments/opus55-guarded-blocks-20261023/recommended-offline.json",
+      "division_run": "circuit-opt experiment run runs/offline --offline-only",
+      "native_run": "circuit-opt frontier run runs/native --attempts 48 --maximum-depth 64 --finalist-limit 32 --audit-pairs 65536 --epsilon 0.001 --rust-tools PATH_TO_PINNED_RUST_TOOLS",
+      "native_grammar": "circuit-opt frontier grammar",
+      "native_replay": "circuit-opt frontier replay runs/native"
+    },
+    "status": "Native and division commands are implemented. Pareto-moves is implemented on the strategies branch. The proposed two-mode top-level interface is unreleased."
+  }
+}

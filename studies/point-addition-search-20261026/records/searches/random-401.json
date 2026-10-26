@@ -1,0 +1,161 @@
+{
+  "arm": "random",
+  "baseline": {
+    "Q": 214,
+    "QT": 6798566.0,
+    "T": 31769.0,
+    "alpha": 0.05,
+    "binomial_upper": 0.0007311125564754343,
+    "checker_binary_sha256": "9cf8903b33dd8971193d9b59435640fdca0fea1348a927fff83d1009a0089aed",
+    "checker_source_sha256": "45379a08de76fa11c3a6adbeff9532dd42d246298f45be46444de1793861153c",
+    "domain_exclusions": {
+      "equal_x": 1
+    },
+    "elapsed_seconds": 0.555857167,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "label": "point-addition-search-v1/development/401",
+    "mean_toffoli": 31769.0,
+    "meets_bound": true,
+    "ops_sha256": "b84161037cdd8580e28172308418c1767b179abb27a7b02aa6ac90ebb74bfaf8",
+    "original_receipt_sha256": "b68116387816d374bcaff668678123eb37084ebb79b0bfc200381896af781ae5",
+    "packet_sha256": "66607f7e834049bb9c2da21d637d24e564995a75e35b64635e01db2e5dbb6b5e",
+    "pairs": 4096,
+    "passed": true,
+    "per_input_sha256": "36962e51144c93d2a33df8620b3d70a72a0997c31802407d5db63052ad154134",
+    "qubits": 214,
+    "recipe_id": "c0000",
+    "record": "studies/point-addition-search-20261026/records/evaluations/ba6ec95ab22790075dac0537245a2fd7fff12fc682d8a6421c674f0ed63ebc4b.json",
+    "scalar_rejections": 80,
+    "streams": 2
+  },
+  "calls": [],
+  "checkpoints": [
+    {
+      "Q": 198,
+      "QT": 6372234.0,
+      "T": 32183.0,
+      "gain_percent": 6.270910659689122,
+      "proposals": 1,
+      "recipe_id": "c0111"
+    },
+    {
+      "Q": 198,
+      "QT": 6372234.0,
+      "T": 32183.0,
+      "gain_percent": 6.270910659689122,
+      "proposals": 2,
+      "recipe_id": "c0111"
+    },
+    {
+      "Q": 198,
+      "QT": 5545782.0,
+      "T": 28009.0,
+      "gain_percent": 18.4271800847414,
+      "proposals": 4,
+      "recipe_id": "c1010"
+    },
+    {
+      "Q": 198,
+      "QT": 5545782.0,
+      "T": 28009.0,
+      "gain_percent": 18.4271800847414,
+      "proposals": 8,
+      "recipe_id": "c1010"
+    }
+  ],
+  "complete": true,
+  "finalist": "c1010",
+  "seed": 401,
+  "slots": [
+    {
+      "Q": 198,
+      "QT": 6372234.0,
+      "T": 32183.0,
+      "failed_inputs": 0,
+      "ops_sha256": "54809861be30ab78368b6a9aeb64dbd84da75812169534993a905b650a7bb2ec",
+      "recipe_id": "c0111",
+      "record": "studies/point-addition-search-20261026/records/evaluations/28609508de875a7d6182fecff089c8240026118f234d04b70a8d026347fb1bec.json",
+      "slot": 1,
+      "status": "passed"
+    },
+    {
+      "Q": 214,
+      "QT": 6785726.0,
+      "T": 31709.0,
+      "failed_inputs": 0,
+      "ops_sha256": "1f2d68beca2a499e28db27cc3c3ea0933f06efdbcd37501ed771882eeccb8df0",
+      "recipe_id": "c0100",
+      "record": "studies/point-addition-search-20261026/records/evaluations/1768fc6121358f0890857dce89c5be89107a02d54d39e9098fa02bdd536f4150.json",
+      "slot": 2,
+      "status": "passed"
+    },
+    {
+      "Q": 198,
+      "QT": 5545782.0,
+      "T": 28009.0,
+      "failed_inputs": 0,
+      "ops_sha256": "77a531ef7d5bead56efb86a0221ae3693830c4a1c4df9d339fe1c03a369b9358",
+      "recipe_id": "c1010",
+      "record": "studies/point-addition-search-20261026/records/evaluations/7a28de0f3e843477018c2c36a9c6ce33f49542c446c66a0a26d1e76451bfa038.json",
+      "slot": 3,
+      "status": "passed"
+    },
+    {
+      "Q": 198,
+      "QT": 6384312.0,
+      "T": 32244.0,
+      "failed_inputs": 0,
+      "ops_sha256": "dbeddadde7c7f3fe5de008c2edfea508aa726df5227bf93b7449a719e07d9ab8",
+      "recipe_id": "c0011",
+      "record": "studies/point-addition-search-20261026/records/evaluations/81bc10222674b86d46a08d98a8cb113dc79c2a89455490e7abd715a82bc3a8ec.json",
+      "slot": 4,
+      "status": "passed"
+    },
+    {
+      "Q": 214,
+      "QT": 6015754.0,
+      "T": 28111.0,
+      "failed_inputs": 0,
+      "ops_sha256": "d7f905ebad6c0e52c5cac636a64045fb333c6b0f6b396c4d81569fc60ed77adb",
+      "recipe_id": "c1000",
+      "record": "studies/point-addition-search-20261026/records/evaluations/9941b92fa391fa847db72ec07829d4a2304d6d00d73ec5fcd1c6b2d41b1ed04b.json",
+      "slot": 5,
+      "status": "passed"
+    },
+    {
+      "Q": 214,
+      "QT": 6002914.0,
+      "T": 28051.0,
+      "failed_inputs": 0,
+      "ops_sha256": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83",
+      "recipe_id": "c1100",
+      "record": "studies/point-addition-search-20261026/records/evaluations/7a4660c24c7a995ce70e32aab1958fedfaf26cc1f74c36ec759a598ce85ca5be.json",
+      "slot": 6,
+      "status": "passed"
+    },
+    {
+      "Q": 214,
+      "QT": 6906208.0,
+      "T": 32272.0,
+      "failed_inputs": 0,
+      "ops_sha256": "3581dff0eb6a21ae8e9f868304706aa79b8f1df4f56ee795eebc98802f9d6dec",
+      "recipe_id": "c0101",
+      "record": "studies/point-addition-search-20261026/records/evaluations/5e8dce3a6445f94c0d9b3aff2bbe832c2beeac8cb4db3e1cfa09b0ceb573b8e0.json",
+      "slot": 7,
+      "status": "passed"
+    },
+    {
+      "Q": 198,
+      "QT": 6270066.0,
+      "T": 31667.0,
+      "failed_inputs": 0,
+      "ops_sha256": "b5104e98dd603445d7bc7e45dc78d855452ead95c8e926e56d4f485f6b21bdb0",
+      "recipe_id": "c0010",
+      "record": "studies/point-addition-search-20261026/records/evaluations/97d5b31144127529da024c03030135c7544a4c5b5f5c4fd3836c72a19ff8ab2a.json",
+      "slot": 8,
+      "status": "passed"
+    }
+  ],
+  "wall_seconds": 5.642759792506695
+}

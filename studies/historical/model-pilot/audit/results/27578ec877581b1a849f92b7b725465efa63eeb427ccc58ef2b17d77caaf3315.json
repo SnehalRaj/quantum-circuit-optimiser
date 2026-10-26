@@ -1,0 +1,85 @@
+{
+  "Q": 147,
+  "T": 12582.0,
+  "failed_inputs": 0,
+  "failed_shots": 0,
+  "channel_failed_inputs": {
+    "output": 0,
+    "phase": 0,
+    "scratch": 0
+  },
+  "first_failures": [],
+  "pairs": 16384,
+  "streams": 2,
+  "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+  "operation_sha256": "148d224fd1d594285231058cd8486ac536887fc8447efc5631c26b8f8a41065c",
+  "circuit_file_sha256": "646792b2e46160ac8f29f9824e3a2d0c7cf30b74c259a79c8b9d2f963b2487b6",
+  "inputs_file": "evaluations/joint-model-pilot-audit-27578ec877581b1a849f92b7b725465efa63eeb427ccc58ef2b17d77caaf3315/inputs.jsonl.gz",
+  "circuit_directory": "final/circuits/27578ec877581b1a849f92b7b725465efa63eeb427ccc58ef2b17d77caaf3315",
+  "cpu_seconds": 3.564432,
+  "peak_rss_bytes": 21135360,
+  "S": 1849554,
+  "stage": "audit",
+  "recipe": {
+    "bits": 16,
+    "prime": 65521,
+    "family": "width",
+    "steps": 31,
+    "cleanup": "toffoli",
+    "block_program": {
+      "ops": [
+        {
+          "op": "swap",
+          "lowering": "legacy"
+        },
+        {
+          "op": "sub",
+          "lowering": "legacy"
+        },
+        {
+          "op": "half",
+          "lowering": "direct"
+        }
+      ]
+    },
+    "widths": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      15,
+      14,
+      13,
+      12,
+      11,
+      10,
+      9,
+      8,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      1
+    ]
+  },
+  "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+  "wall_seconds": 3.66036166716367,
+  "evaluation_directory": "evaluations/joint-model-pilot-audit-27578ec877581b1a849f92b7b725465efa63eeb427ccc58ef2b17d77caaf3315",
+  "epsilon_upper": 0.000478874715572497,
+  "eligible": true
+}

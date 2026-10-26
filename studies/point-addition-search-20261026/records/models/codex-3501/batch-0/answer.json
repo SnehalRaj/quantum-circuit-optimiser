@@ -1,0 +1,4 @@
+{
+  "action_index": 0,
+  "reason": "c1000 tests whether measurement-based AND erasure lowers executed Toffolis. c1100 adds unread-write conversion, which isolates its extra effect on Q times mean Toffolis."
+}

@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "pairs": 8192,
+  "streams": 2,
+  "parent_Q": 214,
+  "parent_T": 28051.0,
+  "catalog_Q": 214,
+  "catalog_T": 28051.0,
+  "operation_hash_unchanged": true,
+  "catalog_matches": 0,
+  "scope": "The catalog passes local fixed-simulator certificates and the full16-bit paired check. This compiler policy has no matching catalog windows, so this run establishes no small-stage resource gain.",
+  "records": {
+    "catalog.qops.zst.json": "ef11cf9d43632e470f1b184ca16b92fea12901b271043f0afbea527cade9d043",
+    "paired.json": "f1ef631c8b30be58a01bbbe5903d13d6df49af568555fb4b6d07525fc0307db2",
+    "parent.qops.zst.json": "fbc903a58b5057be9f329931b155d066e751b806f35e713a7450dace83ffb678",
+    "catalog-audit.json": "89894ed05d70e3cf5baeddad4a2cf9a1cb88d0033bc0054bdcdb3448716cdefe",
+    "native-build.json": "02b3379ba143de7db55143138d5e14c44f0cd3be8a1794f0ad482eac6e7846b4",
+    "native-tests.log": "294c00b507db8c673ae6e574417b00d6f22d50a839fe2f5d91a6e78fc2af5b64",
+    "parent-audit.json": "c32e31cd41a909228445a1db4c4642deaaadd6270fb3fb0fe82a54af1b687e3b",
+    "contract.json": "e8bdab31d4a016cfd77f8b326a2e93ff86f0c7a7003a3253bd19238f400b5114"
+  }
+}

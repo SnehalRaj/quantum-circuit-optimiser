@@ -1,0 +1,869 @@
+{
+  "schema_version": 1,
+  "id": "base",
+  "revision": 1,
+  "title": "Shared reversible arithmetic and cleanup grammar",
+  "description": "One base grammar for quantum/classical gates, arithmetic blocks, storage contracts, and measured cleanup. Executable actions require registered bindings at both widths.",
+  "definitions": {
+    "Q": "Peak allocated quantum wires, measured by the fixed evaluator.",
+    "T": "Toffoli cost under the evaluator condition and measurement protocol.",
+    "HMR": "X-basis measurement with reset, written to a fresh classical bit.",
+    "phase": "The relative sign tracked by the fixed simulator on each measurement branch.",
+    "scratch": "Work wires outside the input/output registers, required to end in zero.",
+    "guard": "An executable premise check in the source implementation.",
+    "mapping": "The same mechanism applied to the fast16 circuit and the chosen large source backend.",
+    "ABI": "The ordered quantum inputs, classical addend, output registers, and clean scratch contract.",
+    "status": "executable means a trusted action binding exists; specification and research describe unbound mechanisms.",
+    "failure_probability_cutoff": 0.001,
+    "measurement_protocol": "An input fails when either of two measurement streams fails. Fresh full-width audits govern qualification."
+  },
+  "evidence": [
+    {
+      "path": "vendor/conditional/cond_pass.rs",
+      "sha256": "a56f374ad86c7dd3ca13cfd08291f5f9a4f40a54e122959c481656a54b9d987e",
+      "symbol": "run_with, analyze, plan_muf, plan_r"
+    }
+  ],
+  "rules": [
+    {
+      "id": "base.known_control_reduce",
+      "revision": 1,
+      "title": "Reduce a known AND control",
+      "description": "The Boolean analysis proves that an AND is zero or equals one control. Replace the CCX with no gate or a CX.",
+      "status": "executable",
+      "families": [
+        "*"
+      ],
+      "parameters": {
+        "guards": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "default": true,
+          "description": "Retain all executable source guards."
+        }
+      },
+      "guards": [
+        "CANONICAL_BOOLEAN_VALUE",
+        "CLASSICAL_CONTEXT",
+        "NO_OVERLAPPING_EDITS"
+      ],
+      "bindings": {
+        "fast": "conditional16.m",
+        "large": {
+          "froghop": "froghop.conditional.m",
+          "source-conditional": "source-conditional.conditional.m",
+          "qualified-leapfrog": "qualified-leapfrog.conditional.m"
+        }
+      },
+      "mechanism": {
+        "match": "CCX(a,b;t) with value(a AND b) equal to 0, value(a), or value(b).",
+        "replace": "Delete a zero contribution. Otherwise XOR the proven control value into t with CX."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Remove one weighted CCX at each accepted site. Q need not change.",
+      "evidence": [
+        {
+          "path": "vendor/conditional/cond_pass.rs",
+          "sha256": "a56f374ad86c7dd3ca13cfd08291f5f9a4f40a54e122959c481656a54b9d987e",
+          "symbol": "run_with, analyze, plan_muf, plan_r"
+        }
+      ],
+      "requires": [
+        "conditional-op-ir"
+      ]
+    },
+    {
+      "id": "base.phase_only_and",
+      "revision": 1,
+      "title": "Replace a phase-only AND",
+      "description": "A temporary AND has only Z reads before its end. Apply the equivalent phases to live operand values or their affine reconstructions.",
+      "status": "executable",
+      "families": [
+        "*"
+      ],
+      "parameters": {
+        "guards": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "default": true,
+          "description": "Retain all executable source guards."
+        },
+        "phase_fix": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "default": true,
+          "description": "Emit every source-required phase correction."
+        }
+      },
+      "guards": [
+        "G1_END_CONTEXT_EQUAL",
+        "G2_NO_MOVED_CONTRIBUTION",
+        "G3_HOLDER_NOT_MEASURED_TARGET",
+        "AFFINE_OPERANDS_AVAILABLE",
+        "NO_OVERLAPPING_EDITS"
+      ],
+      "bindings": {
+        "fast": "conditional16.f",
+        "large": {
+          "froghop": "froghop.conditional.f",
+          "source-conditional": "source-conditional.conditional.f",
+          "qualified-leapfrog": "qualified-leapfrog.conditional.f"
+        }
+      },
+      "mechanism": {
+        "match": "A tracked CCX contribution whose every read is Z and whose end is HMR, reset, or matching cancellation.",
+        "replace": "Remove the AND contribution. Replace Z reads with CZ of the represented operands. Repair the measured end and restore affine hosts."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Remove accepted AND contributions. Phase repair can add Clifford gates.",
+      "evidence": [
+        {
+          "path": "vendor/conditional/cond_pass.rs",
+          "sha256": "a56f374ad86c7dd3ca13cfd08291f5f9a4f40a54e122959c481656a54b9d987e",
+          "symbol": "run_with, analyze, plan_muf, plan_r"
+        }
+      ],
+      "requires": [
+        "conditional-op-ir",
+        "phase-tracking"
+      ]
+    },
+    {
+      "id": "base.classical_guard_sink",
+      "revision": 1,
+      "title": "Build an AND only under its read bit",
+      "description": "Every use of a temporary AND shares a later classical guard. Move or guard its construction and its erasure correction under that bit.",
+      "status": "executable",
+      "families": [
+        "*"
+      ],
+      "parameters": {
+        "guards": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "default": true,
+          "description": "Retain all executable source guards."
+        },
+        "phase_fix": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "default": true,
+          "description": "Emit every source-required phase correction."
+        }
+      },
+      "guards": [
+        "COPYABLE_BIT_VALUE",
+        "MEASURED_END_IS_SOLE_CONTRIBUTION",
+        "OPERAND_AFFINE_FORMS_AVAILABLE",
+        "TARGET_UNUSED_BEFORE_INSERTION",
+        "G4_FIX_IS_PHASE_ONLY",
+        "NO_OVERLAPPING_EDITS"
+      ],
+      "bindings": {
+        "fast": "conditional16.s",
+        "large": {
+          "froghop": "froghop.conditional.s",
+          "source-conditional": "source-conditional.conditional.s",
+          "qualified-leapfrog": "qualified-leapfrog.conditional.s"
+        }
+      },
+      "mechanism": {
+        "match": "A CCX whose read contexts share a copyable classical bit created before its first use.",
+        "replace": "Reconstruct operands at the legal insertion point. Construct the AND only under the read bit. Put every measured-erase phase fix under the same bit."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Change conditional Toffoli weight. The source reports expected savings before runtime evaluation.",
+      "evidence": [
+        {
+          "path": "vendor/conditional/cond_pass.rs",
+          "sha256": "a56f374ad86c7dd3ca13cfd08291f5f9a4f40a54e122959c481656a54b9d987e",
+          "symbol": "run_with, analyze, plan_muf, plan_r"
+        }
+      ],
+      "requires": [
+        "conditional-op-ir",
+        "phase-tracking",
+        "measured-reset"
+      ]
+    },
+    {
+      "id": "cleanup.inverse_and_measure",
+      "revision": 1,
+      "title": "Erase an inverse AND by measurement",
+      "description": "The target contains exactly the AND that the inverse CCX would erase. Measure the target in the X basis and repair the outcome phase.",
+      "status": "executable",
+      "families": [
+        "*"
+      ],
+      "parameters": {
+        "guards": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "default": true,
+          "description": "Retain all executable source guards."
+        },
+        "phase_fix": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "default": true,
+          "description": "Emit every source-required phase correction."
+        }
+      },
+      "guards": [
+        "TARGET_IS_WHOLE_AND",
+        "UNCONDITIONAL_INVERSE_CCX",
+        "FRESH_CLASSICAL_OUTCOME",
+        "CORRECT_CZ_OPERANDS"
+      ],
+      "bindings": {
+        "fast": "conditional16.u",
+        "large": {
+          "froghop": "froghop.conditional.u",
+          "source-conditional": "source-conditional.conditional.u",
+          "qualified-leapfrog": "qualified-leapfrog.conditional.u"
+        }
+      },
+      "mechanism": {
+        "match": "An unconditional CCX(a,b;t) after which t is known to be zero.",
+        "replace": "HMR(t -> k); CZ(a,b) under k. Allocate a fresh classical outcome k."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Replace one weighted inverse CCX with HMR and a classically conditioned Clifford CZ.",
+      "evidence": [
+        {
+          "path": "vendor/conditional/cond_pass.rs",
+          "sha256": "a56f374ad86c7dd3ca13cfd08291f5f9a4f40a54e122959c481656a54b9d987e",
+          "symbol": "run_with, analyze, plan_muf, plan_r"
+        }
+      ],
+      "requires": [
+        "conditional-op-ir",
+        "phase-tracking",
+        "measured-reset"
+      ],
+      "notes": [
+        "The additional measurement changes subsequent random-word alignment. Compare independent input outcomes, rather than aligned individual branches."
+      ]
+    },
+    {
+      "id": "cleanup.unread_write_measure",
+      "revision": 1,
+      "title": "Absorb unread writes into measured cleanup",
+      "description": "A wire receives only X-type writes after its last read and then reaches an unconditional reset or measurement. Move the measurement before the writes.",
+      "status": "executable",
+      "families": [
+        "*"
+      ],
+      "parameters": {
+        "guards": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "default": true,
+          "description": "Retain all executable source guards."
+        },
+        "phase_fix": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "default": true,
+          "description": "Emit every source-required phase correction."
+        }
+      },
+      "guards": [
+        "UNREAD_WRITE_WINDOW",
+        "UNCONDITIONAL_END",
+        "EMPTY_CONTEXT_INSERTION_POINT",
+        "FOLLOW_UNCONDITIONAL_SWAPS",
+        "PRESERVE_CLASSICAL_OUTCOME",
+        "KEEP_FINAL_RESET"
+      ],
+      "bindings": {
+        "fast": "conditional16.r",
+        "large": {
+          "froghop": "froghop.conditional.r",
+          "source-conditional": "source-conditional.conditional.r",
+          "qualified-leapfrog": "qualified-leapfrog.conditional.r"
+        }
+      },
+      "mechanism": {
+        "match": "A suffix of X, CX, and CCX writes containing all CCX writes before an unconditional R or HMR end.",
+        "replace": "Measure the content at a legal earlier point. Convert X to global sign, CX to Z, and CCX to CZ under the outcome and existing conditions. Preserve the original end outcome and reset."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Remove the accepted window CCXs. Extra measurements and conditional phase operations remain.",
+      "evidence": [
+        {
+          "path": "vendor/conditional/cond_pass.rs",
+          "sha256": "a56f374ad86c7dd3ca13cfd08291f5f9a4f40a54e122959c481656a54b9d987e",
+          "symbol": "run_with, analyze, plan_muf, plan_r"
+        }
+      ],
+      "requires": [
+        "conditional-op-ir",
+        "phase-tracking",
+        "measured-reset"
+      ]
+    },
+    {
+      "id": "base.involution_cancel",
+      "revision": 1,
+      "title": "Cancel adjacent involutions",
+      "description": "Cancel adjacent identical unitary involutions with equal complete operation records. Classical writes, measurements, resets, registers, and condition-stack operations remain barriers.",
+      "status": "executable",
+      "families": [
+        "*"
+      ],
+      "parameters": {
+        "guards": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "default": true,
+          "description": "Keep operation equality and barrier checks active."
+        }
+      },
+      "guards": [
+        "VALID_OPERATION_RECORD",
+        "ADJACENT_IDENTICAL_RECORDS",
+        "SAME_EXPLICIT_CONDITION",
+        "NO_CLASSICAL_WRITE_BETWEEN",
+        "MEASUREMENT_AND_STACK_BARRIERS"
+      ],
+      "bindings": {
+        "fast": "adjacent16.cancel",
+        "large": {
+          "froghop": "froghop.adjacent.cancel",
+          "qualified-leapfrog": "qualified-leapfrog.adjacent.cancel",
+          "source-conditional": "source-conditional.adjacent.cancel"
+        }
+      },
+      "mechanism": {
+        "match": "G; G with identical full Op records and G in Neg, X, Z, CX, CZ, Swap, CCX, CCZ.",
+        "replace": "Delete both operations. A stack pass also cancels pairs exposed by earlier cancellations."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Remove two gate records per accepted pair. Measure Q and T separately; Clifford cancellations can leave both unchanged.",
+      "evidence": [
+        {
+          "path": "vendor/grammar_passes/adjacent_cancel.rs",
+          "sha256": "5bd79f20646acd7b8dcf436fdd604d6a6546f32536e8aa2324d8100875ee328f",
+          "symbol": "run"
+        }
+      ],
+      "requires": [],
+      "notes": [
+        "The native measurement removed588 pairs on genuine16-bit mfsur point addition. Q214 and T28051 remained unchanged. Full qualification remains separate from rewrite activation."
+      ]
+    },
+    {
+      "id": "base.disjoint_commute",
+      "revision": 1,
+      "title": "Commute independent gates",
+      "description": "Gates on disjoint quantum and classical supports can exchange order. Context capture must remain unchanged.",
+      "status": "specification",
+      "families": [
+        "*"
+      ],
+      "parameters": {},
+      "guards": [
+        "DISJOINT_SUPPORT",
+        "NO_MEASUREMENT_DEPENDENCE",
+        "SAME_CONTEXT"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "G1; G2 on disjoint supports.",
+        "replace": "G2; G1."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "docs/GRAMMAR.md",
+          "symbol": "Base contracts; the mechanism specification has no independent mutation binding."
+        }
+      ],
+      "requires": [],
+      "notes": [
+        "This mechanism is part of the base specification. It has no independent mutation binding in this repository release."
+      ]
+    },
+    {
+      "id": "base.swap_relabel",
+      "revision": 1,
+      "title": "Relabel a swap window",
+      "description": "A swap can move through a gate window when every quantum operand and register output label follows the same permutation.",
+      "status": "specification",
+      "families": [
+        "*"
+      ],
+      "parameters": {},
+      "guards": [
+        "ALL_OPERANDS_RELABELLED",
+        "ABI_RESTORED",
+        "CONDITION_TARGETS_PRESERVED"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "SWAP(a,b); a gate window.",
+        "replace": "The relabelled gate window; SWAP(a,b)."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "docs/GRAMMAR.md",
+          "symbol": "Base contracts; the mechanism specification has no independent mutation binding."
+        }
+      ],
+      "requires": [],
+      "notes": [
+        "This mechanism is part of the base specification. It has no independent mutation binding in this repository release."
+      ]
+    },
+    {
+      "id": "base.affine_reconstruct",
+      "revision": 1,
+      "title": "Reconstruct an affine operand",
+      "description": "X and CX gates reconstruct an affine Boolean value in a host wire. Reverse the reconstruction after the phase operation.",
+      "status": "specification",
+      "families": [
+        "*"
+      ],
+      "parameters": {},
+      "guards": [
+        "HOST_AVAILABLE",
+        "HOST_DISJOINT_FROM_TARGET",
+        "RESTORE_HOST"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "A required affine value with live independent hosts.",
+        "replace": "Compute affine form; use the value; reverse the computation."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "docs/GRAMMAR.md",
+          "symbol": "Base contracts; the mechanism specification has no independent mutation binding."
+        }
+      ],
+      "requires": [],
+      "notes": [
+        "This mechanism is part of the base specification. It has no independent mutation binding in this repository release."
+      ]
+    },
+    {
+      "id": "base.modular_add",
+      "revision": 1,
+      "title": "Use reversible modular addition",
+      "description": "The block adds a signed source register into a target modulo the family field prime. It preserves the source and clears its carry scratch.",
+      "status": "specification",
+      "families": [
+        "*"
+      ],
+      "parameters": {
+        "sign": {
+          "type": "integer",
+          "enum": [
+            -1,
+            1
+          ],
+          "default": 1
+        }
+      },
+      "guards": [
+        "ODD_NAMED_PRIME",
+        "WIDTH_AND_REPRESENTATION_MATCH",
+        "CARRY_CLEARED"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "u,v in the declared field representation.",
+        "replace": "u, v + s*u mod p, with s in {-1,+1}."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "docs/GRAMMAR.md",
+          "symbol": "Base contracts; the mechanism specification has no independent mutation binding."
+        }
+      ],
+      "requires": [],
+      "notes": [
+        "This mechanism is part of the base specification. It has no independent mutation binding in this repository release."
+      ]
+    },
+    {
+      "id": "base.modular_half",
+      "revision": 1,
+      "title": "Use reversible modular halving",
+      "description": "For odd p, a parity-conditioned correction makes a right shift reversible. The inverse block doubles modulo p.",
+      "status": "specification",
+      "families": [
+        "*"
+      ],
+      "parameters": {},
+      "guards": [
+        "ODD_PRIME",
+        "CANONICAL_INPUT",
+        "PARITY_RECONSTRUCTED",
+        "CARRY_CLEARED"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "v in [0,p).",
+        "replace": "v * inverse(2) mod p."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "docs/GRAMMAR.md",
+          "symbol": "Base contracts; the mechanism specification has no independent mutation binding."
+        }
+      ],
+      "requires": [],
+      "notes": [
+        "This mechanism is part of the base specification. It has no independent mutation binding in this repository release."
+      ]
+    },
+    {
+      "id": "base.constant_kernel",
+      "revision": 1,
+      "title": "Select a constant arithmetic kernel",
+      "description": "A direct constant kernel and a signed power-of-two decomposition can implement the same field map. Compare their costs after lowering.",
+      "status": "specification",
+      "families": [
+        "*"
+      ],
+      "parameters": {
+        "kernel": {
+          "type": "string",
+          "enum": [
+            "direct",
+            "power2"
+          ],
+          "default": "direct"
+        }
+      },
+      "guards": [
+        "SAME_FIELD_MAP",
+        "SIGNED_DECOMPOSITION_VERIFIED",
+        "TEMPORARIES_CLEARED"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "A constant arithmetic block with a declared modulus and width.",
+        "replace": "The same block lowered by the direct or sparse signed kernel."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "docs/GRAMMAR.md",
+          "symbol": "Base contracts; the mechanism specification has no independent mutation binding."
+        }
+      ],
+      "requires": [],
+      "notes": [
+        "This mechanism is part of the base specification. It has no independent mutation binding in this repository release."
+      ]
+    },
+    {
+      "id": "base.product_lowering",
+      "revision": 1,
+      "title": "Select a product decomposition",
+      "description": "Schoolbook and recursive product constructions trade carry scratch against gate count. Preserve the full product before modular reduction.",
+      "status": "specification",
+      "families": [
+        "*"
+      ],
+      "parameters": {},
+      "guards": [
+        "FULL_PRODUCT_WIDTH",
+        "NO_TRUNCATED_CARRY",
+        "REDUCTION_MATCHES_PRIME"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "A product of declared-width field limbs.",
+        "replace": "A verified alternative product decomposition."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "docs/GRAMMAR.md",
+          "symbol": "Base contracts; the mechanism specification has no independent mutation binding."
+        }
+      ],
+      "requires": [],
+      "notes": [
+        "This mechanism is part of the base specification. It has no independent mutation binding in this repository release."
+      ]
+    },
+    {
+      "id": "cleanup.recompute_uncompute",
+      "revision": 1,
+      "title": "Recompute a discarded intermediate",
+      "description": "A schedule can discard an intermediate after reversible cleanup and later reconstruct it from retained parents.",
+      "status": "specification",
+      "families": [
+        "*"
+      ],
+      "parameters": {},
+      "guards": [
+        "PARENTS_LIVE",
+        "NO_DIRTY_ALIAS",
+        "REVERSE_IS_EXACT",
+        "FINAL_SCRATCH_ZERO"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "A live intermediate with reconstructible unchanged parents.",
+        "replace": "Uncompute; release; reconstruct before its next use."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "docs/GRAMMAR.md",
+          "symbol": "Base contracts; the mechanism specification has no independent mutation binding."
+        }
+      ],
+      "requires": [],
+      "notes": [
+        "This mechanism is part of the base specification. It has no independent mutation binding in this repository release."
+      ]
+    },
+    {
+      "id": "cleanup.temporary_and_contract",
+      "revision": 1,
+      "title": "Use the temporary AND contract",
+      "description": "Compute a temporary AND from a zero target. Keep the operand values needed by its measured inverse and conditional phase correction.",
+      "status": "specification",
+      "families": [
+        "*"
+      ],
+      "parameters": {},
+      "guards": [
+        "ZERO_TARGET",
+        "OPERANDS_AVAILABLE_AT_ERASE",
+        "CORRECT_PHASE_FIX"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "a,b, target=0.",
+        "replace": "a,b,target=a AND b; later HMR and conditional CZ."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "docs/GRAMMAR.md",
+          "symbol": "Base contracts; the mechanism specification has no independent mutation binding."
+        }
+      ],
+      "requires": [],
+      "notes": [
+        "This mechanism is part of the base specification. It has no independent mutation binding in this repository release."
+      ]
+    },
+    {
+      "id": "cleanup.scratch_lifetime",
+      "revision": 1,
+      "title": "Reuse a clean scratch register",
+      "description": "Release scratch only after the phase and value checks establish its zero state. The next block can then reuse the same wires.",
+      "status": "specification",
+      "families": [
+        "*"
+      ],
+      "parameters": {},
+      "guards": [
+        "ZERO_AT_RELEASE",
+        "NO_PENDING_PHASE",
+        "NO_LIVE_ALIAS"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "A scratch allocation whose final value is zero.",
+        "replace": "Release and reuse the allocation after its last read."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "docs/GRAMMAR.md",
+          "symbol": "Base contracts; the mechanism specification has no independent mutation binding."
+        }
+      ],
+      "requires": [],
+      "notes": [
+        "This mechanism is part of the base specification. It has no independent mutation binding in this repository release."
+      ]
+    },
+    {
+      "id": "search.arithmetic_program",
+      "revision": 1,
+      "title": "Compose an ordered arithmetic program",
+      "description": "An editable block program can insert, remove, replace, or reorder up to eight typed arithmetic instructions. Full checks decide whether a new program is valid.",
+      "status": "specification",
+      "families": [
+        "*"
+      ],
+      "parameters": {
+        "maximum_length": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8,
+          "default": 8
+        }
+      },
+      "guards": [
+        "REGISTER_CONTRACT",
+        "CONTROL_UNCHANGED",
+        "PROGRAM_LENGTH_1_TO_8",
+        "FULL_PHASE_AND_SCRATCH_CHECK"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "A family-owned boundary with disjoint u,v registers and declared controls.",
+        "replace": "An ordered program over add, sub, half, double, half_u, double_u, and swap."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "docs/GRAMMAR.md",
+          "symbol": "Base contracts; the mechanism specification has no independent mutation binding."
+        }
+      ],
+      "requires": [],
+      "notes": [
+        "This mechanism is part of the base specification. It has no independent mutation binding in this repository release."
+      ]
+    }
+  ]
+}

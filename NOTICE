@@ -1,0 +1,12 @@
+Quantum Circuit Optimiser
+Copyright 2026 Snehal Raj
+
+Original project code is licensed under the Apache License, Version 2.0.
+The license does not replace third-party licenses or attribution notices.
+
+The repository retains ECDSA.fail benchmark code and public circuit sources.
+Upstream authors include jieyilong and contributors, gnuchev, odinfree,
+krishparadox, jackylee0424, gopikannappan, and Champollion9012.
+The NOTICE files under vendor/ identify their sources and retained terms.
+Historical studies and paper evidence retain their source identities.
+Public submission records retain the original authors' credit.

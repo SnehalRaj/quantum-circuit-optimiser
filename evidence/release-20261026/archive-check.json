@@ -1,0 +1,27 @@
+{
+  "clean_source_data": {
+    "cleaned_files": 22,
+    "sources": {
+      "catalog_sha256": "9010fe0af23ab18e4dd073bd2b4b4c881600cd93a55b9c0383967d6179600d88",
+      "files": 421,
+      "passed": true,
+      "targets": 15
+    }
+  },
+  "finetuning_recount": "passed",
+  "mode_verdicts": {
+    "audits": 9,
+    "execution_sources": 515,
+    "modes": 3,
+    "passed": true,
+    "stream_verdicts": 417792
+  },
+  "paper_build": "passed",
+  "paper_pages": 9,
+  "paper_text_matches_checkout": true,
+  "python_tests": 219,
+  "rust_tests": 26,
+  "schema": "submission-archive-check-v1",
+  "scope": "Extracted source archive; fresh native build and live provider execution have separate source-bound records. No leaderboard submission.",
+  "tested_archive_sha256": "4f9dc26ea26edefed9aaec4f52eb42559e54dc5eaabdcea7c5ffefe5a10666d6"
+}

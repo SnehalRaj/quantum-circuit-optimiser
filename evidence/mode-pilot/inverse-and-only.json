@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "mode_pilot.inverse_and",
+  "revision": 1,
+  "title": "Inverse-AND grammar for the source-family mode pilot",
+  "description": "The unchanged constructor and guarded inverse-AND measured erasure.",
+  "definitions": {
+    "Q": "Peak allocated quantum wires, measured by the fixed evaluator.",
+    "T": "Toffoli cost under the evaluator condition and measurement protocol.",
+    "HMR": "X-basis measurement with reset, written to a fresh classical bit.",
+    "phase": "The relative sign tracked by the fixed simulator on each measurement branch.",
+    "scratch": "Work wires outside the input/output registers, required to end in zero.",
+    "guard": "An executable premise check in the source implementation.",
+    "mapping": "The same mechanism applied to the fast16 circuit and the chosen large source backend.",
+    "ABI": "The ordered quantum inputs, classical addend, output registers, and clean scratch contract.",
+    "status": "executable means a trusted action binding exists; specification and research describe unbound mechanisms.",
+    "failure_probability_cutoff": 0.001,
+    "measurement_protocol": "An input fails when either of two measurement streams fails. Fresh full-width audits govern qualification."
+  },
+  "evidence": [
+    {
+      "path": "grammars/base.json",
+      "sha256": "a4deb46253b7c4ff369875145d0e502bae8831a9e8d29874fbbadbbc08462b9c",
+      "git_commit": "49bdddbd3b5486739ab4e0e549bf92285c34fc2c"
+    }
+  ],
+  "rules": [
+    {
+      "id": "cleanup.inverse_and_measure",
+      "revision": 1,
+      "title": "Erase an inverse AND by measurement",
+      "description": "The target contains exactly the AND that the inverse CCX would erase. Measure the target in the X basis and repair the outcome phase.",
+      "status": "executable",
+      "families": [
+        "*"
+      ],
+      "parameters": {
+        "guards": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "default": true,
+          "description": "Retain all executable source guards."
+        },
+        "phase_fix": {
+          "type": "boolean",
+          "enum": [
+            true
+          ],
+          "default": true,
+          "description": "Emit every source-required phase correction."
+        }
+      },
+      "guards": [
+        "TARGET_IS_WHOLE_AND",
+        "UNCONDITIONAL_INVERSE_CCX",
+        "FRESH_CLASSICAL_OUTCOME",
+        "CORRECT_CZ_OPERANDS"
+      ],
+      "bindings": {
+        "fast": "conditional16.u",
+        "large": {
+          "froghop": "froghop.conditional.u",
+          "source-conditional": "source-conditional.conditional.u",
+          "qualified-leapfrog": "qualified-leapfrog.conditional.u"
+        }
+      },
+      "mechanism": {
+        "match": "An unconditional CCX(a,b;t) after which t is known to be zero.",
+        "replace": "HMR(t -> k); CZ(a,b) under k. Allocate a fresh classical outcome k."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Replace one weighted inverse CCX with HMR and a classically conditioned Clifford CZ.",
+      "evidence": [
+        {
+          "path": "vendor/conditional/cond_pass.rs",
+          "sha256": "a56f374ad86c7dd3ca13cfd08291f5f9a4f40a54e122959c481656a54b9d987e",
+          "symbol": "run_with, analyze, plan_muf, plan_r"
+        }
+      ],
+      "requires": [
+        "conditional-op-ir",
+        "phase-tracking",
+        "measured-reset"
+      ],
+      "notes": [
+        "The additional measurement changes subsequent random-word alignment. Compare independent input outcomes, rather than aligned individual branches."
+      ]
+    }
+  ]
+}

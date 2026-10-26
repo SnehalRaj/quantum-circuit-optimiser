@@ -1,0 +1,201 @@
+{
+  "cutoff": "2026-10-25T15:46:00.000Z",
+  "targets": [
+    {
+      "id": "q799",
+      "submission_id": "eb015a89-014b-4428-b0d7-76bede127538",
+      "parent_commit": "92186c3796cba8c06005f1c26e467c070c4606bd",
+      "variant": "double",
+      "parent_policy": "mfs",
+      "historical_policy": "mfsur",
+      "edit": {
+        "count": 1,
+        "file": "src/point_add/mod.rs",
+        "new": "cond_pass::run_with(ops, \"mfsur\")",
+        "old": "cond_pass::run_with(ops, \"mfs\")"
+      }
+    },
+    {
+      "id": "q800",
+      "submission_id": "301690ed-b82d-41f6-a23d-7304cee381ee",
+      "parent_commit": "dccef300ce364a419b8792438997f19b4c709e9e",
+      "variant": "double",
+      "parent_policy": "mfs",
+      "historical_policy": "mfsur",
+      "edit": {
+        "count": 1,
+        "file": "src/point_add/mod.rs",
+        "new": "cond_pass::run_with(ops, \"mfsur\")",
+        "old": "cond_pass::run_with(ops, \"mfs\")"
+      }
+    },
+    {
+      "id": "q801",
+      "submission_id": "130ed672-9986-4f55-ab06-7d5f9c06295c",
+      "parent_commit": "5e90751eea243bd353c365a2f11195bea9cc19bc",
+      "variant": "double",
+      "parent_policy": "mfs",
+      "historical_policy": "mfsur",
+      "edit": {
+        "count": 1,
+        "file": "src/point_add/mod.rs",
+        "new": "cond_pass::run_with(ops, \"mfsur\")",
+        "old": "cond_pass::run_with(ops, \"mfs\")"
+      }
+    },
+    {
+      "id": "q802",
+      "submission_id": "f09ac2bd-9a30-437d-a349-28b998cabf9f",
+      "parent_commit": "9c44d42ecb4df4a08c9c8b36ef069238a9487579",
+      "variant": "double",
+      "parent_policy": "mfs",
+      "historical_policy": "mfsur",
+      "edit": {
+        "count": 1,
+        "file": "src/point_add/mod.rs",
+        "new": "cond_pass::run_with(ops, \"mfsur\")",
+        "old": "cond_pass::run_with(ops, \"mfs\")"
+      }
+    },
+    {
+      "id": "q803",
+      "submission_id": "2c478cc4-8f3e-4da3-a1dc-fa439a0e6758",
+      "parent_commit": "e7cd2f203ab32c7467633cf1d884913feb44aeb5",
+      "variant": "double",
+      "parent_policy": "mfs",
+      "historical_policy": "mfsur",
+      "edit": {
+        "count": 1,
+        "file": "src/point_add/mod.rs",
+        "new": "cond_pass::run_with(ops, \"mfsur\")",
+        "old": "cond_pass::run_with(ops, \"mfs\")"
+      }
+    },
+    {
+      "id": "q808",
+      "submission_id": "4274c7e0-b16f-4d63-8fae-83ad15e51fee",
+      "parent_commit": "f5882985dc844820026436ce488b545ad658819c",
+      "variant": "one",
+      "parent_policy": "mfsr",
+      "historical_policy": "mfsur",
+      "edit": {
+        "count": 1,
+        "file": "src/point_add/mod.rs",
+        "new": "cond_pass::run_with(ops, \"mfsur\")",
+        "old": "cond_pass::run_with(ops, \"mfsr\")"
+      }
+    },
+    {
+      "id": "q809",
+      "submission_id": "853e143d-9dba-43f5-bdf7-26f60da5e7f1",
+      "parent_commit": "f2ccba2db3f27931be60944aea446a78f95a2515",
+      "variant": "one",
+      "parent_policy": "mfsr",
+      "historical_policy": "mfsur",
+      "edit": {
+        "count": 1,
+        "file": "src/point_add/mod.rs",
+        "new": "cond_pass::run_with(ops, \"mfsur\")",
+        "old": "cond_pass::run_with(ops, \"mfsr\")"
+      }
+    },
+    {
+      "id": "q810",
+      "submission_id": "31326aa6-0ad3-40d3-8069-714b4330a726",
+      "parent_commit": "9d122d56a1cd2f339462515d81c941a55995dabe",
+      "variant": "one",
+      "parent_policy": "mfsr",
+      "historical_policy": "mfsur",
+      "edit": {
+        "count": 1,
+        "file": "src/point_add/mod.rs",
+        "new": "cond_pass::run_with(ops, \"mfsur\")",
+        "old": "cond_pass::run_with(ops, \"mfsr\")"
+      }
+    },
+    {
+      "id": "q811",
+      "submission_id": "c9f82524-5d65-47ff-9692-299d1a178e5f",
+      "parent_commit": "b7855107ff0acb3930ec025d8d5aebe469d40135",
+      "variant": "one",
+      "parent_policy": "mfsr",
+      "historical_policy": "mfsur",
+      "edit": {
+        "count": 1,
+        "file": "src/point_add/mod.rs",
+        "new": "cond_pass::run_with(ops, \"mfsur\")",
+        "old": "cond_pass::run_with(ops, \"mfsr\")"
+      }
+    },
+    {
+      "id": "q812",
+      "submission_id": "32e2e506-ef4f-4482-9ccd-5a4034ac96f8",
+      "parent_commit": "538badf463a8eefab444daa9e36d8abc5849334c",
+      "variant": "one",
+      "parent_policy": "mfsr",
+      "historical_policy": "mfsur",
+      "edit": {
+        "count": 1,
+        "file": "src/point_add/mod.rs",
+        "new": "cond_pass::run_with(ops, \"mfsur\")",
+        "old": "cond_pass::run_with(ops, \"mfsr\")"
+      }
+    },
+    {
+      "id": "q813",
+      "submission_id": "b9c632ec-f453-48ee-a8ba-5fbcdfdb1071",
+      "parent_commit": "a7bdb066e99af79fc03fca68cedbf6432b7b7272",
+      "variant": "one",
+      "parent_policy": "mfsr",
+      "historical_policy": "mfsur",
+      "edit": {
+        "count": 1,
+        "file": "src/point_add/mod.rs",
+        "new": "cond_pass::run_with(ops, \"mfsur\")",
+        "old": "cond_pass::run_with(ops, \"mfsr\")"
+      }
+    },
+    {
+      "id": "q814",
+      "submission_id": "0ee3673f-745a-4ded-be1c-6453ca442f95",
+      "parent_commit": "2b6e485904992276c935a4b520b8361a0f52b2e0",
+      "variant": "one",
+      "parent_policy": "mfsr",
+      "historical_policy": "mfsur",
+      "edit": {
+        "count": 1,
+        "file": "src/point_add/mod.rs",
+        "new": "cond_pass::run_with(ops, \"mfsur\")",
+        "old": "cond_pass::run_with(ops, \"mfsr\")"
+      }
+    },
+    {
+      "id": "q816",
+      "submission_id": "28651875-43b0-40de-bffa-3d31caa7fdad",
+      "parent_commit": "f5e7bf71102fdb7f62bf83654f188b2f952e4bbc",
+      "variant": "one",
+      "parent_policy": "mfsr",
+      "historical_policy": "mfsur",
+      "edit": {
+        "count": 1,
+        "file": "src/point_add/mod.rs",
+        "new": "cond_pass::run_with(ops, \"mfsur\")",
+        "old": "cond_pass::run_with(ops, \"mfsr\")"
+      }
+    },
+    {
+      "id": "q839",
+      "submission_id": "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+      "parent_commit": "410bec6de09f973c4fd0a8be75f70106fe5930de",
+      "variant": "one",
+      "parent_policy": "mfs",
+      "historical_policy": "mfsur",
+      "edit": {
+        "count": 1,
+        "file": "src/point_add/mod.rs",
+        "new": "cond_pass::run_with(ops, \"mfsur\")",
+        "old": "cond_pass::run_with(ops, \"mfs\")"
+      }
+    }
+  ]
+}

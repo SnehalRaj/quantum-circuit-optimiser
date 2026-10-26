@@ -1,0 +1,26 @@
+{
+  "campaign": "frontier-levers-20261025",
+  "amendment": 1,
+  "recorded_utc": "2026-10-25T02:00:00+00:00",
+  "user_decision": {
+    "source": "Snehal, messages of 2026-10-25",
+    "quotes": [
+      "we don't want to keep the failure rate as low as possible ... we are restricting ourselves too much",
+      "Let's try to use circuits which have a lower failure rate than ours and are comparable to the ones that are on the frontier, and then let's try more submissions around it. Maybe one of them sticks.",
+      "Yes, you can have the multi-variant submission with disclosure."
+    ]
+  },
+  "changes": {
+    "variants": "Several circuit variants may target the same region of the curve. Each variant must change a real circuit setting (allocation cap, precision window, padding, pass levers). Nonce-only or padding-only variants stay excluded.",
+    "screening": "Each variant gets one local run of the trusted public evaluator on its emitted ops.bin. The evaluator draws its 9,024 shots from the operation hash, so this run equals the public check for those bytes. A failed screen ends that variant. No variant is screened twice.",
+    "order": "Screen first. A passing variant then gets the full sealed reference run, then its 20,480-pair audit, then submission.",
+    "failure_rate": "Variants may fail more often than our earlier circuits, up to the audit bound of 0.001 per input.",
+    "disclosure": "Each public note states how many variants were screened for that region, how many failed, and the audited failure rate of the submitted circuit."
+  },
+  "unchanged": [
+    "epsilon 0.001 per input, 20,480-pair audit before submission",
+    "no checker weakening",
+    "no qualification by development data",
+    "credit to parent authors and declared dependencies"
+  ]
+}

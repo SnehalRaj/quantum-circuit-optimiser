@@ -1,0 +1,29 @@
+[
+  {
+    "job": "q818-ur-cat",
+    "files": 210,
+    "source_bytes_match": false,
+    "matches_after_line_ending_normalization": true,
+    "different_paths": [
+      "mod.rs"
+    ],
+    "current_tree_sha256": "d9c2612c3560e13a651b979d6555ff517e337a77c2cd9f96f7d0e231714e662a",
+    "archived_tree_sha256": "a8e40c4fb3b9ccf69103b75bcac667210f1dcf6ea17da55e8b0687e086e21af5",
+    "recipe_sha256": "034810b4412081bdbcf8d21fe42497d94e8a4e1dfcf0d5526e8c0c66bf616817",
+    "scope": "All source text matches. Historical editing converted CRLF to LF in the listed files. The materializer preserves untouched bytes. Fresh operation-hash comparison remains a cluster task."
+  },
+  {
+    "job": "q819-p19-cat",
+    "files": 210,
+    "source_bytes_match": false,
+    "matches_after_line_ending_normalization": true,
+    "different_paths": [
+      "froghop_one.rs",
+      "mod.rs"
+    ],
+    "current_tree_sha256": "67ca6af94b97e0c0c9adacfcbb95f9f5c40cad83eb2660772f8e92a463c840bf",
+    "archived_tree_sha256": "da820c322986d53544aff3965c688e25c509be47e2417ef96b531e953d169b9e",
+    "recipe_sha256": "281b20b10a3f69a2997be574c5644d2c2aa5efff0978df6d1346471be0fc5f41",
+    "scope": "All source text matches. Historical editing converted CRLF to LF in the listed files. The materializer preserves untouched bytes. Fresh operation-hash comparison remains a cluster task."
+  }
+]

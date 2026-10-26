@@ -1,0 +1,65 @@
+[
+ {
+  "setting": "exact: 511 steps, proven widths, full compare",
+  "T": 1833465,
+  "Q": 2307,
+  "TQ": 4229803755,
+  "failures": 0,
+  "sample": 20000
+ },
+ {
+  "setting": "430 steps, widths fitted + 8, compare full",
+  "T": 1333418,
+  "Q": 2161,
+  "TQ": 2881516298,
+  "failures": 0,
+  "by_kind": {},
+  "sample": 20000
+ },
+ {
+  "setting": "420 steps, widths fitted + 6, compare full",
+  "T": 1305932,
+  "Q": 2137,
+  "TQ": 2790776684,
+  "failures": 1,
+  "by_kind": {
+   "width": 1
+  },
+  "sample": 20000
+ },
+ {
+  "setting": "420 steps, widths fitted + 6, compare 64",
+  "T": 1240790,
+  "Q": 2137,
+  "TQ": 2651568230,
+  "failures": 2,
+  "by_kind": {
+   "width": 1,
+   "compare": 1
+  },
+  "sample": 20000
+ },
+ {
+  "setting": "410 steps, widths fitted + 4, compare 64",
+  "T": 1214712,
+  "Q": 2113,
+  "TQ": 2566686456,
+  "failures": 3,
+  "by_kind": {
+   "width": 3
+  },
+  "sample": 20000
+ },
+ {
+  "setting": "410 steps, widths fitted + 4, compare 32",
+  "T": 1193352,
+  "Q": 2113,
+  "TQ": 2521552776,
+  "failures": 10163,
+  "by_kind": {
+   "compare": 10160,
+   "width": 3
+  },
+  "sample": 20000
+ }
+]

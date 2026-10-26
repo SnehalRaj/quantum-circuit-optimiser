@@ -1,0 +1,47 @@
+{
+  "schema": "lco-frontier-validation-v1",
+  "date": "2026-10-26",
+  "python_tests": 205,
+  "native_tests": 26,
+  "runtime_tests_after_dependency_freeze_change": 21,
+  "source_verification": {
+    "source_files": 421,
+    "cleaned_files": 19,
+    "passed": true
+  },
+  "logs_sha256": {
+    "python-suite.log": "13909eab16fe686e3e2ce35348f21cc6e6620aaab696e5e03b53ea38da8ef6ea",
+    "runtime-after-freeze.log": "737036c5990cea0de8d42d99df62317aafc75f097eb98a1743c489abaabc2063",
+    "native-suite.log": "3b4e467e4428ba5b43f00628f0531a41542750d6cbd406af81c19217db6e2ff8"
+  },
+  "implementation_sha256": {
+    "native/src/bin/circuit-check.rs": "f76b07101c2fd774a827324071481b6f6d092861421f29cde41535a12ea079a0",
+    "native/src/bin/circuit-transform.rs": "fd46b5a616385bbe8c4f4e0042073c5a0f511a30dafa1066b7aad6315cbdb1c4",
+    "native/src/bin/small-emit.rs": "5b6dd75965bb67157b22b9beddcde44397bc57bd8c83b3b50595fd9a2c7fcc88",
+    "native/src/lib.rs": "7c4e2787535808dc008217c699401f1eeb712dd3a4872db70c5ba000509b9829",
+    "src/llm_circuit_optimiser/cli.py": "fb26c633e676576c6ede40162925d141d2f720bf73f04cc2da312fa64dbe118e",
+    "src/llm_circuit_optimiser/frontier/__init__.py": "52021d0a6fd25c8aec6384e425830541d37e04a977f68ab729f87b78be1bdbdf",
+    "src/llm_circuit_optimiser/frontier/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/llm_circuit_optimiser/frontier/bindings.py": "393f30a7390ec9a21a9299fa0ad7441eab90d1a6998d6db3d21672ed7b3ffb34",
+    "src/llm_circuit_optimiser/frontier/campaign.py": "b40e11fca083e8d4509b6de845b6167758e8cc048ac1402bdb3acad359ad837e",
+    "src/llm_circuit_optimiser/frontier/cli.py": "e7cd49ee5df10596f25d4667b779f55ab22ad8f4e06167515986482b92c2664c",
+    "src/llm_circuit_optimiser/frontier/discovery.py": "b3402a17017f4fa2d813238bf3c0d7f927c388f8202698580fc3323db2c5a213",
+    "src/llm_circuit_optimiser/frontier/generators.py": "98d29a902717701828075678d77f424d213ee99e7f90b1ff7840d9ac9f729adc",
+    "src/llm_circuit_optimiser/frontier/jobs.py": "472b6f989a32f7260a6355dcc8d1e23c9e1abc7cf34a77a7a2d0d89d33af793c",
+    "src/llm_circuit_optimiser/frontier/materialize.py": "93ab1b0b97d3765fa313fa89281c783b1db7287af457699cd8762bd336d2f320",
+    "src/llm_circuit_optimiser/frontier/notes.py": "41319076b6b88eca7fb33321b6747522e9d51951a145a4023e7a562977c2e774",
+    "src/llm_circuit_optimiser/frontier/paired.py": "784fd42adcc020c656dd5b4e31d92a7b1e4853e613506ede7c98b4fbea7cc02d",
+    "src/llm_circuit_optimiser/frontier/public.py": "d1d6c02c64f494dea91e2f60701f1e0edf72d00c0f4f6ab4e0fd5ac8a75124be",
+    "src/llm_circuit_optimiser/frontier/registry.py": "5e27eaa1df399ba554f22f59c4a64d130b41a666874beb1fe3b56390d432e8a7",
+    "src/llm_circuit_optimiser/frontier/reliability.py": "d34b3b043ba927d57733aeb7e93b753cfddc44454a346643541c1e4262d7b9d8",
+    "src/llm_circuit_optimiser/frontier/replay.py": "4906e6b07ff2c26c918e9fce0fa24ea79e661088edc84af7513cddc3259a0e45",
+    "src/llm_circuit_optimiser/frontier/runtime.py": "deccfabfc2d7c11a17cd172742c02e81184f78bc82fd653ad9d53c8e298c5722",
+    "src/llm_circuit_optimiser/grammar.py": "22a9906ecf707683a5abc2fb8aca894446a68b15e0778f60919d3dad5ef7a7bd",
+    "vendor/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052",
+    "vendor/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53",
+    "vendor/frontier_rewrite/tests/catalog.rs": "3e5a07adbecb613e910221778591172784f08ac5ca4aa9794adc1a8fc6447806"
+  },
+  "cluster_replay": "not_run",
+  "public_submissions": 0,
+  "scope": "Local tests, real-source materialization, and archived artifact verification. Fresh Q818/Q819 circuit replay remains required."
+}

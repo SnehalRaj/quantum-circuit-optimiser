@@ -1,0 +1,10 @@
+   Compiling lco-native v0.1.0 ({repository}/native)
+    Finished `release` profile [optimized] target(s) in 3m 41s
+     Running tests/conditional.rs (/tmp/llm-native-target/release/deps/conditional-7151bbfc247cd90c)
+
+running 2 tests
+test diagnostic_environment_controls_are_rejected ... ok
+test real_small_point_addition_activates_both_conditional_mechanisms ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.79s
+

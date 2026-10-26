@@ -1,0 +1,14 @@
+{
+  "schema": "local-catalog-certificate-v1",
+  "catalog_sha256": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052",
+  "certificate_location": "catalog.rs::fixed_simulator_certificate::every_catalog_entry_matches_the_fixed_simulator",
+  "certificate_scope": "Every three- and four-wire catalog entry is checked against the fixed simulator on every basis input, including its sign.",
+  "recorded_verification": "evidence/native-final.log",
+  "recorded_verification_sha256": "b29724ab6503b307559b3d3354d38a3deeafb690b936ddf170e9de38522f588a",
+  "additional_checks": "tests/catalog.rs checks noncontiguous roles, outer classical masks, explicit-condition and reset barriers.",
+  "limitations": [
+    "The archived log records the original source run; this copy has not yet been run through the library native test target.",
+    "The review named catalog-native-review.md predates the embedded certificate and names its earlier source hash. It is retained as historical analysis.",
+    "Sampled full-circuit agreement is separate from the exact local signed-permutation argument."
+  ]
+}

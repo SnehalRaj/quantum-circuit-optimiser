@@ -1,0 +1,36 @@
+{
+  "Q": 147,
+  "T": 7031.0,
+  "failed_inputs": 0,
+  "failed_shots": 0,
+  "channel_failed_inputs": {
+    "output": 0,
+    "phase": 0,
+    "scratch": 0
+  },
+  "first_failures": [],
+  "pairs": 16384,
+  "streams": 2,
+  "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+  "operation_sha256": "2928a4e426b82d5fab03f7999f8a46445fa5dbeacd84121a0d887f787eff994e",
+  "circuit_file_sha256": "dcd04ccb0b756c4542eba3430452c02f8883a18812a0528af6f9c33e5729c1c8",
+  "inputs_file": "evaluations/joint-model-pilot-audit-484e9b92d96e6bf1b5ebc57777a7bb7a8f357bd4ce5d2e90abc06aeab1bb35c8/inputs.jsonl.gz",
+  "circuit_directory": "final/circuits/484e9b92d96e6bf1b5ebc57777a7bb7a8f357bd4ce5d2e90abc06aeab1bb35c8",
+  "cpu_seconds": 4.199923,
+  "peak_rss_bytes": 27770880,
+  "S": 1033557,
+  "stage": "audit",
+  "recipe": {
+    "bits": 16,
+    "prime": 65521,
+    "family": "width",
+    "steps": 31,
+    "cleanup": "measured",
+    "compare_bits": 15
+  },
+  "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+  "wall_seconds": 4.352715625427663,
+  "evaluation_directory": "evaluations/joint-model-pilot-audit-484e9b92d96e6bf1b5ebc57777a7bb7a8f357bd4ce5d2e90abc06aeab1bb35c8",
+  "epsilon_upper": 0.000478874715572497,
+  "eligible": true
+}

@@ -1,0 +1,4 @@
+{
+  "action_index": 10,
+  "reason": "Both recipes use measurement erasure and phase operations to target fewer Toffolis. Their sole difference, free_s, tests whether qubit savings justify reconstruction cost."
+}

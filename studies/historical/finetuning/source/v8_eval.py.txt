@@ -1,0 +1,120 @@
+"""v8 paired, reseed-aware evaluation (decisions/v8_decision.md).
+
+For each parent: private worktree + target under the study work directory; emit the parent ops; evaluate them under R fixed
+seeds with the patched evaluator ft2/v8/eval_v8 (V8_SEED -> identical inputs for parent and candidates).
+For each candidate (SEARCH/REPLACE text, or an env override for controls): apply, rebuild build_circuit, emit,
+skip if the op stream equals the parent's apart from the 96-op nonce tail, else evaluate under the same seeds.
+Output: one JSON line per (parent, label, idx) with per-seed avg_tof, qubits, failures, and paired summaries.
+"""
+import argparse, concurrent.futures as cf, hashlib, json, os, re, shutil, statistics as st, subprocess, sys
+from pathlib import Path
+import numpy as np
+# Historical module search paths omitted.
+import probe as P
+import eval_candidates as EC
+
+ROOT = Path('<study-root>'); EVAL = ROOT / 'ft2/v8/eval_v8'; WORK = ROOT / 'wt_v8'
+V8 = re.compile(r'V8 avg_tof ([\d.]+) qubits (\d+) ops (\d+) classical (\d+) phase (\d+) ancilla (\d+)')
+
+
+def masked_hash(ops_path, tail=96):
+    raw = ops_path.read_bytes(); n = int.from_bytes(raw[8:16], 'little')
+    body = subprocess.run(['zstd', '-dc'], input=raw[16:], capture_output=True, check=True).stdout[:n * 56]
+    return hashlib.sha256(body[:max(0, n - tail) * 56]).hexdigest()
+
+
+def eval_seeds(scr, seeds, threads):
+    def one(s):
+        env = {k: v for k, v in os.environ.items() if k not in P.CLEAN_ENV_DROP}
+        env.update(V8_SEED=s, RAYON_NUM_THREADS=str(threads))
+        r = subprocess.run([str(EVAL), '--note', f'v8-{os.getpid()}-{s}'], cwd=scr, env=env, capture_output=True, text=True, timeout=3600)
+        m = V8.search(r.stdout)
+        if not m: return s, {'ok': False, 'err': (r.stdout + r.stderr)[-300:]}
+        t, q, n, c, ph, an = m.groups()
+        return s, {'ok': True, 'avg_tof': float(t), 'qubits': int(q), 'score': float(t) * int(q), 'failures': int(c) + int(ph) + int(an),
+                   'classical': int(c), 'phase': int(ph), 'ancilla': int(an)}
+    with cf.ThreadPoolExecutor(len(seeds)) as ex:
+        return dict(ex.map(one, seeds))
+
+
+def paired(par, cand):
+    ds = [cand[s]['score'] - par[s]['score'] for s in par if par[s].get('ok') and cand.get(s, {}).get('ok')]
+    df = [cand[s]['failures'] - par[s]['failures'] for s in par if par[s].get('ok') and cand.get(s, {}).get('ok')]
+    if len(ds) < 2: return {}
+    se = lambda x: st.stdev(x) / len(x) ** 0.5
+    return {'d_score_mean': st.mean(ds), 'd_score_se': se(ds), 'd_fail_mean': st.mean(df), 'd_fail_se': se(df),
+            'promising': st.mean(ds) < -2 * se(ds) and st.mean(df) <= 2 * se(df), 'n_seeds': len(ds)}
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--jobs', required=True, help='jsonl: {parent, items:[{label, idx, text?|env?}]}')
+    ap.add_argument('--out', required=True); ap.add_argument('--seeds', type=int, default=8)
+    ap.add_argument('--cpus', type=int, default=32); ap.add_argument('--seed-prefix', default='s')
+    a = ap.parse_args()
+    seeds = [f'{a.seed_prefix}{i}' for i in range(a.seeds)]; threads = max(1, a.cpus // len(seeds))
+    out = Path(a.out); out.parent.mkdir(parents=True, exist_ok=True)
+    done = {(json.loads(l)['parent'], json.loads(l)['label'], json.loads(l)['idx']) for l in open(out)} if out.exists() else set()
+    for line in open(a.jobs):
+        job = json.loads(line); parent = job['parent']
+        todo = [it for it in job['items'] if (parent, it['label'], it['idx']) not in done]
+        todo.sort(key=lambda it: bool(it.get('text')))   # env-only items use the parent binary: run them before any text item
+        if not todo: continue
+        try:
+            wt, tgt = P.setup(parent, WORK)
+        except Exception as ex:          # e.g. older harness without build_circuit: record and move on
+            open(out, 'a').write(json.dumps({'parent': parent, 'label': 'parent', 'idx': 0, 'status': 'parent_setup_fail', 'err': str(ex)[-300:]}) + '\n')
+            continue
+        try:
+            pscr = WORK / f'v8-{os.getpid()}-parent'
+            e = P.emit(tgt, {}, pscr)
+            if not e['ok']:
+                open(out, 'a').write(json.dumps({'parent': parent, 'label': 'parent', 'idx': 0, 'status': 'parent_emit_fail', 'err': e.get('err')}) + '\n')
+                continue
+            phash = masked_hash(pscr / 'ops.bin'); pres = eval_seeds(pscr, seeds, threads)
+            prow = {'parent': parent, 'label': 'parent', 'idx': 0, 'n_ops': e['n_ops'], 'seeds': pres}
+            if (parent, 'parent', 0) not in done: open(out, 'a').write(json.dumps(prow) + '\n')
+            print('parent', parent[:8], {s: (v.get('avg_tof'), v.get('failures')) for s, v in pres.items()}, flush=True)
+            for it in todo:
+                rec = {'parent': parent, 'label': it['label'], 'idx': it['idx']}
+                subprocess.run(['git', 'checkout', '-q', '--', '.'], cwd=wt); subprocess.run(['git', 'clean', '-qfd', 'src'], cwd=wt)
+                if it.get('text'):
+                    blocks = EC.parse(it['text'])
+                    if not blocks or EC.apply(wt, blocks) is None:
+                        rec['status'] = 'no_apply'; open(out, 'a').write(json.dumps(rec) + '\n'); continue
+                    r = P.sh(['cargo', 'build', '--release', '--locked', '--offline', '--bin', 'build_circuit'], cwd=wt, env=P.base_env(tgt), timeout=1800)
+                    if r.returncode:
+                        rec['status'] = 'compile_fail'; open(out, 'a').write(json.dumps(rec) + '\n'); continue
+                scr = WORK / f'v8-{os.getpid()}-c'
+                env = dict(it.get('env', {}))
+                if it.get('precheck'):      # believed current value must reproduce the parent op stream
+                    pe = P.emit(tgt, it['precheck'], scr)
+                    if not pe['ok'] or masked_hash(scr / 'ops.bin') != phash:
+                        rec.update(status='precheck_fail', precheck=it['precheck']); open(out, 'a').write(json.dumps(rec) + '\n'); continue
+                if it.get('scan'):          # find the effective value v (same ops as parent), then apply v + delta
+                    sc = it['scan']; found = None
+                    for v in range(sc['lo'], sc['hi'] + 1):
+                        pe = P.emit(tgt, {sc['key']: str(v)}, scr)
+                        if pe['ok'] and masked_hash(scr / 'ops.bin') == phash: found = v; break
+                    if found is None:
+                        rec.update(status='scan_fail', scan=sc); open(out, 'a').write(json.dumps(rec) + '\n'); continue
+                    env[sc['key']] = str(found + sc['delta']); rec['effective'] = found
+                rec['applied_env'] = env
+                e = P.emit(tgt, env, scr)
+                if not e['ok']:
+                    rec.update(status='emit_fail', err=e.get('err'), emit_s=e.get('emit_s')); open(out, 'a').write(json.dumps(rec) + '\n'); continue
+                rec['n_ops'] = e['n_ops']
+                if masked_hash(scr / 'ops.bin') == phash:
+                    rec['status'] = 'same_ops'; open(out, 'a').write(json.dumps(rec) + '\n'); continue
+                cres = eval_seeds(scr, seeds, threads)
+                rec.update(status='evaluated', seeds=cres, **paired(pres, cres))
+                open(out, 'a').write(json.dumps(rec) + '\n')
+                print(it['label'], it['idx'], {k: rec.get(k) for k in ('d_score_mean', 'd_score_se', 'd_fail_mean', 'promising')}, flush=True)
+            # restore the parent build so the next parent starts clean
+        finally:
+            P.sh(['git', '-C', str(P.REPO), 'worktree', 'remove', '--force', str(wt)]); shutil.rmtree(tgt, ignore_errors=True)
+            for p in WORK.glob(f'v8-{os.getpid()}-*'): shutil.rmtree(p, ignore_errors=True)
+
+
+if __name__ == '__main__':
+    main()

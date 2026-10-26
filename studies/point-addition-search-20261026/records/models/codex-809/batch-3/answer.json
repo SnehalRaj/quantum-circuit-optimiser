@@ -1,0 +1,4 @@
+{
+  "action_index": 18,
+  "reason": "Both recipes use measurement-based AND erasure, which shows the largest measured Toffoli reduction. They omit combined_y and test whether avoiding cofactor reconstruction offsets the higher qubit count; c1100 also tests phase conversion."
+}

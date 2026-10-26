@@ -1,0 +1,24 @@
+   Compiling lco-native v0.1.0 ({repository}/native)
+    Finished `release` profile [optimized] target(s) in 32.33s
+     Running unittests src/lib.rs (/tmp/llm-native-target/release/deps/lco_native-d4710c5b538d4834)
+
+running 3 tests
+test native_tests::compiler_receipt_rejects_disabled_guards ... ok
+test native_tests::all_conditional_subsets_have_one_canonical_policy ... ok
+test native_tests::exact_cancellation_uses_adjacent_unitary_involutions_only ... FAILED
+
+failures:
+
+---- native_tests::exact_cancellation_uses_adjacent_unitary_involutions_only stdout ----
+
+thread 'native_tests::exact_cancellation_uses_adjacent_unitary_involutions_only' (195140638) panicked at src/lib.rs:125:52:
+not yet implemented: exact adjacent gate cancellation
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    native_tests::exact_cancellation_uses_adjacent_unitary_involutions_only
+
+test result: FAILED. 2 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `--lib`

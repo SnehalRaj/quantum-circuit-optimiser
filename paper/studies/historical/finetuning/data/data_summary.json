@@ -1,0 +1,35 @@
+{
+  "boundaries": {
+    "test": [
+      1787332486,
+      1791785447
+    ],
+    "train": [
+      1776922674,
+      1781908726
+    ],
+    "val": [
+      1781949037,
+      1787328859
+    ]
+  },
+  "dropped": {
+    "adds_tests": 133,
+    "duplicate": 2,
+    "non_rs_or_binary": 382,
+    "roundtrip_fail": 14,
+    "too_large": 203,
+    "too_many_tokens": 186
+  },
+  "kept": 391,
+  "splits": {
+    "test": 47,
+    "train": 321,
+    "val": 23
+  },
+  "tokens": {
+    "test": 185685,
+    "train": 1258898,
+    "val": 69312
+  }
+}

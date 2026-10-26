@@ -1,0 +1,68 @@
+{
+  "data_admission": {
+    "accepted_rows": 657,
+    "accepted_curve": 9,
+    "eligible_rows": 1618,
+    "eligible_curve": 101,
+    "deduplicated_rows": 1570,
+    "deduplicated_curve": 101,
+    "independent_check": "Brute-force dominance on every distinct coordinate; confirmed by separate reviewer"
+  },
+  "scientific_review": {
+    "reviewers": [
+      "Reliability and source identity",
+      "Grammar and controls"
+    ],
+    "findings_addressed": [
+      "Finite guard rejects proposals; no universal invalidity claim",
+      "Official resource T remains distinct from new timing mean",
+      "Approximation parameters fixed only for width derivatives",
+      "Resource comparator denominators stated",
+      "CLI context and resolved-ID limits stated"
+    ]
+  },
+  "exposition_review": {
+    "findings_addressed": [
+      "AP and W labels precede family aliases",
+      "LLM and CLI abbreviations defined",
+      "Parent selection and retention explained",
+      "Historical grammar and integrated gains use explicit denominators"
+    ]
+  },
+  "author_acceptance": "pending",
+  "model_review": {
+    "status": "passed",
+    "scope": "Separate reviewer recomputed six arm medians from54 selections, checked29 audit files/23 operation hashes/common inputs, closed-form zero-failure bounds, and completed/attempted calls",
+    "limits": [
+      "Three seeds in one16-bit task",
+      "Different CLI base contexts",
+      "Requested GPT identifier accepted; resolved ID unreported",
+      "Two GPT requests timed out; no retry"
+    ]
+  },
+  "presentation_review": {
+    "status": "passed",
+    "pages": 10,
+    "checks": [
+      "Rendered all ten pages and inspected the page layout",
+      "Figure 1 contains only the full curve and width detail",
+      "Submission ratios appear in a separate table",
+      "The reliability figure accompanies approximation methods",
+      "The pipeline uses an editable SVG and Inkscape PDF/PNG exports",
+      "Inspected model badges, arrow routes, and text at paper size",
+      "No unresolved citations or LaTeX overflow",
+      "Matched native full-addition controls appear in TableVI with four joint bounds; inspected all final pages."
+    ],
+    "pdf_sha256": "7658b52cae26cc56cd450dd3ace43907aa1295c4fd5222e5ef654b2b2d905f6d"
+  },
+  "matched_point_review": {
+    "status": "passed",
+    "scope": "Separate mathematical review checked shared reduction, canonical double/halve, finite Kaliski bounds, and binomial bounds. Independent recount checked all232768inputs and465536streamverdicts.",
+    "limits": [
+      "Original Kaliski profiles only",
+      "Inherited register-release option",
+      "Named-prime scope and finite large-field gate evidence",
+      "No new full-addition LLM comparison"
+    ]
+  }
+}

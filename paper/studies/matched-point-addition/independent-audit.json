@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "scope": "Independent recount of four frozen audit receipts, every stream verdict, operation hashes, input packets, and SciPy bounds.",
+  "inputs": 232768,
+  "stream_verdicts": 465536,
+  "epsilon": 0.001,
+  "family_alpha": 0.05,
+  "rows": [
+    {
+      "receipt": "runs/scaled-point-add-20261026/16-baseline-audit.json",
+      "receipt_sha256": "7dbf98a95756df4ff7a1009ae9827c9ee63d7753869eefc74e86717e2f15d010",
+      "field_width": 16,
+      "Q": 214,
+      "T": 33728.0,
+      "pairs": 100000,
+      "streams": 2,
+      "failed_inputs": 0,
+      "alpha": 0.0125,
+      "upper": 4.381930625289141e-05,
+      "packet_sha256": "bdeb960ac80c6628d179a33a3d321e17f38e4de3a90fa8c72b2d3c7a273b7643",
+      "ops_sha256": "b1c0c04919cd9b231aee676948d8e2fb917cdee16268a62aed132fd0b14700d1",
+      "per_input_sha256": "e20b6ff0b45c14968dc240c532869fc9bf7b24027484e12ccb012c250be1d7fe"
+    },
+    {
+      "receipt": "runs/scaled-point-add-20261026/16-free-s-audit.json",
+      "receipt_sha256": "1fad1853473b0f2e698e7eec364baa9332b06c24843002fa8f8605cbbdf9b061",
+      "field_width": 16,
+      "Q": 198,
+      "T": 33728.0,
+      "pairs": 100000,
+      "streams": 2,
+      "failed_inputs": 0,
+      "alpha": 0.0125,
+      "upper": 4.381930625289141e-05,
+      "packet_sha256": "bdeb960ac80c6628d179a33a3d321e17f38e4de3a90fa8c72b2d3c7a273b7643",
+      "ops_sha256": "95fca2eb7e817e797b2a403403381190b0b182a9ad14b1bf8cada7cca0625e36",
+      "per_input_sha256": "e20b6ff0b45c14968dc240c532869fc9bf7b24027484e12ccb012c250be1d7fe"
+    },
+    {
+      "receipt": "runs/scaled-point-add-20261026/transfer-confirmation/baseline.json",
+      "receipt_sha256": "323114644cc2f2b71880d6cd64ae0347b14c77137ac15318dd5e1af71a47b9eb",
+      "field_width": 256,
+      "Q": 3592,
+      "T": 6710828.0,
+      "pairs": 16384,
+      "streams": 2,
+      "failed_inputs": 0,
+      "alpha": 0.0125,
+      "upper": 0.0002674219167220851,
+      "packet_sha256": "29ae06265a6e78567cde97c4aeca4fad2b4b20253204f24d1ba3810e182f63ba",
+      "ops_sha256": "523440bf78832e248dee469b54d41181788d73f68940e7d7e5c21620ae11831e",
+      "per_input_sha256": "1097619aa165310e629011b1312b836b672126cfb911db83fabad9befc017358"
+    },
+    {
+      "receipt": "runs/scaled-point-add-20261026/transfer-confirmation/free-s.json",
+      "receipt_sha256": "7dfcc848845022b29e1b4a29e3e36ca95530961e62d5cb20a737b3245c04fef8",
+      "field_width": 256,
+      "Q": 3336,
+      "T": 6710828.0,
+      "pairs": 16384,
+      "streams": 2,
+      "failed_inputs": 0,
+      "alpha": 0.0125,
+      "upper": 0.0002674219167220851,
+      "packet_sha256": "29ae06265a6e78567cde97c4aeca4fad2b4b20253204f24d1ba3810e182f63ba",
+      "ops_sha256": "444b66dd772d64a749087b74063a1221966bf239a29f1358f8990a589507ab75",
+      "per_input_sha256": "1097619aa165310e629011b1312b836b672126cfb911db83fabad9befc017358"
+    }
+  ]
+}

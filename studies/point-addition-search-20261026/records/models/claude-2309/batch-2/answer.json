@@ -1,0 +1,4 @@
+{
+  "action_index": 38,
+  "reason": "The archive shows free_s cuts Q from 214 to 198 (c1101 vs c1111), and u cuts T by about 3.9k (c0111 vs c1111). combined_y adds about 355 T (c1110 vs c1111). So the best candidate keeps u and free_s and drops combined_y. That leaves r: c1110 (r on) is the current best at QT 5.53M. c1010 tests whether dropping r does better still. c1011 pairs with c1111 to isolate r's effect when combined_y is on. Together they show whether r helps, and the batch includes the strongest untested candidate. Recipes without free_s (Q=214) or without u (high T) are unlikely to beat the frontier."
+}

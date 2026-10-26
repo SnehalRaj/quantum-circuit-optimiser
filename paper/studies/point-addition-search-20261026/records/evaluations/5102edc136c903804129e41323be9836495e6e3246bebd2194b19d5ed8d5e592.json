@@ -1,0 +1,29 @@
+{
+  "Q": 198,
+  "QT": 6372234.0,
+  "T": 32183.0,
+  "alpha": 0.05,
+  "binomial_upper": 0.0007311125564754343,
+  "checker_binary_sha256": "9cf8903b33dd8971193d9b59435640fdca0fea1348a927fff83d1009a0089aed",
+  "checker_source_sha256": "45379a08de76fa11c3a6adbeff9532dd42d246298f45be46444de1793861153c",
+  "domain_exclusions": {
+    "sum_x_equals_addend_x": 1
+  },
+  "elapsed_seconds": 0.657882459,
+  "failed_inputs": 0,
+  "failed_shots": 0,
+  "label": "point-addition-search-v1/capacity",
+  "mean_toffoli": 32183.0,
+  "meets_bound": true,
+  "ops_sha256": "54809861be30ab78368b6a9aeb64dbd84da75812169534993a905b650a7bb2ec",
+  "original_receipt_sha256": "0e7a64e8765f2d1dc7ba072899d4e7070325b30ae9a05a439e42b37283655978",
+  "packet_sha256": "474ceaa2e9e1b18e9e91fed649333fc98bfd822be64f70957517f85b4a3e9755",
+  "pairs": 4096,
+  "passed": true,
+  "per_input_sha256": "f59496efc627e451977f8eafe1e637838b68a025f6f25a991ca2bbb7cd97d803",
+  "qubits": 198,
+  "recipe_id": "c0111",
+  "record": "studies/point-addition-search-20261026/records/evaluations/5102edc136c903804129e41323be9836495e6e3246bebd2194b19d5ed8d5e592.json",
+  "scalar_rejections": 86,
+  "streams": 2
+}

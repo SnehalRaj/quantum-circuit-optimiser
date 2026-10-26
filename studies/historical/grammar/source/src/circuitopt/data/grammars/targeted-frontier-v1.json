@@ -1,0 +1,510 @@
+{
+  "schema": 1,
+  "name": "targeted-frontier-v1",
+  "epsilon": 0.001,
+  "interface": "complete_secp256k1_point_addition_256",
+  "entry_point": "circuit-opt targeted-frontier",
+  "recipe_values": "Canonical decimal strings; absent settings use the pinned source defaults.",
+  "backends": {
+    "skycof_pinned": {
+      "status": "implemented",
+      "source_commit": "ceffcd216c2a4a987987686fee48d89f54b60c41",
+      "archive_sha256": "7e2569ab252eb2b6613e80378bbc8b99dbfdccc1ea5eb2b24e60554868ecb5ae",
+      "archive_reference": "runs/frontier-reliability-20261024/snapshot/sources/ceffcd216c2a4a987987686fee48d89f54b60c41.tar.gz",
+      "original_default_ops_sha256": "17101bf04a6ab54e1ad01809e5a90363ce28ed4dc4799e228df97da496b5acab",
+      "clean_default_ops_sha256": "d56bc40cf50ae8bc7b6693b73d04fe93f3d478cfe0d85592108ac13c047e4837",
+      "settings": {
+        "SKYCOF_RESEARCH": {
+          "kind": "bool",
+          "values": [
+            "1"
+          ],
+          "default": "1"
+        },
+        "SKYCOF_CAP": {
+          "kind": "int",
+          "min": 1090,
+          "max": 1100,
+          "default": "1097"
+        },
+        "SKYCOF_R": {
+          "kind": "int",
+          "min": 404,
+          "max": 404,
+          "default": "404"
+        },
+        "SKYCOF_PARKJ": {
+          "kind": "int",
+          "min": 14,
+          "max": 14,
+          "default": "14"
+        },
+        "SKYCOF_WDEC": {
+          "kind": "int",
+          "min": 49,
+          "max": 52,
+          "default": "50"
+        },
+        "SKYCOF_FOLDW": {
+          "kind": "int",
+          "min": 58,
+          "max": 60,
+          "default": "58"
+        },
+        "SKYCOF_ODO": {
+          "kind": "int",
+          "min": 7,
+          "max": 7,
+          "default": "7"
+        },
+        "SKYCOF_MM_GUARD": {
+          "kind": "int",
+          "min": 0,
+          "max": 220,
+          "default": "25"
+        },
+        "SKYCOF_MM_CMPW": {
+          "kind": "int",
+          "min": 1,
+          "max": 256,
+          "default": "24"
+        },
+        "SKYCOF_FRAME": {
+          "kind": "bool",
+          "values": [
+            "1"
+          ],
+          "default": "1"
+        },
+        "SKYCOF_DEFER": {
+          "kind": "bool",
+          "values": [
+            "0",
+            "1"
+          ],
+          "default": "1"
+        },
+        "SKYCOF_PDEFER": {
+          "kind": "bool",
+          "values": [
+            "0",
+            "1"
+          ],
+          "default": "1"
+        },
+        "SKYCOF_LAZYODO": {
+          "kind": "bool",
+          "values": [
+            "0",
+            "1"
+          ],
+          "default": "1"
+        },
+        "SKYCOF_HBLK": {
+          "kind": "bool",
+          "values": [
+            "0",
+            "1"
+          ],
+          "default": "1"
+        },
+        "SKYCOF_COFLSB": {
+          "kind": "bool",
+          "values": [
+            "0",
+            "1"
+          ],
+          "default": "1"
+        }
+      },
+      "active_guards": {
+        "rounds": 404,
+        "product_minimum_room": 90,
+        "product_forward_room": "cap - active_qubits - 256",
+        "product_inverse_room": "cap - active_qubits",
+        "enforcement": "Original lowq_adapter assertions remain byte-identical.",
+        "decoder": "The active frame decoder requires a nonempty window."
+      },
+      "source_overrides": "Snapshot SKYCOF_* values before clearing the environment. Launch a fresh process for every recipe.",
+      "cleanup": "Validate and remove exactly 48 final unconditional complete Op-equal X/X pairs.",
+      "source_bound_passes": "Retain all inherited passes and tables before external exact rewrites.",
+      "default_verification": "Original and clean default operation bytes reproduced.",
+      "precision_admission": {
+        "scope": "Structural bounds. The native allocation and chunk guards decide whether a tuple constructs.",
+        "native_guards_authoritative": true,
+        "all_combinations_constructible": false,
+        "reliability_guaranteed": false,
+        "fold_window_width": "34 + guard",
+        "halving_window_width": "32 + guard",
+        "maximum_carries": "max(room.saturating_sub(8), compare_width + 2)",
+        "guard_upper_bound": "The half4 high register has 252 bits.",
+        "compare_constraints": "The top window must be nonempty. Each chunk boundary must satisfy e >= compare_width.",
+        "source": "src/point_add/lowq_mm.rs in the pinned archive"
+      }
+    },
+    "joint_array": {
+      "status": "implemented",
+      "entry_point": "circuit-opt targeted-frontier joint",
+      "source_commit": "d690a7e3074bdfeff3a9f2e89fa9498bc54f43a2",
+      "family_parent_commit": "3836ec797d0998c8367ce46b0f5bdaca55873d6e",
+      "archive_sha256": "90c734494babb0d7485932b722c752effa3628527f2f9f90622d818e7c48c0e3",
+      "archive_reference": "runs/frontier-reliability-20261024/snapshot/sources/d690a7e3074bdfeff3a9f2e89fa9498bc54f43a2.tar.gz",
+      "settings": {
+        "HEO_PIN_PP_WALK_MAX_QUBITS": {
+          "kind": "int",
+          "values": [
+            "1111",
+            "1112",
+            "1113"
+          ],
+          "min": 1111,
+          "max": 1113,
+          "default": "1111"
+        },
+        "D2_A": {
+          "kind": "int",
+          "min": 288,
+          "max": 288,
+          "default": "288"
+        },
+        "D2_TICK_WIN_K": {
+          "kind": "int",
+          "min": 1,
+          "max": 1,
+          "default": "1"
+        },
+        "D2_STACK_MARGIN": {
+          "kind": "int",
+          "min": 3,
+          "max": 3,
+          "default": "3"
+        },
+        "D2_PEBBLES": {
+          "kind": "int",
+          "min": 6,
+          "max": 6,
+          "default": "6"
+        },
+        "D2_GIDNEY": {
+          "kind": "int",
+          "min": 0,
+          "max": 0,
+          "default": "0"
+        },
+        "D2_CELL_POOL": {
+          "kind": "bool",
+          "values": [
+            "1"
+          ],
+          "default": "1"
+        },
+        "D2_DETECT_AFTER_PUSH": {
+          "kind": "bool",
+          "values": [
+            "1"
+          ],
+          "default": "1"
+        },
+        "D2_CELL_ROOM_PINS": {
+          "kind": "bool",
+          "values": [
+            "0"
+          ],
+          "default": "0"
+        },
+        "D2_RAIL_LEAN": {
+          "kind": "bool",
+          "values": [
+            "1"
+          ],
+          "default": "1"
+        },
+        "D2_RAIL_LEND": {
+          "kind": "bool",
+          "values": [
+            "1"
+          ],
+          "default": "1"
+        },
+        "D2_STACK_BUDGET": {
+          "kind": "bool",
+          "values": [
+            "1"
+          ],
+          "default": "1"
+        }
+      },
+      "admitted_caps": [
+        "1111",
+        "1112",
+        "1113"
+      ],
+      "active_guards": {
+        "array_width": 288,
+        "rounds": 395,
+        "ticks": 394,
+        "checkpoints": 27,
+        "window_index": 1,
+        "stack_margin": 3,
+        "both_legs": "Equal fixed round counts required.",
+        "windows": "Retain the A288 tick windows and stack schedule unchanged.",
+        "base_rail_scratch": "The base rail plan must fit available room.",
+        "lean_rail_scratch": "The Lean rail plan must fit available room plus explicitly lent wires.",
+        "rail_overshoot": "The overshoot override remains absent.",
+        "detectors": "Retain the inherited detector fitter and sentinel index guards.",
+        "native_admission": "A 64-input constructor integration test must pass at the exact prepared cap before full emission."
+      },
+      "fixed_flags": {
+        "D2_RAIL_LEAN": "1",
+        "D2_RAIL_LEND": "1",
+        "D2_STACK_BUDGET": "1"
+      },
+      "source_preparation": "Bake only an admitted cap into the fixed recipe and remove the reviewed final 96 identity X operations.",
+      "build_binding": "Use an isolated target directory and bind the binary to the exact prepared source manifest.",
+      "qualification": "Native constructor tests supply no independent or official qualification."
+    },
+    "skycof_profile": {
+      "status": "control-gated",
+      "source_commit": "ceffcd216c2a4a987987686fee48d89f54b60c41",
+      "archive_sha256": "7e2569ab252eb2b6613e80378bbc8b99dbfdccc1ea5eb2b24e60554868ecb5ae",
+      "archive_reference": "runs/frontier-reliability-20261024/snapshot/sources/ceffcd216c2a4a987987686fee48d89f54b60c41.tar.gz",
+      "original_default_ops_sha256": "17101bf04a6ab54e1ad01809e5a90363ce28ed4dc4799e228df97da496b5acab",
+      "clean_default_ops_sha256": "d56bc40cf50ae8bc7b6693b73d04fe93f3d478cfe0d85592108ac13c047e4837",
+      "settings": {
+        "SKYCOF_RESEARCH": {
+          "kind": "bool",
+          "values": [
+            "1"
+          ],
+          "default": "1"
+        },
+        "SKYCOF_CAP": {
+          "kind": "int",
+          "min": 1090,
+          "max": 1100,
+          "default": "1097"
+        },
+        "SKYCOF_R": {
+          "kind": "int",
+          "min": 404,
+          "max": 404,
+          "default": "404"
+        },
+        "SKYCOF_PARKJ": {
+          "kind": "int",
+          "min": 14,
+          "max": 14,
+          "default": "14"
+        },
+        "SKYCOF_WDEC": {
+          "kind": "int",
+          "min": 49,
+          "max": 52,
+          "default": "50"
+        },
+        "SKYCOF_FOLDW": {
+          "kind": "int",
+          "min": 58,
+          "max": 60,
+          "default": "58"
+        },
+        "SKYCOF_ODO": {
+          "kind": "int",
+          "min": 7,
+          "max": 7,
+          "default": "7"
+        },
+        "SKYCOF_MM_GUARD": {
+          "kind": "int",
+          "min": 0,
+          "max": 220,
+          "default": "25"
+        },
+        "SKYCOF_MM_CMPW": {
+          "kind": "int",
+          "min": 1,
+          "max": 256,
+          "default": "24"
+        },
+        "SKYCOF_FRAME": {
+          "kind": "bool",
+          "values": [
+            "1"
+          ],
+          "default": "1"
+        },
+        "SKYCOF_DEFER": {
+          "kind": "bool",
+          "values": [
+            "0",
+            "1"
+          ],
+          "default": "1"
+        },
+        "SKYCOF_PDEFER": {
+          "kind": "bool",
+          "values": [
+            "0",
+            "1"
+          ],
+          "default": "1"
+        },
+        "SKYCOF_LAZYODO": {
+          "kind": "bool",
+          "values": [
+            "0",
+            "1"
+          ],
+          "default": "1"
+        },
+        "SKYCOF_HBLK": {
+          "kind": "bool",
+          "values": [
+            "0",
+            "1"
+          ],
+          "default": "1"
+        },
+        "SKYCOF_COFLSB": {
+          "kind": "bool",
+          "values": [
+            "0",
+            "1"
+          ],
+          "default": "1"
+        },
+        "SKYCOF_RAIL_MARGIN": {
+          "kind": "int",
+          "min": 0,
+          "max": 2,
+          "default": "0"
+        }
+      },
+      "active_guards": {
+        "rounds": 404,
+        "product_minimum_room": 90,
+        "product_forward_room": "cap - active_qubits - 256",
+        "product_inverse_room": "cap - active_qubits",
+        "enforcement": "Original lowq_adapter assertions remain byte-identical.",
+        "decoder": "The active frame decoder requires a nonempty window."
+      },
+      "source_overrides": "Snapshot SKYCOF_* values before clearing the environment. Launch a fresh process for every recipe.",
+      "cleanup": "Validate and remove exactly 48 final unconditional complete Op-equal X/X pairs.",
+      "source_bound_passes": "Retain all inherited passes and tables before external exact rewrites.",
+      "default_verification": "A new profile builder must reproduce both default operation hashes before nonzero margins.",
+      "entry_point": "circuit-opt targeted-frontier prepare --rail-profile",
+      "source_patch": {
+        "file": "src/point_add/skycof/walk.rs",
+        "mechanism": "Add a global signed rail width margin through the pre-clear captured getter.",
+        "other_arithmetic": "Unchanged."
+      },
+      "admission": {
+        "original_default_ops_sha256": "17101bf04a6ab54e1ad01809e5a90363ce28ed4dc4799e228df97da496b5acab",
+        "clean_default_ops_sha256": "d56bc40cf50ae8bc7b6693b73d04fe93f3d478cfe0d85592108ac13c047e4837",
+        "require_same_binary": true,
+        "legacy_builder_nonzero_margin": "rejected",
+        "zero_margin_environment": "omit SKYCOF_RAIL_MARGIN"
+      },
+      "precision_admission": {
+        "scope": "Structural bounds. The native allocation and chunk guards decide whether a tuple constructs.",
+        "native_guards_authoritative": true,
+        "all_combinations_constructible": false,
+        "reliability_guaranteed": false,
+        "fold_window_width": "34 + guard",
+        "halving_window_width": "32 + guard",
+        "maximum_carries": "max(room.saturating_sub(8), compare_width + 2)",
+        "guard_upper_bound": "The half4 high register has 252 bits.",
+        "compare_constraints": "The top window must be nonempty. Each chunk boundary must satisfy e >= compare_width.",
+        "source": "src/point_add/lowq_mm.rs in the pinned archive"
+      }
+    },
+    "ordinary_skywalk": {
+      "status": "implemented",
+      "entry_point": "circuit-opt targeted-frontier skywalk",
+      "module": "circuitopt.targeted_skywalk",
+      "source_commit": "6e148cfc3aa800ce881aaa48e8c9136d39da6430",
+      "archive_sha256": "555fce410caf48d42cd121c9db1dc3a790a3db64a0c1f2dbe4c1ca516786377a",
+      "archive_reference": "runs/frontier-reliability-20261024/snapshot/sources/6e148cfc3aa800ce881aaa48e8c9136d39da6430.tar.gz",
+      "clean_default_ops_sha256": "526d250b3ddced0f407a5e9210eb192d7b977be7ddff83c0be1bd0e0cd0b8028",
+      "default_overlay": [],
+      "overlay": {
+        "kind": "array",
+        "default": [],
+        "unique_by": [
+          "leg",
+          "tick"
+        ],
+        "record": {
+          "kind": "object",
+          "required": [
+            "leg",
+            "tick"
+          ],
+          "at_least_one": [
+            "swap_width",
+            "add_width"
+          ],
+          "additional_properties": false,
+          "fields": {
+            "leg": {
+              "kind": "enum",
+              "values": [
+                "div",
+                "mul"
+              ]
+            },
+            "tick": {
+              "kind": "int",
+              "min": 0,
+              "max": 394,
+              "reject_bool": true
+            },
+            "swap_width": {
+              "kind": "int",
+              "min": 1,
+              "max": 257,
+              "reject_bool": true
+            },
+            "add_width": {
+              "kind": "int",
+              "min": 1,
+              "max": 257,
+              "reject_bool": true
+            }
+          }
+        }
+      },
+      "active_guards": {
+        "rounds": 395,
+        "installed_cap": 1142,
+        "original_source_guards_unchanged": true,
+        "table_parser": "Original swap>=3, add>=2, maximum259 assertions still apply.",
+        "seed": "Original FD seed requires its sign-bit width.",
+        "native_guards_authoritative": true,
+        "all_combinations_constructible": false,
+        "reliability_guaranteed": false
+      },
+      "source_scope": "Replace selected swap and add widths in two fixed rail tables. Remove the checked 48 pairs of X gates.",
+      "layout_preservation": "Keep unselected columns, headers, whitespace, CRLF, code, and notices byte-identical.",
+      "source_bound_passes": "Keep inherited source passes before any external catalog.",
+      "mutant_gate": "Before a mutation emits, verify the zero overlay source, binary, and known operation hash.",
+      "default_verification": "Package zero and multiply-overlay sources and patches match the tested native prototypes exactly.",
+      "numerical_scope": "Wider and narrower grammar values are permitted. The fixed checker measures numerical reliability.",
+      "evaluator_changes": false
+    }
+  },
+  "postpasses": {
+    "catalog": {
+      "status": "admitted external instrument; executed separately by the coordinator",
+      "mode": "catalog",
+      "binary_reference": "admission/tools/frontier-transform-v5.bin",
+      "binary_sha256": "eedbc0a0f8e392268fbeca113a62fd6d36a787e797d52326f07e7cb4f095b9b4",
+      "source_manifest_reference": "admission/catalog-transformer-source/manifest.json",
+      "source_manifest_sha256": "ba57df92ef162250f55dc1493b2b636859ace394d973c0541236ce7581e0e4cb",
+      "catalog_source_sha256": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052",
+      "placement": "After the inherited source-bound passes and checked identity-tail cleanup.",
+      "qualification": "Every distinct output needs the fixed checker and fresh final qualification."
+    }
+  },
+  "evaluator": "Unchanged fixed study checker; this command emits circuits only."
+}

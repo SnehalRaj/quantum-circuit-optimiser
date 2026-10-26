@@ -1,0 +1,109 @@
+{
+  "status": "complete",
+  "study": "Evaluation cost of the two full point-addition environments",
+  "selection": "One fixed circuit per environment. The full-width row reuses the frozen secp256k1 timing receipt. The 16-bit row times the admitted mfsur constructor.",
+  "scope": "Workflow costs on the same shared Apple M2 workstation; different circuits, checker implementations, thread counts and measurement dates. No speedup claim.",
+  "rows": [
+    {
+      "status": "complete",
+      "id": "point_addition16",
+      "name": "Full 16-bit point addition",
+      "Q": 214,
+      "T": 28051.0,
+      "failed_inputs": 0,
+      "pairs": 100000,
+      "streams": 2,
+      "threads": 1,
+      "construction_wall_seconds": 0.9047411251813173,
+      "construction_cpu_seconds": 0.647342,
+      "evaluation_wall_seconds": 35.14820095896721,
+      "evaluation_cpu_seconds": 20.15095,
+      "alpha": 0.05,
+      "upper_bound": 2.9956874019427958e-05,
+      "epsilon": 0.001,
+      "qualified": true,
+      "operation_sha256": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83",
+      "input_sha256": "118afcf463624e929204dd543c0974ce16d9aef03e9dfc3f0710eb31526115ba",
+      "per_input_sha256": "9fcd0a41be0be1dd67fc125602ff3d14898f1d9d7456fa3673b30c81fc10f25f",
+      "contract_sha256": "97f9e025aecfdfcaef7bf3a379ea94451061221c22ea466784235ce5178fee5a",
+      "audit_sha256": "a58840056dcc183427e13d1a6f20a7151f6f0abb9e242d0c1d0b1caaf4af14c2",
+      "result_file": "studies/point-addition-timing/small16/result.json",
+      "result_sha256": "95314b72476416783838569458e20a6de89a986cb174615de7d0c6c8720d5d14"
+    },
+    {
+      "Q": 1270,
+      "T": 793801.02822,
+      "failed_inputs": 26,
+      "failed_shots": 52,
+      "pairs": 100000,
+      "construction_wall_seconds": 51.194566999562085,
+      "construction_cpu_seconds": 45.250332,
+      "evaluation_wall_seconds": 144.318104124628,
+      "evaluation_cpu_seconds": 361.14574899999997,
+      "simulation_wall_seconds": 93.628535791,
+      "load_wall_seconds": 1.493503834,
+      "preparation_wall_seconds": 45.628186583,
+      "scope": "Frozen native generator and native checker. Simulation time excludes load and input preparation.",
+      "input_sha256": "fc68d9f1a90da3b45fde6f1e3423b196d2a33c983dbad7d88dade241fbab6179",
+      "id": "point_addition",
+      "name": "Qualified settings of full secp256k1 point addition",
+      "status": "complete",
+      "streams": 2,
+      "batch_size": 64,
+      "threads": 4,
+      "operation_sha256": "9271a9aa2b368b88989e905a932d5469baece5f3af00c0e928e8dcb7b9ce3c01",
+      "label": "workshop-paper-20261025/timing-v1/4d6b5b9ea581160dcaefc467da32facd/point-addition",
+      "alpha": 0.016666666666666666,
+      "upper_bound": 0.00039199920758302263,
+      "epsilon": 0.001,
+      "qualified": true,
+      "result_file": "studies/timing/point_addition/result.json",
+      "result_sha256": "a53578d911991cda134893f277749b6676b62e1698db125e3f109f292fd6ece1",
+      "environment_at_start": {
+        "utc": "2026-10-25T14:48:00.160371+00:00",
+        "platform": "macOS-15.6.1-arm64-arm-64bit",
+        "machine": "arm64",
+        "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "executable": "/usr/local/bin/python3",
+        "cpu_count": 8,
+        "load_average": [
+          4.7314453125,
+          4.833984375,
+          4.46484375
+        ],
+        "hardware_model": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "memory_bytes": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "cpu_brand": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        }
+      },
+      "environment_after": {
+        "utc": "2026-10-25T14:51:19.481488+00:00",
+        "platform": "macOS-15.6.1-arm64-arm-64bit",
+        "machine": "arm64",
+        "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+        "executable": "/usr/local/bin/python3",
+        "cpu_count": 8,
+        "load_average": [
+          37.82470703125,
+          18.1962890625,
+          9.9638671875
+        ],
+        "hardware_model": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "memory_bytes": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        },
+        "cpu_brand": {
+          "unavailable": "sysctl: sysctl fmt -1 1024 1: Operation not permitted"
+        }
+      },
+      "batch_size_unit": "input cases in one native stream task"
+    }
+  ]
+}

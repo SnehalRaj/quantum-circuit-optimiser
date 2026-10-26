@@ -1,0 +1,1801 @@
+{
+  "circuits": {
+    "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a": {
+      "root": "{redacted-path-18cf5b87026f}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "inverse",
+        "steps": 31,
+        "cleanup": "toffoli"
+      },
+      "operation_sha256": "c3327887363cfb93a7ffba4b4276df78f275b59359f357711bb5e7f449f6d86c"
+    },
+    "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0": {
+      "root": "{redacted-path-18cf5b87026f}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "measured",
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        },
+        "widths": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          1
+        ],
+        "compare_bits": 15
+      },
+      "operation_sha256": "e322a3fb51ff03dbcd87b395262c13752c411a6c1d03bb471398044bce5a904a"
+    },
+    "0d80c61b8277337400505e3697194a92103336e9a1c33b511c783780cc089dfe": {
+      "root": "{redacted-path-18cf5b87026f}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "toffoli",
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        },
+        "widths": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          1
+        ],
+        "compare_bits": 15
+      },
+      "operation_sha256": "6b8307bc4bd6ce42778dd7346101ec074c41c93b8e2dab064f0e3aa9da9332a8"
+    },
+    "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de": {
+      "root": "{redacted-path-18cf5b87026f}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "replay",
+        "steps": 31,
+        "cleanup": "toffoli"
+      },
+      "operation_sha256": "cd7762d63ab4cd4c51445c2095dd4b7b3bcd1a48e6c22393c88446b62ef8b763"
+    },
+    "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46": {
+      "root": "{redacted-path-18cf5b87026f}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "toffoli"
+      },
+      "operation_sha256": "f49c3ba6ba7d54f87a52281d52a94f2e69cf2a87163f61d0cbaa4a48cb537272"
+    },
+    "fe1a270a3571969453232e4f7a08fc9dc5945b995bbca9b786d563f0915c1a1b": {
+      "root": "{redacted-path-f5b1251b7dcb}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "jump2",
+        "steps": 21,
+        "cleanup": "measured"
+      },
+      "operation_sha256": "3ced040b3ba715f18dc1ddbc6ee8c48722b869ea191cf48b718b516bdc70b9e4"
+    },
+    "e7de35c47d9193d14b00ce91a8a680d55b82c58974b84041ad6c0baf2b34df52": {
+      "root": "{redacted-path-f5b1251b7dcb}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "jump2",
+        "steps": 21,
+        "cleanup": "toffoli"
+      },
+      "operation_sha256": "860fdb24846d09633094e6fcfd0160c1a3b01ae269af5d63d7b0a188298375d1"
+    },
+    "f81497e96efcc17baccccfd908e556ddd3a25a10a9952b19a64caa82279f02e4": {
+      "root": "{redacted-path-f5b1251b7dcb}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "measured",
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "legacy"
+            }
+          ]
+        }
+      },
+      "operation_sha256": "4b78e5d176a0be7469495c7c7053b819400080d3982acfe995c1a10d773c3d27"
+    },
+    "8f4ffe5c6d66c7e691205ed417c0848a871c33b57f5fa6181acb6c5818c2168b": {
+      "root": "{redacted-path-f5b1251b7dcb}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "toffoli",
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "legacy"
+            }
+          ]
+        }
+      },
+      "operation_sha256": "5aceaf7a8a5c78c68c5660f7e1df0fed3528e4d8f555e580c8f541ea5c35feae"
+    },
+    "831a60e8715fde48c1f8a2362e7b78666e58ab010cdf342fb6168d1f2ece4d44": {
+      "root": "{redacted-path-f5b1251b7dcb}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "measured",
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "legacy"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        },
+        "widths": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          1
+        ]
+      },
+      "operation_sha256": "0c428e1a894924eefc897a13a75b0c47b927c0e746eb61c371e18424d133c4d8"
+    },
+    "27578ec877581b1a849f92b7b725465efa63eeb427ccc58ef2b17d77caaf3315": {
+      "root": "{redacted-path-f5b1251b7dcb}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "toffoli",
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "legacy"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        },
+        "widths": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          1
+        ]
+      },
+      "operation_sha256": "148d224fd1d594285231058cd8486ac536887fc8447efc5631c26b8f8a41065c"
+    },
+    "9277ff1abe987774b99a42beb2147b369b54cc22754d49e3be9d34902d61a58c": {
+      "root": "{redacted-path-f5b1251b7dcb}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "measured",
+        "compare_bits": 15,
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "legacy"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        }
+      },
+      "operation_sha256": "678e385066bad55345036fba429ee5dfe92a59b60d86ea265f5e729a760b5a54"
+    },
+    "6a5e6aff685de88332f50673d6f705f3a53fd7627f6d7b5307c3769bfaee5696": {
+      "root": "{redacted-path-f5b1251b7dcb}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "toffoli",
+        "compare_bits": 15,
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "legacy"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        }
+      },
+      "operation_sha256": "528dfd8316dcb183b12be94eba2f839edd5d4ab9af3ade4d59f5e37132bd4af2"
+    },
+    "02b516595d0a83088d44af2dff074b26e4d2f3d29812b84a1837f10714714e30": {
+      "root": "{redacted-path-f5b1251b7dcb}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "measured",
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        }
+      },
+      "operation_sha256": "1c4d94220e53ecb1f0580ff647d5776bcb2007741ef155559bfd9812d7867fc5"
+    },
+    "9cf42462f48574be409f25304d6b1ca946cfd28402c730d9d83e638637ad312d": {
+      "root": "{redacted-path-f5b1251b7dcb}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "toffoli",
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        }
+      },
+      "operation_sha256": "9d73322e0fdc393c509cc3a597ff7baef697164790c9e3af01238932eec0dd45"
+    },
+    "5b683c9ecb3dc4a793820f9e4330a06547ae68e77bbed763b0ed19a15b05c653": {
+      "root": "{redacted-path-bb6ae1f70e93}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "measured",
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "direct"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        }
+      },
+      "operation_sha256": "1c4d94220e53ecb1f0580ff647d5776bcb2007741ef155559bfd9812d7867fc5"
+    },
+    "d2c5aa2129328c32a84d13abf0234351abf379b31e6c0347cdf8898b49ce7731": {
+      "root": "{redacted-path-bb6ae1f70e93}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "toffoli",
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "direct"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        }
+      },
+      "operation_sha256": "9d73322e0fdc393c509cc3a597ff7baef697164790c9e3af01238932eec0dd45"
+    },
+    "93e53b3f787beb5948e7060df9ca71cbe92d481cc1e1860ff2b2db03c25deed6": {
+      "root": "{redacted-path-bb6ae1f70e93}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "measured",
+        "widths": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          1
+        ],
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "direct"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        }
+      },
+      "operation_sha256": "be20d79325253c0c9b4bef9bdd56388a760882534f646182da858ab3f4eb5c0d"
+    },
+    "088ee2a90044737c48c2fe1dfd2426ba3714af38f87a03a2f1e2852b514df2d9": {
+      "root": "{redacted-path-bb6ae1f70e93}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "toffoli",
+        "widths": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          1
+        ],
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "direct"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        }
+      },
+      "operation_sha256": "e4b4a86028d85a1f565b9e2bf90521f3ed28eb1e957760447888fd68b6abfae7"
+    },
+    "484e9b92d96e6bf1b5ebc57777a7bb7a8f357bd4ce5d2e90abc06aeab1bb35c8": {
+      "root": "{redacted-path-bb6ae1f70e93}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "measured",
+        "compare_bits": 15
+      },
+      "operation_sha256": "2928a4e426b82d5fab03f7999f8a46445fa5dbeacd84121a0d887f787eff994e"
+    },
+    "8491b8ecec3baf16168005a13fa7987e49179ff497f4f4bdce9c8ba4f72d7ed1": {
+      "root": "{redacted-path-bb6ae1f70e93}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "toffoli",
+        "compare_bits": 15
+      },
+      "operation_sha256": "f3bf4cd3546b34fc8c0ff2696f016064be914ba8962eeb4425fe87d6cd0620cf"
+    },
+    "eda4a99c55c3e72a706e6a9c7c0d8aa2b046a63298d7ed3c4b1307ebd04863eb": {
+      "root": "{redacted-path-bb6ae1f70e93}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "measured",
+        "widths": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          1
+        ],
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        }
+      },
+      "operation_sha256": "be20d79325253c0c9b4bef9bdd56388a760882534f646182da858ab3f4eb5c0d"
+    },
+    "fa2d8e60f419b5f85f5242388ea65440265e74ce9f18edc0a0d55f0f0c796222": {
+      "root": "{redacted-path-bb6ae1f70e93}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "toffoli",
+        "widths": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          1
+        ],
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        }
+      },
+      "operation_sha256": "e4b4a86028d85a1f565b9e2bf90521f3ed28eb1e957760447888fd68b6abfae7"
+    },
+    "434542bc43a8ba9111916cb57cf89bd7fecafd194db52cf3782cbdec80f02a09": {
+      "root": "{redacted-path-bb6ae1f70e93}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "measured",
+        "widths": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          1
+        ],
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "direct"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        },
+        "compare_bits": 15
+      },
+      "operation_sha256": "e322a3fb51ff03dbcd87b395262c13752c411a6c1d03bb471398044bce5a904a"
+    },
+    "058e1bfe81344e79eed100768a90ef265b0058c86354d6426e7f3c3b264a02bd": {
+      "root": "{redacted-path-bb6ae1f70e93}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "toffoli",
+        "widths": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          1
+        ],
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "direct"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        },
+        "compare_bits": 15
+      },
+      "operation_sha256": "6b8307bc4bd6ce42778dd7346101ec074c41c93b8e2dab064f0e3aa9da9332a8"
+    },
+    "eeaac889cb9a79bfae847c936e058556e54665d8a02fc8544f878676e5f63bb9": {
+      "root": "{redacted-path-fa4c62ee01f0}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "measured",
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        },
+        "compare_bits": 15
+      },
+      "operation_sha256": "d65c416a964968a6538091d8666c4ac5cc29f76a085a379852e1803f4b59163f"
+    },
+    "747514bcc3501bf23874f8eafa393a427304c84070aa572783425c2ef1057f3c": {
+      "root": "{redacted-path-fa4c62ee01f0}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "toffoli",
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "direct"
+            }
+          ]
+        },
+        "compare_bits": 15
+      },
+      "operation_sha256": "bbfed36cb78688ecac5f830b5ac9e9621430ddd09c9f82575a7335422913a7bf"
+    },
+    "ab3557d8bcbed2c34b2d18adf89b628d3182b145928fe4b18facfaba5e13fa07": {
+      "root": "{redacted-path-fa4c62ee01f0}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "measured",
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "legacy"
+            }
+          ]
+        },
+        "widths": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15,
+          14,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          1
+        ]
+      },
+      "operation_sha256": "3c9bbef24fc50b6e1b3dd5ece345c05b041a24c348b7855687e2708aaeac2ec5"
+    },
+    "39a54266313599a66e89f63dfe0fbfc3a4aaeb6adc8289ca80b95d22cd6760ec": {
+      "root": "{redacted-path-fa4c62ee01f0}",
+      "recipe": {
+        "bits": 16,
+        "prime": 65521,
+        "family": "width",
+        "steps": 31,
+        "cleanup": "toffoli",
+        "block_program": {
+          "ops": [
+            {
+              "op": "swap",
+              "lowering": "legacy"
+            },
+            {
+              "op": "sub",
+              "lowering": "direct"
+            },
+            {
+              "op": "half",
+              "lowering": "legacy"
+            }
+          ]
+        },
+        "widths": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          15,
+          14,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          1
+        ]
+      },
+      "operation_sha256": "6850682633ca1514e0fa7ec310f16204b02c83f34874b708b99b077db9ff91f8"
+    }
+  },
+  "selections": [
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-17071",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-17071",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-17071",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-28081",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-28081",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-28081",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-39091",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-39091",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-39091",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-17071",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-17071",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-17071",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-28081",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-28081",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-28081",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-39091",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-39091",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-39091",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-17071",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-17071",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-17071",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-28081",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-28081",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-28081",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-39091",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-39091",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-seeds-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-39091",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "299232bdb05678af786a04d059c3b7e2e3ac6c1601124e563222638c6c1d06e0"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-17071",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "fe1a270a3571969453232e4f7a08fc9dc5945b995bbca9b786d563f0915c1a1b"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-17071",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "f81497e96efcc17baccccfd908e556ddd3a25a10a9952b19a64caa82279f02e4"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-17071",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "831a60e8715fde48c1f8a2362e7b78666e58ab010cdf342fb6168d1f2ece4d44"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-28081",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "fe1a270a3571969453232e4f7a08fc9dc5945b995bbca9b786d563f0915c1a1b"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-28081",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "9277ff1abe987774b99a42beb2147b369b54cc22754d49e3be9d34902d61a58c"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-28081",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "9277ff1abe987774b99a42beb2147b369b54cc22754d49e3be9d34902d61a58c"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-39091",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "fe1a270a3571969453232e4f7a08fc9dc5945b995bbca9b786d563f0915c1a1b"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-39091",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "fe1a270a3571969453232e4f7a08fc9dc5945b995bbca9b786d563f0915c1a1b"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "offline",
+      "run": "16-evolution-compact_json-39091",
+      "strategy": "evolution",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "02b516595d0a83088d44af2dff074b26e4d2f3d29812b84a1837f10714714e30"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-17071",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "fe1a270a3571969453232e4f7a08fc9dc5945b995bbca9b786d563f0915c1a1b"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-17071",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "5b683c9ecb3dc4a793820f9e4330a06547ae68e77bbed763b0ed19a15b05c653"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-17071",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "93e53b3f787beb5948e7060df9ca71cbe92d481cc1e1860ff2b2db03c25deed6"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-28081",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "02b516595d0a83088d44af2dff074b26e4d2f3d29812b84a1837f10714714e30"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-28081",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "484e9b92d96e6bf1b5ebc57777a7bb7a8f357bd4ce5d2e90abc06aeab1bb35c8"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-28081",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "eda4a99c55c3e72a706e6a9c7c0d8aa2b046a63298d7ed3c4b1307ebd04863eb"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-39091",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "fe1a270a3571969453232e4f7a08fc9dc5945b995bbca9b786d563f0915c1a1b"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-39091",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "5b683c9ecb3dc4a793820f9e4330a06547ae68e77bbed763b0ed19a15b05c653"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "claude",
+      "run": "16-llm-compact_json-39091",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "434542bc43a8ba9111916cb57cf89bd7fecafd194db52cf3782cbdec80f02a09"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-17071",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "eeaac889cb9a79bfae847c936e058556e54665d8a02fc8544f878676e5f63bb9"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-17071",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "02b516595d0a83088d44af2dff074b26e4d2f3d29812b84a1837f10714714e30"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-17071",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 17071,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "02b516595d0a83088d44af2dff074b26e4d2f3d29812b84a1837f10714714e30"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-28081",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "ab3557d8bcbed2c34b2d18adf89b628d3182b145928fe4b18facfaba5e13fa07"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-28081",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "484e9b92d96e6bf1b5ebc57777a7bb7a8f357bd4ce5d2e90abc06aeab1bb35c8"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-28081",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 28081,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "02b516595d0a83088d44af2dff074b26e4d2f3d29812b84a1837f10714714e30"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-39091",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "inverse",
+      "weight": 1,
+      "starting": "d6381c2f684ae1559a80ca6298691a3c39b7cc4939d978c497f37c7d0734209a",
+      "selected": "f81497e96efcc17baccccfd908e556ddd3a25a10a9952b19a64caa82279f02e4"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-39091",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "replay",
+      "weight": 32.72575137951653,
+      "starting": "3b715c6a99168bb5af776e9d7f7d32bf1569396a712a681ae49280055c7bf0de",
+      "selected": "484e9b92d96e6bf1b5ebc57777a7bb7a8f357bd4ce5d2e90abc06aeab1bb35c8"
+    },
+    {
+      "condition": "guarded-cleanup-only-v1",
+      "arm": "codex61sol",
+      "run": "16-llm-compact_json-39091",
+      "strategy": "llm",
+      "format": "compact_json",
+      "seed": 39091,
+      "bits": 16,
+      "baseline": "width",
+      "weight": 100,
+      "starting": "8f69817cc19d51496770047f19e032d0aad83377b07bbc85c93a13b7d2567d46",
+      "selected": "eeaac889cb9a79bfae847c936e058556e54665d8a02fc8544f878676e5f63bb9"
+    }
+  ],
+  "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+  "alpha_per_circuit": 0.000390625,
+  "pairs": 16384,
+  "frozen_utc": "2026-10-25T15:35:02.905695+00:00"
+}

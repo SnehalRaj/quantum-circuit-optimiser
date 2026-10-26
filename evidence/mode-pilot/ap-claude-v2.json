@@ -1,0 +1,163 @@
+{
+  "candidate": {
+    "actions": [],
+    "backend": "qualified-leapfrog",
+    "cancel_adjacent": false,
+    "family": "qualified-leapfrog",
+    "grammar_sha256": "d2bec084fc91b3ac706d2cff437af1c4608ae052d6c05bb5419d1cebc1aaef5b",
+    "policy": "none",
+    "target": "ap1270"
+  },
+  "case": "ap-claude-v2",
+  "construction": {
+    "binary_integrity_after": true,
+    "build_binary_sha256": "7632285ddb6af56cc54615f156b8df94cd473ef2b766a2a31e67566615dd93b2",
+    "eval_binary_sha256": "b8f3e4a2af8c5c04b5839f5050d28ca55ba3e26f6f11249deab1395425b1bb7a",
+    "parent_commit": "023fbe13c59df2ff0087ea4bb916d25f3d4fac70",
+    "peak_rss_bytes": 1029193728,
+    "queue_wait_seconds": 1938.4733484582976,
+    "source_integrity_after": true,
+    "source_manifest_sha256": "501923d89f148e98d5074763bdb3ee23ed4148ffcc676d5431a6bef71683d1da",
+    "target_recipe_sha256": "4c07721243dd5d665a261625f4c6591ac94dea9be2465d9915929922edae5675",
+    "wall_seconds": 100.96772779151797
+  },
+  "contract_sha256": "b0ec288ab36e275e46b799c22edaf723d38be760647757dc6f2e3aa2783b1097",
+  "controller_commit_verified_before_launch": "49bdddbd3b5486739ab4e0e549bf92285c34fc2c",
+  "epsilon": 0.001,
+  "family": "qualified-leapfrog",
+  "fast": {
+    "Q": 214,
+    "T": 33728.0,
+    "alpha": 0.05,
+    "checker_binary_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+    "checker_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+    "checker_source_sha256": "5a00c89974f5774b1e44cd00c9e9e8f147aad4c695ddea31d24900cb31e849f8",
+    "domain_exclusions": {
+      "sum_x_equals_addend_x": 1
+    },
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "field_width": 16,
+    "input_recipe": "study_check::stream(inputs,[label,u64le(index)]); reject scalar zero or >=order; reject affine-domain exclusions",
+    "label": "aee97c32eb83dc8b2905b56ef3da6095317441e3cd2ea8cf497111db8992ccb3/small/none",
+    "measurement_recipe": "study_check::stream(measurements,[label,u64le(stream),u64le(index/64)])",
+    "observed_failure_probability": 0.0,
+    "ops_sha256": "b1c0c04919cd9b231aee676948d8e2fb917cdee16268a62aed132fd0b14700d1",
+    "packet_sha256": "02a1b1f91c1da0f2cfb6f9aed1344edba199cfa4d234ba87769c5ba937e55cae",
+    "pairs": 4096,
+    "per_input_sha256": "97af3c9739cd7605c51748d304d3acb75d164139ade6097aa1601c45b048546d",
+    "streams": 2,
+    "upper_bound": 0.0007311125564754343
+  },
+  "final": {
+    "Q": 1270,
+    "T": 793796.2268066406,
+    "alpha": 0.05,
+    "checker_binary_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+    "checker_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+    "checker_source_sha256": "5a00c89974f5774b1e44cd00c9e9e8f147aad4c695ddea31d24900cb31e849f8",
+    "domain_exclusions": {},
+    "failed_inputs": 7,
+    "failed_shots": 14,
+    "field_width": 256,
+    "input_recipe": "study_check::stream(inputs,[label,u64le(index)]); reject scalar zero or >=order; reject affine-domain exclusions",
+    "label": "aee97c32eb83dc8b2905b56ef3da6095317441e3cd2ea8cf497111db8992ccb3/fresh-final/0",
+    "measurement_recipe": "study_check::stream(measurements,[label,u64le(stream),u64le(index/64)])",
+    "observed_failure_probability": 0.000213623046875,
+    "ops_sha256": "9271a9aa2b368b88989e905a932d5469baece5f3af00c0e928e8dcb7b9ce3c01",
+    "packet_sha256": "37bc6b5c10a97e81ea27ee6a057a1aa0b6549af2361060df65d689680662f56b",
+    "pairs": 32768,
+    "per_input_sha256": "9626339549e7b825463e480607bcf3b779ca21a66a5a331df28f611902376d1d",
+    "streams": 2,
+    "upper_bound": 0.0004012109484815509
+  },
+  "grammar_sha256": "d2bec084fc91b3ac706d2cff437af1c4608ae052d6c05bb5419d1cebc1aaef5b",
+  "harness_source_sha256": "418acc786658d056c951f319ffc5253f84db2ece4f2dc7b80ba1dc75918ef587",
+  "model": {
+    "action_index": 0,
+    "api_keys_removed": true,
+    "billing_scope": "CLI estimate; subscription invoice unavailable",
+    "executable_sha256": "ffb64331bc0ee1b69efb7c2c428bd3ab516bc31b75bf60886b356c97c1c25ffd",
+    "mcp_disabled": true,
+    "model_called": true,
+    "provider": "claude",
+    "provider_estimate_usd": 0.051988,
+    "requested_model": "claude-opus-5-5",
+    "resolved_models": [
+      "claude-opus-5-5"
+    ],
+    "success": true,
+    "tools_disabled": true,
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 5900,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 5900,
+      "cache_read_input_tokens": 0,
+      "fallback_credit": null,
+      "inference_geo": "global",
+      "input_tokens": 2,
+      "iterations": [
+        {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 5900,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 5900,
+          "cache_read_input_tokens": 0,
+          "input_tokens": 2,
+          "output_tokens": 239,
+          "type": "message"
+        }
+      ],
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_fetch_requests": 0,
+        "web_search_requests": 0
+      },
+      "service_tier": "standard",
+      "speed": "standard"
+    },
+    "wall_seconds": 7.810739994049072
+  },
+  "model_calls": 1,
+  "official": {
+    "Q": 1270,
+    "T": 793798,
+    "historical_counts_match": true,
+    "passed": true
+  },
+  "operation_artifact_reused": true,
+  "ops_sha256": "9271a9aa2b368b88989e905a932d5469baece5f3af00c0e928e8dcb7b9ce3c01",
+  "qualified": true,
+  "results_sha256": "1c3cd033d66dc049bced8d7503cf0bb2c6a53218958eb53c34d0f4bc8f6d2c4c",
+  "run_directory": "work/mode-pilot/ap-claude-v2",
+  "schema_version": 1,
+  "scope": "Known-target reconstruction and workflow validation. The single known recipe supplies no model rediscovery claim.",
+  "screen": {
+    "Q": 1270,
+    "T": 793798.9008178711,
+    "alpha": 0.025,
+    "checker_binary_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+    "checker_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+    "checker_source_sha256": "5a00c89974f5774b1e44cd00c9e9e8f147aad4c695ddea31d24900cb31e849f8",
+    "domain_exclusions": {},
+    "failed_inputs": 14,
+    "failed_shots": 27,
+    "field_width": 256,
+    "input_recipe": "study_check::stream(inputs,[label,u64le(index)]); reject scalar zero or >=order; reject affine-domain exclusions",
+    "label": "aee97c32eb83dc8b2905b56ef3da6095317441e3cd2ea8cf497111db8992ccb3/large/0",
+    "measurement_recipe": "study_check::stream(measurements,[label,u64le(stream),u64le(index/64)])",
+    "observed_failure_probability": 0.00042724609375,
+    "ops_sha256": "9271a9aa2b368b88989e905a932d5469baece5f3af00c0e928e8dcb7b9ce3c01",
+    "packet_sha256": "3bd1389712ac10a1fd48748a20ab2decf7f74b6b5b295f93337f5ea2928fe313",
+    "pairs": 32768,
+    "per_input_sha256": "28da0b1119a7bf3425a1486175a968a1ef024d6dc3d7fdb8736d84c75d1ef63d",
+    "streams": 2,
+    "upper_bound": 0.0007167425479811032
+  }
+}

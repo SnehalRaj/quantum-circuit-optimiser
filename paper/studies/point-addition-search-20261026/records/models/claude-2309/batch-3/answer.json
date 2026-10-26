@@ -1,0 +1,4 @@
+{
+  "action_index": 2,
+  "reason": "The archive shows clear patterns. Turning on free_s is what cuts qubits from 214 to 198. Turning on u is what cuts most of the Toffolis, about 3,800 fewer. combined_y adds about 355 Toffolis (c1111 vs c1110, and c1011 vs c1010), and r saves about 60. The current best is c1110 (QT 5,533,902). None of the remaining recipes has both u and free_s, so none is likely to beat it. With the last two slots, the most useful thing is to measure the two main effects on their own against the mfs parent: c1000 (u only) and c0010 (free_s only). That shows how much each rule contributes and whether u and free_s add up or interact in the measured frontier."
+}

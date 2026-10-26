@@ -1,0 +1,590 @@
+{
+  "schema": "lco-native-policy-smoke-v1",
+  "complete": true,
+  "policies": 32,
+  "unique_circuits": 16,
+  "field_width": 16,
+  "pairs_per_policy": 64,
+  "streams": 2,
+  "parent_policy": "mfs",
+  "s_active_any": false,
+  "rows": [
+    {
+      "policy": "f",
+      "Q": 214,
+      "T": 33726.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "057c67c1b69fc7c6527861edc498950f3d71ce1d380785f50df9ceb131fc2ce5",
+      "activation_counts": {
+        "f": 2,
+        "m": 0,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": []
+    },
+    {
+      "policy": "fr",
+      "Q": 214,
+      "T": 33664.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "7a9ec1a51097e17c0a1bff964f82696240794882cfccc9339fb7d189e5566596",
+      "activation_counts": {
+        "f": 2,
+        "m": 0,
+        "r": 62,
+        "r_ccx": 62,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": []
+    },
+    {
+      "policy": "fs",
+      "Q": 214,
+      "T": 33726.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "057c67c1b69fc7c6527861edc498950f3d71ce1d380785f50df9ceb131fc2ce5",
+      "activation_counts": {
+        "f": 2,
+        "m": 0,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "fsr",
+      "Q": 214,
+      "T": 33664.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "7a9ec1a51097e17c0a1bff964f82696240794882cfccc9339fb7d189e5566596",
+      "activation_counts": {
+        "f": 2,
+        "m": 0,
+        "r": 62,
+        "r_ccx": 62,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "fsu",
+      "Q": 214,
+      "T": 30068.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "9576643b3e46d849d81515675a41bdff9deed6f21386572e458fda30b9347396",
+      "activation_counts": {
+        "f": 2,
+        "m": 0,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "fsur",
+      "Q": 214,
+      "T": 30006.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "2ffe95ecef2c5809e3f161102b6ea1fdf9476a7a824bfd27c99b688fc77f0fd6",
+      "activation_counts": {
+        "f": 2,
+        "m": 0,
+        "r": 62,
+        "r_ccx": 62,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "fu",
+      "Q": 214,
+      "T": 30068.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "9576643b3e46d849d81515675a41bdff9deed6f21386572e458fda30b9347396",
+      "activation_counts": {
+        "f": 2,
+        "m": 0,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": []
+    },
+    {
+      "policy": "fur",
+      "Q": 214,
+      "T": 30006.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "2ffe95ecef2c5809e3f161102b6ea1fdf9476a7a824bfd27c99b688fc77f0fd6",
+      "activation_counts": {
+        "f": 2,
+        "m": 0,
+        "r": 62,
+        "r_ccx": 62,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": []
+    },
+    {
+      "policy": "m",
+      "Q": 214,
+      "T": 31771.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "0e504103965878fa2177600f2064864d771505aff69129414834cda25fefadcf",
+      "activation_counts": {
+        "f": 0,
+        "m": 1957,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": []
+    },
+    {
+      "policy": "mf",
+      "Q": 214,
+      "T": 31769.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "b84161037cdd8580e28172308418c1767b179abb27a7b02aa6ac90ebb74bfaf8",
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": []
+    },
+    {
+      "policy": "mfr",
+      "Q": 214,
+      "T": 31709.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "1f2d68beca2a499e28db27cc3c3ea0933f06efdbcd37501ed771882eeccb8df0",
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 60,
+        "r_ccx": 60,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": []
+    },
+    {
+      "policy": "mfs",
+      "Q": 214,
+      "T": 31769.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "b84161037cdd8580e28172308418c1767b179abb27a7b02aa6ac90ebb74bfaf8",
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "mfsr",
+      "Q": 214,
+      "T": 31709.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "1f2d68beca2a499e28db27cc3c3ea0933f06efdbcd37501ed771882eeccb8df0",
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 60,
+        "r_ccx": 60,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "mfsu",
+      "Q": 214,
+      "T": 28111.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "d7f905ebad6c0e52c5cac636a64045fb333c6b0f6b396c4d81569fc60ed77adb",
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "mfsur",
+      "Q": 214,
+      "T": 28051.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83",
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 60,
+        "r_ccx": 60,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "mfu",
+      "Q": 214,
+      "T": 28111.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "d7f905ebad6c0e52c5cac636a64045fb333c6b0f6b396c4d81569fc60ed77adb",
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": []
+    },
+    {
+      "policy": "mfur",
+      "Q": 214,
+      "T": 28051.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83",
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 60,
+        "r_ccx": 60,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": []
+    },
+    {
+      "policy": "mr",
+      "Q": 214,
+      "T": 31709.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "fa23b22ffd8bd13ce37bb6c24e8aa989561e70da739f094fc0fed3eb0520b494",
+      "activation_counts": {
+        "f": 0,
+        "m": 1957,
+        "r": 62,
+        "r_ccx": 62,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": []
+    },
+    {
+      "policy": "ms",
+      "Q": 214,
+      "T": 31771.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "0e504103965878fa2177600f2064864d771505aff69129414834cda25fefadcf",
+      "activation_counts": {
+        "f": 0,
+        "m": 1957,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "msr",
+      "Q": 214,
+      "T": 31709.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "fa23b22ffd8bd13ce37bb6c24e8aa989561e70da739f094fc0fed3eb0520b494",
+      "activation_counts": {
+        "f": 0,
+        "m": 1957,
+        "r": 62,
+        "r_ccx": 62,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "msu",
+      "Q": 214,
+      "T": 28113.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "a38cd0ec774688aaad31ac7f530664b88612a9e82d4b7ab4ac90ec9b8b20812a",
+      "activation_counts": {
+        "f": 0,
+        "m": 1957,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "msur",
+      "Q": 214,
+      "T": 28051.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "bbba5b10bec63f5e6c964fdee752b024d200854fce4f0b94d4b5f33a760543a9",
+      "activation_counts": {
+        "f": 0,
+        "m": 1957,
+        "r": 62,
+        "r_ccx": 62,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "mu",
+      "Q": 214,
+      "T": 28113.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "a38cd0ec774688aaad31ac7f530664b88612a9e82d4b7ab4ac90ec9b8b20812a",
+      "activation_counts": {
+        "f": 0,
+        "m": 1957,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": []
+    },
+    {
+      "policy": "mur",
+      "Q": 214,
+      "T": 28051.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "bbba5b10bec63f5e6c964fdee752b024d200854fce4f0b94d4b5f33a760543a9",
+      "activation_counts": {
+        "f": 0,
+        "m": 1957,
+        "r": 62,
+        "r_ccx": 62,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": []
+    },
+    {
+      "policy": "none",
+      "Q": 214,
+      "T": 33728.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "b1c0c04919cd9b231aee676948d8e2fb917cdee16268a62aed132fd0b14700d1",
+      "activation_counts": {
+        "f": 0,
+        "m": 0,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": []
+    },
+    {
+      "policy": "r",
+      "Q": 214,
+      "T": 33664.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "811a917b8fceab9aee4d3dce97f64416f19bf49eac6ff691217028ae57c77373",
+      "activation_counts": {
+        "f": 0,
+        "m": 0,
+        "r": 64,
+        "r_ccx": 64,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": []
+    },
+    {
+      "policy": "s",
+      "Q": 214,
+      "T": 33728.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "b1c0c04919cd9b231aee676948d8e2fb917cdee16268a62aed132fd0b14700d1",
+      "activation_counts": {
+        "f": 0,
+        "m": 0,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "sr",
+      "Q": 214,
+      "T": 33664.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "811a917b8fceab9aee4d3dce97f64416f19bf49eac6ff691217028ae57c77373",
+      "activation_counts": {
+        "f": 0,
+        "m": 0,
+        "r": 64,
+        "r_ccx": 64,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "su",
+      "Q": 214,
+      "T": 30070.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "8fd84fef5550400b04dd115e56ec41fe64ce307cac79d97675e889e99b1a5d4b",
+      "activation_counts": {
+        "f": 0,
+        "m": 0,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "sur",
+      "Q": 214,
+      "T": 30006.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "b5fb05242c8bd8e71692c7a66dd8258622e18eae64f7143a55f4db826430a7cb",
+      "activation_counts": {
+        "f": 0,
+        "m": 0,
+        "r": 64,
+        "r_ccx": 64,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ]
+    },
+    {
+      "policy": "u",
+      "Q": 214,
+      "T": 30070.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "8fd84fef5550400b04dd115e56ec41fe64ce307cac79d97675e889e99b1a5d4b",
+      "activation_counts": {
+        "f": 0,
+        "m": 0,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": []
+    },
+    {
+      "policy": "ur",
+      "Q": 214,
+      "T": 30006.0,
+      "pairs": 64,
+      "failed_inputs": 0,
+      "ops_sha256": "b5fb05242c8bd8e71692c7a66dd8258622e18eae64f7143a55f4db826430a7cb",
+      "activation_counts": {
+        "f": 0,
+        "m": 0,
+        "r": 64,
+        "r_ccx": 64,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": []
+    }
+  ],
+  "scope": "Development correctness and activation smoke checks. This is separate from the four-policy100k qualification family. Inactive inherited flags supply no transfer evidence."
+}

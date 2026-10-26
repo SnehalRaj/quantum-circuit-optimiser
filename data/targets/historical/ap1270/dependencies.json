@@ -1,0 +1,7 @@
+[
+  {
+    "submissionId": "54acebaf-8d55-419e-b739-799d23bdbde0",
+    "rationale": "Reuses the Leapfrog point-addition implementation, GCD walk, modular arithmetic, replay/history code and cleanup from published commit377b8a464e221aaeefd9640b6c7ee2f83114c36b. The local L2 repair48dcefa9 and this fixed source-replayed configuration are derived project work.",
+    "evidence": "Compare src/point_add/leapfrog with public source377b8a464e221aaeefd9640b6c7ee2f83114c36b. The wrapper fixes24 settings and adapts namespaces. NOTICE and source/table contents are retained. ADAPTER.md records the lineage and exact operation SHA."
+  }
+]

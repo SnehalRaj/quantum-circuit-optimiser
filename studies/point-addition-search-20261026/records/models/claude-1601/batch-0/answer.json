@@ -1,0 +1,4 @@
+{
+  "action_index": 24,
+  "reason": "With no slots used, the first test should be the full stack c1111. It uses u, r, free_s and combined_y together. u replaces AND erasure with X-basis measurement plus phase repair, which should cut executed Toffolis on uncompute. combined_y should cut the Toffolis spent on coordinate products. free_s should lower Q by releasing the cofactor register during inversion. r turns unread writes into phase operations. c0110 (r + free_s only) is a contrasting second recipe. It mainly tests whether the qubit-side rules lower Q alone. It also gives a fallback if u or combined_y fail the phase or scratch checks."
+}

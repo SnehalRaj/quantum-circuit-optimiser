@@ -1,0 +1,30 @@
+{
+  "archive_sha256": "0a09aa9fd74f1c5c117b16c6a1b9135dd4ba55764e966afee01cf7871691f24c",
+  "closure": "Release constructor module and include closure. Test-only external modules are excluded.",
+  "files_sha256": {
+    "NOTICE": "fdfff837a1a85c14fc8854cfb2fa8a43b2ac58a6b8fcc50e56fe6c9d1293c58f",
+    "src/point_add/affine_simplify.rs": "c3be1a376c29c531b18890128c309b46a114d956e857a378cf8d303cd7cd7d15",
+    "src/point_add/arith.rs": "9e2d1397633a35d1b85a18bcb2a66cf6f5ad470bdcdf2b5a5594808410eff735",
+    "src/point_add/builder.rs": "9a899516aff9074486f50ef3de0d72930ca849079c365ddaa149b9cea8c3e200",
+    "src/point_add/classical_wide/mod.rs": "cec7b33070b86ebccd7922adc45e8d44d241d1edf5de1024825971bcea094d35",
+    "src/point_add/classical_wide/product7_simplify.rs": "e98d8bda9bb53a08120de95d28d7573df5e1c36684814af0b2e811240413e381",
+    "src/point_add/classical_wide/table.rs": "ef273293b6af0b355f757836076bb0b4cfbc018828ea925b37ba064c63aef1d2",
+    "src/point_add/cond_pass.rs": "a56f374ad86c7dd3ca13cfd08291f5f9a4f40a54e122959c481656a54b9d987e",
+    "src/point_add/froghop_double.rs": "cbd3af3c6e63f3e935bc6be25541183529bd44fdaa7492116ee37a9f6994f7b4",
+    "src/point_add/froghop_one.rs": "699b978a0ee1c34aaf600089cc578f65c334026d1a578f238cac8ec6b53e15f1",
+    "src/point_add/mask.rs": "1d938c5343ad0b7cd35e32ef67e5a4a11b0a8bb6ac9d9bd27ca5d93d4aeb1d62",
+    "src/point_add/mod.rs": "294b8f8d2c1658a597a534a27aa75db9f0f5c1f2b9951452cc5735e53ecaf888",
+    "src/point_add/modp_double.rs": "6053c09ca8ecec077c42f4eda5c112eb0009f7b70ca0d5cc188945401f9fcb9b",
+    "src/point_add/pointadd_double.rs": "7e989e634a50d6d4c6140494bbfdeae89220b776ec95d7bb7df7d17741650a9a",
+    "src/point_add/pointadd_one.rs": "d24a2a648d5eb8ed9103bdc3de6a71a58c3a08e6a7312a802d48ca7f2b17ae30",
+    "src/point_add/product_simplify.rs": "adbbbf4d5dc0dc4dcb0e938f227e672a19075e2a352d9709572e57b9282ebf29",
+    "src/point_add/quadratic_simplify.rs": "370a2ea7eddc98aa15905f758d34ba38d5538e0321c73f91a930236286c8988c",
+    "src/point_add/refmodel_double.rs": "dd4a1de65e2c53c57028f89a3a92b7fa6a37a2dff13d29238134c312f872e40d",
+    "src/point_add/refmodel_one.rs": "d7d21f4430711ce90088c844eafbde7a99ef34322521c32a7ca8c2ad676378b4",
+    "src/point_add/sched_double.txt": "36198a321534dad4bc88d0c93c221fe7afb09f117053c8112c8b11cb7cab3a89",
+    "src/point_add/sched_one.txt": "a0d92ebf7ec7f1cd70dbe29c0c19e3cc30c8fc011da6f00f2282d37f91062873",
+    "src/point_add/truth_simplify.rs": "f16bc1a7bbb9aa9cfda5bc619c9a29300d3413e028deb450154f15adefd70c55"
+  },
+  "parent_commit": "410bec6de09f973c4fd0a8be75f70106fe5930de",
+  "schema": 1
+}

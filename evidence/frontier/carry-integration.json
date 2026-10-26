@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "public_source_files": 209,
+  "tree_count": 1,
+  "typed_jobs": 10,
+  "Q_values": [
+    819,
+    820,
+    821,
+    822,
+    823,
+    824,
+    825,
+    826,
+    827,
+    828
+  ],
+  "grammar_sha256": "de9aaeec2ee4e33c2a71752ed8ebe9a3af3e5c694e5c76a0d53ab84b1e28b402",
+  "materialized_job": "tree_8a9fe4179626-gpool-1-1",
+  "materialized_source_files": 217,
+  "base_commit": "b618b19cf76f0ffe3829b53a8af6653c95dc7e4e",
+  "all_T_inferences_unknown": true,
+  "scope": "Two immutable public trees; ten typed GPOOL jobs validated; one source materialized. No full-width circuit execution."
+}

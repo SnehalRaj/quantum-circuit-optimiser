@@ -1,0 +1,1659 @@
+{
+ "curve": "curve/curve-20261025T2201Z.json",
+ "jobs": [
+  {
+   "id": "q819-p19-cat",
+   "rank": 1,
+   "owner": "mac",
+   "Q": 819,
+   "tree": "818",
+   "kind": "pool",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 18;",
+     "pub const POOL_1: usize = 19;"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9718945,
+   "curve_T_at_Q": null,
+   "curve_holder_at_Q": null,
+   "best_T_at_or_below_Q": 9728780,
+   "must_beat": 9728780,
+   "margin_inference": 9835,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "cac0bf90"
+   ],
+   "setting_source_row": "cac0bf90",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q820-p20-cat",
+   "rank": 1,
+   "owner": "mac",
+   "Q": 820,
+   "tree": "818",
+   "kind": "pool",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 18;",
+     "pub const POOL_1: usize = 20;"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9708916,
+   "curve_T_at_Q": null,
+   "curve_holder_at_Q": null,
+   "best_T_at_or_below_Q": 9728780,
+   "must_beat": 9728780,
+   "margin_inference": 19864,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "a406c175"
+   ],
+   "setting_source_row": "a406c175",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q821-p21-cat",
+   "rank": 1,
+   "owner": "cluster",
+   "Q": 821,
+   "tree": "818",
+   "kind": "pool",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 18;",
+     "pub const POOL_1: usize = 21;"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9699277,
+   "curve_T_at_Q": 9719483,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 9719483,
+   "must_beat": 9719483,
+   "margin_inference": 20206,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "1c0943d8"
+   ],
+   "setting_source_row": "1c0943d8",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q822-p22-cat",
+   "rank": 1,
+   "owner": "cluster",
+   "Q": 822,
+   "tree": "818",
+   "kind": "pool",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 18;",
+     "pub const POOL_1: usize = 22;"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9688810,
+   "curve_T_at_Q": 9709016,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 9709016,
+   "must_beat": 9709016,
+   "margin_inference": 20206,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "aa3a77d2"
+   ],
+   "setting_source_row": "aa3a77d2",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q823-p23-cat",
+   "rank": 1,
+   "owner": "cluster",
+   "Q": 823,
+   "tree": "818",
+   "kind": "pool",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 18;",
+     "pub const POOL_1: usize = 23;"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9679059,
+   "curve_T_at_Q": 9699265,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 9699265,
+   "must_beat": 9699265,
+   "margin_inference": 20206,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "f1152e4d"
+   ],
+   "setting_source_row": "f1152e4d",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q824-p24-cat",
+   "rank": 1,
+   "owner": "cluster",
+   "Q": 824,
+   "tree": "818",
+   "kind": "pool",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 18;",
+     "pub const POOL_1: usize = 24;"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9669073,
+   "curve_T_at_Q": 9689279,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 9689279,
+   "must_beat": 9689279,
+   "margin_inference": 20206,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "38c3a08f"
+   ],
+   "setting_source_row": "38c3a08f",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q825-p25-cat",
+   "rank": 1,
+   "owner": "cluster",
+   "Q": 825,
+   "tree": "818",
+   "kind": "pool",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 18;",
+     "pub const POOL_1: usize = 25;"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9658838,
+   "curve_T_at_Q": 9679044,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 9679044,
+   "must_beat": 9679044,
+   "margin_inference": 20206,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "96c27779"
+   ],
+   "setting_source_row": "96c27779",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q826-p26-cat",
+   "rank": 1,
+   "owner": "cluster",
+   "Q": 826,
+   "tree": "818",
+   "kind": "pool",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 18;",
+     "pub const POOL_1: usize = 26;"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9648941,
+   "curve_T_at_Q": 9669147,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 9669147,
+   "must_beat": 9669147,
+   "margin_inference": 20206,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "8486e4c7"
+   ],
+   "setting_source_row": "8486e4c7",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q827-p27-cat",
+   "rank": 1,
+   "owner": "cluster",
+   "Q": 827,
+   "tree": "818",
+   "kind": "pool",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 18;",
+     "pub const POOL_1: usize = 27;"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9638893,
+   "curve_T_at_Q": 9659099,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 9659099,
+   "must_beat": 9659099,
+   "margin_inference": 20206,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "c32f8901"
+   ],
+   "setting_source_row": "c32f8901",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q828-g10-cat",
+   "rank": 2,
+   "owner": "cluster",
+   "Q": 828,
+   "tree": "818",
+   "kind": "lane",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 10;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9585803,
+   "curve_T_at_Q": 9606009,
+   "curve_holder_at_Q": "gopikannappan",
+   "best_T_at_or_below_Q": 9606009,
+   "must_beat": 9606009,
+   "margin_inference": 20206,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "e2194147"
+   ],
+   "setting_source_row": "e2194147",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q829-g11-cat",
+   "rank": 2,
+   "owner": "cluster",
+   "Q": 829,
+   "tree": "818",
+   "kind": "lane",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 11;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9571924,
+   "curve_T_at_Q": null,
+   "curve_holder_at_Q": null,
+   "best_T_at_or_below_Q": 9606009,
+   "must_beat": 9606009,
+   "margin_inference": 34084,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5"
+   ],
+   "setting_source_row": null,
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q830-g12-cat",
+   "rank": 2,
+   "owner": "cluster",
+   "Q": 830,
+   "tree": "818",
+   "kind": "lane",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 12;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9558046,
+   "curve_T_at_Q": null,
+   "curve_holder_at_Q": null,
+   "best_T_at_or_below_Q": 9606009,
+   "must_beat": 9606009,
+   "margin_inference": 47962,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5"
+   ],
+   "setting_source_row": null,
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q831-g13-cat",
+   "rank": 2,
+   "owner": "cluster",
+   "Q": 831,
+   "tree": "818",
+   "kind": "lane",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 13;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9544168,
+   "curve_T_at_Q": null,
+   "curve_holder_at_Q": null,
+   "best_T_at_or_below_Q": 9606009,
+   "must_beat": 9606009,
+   "margin_inference": 61841,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5"
+   ],
+   "setting_source_row": null,
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q832-g14-cat",
+   "rank": 2,
+   "owner": "cluster",
+   "Q": 832,
+   "tree": "818",
+   "kind": "lane",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 14;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9530289,
+   "curve_T_at_Q": null,
+   "curve_holder_at_Q": null,
+   "best_T_at_or_below_Q": 9606009,
+   "must_beat": 9606009,
+   "margin_inference": 75719,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5"
+   ],
+   "setting_source_row": null,
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q833-g15-cat",
+   "rank": 2,
+   "owner": "cluster",
+   "Q": 833,
+   "tree": "818",
+   "kind": "lane",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 15;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9516411,
+   "curve_T_at_Q": null,
+   "curve_holder_at_Q": null,
+   "best_T_at_or_below_Q": 9606009,
+   "must_beat": 9606009,
+   "margin_inference": 89597,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5"
+   ],
+   "setting_source_row": null,
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q834-g16-cat",
+   "rank": 2,
+   "owner": "cluster",
+   "Q": 834,
+   "tree": "818",
+   "kind": "lane",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 16;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9502533,
+   "curve_T_at_Q": 9522739,
+   "curve_holder_at_Q": "gopikannappan",
+   "best_T_at_or_below_Q": 9522739,
+   "must_beat": 9522739,
+   "margin_inference": 20206,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "73ba61c3"
+   ],
+   "setting_source_row": "73ba61c3",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q835-g17-cat",
+   "rank": 2,
+   "owner": "cluster",
+   "Q": 835,
+   "tree": "818",
+   "kind": "lane",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 17;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9490507,
+   "curve_T_at_Q": 9510713,
+   "curve_holder_at_Q": "gopikannappan",
+   "best_T_at_or_below_Q": 9510713,
+   "must_beat": 9510713,
+   "margin_inference": 20206,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "289d9410"
+   ],
+   "setting_source_row": "289d9410",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q836-g18-cat",
+   "rank": 2,
+   "owner": "cluster",
+   "Q": 836,
+   "tree": "818",
+   "kind": "lane",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 18;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9475959,
+   "curve_T_at_Q": 9496165,
+   "curve_holder_at_Q": "gopikannappan",
+   "best_T_at_or_below_Q": 9496165,
+   "must_beat": 9496165,
+   "margin_inference": 20206,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "6dfce123"
+   ],
+   "setting_source_row": "6dfce123",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q837-g19-cat",
+   "rank": 2,
+   "owner": "cluster",
+   "Q": 837,
+   "tree": "818",
+   "kind": "lane",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 19;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9466481,
+   "curve_T_at_Q": 9486687,
+   "curve_holder_at_Q": "gopikannappan",
+   "best_T_at_or_below_Q": 9486687,
+   "must_beat": 9486687,
+   "margin_inference": 20206,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "c5e0f3a5"
+   ],
+   "setting_source_row": "c5e0f3a5",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q838-g20-cat",
+   "rank": 2,
+   "owner": "cluster",
+   "Q": 838,
+   "tree": "818",
+   "kind": "lane",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 20;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9456809,
+   "curve_T_at_Q": 9477015,
+   "curve_holder_at_Q": "gopikannappan",
+   "best_T_at_or_below_Q": 9477015,
+   "must_beat": 9477015,
+   "margin_inference": 20206,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5",
+    "c145c257"
+   ],
+   "setting_source_row": "c145c257",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q815-p15-cat",
+   "rank": 3,
+   "owner": "cluster",
+   "Q": 815,
+   "tree": "818",
+   "kind": "pool",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 18;",
+     "pub const POOL_1: usize = 15;"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9759050,
+   "curve_T_at_Q": 9815991,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 9815991,
+   "must_beat": 9815991,
+   "margin_inference": 56941,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5"
+   ],
+   "setting_source_row": null,
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q817-p17-cat",
+   "rank": 3,
+   "owner": "cluster",
+   "Q": 817,
+   "tree": "818",
+   "kind": "pool",
+   "base_commit": "4073f09cfa7fe733fdeb64841193282aaff293d9",
+   "base_row": "b9a40957",
+   "base_desc": "our Q818 row: odinfree's 818 tree (d2583a60, commit b618b19c) + levers u,r (mfsur) + the catalog, inherited nonce",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 18;",
+     "pub const POOL_1: usize = 17;"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 9738870,
+   "curve_T_at_Q": 9759081,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 9759081,
+   "must_beat": 9759081,
+   "margin_inference": 20211,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev) and 0 of 40,960 (audit) on the Q818 child; odinfree measured the base at 0.27 per 9,024",
+   "pass_chance_inference": 0.9,
+   "declare": [
+    "d2583a60-f676-44b6-9e25-399dbdd273d7",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "6d08713c-4a11-4384-9fe4-53fb9f5aca02",
+    "d419f804-80ed-4ddd-914c-c1e1d149a706",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b9a40957-b59c-4d8a-90eb-d65831365ec5"
+   ],
+   "setting_source_row": null,
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q840-p16-cat",
+   "rank": 4,
+   "owner": "cluster",
+   "Q": 840,
+   "tree": "839",
+   "kind": "pool",
+   "base_commit": "2cca36f958f6e5a818e9f693a2f95f7a2e3ece25",
+   "base_row": "7a7367a3",
+   "base_desc": "our Q839 row: gnuchev's 839 tree (a45bcccd) + levers u,r (mfsur); no catalog yet",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 15;",
+     "pub const POOL_1: usize = 16;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "mod cond_pass;",
+     "mod cond_pass;\nmod frontier_rewrite;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "    ops.extend(tail);",
+     "    ops = frontier_rewrite::apply(ops);\n    ops.extend(tail);"
+    ]
+   ],
+   "files_from_commit_4073f09c": {
+    "src/point_add/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53",
+    "src/point_add/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+   },
+   "expected_T_inference": 8558299,
+   "curve_T_at_Q": 8559193,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 8559193,
+   "must_beat": 8559193,
+   "margin_inference": 894,
+   "live": true,
+   "parent_rate": "0 failing of 40,960 (our audit of the base)",
+   "pass_chance_inference": 0.95,
+   "declare": [
+    "a45bcccd",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "1cb98519"
+   ],
+   "setting_source_row": "1cb98519",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q841-p17-cat",
+   "rank": 4,
+   "owner": "cluster",
+   "Q": 841,
+   "tree": "839",
+   "kind": "pool",
+   "base_commit": "2cca36f958f6e5a818e9f693a2f95f7a2e3ece25",
+   "base_row": "7a7367a3",
+   "base_desc": "our Q839 row: gnuchev's 839 tree (a45bcccd) + levers u,r (mfsur); no catalog yet",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 15;",
+     "pub const POOL_1: usize = 17;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "mod cond_pass;",
+     "mod cond_pass;\nmod frontier_rewrite;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "    ops.extend(tail);",
+     "    ops = frontier_rewrite::apply(ops);\n    ops.extend(tail);"
+    ]
+   ],
+   "files_from_commit_4073f09c": {
+    "src/point_add/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53",
+    "src/point_add/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+   },
+   "expected_T_inference": 8552856,
+   "curve_T_at_Q": 8553750,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 8553750,
+   "must_beat": 8553750,
+   "margin_inference": 894,
+   "live": true,
+   "parent_rate": "0 failing of 40,960 (our audit of the base)",
+   "pass_chance_inference": 0.95,
+   "declare": [
+    "a45bcccd",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "e9b02548"
+   ],
+   "setting_source_row": "e9b02548",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q842-p18-cat",
+   "rank": 4,
+   "owner": "cluster",
+   "Q": 842,
+   "tree": "839",
+   "kind": "pool",
+   "base_commit": "2cca36f958f6e5a818e9f693a2f95f7a2e3ece25",
+   "base_row": "7a7367a3",
+   "base_desc": "our Q839 row: gnuchev's 839 tree (a45bcccd) + levers u,r (mfsur); no catalog yet",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 15;",
+     "pub const POOL_1: usize = 18;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "mod cond_pass;",
+     "mod cond_pass;\nmod frontier_rewrite;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "    ops.extend(tail);",
+     "    ops = frontier_rewrite::apply(ops);\n    ops.extend(tail);"
+    ]
+   ],
+   "files_from_commit_4073f09c": {
+    "src/point_add/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53",
+    "src/point_add/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+   },
+   "expected_T_inference": 8547404,
+   "curve_T_at_Q": 8548298,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 8548298,
+   "must_beat": 8548298,
+   "margin_inference": 894,
+   "live": true,
+   "parent_rate": "0 failing of 40,960 (our audit of the base)",
+   "pass_chance_inference": 0.95,
+   "declare": [
+    "a45bcccd",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "ddc91f06"
+   ],
+   "setting_source_row": "ddc91f06",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q843-p19-cat",
+   "rank": 4,
+   "owner": "cluster",
+   "Q": 843,
+   "tree": "839",
+   "kind": "pool",
+   "base_commit": "2cca36f958f6e5a818e9f693a2f95f7a2e3ece25",
+   "base_row": "7a7367a3",
+   "base_desc": "our Q839 row: gnuchev's 839 tree (a45bcccd) + levers u,r (mfsur); no catalog yet",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 15;",
+     "pub const POOL_1: usize = 19;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "mod cond_pass;",
+     "mod cond_pass;\nmod frontier_rewrite;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "    ops.extend(tail);",
+     "    ops = frontier_rewrite::apply(ops);\n    ops.extend(tail);"
+    ]
+   ],
+   "files_from_commit_4073f09c": {
+    "src/point_add/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53",
+    "src/point_add/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+   },
+   "expected_T_inference": 8542078,
+   "curve_T_at_Q": 8542972,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 8542972,
+   "must_beat": 8542972,
+   "margin_inference": 894,
+   "live": true,
+   "parent_rate": "0 failing of 40,960 (our audit of the base)",
+   "pass_chance_inference": 0.95,
+   "declare": [
+    "a45bcccd",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "30059028"
+   ],
+   "setting_source_row": "30059028",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q844-p20-cat",
+   "rank": 4,
+   "owner": "cluster",
+   "Q": 844,
+   "tree": "839",
+   "kind": "pool",
+   "base_commit": "2cca36f958f6e5a818e9f693a2f95f7a2e3ece25",
+   "base_row": "7a7367a3",
+   "base_desc": "our Q839 row: gnuchev's 839 tree (a45bcccd) + levers u,r (mfsur); no catalog yet",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 15;",
+     "pub const POOL_1: usize = 20;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "mod cond_pass;",
+     "mod cond_pass;\nmod frontier_rewrite;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "    ops.extend(tail);",
+     "    ops = frontier_rewrite::apply(ops);\n    ops.extend(tail);"
+    ]
+   ],
+   "files_from_commit_4073f09c": {
+    "src/point_add/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53",
+    "src/point_add/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+   },
+   "expected_T_inference": 8536650,
+   "curve_T_at_Q": 8537544,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 8537544,
+   "must_beat": 8537544,
+   "margin_inference": 894,
+   "live": true,
+   "parent_rate": "0 failing of 40,960 (our audit of the base)",
+   "pass_chance_inference": 0.95,
+   "declare": [
+    "a45bcccd",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "b8cfe493"
+   ],
+   "setting_source_row": "b8cfe493",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q845-p21-cat",
+   "rank": 4,
+   "owner": "cluster",
+   "Q": 845,
+   "tree": "839",
+   "kind": "pool",
+   "base_commit": "2cca36f958f6e5a818e9f693a2f95f7a2e3ece25",
+   "base_row": "7a7367a3",
+   "base_desc": "our Q839 row: gnuchev's 839 tree (a45bcccd) + levers u,r (mfsur); no catalog yet",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 15;",
+     "pub const POOL_1: usize = 21;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "mod cond_pass;",
+     "mod cond_pass;\nmod frontier_rewrite;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "    ops.extend(tail);",
+     "    ops = frontier_rewrite::apply(ops);\n    ops.extend(tail);"
+    ]
+   ],
+   "files_from_commit_4073f09c": {
+    "src/point_add/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53",
+    "src/point_add/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+   },
+   "expected_T_inference": 8531354,
+   "curve_T_at_Q": 8532248,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 8532248,
+   "must_beat": 8532248,
+   "margin_inference": 894,
+   "live": true,
+   "parent_rate": "0 failing of 40,960 (our audit of the base)",
+   "pass_chance_inference": 0.95,
+   "declare": [
+    "a45bcccd",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "7ba8b197"
+   ],
+   "setting_source_row": "7ba8b197",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q846-p22-cat",
+   "rank": 4,
+   "owner": "cluster",
+   "Q": 846,
+   "tree": "839",
+   "kind": "pool",
+   "base_commit": "2cca36f958f6e5a818e9f693a2f95f7a2e3ece25",
+   "base_row": "7a7367a3",
+   "base_desc": "our Q839 row: gnuchev's 839 tree (a45bcccd) + levers u,r (mfsur); no catalog yet",
+   "edits": [
+    [
+     "src/point_add/froghop_one.rs",
+     "pub const POOL_1: usize = 15;",
+     "pub const POOL_1: usize = 22;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "mod cond_pass;",
+     "mod cond_pass;\nmod frontier_rewrite;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "    ops.extend(tail);",
+     "    ops = frontier_rewrite::apply(ops);\n    ops.extend(tail);"
+    ]
+   ],
+   "files_from_commit_4073f09c": {
+    "src/point_add/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53",
+    "src/point_add/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+   },
+   "expected_T_inference": 8522842,
+   "curve_T_at_Q": 8523736,
+   "curve_holder_at_Q": "odinfree",
+   "best_T_at_or_below_Q": 8523736,
+   "must_beat": 8523736,
+   "margin_inference": 894,
+   "live": true,
+   "parent_rate": "0 failing of 40,960 (our audit of the base)",
+   "pass_chance_inference": 0.95,
+   "declare": [
+    "a45bcccd",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "d418a62e"
+   ],
+   "setting_source_row": "d418a62e",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q847-g8-cat",
+   "rank": 4,
+   "owner": "cluster",
+   "Q": 847,
+   "tree": "839",
+   "kind": "lane",
+   "base_commit": "2cca36f958f6e5a818e9f693a2f95f7a2e3ece25",
+   "base_row": "7a7367a3",
+   "base_desc": "our Q839 row: gnuchev's 839 tree (a45bcccd) + levers u,r (mfsur); no catalog yet",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 8;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "mod cond_pass;",
+     "mod cond_pass;\nmod frontier_rewrite;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "    ops.extend(tail);",
+     "    ops = frontier_rewrite::apply(ops);\n    ops.extend(tail);"
+    ]
+   ],
+   "files_from_commit_4073f09c": {
+    "src/point_add/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53",
+    "src/point_add/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+   },
+   "expected_T_inference": 8485452,
+   "curve_T_at_Q": 8486346,
+   "curve_holder_at_Q": "gopikannappan",
+   "best_T_at_or_below_Q": 8486346,
+   "must_beat": 8486346,
+   "margin_inference": 894,
+   "live": true,
+   "parent_rate": "0 failing of 40,960 (our audit of the base)",
+   "pass_chance_inference": 0.95,
+   "declare": [
+    "a45bcccd",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "c23e92b1"
+   ],
+   "setting_source_row": "c23e92b1",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q848-g9-cat",
+   "rank": 4,
+   "owner": "cluster",
+   "Q": 848,
+   "tree": "839",
+   "kind": "lane",
+   "base_commit": "2cca36f958f6e5a818e9f693a2f95f7a2e3ece25",
+   "base_row": "7a7367a3",
+   "base_desc": "our Q839 row: gnuchev's 839 tree (a45bcccd) + levers u,r (mfsur); no catalog yet",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 9;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "mod cond_pass;",
+     "mod cond_pass;\nmod frontier_rewrite;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "    ops.extend(tail);",
+     "    ops = frontier_rewrite::apply(ops);\n    ops.extend(tail);"
+    ]
+   ],
+   "files_from_commit_4073f09c": {
+    "src/point_add/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53",
+    "src/point_add/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+   },
+   "expected_T_inference": 8478481,
+   "curve_T_at_Q": null,
+   "curve_holder_at_Q": null,
+   "best_T_at_or_below_Q": 8486346,
+   "must_beat": 8486346,
+   "margin_inference": 7865,
+   "live": true,
+   "parent_rate": "0 failing of 40,960 (our audit of the base)",
+   "pass_chance_inference": 0.95,
+   "declare": [
+    "a45bcccd",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+    "11613a51-1243-4f91-801a-9e71600d1f99"
+   ],
+   "setting_source_row": null,
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q849-g10-cat",
+   "rank": 4,
+   "owner": "cluster",
+   "Q": 849,
+   "tree": "839",
+   "kind": "lane",
+   "base_commit": "2cca36f958f6e5a818e9f693a2f95f7a2e3ece25",
+   "base_row": "7a7367a3",
+   "base_desc": "our Q839 row: gnuchev's 839 tree (a45bcccd) + levers u,r (mfsur); no catalog yet",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 10;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "mod cond_pass;",
+     "mod cond_pass;\nmod frontier_rewrite;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "    ops.extend(tail);",
+     "    ops = frontier_rewrite::apply(ops);\n    ops.extend(tail);"
+    ]
+   ],
+   "files_from_commit_4073f09c": {
+    "src/point_add/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53",
+    "src/point_add/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+   },
+   "expected_T_inference": 8471510,
+   "curve_T_at_Q": null,
+   "curve_holder_at_Q": null,
+   "best_T_at_or_below_Q": 8486346,
+   "must_beat": 8486346,
+   "margin_inference": 14836,
+   "live": true,
+   "parent_rate": "0 failing of 40,960 (our audit of the base)",
+   "pass_chance_inference": 0.95,
+   "declare": [
+    "a45bcccd",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+    "11613a51-1243-4f91-801a-9e71600d1f99"
+   ],
+   "setting_source_row": null,
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q850-g11-cat",
+   "rank": 4,
+   "owner": "cluster",
+   "Q": 850,
+   "tree": "839",
+   "kind": "lane",
+   "base_commit": "2cca36f958f6e5a818e9f693a2f95f7a2e3ece25",
+   "base_row": "7a7367a3",
+   "base_desc": "our Q839 row: gnuchev's 839 tree (a45bcccd) + levers u,r (mfsur); no catalog yet",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 11;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "mod cond_pass;",
+     "mod cond_pass;\nmod frontier_rewrite;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "    ops.extend(tail);",
+     "    ops = frontier_rewrite::apply(ops);\n    ops.extend(tail);"
+    ]
+   ],
+   "files_from_commit_4073f09c": {
+    "src/point_add/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53",
+    "src/point_add/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+   },
+   "expected_T_inference": 8464539,
+   "curve_T_at_Q": null,
+   "curve_holder_at_Q": null,
+   "best_T_at_or_below_Q": 8486346,
+   "must_beat": 8486346,
+   "margin_inference": 21807,
+   "live": true,
+   "parent_rate": "0 failing of 40,960 (our audit of the base)",
+   "pass_chance_inference": 0.95,
+   "declare": [
+    "a45bcccd",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+    "11613a51-1243-4f91-801a-9e71600d1f99"
+   ],
+   "setting_source_row": null,
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q851-g12-cat",
+   "rank": 4,
+   "owner": "cluster",
+   "Q": 851,
+   "tree": "839",
+   "kind": "lane",
+   "base_commit": "2cca36f958f6e5a818e9f693a2f95f7a2e3ece25",
+   "base_row": "7a7367a3",
+   "base_desc": "our Q839 row: gnuchev's 839 tree (a45bcccd) + levers u,r (mfsur); no catalog yet",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 12;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "mod cond_pass;",
+     "mod cond_pass;\nmod frontier_rewrite;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "    ops.extend(tail);",
+     "    ops = frontier_rewrite::apply(ops);\n    ops.extend(tail);"
+    ]
+   ],
+   "files_from_commit_4073f09c": {
+    "src/point_add/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53",
+    "src/point_add/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+   },
+   "expected_T_inference": 8457568,
+   "curve_T_at_Q": null,
+   "curve_holder_at_Q": null,
+   "best_T_at_or_below_Q": 8486346,
+   "must_beat": 8486346,
+   "margin_inference": 28778,
+   "live": true,
+   "parent_rate": "0 failing of 40,960 (our audit of the base)",
+   "pass_chance_inference": 0.95,
+   "declare": [
+    "a45bcccd",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+    "11613a51-1243-4f91-801a-9e71600d1f99"
+   ],
+   "setting_source_row": null,
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q852-g13-cat",
+   "rank": 4,
+   "owner": "cluster",
+   "Q": 852,
+   "tree": "839",
+   "kind": "lane",
+   "base_commit": "2cca36f958f6e5a818e9f693a2f95f7a2e3ece25",
+   "base_row": "7a7367a3",
+   "base_desc": "our Q839 row: gnuchev's 839 tree (a45bcccd) + levers u,r (mfsur); no catalog yet",
+   "edits": [
+    [
+     "src/point_add/mod.rs",
+     "pub const GPOOL: usize = 0;",
+     "pub const GPOOL: usize = 13;"
+    ],
+    [
+     "src/point_add/froghop_one.rs",
+     "let gp = self.gp.clone();",
+     "let gp: Vec<QubitId> = Vec::new(); // S5 keeps ordinary MAJ lanes: its rolling prefix and inverse repair need them"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "mod cond_pass;",
+     "mod cond_pass;\nmod frontier_rewrite;"
+    ],
+    [
+     "src/point_add/mod.rs",
+     "    ops.extend(tail);",
+     "    ops = frontier_rewrite::apply(ops);\n    ops.extend(tail);"
+    ]
+   ],
+   "files_from_commit_4073f09c": {
+    "src/point_add/frontier_rewrite/mod.rs": "6b94ac22f2dfa224ab1fcc27c7ec2a54da09563b769ad87c35e16c95f753be53",
+    "src/point_add/frontier_rewrite/catalog.rs": "e5b1b248c301ef26202afff7f380f96ff806a075f279b06809c51b7b808ca052"
+   },
+   "expected_T_inference": 8450597,
+   "curve_T_at_Q": 8451491,
+   "curve_holder_at_Q": "gopikannappan",
+   "best_T_at_or_below_Q": 8451491,
+   "must_beat": 8451491,
+   "margin_inference": 894,
+   "live": true,
+   "parent_rate": "0 failing of 40,960 (our audit of the base)",
+   "pass_chance_inference": 0.95,
+   "declare": [
+    "a45bcccd",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+    "11613a51-1243-4f91-801a-9e71600d1f99",
+    "5e131113"
+   ],
+   "setting_source_row": "5e131113",
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q804-d13",
+   "rank": 5,
+   "owner": "mac",
+   "Q": 804,
+   "tree": "803",
+   "kind": "pool",
+   "base_commit": "8233380fbf34f30bee75dae47a567720ba4db97a",
+   "base_row": "2c478cc4",
+   "base_desc": "our Q803 row: odinfree's froghop-double 803 tree (a3b6c26c) + levers u,r; the catalog saves only 5 T here",
+   "edits": [
+    [
+     "src/point_add/froghop_double.rs",
+     "pub const POOL_D: usize = 12;",
+     "pub const POOL_D: usize = 13;"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 12576598,
+   "curve_T_at_Q": null,
+   "curve_holder_at_Q": null,
+   "best_T_at_or_below_Q": 12578098,
+   "must_beat": 12578098,
+   "margin_inference": 1500,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev)",
+   "pass_chance_inference": 0.95,
+   "declare": [
+    "a3b6c26c",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+    "2c478cc4"
+   ],
+   "setting_source_row": null,
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  },
+  {
+   "id": "q805-d14",
+   "rank": 5,
+   "owner": "mac",
+   "Q": 805,
+   "tree": "803",
+   "kind": "pool",
+   "base_commit": "8233380fbf34f30bee75dae47a567720ba4db97a",
+   "base_row": "2c478cc4",
+   "base_desc": "our Q803 row: odinfree's froghop-double 803 tree (a3b6c26c) + levers u,r; the catalog saves only 5 T here",
+   "edits": [
+    [
+     "src/point_add/froghop_double.rs",
+     "pub const POOL_D: usize = 12;",
+     "pub const POOL_D: usize = 14;"
+    ]
+   ],
+   "files_from_commit_4073f09c": {},
+   "expected_T_inference": 12575098,
+   "curve_T_at_Q": null,
+   "curve_holder_at_Q": null,
+   "best_T_at_or_below_Q": 12578098,
+   "must_beat": 12578098,
+   "margin_inference": 3000,
+   "live": true,
+   "parent_rate": "0 failing of 16,384 (dev)",
+   "pass_chance_inference": 0.95,
+   "declare": [
+    "a3b6c26c",
+    "59359890-410f-49b1-b4dc-c5e54ed528f0",
+    "7a7367a3-3cf5-43d4-94a7-0a6189d1c39c",
+    "2c478cc4"
+   ],
+   "setting_source_row": null,
+   "claimed_score_formula": "Q x T (T = the emitter's static expected Toffoli; or the screen's measured T)"
+  }
+ ]
+}

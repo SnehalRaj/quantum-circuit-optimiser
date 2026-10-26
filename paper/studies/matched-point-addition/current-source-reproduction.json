@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "scope": "The current source includes only whitespace/comment cleanup after qualification and rejects duplicate CLI settings. Its16-bit baseline emits identical operation bytes. The immutable qualified snapshot remains unchanged.",
+  "qualified_source_sha256": "6cddbf4d768cac7cdc428a8efbda05a24b29f027c46720fa5644c596fd6b14de",
+  "current_source_sha256": "9730a1f1b49e50e243a267b85d8a1d2e93dae6634050cf068ad0a3ba6ff2c434",
+  "ops_sha256": "b1c0c04919cd9b231aee676948d8e2fb917cdee16268a62aed132fd0b14700d1",
+  "current_emitter_sha256": "4c4a3a461fd58682c9047d2c371b7f4f1a5da93d214de3b430b7482a479afecf"
+}

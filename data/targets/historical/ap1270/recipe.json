@@ -1,0 +1,38 @@
+{
+  "S": 1008123460,
+  "backend": "leapfrog",
+  "changed_stream_depth": 1,
+  "depth": 1,
+  "name": "proposal-0036",
+  "recipe": {
+    "backend": "leapfrog",
+    "program": null,
+    "settings": {
+      "AB_FUSION": "0",
+      "HEO_PIN_ERASE_COMPARE": "20",
+      "HEO_PIN_FOLD_GUARD": "32",
+      "HEO_PIN_PP_FOLD_PROFILE": "0:0",
+      "HEO_PIN_PP_REPLAY_CHUNK_COMPARE": "21",
+      "HEO_PIN_PP_REPLAY_FLAG_COMPARE": "20",
+      "HEO_PIN_PP_REPLAY_FOLD_WINDOW": "64",
+      "HEO_PIN_PP_REPLAY_FOLD_WINDOW_MUL": "64",
+      "HEO_PIN_PP_WALK_MAX_QUBITS": "1270",
+      "HEO_PIN_SQ_ASM_TAIL": "32",
+      "LFX_FUSED_FWD_TO": "134",
+      "LFX_FUSED_REV_TO": "124",
+      "LFX_WPAD": "4",
+      "LFX_XTICKS": "4",
+      "LFX_Y15_CMP_EXTRA": "2",
+      "LFX_Y15_GUARD": "0",
+      "LFX_Y15_WIN": "61",
+      "LF_CELL_FOLD_MIN": "60",
+      "LF_CMP_FROM": "0",
+      "LF_CMP_SHIFT": "4,4",
+      "LF_MERGED_LATE_WIN": "62",
+      "LF_MERGED_WIN": "60",
+      "LF_REORDER_DIV": "76",
+      "LF_REORDER_MUL": "76"
+    }
+  },
+  "sha256": "9271a9aa2b368b88989e905a932d5469baece5f3af00c0e928e8dcb7b9ce3c01"
+}

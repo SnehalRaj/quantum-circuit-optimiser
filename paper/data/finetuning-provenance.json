@@ -1,0 +1,9 @@
+{
+  "schema": "paper-finetuning-provenance-v1",
+  "scope": "Frozen interim records, independently recounted. No new circuit evaluation or independent joint-failure audit.",
+  "source_artifact": "studies/historical/finetuning/summary.json",
+  "source_commit": "0f762c895372db5292b4d12994a42d433651ac7d",
+  "source_repository": "Development repository; source commit and retained artifacts identify this study.",
+  "study_provenance_sha256": "73ee1411e78dd5021b495bc0800a201d63381b10ef45ecfc9bb4529cbf4e4c6e",
+  "summary_sha256": "3877e12e19297b50a00a78ae157eebcbadd46bc2252e9f012bf532e1d08b3fdd"
+}

@@ -1,0 +1,4 @@
+{
+  "action_index": 16,
+  "reason": "c1000 tests whether measurement-based AND erasure reduces Toffolis. c0010 tests whether releasing the cofactor reduces Q enough to offset reconstruction cost."
+}

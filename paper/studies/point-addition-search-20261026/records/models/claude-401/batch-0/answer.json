@@ -1,0 +1,4 @@
+{
+  "action_index": 30,
+  "reason": "Pairs c1000 (u only) with c1111 (all rules). u uses X-basis measurement instead of Toffolis to erase ANDs, so it should cut mean T without extra qubits. c1111 is the upper bound with every rule on. Comparing them against the c0000 parent shows u's effect and what r, free_s and combined_y add."
+}

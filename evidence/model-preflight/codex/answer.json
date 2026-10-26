@@ -1,0 +1,4 @@
+{
+  "action_index": 0,
+  "reason": "Uses known-control simplification, phase-only AND, and classical guards without the extra inverse-AND and measured-erasure conditions."
+}

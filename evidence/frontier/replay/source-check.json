@@ -1,0 +1,51 @@
+{
+  "checked_utc": "2026-10-26T00:55:11.570168+00:00",
+  "records": [
+    {
+      "archived_operation_bytes": {
+        "bytes": 123415000,
+        "lookup": {
+          "field": "ops_location",
+          "record": "runs/pareto5-public-20261025/tracks/froghop-catalog/q818-ur-cat/emission.json"
+        },
+        "matches_expected": true,
+        "sha256": "a340e6a9fa6c4ba087206a537b4fdc93260630e87ec51ebed9d4486969e2d34a"
+      },
+      "candidate": "q818-ur-cat",
+      "fixture_sha256": "4aed1b91a932735f3ef31e10f42bf96dc31b1d70498d1c7649a14cec450a802b",
+      "source_record_hash_checks": {
+        "dependencies": true,
+        "emission": true,
+        "manifest": true,
+        "note": true,
+        "screen": true,
+        "service": true
+      }
+    },
+    {
+      "archived_operation_bytes": {
+        "bytes": 123304152,
+        "lookup": {
+          "field": "ops_location",
+          "record": "runs/pareto5-public-20261025/tracks/froghop-catalog/q819-p19-cat/emission.json"
+        },
+        "matches_expected": true,
+        "sha256": "818868c1fea2b67b40035d79c512f4b25ae436cf8be99fcfdef0fe81838fcd13"
+      },
+      "candidate": "q819-p19-cat",
+      "fixture_sha256": "1031147ab1c4ef563d2a27710f95725e07e11c99f926d291ddf28d8e1f3e0818",
+      "source_record_hash_checks": {
+        "dependencies": true,
+        "emission": true,
+        "manifest": true,
+        "note": true,
+        "screen": true,
+        "service": true
+      }
+    }
+  ],
+  "replay_status": "incomplete",
+  "schema": "lco-frontier-replay-source-check-v1",
+  "scope": "Read-only checks of retained source records and archived operation bytes. No circuit was rebuilt or evaluated. Fresh library replay remains required.",
+  "status": "archived_sources_checked"
+}

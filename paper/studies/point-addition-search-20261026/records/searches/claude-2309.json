@@ -1,0 +1,360 @@
+{
+  "arm": "claude",
+  "baseline": {
+    "Q": 214,
+    "QT": 6798566.0,
+    "T": 31769.0,
+    "alpha": 0.05,
+    "binomial_upper": 0.0007311125564754343,
+    "checker_binary_sha256": "9cf8903b33dd8971193d9b59435640fdca0fea1348a927fff83d1009a0089aed",
+    "checker_source_sha256": "45379a08de76fa11c3a6adbeff9532dd42d246298f45be46444de1793861153c",
+    "domain_exclusions": {},
+    "elapsed_seconds": 0.877671459,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "label": "point-addition-search-v1/development/2309",
+    "mean_toffoli": 31769.0,
+    "meets_bound": true,
+    "ops_sha256": "b84161037cdd8580e28172308418c1767b179abb27a7b02aa6ac90ebb74bfaf8",
+    "original_receipt_sha256": "a2d3ea991e89bd8b875ce33d39193e08606e47512f4a28994102237d170d96b1",
+    "packet_sha256": "962f5803792786e5c632ccae508aa011a336af179a1f72b391c00a18be987f53",
+    "pairs": 4096,
+    "passed": true,
+    "per_input_sha256": "a60cbfe909c0624366ebc0c1e551bb1e3ac198ad235744f63417c1806118acb4",
+    "qubits": 214,
+    "recipe_id": "c0000",
+    "record": "studies/point-addition-search-20261026/records/evaluations/26d0ab08f66ba7ff35b6ff7eb8e032ce7e68fd485aa6958eef16264e91bc0cde.json",
+    "scalar_rejections": 89,
+    "streams": 2
+  },
+  "calls": [
+    {
+      "batch": 0,
+      "error": null,
+      "original_receipt_sha256": "415d1eb618f1f95f45e0f7bf2fa9675db6c053d7b8cab8e8d4614456ca68bea9",
+      "prompt_sha256": "c3a2b7fa2fb07f65d9c71fc1dacb050dbf577ea8e833bdcefc2751f8a83c7095",
+      "provider": "claude",
+      "provider_estimate_usd": 0.06815059999999999,
+      "reason": "c1111 combines every Toffoli-reducing mechanism (u: measurement-based AND uncompute; r: unread writes to phase ops; combined_y: shared coordinate products) with free_s's qubit reduction, giving the largest expected Q*T drop. c1101 is the same recipe without free_s. Rebuilding the cofactor register adds Toffolis that could offset the qubit saving, so this pair directly measures whether free_s helps in Q*T terms.",
+      "requested_model": "claude-opus-5-5",
+      "resolved_models": [
+        "claude-opus-5-5"
+      ],
+      "success": true,
+      "tool_use": false,
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 6669,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 6669,
+        "cache_read_input_tokens": 2753,
+        "fallback_credit": null,
+        "inference_geo": "global",
+        "input_tokens": 2,
+        "iterations": [
+          {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 6669,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 6669,
+            "cache_read_input_tokens": 2753,
+            "input_tokens": 2,
+            "output_tokens": 712,
+            "type": "message"
+          }
+        ],
+        "output_tokens": 712,
+        "output_tokens_details": {
+          "thinking_tokens": 157
+        },
+        "server_tool_use": {
+          "web_fetch_requests": 0,
+          "web_search_requests": 0
+        },
+        "service_tier": "standard",
+        "speed": "standard"
+      },
+      "wall_seconds": 10.025149822235107
+    },
+    {
+      "batch": 1,
+      "error": null,
+      "original_receipt_sha256": "e26aed9bb47c7dd3e0209dd38a91c38677129a6edde0dbe8a2e5c97aeff0aa5a",
+      "prompt_sha256": "89daa82117c4c16c8e20dc1a4a4dc7f355a8529b9e9b0a4887eabc09828231a6",
+      "provider": "claude",
+      "provider_estimate_usd": 0.0811946,
+      "reason": "free_s alone (c1101\u2192c1111) cut Q 214\u2192198 at about the same T, so it is kept. The ~11% T reduction from u, r and combined_y has not been split between them. c1110 drops combined_y and c0111 drops u (u overlaps with r, since both are phase-repair rewrites). These one-rule ablations around the best recipe c1111 show which T-saving rule is redundant, and either could beat c1111's QT if its dropped rule costs scratch qubits.",
+      "requested_model": "claude-opus-5-5",
+      "resolved_models": [
+        "claude-opus-5-5"
+      ],
+      "success": true,
+      "tool_use": false,
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 5792,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 5792,
+        "cache_read_input_tokens": 2753,
+        "fallback_credit": null,
+        "inference_geo": "global",
+        "input_tokens": 2,
+        "iterations": [
+          {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 5792,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 5792,
+            "cache_read_input_tokens": 2753,
+            "input_tokens": 2,
+            "output_tokens": 1715,
+            "type": "message"
+          }
+        ],
+        "output_tokens": 1715,
+        "output_tokens_details": {
+          "thinking_tokens": 1132
+        },
+        "server_tool_use": {
+          "web_fetch_requests": 0,
+          "web_search_requests": 0
+        },
+        "service_tier": "standard",
+        "speed": "standard"
+      },
+      "wall_seconds": 24.56282114982605
+    },
+    {
+      "batch": 2,
+      "error": null,
+      "original_receipt_sha256": "9602d18e1b53d097e987b0e7b3e1a0a30a6dbaa0212aed96f968ea4fb4f0f18e",
+      "prompt_sha256": "a818803ca101f466ae49be92b06022752cb929b31a6dbe544400fcf62d1fa75e",
+      "provider": "claude",
+      "provider_estimate_usd": 0.0629226,
+      "reason": "The archive shows free_s cuts Q from 214 to 198 (c1101 vs c1111), and u cuts T by about 3.9k (c0111 vs c1111). combined_y adds about 355 T (c1110 vs c1111). So the best candidate keeps u and free_s and drops combined_y. That leaves r: c1110 (r on) is the current best at QT 5.53M. c1010 tests whether dropping r does better still. c1011 pairs with c1111 to isolate r's effect when combined_y is on. Together they show whether r helps, and the batch includes the strongest untested candidate. Recipes without free_s (Q=214) or without u (high T) are unlikely to beat the frontier.",
+      "requested_model": "claude-opus-5-5",
+      "resolved_models": [
+        "claude-opus-5-5"
+      ],
+      "success": true,
+      "tool_use": false,
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 5068,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 5068,
+        "cache_read_input_tokens": 2753,
+        "fallback_credit": null,
+        "inference_geo": "global",
+        "input_tokens": 2,
+        "iterations": [
+          {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 5068,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 5068,
+            "cache_read_input_tokens": 2753,
+            "input_tokens": 2,
+            "output_tokens": 1091,
+            "type": "message"
+          }
+        ],
+        "output_tokens": 1091,
+        "output_tokens_details": {
+          "thinking_tokens": 785
+        },
+        "server_tool_use": {
+          "web_fetch_requests": 0,
+          "web_search_requests": 0
+        },
+        "service_tier": "standard",
+        "speed": "standard"
+      },
+      "wall_seconds": 13.048655986785889
+    },
+    {
+      "batch": 3,
+      "error": null,
+      "original_receipt_sha256": "88fe36dfbd5905aa9f6242c39b2289d956ff7acf20835731c65577e2e1cfe28e",
+      "prompt_sha256": "f7be8b8c31a435daa721e7062e9b5e7a36bf7485dd043160753783f6705634b6",
+      "provider": "claude",
+      "provider_estimate_usd": 0.0513866,
+      "reason": "The archive shows clear patterns. Turning on free_s is what cuts qubits from 214 to 198. Turning on u is what cuts most of the Toffolis, about 3,800 fewer. combined_y adds about 355 Toffolis (c1111 vs c1110, and c1011 vs c1010), and r saves about 60. The current best is c1110 (QT 5,533,902). None of the remaining recipes has both u and free_s, so none is likely to beat it. With the last two slots, the most useful thing is to measure the two main effects on their own against the mfs parent: c1000 (u only) and c0010 (free_s only). That shows how much each rule contributes and whether u and free_s add up or interact in the measured frontier.",
+      "requested_model": "claude-opus-5-5",
+      "resolved_models": [
+        "claude-opus-5-5"
+      ],
+      "success": true,
+      "tool_use": false,
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 4496,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 4496,
+        "cache_read_input_tokens": 2753,
+        "fallback_credit": null,
+        "inference_geo": "global",
+        "input_tokens": 2,
+        "iterations": [
+          {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 4496,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 4496,
+            "cache_read_input_tokens": 2753,
+            "input_tokens": 2,
+            "output_tokens": 743,
+            "type": "message"
+          }
+        ],
+        "output_tokens": 743,
+        "output_tokens_details": {
+          "thinking_tokens": 431
+        },
+        "server_tool_use": {
+          "web_fetch_requests": 0,
+          "web_search_requests": 0
+        },
+        "service_tier": "standard",
+        "speed": "standard"
+      },
+      "wall_seconds": 10.256730794906616
+    }
+  ],
+  "checkpoints": [
+    {
+      "Q": 198,
+      "QT": 5604192.0,
+      "T": 28304.0,
+      "gain_percent": 17.568028316559705,
+      "proposals": 1,
+      "recipe_id": "c1111"
+    },
+    {
+      "Q": 198,
+      "QT": 5604192.0,
+      "T": 28304.0,
+      "gain_percent": 17.568028316559705,
+      "proposals": 2,
+      "recipe_id": "c1111"
+    },
+    {
+      "Q": 198,
+      "QT": 5533902.0,
+      "T": 27949.0,
+      "gain_percent": 18.601922817252937,
+      "proposals": 4,
+      "recipe_id": "c1110"
+    },
+    {
+      "Q": 198,
+      "QT": 5533902.0,
+      "T": 27949.0,
+      "gain_percent": 18.601922817252937,
+      "proposals": 8,
+      "recipe_id": "c1110"
+    }
+  ],
+  "complete": true,
+  "finalist": "c1110",
+  "seed": 2309,
+  "slots": [
+    {
+      "Q": 198,
+      "QT": 5604192.0,
+      "T": 28304.0,
+      "failed_inputs": 0,
+      "ops_sha256": "4879caa90a8b3deac432a4197586a9e0198f545091cf54e227d00363ad76c1a9",
+      "recipe_id": "c1111",
+      "record": "studies/point-addition-search-20261026/records/evaluations/792e707cbe6ed32686118b6ce2a5b2b5f68a118bf6d3b69bb35e714b973f91bd.json",
+      "slot": 1,
+      "status": "passed"
+    },
+    {
+      "Q": 214,
+      "QT": 6076102.0,
+      "T": 28393.0,
+      "failed_inputs": 0,
+      "ops_sha256": "9fff90506b318bf55d4f7d8994db1117765ead5da9dcf58d84639237eda704ea",
+      "recipe_id": "c1101",
+      "record": "studies/point-addition-search-20261026/records/evaluations/0f151d6fdb80d2674eb32ed40cf523605074562e96e36a6040ec963232180848.json",
+      "slot": 2,
+      "status": "passed"
+    },
+    {
+      "Q": 198,
+      "QT": 5533902.0,
+      "T": 27949.0,
+      "failed_inputs": 0,
+      "ops_sha256": "2c9006aa77c958e346e59c0008deb7836253bfe24e3574849fc0aae84812f9d4",
+      "recipe_id": "c1110",
+      "record": "studies/point-addition-search-20261026/records/evaluations/bfc9d747e4c8bb340fbbc69bd71e27d46c011b0d07ef7054bab738d73e27a2b7.json",
+      "slot": 3,
+      "status": "passed"
+    },
+    {
+      "Q": 198,
+      "QT": 6372234.0,
+      "T": 32183.0,
+      "failed_inputs": 0,
+      "ops_sha256": "54809861be30ab78368b6a9aeb64dbd84da75812169534993a905b650a7bb2ec",
+      "recipe_id": "c0111",
+      "record": "studies/point-addition-search-20261026/records/evaluations/b94ee883b3764101969a3359a292c2fe7eb96e3f3b0d1b8a79fd3b5736f62ea2.json",
+      "slot": 4,
+      "status": "passed"
+    },
+    {
+      "Q": 198,
+      "QT": 5545782.0,
+      "T": 28009.0,
+      "failed_inputs": 0,
+      "ops_sha256": "77a531ef7d5bead56efb86a0221ae3693830c4a1c4df9d339fe1c03a369b9358",
+      "recipe_id": "c1010",
+      "record": "studies/point-addition-search-20261026/records/evaluations/09f03088d3ee6353962b7ee83b1f3404d8ee210d01bad6a6bac035709e97db9d.json",
+      "slot": 5,
+      "status": "passed"
+    },
+    {
+      "Q": 198,
+      "QT": 5616270.0,
+      "T": 28365.0,
+      "failed_inputs": 0,
+      "ops_sha256": "ca0adb41706040e30c73dec320cc068a4e4cd8e76496993613c82d97f5117412",
+      "recipe_id": "c1011",
+      "record": "studies/point-addition-search-20261026/records/evaluations/042aedc40acb8d648561adfbfe57b1d01e972a7017924a86953fcfe925a57e36.json",
+      "slot": 6,
+      "status": "passed"
+    },
+    {
+      "Q": 214,
+      "QT": 6015754.0,
+      "T": 28111.0,
+      "failed_inputs": 0,
+      "ops_sha256": "d7f905ebad6c0e52c5cac636a64045fb333c6b0f6b396c4d81569fc60ed77adb",
+      "recipe_id": "c1000",
+      "record": "studies/point-addition-search-20261026/records/evaluations/6faeaf65e19f300890e1d7121662e66c97a1880f442a9023829873654c121146.json",
+      "slot": 7,
+      "status": "passed"
+    },
+    {
+      "Q": 198,
+      "QT": 6270066.0,
+      "T": 31667.0,
+      "failed_inputs": 0,
+      "ops_sha256": "b5104e98dd603445d7bc7e45dc78d855452ead95c8e926e56d4f485f6b21bdb0",
+      "recipe_id": "c0010",
+      "record": "studies/point-addition-search-20261026/records/evaluations/df7203cc16ccf54be81540a1eb22b38231b25bbeacdfbfcbb8a539073ecc2a71.json",
+      "slot": 8,
+      "status": "passed"
+    }
+  ],
+  "wall_seconds": 60.54617833439261
+}

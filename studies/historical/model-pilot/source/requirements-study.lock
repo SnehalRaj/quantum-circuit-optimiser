@@ -1,0 +1,5 @@
+# Measured pilot environment; Python 3.11.6
+numpy==2.3.0
+scipy==1.15.3
+matplotlib==3.10.3
+tiktoken==0.14.0

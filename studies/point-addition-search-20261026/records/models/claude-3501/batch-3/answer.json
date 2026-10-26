@@ -1,0 +1,4 @@
+{
+  "action_index": 58,
+  "reason": "From the archive: free_s cuts Q from 214 to 198 and T by ~100. u cuts T by ~3.7k (c0110 vs c1110). r changes T by ~60 or less. combined_y adds ~+350 to T (c1100\u2192c1101, c1110\u2192c1111). c1011 (u+free_s+y, Q198, predicted T ~28.36k, QT ~5.62M) has the best predicted QT of the unmeasured recipes and tests y without r, next to the frontier. c1000 (u alone, predicted QT ~6.0M) separates u's effect from r and free_s. It is the next-best candidate and checks additivity."
+}

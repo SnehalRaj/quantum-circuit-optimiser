@@ -1,0 +1,94 @@
+{
+  "schema": "lco-native-validation-family-v1",
+  "frozen": true,
+  "field_width": 16,
+  "pairs_per_policy": 100000,
+  "streams": 2,
+  "epsilon": 0.001,
+  "family_alpha": 0.05,
+  "family_tests": 4,
+  "alpha_per_policy": 0.0125,
+  "label": "lco-native-qualification-20261026-v1",
+  "source_sha256": "200ba8ed4b631267970c133fbd9dcb62ec761f900d5b2cd5f18df59d7060452b",
+  "checker_source_sha256": "5a00c89974f5774b1e44cd00c9e9e8f147aad4c695ddea31d24900cb31e849f8",
+  "conditional_source_sha256": "a56f374ad86c7dd3ca13cfd08291f5f9a4f40a54e122959c481656a54b9d987e",
+  "frozen_hashes": "84974c2a2f6075966a353f7d670f778ea14dcf4edac73a29872b602aac682922  work/native-validation/frozen/bin/circuit-check\n9b8aa1e1d2d20d04cd696f4957d9e277c0a881eca816c7e69717b879acce8e0c  work/native-validation/frozen/bin/circuit-transform\n2989d745671704596702e6db137dedd9f28f7e563e0103ec513270f796550436  work/native-validation/frozen/bin/small-emit\n2883e65290af4a3203cbe454f42657fcd06452ef11cd897bdbc889491c2a26b8  work/native-validation/frozen/native-source.tar.gz\n",
+  "driver": "evidence/native-validation/run-audit.sh",
+  "parent_policy": "mfs",
+  "source_snapshot": "work/native-validation/frozen/native-source.tar.gz",
+  "policies": [
+    {
+      "policy": "mfs",
+      "ops": "work/native-validation/qualified-mfs.qops.zst",
+      "ops_sha256": "b84161037cdd8580e28172308418c1767b179abb27a7b02aa6ac90ebb74bfaf8",
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ],
+      "guards_active": true,
+      "cancel_adjacent": false
+    },
+    {
+      "policy": "mfsu",
+      "ops": "work/native-validation/qualified-mfsu.qops.zst",
+      "ops_sha256": "d7f905ebad6c0e52c5cac636a64045fb333c6b0f6b396c4d81569fc60ed77adb",
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ],
+      "guards_active": true,
+      "cancel_adjacent": false
+    },
+    {
+      "policy": "mfsr",
+      "ops": "work/native-validation/qualified-mfsr.qops.zst",
+      "ops_sha256": "1f2d68beca2a499e28db27cc3c3ea0933f06efdbcd37501ed771882eeccb8df0",
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 60,
+        "r_ccx": 60,
+        "s": 0,
+        "u": 0
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ],
+      "guards_active": true,
+      "cancel_adjacent": false
+    },
+    {
+      "policy": "mfsur",
+      "ops": "work/native-validation/qualified-mfsur.qops.zst",
+      "ops_sha256": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83",
+      "activation_counts": {
+        "f": 2,
+        "m": 1957,
+        "r": 60,
+        "r_ccx": 60,
+        "s": 0,
+        "u": 3658
+      },
+      "inherited_inactive_mechanisms": [
+        "s"
+      ],
+      "guards_active": true,
+      "cancel_adjacent": false
+    }
+  ],
+  "scope": "The four compiler policies are tested once on real16-bit Kaliski point addition. All14 large targets reuse these small-stage policy results. This family supplies no large-width qualification."
+}

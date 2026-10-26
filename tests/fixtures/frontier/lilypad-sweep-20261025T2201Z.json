@@ -1,0 +1,2341 @@
+{
+  "curve": "curve/curve-20261025T2201Z.json",
+  "base": {
+    "commit": "f6cee264",
+    "row": "b1f90e3a-?",
+    "desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept"
+  },
+  "jobs": [
+    {
+      "id": "lily-w936",
+      "Q": 936,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 936"
+        ]
+      ],
+      "expected_T_inference": 2067570,
+      "must_beat": 2097309,
+      "holder_below": "gnuchev Q935",
+      "margin_inference": 29738,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w937",
+      "Q": 937,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 937"
+        ]
+      ],
+      "expected_T_inference": 2065888,
+      "must_beat": 2097309,
+      "holder_below": "gnuchev Q935",
+      "margin_inference": 31420,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w938",
+      "Q": 938,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 938"
+        ]
+      ],
+      "expected_T_inference": 2064207,
+      "must_beat": 2097309,
+      "holder_below": "gnuchev Q935",
+      "margin_inference": 33101,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w939",
+      "Q": 939,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 939"
+        ]
+      ],
+      "expected_T_inference": 2062525,
+      "must_beat": 2097309,
+      "holder_below": "gnuchev Q935",
+      "margin_inference": 34783,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w940",
+      "Q": 940,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 940"
+        ]
+      ],
+      "expected_T_inference": 2060844,
+      "must_beat": 2097309,
+      "holder_below": "gnuchev Q935",
+      "margin_inference": 36464,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w941",
+      "Q": 941,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 941"
+        ]
+      ],
+      "expected_T_inference": 2059444,
+      "must_beat": 2097309,
+      "holder_below": "gnuchev Q935",
+      "margin_inference": 37865,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w942",
+      "Q": 942,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 942"
+        ]
+      ],
+      "expected_T_inference": 2058043,
+      "must_beat": 2097309,
+      "holder_below": "gnuchev Q935",
+      "margin_inference": 39265,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w943",
+      "Q": 943,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 943"
+        ]
+      ],
+      "expected_T_inference": 2056643,
+      "must_beat": 2097309,
+      "holder_below": "gnuchev Q935",
+      "margin_inference": 40666,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w945",
+      "Q": 945,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 945"
+        ]
+      ],
+      "expected_T_inference": 2053842,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 1938,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w946",
+      "Q": 946,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 946"
+        ]
+      ],
+      "expected_T_inference": 2052308,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 3471,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w947",
+      "Q": 947,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 947"
+        ]
+      ],
+      "expected_T_inference": 2050774,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 5005,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w948",
+      "Q": 948,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 948"
+        ]
+      ],
+      "expected_T_inference": 2049240,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 6539,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w949",
+      "Q": 949,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 949"
+        ]
+      ],
+      "expected_T_inference": 2047707,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 8072,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w950",
+      "Q": 950,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 950"
+        ]
+      ],
+      "expected_T_inference": 2046173,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 9606,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w951",
+      "Q": 951,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 951"
+        ]
+      ],
+      "expected_T_inference": 2044903,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 10876,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w952",
+      "Q": 952,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 952"
+        ]
+      ],
+      "expected_T_inference": 2043633,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 12146,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w953",
+      "Q": 953,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 953"
+        ]
+      ],
+      "expected_T_inference": 2042364,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 13415,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w954",
+      "Q": 954,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 954"
+        ]
+      ],
+      "expected_T_inference": 2041094,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 14685,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w955",
+      "Q": 955,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 955"
+        ]
+      ],
+      "expected_T_inference": 2039824,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 15955,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w956",
+      "Q": 956,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 956"
+        ]
+      ],
+      "expected_T_inference": 2038677,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 17102,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w957",
+      "Q": 957,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 957"
+        ]
+      ],
+      "expected_T_inference": 2037531,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 18249,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w958",
+      "Q": 958,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 958"
+        ]
+      ],
+      "expected_T_inference": 2036384,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 19395,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w959",
+      "Q": 959,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 959"
+        ]
+      ],
+      "expected_T_inference": 2035237,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 20542,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w960",
+      "Q": 960,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 960"
+        ]
+      ],
+      "expected_T_inference": 2034196,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 21583,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w961",
+      "Q": 961,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 961"
+        ]
+      ],
+      "expected_T_inference": 2033182,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 22598,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w962",
+      "Q": 962,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 962"
+        ]
+      ],
+      "expected_T_inference": 2032167,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 23612,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w963",
+      "Q": 963,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 963"
+        ]
+      ],
+      "expected_T_inference": 2031163,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 24616,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w964",
+      "Q": 964,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 964"
+        ]
+      ],
+      "expected_T_inference": 2030163,
+      "must_beat": 2055780,
+      "holder_below": "gopikannappan Q944",
+      "margin_inference": 25616,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w966",
+      "Q": 966,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 966"
+        ]
+      ],
+      "expected_T_inference": 2028179,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 1085,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w967",
+      "Q": 967,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 967"
+        ]
+      ],
+      "expected_T_inference": 2027194,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 2070,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w968",
+      "Q": 968,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 968"
+        ]
+      ],
+      "expected_T_inference": 2026209,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 3055,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w969",
+      "Q": 969,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 969"
+        ]
+      ],
+      "expected_T_inference": 2025225,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 4039,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w970",
+      "Q": 970,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 970"
+        ]
+      ],
+      "expected_T_inference": 2024240,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 5024,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w971",
+      "Q": 971,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 971"
+        ]
+      ],
+      "expected_T_inference": 2023290,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 5975,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w972",
+      "Q": 972,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 972"
+        ]
+      ],
+      "expected_T_inference": 2022339,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 6925,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w973",
+      "Q": 973,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 973"
+        ]
+      ],
+      "expected_T_inference": 2021389,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 7876,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w974",
+      "Q": 974,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 974"
+        ]
+      ],
+      "expected_T_inference": 2020438,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 8826,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w975",
+      "Q": 975,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 975"
+        ]
+      ],
+      "expected_T_inference": 2019488,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 9777,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w976",
+      "Q": 976,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 976"
+        ]
+      ],
+      "expected_T_inference": 2018537,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 10727,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w977",
+      "Q": 977,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 977"
+        ]
+      ],
+      "expected_T_inference": 2017587,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 11678,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w978",
+      "Q": 978,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 978"
+        ]
+      ],
+      "expected_T_inference": 2016636,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 12628,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w979",
+      "Q": 979,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 979"
+        ]
+      ],
+      "expected_T_inference": 2015686,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 13579,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w980",
+      "Q": 980,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 980"
+        ]
+      ],
+      "expected_T_inference": 2014735,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 14529,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w981",
+      "Q": 981,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 981"
+        ]
+      ],
+      "expected_T_inference": 2013830,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 15434,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w982",
+      "Q": 982,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 982"
+        ]
+      ],
+      "expected_T_inference": 2012925,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 16339,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w983",
+      "Q": 983,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 983"
+        ]
+      ],
+      "expected_T_inference": 2012019,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 17245,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w984",
+      "Q": 984,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 984"
+        ]
+      ],
+      "expected_T_inference": 2011114,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 18150,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w985",
+      "Q": 985,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 985"
+        ]
+      ],
+      "expected_T_inference": 2010209,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 19055,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w986",
+      "Q": 986,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 986"
+        ]
+      ],
+      "expected_T_inference": 2009304,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 19960,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w987",
+      "Q": 987,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 987"
+        ]
+      ],
+      "expected_T_inference": 2008399,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 20865,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w988",
+      "Q": 988,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 988"
+        ]
+      ],
+      "expected_T_inference": 2007493,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 21771,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w989",
+      "Q": 989,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 989"
+        ]
+      ],
+      "expected_T_inference": 2006588,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 22676,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w990",
+      "Q": 990,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 990"
+        ]
+      ],
+      "expected_T_inference": 2005683,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 23581,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w991",
+      "Q": 991,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 991"
+        ]
+      ],
+      "expected_T_inference": 2004829,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 24435,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w992",
+      "Q": 992,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 992"
+        ]
+      ],
+      "expected_T_inference": 2003974,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 25290,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w993",
+      "Q": 993,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 993"
+        ]
+      ],
+      "expected_T_inference": 2003120,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 26144,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w994",
+      "Q": 994,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 994"
+        ]
+      ],
+      "expected_T_inference": 2002266,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 26998,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w995",
+      "Q": 995,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 995"
+        ]
+      ],
+      "expected_T_inference": 2001411,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 27853,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w996",
+      "Q": 996,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 996"
+        ]
+      ],
+      "expected_T_inference": 2000557,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 28707,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w997",
+      "Q": 997,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 997"
+        ]
+      ],
+      "expected_T_inference": 1999703,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 29561,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w998",
+      "Q": 998,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 998"
+        ]
+      ],
+      "expected_T_inference": 1998848,
+      "must_beat": 2029265,
+      "holder_below": "odinfree Q965",
+      "margin_inference": 30416,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1001",
+      "Q": 1001,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1001"
+        ]
+      ],
+      "expected_T_inference": 1996330,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 878,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1002",
+      "Q": 1002,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1002"
+        ]
+      ],
+      "expected_T_inference": 1995536,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 1672,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1003",
+      "Q": 1003,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1003"
+        ]
+      ],
+      "expected_T_inference": 1994742,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 2466,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1004",
+      "Q": 1004,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1004"
+        ]
+      ],
+      "expected_T_inference": 1993949,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 3259,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1005",
+      "Q": 1005,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1005"
+        ]
+      ],
+      "expected_T_inference": 1993155,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 4053,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1006",
+      "Q": 1006,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1006"
+        ]
+      ],
+      "expected_T_inference": 1992361,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 4847,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1007",
+      "Q": 1007,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1007"
+        ]
+      ],
+      "expected_T_inference": 1991567,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 5641,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1008",
+      "Q": 1008,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1008"
+        ]
+      ],
+      "expected_T_inference": 1990774,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 6434,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1009",
+      "Q": 1009,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1009"
+        ]
+      ],
+      "expected_T_inference": 1989980,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 7228,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1010",
+      "Q": 1010,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1010"
+        ]
+      ],
+      "expected_T_inference": 1989186,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 8022,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1011",
+      "Q": 1011,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1011"
+        ]
+      ],
+      "expected_T_inference": 1988452,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 8757,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1012",
+      "Q": 1012,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1012"
+        ]
+      ],
+      "expected_T_inference": 1987717,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 9491,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1013",
+      "Q": 1013,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1013"
+        ]
+      ],
+      "expected_T_inference": 1986983,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 10226,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1014",
+      "Q": 1014,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1014"
+        ]
+      ],
+      "expected_T_inference": 1986248,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 10960,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1015",
+      "Q": 1015,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1015"
+        ]
+      ],
+      "expected_T_inference": 1985514,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 11695,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1016",
+      "Q": 1016,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1016"
+        ]
+      ],
+      "expected_T_inference": 1984779,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 12429,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1017",
+      "Q": 1017,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1017"
+        ]
+      ],
+      "expected_T_inference": 1984045,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 13164,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1018",
+      "Q": 1018,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1018"
+        ]
+      ],
+      "expected_T_inference": 1983310,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 13898,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1019",
+      "Q": 1019,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1019"
+        ]
+      ],
+      "expected_T_inference": 1982576,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 14633,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1020",
+      "Q": 1020,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1020"
+        ]
+      ],
+      "expected_T_inference": 1981841,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 15367,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1021",
+      "Q": 1021,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1021"
+        ]
+      ],
+      "expected_T_inference": 1981228,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 15980,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1022",
+      "Q": 1022,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1022"
+        ]
+      ],
+      "expected_T_inference": 1980616,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 16592,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1023",
+      "Q": 1023,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1023"
+        ]
+      ],
+      "expected_T_inference": 1980003,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 17205,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1024",
+      "Q": 1024,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1024"
+        ]
+      ],
+      "expected_T_inference": 1979391,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 17817,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1025",
+      "Q": 1025,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1025"
+        ]
+      ],
+      "expected_T_inference": 1978778,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 18430,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1026",
+      "Q": 1026,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1026"
+        ]
+      ],
+      "expected_T_inference": 1978166,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 19042,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1027",
+      "Q": 1027,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1027"
+        ]
+      ],
+      "expected_T_inference": 1977553,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 19655,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1028",
+      "Q": 1028,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1028"
+        ]
+      ],
+      "expected_T_inference": 1976941,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 20267,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1029",
+      "Q": 1029,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1029"
+        ]
+      ],
+      "expected_T_inference": 1976328,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 20880,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1030",
+      "Q": 1030,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1030"
+        ]
+      ],
+      "expected_T_inference": 1975716,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 21493,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1031",
+      "Q": 1031,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1031"
+        ]
+      ],
+      "expected_T_inference": 1975215,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 21993,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1032",
+      "Q": 1032,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1032"
+        ]
+      ],
+      "expected_T_inference": 1974714,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 22494,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1033",
+      "Q": 1033,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1033"
+        ]
+      ],
+      "expected_T_inference": 1974213,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 22995,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1034",
+      "Q": 1034,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1034"
+        ]
+      ],
+      "expected_T_inference": 1973712,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 23496,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1035",
+      "Q": 1035,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1035"
+        ]
+      ],
+      "expected_T_inference": 1973211,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 23997,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1036",
+      "Q": 1036,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1036"
+        ]
+      ],
+      "expected_T_inference": 1972710,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 24498,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1037",
+      "Q": 1037,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1037"
+        ]
+      ],
+      "expected_T_inference": 1972210,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 24998,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1038",
+      "Q": 1038,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1038"
+        ]
+      ],
+      "expected_T_inference": 1971709,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 25499,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1039",
+      "Q": 1039,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1039"
+        ]
+      ],
+      "expected_T_inference": 1971208,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 26000,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1040",
+      "Q": 1040,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1040"
+        ]
+      ],
+      "expected_T_inference": 1970707,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 26501,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1041",
+      "Q": 1041,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1041"
+        ]
+      ],
+      "expected_T_inference": 1970253,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 26955,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1042",
+      "Q": 1042,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1042"
+        ]
+      ],
+      "expected_T_inference": 1969799,
+      "must_beat": 1997209,
+      "holder_below": "gopikannappan Q1000",
+      "margin_inference": 27410,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1051",
+      "Q": 1051,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1051"
+        ]
+      ],
+      "expected_T_inference": 1965749,
+      "must_beat": 1966443,
+      "holder_below": "gopikannappan Q1050",
+      "margin_inference": 694,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1052",
+      "Q": 1052,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1052"
+        ]
+      ],
+      "expected_T_inference": 1965333,
+      "must_beat": 1966443,
+      "holder_below": "gopikannappan Q1050",
+      "margin_inference": 1110,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1053",
+      "Q": 1053,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1053"
+        ]
+      ],
+      "expected_T_inference": 1964917,
+      "must_beat": 1966443,
+      "holder_below": "gopikannappan Q1050",
+      "margin_inference": 1526,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1054",
+      "Q": 1054,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1054"
+        ]
+      ],
+      "expected_T_inference": 1964501,
+      "must_beat": 1966443,
+      "holder_below": "gopikannappan Q1050",
+      "margin_inference": 1942,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1055",
+      "Q": 1055,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1055"
+        ]
+      ],
+      "expected_T_inference": 1964085,
+      "must_beat": 1966443,
+      "holder_below": "gopikannappan Q1050",
+      "margin_inference": 2358,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1056",
+      "Q": 1056,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1056"
+        ]
+      ],
+      "expected_T_inference": 1963669,
+      "must_beat": 1966443,
+      "holder_below": "gopikannappan Q1050",
+      "margin_inference": 2774,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1057",
+      "Q": 1057,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1057"
+        ]
+      ],
+      "expected_T_inference": 1963253,
+      "must_beat": 1966443,
+      "holder_below": "gopikannappan Q1050",
+      "margin_inference": 3190,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    },
+    {
+      "id": "lily-w1058",
+      "Q": 1058,
+      "base_commit": "f6cee264",
+      "base_desc": "gopikannappan's Q1000 row (f50ee007 line: jackylee0424's 870 Lilypad-G b2e963a + gnuchev's ten exact edits), PEAK0 = 1000, inherited nonce kept",
+      "edits": [
+        [
+          "src/point_add/frogtail_batch/pointadd_lilypad.rs",
+          "PEAK0 literal 1000 (HALF_COFACTOR_G arm)",
+          "PEAK0 literal 1058"
+        ]
+      ],
+      "expected_T_inference": 1962837,
+      "must_beat": 1966443,
+      "holder_below": "gopikannappan Q1050",
+      "margin_inference": 3606,
+      "live": true,
+      "parent_rate_sourced": "3.1-3.7 failing shots per 9,024 (classical mismatches)",
+      "pass_chance_inference": 0.035,
+      "gate": "probe first (see README section 9); audit bound not met at the sourced rate"
+    }
+  ]
+}

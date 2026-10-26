@@ -1,0 +1,515 @@
+{
+  "status": "complete",
+  "outcome": "OpenEvolve produced the lower qualified official cost in this pilot.",
+  "planned_cli_attempts": 192,
+  "completed_attempts": 192,
+  "controllers": {
+    "current": {
+      "completed_attempts": 96,
+      "outcomes": {
+        "accepted": 46,
+        "duplicate_recipe": 50
+      },
+      "accepted_archive_unique_recipes": 42,
+      "accepted_archive_unique_gate_streams": 40,
+      "maximum_accepted_ancestry": 9,
+      "maximum_changed_stream_ancestry": 9,
+      "usage": {
+        "completed_cli_invocations": 96,
+        "successful_cli_invocations": 96,
+        "wall_seconds": 991.114856004715,
+        "resolved_models": [
+          "claude-opus-5-5"
+        ],
+        "input_tokens": {
+          "reported_sum": 1098101,
+          "missing_calls": 0
+        },
+        "cached_input_tokens": {
+          "reported_sum": 143947,
+          "missing_calls": 0
+        },
+        "cache_creation_input_tokens": {
+          "reported_sum": 953946,
+          "missing_calls": 0
+        },
+        "output_tokens": {
+          "reported_sum": 69796,
+          "missing_calls": 0
+        },
+        "reasoning_tokens": {
+          "reported_sum": 45368,
+          "missing_calls": 0
+        },
+        "provider_cost_estimate_usd": {
+          "reported_sum": 9.0571094,
+          "missing_calls": 0
+        },
+        "num_turns": {
+          "reported_sum": 200,
+          "missing_calls": 0
+        }
+      },
+      "accepted_changed_stream_steps": 46,
+      "accepted_unchanged_stream_steps": 0,
+      "action_rules": {
+        "global": 46,
+        "fold_site": 13,
+        "inlet_sites": 3,
+        "scalar": 34
+      },
+      "accepted_cost_relative_to_parent": {
+        "lower": 26,
+        "higher": 20
+      },
+      "seeds": {
+        "241": {
+          "completed_attempts": 32,
+          "outcomes": {
+            "accepted": 17,
+            "duplicate_recipe": 15
+          },
+          "best_development_S": 1303439200,
+          "maximum_changed_stream_ancestry": 9
+        },
+        "509": {
+          "completed_attempts": 32,
+          "outcomes": {
+            "accepted": 18,
+            "duplicate_recipe": 14
+          },
+          "best_development_S": 1309288400,
+          "maximum_changed_stream_ancestry": 9
+        },
+        "887": {
+          "completed_attempts": 32,
+          "outcomes": {
+            "accepted": 11,
+            "duplicate_recipe": 21
+          },
+          "best_development_S": 1308532446,
+          "maximum_changed_stream_ancestry": 6
+        }
+      },
+      "qualified_official_S": 1309377888,
+      "selected_winner": {
+        "sha256": "8b1337adb899f52256d26ace4cf7f605d89c951e1cc1f09d9864c35b2137002b",
+        "roles": [
+          "baseline"
+        ],
+        "is_shared_baseline": true,
+        "recipe": {
+          "backend": "pingpong",
+          "settings": {
+            "CP_CARRY_MEASURED": 1,
+            "CP_AND_MEASURED": 1,
+            "CP_FOLD_FUSED": 1,
+            "CP_WALK_SPLIT": 1,
+            "CP_FOLD_SPLIT": 1,
+            "CP_FOLD_STREAMED": 0,
+            "CP_INLET_EARLY": 0,
+            "CP_INLINE_PLUS2": 0,
+            "PP_WALK_MAX_QUBITS": 1316,
+            "CP_FOLD_CAP": 1316,
+            "PP_REPLAY_FOLD_WINDOW": 64,
+            "PP_REPLAY_FOLD_WINDOW_MUL": 64,
+            "PP_REPLAY_CHUNK_COMPARE": 32,
+            "PP_REPLAY_FLAG_COMPARE": 34,
+            "FOLD_GUARD": 32,
+            "ERASE_COMPARE": 28
+          },
+          "fold_sites": {},
+          "inlet_sites": [],
+          "inline_sites": []
+        }
+      },
+      "frozen_finalist": {
+        "sha256": "75a9b313413dae58ef25356b897cfaf438054e17ab66978c03910285ab84e81b",
+        "recipe": {
+          "backend": "pingpong",
+          "settings": {
+            "CP_CARRY_MEASURED": 1,
+            "CP_AND_MEASURED": 1,
+            "CP_FOLD_FUSED": 1,
+            "CP_WALK_SPLIT": 1,
+            "CP_FOLD_SPLIT": 1,
+            "CP_FOLD_STREAMED": 1,
+            "CP_INLET_EARLY": 1,
+            "CP_INLINE_PLUS2": 1,
+            "PP_WALK_MAX_QUBITS": 1312,
+            "CP_FOLD_CAP": 1312,
+            "PP_REPLAY_FOLD_WINDOW": 64,
+            "PP_REPLAY_FOLD_WINDOW_MUL": 60,
+            "PP_REPLAY_CHUNK_COMPARE": 32,
+            "PP_REPLAY_FLAG_COMPARE": 34,
+            "FOLD_GUARD": 32,
+            "ERASE_COMPARE": 28
+          },
+          "fold_sites": {},
+          "inlet_sites": [],
+          "inline_sites": []
+        },
+        "depth": 7,
+        "changed_stream_depth": 7,
+        "history": [
+          {
+            "rule": "global",
+            "field": "CP_FOLD_STREAMED",
+            "value": 1
+          },
+          {
+            "rule": "scalar",
+            "field": "PP_WALK_MAX_QUBITS",
+            "value": 1314
+          },
+          {
+            "rule": "scalar",
+            "field": "CP_FOLD_CAP",
+            "value": 1312
+          },
+          {
+            "rule": "scalar",
+            "field": "PP_WALK_MAX_QUBITS",
+            "value": 1312
+          },
+          {
+            "rule": "scalar",
+            "field": "PP_REPLAY_FOLD_WINDOW_MUL",
+            "value": 60
+          },
+          {
+            "rule": "global",
+            "field": "CP_INLINE_PLUS2",
+            "value": 1
+          },
+          {
+            "rule": "global",
+            "field": "CP_INLET_EARLY",
+            "value": 1
+          }
+        ]
+      }
+    },
+    "openevolve": {
+      "completed_attempts": 96,
+      "outcomes": {
+        "accepted": 59,
+        "duplicate_recipe": 37
+      },
+      "accepted_archive_unique_recipes": 55,
+      "accepted_archive_unique_gate_streams": 53,
+      "maximum_accepted_ancestry": 6,
+      "maximum_changed_stream_ancestry": 5,
+      "usage": {
+        "completed_cli_invocations": 96,
+        "successful_cli_invocations": 96,
+        "wall_seconds": 1010.8756697177887,
+        "resolved_models": [
+          "claude-opus-5-5"
+        ],
+        "input_tokens": {
+          "reported_sum": 1077598,
+          "missing_calls": 0
+        },
+        "cached_input_tokens": {
+          "reported_sum": 139707,
+          "missing_calls": 0
+        },
+        "cache_creation_input_tokens": {
+          "reported_sum": 937685,
+          "missing_calls": 0
+        },
+        "output_tokens": {
+          "reported_sum": 68089,
+          "missing_calls": 0
+        },
+        "reasoning_tokens": {
+          "reported_sum": 42704,
+          "missing_calls": 0
+        },
+        "provider_cost_estimate_usd": {
+          "reported_sum": 8.8920254,
+          "missing_calls": 0
+        },
+        "num_turns": {
+          "reported_sum": 199,
+          "missing_calls": 0
+        }
+      },
+      "accepted_changed_stream_steps": 58,
+      "accepted_unchanged_stream_steps": 1,
+      "action_rules": {
+        "inline_sites": 3,
+        "fold_site": 22,
+        "scalar": 26,
+        "global": 43,
+        "inlet_sites": 2
+      },
+      "accepted_cost_relative_to_parent": {
+        "higher": 33,
+        "lower": 25,
+        "equal": 1
+      },
+      "seeds": {
+        "241": {
+          "completed_attempts": 32,
+          "outcomes": {
+            "accepted": 19,
+            "duplicate_recipe": 13
+          },
+          "best_development_S": 1309272608,
+          "maximum_changed_stream_ancestry": 4
+        },
+        "509": {
+          "completed_attempts": 32,
+          "outcomes": {
+            "accepted": 19,
+            "duplicate_recipe": 13
+          },
+          "best_development_S": 1309321300,
+          "maximum_changed_stream_ancestry": 4
+        },
+        "887": {
+          "completed_attempts": 32,
+          "outcomes": {
+            "accepted": 21,
+            "duplicate_recipe": 11
+          },
+          "best_development_S": 1308380360,
+          "maximum_changed_stream_ancestry": 5
+        }
+      },
+      "qualified_official_S": 1308373780,
+      "selected_winner": {
+        "sha256": "29e32008a2f9c64a08da2d2ebaf1197f23a90ea2f4b25e40d7bba21d07e3ed8a",
+        "roles": [
+          "openevolve"
+        ],
+        "is_shared_baseline": false,
+        "recipe": {
+          "backend": "pingpong",
+          "settings": {
+            "CP_CARRY_MEASURED": 1,
+            "CP_AND_MEASURED": 1,
+            "CP_FOLD_FUSED": 1,
+            "CP_WALK_SPLIT": 1,
+            "CP_FOLD_SPLIT": 1,
+            "CP_FOLD_STREAMED": 0,
+            "CP_INLET_EARLY": 1,
+            "CP_INLINE_PLUS2": 1,
+            "PP_WALK_MAX_QUBITS": 1316,
+            "CP_FOLD_CAP": 1316,
+            "PP_REPLAY_FOLD_WINDOW": 64,
+            "PP_REPLAY_FOLD_WINDOW_MUL": 64,
+            "PP_REPLAY_CHUNK_COMPARE": 32,
+            "PP_REPLAY_FLAG_COMPARE": 33,
+            "FOLD_GUARD": 32,
+            "ERASE_COMPARE": 28
+          },
+          "fold_sites": {
+            "746": 2
+          },
+          "inlet_sites": [],
+          "inline_sites": []
+        }
+      },
+      "frozen_finalist": {
+        "sha256": "29e32008a2f9c64a08da2d2ebaf1197f23a90ea2f4b25e40d7bba21d07e3ed8a",
+        "recipe": {
+          "backend": "pingpong",
+          "settings": {
+            "CP_CARRY_MEASURED": 1,
+            "CP_AND_MEASURED": 1,
+            "CP_FOLD_FUSED": 1,
+            "CP_WALK_SPLIT": 1,
+            "CP_FOLD_SPLIT": 1,
+            "CP_FOLD_STREAMED": 0,
+            "CP_INLET_EARLY": 1,
+            "CP_INLINE_PLUS2": 1,
+            "PP_WALK_MAX_QUBITS": 1316,
+            "CP_FOLD_CAP": 1316,
+            "PP_REPLAY_FOLD_WINDOW": 64,
+            "PP_REPLAY_FOLD_WINDOW_MUL": 64,
+            "PP_REPLAY_CHUNK_COMPARE": 32,
+            "PP_REPLAY_FLAG_COMPARE": 33,
+            "FOLD_GUARD": 32,
+            "ERASE_COMPARE": 28
+          },
+          "fold_sites": {
+            "746": 2
+          },
+          "inlet_sites": [],
+          "inline_sites": []
+        },
+        "depth": 4,
+        "changed_stream_depth": 4,
+        "history": [
+          {
+            "rule": "global",
+            "field": "CP_INLET_EARLY",
+            "value": 1
+          },
+          {
+            "rule": "global",
+            "field": "CP_INLINE_PLUS2",
+            "value": 1
+          },
+          {
+            "rule": "scalar",
+            "field": "PP_REPLAY_FLAG_COMPARE",
+            "value": 33
+          },
+          {
+            "rule": "fold_site",
+            "site": 746,
+            "value": 2
+          }
+        ]
+      }
+    }
+  },
+  "usage_total": {
+    "completed_cli_invocations": 192,
+    "successful_cli_invocations": 192,
+    "wall_seconds": 2001.9905257225037,
+    "resolved_models": [
+      "claude-opus-5-5"
+    ],
+    "input_tokens": {
+      "reported_sum": 2175699,
+      "missing_calls": 0
+    },
+    "cached_input_tokens": {
+      "reported_sum": 283654,
+      "missing_calls": 0
+    },
+    "cache_creation_input_tokens": {
+      "reported_sum": 1891631,
+      "missing_calls": 0
+    },
+    "output_tokens": {
+      "reported_sum": 137885,
+      "missing_calls": 0
+    },
+    "reasoning_tokens": {
+      "reported_sum": 88072,
+      "missing_calls": 0
+    },
+    "provider_cost_estimate_usd": {
+      "reported_sum": 17.9491348,
+      "missing_calls": 0
+    },
+    "num_turns": {
+      "reported_sum": 399,
+      "missing_calls": 0
+    }
+  },
+  "audits": [
+    {
+      "sha256": "8b1337adb899f52256d26ace4cf7f605d89c951e1cc1f09d9864c35b2137002b",
+      "roles": [
+        "baseline"
+      ],
+      "failed_inputs": 2,
+      "pairs": 1048576,
+      "upper": 7.393765225238713e-06,
+      "meets_failure_bound": true,
+      "official": {
+        "S": 1309377888,
+        "Q": 1316,
+        "total_Toffoli": 8978591184,
+        "shots": 9024,
+        "mean_T": 994967.9946808511,
+        "rounded_T": 994968
+      }
+    },
+    {
+      "sha256": "75a9b313413dae58ef25356b897cfaf438054e17ab66978c03910285ab84e81b",
+      "roles": [
+        "current"
+      ],
+      "failed_inputs": 6,
+      "pairs": 1048576,
+      "upper": 1.3103236914557836e-05,
+      "meets_failure_bound": false,
+      "official": null
+    },
+    {
+      "sha256": "29e32008a2f9c64a08da2d2ebaf1197f23a90ea2f4b25e40d7bba21d07e3ed8a",
+      "roles": [
+        "openevolve"
+      ],
+      "failed_inputs": 2,
+      "pairs": 1048576,
+      "upper": 7.393765225238713e-06,
+      "meets_failure_bound": true,
+      "official": {
+        "S": 1308373780,
+        "Q": 1316,
+        "total_Toffoli": 8971702074,
+        "shots": 9024,
+        "mean_T": 994204.5738031915,
+        "rounded_T": 994205
+      }
+    }
+  ],
+  "native_process_usage": {
+    "circuits": {
+      "completed_processes": 91,
+      "wall_seconds": 104.1962639670819,
+      "cpu_seconds": 98.5671220000006
+    },
+    "evaluations": {
+      "completed_processes": 273,
+      "wall_seconds": 4500.114418482408,
+      "cpu_seconds": 14988.438434999998
+    },
+    "official": {
+      "completed_processes": 2,
+      "wall_seconds": 44.748864999972284,
+      "cpu_seconds": 43.03633800000034
+    }
+  },
+  "study_elapsed_seconds": 6926.3901109695435,
+  "openevolve_benefit": 0.0007668588336509075,
+  "separate_record_recount_complete": true,
+  "winner_replay": {
+    "status": "passed",
+    "sha256": "29e32008a2f9c64a08da2d2ebaf1197f23a90ea2f4b25e40d7bba21d07e3ed8a",
+    "qualified_official_S": 1308373780,
+    "recipe": {
+      "backend": "pingpong",
+      "settings": {
+        "CP_CARRY_MEASURED": 1,
+        "CP_AND_MEASURED": 1,
+        "CP_FOLD_FUSED": 1,
+        "CP_WALK_SPLIT": 1,
+        "CP_FOLD_SPLIT": 1,
+        "CP_FOLD_STREAMED": 0,
+        "CP_INLET_EARLY": 1,
+        "CP_INLINE_PLUS2": 1,
+        "PP_WALK_MAX_QUBITS": 1316,
+        "CP_FOLD_CAP": 1316,
+        "PP_REPLAY_FOLD_WINDOW": 64,
+        "PP_REPLAY_FOLD_WINDOW_MUL": 64,
+        "PP_REPLAY_CHUNK_COMPARE": 32,
+        "PP_REPLAY_FLAG_COMPARE": 33,
+        "FOLD_GUARD": 32,
+        "ERASE_COMPARE": 28
+      },
+      "fold_sites": {
+        "746": 2
+      },
+      "inlet_sites": [],
+      "inline_sites": []
+    },
+    "model_calls": 0,
+    "wall_seconds": 1.2085537500679493,
+    "scope": "Byte-for-byte emission replay. The existing audit applies to the identical operation stream."
+  },
+  "scope": "Population policies, including parent and inspiration selection, with a shared Claude proposer. No automatic rule invention or Google-depth claim.",
+  "upstream_revision": "04a37f191b2eb367daef455057a0470c0ac853d8",
+  "billing": "Provider-reported estimates under a Claude subscription. No invoice amount is available.",
+  "verification": "Official scores recomputed from integer totals. Failure bounds recomputed by binomial CDF inversion.",
+  "reporter_sha256": "08f1a0f15ba06f65e2e5ea23110ad1f4f488ee97538b0aa394968a98a2416df1"
+}

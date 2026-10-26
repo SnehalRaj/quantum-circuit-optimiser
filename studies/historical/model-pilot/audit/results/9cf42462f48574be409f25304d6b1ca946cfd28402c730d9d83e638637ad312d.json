@@ -1,0 +1,51 @@
+{
+  "Q": 130,
+  "T": 12604.0,
+  "failed_inputs": 0,
+  "failed_shots": 0,
+  "channel_failed_inputs": {
+    "output": 0,
+    "phase": 0,
+    "scratch": 0
+  },
+  "first_failures": [],
+  "pairs": 16384,
+  "streams": 2,
+  "input_sha256": "32dd9ab213950c5598a90f64fcde42455c088c467f449c93e981154e6c571cf1",
+  "operation_sha256": "9d73322e0fdc393c509cc3a597ff7baef697164790c9e3af01238932eec0dd45",
+  "circuit_file_sha256": "04b9e6dea3d6b7dc02140da791b75f69c3de10064e3728afd6bcc6807b32c25f",
+  "inputs_file": "evaluations/joint-model-pilot-audit-9cf42462f48574be409f25304d6b1ca946cfd28402c730d9d83e638637ad312d/inputs.jsonl.gz",
+  "circuit_directory": "final/circuits/9cf42462f48574be409f25304d6b1ca946cfd28402c730d9d83e638637ad312d",
+  "cpu_seconds": 3.663253,
+  "peak_rss_bytes": 21266432,
+  "S": 1638520,
+  "stage": "audit",
+  "recipe": {
+    "bits": 16,
+    "prime": 65521,
+    "family": "width",
+    "steps": 31,
+    "cleanup": "toffoli",
+    "block_program": {
+      "ops": [
+        {
+          "op": "swap",
+          "lowering": "legacy"
+        },
+        {
+          "op": "sub",
+          "lowering": "direct"
+        },
+        {
+          "op": "half",
+          "lowering": "direct"
+        }
+      ]
+    }
+  },
+  "label": "fb5bec4b207ca49882abbb2634f6087373f1e59a2db6680cd0c4b2d44cc7b908",
+  "wall_seconds": 3.80082374997437,
+  "evaluation_directory": "evaluations/joint-model-pilot-audit-9cf42462f48574be409f25304d6b1ca946cfd28402c730d9d83e638637ad312d",
+  "epsilon_upper": 0.000478874715572497,
+  "eligible": true
+}

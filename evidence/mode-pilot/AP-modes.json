@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "cases": [
+    "ap-offline-v2",
+    "ap-claude-v2"
+  ],
+  "same_operation_artifact": true,
+  "independent_input_packets": true,
+  "new_model_calls": [
+    0,
+    1
+  ],
+  "artifact_reused": [
+    false,
+    true
+  ],
+  "qualified": [
+    true,
+    true
+  ],
+  "scope": "The cases validate both execution modes. They do not compare proposal-policy benefit."
+}

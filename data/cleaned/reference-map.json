@@ -1,0 +1,45 @@
+[
+  {
+    "key": "openauto",
+    "title": "ECDSA.Fail: Open Autoresearch for Optimizing Elliptic-Curve Point Addition in Shor's Algorithm",
+    "url": "https://arxiv.org/abs/2609.09582v2",
+    "local_primary_pdf": "external-project/external-project/ecdsa-fail/papers/core/01-open-autoresearch-2609.09582v2.pdf",
+    "sha256": "313ef2ec30d2d6c1ae16a8454ddc01dc8d8a7f68e88f4650ad357b83453c83a5",
+    "use": "Challenge model, open evaluator workflow, architectural strategies, and support selection. Sec3\u20135."
+  },
+  {
+    "key": "google",
+    "url": "https://arxiv.org/abs/2603.28846v2",
+    "use": "Cryptanalytic resource context and verification machinery; no formal dominance claim."
+  },
+  {
+    "key": "gidney",
+    "url": "https://doi.org/10.22331/q-2018-06-18-74",
+    "use": "Temporary logical AND and measured erasure."
+  },
+  {
+    "key": "gidneyblog",
+    "url": "https://algassert.com/post/1903",
+    "use": "Efficient phase-aware checks for measured uncomputation."
+  },
+  {
+    "key": "supplementrepo",
+    "url": "https://github.com/jieyilong/ecdsafail-supplemental-materials",
+    "use": "Public source reconstruction and preserved circuit lineages."
+  },
+  {
+    "key": "verifiable",
+    "title": "Leveraging verifiable structure in quantum circuits to find more efficient compilations with agentic AI",
+    "authors": [
+      "Tanuj Khattar",
+      "Nicholas C. Rubin",
+      "Craig Gidney",
+      "Michael Broughton",
+      "Guang Hao Low",
+      "Ryan Babbush"
+    ],
+    "url": "https://arxiv.org/abs/2610.23832v2",
+    "checked_date": "2026-10-26",
+    "use": "Reversible classical logic, phase operations, and measured uncomputation permit efficient classical-input checks for agentic circuit compilation. Abstract and SecI/II."
+  }
+]

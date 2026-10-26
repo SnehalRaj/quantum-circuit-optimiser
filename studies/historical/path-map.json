@@ -1,0 +1,58 @@
+{
+  "historical_checkout_prefix": "{redacted-path-cd27d7e584d2}",
+  "mappings": [
+    {
+      "archive_overlays": [
+        "archives/grammar-searches.tar.gz",
+        "archives/grammar-run-records.tar.gz"
+      ],
+      "historical": "reversible-circuit-report/workshop-paper-20261025/studies/grammar",
+      "retained": "grammar"
+    },
+    {
+      "archive_overlays": [
+        "archives/model-pilot-run-records.tar.gz"
+      ],
+      "historical": "reversible-circuit-report/workshop-paper-20261025/studies/model-pilot",
+      "retained": "model-pilot"
+    },
+    {
+      "historical": "reversible-circuit-optimizer-strategies/src/circuitopt",
+      "limit": "The two studies have distinct frozen package snapshots. Preserve each source tree and its contract.",
+      "retained": "model-pilot/source/src/circuitopt"
+    },
+    {
+      "also_retained": "model-pilot/calibration-source.json",
+      "historical": "reversible-circuit-optimizer-strategies/runs/experiments/opus55-guarded-blocks-20261023/study.json",
+      "retained": "ancillary/calibration/opus55-guarded-blocks-20261023-study.json"
+    },
+    {
+      "historical": "reversible-circuit-report/workshop-paper-20261025/data/grammar-ablation.json",
+      "retained_in_current_repository": "paper/data/grammar-ablation.json"
+    },
+    {
+      "historical": "reversible-circuit-report/workshop-paper-20261025/data/model-pilot.json",
+      "retained_in_current_repository": "paper/data/model-pilot.json"
+    },
+    {
+      "historical": "ecdsa-fail/experiments/2026-10-21-transcript-decoding",
+      "limit": "Decoder rule evidence retains historical command paths. Its executable and operation artifacts are outside this retention scope.",
+      "retained": null
+    },
+    {
+      "historical": "ecdsa-fail/tools/indep-check/target-v2/release/indep-check",
+      "limit": "Historical decoder provenance only; this binary is outside this retention scope.",
+      "retained": null
+    }
+  ],
+  "relocation_limits": [
+    "model-pilot/run_pilot.py prepare() expects the historical sibling checkout and calibration path.",
+    "model-pilot/audit/frozen.json has absolute run roots that audit() reads directly.",
+    "The runners and verifiers derive paper data paths from their original parent directories.",
+    "Model transport receipts retain command paths and reported identities from the historical execution.",
+    "Frozen source, drivers, contracts, and sidecars remain byte-exact. A future relocation wrapper needs its own source hash and result identity.",
+    "Generated circuits, intermediate evaluation caches, original timing binaries, and timing source are outside this bundle."
+  ],
+  "schema": 1,
+  "scope": "Historical path references only. This map does not alter or relocate the frozen programs."
+}

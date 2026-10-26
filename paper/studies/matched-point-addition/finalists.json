@@ -1,0 +1,13 @@
+{
+  "alpha_per_circuit": 0.025,
+  "audit_names": [
+    "baseline",
+    "free-s"
+  ],
+  "development_pareto": [
+    "free-s"
+  ],
+  "frozen": true,
+  "large_results_observed": false,
+  "selection_width": 16
+}

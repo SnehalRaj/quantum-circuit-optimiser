@@ -1,0 +1,4 @@
+{
+  "action_index": 16,
+  "reason": "Both recipes release the cofactor register, which reduced Q in measured cases. Their comparison isolates the effect of phase rewrites without measurement erasure or combined coordinate products."
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "lco-public-native-qualification-smoke-v1",
+  "command": [
+    "./lco",
+    "qualify-native",
+    "--pairs",
+    "8192",
+    "--label",
+    "cli-native-qualification-smoke-v1",
+    "--offline",
+    "--out",
+    "work/cli-native-qualification-v1"
+  ],
+  "exit_code": 0,
+  "cases": 4,
+  "pairs_per_case": 8192,
+  "failed_inputs_per_case": 0,
+  "qualified": true,
+  "source_sha256": "200ba8ed4b631267970c133fbd9dcb62ec761f900d5b2cd5f18df59d7060452b",
+  "checker_source_sha256": "5a00c89974f5774b1e44cd00c9e9e8f147aad4c695ddea31d24900cb31e849f8",
+  "results": "work/cli-native-qualification-v1/results.json",
+  "results_sha256": "627bd382e1d95befedc0dc313be0961bc5065bbe7dcca87af43e54e9d93ce2a9",
+  "contract": "work/cli-native-qualification-v1/contract.json",
+  "contract_sha256": "aa3f87f9ae93d5fc32941f08a83e7b43cc1b584d0eae10eeaded538c7c9dd50c",
+  "final_cargo_tests": {
+    "passed": 18,
+    "failed": 0,
+    "ignored": 0,
+    "log": "evidence/native-validation/final-native-suite.log",
+    "command": [
+      "cargo",
+      "test",
+      "--release",
+      "--locked",
+      "--offline",
+      "--manifest-path",
+      "native/Cargo.toml",
+      "--",
+      "--test-threads=1"
+    ]
+  },
+  "scope": "This public CLI smoke is separate from the completed four-policy100k qualification family. No implementation changed.",
+  "alpha_per_case": 0.0125,
+  "streams": 2,
+  "rows": [
+    {
+      "policy": "mfs",
+      "failed_inputs": 0,
+      "upper_bound": 0.0005347723189626265,
+      "Q": 214,
+      "T": 31769.0,
+      "ops_sha256": "b84161037cdd8580e28172308418c1767b179abb27a7b02aa6ac90ebb74bfaf8"
+    },
+    {
+      "policy": "mfsu",
+      "failed_inputs": 0,
+      "upper_bound": 0.0005347723189626265,
+      "Q": 214,
+      "T": 28111.0,
+      "ops_sha256": "d7f905ebad6c0e52c5cac636a64045fb333c6b0f6b396c4d81569fc60ed77adb"
+    },
+    {
+      "policy": "mfsr",
+      "failed_inputs": 0,
+      "upper_bound": 0.0005347723189626265,
+      "Q": 214,
+      "T": 31709.0,
+      "ops_sha256": "1f2d68beca2a499e28db27cc3c3ea0933f06efdbcd37501ed771882eeccb8df0"
+    },
+    {
+      "policy": "mfsur",
+      "failed_inputs": 0,
+      "upper_bound": 0.0005347723189626265,
+      "Q": 214,
+      "T": 28051.0,
+      "ops_sha256": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83"
+    }
+  ]
+}

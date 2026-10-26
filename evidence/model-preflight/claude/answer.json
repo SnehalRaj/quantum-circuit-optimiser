@@ -1,0 +1,4 @@
+{
+  "action_index": 1,
+  "reason": "mfsur includes all the mfs passes: known-control simplification, phase-only AND, and classical guards. It also adds guarded inverse-AND uncomputation and measurement-based erasure of ancillas that are written but never read. These extra passes can remove Toffoli-style uncompute cost and ancilla cleanup that mfs keeps. No circuit result was supplied, so I picked the larger admitted recipe because it can do at least as much as mfs."
+}

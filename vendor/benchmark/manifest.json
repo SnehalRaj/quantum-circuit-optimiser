@@ -1,0 +1,18 @@
+{
+  "archive_sha256": "e7063250e18ec5e21a373a06931819838d5e78c1f0e9ef8890d08e3e300c2c51",
+  "commit": "6b0327d60e40068fcbed5fedcb7f66d926f12320",
+  "files_sha256": {
+    "Cargo.lock": "42ff16919e551891ad1b21821329b116d133194245a0e0734a33573dfe598e07",
+    "Cargo.toml": "3c80178b08d29a158abb29a7dcb8eefc67c66f60f2c3bd14483b65eeca0740dc",
+    "NOTICE": "fdfff837a1a85c14fc8854cfb2fa8a43b2ac58a6b8fcc50e56fe6c9d1293c58f",
+    "src/bin/build_circuit.rs": "ac013f1d851156a117c7d41ddb16cb5bb014ed4e6ed4679df143207b46852f33",
+    "src/bin/eval_circuit.rs": "b35314bc47a5f8eecbf60459e6c76c9b43aa034eeb9b7ec3421655d74f9e890b",
+    "src/circuit.rs": "ac2255f6bcb6895c9da2dfe21c3a051a0ef8fc4e0af9598634fec0035dbf35c6",
+    "src/lib.rs": "ebad13b0018b36bdcbcac0d0ca2b7b76a00a886eb4f93ff18e7ba321e76b0039",
+    "src/sim.rs": "f0c72f2a280cd68acee1dbf8282098f72d6b3bf4311e0abf96d122fe002256d7",
+    "src/weierstrass_elliptic_curve.rs": "ecfca15ee3b831c243fbea559ff4b8937be47fe591a4f14786ec2b9bfb30bded"
+  },
+  "schema": 1,
+  "scope": "Unchanged trusted library and public evaluator; candidate code compiles only into build_circuit.",
+  "source_url": "https://github.com/Layr-Labs/ecdsafail-challenge/tree/6b0327d60e40068fcbed5fedcb7f66d926f12320"
+}

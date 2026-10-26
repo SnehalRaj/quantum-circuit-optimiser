@@ -1,0 +1,244 @@
+{
+  "arm": "codex",
+  "baseline": {
+    "Q": 214,
+    "QT": 6798566.0,
+    "T": 31769.0,
+    "alpha": 0.05,
+    "binomial_upper": 0.0007311125564754343,
+    "checker_binary_sha256": "9cf8903b33dd8971193d9b59435640fdca0fea1348a927fff83d1009a0089aed",
+    "checker_source_sha256": "45379a08de76fa11c3a6adbeff9532dd42d246298f45be46444de1793861153c",
+    "domain_exclusions": {},
+    "elapsed_seconds": 0.8399285,
+    "failed_inputs": 0,
+    "failed_shots": 0,
+    "label": "point-addition-search-v1/development/1601",
+    "mean_toffoli": 31769.0,
+    "meets_bound": true,
+    "ops_sha256": "b84161037cdd8580e28172308418c1767b179abb27a7b02aa6ac90ebb74bfaf8",
+    "original_receipt_sha256": "bcde7887e0a13438680cd824342550010211890f2ec9d288f161cdcd8b6dcade",
+    "packet_sha256": "1f289898c1d4bf2e172d8c4d3a3cfc828b9b63ec432e998fbb1de8b3ff286a1f",
+    "pairs": 4096,
+    "passed": true,
+    "per_input_sha256": "52f75583e2aa24e7d443d4526773be50c27c70684c3503c056f6c40291908e9f",
+    "qubits": 214,
+    "recipe_id": "c0000",
+    "record": "studies/point-addition-search-20261026/records/evaluations/3066ddf5a23c2990af1c9e3fcaa6159e10732931827ef25d22c3201b1926b99e.json",
+    "scalar_rejections": 74,
+    "streams": 2
+  },
+  "calls": [
+    {
+      "batch": 0,
+      "error": null,
+      "original_receipt_sha256": "732f2149410abaf99466856d2d45e3f8de07b09a6d11fb1f59805408a5e143ee",
+      "prompt_sha256": "6790b2a40dee3d590a76fa6284fa220118577056606fd1fdfa6820ea82a03d72",
+      "provider": "codex",
+      "provider_estimate_usd": null,
+      "reason": "Both recipes use measurement erasure and phase operations to target fewer Toffolis. Their sole difference, free_s, tests whether qubit savings justify reconstruction cost.",
+      "requested_model": "gpt-6.1-sol",
+      "resolved_models": null,
+      "success": true,
+      "tool_use": false,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13312,
+        "input_tokens": 33077,
+        "output_tokens": 97,
+        "reasoning_output_tokens": 50
+      },
+      "wall_seconds": 23.3377468585968
+    },
+    {
+      "batch": 1,
+      "error": null,
+      "original_receipt_sha256": "5639be65bff26d86d53e902c7493e0f6638a87ecf05091ae88df4c60e1334bc9",
+      "prompt_sha256": "a58f92fff0c893737369e76cbb5aa7c367fba8ecf37edd0267a710ed41160338",
+      "provider": "codex",
+      "provider_estimate_usd": null,
+      "reason": "c1111 tests combined coordinate products on the best measured recipe. c0010 isolates the qubit savings and reconstruction cost from free_s.",
+      "requested_model": "gpt-6.1-sol",
+      "resolved_models": null,
+      "success": true,
+      "tool_use": false,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 7168,
+        "input_tokens": 32326,
+        "output_tokens": 100,
+        "reasoning_output_tokens": 57
+      },
+      "wall_seconds": 22.152706623077393
+    },
+    {
+      "batch": 2,
+      "error": null,
+      "original_receipt_sha256": "a0d7c7b77c6883655473b657df6df450c623dc12b300f2f6e32821dca3bfea07",
+      "prompt_sha256": "9a2c89538b8f9eb28370a6da4621926e94ae7c16b38a0de4437217eacf52fc56",
+      "provider": "codex",
+      "provider_estimate_usd": null,
+      "reason": "Test c0110 and c1010 to isolate phase conversion and measurement-based erasure against c1110. Both retain cofactor release and omit combined_y, which increased measured QT.",
+      "requested_model": "gpt-6.1-sol",
+      "resolved_models": null,
+      "success": true,
+      "tool_use": false,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 31705,
+        "output_tokens": 121,
+        "reasoning_output_tokens": 69
+      },
+      "wall_seconds": 20.087119102478027
+    },
+    {
+      "batch": 3,
+      "error": null,
+      "original_receipt_sha256": "7e1de896bae53dc8c4b14d6fd8f542a1604eba8c28f21bb0edcf6cfbe301df18",
+      "prompt_sha256": "c96655444cb06588b8ac496028d32468748a67db6c91159c7abeae77c79ccfb3",
+      "provider": "codex",
+      "provider_estimate_usd": null,
+      "reason": "Both recipes use AND erasure, which shows the largest measured Toffoli reduction. c1011 also releases the cofactor register to reduce Q. c1101 tests combined coordinate products without cofactor reconstruction; their interaction remains unmeasured.",
+      "requested_model": "gpt-6.1-sol",
+      "resolved_models": null,
+      "success": true,
+      "tool_use": false,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 13312,
+        "input_tokens": 31211,
+        "output_tokens": 163,
+        "reasoning_output_tokens": 99
+      },
+      "wall_seconds": 18.21496891975403
+    }
+  ],
+  "checkpoints": [
+    {
+      "Q": 214,
+      "QT": 6002914.0,
+      "T": 28051.0,
+      "gain_percent": 11.703232711133493,
+      "proposals": 1,
+      "recipe_id": "c1100"
+    },
+    {
+      "Q": 198,
+      "QT": 5533902.0,
+      "T": 27949.0,
+      "gain_percent": 18.601922817252937,
+      "proposals": 2,
+      "recipe_id": "c1110"
+    },
+    {
+      "Q": 198,
+      "QT": 5533902.0,
+      "T": 27949.0,
+      "gain_percent": 18.601922817252937,
+      "proposals": 4,
+      "recipe_id": "c1110"
+    },
+    {
+      "Q": 198,
+      "QT": 5533902.0,
+      "T": 27949.0,
+      "gain_percent": 18.601922817252937,
+      "proposals": 8,
+      "recipe_id": "c1110"
+    }
+  ],
+  "complete": true,
+  "finalist": "c1110",
+  "seed": 1601,
+  "slots": [
+    {
+      "Q": 214,
+      "QT": 6002914.0,
+      "T": 28051.0,
+      "failed_inputs": 0,
+      "ops_sha256": "14c0c9fb60ec676458ccbcc5a836820e08ad5cd632acfac12fbf9700205d9c83",
+      "recipe_id": "c1100",
+      "record": "studies/point-addition-search-20261026/records/evaluations/afdc335b8acc9882773a1a86e29ce958aad2abbbdfc645cfe418c8e215d21611.json",
+      "slot": 1,
+      "status": "passed"
+    },
+    {
+      "Q": 198,
+      "QT": 5533902.0,
+      "T": 27949.0,
+      "failed_inputs": 0,
+      "ops_sha256": "2c9006aa77c958e346e59c0008deb7836253bfe24e3574849fc0aae84812f9d4",
+      "recipe_id": "c1110",
+      "record": "studies/point-addition-search-20261026/records/evaluations/7ef82c1384703758a0bd04675337aec2b1a000b9b4829827a4180e13dd2b96b4.json",
+      "slot": 2,
+      "status": "passed"
+    },
+    {
+      "Q": 198,
+      "QT": 6270066.0,
+      "T": 31667.0,
+      "failed_inputs": 0,
+      "ops_sha256": "b5104e98dd603445d7bc7e45dc78d855452ead95c8e926e56d4f485f6b21bdb0",
+      "recipe_id": "c0010",
+      "record": "studies/point-addition-search-20261026/records/evaluations/812d8206240bc3637f8a580abc91cc2f82079c23bd14a19616c6b07b9de13be8.json",
+      "slot": 3,
+      "status": "passed"
+    },
+    {
+      "Q": 198,
+      "QT": 5604192.0,
+      "T": 28304.0,
+      "failed_inputs": 0,
+      "ops_sha256": "4879caa90a8b3deac432a4197586a9e0198f545091cf54e227d00363ad76c1a9",
+      "recipe_id": "c1111",
+      "record": "studies/point-addition-search-20261026/records/evaluations/04a5a54a6b6b834f46e9fccef25c9a1bbaeac07d5dae82d048960d18cc0433aa.json",
+      "slot": 4,
+      "status": "passed"
+    },
+    {
+      "Q": 198,
+      "QT": 6258186.0,
+      "T": 31607.0,
+      "failed_inputs": 0,
+      "ops_sha256": "8be99b528cf19e8b62cc6982c782ccd068fecfa1a0106d5528caa84d2dcd0b12",
+      "recipe_id": "c0110",
+      "record": "studies/point-addition-search-20261026/records/evaluations/bc25d2d78b46f94f8857cd18f61c0aaafc7853172776dbf36e7365689a80b03a.json",
+      "slot": 5,
+      "status": "passed"
+    },
+    {
+      "Q": 198,
+      "QT": 5545782.0,
+      "T": 28009.0,
+      "failed_inputs": 0,
+      "ops_sha256": "77a531ef7d5bead56efb86a0221ae3693830c4a1c4df9d339fe1c03a369b9358",
+      "recipe_id": "c1010",
+      "record": "studies/point-addition-search-20261026/records/evaluations/dc7a262886147d5d3eccfe0c592830659d6d4275f572d7fdbe41552192a9a937.json",
+      "slot": 6,
+      "status": "passed"
+    },
+    {
+      "Q": 214,
+      "QT": 6076102.0,
+      "T": 28393.0,
+      "failed_inputs": 0,
+      "ops_sha256": "9fff90506b318bf55d4f7d8994db1117765ead5da9dcf58d84639237eda704ea",
+      "recipe_id": "c1101",
+      "record": "studies/point-addition-search-20261026/records/evaluations/d093deca7aefcfd61c3abca843d125b6aad8589ff073f32f3b8c3db3bc16d4c1.json",
+      "slot": 7,
+      "status": "passed"
+    },
+    {
+      "Q": 198,
+      "QT": 5616270.0,
+      "T": 28365.0,
+      "failed_inputs": 0,
+      "ops_sha256": "ca0adb41706040e30c73dec320cc068a4e4cd8e76496993613c82d97f5117412",
+      "recipe_id": "c1011",
+      "record": "studies/point-addition-search-20261026/records/evaluations/7c1e23fbb434addb8ec186097719b68cfa4eb4d191692f9fa98f409c0d9311cc.json",
+      "slot": 8,
+      "status": "passed"
+    }
+  ],
+  "wall_seconds": 85.0334751252085
+}

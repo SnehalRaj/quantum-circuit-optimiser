@@ -1,0 +1,811 @@
+{
+  "actions": [
+    {
+      "first": "c0010",
+      "second": "c1110"
+    },
+    {
+      "first": "c1110",
+      "second": "c0011"
+    },
+    {
+      "first": "c1011",
+      "second": "c1100"
+    },
+    {
+      "first": "c0011",
+      "second": "c1011"
+    },
+    {
+      "first": "c0111",
+      "second": "c1011"
+    },
+    {
+      "first": "c1000",
+      "second": "c0111"
+    },
+    {
+      "first": "c1101",
+      "second": "c0100"
+    },
+    {
+      "first": "c1010",
+      "second": "c0100"
+    },
+    {
+      "first": "c1101",
+      "second": "c0101"
+    },
+    {
+      "first": "c1100",
+      "second": "c0100"
+    },
+    {
+      "first": "c1001",
+      "second": "c1100"
+    },
+    {
+      "first": "c1000",
+      "second": "c1110"
+    },
+    {
+      "first": "c0111",
+      "second": "c0001"
+    },
+    {
+      "first": "c1011",
+      "second": "c0100"
+    },
+    {
+      "first": "c0101",
+      "second": "c1101"
+    },
+    {
+      "first": "c1000",
+      "second": "c0011"
+    },
+    {
+      "first": "c0101",
+      "second": "c1001"
+    },
+    {
+      "first": "c1101",
+      "second": "c0111"
+    },
+    {
+      "first": "c0111",
+      "second": "c0101"
+    },
+    {
+      "first": "c1001",
+      "second": "c1010"
+    },
+    {
+      "first": "c1100",
+      "second": "c0111"
+    },
+    {
+      "first": "c0011",
+      "second": "c1110"
+    },
+    {
+      "first": "c0001",
+      "second": "c1000"
+    },
+    {
+      "first": "c0010",
+      "second": "c1101"
+    },
+    {
+      "first": "c0101",
+      "second": "c1010"
+    },
+    {
+      "first": "c1001",
+      "second": "c1000"
+    },
+    {
+      "first": "c1011",
+      "second": "c0010"
+    },
+    {
+      "first": "c1110",
+      "second": "c1100"
+    },
+    {
+      "first": "c1010",
+      "second": "c0111"
+    },
+    {
+      "first": "c1100",
+      "second": "c1101"
+    },
+    {
+      "first": "c1000",
+      "second": "c1011"
+    },
+    {
+      "first": "c1110",
+      "second": "c0111"
+    },
+    {
+      "first": "c0100",
+      "second": "c0011"
+    },
+    {
+      "first": "c0100",
+      "second": "c0101"
+    },
+    {
+      "first": "c1011",
+      "second": "c0001"
+    },
+    {
+      "first": "c1001",
+      "second": "c0111"
+    },
+    {
+      "first": "c0100",
+      "second": "c1010"
+    },
+    {
+      "first": "c0010",
+      "second": "c0100"
+    },
+    {
+      "first": "c1100",
+      "second": "c0001"
+    },
+    {
+      "first": "c0001",
+      "second": "c0101"
+    },
+    {
+      "first": "c1000",
+      "second": "c0101"
+    },
+    {
+      "first": "c1010",
+      "second": "c0011"
+    },
+    {
+      "first": "c0011",
+      "second": "c1000"
+    },
+    {
+      "first": "c1000",
+      "second": "c0010"
+    },
+    {
+      "first": "c1101",
+      "second": "c0001"
+    },
+    {
+      "first": "c1000",
+      "second": "c1101"
+    },
+    {
+      "first": "c0111",
+      "second": "c0100"
+    },
+    {
+      "first": "c0001",
+      "second": "c1101"
+    },
+    {
+      "first": "c0001",
+      "second": "c1011"
+    },
+    {
+      "first": "c0111",
+      "second": "c1101"
+    },
+    {
+      "first": "c0101",
+      "second": "c0111"
+    },
+    {
+      "first": "c0111",
+      "second": "c1100"
+    },
+    {
+      "first": "c1100",
+      "second": "c1000"
+    },
+    {
+      "first": "c1000",
+      "second": "c1010"
+    },
+    {
+      "first": "c1101",
+      "second": "c1000"
+    },
+    {
+      "first": "c1011",
+      "second": "c0011"
+    },
+    {
+      "first": "c1101",
+      "second": "c1001"
+    },
+    {
+      "first": "c0111",
+      "second": "c0010"
+    },
+    {
+      "first": "c1100",
+      "second": "c0011"
+    },
+    {
+      "first": "c0011",
+      "second": "c1001"
+    },
+    {
+      "first": "c1101",
+      "second": "c1011"
+    },
+    {
+      "first": "c1001",
+      "second": "c1011"
+    },
+    {
+      "first": "c1001",
+      "second": "c0011"
+    },
+    {
+      "first": "c0111",
+      "second": "c1010"
+    },
+    {
+      "first": "c1010",
+      "second": "c0101"
+    },
+    {
+      "first": "c0101",
+      "second": "c1100"
+    },
+    {
+      "first": "c1001",
+      "second": "c0100"
+    },
+    {
+      "first": "c1011",
+      "second": "c1001"
+    },
+    {
+      "first": "c1000",
+      "second": "c0100"
+    },
+    {
+      "first": "c0101",
+      "second": "c0100"
+    },
+    {
+      "first": "c0001",
+      "second": "c0111"
+    },
+    {
+      "first": "c1100",
+      "second": "c1011"
+    },
+    {
+      "first": "c1010",
+      "second": "c1000"
+    },
+    {
+      "first": "c1110",
+      "second": "c0010"
+    },
+    {
+      "first": "c1001",
+      "second": "c0010"
+    },
+    {
+      "first": "c0011",
+      "second": "c0010"
+    },
+    {
+      "first": "c1010",
+      "second": "c1101"
+    },
+    {
+      "first": "c0001",
+      "second": "c1001"
+    },
+    {
+      "first": "c0010",
+      "second": "c1001"
+    },
+    {
+      "first": "c0100",
+      "second": "c0001"
+    },
+    {
+      "first": "c1011",
+      "second": "c1101"
+    },
+    {
+      "first": "c1100",
+      "second": "c0010"
+    },
+    {
+      "first": "c0101",
+      "second": "c0011"
+    },
+    {
+      "first": "c0100",
+      "second": "c1101"
+    },
+    {
+      "first": "c0100",
+      "second": "c0010"
+    },
+    {
+      "first": "c1101",
+      "second": "c0011"
+    },
+    {
+      "first": "c0001",
+      "second": "c1010"
+    },
+    {
+      "first": "c0101",
+      "second": "c0010"
+    },
+    {
+      "first": "c1110",
+      "second": "c1000"
+    },
+    {
+      "first": "c0111",
+      "second": "c0011"
+    },
+    {
+      "first": "c1001",
+      "second": "c0101"
+    },
+    {
+      "first": "c0010",
+      "second": "c1000"
+    },
+    {
+      "first": "c0111",
+      "second": "c1001"
+    },
+    {
+      "first": "c0010",
+      "second": "c1010"
+    },
+    {
+      "first": "c1100",
+      "second": "c1010"
+    },
+    {
+      "first": "c0010",
+      "second": "c0101"
+    },
+    {
+      "first": "c0010",
+      "second": "c1100"
+    },
+    {
+      "first": "c1110",
+      "second": "c0100"
+    },
+    {
+      "first": "c1000",
+      "second": "c1100"
+    },
+    {
+      "first": "c1001",
+      "second": "c1101"
+    },
+    {
+      "first": "c0100",
+      "second": "c1000"
+    },
+    {
+      "first": "c1001",
+      "second": "c0001"
+    },
+    {
+      "first": "c0111",
+      "second": "c1000"
+    },
+    {
+      "first": "c0001",
+      "second": "c0011"
+    },
+    {
+      "first": "c1110",
+      "second": "c1101"
+    },
+    {
+      "first": "c0111",
+      "second": "c1110"
+    },
+    {
+      "first": "c1100",
+      "second": "c1110"
+    },
+    {
+      "first": "c0001",
+      "second": "c0100"
+    },
+    {
+      "first": "c0001",
+      "second": "c1110"
+    },
+    {
+      "first": "c0011",
+      "second": "c0111"
+    },
+    {
+      "first": "c1110",
+      "second": "c1011"
+    },
+    {
+      "first": "c0100",
+      "second": "c1011"
+    },
+    {
+      "first": "c0001",
+      "second": "c0010"
+    },
+    {
+      "first": "c1010",
+      "second": "c1011"
+    },
+    {
+      "first": "c1000",
+      "second": "c1001"
+    },
+    {
+      "first": "c1101",
+      "second": "c1110"
+    },
+    {
+      "first": "c0100",
+      "second": "c1001"
+    },
+    {
+      "first": "c1110",
+      "second": "c0101"
+    },
+    {
+      "first": "c0011",
+      "second": "c0101"
+    },
+    {
+      "first": "c0011",
+      "second": "c1101"
+    },
+    {
+      "first": "c1100",
+      "second": "c1001"
+    },
+    {
+      "first": "c1011",
+      "second": "c1110"
+    },
+    {
+      "first": "c0011",
+      "second": "c0001"
+    },
+    {
+      "first": "c0010",
+      "second": "c0001"
+    },
+    {
+      "first": "c0100",
+      "second": "c1110"
+    },
+    {
+      "first": "c1101",
+      "second": "c1010"
+    },
+    {
+      "first": "c0101",
+      "second": "c1110"
+    },
+    {
+      "first": "c0011",
+      "second": "c1100"
+    },
+    {
+      "first": "c1011",
+      "second": "c1000"
+    },
+    {
+      "first": "c1010",
+      "second": "c1110"
+    },
+    {
+      "first": "c0010",
+      "second": "c0011"
+    },
+    {
+      "first": "c1100",
+      "second": "c0101"
+    },
+    {
+      "first": "c1001",
+      "second": "c1110"
+    },
+    {
+      "first": "c1011",
+      "second": "c0111"
+    },
+    {
+      "first": "c0010",
+      "second": "c0111"
+    },
+    {
+      "first": "c1110",
+      "second": "c1010"
+    },
+    {
+      "first": "c1101",
+      "second": "c0010"
+    },
+    {
+      "first": "c0011",
+      "second": "c0100"
+    },
+    {
+      "first": "c0101",
+      "second": "c1011"
+    },
+    {
+      "first": "c1000",
+      "second": "c0001"
+    },
+    {
+      "first": "c0010",
+      "second": "c1011"
+    },
+    {
+      "first": "c0100",
+      "second": "c1100"
+    },
+    {
+      "first": "c0011",
+      "second": "c1010"
+    },
+    {
+      "first": "c1101",
+      "second": "c1100"
+    },
+    {
+      "first": "c1010",
+      "second": "c0010"
+    },
+    {
+      "first": "c1011",
+      "second": "c1010"
+    },
+    {
+      "first": "c0101",
+      "second": "c0001"
+    },
+    {
+      "first": "c1110",
+      "second": "c0001"
+    },
+    {
+      "first": "c1011",
+      "second": "c0101"
+    },
+    {
+      "first": "c0101",
+      "second": "c1000"
+    },
+    {
+      "first": "c1010",
+      "second": "c1001"
+    },
+    {
+      "first": "c1010",
+      "second": "c0001"
+    },
+    {
+      "first": "c0100",
+      "second": "c0111"
+    },
+    {
+      "first": "c1010",
+      "second": "c1100"
+    },
+    {
+      "first": "c1110",
+      "second": "c1001"
+    },
+    {
+      "first": "c0001",
+      "second": "c1100"
+    }
+  ],
+  "context": {
+    "budget": {
+      "batch_size": 2,
+      "slots_total": 8,
+      "slots_used": 2
+    },
+    "checks": [
+      "coordinates",
+      "phase",
+      "scratch",
+      "classical addend"
+    ],
+    "information_boundary": "Use only this prompt. Use no tools and do not inspect files. No unseen circuit outcomes are provided.",
+    "measured_archive": [
+      {
+        "Q": 214,
+        "QT": 6798566.0,
+        "failed_inputs": 0,
+        "mean_T": 31769.0,
+        "recipe_id": "c0000"
+      },
+      {
+        "Q": 198,
+        "QT": 5604192.0,
+        "failed_inputs": 0,
+        "mean_T": 28304.0,
+        "recipe_id": "c1111"
+      },
+      {
+        "Q": 198,
+        "QT": 6258186.0,
+        "failed_inputs": 0,
+        "mean_T": 31607.0,
+        "recipe_id": "c0110"
+      }
+    ],
+    "objective": "Q times mean executed Toffolis; gains relative to prepared mfs parent on the same inputs",
+    "prepared_parent": {
+      "combined_y": false,
+      "free_s": false,
+      "id": "c0000",
+      "policy": "mfs",
+      "r": false,
+      "u": false
+    },
+    "previous_slots": [
+      {
+        "Q": 198,
+        "QT": 5604192.0,
+        "T": 28304.0,
+        "failed_inputs": 0,
+        "recipe_id": "c1111",
+        "slot": 1,
+        "status": "passed"
+      },
+      {
+        "Q": 198,
+        "QT": 6258186.0,
+        "T": 31607.0,
+        "failed_inputs": 0,
+        "recipe_id": "c0110",
+        "slot": 2,
+        "status": "passed"
+      }
+    ],
+    "recipes": [
+      {
+        "combined_y": true,
+        "free_s": true,
+        "id": "c0011",
+        "policy": "mfs",
+        "r": false,
+        "u": false
+      },
+      {
+        "combined_y": true,
+        "free_s": true,
+        "id": "c1011",
+        "policy": "mfsu",
+        "r": false,
+        "u": true
+      },
+      {
+        "combined_y": true,
+        "free_s": false,
+        "id": "c1101",
+        "policy": "mfsur",
+        "r": true,
+        "u": true
+      },
+      {
+        "combined_y": true,
+        "free_s": false,
+        "id": "c0101",
+        "policy": "mfsr",
+        "r": true,
+        "u": false
+      },
+      {
+        "combined_y": false,
+        "free_s": false,
+        "id": "c1000",
+        "policy": "mfsu",
+        "r": false,
+        "u": true
+      },
+      {
+        "combined_y": true,
+        "free_s": true,
+        "id": "c0111",
+        "policy": "mfsr",
+        "r": true,
+        "u": false
+      },
+      {
+        "combined_y": false,
+        "free_s": true,
+        "id": "c1110",
+        "policy": "mfsur",
+        "r": true,
+        "u": true
+      },
+      {
+        "combined_y": false,
+        "free_s": false,
+        "id": "c1100",
+        "policy": "mfsur",
+        "r": true,
+        "u": true
+      },
+      {
+        "combined_y": true,
+        "free_s": false,
+        "id": "c0001",
+        "policy": "mfs",
+        "r": false,
+        "u": false
+      },
+      {
+        "combined_y": false,
+        "free_s": true,
+        "id": "c0010",
+        "policy": "mfs",
+        "r": false,
+        "u": false
+      },
+      {
+        "combined_y": false,
+        "free_s": true,
+        "id": "c1010",
+        "policy": "mfsu",
+        "r": false,
+        "u": true
+      },
+      {
+        "combined_y": true,
+        "free_s": false,
+        "id": "c1001",
+        "policy": "mfsu",
+        "r": false,
+        "u": true
+      },
+      {
+        "combined_y": false,
+        "free_s": false,
+        "id": "c0100",
+        "policy": "mfsr",
+        "r": true,
+        "u": false
+      }
+    ],
+    "rule_descriptions": {
+      "combined_y": "Use a combined expression for the coordinate products",
+      "free_s": "Release the cofactor register during inversion and reconstruct it later",
+      "r": "Convert unread writes before measurement or reset into phase operations",
+      "u": "Replace eligible AND erasure by X-basis measurement with phase repair"
+    }
+  },
+  "response": {
+    "action_index": "integer menu index",
+    "reason": "brief mechanism-based reason"
+  },
+  "task": "Select one circuit recipe from the admitted menu. Use no tools."
+}

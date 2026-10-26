@@ -1,0 +1,11 @@
+{
+  "method": "base",
+  "lr": 0.0002,
+  "epochs": 3,
+  "seed": 42,
+  "n_train": 321,
+  "val_nll": 0.5949822775531604,
+  "val_tokens": 10917,
+  "test_nll": 0.5577940588613359,
+  "test_tokens": 28428
+}

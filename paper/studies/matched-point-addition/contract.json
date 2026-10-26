@@ -1,0 +1,48 @@
+{
+  "audit_label": "scaled-point-add-20261026-r1/audit/16",
+  "audit_selection": "baseline and all nondominated Q/T development recipes; freeze before audit; Bonferroni across selected circuits",
+  "development_labels": {
+    "16": "scaled-point-add-20261026-r1/development/16",
+    "256": "scaled-point-add-20261026-r1/development/256"
+  },
+  "emitter_sha256": "b429d7a00e512087ce8479f1c6242fa1011dfd5b5a9ce588626be695f50e69cc",
+  "epsilon": 0.001,
+  "evaluator_sha256": "907f6e0fe40c6ea79bfe3386d4a27de76c7a5d025c720483d10f31b295f530f4",
+  "family_alpha": 0.05,
+  "frozen": true,
+  "label": "scaled-point-add-20261026-r1",
+  "large_development": 64,
+  "large_scope": "development only",
+  "model_calls": 0,
+  "schema": "scaled-point-add-campaign-v1",
+  "scope": "Same affine original Kaliski backend and recipe grammar at both widths. Other frontier families remain unscaled.",
+  "settings": [
+    {
+      "name": "baseline",
+      "settings": {}
+    },
+    {
+      "name": "combined-y",
+      "settings": {
+        "POINT_ADD_AFFINE_COMBINED_Y": true
+      }
+    },
+    {
+      "name": "free-s",
+      "settings": {
+        "KAL_FREE_S": true
+      }
+    },
+    {
+      "name": "combined-free-s",
+      "settings": {
+        "KAL_FREE_S": true,
+        "POINT_ADD_AFFINE_COMBINED_Y": true
+      }
+    }
+  ],
+  "small_audit": 100000,
+  "small_development": 256,
+  "source_checker_sha256": "8820dbd65bda3df99b28cc3a321548492f4b4fe818f7055f4dd4ba5c8c8e63a7",
+  "source_scaled_evaluator_sha256": "69f3f63bae007e89cd1a40bbfc6b99687f8117639519048645ff325c9e00d905"
+}

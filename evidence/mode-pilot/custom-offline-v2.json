@@ -1,0 +1,141 @@
+{
+  "case": "custom-offline-v2",
+  "completed": 1,
+  "contract_sha256": "3bc4d5b3272f488a42d51de14c4b35146f5deea7519c71d51ff60edc91341231",
+  "controller_commit_verified_before_launch": "49bdddbd3b5486739ab4e0e549bf92285c34fc2c",
+  "family": "pilot-ap",
+  "frozen_contract": {
+    "audit_pairs": 0,
+    "epsilon": 0.001,
+    "large_pairs": 32768,
+    "measurement_streams": 2,
+    "small_pairs": 4096,
+    "strategy": "evolution",
+    "trials": 1
+  },
+  "grammar_sha256": "c23e76731483f81db1c7527d0ac7c080816084a21c376a953342c2c836f91bab",
+  "harness_source_sha256": "418acc786658d056c951f319ffc5253f84db2ece4f2dc7b80ba1dc75918ef587",
+  "menu_exhausted": false,
+  "model_calls": 0,
+  "qualified": 1,
+  "results_sha256": "5bc109b66c15fd2d2e3924141d2b889ec39c04188dfa330a463263f52319d4e3",
+  "retained_front_slots": [
+    0
+  ],
+  "rows": [
+    {
+      "Q": 1270,
+      "binary_integrity_after": true,
+      "candidate": {
+        "actions": [],
+        "backend": "source-conditional",
+        "cancel_adjacent": false,
+        "family": "pilot-ap",
+        "grammar_sha256": "c23e76731483f81db1c7527d0ac7c080816084a21c376a953342c2c836f91bab",
+        "policy": "none",
+        "target": "pilot-ap"
+      },
+      "construction": {
+        "build_binary_sha256": "0ff89becfa2e5f275228d4ae49e1a5585413a982a43a2245e6588cf18bc8f7f7",
+        "emitter_binary_sha256": "0ff89becfa2e5f275228d4ae49e1a5585413a982a43a2245e6588cf18bc8f7f7",
+        "eval_binary_sha256": "1a7c0ab8ead09d61b2962a7e68610ef039b526bcb45d3d6f39036a4235d85292",
+        "provenance": {
+          "authors": [
+            "Retain the parent credits in NOTICE and the source files"
+          ],
+          "dependency_ids": [
+            "54acebaf-8d55-419e-b739-799d23bdbde0"
+          ],
+          "description": "Editable derivative of the pinned ap1270 constructor.",
+          "parent_commit": "023fbe13c59df2ff0087ea4bb916d25f3d4fac70",
+          "parent_target": "ap1270",
+          "upstream_family": "qualified-leapfrog"
+        },
+        "recipe_sha256": "45ff12bb44c120e0184c859ee6c9ca719b4d507bdad1af5728ccd91b66292b96",
+        "wall_seconds": 70.64604495745152
+      },
+      "fast": {
+        "Q": 214,
+        "T": 33728.0,
+        "alpha": 0.05,
+        "checker_binary_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+        "checker_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+        "checker_source_sha256": "5a00c89974f5774b1e44cd00c9e9e8f147aad4c695ddea31d24900cb31e849f8",
+        "domain_exclusions": {},
+        "failed_inputs": 0,
+        "failed_shots": 0,
+        "field_width": 16,
+        "input_recipe": "study_check::stream(inputs,[label,u64le(index)]); reject scalar zero or >=order; reject affine-domain exclusions",
+        "label": "17f8abb5e9c8b22d2c3eaae140e54e6412d0b623c29f87eaa6c230fb3f0dd352/small/none",
+        "measurement_recipe": "study_check::stream(measurements,[label,u64le(stream),u64le(index/64)])",
+        "observed_failure_probability": 0.0,
+        "ops_sha256": "b1c0c04919cd9b231aee676948d8e2fb917cdee16268a62aed132fd0b14700d1",
+        "packet_sha256": "bef7d2d5fd1aa3e56e1bdffcdb359b58fe416673d6316606da435d191404f73b",
+        "pairs": 4096,
+        "per_input_sha256": "cce9be879a2a4ec07b45f25f88913ce2c4043d6f6b85b55dccb6737e1ab0ba2b",
+        "protocol": "scaled-full-point-add-v1",
+        "protocol_valid": true,
+        "streams": 2,
+        "upper_bound": 0.0007311125564754343
+      },
+      "large_rewrite_counts": {
+        "adjacent_cancel": 0,
+        "f": 0,
+        "m": 0,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 0
+      },
+      "mean_T_on_screen_packet": 793800.5034484863,
+      "model": {
+        "action_index": 0,
+        "model_called": false,
+        "provider": "offline"
+      },
+      "operation_artifact_reused": false,
+      "ops_sha256": "9271a9aa2b368b88989e905a932d5469baece5f3af00c0e928e8dcb7b9ce3c01",
+      "qualified": true,
+      "screen": {
+        "Q": 1270,
+        "T": 793800.5034484863,
+        "alpha": 0.025,
+        "checker_binary_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+        "checker_sha256": "b546431fa694805b7b7baeeb970cfe16ebaa84c6cf5bae985d7384b420824be3",
+        "checker_source_sha256": "5a00c89974f5774b1e44cd00c9e9e8f147aad4c695ddea31d24900cb31e849f8",
+        "domain_exclusions": {},
+        "failed_inputs": 13,
+        "failed_shots": 25,
+        "field_width": 256,
+        "input_recipe": "study_check::stream(inputs,[label,u64le(index)]); reject scalar zero or >=order; reject affine-domain exclusions",
+        "label": "17f8abb5e9c8b22d2c3eaae140e54e6412d0b623c29f87eaa6c230fb3f0dd352/large/0",
+        "measurement_recipe": "study_check::stream(measurements,[label,u64le(stream),u64le(index/64)])",
+        "observed_failure_probability": 0.000396728515625,
+        "ops_sha256": "9271a9aa2b368b88989e905a932d5469baece5f3af00c0e928e8dcb7b9ce3c01",
+        "packet_sha256": "930986723627644e8e6a9b5579fc8c3f27c5ccd6f50603a7bda0fd270db1c7c2",
+        "pairs": 32768,
+        "per_input_sha256": "b3543ee820efd5522772446bbbdfa515dcbf73bd200a9089918d9e911a222458",
+        "protocol": "scaled-full-point-add-v1",
+        "protocol_valid": true,
+        "streams": 2,
+        "upper_bound": 0.0006783222928272236
+      },
+      "slot": 0,
+      "small_activation_counts": {
+        "f": 0,
+        "m": 0,
+        "r": 0,
+        "r_ccx": 0,
+        "s": 0,
+        "u": 0
+      },
+      "source_file_count": 133,
+      "source_integrity_after": true,
+      "source_manifest_hash_encoding": "SHA-256 of source_hashes encoded as sorted compact JSON with separators comma and colon",
+      "source_manifest_sha256": "6791260f3115d88c50a9dd226714c16a861ec44fd592e763e5f6bded82b388e9"
+    }
+  ],
+  "run_directory": "work/mode-pilot/custom-offline-v2",
+  "schema_version": 1,
+  "scope": "Functional source-family workflow validation. Screening qualification only; no fresh final audit, rediscovery, model-policy benefit, or frontier improvement claim."
+}

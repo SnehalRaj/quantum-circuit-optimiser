@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "id": "family.qualified_leapfrog",
+  "revision": 1,
+  "title": "Qualified Leapfrog family addendum",
+  "description": "Source-backed walk/replay and editable arithmetic mechanisms. Missing fast mappings keep these rules blocked.",
+  "definitions": {
+    "walk": "The GCD inversion control process.",
+    "payload": "The field arithmetic carried by the inversion walk."
+  },
+  "evidence": [
+    {
+      "path": "data/targets/catalog.json",
+      "symbol": "AP1270 pinned source and source recipe, when installed"
+    },
+    {
+      "path": "https://github.com/jieyilong/ecdsafail-supplemental-materials/tree/ef7ecd2b27cf27881874468e003e53e16ba48075",
+      "symbol": "July source reconstruction; Leapfrog source48dcefa9f07af349f1561b345558541313cfc825"
+    }
+  ],
+  "rules": [
+    {
+      "id": "leapfrog.group_signed_updates",
+      "revision": 1,
+      "title": "Group signed arithmetic updates",
+      "description": "Leapfrog changes the order of GCD walk steps and payload updates. Grouped updates can reduce the number of simultaneously live registers.",
+      "status": "research",
+      "families": [
+        "qualified-leapfrog"
+      ],
+      "parameters": {},
+      "guards": [
+        "WALK_PAYLOAD_DEPENDENCIES",
+        "MATCHED_INVERSE_REPLAY",
+        "COFACTOR_WIDTH",
+        "FINAL_HISTORY_ZERO"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "Separate signed walk and payload operations at an admitted boundary.",
+        "replace": "A dependency-valid grouped update and its matching inverse."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "data/targets/catalog.json",
+          "symbol": "AP1270 pinned source and source recipe, when installed"
+        },
+        {
+          "path": "https://github.com/jieyilong/ecdsafail-supplemental-materials/tree/ef7ecd2b27cf27881874468e003e53e16ba48075",
+          "symbol": "July source reconstruction; Leapfrog source48dcefa9f07af349f1561b345558541313cfc825"
+        }
+      ],
+      "requires": []
+    },
+    {
+      "id": "leapfrog.replay_program",
+      "revision": 1,
+      "title": "Edit a replay arithmetic program",
+      "description": "The earlier Rust backend exposes one to eight typed instructions at owned replay boundaries. Each candidate must preserve the field map, phase, and scratch contract.",
+      "status": "research",
+      "families": [
+        "qualified-leapfrog"
+      ],
+      "parameters": {
+        "length": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8,
+          "default": 2
+        },
+        "kernel": {
+          "type": "string",
+          "enum": [
+            "direct",
+            "power2"
+          ],
+          "default": "direct"
+        }
+      },
+      "guards": [
+        "OWNED_REPLAY_BOUNDARY",
+        "DISJOINT_REGISTERS",
+        "UNCHANGED_CONTROLS",
+        "MODULAR_VALUE_MAP",
+        "PHASE_AND_SCRATCH"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "The source-owned signed replay block.",
+        "replace": "A typed add/sub/half/double/half_u/double_u/swap program and reversed inverse."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "data/targets/catalog.json",
+          "symbol": "AP1270 pinned source and source recipe, when installed"
+        },
+        {
+          "path": "https://github.com/jieyilong/ecdsafail-supplemental-materials/tree/ef7ecd2b27cf27881874468e003e53e16ba48075",
+          "symbol": "July source reconstruction; Leapfrog source48dcefa9f07af349f1561b345558541313cfc825"
+        }
+      ],
+      "requires": [],
+      "notes": [
+        "This release records the arithmetic program language. Its earlier full-width implementation has not been mapped into the fast16 constructor."
+      ]
+    },
+    {
+      "id": "leapfrog.walk_budget",
+      "revision": 1,
+      "title": "Adjust the walk and repair budget",
+      "description": "A walk budget trades retained state and gate count against exceptional arithmetic inputs. Freeze each candidate before a fresh reliability audit.",
+      "status": "research",
+      "families": [
+        "qualified-leapfrog"
+      ],
+      "parameters": {},
+      "guards": [
+        "SOURCE_PARAMETER_CONSUMER",
+        "NO_UNDECLARED_APPROXIMATION",
+        "FIXED_EPSILON_0_001",
+        "INDEPENDENT_HOLDOUT"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "A source-bound walk, replay, or comparison budget.",
+        "replace": "Another admitted setting with a new full-circuit audit."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "data/targets/catalog.json",
+          "symbol": "AP1270 pinned source and source recipe, when installed"
+        },
+        {
+          "path": "https://github.com/jieyilong/ecdsafail-supplemental-materials/tree/ef7ecd2b27cf27881874468e003e53e16ba48075",
+          "symbol": "July source reconstruction; Leapfrog source48dcefa9f07af349f1561b345558541313cfc825"
+        }
+      ],
+      "requires": []
+    },
+    {
+      "id": "leapfrog.sparse_constant",
+      "revision": 1,
+      "title": "Use a sparse signed constant kernel",
+      "description": "A signed power-of-two decomposition can replace a dense constant update. The same modulus and arithmetic width must apply to every term.",
+      "status": "research",
+      "families": [
+        "qualified-leapfrog"
+      ],
+      "parameters": {
+        "kernel": {
+          "type": "string",
+          "enum": [
+            "direct",
+            "power2"
+          ],
+          "default": "direct"
+        }
+      },
+      "guards": [
+        "EXACT_SIGNED_SUM",
+        "SAME_MODULUS",
+        "NO_WIDTH_TRUNCATION",
+        "RESTORE_SCRATCH"
+      ],
+      "bindings": {
+        "fast": null,
+        "large": {}
+      },
+      "mechanism": {
+        "match": "An admitted constant arithmetic block.",
+        "replace": "The same value map from verified signed powers of two."
+      },
+      "preserves": [
+        "The promised point-addition map on admitted inputs.",
+        "Relative phase on every admitted measurement branch.",
+        "Zero final scratch and unchanged classical addend."
+      ],
+      "cost": "Measure Q and T; no fixed improvement is assumed.",
+      "evidence": [
+        {
+          "path": "data/targets/catalog.json",
+          "symbol": "AP1270 pinned source and source recipe, when installed"
+        },
+        {
+          "path": "https://github.com/jieyilong/ecdsafail-supplemental-materials/tree/ef7ecd2b27cf27881874468e003e53e16ba48075",
+          "symbol": "July source reconstruction; Leapfrog source48dcefa9f07af349f1561b345558541313cfc825"
+        }
+      ],
+      "requires": []
+    }
+  ]
+}

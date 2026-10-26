@@ -1,0 +1,26 @@
+Preflight claude completed ['claude-opus-5-5']
+Preflight codex failed []
+Search guarded-seeds-v1 offline 17071
+Search complete guarded-seeds-v1 offline 17071 complete 176.35
+Search guarded-seeds-v1 offline 28081
+Search complete guarded-seeds-v1 offline 28081 complete 121.82
+Search guarded-seeds-v1 offline 39091
+Search complete guarded-seeds-v1 offline 39091 complete 155.5
+Search guarded-seeds-v1 claude 17071
+Search complete guarded-seeds-v1 claude 17071 complete 190.03
+Search guarded-seeds-v1 claude 28081
+Search complete guarded-seeds-v1 claude 28081 complete 153.54
+Search guarded-seeds-v1 claude 39091
+Search complete guarded-seeds-v1 claude 39091 complete 136.51
+Search guarded-cleanup-only-v1 offline 17071
+Search complete guarded-cleanup-only-v1 offline 17071 complete 85.78
+Search guarded-cleanup-only-v1 offline 28081
+Search complete guarded-cleanup-only-v1 offline 28081 complete 99.32
+Search guarded-cleanup-only-v1 offline 39091
+Search complete guarded-cleanup-only-v1 offline 39091 complete 66.15
+Search guarded-cleanup-only-v1 claude 17071
+Search complete guarded-cleanup-only-v1 claude 17071 complete 127.12
+Search guarded-cleanup-only-v1 claude 28081
+Search complete guarded-cleanup-only-v1 claude 28081 complete 137.23
+Search guarded-cleanup-only-v1 claude 39091
+Search complete guarded-cleanup-only-v1 claude 39091 complete 145.0
